@@ -58,6 +58,9 @@ jobs:
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
+      
+      - name: Verify Docker
+        run: docker info 
 
       - name: Login to AscendHub
         if: ${{ github.event_name == 'release' }}
