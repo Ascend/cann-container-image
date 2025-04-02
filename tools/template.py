@@ -8,7 +8,7 @@ ALPHA_DICT = {
     "8.0.RC2.alpha002": "V100R001C18SPC805",
     "8.0.RC2.alpha003": "V100R001C18SPC703",
     "8.0.RC3.alpha002": "V100R001C19SPC702",
-    "8.1.rc1.alpha001": "V100R001C21B800TP034"
+    "8.1.RC1.alpha001": "V100R001C21B800TP034"
 }
 
 env = Environment(loader=FileSystemLoader('tools/template'))
@@ -21,21 +21,27 @@ def get_download_url(cann_chip, version, nnal_version):
     else:
         url_prefix = BASE_URL + "/CANN/CANN%20" + version
         
-    toolkit_file = "Ascend-cann-toolkit_" + version + "_linux-${ARCH}.run"
-    kernels_file = "Ascend-cann-kernels-" + cann_chip + "_" + version + "_linux-${ARCH}.run"
-    nnal_file = "Ascend-cann-nnal_" + nnal_version + "_linux-${ARCH}.run"
+    nnal_url_prefix = BASE_URL + "/CANN/CANN%20" + nnal_version
+        
+    toolkit_file_prefix = "Ascend-cann-toolkit_" + version + "_linux"
+    kernels_file_prefix = "Ascend-cann-kernels-" + cann_chip + "_" + version + "_linux"
+    nnal_file_prefix = "Ascend-cann-nnal_" + nnal_version + "_linux"
     
-    cann_toolkit_url = f"{url_prefix}/{toolkit_file}"
-    cann_kernels_url = f"{url_prefix}/{kernels_file}"   
-    cann_nnal_url = f"{url_prefix}/{nnal_file}"
-    return cann_toolkit_url, cann_kernels_url, cann_nnal_url
+    cann_toolkit_url_prefix = f"{url_prefix}/{toolkit_file_prefix}"
+    cann_kernels_url_prefix = f"{url_prefix}/{kernels_file_prefix}"   
+    cann_nnal_url_prefix = f"{nnal_url_prefix}/{nnal_file_prefix}"
+    return cann_toolkit_url_prefix, cann_kernels_url_prefix, cann_nnal_url_prefix
     
 def render_and_save(template_name, item):
     template = env.get_template(template_name)
-    cann_toolkit_url, cann_kernels_url, cann_nnal_url = get_download_url(item['cann_chip'], item['cann_version'], item['nnal_version'])
-    item['cann_toolkit_url'] = cann_toolkit_url
-    item['cann_kernels_url'] = cann_kernels_url
-    item['cann_nnal_url'] = cann_nnal_url
+    cann_toolkit_url_prefix, cann_kernels_url_prefix, cann_nnal_url_prefix = get_download_url(
+        item['cann_chip'], 
+        item['cann_version'], 
+        item['nnal_version']
+        )
+    item['cann_toolkit_url_prefix'] = cann_toolkit_url_prefix
+    item['cann_kernels_url_prefix'] = cann_kernels_url_prefix
+    item['cann_nnal_url_prefix'] = cann_nnal_url_prefix
     rendered_content = template.render(item=item)
 
     output_path = os.path.join("cann", item['tags']['common'][0], "dockerfile")

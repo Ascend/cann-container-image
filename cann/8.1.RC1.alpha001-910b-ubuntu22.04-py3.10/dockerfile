@@ -1,7 +1,7 @@
 # Arguments
-ARG BASE_VERSION=22.03
+ARG BASE_VERSION=22.04
 ARG PY_VERSION=3.10
-ARG OS_NAME=openeuler
+ARG OS_NAME=ubuntu
 
 # Stage 1: Install CANN
 FROM ascendai/python:${PY_VERSION}-${OS_NAME}${BASE_VERSION} AS cann-installer
@@ -9,57 +9,74 @@ FROM ascendai/python:${PY_VERSION}-${OS_NAME}${BASE_VERSION} AS cann-installer
 # Arguments
 ARG TARGETPLATFORM
 ARG CANN_CHIP=910b
-ARG CANN_VERSION=8.0.0
+ARG CANN_VERSION=8.1.RC1.alpha001
 ARG BASE_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com
 
 # Install dependencies
-RUN yum update -y && \
-    yum install -y \
+RUN apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
+        apt-transport-https \
+        ca-certificates \
+        bash \
+        git \
+        wget \
         gcc \
-        gcc-c++ \
+        g++ \
         make \
         cmake \
+        zlib1g \
+        zlib1g-dev \
+        openssl \
+        libsqlite3-dev \
+        libssl-dev \
+        libffi-dev \
         unzip \
-        zlib-devel \
-        libffi-devel \
-        openssl-devel \
         pciutils \
         net-tools \
-        sqlite-devel \
-        lapack-devel \
-        gcc-gfortran \
-        util-linux \
-        findutils \
+        libblas-dev \
+        gfortran \
+        patchelf \
+        libblas3 \
         curl \
         wget \
-    && yum clean all \
-    && rm -rf /var/cache/yum
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /var/tmp/* \
 
-RUN wget https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.0.0/Ascend-cann-toolkit_8.0.0_linux-${ARCH}.run -O ~/Ascend-cann-toolkit.run && \
-    chmod +x ~/Ascend-cann-toolkit.run && \
+RUN ARCH=$(case "${TARGETPLATFORM}" in \
+        "linux/amd64") echo "x86_64" ;; \
+        "linux/arm64") echo "aarch64" ;; \
+        *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
+    esac) && \
+    CANN_TOOLKIT_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C21B800TP034/Ascend-cann-toolkit_8.1.RC1.alpha001_linux-${ARCH}.run && \
+    CANN_KERNELS_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C21B800TP034/Ascend-cann-kernels-910b_8.1.RC1.alpha001_linux-${ARCH}.run && \
+    CANN_NNAL_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.0.0/Ascend-cann-nnal_8.0.0_linux-${ARCH}.run && \
+    wget ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
+    wget ${CANN_KERNELS_URL} -O ~/Ascend-cann-kernels.run && \
+    wget ${CANN_NNAL_URL} -O ~/Ascend-cann-nnal.run
+
+RUN chmod +x ~/Ascend-cann-toolkit.run && \
     printf "Y\n" | ~/Ascend-cann-toolkit.run --install && \
     rm -f ~/Ascend-cann-toolkit.run
-  
-RUN wget https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.0.0/Ascend-cann-kernels-910b_8.0.0_linux-${ARCH}.run -O ~/Ascend-cann-kernels.run && \
-    chmod +x ~/Ascend-cann-kernels.run && \
+
+RUN chmod +x ~/Ascend-cann-kernels.run && \
     printf "Y\n" | ~/Ascend-cann-kernels.run --install && \
     rm -f ~/Ascend-cann-kernels.run
 
 RUN export ASCEND_HOME_PATH=/usr/local/Ascend && \
     export ASCEND_TOOLKIT_HOME=/usr/local/Ascend/ascend-toolkit/latest && \
     export ASCEND_NNAE_HOME=/usr/local/Ascend/nnal && \
-    wget https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.0.0/Ascend-cann-nnal_8.0.0_linux-${ARCH}.run -O ~/Ascend-cann-nnal.run && \
     chmod +x ~/Ascend-cann-nnal.run && \
     printf "Y\n" | ~/Ascend-cann-nnal.run --install && \
-    rm -f ~/Ascend-cann-nnal.run \
+    rm -f ~/Ascend-cann-nnal.run
     
 # Stage 2: Copy results from previous stages
-FROM ${OS_NAME}/${OS_NAME}:${BASE_VERSION} AS official-openeuler
+FROM ${OS_NAME}:${BASE_VERSION} AS official
 
 # Arguments
 ARG PY_VERSION
 
-# Set Python Environment variables
+# Python Environment variables
 ENV PATH=/usr/local/python${PY_VERSION}/bin:${PATH}
 
 # Toolkit Environment variables
@@ -114,14 +131,16 @@ ENV LCCL_DETERMINISTIC=0
 SHELL [ "/bin/bash", "-c" ]
 
 # Install dependencies
-RUN yum update -y && \
-    yum install -y \
+RUN apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
+        apt-transport-https \
         ca-certificates \
         bash \
-        glibc \
-        sqlite-devel \
-    && yum clean all \
-    && rm -rf /var/cache/yum \
+        libc6 \
+        libsqlite3-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /var/tmp/* \
     && rm -rf /tmp/*
 
 # Copy files

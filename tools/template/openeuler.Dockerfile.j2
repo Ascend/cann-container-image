@@ -35,23 +35,32 @@ RUN yum update -y && \
     && yum clean all \
     && rm -rf /var/cache/yum
 
-RUN wget {{ item.cann_toolkit_url }} -O ~/Ascend-cann-toolkit.run && \
-    chmod +x ~/Ascend-cann-toolkit.run && \
+RUN ARCH=$(case "${TARGETPLATFORM}" in \
+        "linux/amd64") echo "x86_64" ;; \
+        "linux/arm64") echo "aarch64" ;; \
+        *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
+    esac) && \
+    CANN_TOOLKIT_URL={{ item.cann_toolkit_url_prefix }}-${ARCH}.run && \
+    CANN_KERNELS_URL={{ item.cann_kernels_url_prefix }}-${ARCH}.run && \
+    CANN_NNAL_URL={{ item.cann_nnal_url_prefix }}-${ARCH}.run && \
+    wget ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
+    wget ${CANN_KERNELS_URL} -O ~/Ascend-cann-kernels.run && \
+    wget ${CANN_NNAL_URL} -O ~/Ascend-cann-nnal.run
+
+RUN chmod +x ~/Ascend-cann-toolkit.run && \
     printf "Y\n" | ~/Ascend-cann-toolkit.run --install && \
     rm -f ~/Ascend-cann-toolkit.run
-  
-RUN wget {{ item.cann_kernels_url }} -O ~/Ascend-cann-kernels.run && \
-    chmod +x ~/Ascend-cann-kernels.run && \
+
+RUN chmod +x ~/Ascend-cann-kernels.run && \
     printf "Y\n" | ~/Ascend-cann-kernels.run --install && \
     rm -f ~/Ascend-cann-kernels.run
 
 RUN export ASCEND_HOME_PATH=/usr/local/Ascend && \
     export ASCEND_TOOLKIT_HOME=/usr/local/Ascend/ascend-toolkit/latest && \
     export ASCEND_NNAE_HOME=/usr/local/Ascend/nnal && \
-    wget {{ item.cann_nnal_url }} -O ~/Ascend-cann-nnal.run && \
     chmod +x ~/Ascend-cann-nnal.run && \
     printf "Y\n" | ~/Ascend-cann-nnal.run --install && \
-    rm -f ~/Ascend-cann-nnal.run \
+    rm -f ~/Ascend-cann-nnal.run
     
 # Stage 2: Copy results from previous stages
 FROM ${OS_NAME}/${OS_NAME}:${BASE_VERSION} AS official-openeuler
@@ -59,7 +68,7 @@ FROM ${OS_NAME}/${OS_NAME}:${BASE_VERSION} AS official-openeuler
 # Arguments
 ARG PY_VERSION
 
-# Set Python Environment variables
+# Python Environment variables
 ENV PATH=/usr/local/python${PY_VERSION}/bin:${PATH}
 
 # Toolkit Environment variables
