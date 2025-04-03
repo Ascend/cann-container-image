@@ -41,22 +41,6 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir --upgrade pip \
-    && pip install --no-cache-dir \
-        attrs \
-        cpython \
-        numpy==1.24.0 \
-        decorator \
-        sympy \
-        cffi \
-        pyyaml \
-        pathlib2 \
-        psutil \
-        protobuf==3.20 \
-        scipy \
-        requests \
-        absl-py
-
 RUN ARCH=$(case "${TARGETPLATFORM}" in \
         "linux/amd64") echo "x86_64" ;; \
         "linux/arm64") echo "aarch64" ;; \
