@@ -63,5 +63,6 @@ def main():
         args = json.load(f)
     process_args(args, 'ubuntu.Dockerfile.j2', 'openeuler.Dockerfile.j2')
 
+
 if __name__ == "__main__":
     main()
