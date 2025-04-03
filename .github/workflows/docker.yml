@@ -5,14 +5,21 @@ on:
   push:
     branches:
       - 'main'
-      - 'releases/**'
-    
+    paths:
+      - '.github/workflows/docker.yml'
+      - 'cann/**'
+      - 'arg.json'
+      - 'docker-bake.hcl'
   pull_request:
     branches:
       - 'main'
-      - 'releases/**'
     types:
       - 'synchronize'
+    paths:
+      - '.github/workflows/docker.yml'
+      - 'cann/**'
+      - 'arg.json'
+      - 'docker-bake.hcl'
   release:
     types:
       - 'published'
@@ -84,6 +91,14 @@ jobs:
           registry: swr.cn-southwest-2.myhuaweicloud.com
           username: ${{ secrets.OPENMIND_USERNAME }}
           password: ${{ secrets.OPENMIND_TOKEN }}
+      
+      - name: Login to ghcr.io
+        if: ${{ github.event_name == 'release' }}
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ github.token }}
 
       - name: Extract metadata for Docker
         id: metadata

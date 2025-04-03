@@ -10,7 +10,6 @@ FROM ascendai/python:${PY_VERSION}-${OS_NAME}${BASE_VERSION} AS cann-installer
 ARG TARGETPLATFORM
 ARG CANN_CHIP={{ item.cann_chip }}
 ARG CANN_VERSION={{ item.cann_version }}
-ARG BASE_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com
 
 # Install dependencies
 RUN yum update -y && \

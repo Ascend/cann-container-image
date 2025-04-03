@@ -10,7 +10,6 @@ FROM ascendai/python:${PY_VERSION}-${OS_NAME}${BASE_VERSION} AS cann-installer
 ARG TARGETPLATFORM
 ARG CANN_CHIP=910b
 ARG CANN_VERSION=8.1.RC1.alpha001
-ARG BASE_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com
 
 # Install dependencies
 RUN yum update -y && \
