@@ -62,8 +62,6 @@ docker build \
 
 # License
 
-Apache Spark, Spark, Apache, the Apache feather logo, and the Apache Spark project logo are trademarks of The Apache Software Foundation.
-
 Licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).

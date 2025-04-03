@@ -24,12 +24,6 @@ jobs:
     outputs:
       targets: ${{ steps.list-target.outputs.targets }}
     steps:
-      - name: Free Disk Space
-        uses: jlumbroso/free-disk-space@main
-        with:
-          tool-cache: true
-          docker-images: false
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -135,5 +129,5 @@ jobs:
         shell: bash
         run: |
           set -x
-          sudo df -h
+          df -h
           docker images -a
