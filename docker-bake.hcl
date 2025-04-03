@@ -35,7 +35,7 @@ target "cann" {
   platforms = ["linux/amd64", "linux/arm64"]
   name = replace("cann-${item.tags.common[0]}", ".", "_")
   context = "cann/${item.tags.common[0]}/"
-  dockerfile = "dockerfile"
+  dockerfile = "Dockerfile"
   matrix = {
     item = cann
   }

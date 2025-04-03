@@ -44,7 +44,7 @@ def render_and_save(template_name, item):
     item['cann_nnal_url_prefix'] = cann_nnal_url_prefix
     rendered_content = template.render(item=item)
 
-    output_path = os.path.join("cann", item['tags']['common'][0], "dockerfile")
+    output_path = os.path.join("cann", item['tags']['common'][0], "Dockerfile")
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w') as f:
         f.write(rendered_content)
