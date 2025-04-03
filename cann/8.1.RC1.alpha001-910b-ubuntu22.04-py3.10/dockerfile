@@ -43,8 +43,8 @@ RUN apt-get update \
 
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir \
-        attrs
-        cpython
+        attrs \
+        cpython \
         numpy==1.24.0 \
         decorator \
         sympy \
