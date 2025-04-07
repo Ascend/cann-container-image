@@ -4,31 +4,28 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'main'
+      - "main"
     paths:
-      - '.github/workflows/docker.yml'
-      - 'cann/**'
-      - 'arg.json'
-      - 'docker-bake.hcl'
+      - ".github/workflows/docker.yml"
+      - "cann/**"
+      - "arg.json"
+      - "docker-bake.hcl"
   pull_request:
     branches:
-      - 'main'
-    types:
-      - 'synchronize'
-      - 'opened'
+      - "main"
     paths:
-      - '.github/workflows/docker.yml'
-      - 'cann/**'
-      - 'arg.json'
-      - 'docker-bake.hcl'
+      - ".github/workflows/docker.yml"
+      - "cann/**"
+      - "arg.json"
+      - "docker-bake.hcl"
   release:
     types:
-      - 'published'
+      - "published"
 
 jobs:
   prepare:
     name: prepare
-    runs-on: linux-x64-azure
+    runs-on: ubuntu-latest
     outputs:
       targets: ${{ steps.list-target.outputs.targets }}
     steps:
@@ -39,7 +36,9 @@ jobs:
         id: list-target
         uses: docker/bake-action/subaction/list-targets@v5
         with:
-          files: arg.json,docker-bake.hcl
+          files: |
+            arg.json
+            docker-bake.hcl
 
   cann:
     name: build ${{ matrix.target }}
@@ -92,14 +91,14 @@ jobs:
           registry: swr.cn-southwest-2.myhuaweicloud.com
           username: ${{ secrets.OPENMIND_USERNAME }}
           password: ${{ secrets.OPENMIND_TOKEN }}
-      
+
       - name: Login to ghcr.io
         if: ${{ github.event_name == 'release' }}
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ github.token }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Extract metadata for Docker
         id: metadata
@@ -132,7 +131,6 @@ jobs:
 
       - name: Upload metadata
         id: upload-artifact
-        if: ${{ inputs.upload-metadata }}
         uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.export.outputs.metadata-file-name }}

@@ -41,4 +41,3 @@ target "cann" {
   }
   tags = generate_tags("cann", "${item.tags}")
 }
-
