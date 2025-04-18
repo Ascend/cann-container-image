@@ -1,0 +1,39 @@
+name: Build CANN Images (8.1.RC1.alpha001)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'cann/8.1.RC1.alpha001/**'
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - 'cann/8.1.RC1.alpha001/**'
+  release:
+    types:
+      - "published"
+    paths:
+      - 'cann/8.1.RC1.alpha001/**'
+
+jobs:
+  run-build:
+    strategy:
+      matrix:
+        include:
+          
+          - name: "8.1.RC1.alpha001-910b-openeuler22.03-py3.10"
+            context: "cann/8.1.RC1.alpha001/910b-openeuler22.03-py3.10"
+            dockerfile: "Dockerfile"
+            tags: "docker.io/ascendai/cann:8.1.RC1.alpha001-910b-openeuler22.03-py3.10,docker.io/ascendai/cann:openeuler-python3.10-cann8.1.RC1.alpha001,quay.io/ascend/cann:8.1.RC1.alpha001-910b-openeuler22.03-py3.10,quay.io/ascend/cann:openeuler-python3.10-cann8.1.RC1.alpha001,swr.cn-southwest-2.myhuaweicloud.com/base_image/cann:8.1.RC1.alpha001-910b-openeuler22.03-py3.10,swr.cn-southwest-2.myhuaweicloud.com/base_image/cann:openeuler-python3.10-cann8.1.RC1.alpha001,swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:8.1.RC1.alpha001-910b-openeuler22.03-py3.10"
+          
+          - name: "8.1.RC1.alpha001-910b-ubuntu22.04-py3.10"
+            context: "cann/8.1.RC1.alpha001/910b-ubuntu22.04-py3.10"
+            dockerfile: "Dockerfile"
+            tags: "docker.io/ascendai/cann:8.1.RC1.alpha001-910b-ubuntu22.04-py3.10,docker.io/ascendai/cann:8.1.RC1.alpha001,docker.io/ascendai/cann:latest,docker.io/ascendai/cann:ubuntu-python3.10-cann8.1.RC1.alpha001,quay.io/ascend/cann:8.1.RC1.alpha001-910b-ubuntu22.04-py3.10,quay.io/ascend/cann:8.1.RC1.alpha001,quay.io/ascend/cann:latest,quay.io/ascend/cann:ubuntu-python3.10-cann8.1.RC1.alpha001,swr.cn-southwest-2.myhuaweicloud.com/base_image/cann:8.1.RC1.alpha001-910b-ubuntu22.04-py3.10,swr.cn-southwest-2.myhuaweicloud.com/base_image/cann:8.1.RC1.alpha001,swr.cn-southwest-2.myhuaweicloud.com/base_image/cann:latest,swr.cn-southwest-2.myhuaweicloud.com/base_image/cann:ubuntu-python3.10-cann8.1.RC1.alpha001,swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:8.1.RC1.alpha001-910b-ubuntu22.04-py3.10"
+          
+    uses: ./.github/workflows/main.yml
+    with:
+      context: ${{ matrix.context }}
+      dockerfile: ${{ matrix.dockerfile }}
+      tags: ${{ matrix.tags }}

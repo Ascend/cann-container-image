@@ -1,0 +1,34 @@
+name: Build CANN Images ({{ cann_version }})
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'cann/{{ cann_version }}/**'
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - 'cann/{{ cann_version }}/**'
+  release:
+    types:
+      - "published"
+    paths:
+      - 'cann/{{ cann_version }}/**'
+
+jobs:
+  run-build:
+    strategy:
+      matrix:
+        include:
+          {% for target in targets %}
+          - name: "{{ target.name }}"
+            context: "{{ target.context }}"
+            dockerfile: "{{ target.dockerfile }}"
+            tags: {{ target.tags | tojson }}
+          {% endfor %}
+    uses: ./.github/workflows/main.yml
+    with:
+      context: {% raw %}${{ matrix.context }}{% endraw %}
+      dockerfile: {% raw %}${{ matrix.dockerfile }}{% endraw %}
+      tags: {% raw %}${{ matrix.tags }}{% endraw %}
