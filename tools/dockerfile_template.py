@@ -55,45 +55,46 @@ def get_cann_download_url(cann_chip, version, nnal_version):
     cann_nnal_url_prefix = f"{nnal_url_prefix}/{nnal_file_prefix}"
     
     return cann_toolkit_url_prefix, cann_kernels_url_prefix, cann_nnal_url_prefix
-    
-def render_and_save(template_name, item):
-    template = env.get_template(template_name)
-    
-    py_installer_package, py_installer_url, py_latest_version = get_python_download_url(item["py_version"])
-    item["py_installer_package"] = py_installer_package
-    item["py_installer_url"] = py_installer_url
-    item["py_latest_version"] = py_latest_version
-    
-    cann_toolkit_url_prefix, cann_kernels_url_prefix, cann_nnal_url_prefix = get_cann_download_url(
-        item["cann_chip"], 
-        item["cann_version"], 
-        item["nnal_version"]
-    )
-    item["cann_toolkit_url_prefix"] = cann_toolkit_url_prefix
-    item["cann_kernels_url_prefix"] = cann_kernels_url_prefix
-    item["cann_nnal_url_prefix"] = cann_nnal_url_prefix
-    
-    rendered_content = template.render(item=item)
-    
-    output_path = os.path.join("cann", item['tags']['common'][0], "Dockerfile")
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, 'w') as f:
-        f.write(rendered_content)
-    print(f"Generated: {output_path}")
 
-def process_args(args, ubuntu_template, openeuler_template):
-    for arg in args["cann"]:
-        if arg["os_name"] == "ubuntu":
-            template = ubuntu_template
+def render_and_save_dockerfile(args, ubuntu_template, openeuler_template):
+    for item in args["cann"]:
+        if item["os_name"] == "ubuntu":
+            template_name = ubuntu_template
         else:
-            template = openeuler_template
-        render_and_save(template, arg)
-
+            template_name = openeuler_template
+        template = env.get_template(template_name)
+        py_installer_package, py_installer_url, py_latest_version = get_python_download_url(item["py_version"])
+        item["py_installer_package"] = py_installer_package
+        item["py_installer_url"] = py_installer_url
+        item["py_latest_version"] = py_latest_version
+        
+        cann_toolkit_url_prefix, cann_kernels_url_prefix, cann_nnal_url_prefix = get_cann_download_url(
+            item["cann_chip"], 
+            item["cann_version"], 
+            item["nnal_version"]
+        )
+        item["cann_toolkit_url_prefix"] = cann_toolkit_url_prefix
+        item["cann_kernels_url_prefix"] = cann_kernels_url_prefix
+        item["cann_nnal_url_prefix"] = cann_nnal_url_prefix
+        
+        rendered_content = template.render(item=item)
+        
+        output_path = os.path.join(
+            "cann",
+            f"{item['cann_version']}-{item['cann_chip']}-{item['os_name']}{item['os_version']}-py{item['py_version']}",
+            "Dockerfile"
+        )
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, "w") as f:
+            f.write(rendered_content)
+        print(f"Generated: {output_path}")
+        
 def main():  
     with open('arg.json', 'r') as f:
         args = json.load(f)
-    process_args(args, 'ubuntu.Dockerfile.j2', 'openeuler.Dockerfile.j2')
+    render_and_save_dockerfile(args, "ubuntu.Dockerfile.j2", "openeuler.Dockerfile.j2")
 
 
 if __name__ == "__main__":
     main()
+

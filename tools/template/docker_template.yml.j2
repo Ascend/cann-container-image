@@ -1,0 +1,42 @@
+name: cann_{{ target.os_name }}_based
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'cann/{{ cann_file }}/**'
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - 'cann/{{ cann_file }}/**'
+  release:
+    types:
+      - "published"
+    paths:
+      - 'cann/{{ cann_file }}/**'
+
+jobs:
+  run-build:
+    name: Build and push {{ target.name }} Image
+    uses: ./.github/workflows/main.yml
+    with:
+        target_name: {{ target.name }}
+        context: {{ target.context }}
+        dockerfile: {{ target.dockerfile }}
+        repos: |
+          {% for repo in repos %}
+          {{ repo }}
+          {% endfor %}
+        ascendhub_repo: {{ ascendhub_repo }}
+        common_registry_tags: |
+          {% for tag in target.common_registry_tags %}
+          {{ tag }}
+          {% endfor %}
+        ascendhub_registry_tags: |
+          {% for tag in target.ascendhub_registry_tags %}
+          {{ tag }}
+          {% endfor %}
+        event_name: {% raw %}${{ github.event_name }}{% endraw %}
+    secrets: inherit
+
