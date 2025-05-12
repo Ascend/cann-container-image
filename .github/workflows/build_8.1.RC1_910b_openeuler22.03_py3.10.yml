@@ -28,14 +28,10 @@ jobs:
           
           docker.io/ascendai/cann
           
-          quay.io/ascend/cann
-          
         ascendhub_repo: swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann
         common_registry_tags: |
           
           docker.io/ascendai/cann:8.1.rc1-910b-openeuler22.03-py3.10
-          
-          quay.io/ascend/cann:8.1.rc1-910b-openeuler22.03-py3.10
           
         ascendhub_registry_tags: |
           
