@@ -67,7 +67,28 @@ jobs:
         run: |
             COMMON_TAGS_ARRAY=($(echo "${{ inputs.common_registry_tags }}" | sed '/^$/d'))
             ASCENDHUB_TAGS_ARRAY=($(echo "${{ inputs.ascendhub_registry_tags }}" | sed '/^$/d'))
+            SOURCE_IMAGE="docker.io/ascendai/cann"
+            SOURCE_TAG="${COMMON_TAGS_ARRAY[0]#*:}"
+
+            TOKEN=$(curl -s "https://auth.docker.io/token?service=registry.docker.io&scope=repository:${SOURCE_IMAGE#docker.io/}:pull" | jq -r .token)
+            
+            MANIFEST_LIST=$(curl -s \
+            -H "Accept: application/vnd.docker.distribution.manifest.list.v2+json" \
+            -H "Authorization: Bearer $TOKEN" \
+            "https://registry-1.docker.io/v2/${SOURCE_IMAGE#docker.io/}/manifests/$SOURCE_TAG")
+            DIGESTS=()
+
+            for ARCH in "amd64" "arm64"; do
+              DIGEST=$(echo "$MANIFEST_LIST" | jq -r --arg arch "$ARCH" '.manifests[] | select(.platform.architecture == $arch) | .digest')
+              if [ -n "$DIGEST" ]; then
+                DIGESTS+=("$SOURCE_IMAGE@$DIGEST")
+              fi
+            done
+
             for TAG in "${ASCENDHUB_TAGS_ARRAY[@]}"; do
-              docker buildx imagetools create -t "$TAG" "${COMMON_TAGS_ARRAY[0]}"
+              echo "Pushing $TAG with ${#DIGESTS[@]} architectures..."
+              docker buildx imagetools create \
+                --tag "$TAG" \
+                "${DIGESTS[@]}"
             done
 
