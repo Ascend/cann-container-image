@@ -3,8 +3,6 @@ name: cann_openeuler_based
 on:
   workflow_dispatch:
   push:
-    paths:
-      - 'cann/8.1.RC1-910b-openeuler22.03-py3.10/**'
   pull_request:
     branches:
       - "main"

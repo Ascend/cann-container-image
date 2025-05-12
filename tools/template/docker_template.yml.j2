@@ -3,8 +3,6 @@ name: cann_{{ target.os_name }}_based
 on:
   workflow_dispatch:
   push:
-    paths:
-      - 'cann/{{ cann_file }}/**'
   pull_request:
     branches:
       - "main"

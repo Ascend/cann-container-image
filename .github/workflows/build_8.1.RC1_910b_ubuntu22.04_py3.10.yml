@@ -3,8 +3,6 @@ name: cann_ubuntu_based
 on:
   workflow_dispatch:
   push:
-    paths:
-      - 'cann/8.1.RC1-910b-ubuntu22.04-py3.10/**'
   pull_request:
     branches:
       - "main"
