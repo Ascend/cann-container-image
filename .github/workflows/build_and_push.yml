@@ -24,14 +24,14 @@ on:
 
 jobs:
   only-build:
-    name: build ${{ inputs.cann_tag }}(${{ matrix.arch }})
+    name: build ${{ inputs.cann_tag }}
     if: ${{ !inputs.publish }} 
     runs-on: ${{ matrix.runner }}
     strategy:
       matrix:
         include:
           - arch: x86_64
-            runner: linux_x86_64
+            runner: linux-x86_64
           - arch: aarch64
             runner: ubuntu-22.04-arm
     steps:
@@ -51,14 +51,14 @@ jobs:
           outputs: type=image
 
   build-push-digest:
-    name: build ${{ inputs.cann_tag }}(${{ matrix.arch }})
+    name: build ${{ inputs.cann_tag }}
     if: ${{ inputs.publish }}
     runs-on: ${{ matrix.runner }}
     strategy:
       matrix:
         include:
           - arch: x86_64
-            runner: linux_x86_64
+            runner: linux-x86_64
           - arch: aarch64
             runner: ubuntu-22.04-arm
     steps:
