@@ -30,7 +30,7 @@ jobs:
         run: |
           MATRIX=$(jq -c '.cann | map({target: .tags[0],
               arches: [
-                {arch: "x86_64", runner: "linux_x86_64_wxs"},
+                {arch: "x86_64", runner: "linux_x86_64"},
                 {arch: "aarch64", runner: "ubuntu-22.04-arm"}
               ]
             }) | {include: [.[] | .arches[] as $arch | {target: .target, arch: $arch.arch, runner: $arch.runner}]}' build_arg.json)
