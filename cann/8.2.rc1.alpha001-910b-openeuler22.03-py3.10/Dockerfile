@@ -76,9 +76,9 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
     CANN_TOOLKIT_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C22B800TP013/Ascend-cann-toolkit_8.2.RC1.alpha001_linux-${ARCH}.run && \
     CANN_KERNELS_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C22B800TP013/Ascend-cann-kernels-910b_8.2.RC1.alpha001_linux-${ARCH}.run && \
     CANN_NNAL_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C22B800TP013/Ascend-cann-nnal_8.2.RC1.alpha001_linux-${ARCH}.run && \
-    curl -fsSL --retry 10 --retry-delay 20  ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
-    curl -fsSL --retry 10 --retry-delay 20  ${CANN_KERNELS_URL} -O ~/Ascend-cann-kernels.run && \
-    curl -fsSL --retry 10 --retry-delay 20  ${CANN_NNAL_URL} -O ~/Ascend-cann-nnal.run
+    wget --no-verbose --timeout=30 --tries=10 --retry-connrefused ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
+    wget --no-verbose --timeout=30 --tries=10 --retry-connrefused ${CANN_KERNELS_URL} -O ~/Ascend-cann-kernels.run && \
+    wget --no-verbose --timeout=30 --tries=10 --retry-connrefused ${CANN_NNAL_URL} -O ~/Ascend-cann-nnal.run
 
 # Note: Install CANN Toolkit Development Kit Package
 RUN chmod +x ~/Ascend-cann-toolkit.run && \
