@@ -183,12 +183,12 @@ jobs:
           readarray -t TAGS_ARRAY <<< "$(echo "$TAGS" | jq -r '.[]')"
 
           for TAG in "${TAGS_ARRAY[@]}"; do
-            if [[ "$TAG" == *"quay.io/ascendai/cann"* ]]; then
+            if [[ "$TAG" == *"docker.io/ascendai/cann"* ]]; then
               docker buildx imagetools create -t "$TAG" \
-                $(printf 'quay.io/ascendai/cann@sha256:%s ' *)
-            elif [[ "$TAG" == *"docker.io/ascend/cann"* ]]; then
+                $(printf 'docker.io/ascendai/cann@sha256:%s ' *)
+            elif [[ "$TAG" == *"quay.io/ascend/cann"* ]]; then
               docker buildx imagetools create -t "$TAG" \
-                $(printf 'docker.io/ascend/cann@sha256:%s ' *)
+                $(printf 'quay.io/ascend/cann@sha256:%s ' *)
             elif [[ "$TAG" == *"swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann"* ]]; then
               docker buildx imagetools create -t "$TAG" \
                 $(printf 'swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann@sha256:%s ' *)
