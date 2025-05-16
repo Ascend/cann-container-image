@@ -56,3 +56,4 @@ jobs:
           file: ${{ github.workspace }}/cann/${{ matrix.target }}/Dockerfile
           context: ${{ github.workspace }}/cann/${{ matrix.target }}
           outputs: type=image
+          provenance: false

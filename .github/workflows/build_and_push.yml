@@ -49,6 +49,7 @@ jobs:
           file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}/Dockerfile
           context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}
           outputs: type=image
+          provenance: false
 
   build-push-digest:
     name: build ${{ inputs.cann_tag }}
