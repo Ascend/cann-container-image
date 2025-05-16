@@ -24,7 +24,7 @@ on:
 
 jobs:
   only-build:
-    name: build ${{ inputs.cann_tag }}
+    name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
     if: ${{ !inputs.publish }} 
     runs-on: ${{ matrix.runner }}
     strategy:
@@ -52,7 +52,7 @@ jobs:
           provenance: false
 
   build-push-digest:
-    name: build ${{ inputs.cann_tag }}
+    name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
     if: ${{ inputs.publish }}
     runs-on: ${{ matrix.runner }}
     strategy:
