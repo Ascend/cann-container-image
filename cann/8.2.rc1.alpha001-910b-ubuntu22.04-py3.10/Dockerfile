@@ -28,7 +28,7 @@ RUN apt-get update \
     && rm -rf /tmp/*
 
 # Install Python
-RUN curl -fsSL https://repo.huaweicloud.com/python/3.10.17/Python-3.10.17.tgz -o /tmp/Python-3.10.17.tgz && \
+RUN curl -fsSL https://repo.huaweicloud.com/python/3.10.17\Python-3.10.17.tgz -o /tmp/Python-3.10.17.tgz && \
     tar -xf /tmp/Python-3.10.17.tgz -C /tmp && \
     cd /tmp/Python-3.10.17 && \
     mkdir -p /usr/local/python3.10.17/lib && \
