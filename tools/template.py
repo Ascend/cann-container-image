@@ -13,7 +13,8 @@ ALPHA_DICT = {
     "8.0.RC3.alpha002": "V100R001C19SPC702",
     "8.1.RC1.alpha001": "V100R001C21B800TP034",
     "8.1.RC1.alpha002": "V100R001C21B800TP051",
-    "8.2.RC1.alpha001": "V100R001C22B800TP013"
+    "8.2.RC1.alpha001": "V100R001C22B800TP013",
+    "8.2.RC1.alpha002": "V100R001C22B800TP020"
 }
 
 env = Environment(loader=FileSystemLoader('tools/template'))

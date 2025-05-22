@@ -19,11 +19,9 @@
         -	installed packages, creation date, architecture, environment variables, detected licenses, etc.
 
 # Supported tags and respective `Dockerfile` links
-
--	[`8.1.RC1.alpha001-910b-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha001-910b-openeuler22.03-py3.10/Dockerfile)
--	[`8.1.RC1.alpha001-910b-ubuntu22.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha001-910b-ubuntu22.04-py3.10/Dockerfile)
--	[`8.1.RC1.alpha002-910b-openeuler24.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha002-910b-openeuler24.03-py3.10/Dockerfile)
--	[`8.1.RC1.alpha002-910b-ubuntu24.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha002-910b-ubuntu24.04-py3.10/Dockerfile)
+You can find the currently released tags and corresponding dockerfiles in the cann directory of the repository:
+<br>
+https://github.com/Ascend/cann-container-image/blob/main/cann
 
 # What is CANN?
 
@@ -59,7 +57,7 @@ Run the following command in the root directory:
 ```docker
 docker build \
     -t ascendai/cann:latest \
-    -f cann/tag/dockerfile
+    -f cann/tag/dockerfile .
 ```
 
 # License

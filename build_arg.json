@@ -1,13 +1,25 @@
 {
     "cann": [
         {
-            "cann_version": "8.1.RC1",
+            "cann_version": "8.2.RC1.alpha002",
             "cann_chip": "910b",
-            "os_name": "openeuler",
-            "os_version": "24.03",
+            "os_name": "ubuntu",
+            "os_version": "22.04",
             "py_version": "3.10",
             "tags": [
-                "8.1.rc1-910b-openeuler24.03-py3.10"
+                "8.2.rc1.alpha002-910b-ubuntu22.04-py3.10",
+                "8.2.rc1.alpha002",
+                "latest"
+            ]
+        },
+        {
+            "cann_version": "8.2.RC1.alpha002",
+            "cann_chip": "910b",
+            "os_name": "openeuler",
+            "os_version": "22.03",
+            "py_version": "3.10",
+            "tags": [
+                "8.2.rc1.alpha002-910b-openeuler22.03-py3.10"
             ]
         }
     ]
