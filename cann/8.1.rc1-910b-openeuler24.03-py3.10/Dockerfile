@@ -165,8 +165,13 @@ COPY --from=cann-installer /etc/Ascend /etc/Ascend
 
 # Note: Set environment variables
 RUN \
-    echo CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/include/c++/12:/usr/include/c++/12/`uname -i`-openEuler-linux" >> /etc/profile && \
-    echo CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/include/c++/12:/usr/include/c++/12/`uname -i`-openEuler-linux" >> ~/.bashrc && \
+    ARCH=$(case "${TARGETPLATFORM}" in \
+        "linux/amd64") echo "x86_64" ;; \
+        "linux/arm64") echo "aarch64" ;; \
+        *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
+    esac) && \
+    echo CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/include/c++/12:/usr/include/c++/12/${ARCH}-openEuler-linux" >> /etc/profile && \
+    echo CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/include/c++/12:/usr/include/c++/12/${ARCH}-openEuler-linux" >> ~/.bashrc && \
     CANN_TOOLKIT_ENV_FILE="/usr/local/Ascend/ascend-toolkit/set_env.sh" && \
     CANN_NNAL_ENV_FILE="/usr/local/Ascend/nnal/atb/set_env.sh" && \
     echo "source ${CANN_TOOLKIT_ENV_FILE}" >> /etc/profile && \
