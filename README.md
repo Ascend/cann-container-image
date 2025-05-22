@@ -1,43 +1,30 @@
-# Quick reference
+## Quick reference
+- The offical Ascend CANN docker images
+- Where to get help: [Ascend Community](https://www.hiascend.com/forum/)
 
--	**Where to get help**:  
-	[Ascend Community](https://www.hiascend.com/forum/)
+## CANN
+CANN (Compute Architecture for Neural Networks) is a heterogeneous computing architecture launched by Ascend for AI scenarios. It supports multiple AI frameworks and serves AI processors and programming. It plays a key role in connecting the upper and lower levels and is a key platform for improving the computing efficiency of Ascend AI processors. At the same time, it provides efficient and easy-to-use programming interfaces for diverse application scenarios, supporting users to quickly build AI applications and businesses based on the Ascend platform.<br>
+<br>
+Ascend-CANN image is based on Ubuntu OS or openEuler OS, and integrates system packages, Python and CANN (Toolkit development kit package, Kernels operator package, NNAL acceleration library). Users can install the artificial intelligence framework based on this basic image according to actual needs and run the corresponding business programs.
 
--	**Where to file issues**:  
-	https://github.com/Ascend/cann-container-image/issues
+## Supported tags and respective Dockerfile links
+The tag of each Ascend CANN docker image is consist of the version of CANN and the version of basic image. The details are as follows
 
--	**Published image artifact details**:  
-    -	the `remote` directory:
-        -	gathered from the [AscendHub](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884)/[DockerHub](https://hub.docker.com/r/ascendai/cann/tags)/[Quay.io](https://quay.io/repository/ascend/cann?tab=tags)
-
-        -	image digests/blobs, transfer sizes, image metadata, etc.
-
-    -	the `local` directory:
-
-        -	inspected from the image on-disk after it is pulled
-
-        -	installed packages, creation date, architecture, environment variables, detected licenses, etc.
-
-# Supported tags and respective `Dockerfile` links
-
--	[`8.1.RC1.alpha001-910b-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha001-910b-openeuler22.03-py3.10/Dockerfile)
--	[`8.1.RC1.alpha001-910b-ubuntu22.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha001-910b-ubuntu22.04-py3.10/Dockerfile)
 -	[`8.1.RC1.alpha002-910b-openeuler24.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha002-910b-openeuler24.03-py3.10/Dockerfile)
 -	[`8.1.RC1.alpha002-910b-ubuntu24.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha002-910b-ubuntu24.04-py3.10/Dockerfile)
-
-# What is CANN?
-
-CANN (Compute Architecture for Neural Networks) is a heterogeneous computing architecture launched by Ascend for AI scenarios. It supports multiple AI frameworks and serves AI processors and programming. It plays a key role in connecting the upper and lower levels and is a key platform for improving the computing efficiency of Ascend AI processors. At the same time, it provides efficient and easy-to-use programming interfaces for diverse application scenarios, supporting users to quickly build AI applications and businesses based on the Ascend platform.
-
-## Online Documentation
-
-You can find the latest CANN documentation, including a programming guide, on the [project web page](https://www.hiascend.com/software/cann). This README file only contains basic setup instructions.
+-	[`8.1.RC1.alpha001-910b-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha001-910b-openeuler22.03-py3.10/Dockerfile)
+-	[`8.1.RC1.alpha001-910b-ubuntu22.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha001-910b-ubuntu22.04-py3.10/Dockerfile)
 
 ## Usage
 
-Assuming your NPU device is mounted at `/dev/davinci1` and your NPU driver is installed at `/usr/local/Ascend`:
+### Quick start 1: supported devices
+- Atlas A2 Training series (Atlas 800T A2, Atlas 900 A2 PoD, Atlas 200T A2 Box16, Atlas 300T A2)
+- Atlas 800I A2 Inference series (Atlas 800I A2)
 
-```docker
+### Quick start 2: setup environment using container
+
+```bash
+# Assuming your NPU device is mounted at /dev/davinci1 and your NPU driver is installed at /usr/local/Ascend:
 docker run \
     --name cann_container \
     --device /dev/davinci1 \
@@ -49,23 +36,25 @@ docker run \
     -v /usr/local/Ascend/driver/lib64/:/usr/local/Ascend/driver/lib64/ \
     -v /usr/local/Ascend/driver/version.info:/usr/local/Ascend/driver/version.info \
     -v /etc/ascend_install.info:/etc/ascend_install.info \
-    -it ascendai/cann:latest bash
+    -it ascend/cann:tag bash
 ```
 
-## Build
+### Note:
+Configure the abi parameter when executing the CANN environment variable script `/usr/local/Ascend/nnal/atb/set_env.sh`:<br>
+<br>
+**Automatic configuration**: When executing the set_env.sh script, if no parameters are added and the PyTorch environment has been detected, the `torch.compiled_with_cxx11_abi()` interface will be automatically called to automatically select the abi parameter when PyTorch is compiled as the abi parameter of ATB. If the PyTorch environment is not detected, abi=1 is configured by default.<br>
+<br>
+**Manual configuration**: When executing `set_env.sh`, users are supported to specify the abi parameter of ATB through the `--cxx_abi=1` and `--cxx_abi=0` parameters.<br>
+<br>
+In CANN 8.1.RC1.alpha002 and later versions of the image, use ENV to define ATB's `abi=1` (by default, it is processed as if no PyTorch environment is detected), and re-source `/usr/local/Ascend/nnal/atb/set_env.sh` when starting the container in Bash Shell mode to ensure that the value of the abi parameter is correct. However, if you start the container in other ways, the value of abi is 1. If it does not meet the requirements, you can manually specify the abi parameter value of ATB.
 
-Run the following command in the root directory:
+## Question and answering
+If you don't find the CANN image you want or find any problems when using the image, please feel free to file an [issue](https://github.com/Ascend/cann-container-image/issues).
 
-```docker
-docker build \
-    -t ascendai/cann:latest \
-    -f cann/tag/dockerfile
-```
 
-# License
+## License
+[Apache License, Version 2.0](https://github.com/Ascend/cann-container-image/blob/main/LICENSE)
 
-Licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+As with all Docker images, these images may also contain other software that may be subject to other licenses (such as Bash in the base distribution, and any direct or indirect dependencies of the included main software).
 
-As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
-
-As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
+For any use of the pre-built image, it is the image user's responsibility to ensure that any use of this image complies with the relevant licenses of all software contained in it.

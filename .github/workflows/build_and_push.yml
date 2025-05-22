@@ -198,3 +198,30 @@ jobs:
               exit 1
             fi
           done
+
+  push-readme:
+    name: Push README
+    runs-on: ubuntu-latest
+    needs: push-image
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Push README to DockerHub
+        uses: christian-korneck/update-container-description-action@v1
+        env:
+          DOCKER_USER: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASS: ${{ secrets.DOCKER_TOKEN }}
+        with:
+          destination_container_repo: ascendai/cann
+          provider: dockerhub
+          readme_file: 'README.md'
+
+      - name: Push README to Quay.io
+        uses: christian-korneck/update-container-description-action@v1
+        env:
+          DOCKER_APIKEY: ${{ secrets.APIKEY__QUAY_IO }}
+        with:
+          destination_container_repo: quay.io/ascend/cann
+          provider: quay
+          readme_file: 'README.md'
