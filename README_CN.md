@@ -9,7 +9,13 @@ Ascend-CANN镜像，基于Ubuntu OS或openEuler OS，内部集成系统包、Pyt
 
 ## 支持的tags和相应的Dockerfile链接
 每个CANN镜像的tag由CANN版本号和基础镜像版本号组成，具体如下
-
+-	[`8.2.rc1.alpha001-910b-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.2.rc1.alpha001-910b-openeuler22.03-py3.10/Dockerfile)
+-	[`8.2.rc1.alpha001-910b-ubuntu22.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.2.rc1.alpha001-910b-ubuntu22.04-py3.10/Dockerfile)
+-	[`8.1.rc1-a3-ubuntu22.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.rc1-a3-ubuntu22.04-py3.10/Dockerfile)
+-	[`8.1.rc1-a3-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.rc1-a3-openeuler22.03-py3.10/Dockerfile)
+-	[`8.1.rc1-910b-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.rc1-910b-openeuler22.03-py3.10/Dockerfile)
+-	[`8.1.rc1-910b-openeuler24.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.rc1-910b-openeuler24.03-py3.10/Dockerfile)
+-	[`8.1.rc1-910b-ubuntu22.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.rc1-910b-ubuntu22.04-py3.10/Dockerfile)
 -	[`8.1.RC1.alpha002-910b-openeuler24.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha002-910b-openeuler24.03-py3.10/Dockerfile)
 -	[`8.1.RC1.alpha002-910b-ubuntu24.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha002-910b-ubuntu24.04-py3.10/Dockerfile)
 -	[`8.1.RC1.alpha001-910b-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha001-910b-openeuler22.03-py3.10/Dockerfile)
@@ -45,7 +51,7 @@ docker run \
 <br>
 **手动配置**：执行set_env.sh时，支持用户通过`--cxx_abi=1`和`--cxx_abi=0`参数指定ATB的abi参数。<br>
 <br>
-在CANN 8.1.RC1.alpha002及以后版本的镜像中，使用ENV定义ATB的`abi=1`(默认按照没有检测到PyTorch环境处理)，并在以Bash Shell方式启动容器时`source /usr/local/Ascend/nnal/atb/set_env.sh`，确保abi参数的值正确。但若您以其他方式启动容器，abi的值为1，若不满足要求，您可手动自行指定ATB的abi参数值。
+在CANN 8.1.RC1及以后版本的镜像中，使用ENV定义ATB的`abi=0`，并将`source /usr/local/Ascend/nnal/atb/set_env.sh`写入bashrc和ENTRYPOINT，确保abi参数的值正确。您也可在容器中手动自行指定ATB的abi参数值。
 
 ## 问答
 若您没有找到想要的CANN镜像或者在使用镜像时发现任何问题，请随时向我们提出[issue](https://github.com/Ascend/cann-container-image/issues)。

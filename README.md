@@ -10,6 +10,13 @@ Ascend-CANN image is based on Ubuntu OS or openEuler OS, and integrates system p
 ## Supported tags and respective Dockerfile links
 The tag of each Ascend CANN docker image is consist of the version of CANN and the version of basic image. The details are as follows
 
+-	[`8.2.rc1.alpha001-910b-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.2.rc1.alpha001-910b-openeuler22.03-py3.10/Dockerfile)
+-	[`8.2.rc1.alpha001-910b-ubuntu22.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.2.rc1.alpha001-910b-ubuntu22.04-py3.10/Dockerfile)
+-	[`8.1.rc1-a3-ubuntu22.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.rc1-a3-ubuntu22.04-py3.10/Dockerfile)
+-	[`8.1.rc1-a3-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.rc1-a3-openeuler22.03-py3.10/Dockerfile)
+-	[`8.1.rc1-910b-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.rc1-910b-openeuler22.03-py3.10/Dockerfile)
+-	[`8.1.rc1-910b-openeuler24.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.rc1-910b-openeuler24.03-py3.10/Dockerfile)
+-	[`8.1.rc1-910b-ubuntu22.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.rc1-910b-ubuntu22.04-py3.10/Dockerfile)
 -	[`8.1.RC1.alpha002-910b-openeuler24.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha002-910b-openeuler24.03-py3.10/Dockerfile)
 -	[`8.1.RC1.alpha002-910b-ubuntu24.04-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha002-910b-ubuntu24.04-py3.10/Dockerfile)
 -	[`8.1.RC1.alpha001-910b-openeuler22.03-py3.10`](https://github.com/Ascend/cann-container-image/blob/main/cann/8.1.RC1.alpha001-910b-openeuler22.03-py3.10/Dockerfile)
@@ -46,11 +53,10 @@ Configure the abi parameter when executing the CANN environment variable script 
 <br>
 **Manual configuration**: When executing `set_env.sh`, users are supported to specify the abi parameter of ATB through the `--cxx_abi=1` and `--cxx_abi=0` parameters.<br>
 <br>
-In CANN 8.1.RC1.alpha002 and later versions of the image, use ENV to define ATB's `abi=1` (by default, it is processed as if no PyTorch environment is detected), and re-source `/usr/local/Ascend/nnal/atb/set_env.sh` when starting the container in Bash Shell mode to ensure that the value of the abi parameter is correct. However, if you start the container in other ways, the value of abi is 1. If it does not meet the requirements, you can manually specify the abi parameter value of ATB.
+In CANN 8.1.RC1 and later versions of the image, use ENV to define ATB's `abi=0`, and write `source /usr/local/Ascend/nnal/atb/set_env.sh` to bashrc and ENTRYPOINT to ensure that the value of the abi parameter is correct. You can also manually specify the abi parameter value of ATB in the container.
 
 ## Question and answering
 If you don't find the CANN image you want or find any problems when using the image, please feel free to file an [issue](https://github.com/Ascend/cann-container-image/issues).
-
 
 ## License
 [Apache License, Version 2.0](https://github.com/Ascend/cann-container-image/blob/main/LICENSE)

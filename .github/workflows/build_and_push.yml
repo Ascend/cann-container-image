@@ -200,7 +200,6 @@ jobs:
           done
 
   push-readme:
-    name: Push README
     runs-on: ubuntu-latest
     needs: push-image
     steps:
