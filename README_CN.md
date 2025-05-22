@@ -51,7 +51,7 @@ docker run \
 <br>
 **手动配置**：执行set_env.sh时，支持用户通过`--cxx_abi=1`和`--cxx_abi=0`参数指定ATB的abi参数。<br>
 <br>
-在CANN 8.1.RC1及以后版本的镜像中，使用ENV定义ATB的`abi=0`，并将`source /usr/local/Ascend/nnal/atb/set_env.sh`写入bashrc和ENTRYPOINT，确保abi参数的值正确。您也可在容器中手动自行指定ATB的abi参数值。
+在CANN 8.1.RC1及以后版本的镜像中，使用ENV定义ATB的`abi=0`，并将`source /usr/local/Ascend/nnal/atb/set_env.sh`写入bashrc和ENTRYPOINT，确保启动容器时abi参数的值被正确设置。您也可在容器中手动自行指定ATB的abi参数值。
 
 ## 问答
 若您没有找到想要的CANN镜像或者在使用镜像时发现任何问题，请随时向我们提出[issue](https://github.com/Ascend/cann-container-image/issues)。

@@ -53,7 +53,7 @@ Configure the abi parameter when executing the CANN environment variable script 
 <br>
 **Manual configuration**: When executing `set_env.sh`, users are supported to specify the abi parameter of ATB through the `--cxx_abi=1` and `--cxx_abi=0` parameters.<br>
 <br>
-In CANN 8.1.RC1 and later versions of the image, use ENV to define ATB's `abi=0`, and write `source /usr/local/Ascend/nnal/atb/set_env.sh` to bashrc and ENTRYPOINT to ensure that the value of the abi parameter is correct. You can also manually specify the abi parameter value of ATB in the container.
+In CANN 8.1.RC1 and later versions of the image, use ENV to define ATB's `abi=0`, and write `source /usr/local/Ascend/nnal/atb/set_env.sh` to bashrc and ENTRYPOINT to ensure that the value of the abi parameter is set correctly when starting the container. You can also manually specify the abi parameter value of ATB in the container.
 
 ## Question and answering
 If you don't find the CANN image you want or find any problems when using the image, please feel free to file an [issue](https://github.com/Ascend/cann-container-image/issues).
