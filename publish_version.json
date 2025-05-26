@@ -40,6 +40,18 @@
       ]
     },
     {
+      "path": "cann/8.1.rc1-310p-ubuntu22.04-py3.10",
+      "tags": [
+          "8.1.rc1-310p-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/8.1.rc1-310p-openeuler22.03-py3.10",
+      "tags": [
+          "8.1.rc1-310p-openeuler22.03-py3.10"
+      ]
+    },
+    {
       "path": "cann/8.1.rc1-910b-ubuntu22.04-py3.10",
       "tags": [
           "8.1.rc1-910b-ubuntu22.04-py3.10",

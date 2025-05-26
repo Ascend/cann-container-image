@@ -1,8 +1,8 @@
 # Stage 1: Install Python
-FROM openeuler/openeuler:{{ item.os_version }} AS python-installer
+FROM openeuler/openeuler:22.03 AS python-installer
 
 # Python Environment variables
-ENV PATH=/usr/local/python{{ item.py_latest_version }}/bin:${PATH}
+ENV PATH=/usr/local/python3.10.17/bin:${PATH}
 
 RUN yum update -y && \
     yum install -y \
@@ -30,17 +30,17 @@ RUN yum update -y && \
     && rm -rf /tmp/*
 
 # Install Python
-RUN curl -fsSL {{ item.py_installer_url }} -o /tmp/{{ item.py_installer_package }}.tgz && \
-    tar -xf /tmp/{{ item.py_installer_package }}.tgz -C /tmp && \
-    cd /tmp/{{ item.py_installer_package }} && \
-    mkdir -p /usr/local/python{{ item.py_latest_version }}/lib && \
-    ./configure --enable-shared --enable-shared LDFLAGS="-Wl,-rpath /usr/local/python{{ item.py_latest_version }}/lib" --prefix=/usr/local/python{{ item.py_latest_version }} && \
+RUN curl -fsSL https://repo.huaweicloud.com/python/3.10.17/Python-3.10.17.tgz -o /tmp/Python-3.10.17.tgz && \
+    tar -xf /tmp/Python-3.10.17.tgz -C /tmp && \
+    cd /tmp/Python-3.10.17 && \
+    mkdir -p /usr/local/python3.10.17/lib && \
+    ./configure --enable-shared --enable-shared LDFLAGS="-Wl,-rpath /usr/local/python3.10.17/lib" --prefix=/usr/local/python3.10.17 && \
     make -j $(nproc) && \
     make altinstall && \
-    ln -sf /usr/local/python{{ item.py_latest_version }}/bin/python{{ item.py_version }} /usr/local/python{{ item.py_latest_version }}/bin/python3 && \
-    ln -sf /usr/local/python{{ item.py_latest_version }}/bin/pip{{ item.py_version }} /usr/local/python{{ item.py_latest_version }}/bin/pip3 && \
-    ln -sf /usr/local/python{{ item.py_latest_version }}/bin/python3 /usr/local/python{{ item.py_latest_version }}/bin/python && \
-    ln -sf /usr/local/python{{ item.py_latest_version }}/bin/pip3 /usr/local/python{{ item.py_latest_version }}/bin/pip && \
+    ln -sf /usr/local/python3.10.17/bin/python3.10 /usr/local/python3.10.17/bin/python3 && \
+    ln -sf /usr/local/python3.10.17/bin/pip3.10 /usr/local/python3.10.17/bin/pip3 && \
+    ln -sf /usr/local/python3.10.17/bin/python3 /usr/local/python3.10.17/bin/python && \
+    ln -sf /usr/local/python3.10.17/bin/pip3 /usr/local/python3.10.17/bin/pip && \
     rm -rf /tmp/*
 
 # Stage 2: Install CANN
@@ -73,9 +73,9 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
         "linux/arm64") echo "aarch64" ;; \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
-    CANN_TOOLKIT_URL={{ item.cann_toolkit_url_prefix }}-${ARCH}.run && \
-    CANN_KERNELS_URL={{ item.cann_kernels_url_prefix }}-${ARCH}.run && \
-    CANN_NNAL_URL={{ item.cann_nnal_url_prefix }}-${ARCH}.run && \
+    CANN_TOOLKIT_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.1.RC1/Ascend-cann-toolkit_8.1.RC1_linux-${ARCH}.run && \
+    CANN_KERNELS_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.1.RC1/Ascend-cann-kernels-310p_8.1.RC1_linux-${ARCH}.run && \
+    CANN_NNAL_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.1.RC1/Ascend-cann-nnal_8.1.RC1_linux-${ARCH}.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_KERNELS_URL} -O ~/Ascend-cann-kernels.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_NNAL_URL} -O ~/Ascend-cann-nnal.run
@@ -97,10 +97,10 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     rm -f ~/Ascend-cann-nnal.run
     
 # Stage 3: Copy results from previous stages
-FROM openeuler/openeuler:{{ item.os_version }} AS official-openeuler
+FROM openeuler/openeuler:22.03 AS official-openeuler
 
 # Python Environment variables
-ENV PATH=/usr/local/python{{ item.py_latest_version }}/bin:${PATH}
+ENV PATH=/usr/local/python3.10.17/bin:${PATH}
 
 # Note: Toolkit Environment variables, obtained from /usr/local/Ascend/ascend-toolkit/set_env.sh
 ENV ASCEND_TOOLKIT_HOME=/usr/local/Ascend/ascend-toolkit/latest
@@ -163,7 +163,7 @@ RUN yum update -y && \
     && rm -rf /var/cache/yum \
     && rm -rf /tmp/*
 
-COPY --from=cann-installer /usr/local/python{{ item.py_latest_version }} /usr/local/python{{ item.py_latest_version }}
+COPY --from=cann-installer /usr/local/python3.10.17 /usr/local/python3.10.17
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
 COPY --from=cann-installer /etc/Ascend /etc/Ascend
 
@@ -180,4 +180,3 @@ ENTRYPOINT ["/bin/bash", "-c", "\
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     source /usr/local/Ascend/nnal/atb/set_env.sh && \
     exec \"$@\"", "--"]
-
