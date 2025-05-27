@@ -6,7 +6,7 @@ on:
       cann_tag:
         description: 'CANN unique tag'
         required: true
-        default: '8.1.rc1-310p-ubuntu22.04-py3.10'
+        default: '8.1.rc1-910b-ubuntu22.04-py3.11'
         type: choice
         options:
           - 8.2.rc1.alpha002-910b-ubuntu22.04-py3.10
@@ -14,13 +14,18 @@ on:
           - 8.2.rc1.alpha001-910b-ubuntu22.04-py3.10
           - 8.2.rc1.alpha001-910b-openeuler22.03-py3.10
           - 8.1.rc1-a3-ubuntu22.04-py3.10
+          - 8.1.rc1-a3-ubuntu22.04-py3.11
           - 8.1.rc1-a3-openeuler22.03-py3.10
+          - 8.1.rc1-a3-openeuler22.03-py3.11
           - 8.1.rc1-310p-ubuntu22.04-py3.10
+          - 8.1.rc1-310p-ubuntu22.04-py3.11
           - 8.1.rc1-310p-openeuler22.03-py3.10
+          - 8.1.rc1-310p-openeuler22.03-py3.11
           - 8.1.rc1-910b-ubuntu22.04-py3.10
+          - 8.1.rc1-910b-ubuntu22.04-py3.11
           - 8.1.rc1-910b-openeuler22.03-py3.10
+          - 8.1.rc1-910b-openeuler22.03-py3.11
           - 8.1.rc1-910b-openeuler24.03-py3.10
-
       publish:
         description: 'Publish the image'
         default: false
