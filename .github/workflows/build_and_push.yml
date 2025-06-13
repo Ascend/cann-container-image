@@ -101,6 +101,13 @@ jobs:
           registry: swr.cn-east-3.myhuaweicloud.com
           username: ${{ secrets.ASCENDHUB_USERNAME }}
           password: ${{ secrets.ASCENDHUB_TOKEN }}
+    
+      - name: Login to Huawei Cloud SWR
+        uses: docker/login-action@v3
+        with:
+          registry: swr.cn-east-2.myhuaweicloud.com
+          username: ${{ secrets.HW_USERNAME }}
+          password: ${{ secrets.HW_TOKEN }}
 
       - name: Build and push by digest
         uses: docker/build-push-action@v6
@@ -165,6 +172,13 @@ jobs:
           username: ${{ secrets.ASCENDHUB_USERNAME }}
           password: ${{ secrets.ASCENDHUB_TOKEN }}
 
+      - name: Login to Huawei Cloud SWR
+        uses: docker/login-action@v3
+        with:
+          registry: swr.cn-east-2.myhuaweicloud.com
+          username: ${{ secrets.HW_USERNAME }}
+          password: ${{ secrets.HW_TOKEN }}
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
@@ -182,7 +196,8 @@ jobs:
                 TAGS_JSON+="\"$registry:$tag\","
               done
             done
-            TAGS_JSON+="\"swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:$FIRST_TAG\"]"
+            TAGS_JSON+="\"swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:$FIRST_TAG\","
+            TAGS_JSON+="\"swr.cn-east-2.myhuaweicloud.com/base_image/ascend-ci:$FIRST_TAG\"]"
           echo "tags=$TAGS_JSON" >> $GITHUB_OUTPUT
 
       - name: Create manifest list and push
@@ -202,6 +217,9 @@ jobs:
             elif [[ "$TAG" == *"swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann"* ]]; then
               docker buildx imagetools create -t "$TAG" \
                 $(printf 'swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann@sha256:%s ' *)
+            elif [[ "$TAG" == *"swr.cn-east-2.myhuaweicloud.com/base_image/ascend-ci"* ]]; then
+              docker buildx imagetools create -t "$TAG" \
+                $(printf 'swr.cn-east-2.myhuaweicloud.com/base_image/ascend-ci@sha256:%s ' *)
             else
               echo "Error: Unknown registry in TAG: $TAG"
               exit 1
