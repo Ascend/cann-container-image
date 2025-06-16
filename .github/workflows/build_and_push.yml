@@ -105,7 +105,7 @@ jobs:
       - name: Login to Huawei Cloud SWR
         uses: docker/login-action@v3
         with:
-          registry: swr.cn-east-2.myhuaweicloud.com
+          registry: swr.cn-southwest-2.myhuaweicloud.com
           username: ${{ secrets.HW_USERNAME }}
           password: ${{ secrets.HW_TOKEN }}
 
@@ -118,6 +118,7 @@ jobs:
             docker.io/ascendai/cann
             quay.io/ascend/cann
             swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann
+            swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci
           file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}/Dockerfile
           context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
@@ -175,7 +176,7 @@ jobs:
       - name: Login to Huawei Cloud SWR
         uses: docker/login-action@v3
         with:
-          registry: swr.cn-east-2.myhuaweicloud.com
+          registry: swr.cn-southwest-2.myhuaweicloud.com
           username: ${{ secrets.HW_USERNAME }}
           password: ${{ secrets.HW_TOKEN }}
 
@@ -197,7 +198,7 @@ jobs:
               done
             done
             TAGS_JSON+="\"swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:$FIRST_TAG\","
-            TAGS_JSON+="\"swr.cn-east-2.myhuaweicloud.com/base_image/ascend-ci:$FIRST_TAG\"]"
+            TAGS_JSON+="\"swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci:$FIRST_TAG\"]"
           echo "tags=$TAGS_JSON" >> $GITHUB_OUTPUT
 
       - name: Create manifest list and push
@@ -217,9 +218,9 @@ jobs:
             elif [[ "$TAG" == *"swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann"* ]]; then
               docker buildx imagetools create -t "$TAG" \
                 $(printf 'swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann@sha256:%s ' *)
-            elif [[ "$TAG" == *"swr.cn-east-2.myhuaweicloud.com/base_image/ascend-ci"* ]]; then
+            elif [[ "$TAG" == *"swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci"* ]]; then
               docker buildx imagetools create -t "$TAG" \
-                $(printf 'swr.cn-east-2.myhuaweicloud.com/base_image/ascend-ci@sha256:%s ' *)
+                $(printf 'swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci@sha256:%s ' *)
             else
               echo "Error: Unknown registry in TAG: $TAG"
               exit 1
