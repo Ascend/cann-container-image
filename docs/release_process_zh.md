@@ -37,7 +37,7 @@ tag全小写，格式为 `<cann-version>-<chip>-<os><os-version>-<py-version>`
 ## 注意事项
 遵循docker指南，我们将 CANN 的环境变量使用 ENV 方式定义在 dockerfile 中，但是 CANN 的 NNAL 包的 ATB_HOME_PATH 环境变量由 `torch.compiled_with_cxx_abi()` 决定，若 `torch.compiled_with_cxx_abi()` 为 true，则 `ATB_HOME_PATH=/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_0`，否则 `ATB_HOME_PATH=/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1` 。
 
-为了满足大多数用户的使用要求，我们定义`ATB_HOME_PATH=/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_0`，并将`source /usr/local/Ascend/nnal/atb/set_env.sh`写入 bashrc 和 ENTRYPOINT，保证用户使用交互式和非交互式启动容器时 atb 的值设置正确。
+为了满足用户的使用要求，我们定义`ATB_HOME_PATH=/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_0`，并将`source /usr/local/Ascend/nnal/atb/set_env.sh`写入 bashrc 和 ENTRYPOINT，保证用户使用交互式和非交互式启动容器时 atb 的值设置正确。
 
 - 使用 ENTRYPOINT 设置环境变量的作用：若用户通过 `docker run image bash` 启动容器，`source set_env.sh`会生效；
 - 将环境变量写入bashrc的作用：若用户通过`docker run -d`启动容器然后使用`docker exec -it container bash`方式与容器交互，会读取 bashrc 文件，`source set_env.sh`会生效。
