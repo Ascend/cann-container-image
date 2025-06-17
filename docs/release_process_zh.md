@@ -1,7 +1,9 @@
 # CANN容器镜像发布规范
 
 ## 背景介绍
-目前，昇腾社区官方仓库以多种格式（如 `.run`、`.deb`、`.rpm`、`.zip`、`.tar.gz`）发布 CANN 的 Toolkit 开发套件、Kernels 算子包以及 NNAL 加速库包。用户需要花费大量时间下载并安装合适的软件包，使用体验较为繁琐。为提升用户体验，本项目旨在基于 Ubuntu 和 openEuler 操作系统构建包含 Python 与 CANN（Toolkit 开发套件、Kernels 算子包、NNAL 加速库）的容器镜像，并将这些镜像发布至 AscendHub、DockerHub 和 Quay.io 三大主流容器平台，同时提供版本匹配的 Dockerfile 作为参考模板，帮助用户实现“开箱即用”。
+目前，[昇腾社区](https://www.hiascend.com/developer/download/community/result)以多种格式（如 `.run`、`.deb`、`.rpm`、`.zip`、`.tar.gz`）发布 CANN 的 Toolkit 开发套件、Kernels 算子包以及 NNAL 加速库包。用户需要花费大量时间下载并安装合适的软件包，使用体验较为繁琐。
+
+为提升用户体验，本项目旨在基于 Ubuntu 和 openEuler 操作系统构建包含 Python 与 CANN（Toolkit 开发套件、Kernels 算子包、NNAL 加速库）的容器镜像，并将这些镜像发布至 AscendHub、DockerHub 和 Quay.io 三大主流容器平台，同时提供版本匹配的 Dockerfile 作为参考模板，帮助用户实现“开箱即用”。
 
 ## 用户案例
 - **作为 CANN 用户**：希望在新版本 CANN 发布后能够第一时间体验并快速投入使用；
@@ -11,14 +13,8 @@
 ### 标签命名规则
 所有 CANN 容器镜像标签遵循统一格式：  
 `<cann-version>-<chip>-<os><os-version>-<py-version>`  
-包含以下组成部分：
-
-|  字段          | 示例              | 描述               |
-|----------------|--------------------|------------------|
-| `cann-version` | `8.1.rc1.alpha001` | CANN 版本号       | 
-| `chip`         | `910b`             | 芯片类型          |
-| `py-version`   | `py3.11`           | Python 版本       |
-| `os+os-version`| `openeuler22.03`   | 基础操作系统及版本 |
+ 
+![image1](./images/image1.png)
 
 **版本命名示例说明**：
 - CANN alpha 版本：`8.1.rc1.alpha001`
