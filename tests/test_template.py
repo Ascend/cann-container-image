@@ -37,8 +37,8 @@ class TestTemplateFunctions(unittest.TestCase):
         toolkit_url, kernels_url, nnal_url = get_cann_download_url(chip, version)
         self.assertIn(ALPHA_DICT[version], toolkit_url)
         self.assertIn("Milan-ASL", toolkit_url)
-        self.assertIn("Ascend-cann-toolkit", toolkit_url)
-        self.assertIn("Ascend-cann-kernels", kernels_url)
+        self.assertIn("8.1.RC1.alpha001", toolkit_url)
+        self.assertIn("310p", kernels_url)
         self.assertIn("Ascend-cann-nnal", nnal_url)
         
     def test_get_cann_download_url_release(self):
