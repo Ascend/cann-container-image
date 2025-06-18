@@ -37,8 +37,7 @@ def test_get_python_download_url_version_not_found(version):
 def test_get_cann_download_url_alpha_versions(version, chip):
     toolkit_url, kernels_url, nnal_url = get_cann_download_url(chip, version)
     
-    assert ALPHA_DICT[version] in toolkit_url
-    assert "Milan-ASL" in toolkit_url
+    assert f"Milan-ASL%20{ALPHA_DICT[version]}" in toolkit_url
     assert version in toolkit_url
     assert chip in kernels_url
     assert "Ascend-cann-nnal" in nnal_url
@@ -49,9 +48,9 @@ def test_get_cann_download_url_alpha_versions(version, chip):
 )
 def test_get_cann_download_url_release(version, chip):
     toolkit_url, kernels_url, nnal_url = get_cann_download_url(chip, version)
-    assert "CANN%208.0.0" in toolkit_url
+    assert f"CANN%20{version}" in toolkit_url
     assert "Ascend-cann-toolkit" in toolkit_url
-    assert "Ascend-cann-kernels" in kernels_url
+    assert f"ascend-cann-kernels-{chip.lower()}" in kernels_url.lower()
     assert "Ascend-cann-nnal" in nnal_url
 
 def test_render_and_save_dockerfile():
