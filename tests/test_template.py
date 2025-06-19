@@ -50,7 +50,7 @@ def test_get_cann_download_url_release(version, chip):
     toolkit_url, kernels_url, nnal_url = get_cann_download_url(chip, version)
     assert f"CANN%20{version}" in toolkit_url
     assert "Ascend-cann-toolkit" in toolkit_url
-    assert f"ascend-cann-kernels-{chip.lower()}" in kernels_url.lower()
+    assert f"ascend-cann-kernels-{chip}" in kernels_url.lower()
     assert "Ascend-cann-nnal" in nnal_url
 
 
@@ -90,7 +90,7 @@ def test_render_and_save_dockerfile_parametrized(
             "Dockerfile"
         )
 
-        assert os.path.exists(output_path), f"Dockerfile 未生成: {output_path}"
+        assert os.path.exists(output_path), f"Dockerfile not generated: {output_path}"
     finally:
         os.chdir(original_cwd)
         if os.path.exists("cann"):
