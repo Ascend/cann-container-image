@@ -60,12 +60,15 @@ def get_cann_download_url(cann_chip, version):
     
     return cann_toolkit_url_prefix, cann_kernels_url_prefix, cann_nnal_url_prefix
 
-def render_and_save_dockerfile(args, ubuntu_template, openeuler_template):
+def render_and_save_dockerfile(args, ubuntu_template, openeuler_template, manylinux_template):
     for item in args["cann"]:
         if item["os_name"] == "ubuntu":
             template_name = ubuntu_template
-        else:
+        elif item["os_name"] == "openeuler":
             template_name = openeuler_template
+        else:
+            template_name = manylinux_template
+            
         template = env.get_template(template_name)
         py_installer_package, py_installer_url, py_latest_version = get_python_download_url(item["py_version"])
         item["py_installer_package"] = py_installer_package
@@ -87,11 +90,18 @@ def render_and_save_dockerfile(args, ubuntu_template, openeuler_template):
         else:
             cann_chip_type = item["cann_chip"]
             
-        output_path = os.path.join(
-            "cann",
-            f"{item['cann_version'].lower()}-{cann_chip_type}-{item['os_name']}{item['os_version']}-py{item['py_version']}",
-            "Dockerfile"
-        )
+        if template_name == manylinux_template:
+            output_path = os.path.join(
+                "manylinux",
+                f"{item['cann_version'].lower()}-{cann_chip_type}-{item['os_name']}_{item['os_version']}-py{item['py_version']}",
+                "Dockerfile"
+            )
+        else:
+            output_path = os.path.join(
+                "cann",
+                f"{item['cann_version'].lower()}-{cann_chip_type}-{item['os_name']}{item['os_version']}-py{item['py_version']}",
+                "Dockerfile"
+            )
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, "w") as f:
             f.write(rendered_content)
@@ -100,7 +110,7 @@ def render_and_save_dockerfile(args, ubuntu_template, openeuler_template):
 def main():  
     with open('build_arg.json', 'r') as f:
         args = json.load(f)
-    render_and_save_dockerfile(args, "ubuntu.Dockerfile.j2", "openeuler.Dockerfile.j2")
+    render_and_save_dockerfile(args, "ubuntu.Dockerfile.j2", "openeuler.Dockerfile.j2", "manylinux.Dockerfile.j2")
 
 
 if __name__ == "__main__":
