@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/build.yml"
       - "cann/**"
+      - "manylinux/**"
       - "build_arg.json"
 
   pull_request:
@@ -14,6 +15,7 @@ on:
     paths:
       - ".github/workflows/build.yml"
       - "cann/**"
+      - "manylinux/**"
       - "build_arg.json"
 
 jobs:
@@ -53,7 +55,7 @@ jobs:
         id: build
         with: 
           platforms: ${{ matrix.arch }}
-          file: ${{ github.workspace }}/cann/${{ matrix.target }}/Dockerfile
-          context: ${{ github.workspace }}/cann/${{ matrix.target }}
+          file: ${{ github.workspace }}/${{ (contains(matrix.target, 'manylinux') && 'manylinux') || 'cann' }}/${{ matrix.target }}/Dockerfile
+          context: ${{ github.workspace }}/${{ (contains(matrix.target, 'manylinux') && 'manylinux') || 'cann' }}/${{ matrix.target }}
           outputs: type=image
           provenance: false
