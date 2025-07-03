@@ -1,6 +1,6 @@
 {
   "versions": [
-  {
+    {
       "path": "cann/8.2.rc1.alpha002-910b-ubuntu22.04-py3.10",
       "tags": [
           "8.2.rc1.alpha002-910b-ubuntu22.04-py3.10",
