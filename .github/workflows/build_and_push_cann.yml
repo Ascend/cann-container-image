@@ -188,7 +188,7 @@ jobs:
         run: |
           TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
                 '.versions[] | select(.path == "cann/" + $cann_tag) | .tags | join(",")' \
-                publish_version.json)
+                cann_publish_version.json)
           FIRST_TAG=$(echo "$TAGS" | cut -d',' -f1)
           
           TAGS_JSON="["

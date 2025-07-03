@@ -1,22 +1,18 @@
-name: Build CANN Image
+name: Build Manylinux_based CANN Image
 
 on:
   push:
     branches:
     paths:
-      - ".github/workflows/build.yml"
-      - "cann/**"
+      - ".github/workflows/build_manylinux.yml"
       - "manylinux/**"
-      - "build_arg.json"
 
   pull_request:
     branches:
       - "main"
     paths:
       - ".github/workflows/build.yml"
-      - "cann/**"
       - "manylinux/**"
-      - "build_arg.json"
 
 jobs:
   prepare:
@@ -30,7 +26,7 @@ jobs:
       - name: Get build matrix
         id: get-build-matrix
         run: |
-          MATRIX=$(jq -c '.cann | map({target: .tags[0],
+          MATRIX=$(jq -c '.manylinux | map({target: .tags[0],
               arches: [
                 {arch: "x86_64", runner: "linux-x86_64"},
                 {arch: "aarch64", runner: "ubuntu-22.04-arm"}
@@ -55,7 +51,7 @@ jobs:
         id: build
         with: 
           platforms: ${{ matrix.arch }}
-          file: ${{ github.workspace }}/${{ (contains(matrix.target, 'manylinux') && 'manylinux') || 'cann' }}/${{ matrix.target }}/Dockerfile
-          context: ${{ github.workspace }}/${{ (contains(matrix.target, 'manylinux') && 'manylinux') || 'cann' }}/${{ matrix.target }}
+          file: ${{ github.workspace }}/manylinux/${{ matrix.target }}/Dockerfile
+          context: ${{ github.workspace }}/manylinux/${{ matrix.target }}
           outputs: type=image
           provenance: false
