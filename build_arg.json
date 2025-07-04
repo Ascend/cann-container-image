@@ -1,5 +1,5 @@
 {
-    "111": [
+    "manylinux": [
         {
             "cann_version": "8.0.0",
             "cann_chip": "310p",

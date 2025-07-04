@@ -44,7 +44,7 @@ jobs:
 
   build:
     needs: prepare 
-    if: ${{ fromJson(needs.prepare.outputs.matrix).include.size > 0 }} 
+    if: ${{ needs.prepare.outputs.matrix != '{include:[]}' }}
     strategy:
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
     runs-on: ${{ matrix.runner }}
