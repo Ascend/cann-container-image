@@ -39,6 +39,9 @@ jobs:
                   ]
                 }) | {include: [.[] | .arches[] as $arch | {target: .target, arch: $arch.arch, runner: $arch.runner}]}' build_arg.json)
               echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
+      
+      - name: Debug print matrix
+        run: echo "${{ fromJson(needs.prepare.outputs.matrix) }}"
 
   build:
     needs: prepare 
