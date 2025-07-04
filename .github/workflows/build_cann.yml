@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/build_cann.yml"
       - "cann/**"
+      - "build_arg.json"
 
   pull_request:
     branches:
@@ -13,6 +14,7 @@ on:
     paths:
       - ".github/workflows/build_cann.yml"
       - "cann/**"
+      - "build_arg.json"
 
 jobs:
   prepare:
