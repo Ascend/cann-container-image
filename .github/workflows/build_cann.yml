@@ -34,17 +34,16 @@ jobs:
       - name: Get build matrix
         id: get-build-matrix
         run: |
-          MATRIX=$(jq -c '(.cann // []) | map({target: .tags[0],
-                  arches: [
-                    {arch: "x86_64", runner: "linux-x86_64"},
-                    {arch: "aarch64", runner: "ubuntu-22.04-arm"}
-                  ]
-                }) | {include: [.[] | .arches[] as $arch | {target: .target, arch: $arch.arch, runner: $arch.runner}]}' build_arg.json)
-              echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
+          MATRIX=$(jq -c '.cann | map({target: .tags[0],
+              arches: [
+                {arch: "x86_64", runner: "linux-x86_64"},
+                {arch: "aarch64", runner: "ubuntu-22.04-arm"}
+              ]
+            }) | {include: [.[] | .arches[] as $arch | {target: .target, arch: $arch.arch, runner: $arch.runner}]}' build_cann_arg.json)
+          echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
 
   build:
     needs: prepare 
-    if: ${{ needs.prepare.outputs.matrix != '{include:[]}' }}
     strategy:
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
     runs-on: ${{ matrix.runner }}
