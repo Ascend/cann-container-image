@@ -43,7 +43,7 @@ jobs:
           echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
       
       - name: Debug print matrix
-        run: echo "Matrix output: ${{ steps.get-build-matrix.outputs.matrix }}"
+        run: echo "${{ steps.get-build-matrix.outputs.matrix }}"
 
   build:
     needs: prepare 
