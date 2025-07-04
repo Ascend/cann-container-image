@@ -151,17 +151,26 @@ jobs:
       - name: Prepare tags
         id: prepare-tags
         run: |
-          TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
-                '.versions[] | select(.path == "manylinux/" + $cann_tag) | .tags[]' \
-                manylinux_publish_version.json)
-          ITEMS=()
-          for registry in "quay.io/ascend/manylinux" "swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/manylinux"; do
-            for tag in $TAGS; do
-              ITEMS+=("$registry:$tag")
+            BASE_TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
+              '.versions[] | select(.path == "manylinux/" + $cann_tag) | .tags[]' \
+              manylinux_publish_version.json)
+            registries=(
+              "quay.io/ascend/manylinux"
+              "swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/manylinux"
+            )
+            first=true
+            TAGS_JSON="["
+            for registry in "${registries[@]}"; do
+              for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
+                if [ "$first" != true ]; then
+                  TAGS_JSON+=","
+                fi
+                TAGS_JSON+="\"${registry}:${tag}\""
+                first=false
+              done
             done
-          done
-          TAGS_JSON=$(printf '%s\n' "${ITEMS[@]}" | jq -R . | jq -s .)
-          echo "tags=$TAGS_JSON" >> $GITHUB_OUTPUT
+            TAGS_JSON+="]"
+            echo "tags=${TAGS_JSON}" >> $GITHUB_OUTPUT
 
       - name: Create manifest list and push
         working-directory: ${{ runner.temp }}/digests
