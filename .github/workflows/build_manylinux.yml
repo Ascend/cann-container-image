@@ -38,10 +38,12 @@ jobs:
                     {arch: "aarch64", runner: "ubuntu-22.04-arm"}
                   ]
                 }) | {include: [.[] | .arches[] as $arch | {target: .target, arch: $arch.arch, runner: $arch.runner}]}' build_arg.json)
-              echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
+          echo "Generated matrix content:"
+          echo "$MATRIX" | jq .
+          echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
       
       - name: Debug print matrix
-        run: echo "${{ fromJson(needs.prepare.outputs.matrix) }}"
+        run: echo "Matrix output: ${{ steps.get-build-matrix.outputs.matrix }}"
 
   build:
     needs: prepare 
