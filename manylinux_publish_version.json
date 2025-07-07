@@ -35,6 +35,78 @@
             "tags": [
                 "8.2.rc1.alpha003-310p-manylinux_2_28-py3.9"
             ]
+        },
+        {
+            "path": "manylinux/8.0.0-310p-manylinux_2_28-py3.11",
+            "tags": [
+                "8.0.0-310p-manylinux_2_28-py3.11"
+            ]
+        },
+        {
+            "path": "manylinux/8.0.0-310p-manylinux_2_28-py3.10",
+            "tags": [
+                "8.0.0-310p-manylinux_2_28-py3.10"
+            ]
+        },
+        {
+            "path": "manylinux/8.0.0-310p-manylinux_2_28-py3.9",
+            "tags": [
+                "8.0.0-310p-manylinux_2_28-py3.9"
+            ]
+        },
+        {
+            "path": "manylinux/8.1.rc1-310p-manylinux_2_28-py3.11",
+            "tags": [
+                "8.1.rc1-310p-manylinux_2_28-py3.11"
+            ]
+        },
+        {
+            "path": "manylinux/8.1.rc1-310p-manylinux_2_28-py3.10",
+            "tags": [
+                "8.1.rc1-310p-manylinux_2_28-py3.10"
+            ]
+        },
+        {
+            "path": "manylinux/8.1.rc1-310p-manylinux_2_28-py3.9",
+            "tags": [
+                "8.1.rc1-310p-manylinux_2_28-py3.9"
+            ]
+        },
+        {
+            "path": "manylinux/8.0.0-910b-manylinux_2_28-py3.11",
+            "tags": [
+                "8.0.0-910b-manylinux_2_28-py3.11"
+            ]
+        },
+        {
+            "path": "manylinux/8.0.0-910b-manylinux_2_28-py3.10",
+            "tags": [
+                "8.0.0-910b-manylinux_2_28-py3.10"
+            ]
+        },
+        {
+            "path": "manylinux/8.0.0-910b-manylinux_2_28-py3.9",
+            "tags": [
+                "8.0.0-910b-manylinux_2_28-py3.9"
+            ]
+        },
+        {
+            "path": "manylinux/8.1.rc1-910b-manylinux_2_28-py3.11",
+            "tags": [
+                "8.1.rc1-910b-manylinux_2_28-py3.11"
+            ]
+        },
+        {
+            "path": "manylinux/8.1.rc1-910b-manylinux_2_28-py3.10",
+            "tags": [
+                "8.1.rc1-910b-manylinux_2_28-py3.10"
+            ]
+        },
+        {
+            "path": "manylinux/8.1.rc1-910b-manylinux_2_28-py3.9",
+            "tags": [
+                "8.1.rc1-910b-manylinux_2_28-py3.9"
+            ]
         }
     ]
 }
