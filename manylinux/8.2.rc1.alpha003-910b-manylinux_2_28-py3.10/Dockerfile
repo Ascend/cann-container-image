@@ -2,7 +2,7 @@
 FROM quay.io/pypa/manylinux_2_28:latest AS python-installer
 
 # Python Environment variables
-ENV PATH=/usr/local/python3.9.23/bin:${PATH}
+ENV PATH=/usr/local/python3.10.18/bin:${PATH}
 
 RUN yum update -y && \
     yum install -y \
@@ -30,17 +30,17 @@ RUN yum update -y && \
     && rm -rf /tmp/*
 
 # Install Python
-RUN curl -fsSL https://repo.huaweicloud.com/python/3.9.23/Python-3.9.23.tgz -o /tmp/Python-3.9.23.tgz && \
-    tar -xf /tmp/Python-3.9.23.tgz -C /tmp && \
-    cd /tmp/Python-3.9.23 && \
-    mkdir -p /usr/local/python3.9.23/lib && \
-    ./configure --enable-shared --enable-shared LDFLAGS="-Wl,-rpath /usr/local/python3.9.23/lib" --prefix=/usr/local/python3.9.23 && \
+RUN curl -fsSL https://repo.huaweicloud.com/python/3.10.18/Python-3.10.18.tgz -o /tmp/Python-3.10.18.tgz && \
+    tar -xf /tmp/Python-3.10.18.tgz -C /tmp && \
+    cd /tmp/Python-3.10.18 && \
+    mkdir -p /usr/local/python3.10.18/lib && \
+    ./configure --enable-shared --enable-shared LDFLAGS="-Wl,-rpath /usr/local/python3.10.18/lib" --prefix=/usr/local/python3.10.18 && \
     make -j $(nproc) && \
     make altinstall && \
-    ln -sf /usr/local/python3.9.23/bin/python3.9 /usr/local/python3.9.23/bin/python3 && \
-    ln -sf /usr/local/python3.9.23/bin/pip3.9 /usr/local/python3.9.23/bin/pip3 && \
-    ln -sf /usr/local/python3.9.23/bin/python3 /usr/local/python3.9.23/bin/python && \
-    ln -sf /usr/local/python3.9.23/bin/pip3 /usr/local/python3.9.23/bin/pip && \
+    ln -sf /usr/local/python3.10.18/bin/python3.10 /usr/local/python3.10.18/bin/python3 && \
+    ln -sf /usr/local/python3.10.18/bin/pip3.10 /usr/local/python3.10.18/bin/pip3 && \
+    ln -sf /usr/local/python3.10.18/bin/python3 /usr/local/python3.10.18/bin/python && \
+    ln -sf /usr/local/python3.10.18/bin/pip3 /usr/local/python3.10.18/bin/pip && \
     rm -rf /tmp/*
 
 # Stage 2: Install CANN
@@ -73,9 +73,9 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
         "linux/arm64") echo "aarch64" ;; \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
-    CANN_TOOLKIT_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.1.RC1/Ascend-cann-toolkit_8.1.RC1_linux-${ARCH}.run && \
-    CANN_KERNELS_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.1.RC1/Ascend-cann-kernels-910b_8.1.RC1_linux-${ARCH}.run && \
-    CANN_NNAL_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.1.RC1/Ascend-cann-nnal_8.1.RC1_linux-${ARCH}.run && \
+    CANN_TOOLKIT_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C22B800TP052/Ascend-cann-toolkit_8.2.RC1.alpha003_linux-${ARCH}.run && \
+    CANN_KERNELS_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C22B800TP052/Ascend-cann-kernels-910b_8.2.RC1.alpha003_linux-${ARCH}.run && \
+    CANN_NNAL_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C22B800TP052/Ascend-cann-nnal_8.2.RC1.alpha003_linux-${ARCH}.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_KERNELS_URL} -O ~/Ascend-cann-kernels.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_NNAL_URL} -O ~/Ascend-cann-nnal.run
@@ -100,7 +100,7 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
 FROM quay.io/pypa/manylinux_2_28:latest AS official-manylinux
 
 # Python Environment variables
-ENV PATH=/usr/local/python3.9.23/bin:${PATH}
+ENV PATH=/usr/local/python3.10.18/bin:${PATH}
 
 # Note: Toolkit Environment variables, obtained from /usr/local/Ascend/ascend-toolkit/set_env.sh
 ENV ASCEND_TOOLKIT_HOME=/usr/local/Ascend/ascend-toolkit/latest
@@ -108,11 +108,12 @@ ENV LD_LIBRARY_PATH=/usr/local/Ascend/driver/lib64/common/:/usr/local/Ascend/dri
 ENV LD_LIBRARY_PATH=${ASCEND_TOOLKIT_HOME}/lib64:${ASCEND_TOOLKIT_HOME}/lib64/plugin/opskernel:${ASCEND_TOOLKIT_HOME}/lib64/plugin/nnengine:${ASCEND_TOOLKIT_HOME}/opp/built-in/op_impl/ai_core/tbe/op_tiling:$LD_LIBRARY_PATH
 ENV LD_LIBRARY_PATH=${ASCEND_TOOLKIT_HOME}/tools/aml/lib64:${ASCEND_TOOLKIT_HOME}/tools/aml/lib64/plugin:$LD_LIBRARY_PATH
 ENV PYTHONPATH=${ASCEND_TOOLKIT_HOME}/python/site-packages:${ASCEND_TOOLKIT_HOME}/opp/built-in/op_impl/ai_core/tbe:$PYTHONPATH
-ENV PATH=${ASCEND_TOOLKIT_HOME}/bin:${ASCEND_TOOLKIT_HOME}/compiler/ccec_compiler/bin:${ASCEND_TOOLKIT_HOME}/tools/ccec_compiler/bin:$PATH
+ENV PATH=${ASCEND_TOOLKIT_HOME}/bisheng_toolkit/bishengir/bin:${ASCEND_TOOLKIT_HOME}/bin:${ASCEND_TOOLKIT_HOME}/compiler/ccec_compiler/bin:${ASCEND_TOOLKIT_HOME}/tools/ccec_compiler/bin:$PATH
 ENV ASCEND_AICPU_PATH=${ASCEND_TOOLKIT_HOME}
 ENV ASCEND_OPP_PATH=${ASCEND_TOOLKIT_HOME}/opp
 ENV TOOLCHAIN_HOME=${ASCEND_TOOLKIT_HOME}/toolkit
 ENV ASCEND_HOME_PATH=${ASCEND_TOOLKIT_HOME}
+ENV BISHENG_INSTALL_PATH=${ASCEND_TOOLKIT_HOME}/compiler/ccec_compiler/bin
 
 # Note: NNAL Environment variables, obtained from /usr/local/Ascend/nnal/set_env.sh
 ENV ATB_HOME_PATH=/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_0
@@ -122,28 +123,21 @@ ENV ATB_STREAM_SYNC_EVERY_KERNEL_ENABLE=0
 ENV ATB_STREAM_SYNC_EVERY_RUNNER_ENABLE=0
 ENV ATB_STREAM_SYNC_EVERY_OPERATION_ENABLE=0
 ENV ATB_OPSRUNNER_SETUP_CACHE_ENABLE=1
-ENV ATB_OPSRUNNER_KERNEL_CACHE_TYPE=3
 ENV ATB_OPSRUNNER_KERNEL_CACHE_LOCAL_COUNT=1
 ENV ATB_OPSRUNNER_KERNEL_CACHE_GLOABL_COUNT=5
-ENV ATB_OPSRUNNER_KERNEL_CACHE_TILING_SIZE=10240
 ENV ATB_WORKSPACE_MEM_ALLOC_ALG_TYPE=1
 ENV ATB_WORKSPACE_MEM_ALLOC_GLOBAL=0
 ENV ATB_COMPARE_TILING_EVERY_KERNEL=0
 ENV ATB_HOST_TILING_BUFFER_BLOCK_NUM=128
 ENV ATB_DEVICE_TILING_BUFFER_BLOCK_NUM=32
 ENV ATB_SHARE_MEMORY_NAME_SUFFIX=""
-ENV ATB_LAUNCH_KERNEL_WITH_TILING=1
 ENV ATB_MATMUL_SHUFFLE_K_ENABLE=1
-ENV ATB_RUNNER_POOL_SIZE=64
-ENV ASDOPS_HOME_PATH=${ATB_HOME_PATH}
-ENV ASDOPS_MATMUL_PP_FLAG=1
 ENV ASDOPS_LOG_LEVEL=ERROR
 ENV ASDOPS_LOG_TO_STDOUT=0
 ENV ASDOPS_LOG_TO_FILE=1
 ENV ASDOPS_LOG_TO_FILE_FLUSH=0
 ENV ASDOPS_LOG_TO_BOOST_TYPE=atb
 ENV ASDOPS_LOG_PATH=/root
-ENV ASDOPS_TILING_PARSE_CACHE_DISABLE=0
 ENV LCCL_DETERMINISTIC=0
 ENV LCCL_PARALLEL=0
 
@@ -159,11 +153,12 @@ RUN yum update -y && \
         gcc-c++ \
         make \
         cmake \
+        git \
     && yum clean all \
     && rm -rf /var/cache/yum \
     && rm -rf /tmp/*
 
-COPY --from=cann-installer /usr/local/python3.9.23 /usr/local/python3.9.23
+COPY --from=cann-installer /usr/local/python3.10.18 /usr/local/python3.10.18
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
 COPY --from=cann-installer /etc/Ascend /etc/Ascend
 

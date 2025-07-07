@@ -1,13 +1,63 @@
 {
     "manylinux": [
         {
-            "cann_version": "8.1.RC1",
+            "cann_version": "8.2.RC1.alpha003",
+            "cann_chip": "910b",
+            "os_name": "manylinux",
+            "os_version": "2_28",
+            "py_version": "3.11",
+            "tags": [
+                "8.2.rc1.alpha003-910b-manylinux_2_28-py3.11"
+            ]
+        },
+        {
+            "cann_version": "8.2.RC1.alpha003",
+            "cann_chip": "910b",
+            "os_name": "manylinux",
+            "os_version": "2_28",
+            "py_version": "3.10",
+            "tags": [
+                "8.2.rc1.alpha003-910b-manylinux_2_28-py3.10"
+            ]
+        },
+        {
+            "cann_version": "8.2.RC1.alpha003",
             "cann_chip": "910b",
             "os_name": "manylinux",
             "os_version": "2_28",
             "py_version": "3.9",
             "tags": [
-                "8.1.rc1-910b-manylinux_2_28-py3.9"
+                "8.2.rc1.alpha003-910b-manylinux_2_28-py3.9"
+            ]
+        },
+        {
+            "cann_version": "8.2.RC1.alpha003",
+            "cann_chip": "310p",
+            "os_name": "manylinux",
+            "os_version": "2_28",
+            "py_version": "3.11",
+            "tags": [
+                "8.2.rc1.alpha003-310p-manylinux_2_28-py3.11"
+            ]
+        },
+        {
+            "cann_version": "8.2.RC1.alpha003",
+            "cann_chip": "310p",
+            "os_name": "manylinux",
+            "os_version": "2_28",
+            "py_version": "3.10",
+            "tags": [
+                "8.2.rc1.alpha003-310p-manylinux_2_28-py3.10"
+            ]
+        },
+        {
+            "cann_version": "8.2.RC1.alpha003",
+            "cann_chip": "310p",
+            "os_name": "manylinux",
+            "os_version": "2_28",
+            "py_version": "3.9",
+            "tags": [
+                "8.2.rc1.alpha003-310p-manylinux_2_28-py3.9"
             ]
         }
     ]
