@@ -2,7 +2,9 @@ import os
 import re
 import requests
 import json
+from distutils.version import LooseVersion
 from jinja2 import Environment, FileSystemLoader
+
 
 BASE_URL = "https://ascend-repo.obs.cn-east-2.myhuaweicloud.com"
 ALPHA_DICT = {
@@ -13,7 +15,8 @@ ALPHA_DICT = {
     "8.1.RC1.alpha001": "V100R001C21B800TP034",
     "8.1.RC1.alpha002": "V100R001C21B800TP051",
     "8.2.RC1.alpha001": "V100R001C22B800TP013",
-    "8.2.RC1.alpha002": "V100R001C22B800TP020"
+    "8.2.RC1.alpha002": "V100R001C22B800TP020",
+    "8.2.RC1.alpha003": "V100R001C22B800TP052",
 }
 
 env = Environment(loader=FileSystemLoader('tools/template'))
@@ -124,10 +127,9 @@ def render_and_save_manylinux_dockerfile(args, manylinux_template):
         print(f"Generated: {output_path}")       
         
 def main():  
-    with open('build_arg.json', 'r') as f:
+    with open('build_cann_arg.json', 'r') as f:
         args = json.load(f)
     render_and_save_cann_dockerfile(args, "ubuntu.Dockerfile.j2", "openeuler.Dockerfile.j2")
-    render_and_save_manylinux_dockerfile(args, "manylinux.Dockerfile.j2")
 
 
 if __name__ == "__main__":
