@@ -130,7 +130,11 @@ def main():
     with open('build_cann_arg.json', 'r') as f:
         args = json.load(f)
     render_and_save_cann_dockerfile(args, "ubuntu.Dockerfile.j2", "openeuler.Dockerfile.j2")
-
+    
+    with open('build_manylinux_arg.json', 'r') as fm:
+        args = json.load(fm)
+    render_and_save_manylinux_dockerfile(args, "manylinux.Dockerfile.j2")
+    
 
 if __name__ == "__main__":
     main()
