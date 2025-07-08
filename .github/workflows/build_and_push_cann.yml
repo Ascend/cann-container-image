@@ -217,13 +217,6 @@ jobs:
           sudo apt update
           sudo apt install -y skopeo
 
-      - name: Login to AscendHub
-        run: |
-          echo "${{ secrets.ASCENDHUB_TOKEN }}" | skopeo login \
-            --username "${{ secrets.ASCENDHUB_USERNAME }}" \
-            --password-stdin \
-            swr.cn-east-3.myhuaweicloud.com/ascendhub-test
-
       - name: Login to Huawei Cloud SWR
         run: |
           echo "${{ secrets.HW_TOKEN }}" | skopeo login \
@@ -231,12 +224,20 @@ jobs:
             --password-stdin \
             swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci
 
+      - name: Login to AscendHub
+        run: |
+          echo "${{ secrets.ASCENDHUB_TOKEN }}" | skopeo login \
+            --username "${{ secrets.ASCENDHUB_USERNAME }}" \
+            --password-stdin \
+            swr.cn-east-3.myhuaweicloud.com/ascendhub-test
+
       - name: Sync image
         run: |
           skopeo copy --all \
           docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
-          docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}
+          docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}
 
           skopeo copy --all \
           docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
-          docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}
+          docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}
+
