@@ -185,5 +185,5 @@ jobs:
       - name: Sync image
         run: |
           skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
+          docker://quay.io/ascend/manylinux:${{ inputs.cann_tag }} \
           docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/manylinux:${{ inputs.cann_tag }}
