@@ -88,13 +88,6 @@ jobs:
           password: ${{ secrets.QUAY_TOKEN }}
           ecr: false
           logout: false
-    
-      - name: Login to Huawei Cloud SWR
-        uses: docker/login-action@v3
-        with:
-          registry: swr.cn-southwest-2.myhuaweicloud.com
-          username: ${{ secrets.HW_USERNAME }}
-          password: ${{ secrets.HW_TOKEN }}
 
       - name: Build and push by digest
         uses: docker/build-push-action@v6
@@ -103,7 +96,6 @@ jobs:
           platforms: ${{ matrix.arch }}
           tags: |
             quay.io/ascend/manylinux
-            swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/manylinux
           file: ${{ github.workspace }}/manylinux/${{ inputs.cann_tag }}/Dockerfile
           context: ${{ github.workspace }}/manylinux/${{ inputs.cann_tag }}
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
