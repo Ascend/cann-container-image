@@ -164,26 +164,26 @@ jobs:
       - name: Prepare tags
         id: prepare-tags
         run: |
-            BASE_TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
-              '.versions[] | select(.path == "cann/" + $cann_tag) | .tags[]' \
-              cann_publish_version.json)
-            registries=(
-              "docker.io/ascendai/cann"
-              "quay.io/ascend/cann"
-            )
-            first=true
-            TAGS_JSON="["
-            for registry in "${registries[@]}"; do
-              for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
-                if [ "$first" != true ]; then
-                  TAGS_JSON+=","
-                fi
-                TAGS_JSON+="\"${registry}:${tag}\""
-                first=false
-              done
+          BASE_TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
+            '.versions[] | select(.path == "cann/" + $cann_tag) | .tags[]' \
+            cann_publish_version.json)
+          registries=(
+            "docker.io/ascendai/cann"
+            "quay.io/ascend/cann"
+          )
+          first=true
+          TAGS_JSON="["
+          for registry in "${registries[@]}"; do
+            for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
+              if [ "$first" != true ]; then
+                TAGS_JSON+=","
+              fi
+              TAGS_JSON+="\"${registry}:${tag}\""
+              first=false
             done
-            TAGS_JSON+="]"
-            echo "tags=${TAGS_JSON}" >> $GITHUB_OUTPUT
+          done
+          TAGS_JSON+="]"
+          echo "tags=${TAGS_JSON}" >> $GITHUB_OUTPUT
 
       - name: Create manifest list and push
         working-directory: ${{ runner.temp }}/digests
