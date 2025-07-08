@@ -225,7 +225,7 @@ jobs:
             swr.cn-east-3.myhuaweicloud.com/ascendhub-test
 
       - name: Login to Huawei Cloud SWR
-          run: |
+        run: |
           echo "${{ secrets.HW_TOKEN }}" | skopeo login \
             --username "${{ secrets.HW_USERNAME }}" \
             --password-stdin \

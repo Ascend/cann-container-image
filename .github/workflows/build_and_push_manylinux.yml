@@ -184,7 +184,7 @@ jobs:
           sudo apt install -y skopeo
 
       - name: Login to Huawei Cloud SWR
-          run: |
+        run: |
           echo "${{ secrets.HW_TOKEN }}" | skopeo login \
             --username "${{ secrets.HW_USERNAME }}" \
             --password-stdin \
