@@ -6,9 +6,17 @@ on:
       cann_tag:
         description: 'CANN unique tag'
         required: true
-        default: '8.2.rc1.alpha003-910b-ubuntu22.04-py3.11'
+        default: '8.2.rc1-910b-ubuntu22.04-py3.11'
         type: choice
         options:
+          - 8.2.rc1-910b-ubuntu22.04-py3.11
+          - 8.2.rc1-910b-openeuler22.03-py3.11
+          - 8.2.rc1-910-ubuntu22.04-py3.11
+          - 8.2.rc1-910-openeuler22.03-py3.11
+          - 8.2.rc1-310p-ubuntu22.04-py3.11
+          - 8.2.rc1-310p-openeuler22.03-py3.11
+          - 8.2.rc1-a3-ubuntu22.04-py3.11
+          - 8.2.rc1-a3-openeuler22.03-py3.11
           - 8.2.rc1.alpha003-910b-ubuntu22.04-py3.11
           - 8.2.rc1.alpha003-910b-openeuler22.03-py3.11
           - 8.2.rc1.alpha003-910-ubuntu22.04-py3.11
