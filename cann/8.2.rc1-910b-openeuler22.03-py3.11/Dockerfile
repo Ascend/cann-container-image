@@ -108,12 +108,11 @@ ENV LD_LIBRARY_PATH=/usr/local/Ascend/driver/lib64/common/:/usr/local/Ascend/dri
 ENV LD_LIBRARY_PATH=${ASCEND_TOOLKIT_HOME}/lib64:${ASCEND_TOOLKIT_HOME}/lib64/plugin/opskernel:${ASCEND_TOOLKIT_HOME}/lib64/plugin/nnengine:${ASCEND_TOOLKIT_HOME}/opp/built-in/op_impl/ai_core/tbe/op_tiling:$LD_LIBRARY_PATH
 ENV LD_LIBRARY_PATH=${ASCEND_TOOLKIT_HOME}/tools/aml/lib64:${ASCEND_TOOLKIT_HOME}/tools/aml/lib64/plugin:$LD_LIBRARY_PATH
 ENV PYTHONPATH=${ASCEND_TOOLKIT_HOME}/python/site-packages:${ASCEND_TOOLKIT_HOME}/opp/built-in/op_impl/ai_core/tbe:$PYTHONPATH
-ENV PATH=${ASCEND_TOOLKIT_HOME}/bisheng_toolkit/bishengir/bin:${ASCEND_TOOLKIT_HOME}/bin:${ASCEND_TOOLKIT_HOME}/compiler/ccec_compiler/bin:${ASCEND_TOOLKIT_HOME}/tools/ccec_compiler/bin:$PATH
+ENV PATH=${ASCEND_TOOLKIT_HOME}/bin:${ASCEND_TOOLKIT_HOME}/compiler/ccec_compiler/bin:${ASCEND_TOOLKIT_HOME}/tools/ccec_compiler/bin:$PATH
 ENV ASCEND_AICPU_PATH=${ASCEND_TOOLKIT_HOME}
 ENV ASCEND_OPP_PATH=${ASCEND_TOOLKIT_HOME}/opp
 ENV TOOLCHAIN_HOME=${ASCEND_TOOLKIT_HOME}/toolkit
 ENV ASCEND_HOME_PATH=${ASCEND_TOOLKIT_HOME}
-ENV BISHENG_INSTALL_PATH=${ASCEND_TOOLKIT_HOME}/compiler/ccec_compiler/bin
 
 # Note: NNAL Environment variables, obtained from /usr/local/Ascend/nnal/set_env.sh
 ENV ATB_HOME_PATH=/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_0
