@@ -1,83 +1,83 @@
 {
     "cann": [
         {
-            "cann_version": "8.2.RC1",
+            "cann_version": "8.3.RC1.alpha001",
             "cann_chip": "910b",
             "os_name": "ubuntu",
             "os_version": "22.04",
             "py_version": "3.11",
             "tags": [
-                "8.2.rc1-910b-ubuntu22.04-py3.11"
+                "8.3.rc1.alpha001-910b-ubuntu22.04-py3.11"
             ]
         },
         {
-            "cann_version": "8.2.RC1",
+            "cann_version": "8.3.RC1.alpha001",
             "cann_chip": "910b",
             "os_name": "openeuler",
             "os_version": "22.03",
             "py_version": "3.11",
             "tags": [
-                "8.2.rc1-910b-openeuler22.03-py3.11"
+                "8.3.rc1.alpha001-910b-openeuler22.03-py3.11"
             ]
         },
         {
-            "cann_version": "8.2.RC1",
+            "cann_version": "8.3.RC1.alpha001",
             "cann_chip": "310p",
             "os_name": "ubuntu",
             "os_version": "22.04",
             "py_version": "3.11",
             "tags": [
-                "8.2.rc1-310p-ubuntu22.04-py3.11"
+                "8.3.rc1.alpha001-310p-ubuntu22.04-py3.11"
             ]
         },
         {
-            "cann_version": "8.2.RC1",
+            "cann_version": "8.3.RC1.alpha001",
             "cann_chip": "310p",
             "os_name": "openeuler",
             "os_version": "22.03",
             "py_version": "3.11",
             "tags": [
-                "8.2.rc1-310p-openeuler22.03-py3.11"
+                "8.3.rc1.alpha001-310p-openeuler22.03-py3.11"
             ]
         },
         {
-            "cann_version": "8.2.RC1",
+            "cann_version": "8.3.RC1.alpha001",
             "cann_chip": "Atlas-A3",
             "os_name": "ubuntu",
             "os_version": "22.04",
             "py_version": "3.11",
             "tags": [
-                "8.2.rc1-a3-ubuntu22.04-py3.11"
+                "8.3.rc1.alpha001-a3-ubuntu22.04-py3.11"
             ]
         },
         {
-            "cann_version": "8.2.RC1",
+            "cann_version": "8.3.RC1.alpha001",
             "cann_chip": "Atlas-A3",
             "os_name": "openeuler",
             "os_version": "22.03",
             "py_version": "3.11",
             "tags": [
-                "8.2.rc1-a3-openeuler22.03-py3.11"
+                "8.3.rc1.alpha001-a3-openeuler22.03-py3.11"
             ]
         },
         {
-            "cann_version": "8.2.RC1",
+            "cann_version": "8.3.RC1.alpha001",
             "cann_chip": "910",
             "os_name": "ubuntu",
             "os_version": "22.04",
             "py_version": "3.11",
             "tags": [
-                "8.2.rc1-910-ubuntu22.04-py3.11"
+                "8.3.rc1.alpha001-910-ubuntu22.04-py3.11"
             ]
         },
         {
-            "cann_version": "8.2.RC1",
+            "cann_version": "8.3.RC1.alpha001",
             "cann_chip": "910",
             "os_name": "openeuler",
             "os_version": "22.03",
             "py_version": "3.11",
             "tags": [
-                "8.2.rc1-910-openeuler22.03-py3.11"
+                "8.3.rc1.alpha001-910-openeuler22.03-py3.11"
             ]
         }
     ]
