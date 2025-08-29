@@ -99,6 +99,8 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
 # Stage 3: Copy results from previous stages
 FROM openeuler/openeuler:24.03 AS official-openeuler
 
+ARG TARGETPLATFORM
+
 # Python Environment variables
 ENV PATH=/usr/local/python3.11.13/bin:${PATH}
 
