@@ -1,4 +1,4 @@
-# 扫描时间：2025-09-19 10:38:00
+# 扫描时间：2025-09-21 10:38:00
 
 --- 
  ### 扫描架构：arm64 
@@ -10,1826 +10,1832 @@
 | 4 | binutils | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
 | 5 | binutils | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
 | 6 | binutils | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 7 | binutils | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 8 | binutils | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 9 | binutils | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 10 | binutils | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 11 | binutils-aarch64-linux-gnu | [CVE-2025-1147](https://ubuntu.com/security/CVE-2025-1147) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 12 | binutils-aarch64-linux-gnu | [CVE-2025-1148](https://ubuntu.com/security/CVE-2025-1148) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 13 | binutils-aarch64-linux-gnu | [CVE-2025-3198](https://ubuntu.com/security/CVE-2025-3198) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 14 | binutils-aarch64-linux-gnu | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 15 | binutils-aarch64-linux-gnu | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 16 | binutils-aarch64-linux-gnu | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 17 | binutils-aarch64-linux-gnu | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 18 | binutils-aarch64-linux-gnu | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 19 | binutils-aarch64-linux-gnu | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 20 | binutils-aarch64-linux-gnu | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 21 | binutils-common | [CVE-2025-1147](https://ubuntu.com/security/CVE-2025-1147) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 22 | binutils-common | [CVE-2025-1148](https://ubuntu.com/security/CVE-2025-1148) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 23 | binutils-common | [CVE-2025-3198](https://ubuntu.com/security/CVE-2025-3198) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 24 | binutils-common | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 25 | binutils-common | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 26 | binutils-common | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 27 | binutils-common | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 28 | binutils-common | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 29 | binutils-common | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 30 | binutils-common | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 31 | coreutils | [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781) | LOW | affected | 8.32-4.1ubuntu1.2 |  |
-| 32 | cpp-11 | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 33 | cpp-11 | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 34 | cpp-11 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 35 | cpp-11 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
-| 36 | g++-11 | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 37 | g++-11 | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 38 | g++-11 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 39 | g++-11 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
-| 40 | gcc-11 | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 41 | gcc-11 | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 42 | gcc-11 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 43 | gcc-11 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
-| 44 | gcc-11-base | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 45 | gcc-11-base | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 46 | gcc-11-base | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 47 | gcc-11-base | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
-| 48 | gcc-12-base | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
-| 49 | gcc-12-base | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
-| 50 | gpgv | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219) | LOW | affected | 2.2.27-3ubuntu2.3 |  |
-| 51 | libarchive13 | [CVE-2025-5914](https://ubuntu.com/security/CVE-2025-5914) | MEDIUM | fixed | 3.6.0-1ubuntu1.4 | 3.6.0-1ubuntu1.5 |
-| 52 | libarchive13 | [CVE-2025-5915](https://ubuntu.com/security/CVE-2025-5915) | MEDIUM | fixed | 3.6.0-1ubuntu1.4 | 3.6.0-1ubuntu1.5 |
-| 53 | libarchive13 | [CVE-2025-5916](https://ubuntu.com/security/CVE-2025-5916) | MEDIUM | fixed | 3.6.0-1ubuntu1.4 | 3.6.0-1ubuntu1.5 |
-| 54 | libarchive13 | [CVE-2025-5917](https://ubuntu.com/security/CVE-2025-5917) | MEDIUM | fixed | 3.6.0-1ubuntu1.4 | 3.6.0-1ubuntu1.5 |
-| 55 | libasan6 | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 56 | libasan6 | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 57 | libasan6 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 58 | libasan6 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
-| 59 | libatomic1 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
-| 60 | libatomic1 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
-| 61 | libbinutils | [CVE-2025-1147](https://ubuntu.com/security/CVE-2025-1147) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 62 | libbinutils | [CVE-2025-1148](https://ubuntu.com/security/CVE-2025-1148) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 63 | libbinutils | [CVE-2025-3198](https://ubuntu.com/security/CVE-2025-3198) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 64 | libbinutils | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 65 | libbinutils | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 66 | libbinutils | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 67 | libbinutils | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 68 | libbinutils | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 69 | libbinutils | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 70 | libbinutils | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 71 | libc-bin | [CVE-2025-4802](https://ubuntu.com/security/CVE-2025-4802) | MEDIUM | fixed | 2.35-0ubuntu3.9 | 2.35-0ubuntu3.10 |
-| 72 | libc-bin | [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058) | MEDIUM | affected | 2.35-0ubuntu3.9 |  |
-| 73 | libc-dev-bin | [CVE-2025-4802](https://ubuntu.com/security/CVE-2025-4802) | MEDIUM | fixed | 2.35-0ubuntu3.9 | 2.35-0ubuntu3.10 |
-| 74 | libc-dev-bin | [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058) | MEDIUM | affected | 2.35-0ubuntu3.9 |  |
-| 75 | libc6 | [CVE-2025-4802](https://ubuntu.com/security/CVE-2025-4802) | MEDIUM | fixed | 2.35-0ubuntu3.9 | 2.35-0ubuntu3.10 |
-| 76 | libc6 | [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058) | MEDIUM | affected | 2.35-0ubuntu3.9 |  |
-| 77 | libc6-dev | [CVE-2025-4802](https://ubuntu.com/security/CVE-2025-4802) | MEDIUM | fixed | 2.35-0ubuntu3.9 | 2.35-0ubuntu3.10 |
-| 78 | libc6-dev | [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058) | MEDIUM | affected | 2.35-0ubuntu3.9 |  |
-| 79 | libcc1-0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
-| 80 | libcc1-0 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
-| 81 | libctf-nobfd0 | [CVE-2025-1147](https://ubuntu.com/security/CVE-2025-1147) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 82 | libctf-nobfd0 | [CVE-2025-1148](https://ubuntu.com/security/CVE-2025-1148) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 83 | libctf-nobfd0 | [CVE-2025-3198](https://ubuntu.com/security/CVE-2025-3198) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 84 | libctf-nobfd0 | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 85 | libctf-nobfd0 | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 86 | libctf-nobfd0 | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 87 | libctf-nobfd0 | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 88 | libctf-nobfd0 | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 89 | libctf-nobfd0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 90 | libctf-nobfd0 | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 91 | libctf0 | [CVE-2025-1147](https://ubuntu.com/security/CVE-2025-1147) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 92 | libctf0 | [CVE-2025-1148](https://ubuntu.com/security/CVE-2025-1148) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 93 | libctf0 | [CVE-2025-3198](https://ubuntu.com/security/CVE-2025-3198) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 94 | libctf0 | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 95 | libctf0 | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 96 | libctf0 | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
-| 97 | libctf0 | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 98 | libctf0 | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 99 | libctf0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 100 | libctf0 | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
-| 101 | libcurl4 | [CVE-2025-0167](https://ubuntu.com/security/CVE-2025-0167) | LOW | affected | 7.81.0-1ubuntu1.20 |  |
-| 102 | libcurl4 | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086) | LOW | affected | 7.81.0-1ubuntu1.20 |  |
-| 103 | libgcc-11-dev | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 104 | libgcc-11-dev | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 105 | libgcc-11-dev | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 106 | libgcc-11-dev | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
-| 107 | libgcc-s1 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
-| 108 | libgcc-s1 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
-| 109 | libgcrypt20 | [CVE-2024-2236](https://ubuntu.com/security/CVE-2024-2236) | LOW | affected | 1.9.4-3ubuntu3 |  |
-| 110 | libgnutls30 | [CVE-2025-32988](https://ubuntu.com/security/CVE-2025-32988) | MEDIUM | fixed | 3.7.3-4ubuntu1.6 | 3.7.3-4ubuntu1.7 |
-| 111 | libgnutls30 | [CVE-2025-32989](https://ubuntu.com/security/CVE-2025-32989) | MEDIUM | fixed | 3.7.3-4ubuntu1.6 | 3.7.3-4ubuntu1.7 |
-| 112 | libgnutls30 | [CVE-2025-32990](https://ubuntu.com/security/CVE-2025-32990) | MEDIUM | fixed | 3.7.3-4ubuntu1.6 | 3.7.3-4ubuntu1.7 |
-| 113 | libgnutls30 | [CVE-2025-6395](https://ubuntu.com/security/CVE-2025-6395) | MEDIUM | fixed | 3.7.3-4ubuntu1.6 | 3.7.3-4ubuntu1.7 |
-| 114 | libgomp1 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
-| 115 | libgomp1 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
-| 116 | libgssapi-krb5-2 | [CVE-2025-3576](https://ubuntu.com/security/CVE-2025-3576) | MEDIUM | fixed | 1.19.2-2ubuntu0.6 | 1.19.2-2ubuntu0.7 |
-| 117 | libhwasan0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
-| 118 | libhwasan0 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
-| 119 | libicu70 | [CVE-2025-5222](https://ubuntu.com/security/CVE-2025-5222) | LOW | affected | 70.1-2 |  |
-| 120 | libitm1 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
-| 121 | libitm1 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
-| 122 | libk5crypto3 | [CVE-2025-3576](https://ubuntu.com/security/CVE-2025-3576) | MEDIUM | fixed | 1.19.2-2ubuntu0.6 | 1.19.2-2ubuntu0.7 |
-| 123 | libkrb5-3 | [CVE-2025-3576](https://ubuntu.com/security/CVE-2025-3576) | MEDIUM | fixed | 1.19.2-2ubuntu0.6 | 1.19.2-2ubuntu0.7 |
-| 124 | libkrb5support0 | [CVE-2025-3576](https://ubuntu.com/security/CVE-2025-3576) | MEDIUM | fixed | 1.19.2-2ubuntu0.6 | 1.19.2-2ubuntu0.7 |
-| 125 | liblsan0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
-| 126 | liblsan0 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
-| 127 | libncurses6 | [CVE-2023-50495](https://ubuntu.com/security/CVE-2023-50495) | LOW | affected | 6.3-2ubuntu0.1 |  |
-| 128 | libncursesw6 | [CVE-2023-50495](https://ubuntu.com/security/CVE-2023-50495) | LOW | affected | 6.3-2ubuntu0.1 |  |
-| 129 | libpam-modules | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
-| 130 | libpam-modules | [CVE-2025-6020](https://ubuntu.com/security/CVE-2025-6020) | MEDIUM | fixed | 1.4.0-11ubuntu2.5 | 1.4.0-11ubuntu2.6 |
-| 131 | libpam-modules | [CVE-2025-8941](https://ubuntu.com/security/CVE-2025-8941) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
-| 132 | libpam-modules-bin | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
-| 133 | libpam-modules-bin | [CVE-2025-6020](https://ubuntu.com/security/CVE-2025-6020) | MEDIUM | fixed | 1.4.0-11ubuntu2.5 | 1.4.0-11ubuntu2.6 |
-| 134 | libpam-modules-bin | [CVE-2025-8941](https://ubuntu.com/security/CVE-2025-8941) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
-| 135 | libpam-runtime | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
-| 136 | libpam-runtime | [CVE-2025-6020](https://ubuntu.com/security/CVE-2025-6020) | MEDIUM | fixed | 1.4.0-11ubuntu2.5 | 1.4.0-11ubuntu2.6 |
-| 137 | libpam-runtime | [CVE-2025-8941](https://ubuntu.com/security/CVE-2025-8941) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
-| 138 | libpam0g | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
-| 139 | libpam0g | [CVE-2025-6020](https://ubuntu.com/security/CVE-2025-6020) | MEDIUM | fixed | 1.4.0-11ubuntu2.5 | 1.4.0-11ubuntu2.6 |
-| 140 | libpam0g | [CVE-2025-8941](https://ubuntu.com/security/CVE-2025-8941) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
-| 141 | libpcre2-8-0 | [CVE-2025-58050](https://ubuntu.com/security/CVE-2025-58050) | MEDIUM | affected | 10.39-3ubuntu0.1 |  |
-| 142 | libpcre2-8-0 | [CVE-2022-41409](https://ubuntu.com/security/CVE-2022-41409) | LOW | affected | 10.39-3ubuntu0.1 |  |
-| 143 | libpcre3 | [CVE-2017-11164](https://ubuntu.com/security/CVE-2017-11164) | LOW | affected | 2:8.39-13ubuntu0.22.04.1 |  |
-| 144 | libsqlite3-0 | [CVE-2025-29088](https://ubuntu.com/security/CVE-2025-29088) | MEDIUM | fixed | 3.37.2-2ubuntu0.3 | 3.37.2-2ubuntu0.4 |
-| 145 | libsqlite3-0 | [CVE-2025-6965](https://ubuntu.com/security/CVE-2025-6965) | MEDIUM | fixed | 3.37.2-2ubuntu0.3 | 3.37.2-2ubuntu0.5 |
-| 146 | libsqlite3-dev | [CVE-2025-29088](https://ubuntu.com/security/CVE-2025-29088) | MEDIUM | fixed | 3.37.2-2ubuntu0.3 | 3.37.2-2ubuntu0.4 |
-| 147 | libsqlite3-dev | [CVE-2025-6965](https://ubuntu.com/security/CVE-2025-6965) | MEDIUM | fixed | 3.37.2-2ubuntu0.3 | 3.37.2-2ubuntu0.5 |
-| 148 | libssh-4 | [CVE-2025-4877](https://ubuntu.com/security/CVE-2025-4877) | MEDIUM | fixed | 0.9.6-2ubuntu0.22.04.3 | 0.9.6-2ubuntu0.22.04.4 |
-| 149 | libssh-4 | [CVE-2025-4878](https://ubuntu.com/security/CVE-2025-4878) | MEDIUM | fixed | 0.9.6-2ubuntu0.22.04.3 | 0.9.6-2ubuntu0.22.04.4 |
-| 150 | libssh-4 | [CVE-2025-5318](https://ubuntu.com/security/CVE-2025-5318) | MEDIUM | fixed | 0.9.6-2ubuntu0.22.04.3 | 0.9.6-2ubuntu0.22.04.4 |
-| 151 | libssh-4 | [CVE-2025-5372](https://ubuntu.com/security/CVE-2025-5372) | MEDIUM | fixed | 0.9.6-2ubuntu0.22.04.3 | 0.9.6-2ubuntu0.22.04.4 |
-| 152 | libssl3 | [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996) | LOW | affected | 3.0.2-0ubuntu1.19 |  |
-| 153 | libstdc++-11-dev | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 154 | libstdc++-11-dev | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 155 | libstdc++-11-dev | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 156 | libstdc++-11-dev | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
-| 157 | libstdc++6 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
-| 158 | libstdc++6 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
-| 159 | libsystemd0 | [CVE-2025-4598](https://ubuntu.com/security/CVE-2025-4598) | MEDIUM | fixed | 249.11-0ubuntu3.15 | 249.11-0ubuntu3.16 |
-| 160 | libsystemd0 | [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008) | LOW | affected | 249.11-0ubuntu3.15 |  |
-| 161 | libtinfo6 | [CVE-2023-50495](https://ubuntu.com/security/CVE-2023-50495) | LOW | affected | 6.3-2ubuntu0.1 |  |
-| 162 | libtsan0 | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 163 | libtsan0 | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 164 | libtsan0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
-| 165 | libtsan0 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
-| 166 | libubsan1 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
-| 167 | libubsan1 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
-| 168 | libudev1 | [CVE-2025-4598](https://ubuntu.com/security/CVE-2025-4598) | MEDIUM | fixed | 249.11-0ubuntu3.15 | 249.11-0ubuntu3.16 |
-| 169 | libudev1 | [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008) | LOW | affected | 249.11-0ubuntu3.15 |  |
-| 170 | libxml2 | [CVE-2025-49794](https://ubuntu.com/security/CVE-2025-49794) | MEDIUM | fixed | 2.9.13+dfsg-1ubuntu0.7 | 2.9.13+dfsg-1ubuntu0.8 |
-| 171 | libxml2 | [CVE-2025-49796](https://ubuntu.com/security/CVE-2025-49796) | MEDIUM | fixed | 2.9.13+dfsg-1ubuntu0.7 | 2.9.13+dfsg-1ubuntu0.8 |
-| 172 | libxml2 | [CVE-2025-6021](https://ubuntu.com/security/CVE-2025-6021) | MEDIUM | fixed | 2.9.13+dfsg-1ubuntu0.7 | 2.9.13+dfsg-1ubuntu0.8 |
-| 173 | libxml2 | [CVE-2025-6170](https://ubuntu.com/security/CVE-2025-6170) | MEDIUM | fixed | 2.9.13+dfsg-1ubuntu0.7 | 2.9.13+dfsg-1ubuntu0.8 |
-| 174 | libxml2 | [CVE-2025-9714](https://ubuntu.com/security/CVE-2025-9714) | MEDIUM | fixed | 2.9.13+dfsg-1ubuntu0.7 | 2.9.13+dfsg-1ubuntu0.9 |
-| 175 | libzstd1 | [CVE-2022-4899](https://ubuntu.com/security/CVE-2022-4899) | LOW | affected | 1.4.8+dfsg-3build1 |  |
-| 176 | linux-libc-dev | [CVE-2023-52664](https://ubuntu.com/security/CVE-2023-52664) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-139.149 |
-| 177 | linux-libc-dev | [CVE-2023-52927](https://ubuntu.com/security/CVE-2023-52927) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-139.149 |
-| 178 | linux-libc-dev | [CVE-2024-27407](https://ubuntu.com/security/CVE-2024-27407) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-153.163 |
-| 179 | linux-libc-dev | [CVE-2024-50047](https://ubuntu.com/security/CVE-2024-50047) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
-| 180 | linux-libc-dev | [CVE-2024-53168](https://ubuntu.com/security/CVE-2024-53168) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-141.151 |
-| 181 | linux-libc-dev | [CVE-2024-56551](https://ubuntu.com/security/CVE-2024-56551) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-141.151 |
-| 182 | linux-libc-dev | [CVE-2024-56608](https://ubuntu.com/security/CVE-2024-56608) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-141.151 |
-| 183 | linux-libc-dev | [CVE-2025-21727](https://ubuntu.com/security/CVE-2025-21727) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 184 | linux-libc-dev | [CVE-2025-21887](https://ubuntu.com/security/CVE-2025-21887) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 185 | linux-libc-dev | [CVE-2025-40300](https://ubuntu.com/security/CVE-2025-40300) | HIGH | affected | 5.15.0-138.148 |  |
-| 186 | linux-libc-dev | [CVE-2013-7445](https://ubuntu.com/security/CVE-2013-7445) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 187 | linux-libc-dev | [CVE-2015-7837](https://ubuntu.com/security/CVE-2015-7837) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 188 | linux-libc-dev | [CVE-2015-8553](https://ubuntu.com/security/CVE-2015-8553) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 189 | linux-libc-dev | [CVE-2016-8660](https://ubuntu.com/security/CVE-2016-8660) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 190 | linux-libc-dev | [CVE-2018-17977](https://ubuntu.com/security/CVE-2018-17977) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 191 | linux-libc-dev | [CVE-2019-15794](https://ubuntu.com/security/CVE-2019-15794) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 192 | linux-libc-dev | [CVE-2020-14356](https://ubuntu.com/security/CVE-2020-14356) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 193 | linux-libc-dev | [CVE-2021-3714](https://ubuntu.com/security/CVE-2021-3714) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 194 | linux-libc-dev | [CVE-2021-3864](https://ubuntu.com/security/CVE-2021-3864) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 195 | linux-libc-dev | [CVE-2021-4095](https://ubuntu.com/security/CVE-2021-4095) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 196 | linux-libc-dev | [CVE-2021-47432](https://ubuntu.com/security/CVE-2021-47432) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 197 | linux-libc-dev | [CVE-2021-47658](https://ubuntu.com/security/CVE-2021-47658) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 198 | linux-libc-dev | [CVE-2022-0400](https://ubuntu.com/security/CVE-2022-0400) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 199 | linux-libc-dev | [CVE-2022-0480](https://ubuntu.com/security/CVE-2022-0480) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 200 | linux-libc-dev | [CVE-2022-1205](https://ubuntu.com/security/CVE-2022-1205) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 201 | linux-libc-dev | [CVE-2022-1247](https://ubuntu.com/security/CVE-2022-1247) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 202 | linux-libc-dev | [CVE-2022-21546](https://ubuntu.com/security/CVE-2022-21546) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 203 | linux-libc-dev | [CVE-2022-25836](https://ubuntu.com/security/CVE-2022-25836) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 204 | linux-libc-dev | [CVE-2022-2961](https://ubuntu.com/security/CVE-2022-2961) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 205 | linux-libc-dev | [CVE-2022-3238](https://ubuntu.com/security/CVE-2022-3238) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 206 | linux-libc-dev | [CVE-2022-3523](https://ubuntu.com/security/CVE-2022-3523) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 207 | linux-libc-dev | [CVE-2022-38457](https://ubuntu.com/security/CVE-2022-38457) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 208 | linux-libc-dev | [CVE-2022-40133](https://ubuntu.com/security/CVE-2022-40133) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 209 | linux-libc-dev | [CVE-2022-4543](https://ubuntu.com/security/CVE-2022-4543) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 210 | linux-libc-dev | [CVE-2022-48628](https://ubuntu.com/security/CVE-2022-48628) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 211 | linux-libc-dev | [CVE-2022-48633](https://ubuntu.com/security/CVE-2022-48633) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 212 | linux-libc-dev | [CVE-2022-48646](https://ubuntu.com/security/CVE-2022-48646) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 213 | linux-libc-dev | [CVE-2022-48667](https://ubuntu.com/security/CVE-2022-48667) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 214 | linux-libc-dev | [CVE-2022-48668](https://ubuntu.com/security/CVE-2022-48668) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 215 | linux-libc-dev | [CVE-2022-48673](https://ubuntu.com/security/CVE-2022-48673) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 216 | linux-libc-dev | [CVE-2022-48706](https://ubuntu.com/security/CVE-2022-48706) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 217 | linux-libc-dev | [CVE-2022-48744](https://ubuntu.com/security/CVE-2022-48744) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 218 | linux-libc-dev | [CVE-2022-48766](https://ubuntu.com/security/CVE-2022-48766) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 219 | linux-libc-dev | [CVE-2022-48771](https://ubuntu.com/security/CVE-2022-48771) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 220 | linux-libc-dev | [CVE-2022-48816](https://ubuntu.com/security/CVE-2022-48816) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 221 | linux-libc-dev | [CVE-2022-48887](https://ubuntu.com/security/CVE-2022-48887) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 222 | linux-libc-dev | [CVE-2022-48893](https://ubuntu.com/security/CVE-2022-48893) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 223 | linux-libc-dev | [CVE-2022-48929](https://ubuntu.com/security/CVE-2022-48929) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 224 | linux-libc-dev | [CVE-2022-48976](https://ubuntu.com/security/CVE-2022-48976) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 225 | linux-libc-dev | [CVE-2022-48979](https://ubuntu.com/security/CVE-2022-48979) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 226 | linux-libc-dev | [CVE-2022-48990](https://ubuntu.com/security/CVE-2022-48990) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 227 | linux-libc-dev | [CVE-2022-48998](https://ubuntu.com/security/CVE-2022-48998) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 228 | linux-libc-dev | [CVE-2022-49063](https://ubuntu.com/security/CVE-2022-49063) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 229 | linux-libc-dev | [CVE-2022-49069](https://ubuntu.com/security/CVE-2022-49069) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 230 | linux-libc-dev | [CVE-2022-49108](https://ubuntu.com/security/CVE-2022-49108) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 231 | linux-libc-dev | [CVE-2022-49123](https://ubuntu.com/security/CVE-2022-49123) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 232 | linux-libc-dev | [CVE-2022-49124](https://ubuntu.com/security/CVE-2022-49124) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 233 | linux-libc-dev | [CVE-2022-49125](https://ubuntu.com/security/CVE-2022-49125) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 234 | linux-libc-dev | [CVE-2022-49127](https://ubuntu.com/security/CVE-2022-49127) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 235 | linux-libc-dev | [CVE-2022-49133](https://ubuntu.com/security/CVE-2022-49133) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 236 | linux-libc-dev | [CVE-2022-49134](https://ubuntu.com/security/CVE-2022-49134) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 237 | linux-libc-dev | [CVE-2022-49136](https://ubuntu.com/security/CVE-2022-49136) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 238 | linux-libc-dev | [CVE-2022-49138](https://ubuntu.com/security/CVE-2022-49138) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 239 | linux-libc-dev | [CVE-2022-49161](https://ubuntu.com/security/CVE-2022-49161) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 240 | linux-libc-dev | [CVE-2022-49167](https://ubuntu.com/security/CVE-2022-49167) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 241 | linux-libc-dev | [CVE-2022-49168](https://ubuntu.com/security/CVE-2022-49168) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 242 | linux-libc-dev | [CVE-2022-49172](https://ubuntu.com/security/CVE-2022-49172) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 243 | linux-libc-dev | [CVE-2022-49173](https://ubuntu.com/security/CVE-2022-49173) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 244 | linux-libc-dev | [CVE-2022-49177](https://ubuntu.com/security/CVE-2022-49177) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 245 | linux-libc-dev | [CVE-2022-49178](https://ubuntu.com/security/CVE-2022-49178) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 246 | linux-libc-dev | [CVE-2022-49203](https://ubuntu.com/security/CVE-2022-49203) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 247 | linux-libc-dev | [CVE-2022-49218](https://ubuntu.com/security/CVE-2022-49218) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 248 | linux-libc-dev | [CVE-2022-49234](https://ubuntu.com/security/CVE-2022-49234) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 249 | linux-libc-dev | [CVE-2022-49245](https://ubuntu.com/security/CVE-2022-49245) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 250 | linux-libc-dev | [CVE-2022-49267](https://ubuntu.com/security/CVE-2022-49267) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 251 | linux-libc-dev | [CVE-2022-49296](https://ubuntu.com/security/CVE-2022-49296) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 252 | linux-libc-dev | [CVE-2022-49303](https://ubuntu.com/security/CVE-2022-49303) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 253 | linux-libc-dev | [CVE-2022-49306](https://ubuntu.com/security/CVE-2022-49306) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 254 | linux-libc-dev | [CVE-2022-49317](https://ubuntu.com/security/CVE-2022-49317) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 255 | linux-libc-dev | [CVE-2022-49333](https://ubuntu.com/security/CVE-2022-49333) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 256 | linux-libc-dev | [CVE-2022-49342](https://ubuntu.com/security/CVE-2022-49342) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 257 | linux-libc-dev | [CVE-2022-49359](https://ubuntu.com/security/CVE-2022-49359) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 258 | linux-libc-dev | [CVE-2022-49390](https://ubuntu.com/security/CVE-2022-49390) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 259 | linux-libc-dev | [CVE-2022-49393](https://ubuntu.com/security/CVE-2022-49393) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 260 | linux-libc-dev | [CVE-2022-49401](https://ubuntu.com/security/CVE-2022-49401) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 261 | linux-libc-dev | [CVE-2022-49420](https://ubuntu.com/security/CVE-2022-49420) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 262 | linux-libc-dev | [CVE-2022-49465](https://ubuntu.com/security/CVE-2022-49465) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 263 | linux-libc-dev | [CVE-2022-49469](https://ubuntu.com/security/CVE-2022-49469) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 264 | linux-libc-dev | [CVE-2022-49471](https://ubuntu.com/security/CVE-2022-49471) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 265 | linux-libc-dev | [CVE-2022-49476](https://ubuntu.com/security/CVE-2022-49476) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 266 | linux-libc-dev | [CVE-2022-49484](https://ubuntu.com/security/CVE-2022-49484) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 267 | linux-libc-dev | [CVE-2022-49496](https://ubuntu.com/security/CVE-2022-49496) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 268 | linux-libc-dev | [CVE-2022-49504](https://ubuntu.com/security/CVE-2022-49504) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 269 | linux-libc-dev | [CVE-2022-49516](https://ubuntu.com/security/CVE-2022-49516) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 270 | linux-libc-dev | [CVE-2022-49518](https://ubuntu.com/security/CVE-2022-49518) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 271 | linux-libc-dev | [CVE-2022-49528](https://ubuntu.com/security/CVE-2022-49528) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 272 | linux-libc-dev | [CVE-2022-49529](https://ubuntu.com/security/CVE-2022-49529) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 273 | linux-libc-dev | [CVE-2022-49531](https://ubuntu.com/security/CVE-2022-49531) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 274 | linux-libc-dev | [CVE-2022-49533](https://ubuntu.com/security/CVE-2022-49533) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 275 | linux-libc-dev | [CVE-2022-49534](https://ubuntu.com/security/CVE-2022-49534) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 276 | linux-libc-dev | [CVE-2022-49535](https://ubuntu.com/security/CVE-2022-49535) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 277 | linux-libc-dev | [CVE-2022-49539](https://ubuntu.com/security/CVE-2022-49539) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 278 | linux-libc-dev | [CVE-2022-49543](https://ubuntu.com/security/CVE-2022-49543) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 279 | linux-libc-dev | [CVE-2022-49547](https://ubuntu.com/security/CVE-2022-49547) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 280 | linux-libc-dev | [CVE-2022-49552](https://ubuntu.com/security/CVE-2022-49552) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 281 | linux-libc-dev | [CVE-2022-49562](https://ubuntu.com/security/CVE-2022-49562) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 282 | linux-libc-dev | [CVE-2022-49622](https://ubuntu.com/security/CVE-2022-49622) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 283 | linux-libc-dev | [CVE-2022-49635](https://ubuntu.com/security/CVE-2022-49635) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 284 | linux-libc-dev | [CVE-2022-49636](https://ubuntu.com/security/CVE-2022-49636) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 285 | linux-libc-dev | [CVE-2022-49651](https://ubuntu.com/security/CVE-2022-49651) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 286 | linux-libc-dev | [CVE-2022-49699](https://ubuntu.com/security/CVE-2022-49699) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 287 | linux-libc-dev | [CVE-2022-49722](https://ubuntu.com/security/CVE-2022-49722) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 288 | linux-libc-dev | [CVE-2022-49728](https://ubuntu.com/security/CVE-2022-49728) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 289 | linux-libc-dev | [CVE-2022-49742](https://ubuntu.com/security/CVE-2022-49742) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 290 | linux-libc-dev | [CVE-2022-49750](https://ubuntu.com/security/CVE-2022-49750) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 291 | linux-libc-dev | [CVE-2022-49759](https://ubuntu.com/security/CVE-2022-49759) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 292 | linux-libc-dev | [CVE-2022-49764](https://ubuntu.com/security/CVE-2022-49764) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 293 | linux-libc-dev | [CVE-2022-49766](https://ubuntu.com/security/CVE-2022-49766) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 294 | linux-libc-dev | [CVE-2022-49773](https://ubuntu.com/security/CVE-2022-49773) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 295 | linux-libc-dev | [CVE-2022-49783](https://ubuntu.com/security/CVE-2022-49783) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 296 | linux-libc-dev | [CVE-2022-49803](https://ubuntu.com/security/CVE-2022-49803) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 297 | linux-libc-dev | [CVE-2022-49810](https://ubuntu.com/security/CVE-2022-49810) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 298 | linux-libc-dev | [CVE-2022-49829](https://ubuntu.com/security/CVE-2022-49829) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 299 | linux-libc-dev | [CVE-2022-49833](https://ubuntu.com/security/CVE-2022-49833) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 300 | linux-libc-dev | [CVE-2022-49858](https://ubuntu.com/security/CVE-2022-49858) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 301 | linux-libc-dev | [CVE-2022-49901](https://ubuntu.com/security/CVE-2022-49901) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 302 | linux-libc-dev | [CVE-2022-49910](https://ubuntu.com/security/CVE-2022-49910) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 303 | linux-libc-dev | [CVE-2022-49932](https://ubuntu.com/security/CVE-2022-49932) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 304 | linux-libc-dev | [CVE-2022-49935](https://ubuntu.com/security/CVE-2022-49935) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 305 | linux-libc-dev | [CVE-2022-49940](https://ubuntu.com/security/CVE-2022-49940) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 306 | linux-libc-dev | [CVE-2022-49943](https://ubuntu.com/security/CVE-2022-49943) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 307 | linux-libc-dev | [CVE-2022-49955](https://ubuntu.com/security/CVE-2022-49955) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 308 | linux-libc-dev | [CVE-2022-49961](https://ubuntu.com/security/CVE-2022-49961) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 309 | linux-libc-dev | [CVE-2022-49965](https://ubuntu.com/security/CVE-2022-49965) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 310 | linux-libc-dev | [CVE-2022-49967](https://ubuntu.com/security/CVE-2022-49967) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 311 | linux-libc-dev | [CVE-2022-49971](https://ubuntu.com/security/CVE-2022-49971) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 312 | linux-libc-dev | [CVE-2022-49974](https://ubuntu.com/security/CVE-2022-49974) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 313 | linux-libc-dev | [CVE-2022-49980](https://ubuntu.com/security/CVE-2022-49980) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 314 | linux-libc-dev | [CVE-2022-49997](https://ubuntu.com/security/CVE-2022-49997) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 315 | linux-libc-dev | [CVE-2022-50002](https://ubuntu.com/security/CVE-2022-50002) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 316 | linux-libc-dev | [CVE-2022-50009](https://ubuntu.com/security/CVE-2022-50009) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 317 | linux-libc-dev | [CVE-2022-50015](https://ubuntu.com/security/CVE-2022-50015) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 318 | linux-libc-dev | [CVE-2022-50016](https://ubuntu.com/security/CVE-2022-50016) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 319 | linux-libc-dev | [CVE-2022-50070](https://ubuntu.com/security/CVE-2022-50070) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 320 | linux-libc-dev | [CVE-2022-50071](https://ubuntu.com/security/CVE-2022-50071) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 321 | linux-libc-dev | [CVE-2022-50073](https://ubuntu.com/security/CVE-2022-50073) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 322 | linux-libc-dev | [CVE-2022-50090](https://ubuntu.com/security/CVE-2022-50090) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 323 | linux-libc-dev | [CVE-2022-50095](https://ubuntu.com/security/CVE-2022-50095) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 324 | linux-libc-dev | [CVE-2022-50116](https://ubuntu.com/security/CVE-2022-50116) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 325 | linux-libc-dev | [CVE-2022-50163](https://ubuntu.com/security/CVE-2022-50163) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 326 | linux-libc-dev | [CVE-2022-50166](https://ubuntu.com/security/CVE-2022-50166) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 327 | linux-libc-dev | [CVE-2022-50167](https://ubuntu.com/security/CVE-2022-50167) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 328 | linux-libc-dev | [CVE-2022-50178](https://ubuntu.com/security/CVE-2022-50178) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 329 | linux-libc-dev | [CVE-2022-50195](https://ubuntu.com/security/CVE-2022-50195) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 330 | linux-libc-dev | [CVE-2022-50212](https://ubuntu.com/security/CVE-2022-50212) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 331 | linux-libc-dev | [CVE-2022-50213](https://ubuntu.com/security/CVE-2022-50213) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 332 | linux-libc-dev | [CVE-2022-50224](https://ubuntu.com/security/CVE-2022-50224) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 333 | linux-libc-dev | [CVE-2022-50230](https://ubuntu.com/security/CVE-2022-50230) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 334 | linux-libc-dev | [CVE-2022-50232](https://ubuntu.com/security/CVE-2022-50232) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 335 | linux-libc-dev | [CVE-2022-50234](https://ubuntu.com/security/CVE-2022-50234) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 336 | linux-libc-dev | [CVE-2022-50236](https://ubuntu.com/security/CVE-2022-50236) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 337 | linux-libc-dev | [CVE-2022-50240](https://ubuntu.com/security/CVE-2022-50240) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 338 | linux-libc-dev | [CVE-2022-50256](https://ubuntu.com/security/CVE-2022-50256) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 339 | linux-libc-dev | [CVE-2022-50260](https://ubuntu.com/security/CVE-2022-50260) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 340 | linux-libc-dev | [CVE-2022-50266](https://ubuntu.com/security/CVE-2022-50266) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 341 | linux-libc-dev | [CVE-2022-50284](https://ubuntu.com/security/CVE-2022-50284) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 342 | linux-libc-dev | [CVE-2022-50290](https://ubuntu.com/security/CVE-2022-50290) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 343 | linux-libc-dev | [CVE-2022-50303](https://ubuntu.com/security/CVE-2022-50303) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 344 | linux-libc-dev | [CVE-2022-50304](https://ubuntu.com/security/CVE-2022-50304) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 345 | linux-libc-dev | [CVE-2022-50316](https://ubuntu.com/security/CVE-2022-50316) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 346 | linux-libc-dev | [CVE-2022-50322](https://ubuntu.com/security/CVE-2022-50322) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 347 | linux-libc-dev | [CVE-2022-50327](https://ubuntu.com/security/CVE-2022-50327) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 348 | linux-libc-dev | [CVE-2022-50332](https://ubuntu.com/security/CVE-2022-50332) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 349 | linux-libc-dev | [CVE-2022-50338](https://ubuntu.com/security/CVE-2022-50338) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 350 | linux-libc-dev | [CVE-2022-50350](https://ubuntu.com/security/CVE-2022-50350) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 351 | linux-libc-dev | [CVE-2023-0030](https://ubuntu.com/security/CVE-2023-0030) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 352 | linux-libc-dev | [CVE-2023-0160](https://ubuntu.com/security/CVE-2023-0160) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 353 | linux-libc-dev | [CVE-2023-1193](https://ubuntu.com/security/CVE-2023-1193) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 354 | linux-libc-dev | [CVE-2023-2007](https://ubuntu.com/security/CVE-2023-2007) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 355 | linux-libc-dev | [CVE-2023-26242](https://ubuntu.com/security/CVE-2023-26242) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 356 | linux-libc-dev | [CVE-2023-31082](https://ubuntu.com/security/CVE-2023-31082) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 357 | linux-libc-dev | [CVE-2023-45896](https://ubuntu.com/security/CVE-2023-45896) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 358 | linux-libc-dev | [CVE-2023-52452](https://ubuntu.com/security/CVE-2023-52452) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 359 | linux-libc-dev | [CVE-2023-52481](https://ubuntu.com/security/CVE-2023-52481) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 360 | linux-libc-dev | [CVE-2023-52485](https://ubuntu.com/security/CVE-2023-52485) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 361 | linux-libc-dev | [CVE-2023-52508](https://ubuntu.com/security/CVE-2023-52508) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 362 | linux-libc-dev | [CVE-2023-52561](https://ubuntu.com/security/CVE-2023-52561) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 363 | linux-libc-dev | [CVE-2023-52569](https://ubuntu.com/security/CVE-2023-52569) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 364 | linux-libc-dev | [CVE-2023-52572](https://ubuntu.com/security/CVE-2023-52572) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 365 | linux-libc-dev | [CVE-2023-52576](https://ubuntu.com/security/CVE-2023-52576) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 366 | linux-libc-dev | [CVE-2023-52582](https://ubuntu.com/security/CVE-2023-52582) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 367 | linux-libc-dev | [CVE-2023-52586](https://ubuntu.com/security/CVE-2023-52586) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 368 | linux-libc-dev | [CVE-2023-52589](https://ubuntu.com/security/CVE-2023-52589) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 369 | linux-libc-dev | [CVE-2023-52590](https://ubuntu.com/security/CVE-2023-52590) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 370 | linux-libc-dev | [CVE-2023-52591](https://ubuntu.com/security/CVE-2023-52591) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 371 | linux-libc-dev | [CVE-2023-52624](https://ubuntu.com/security/CVE-2023-52624) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 372 | linux-libc-dev | [CVE-2023-52625](https://ubuntu.com/security/CVE-2023-52625) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 373 | linux-libc-dev | [CVE-2023-52632](https://ubuntu.com/security/CVE-2023-52632) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 374 | linux-libc-dev | [CVE-2023-52634](https://ubuntu.com/security/CVE-2023-52634) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 375 | linux-libc-dev | [CVE-2023-52648](https://ubuntu.com/security/CVE-2023-52648) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 376 | linux-libc-dev | [CVE-2023-52653](https://ubuntu.com/security/CVE-2023-52653) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 377 | linux-libc-dev | [CVE-2023-52657](https://ubuntu.com/security/CVE-2023-52657) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 378 | linux-libc-dev | [CVE-2023-52660](https://ubuntu.com/security/CVE-2023-52660) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 379 | linux-libc-dev | [CVE-2023-52671](https://ubuntu.com/security/CVE-2023-52671) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 380 | linux-libc-dev | [CVE-2023-52673](https://ubuntu.com/security/CVE-2023-52673) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 381 | linux-libc-dev | [CVE-2023-52676](https://ubuntu.com/security/CVE-2023-52676) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 382 | linux-libc-dev | [CVE-2023-52682](https://ubuntu.com/security/CVE-2023-52682) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 383 | linux-libc-dev | [CVE-2023-52700](https://ubuntu.com/security/CVE-2023-52700) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 384 | linux-libc-dev | [CVE-2023-52701](https://ubuntu.com/security/CVE-2023-52701) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 385 | linux-libc-dev | [CVE-2023-52732](https://ubuntu.com/security/CVE-2023-52732) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 386 | linux-libc-dev | [CVE-2023-52737](https://ubuntu.com/security/CVE-2023-52737) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 387 | linux-libc-dev | [CVE-2023-52751](https://ubuntu.com/security/CVE-2023-52751) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 388 | linux-libc-dev | [CVE-2023-52757](https://ubuntu.com/security/CVE-2023-52757) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 389 | linux-libc-dev | [CVE-2023-52761](https://ubuntu.com/security/CVE-2023-52761) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 390 | linux-libc-dev | [CVE-2023-52829](https://ubuntu.com/security/CVE-2023-52829) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 391 | linux-libc-dev | [CVE-2023-52831](https://ubuntu.com/security/CVE-2023-52831) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 392 | linux-libc-dev | [CVE-2023-52837](https://ubuntu.com/security/CVE-2023-52837) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 393 | linux-libc-dev | [CVE-2023-52857](https://ubuntu.com/security/CVE-2023-52857) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 394 | linux-libc-dev | [CVE-2023-52879](https://ubuntu.com/security/CVE-2023-52879) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 395 | linux-libc-dev | [CVE-2023-52888](https://ubuntu.com/security/CVE-2023-52888) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 396 | linux-libc-dev | [CVE-2023-52905](https://ubuntu.com/security/CVE-2023-52905) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 397 | linux-libc-dev | [CVE-2023-52916](https://ubuntu.com/security/CVE-2023-52916) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 398 | linux-libc-dev | [CVE-2023-52920](https://ubuntu.com/security/CVE-2023-52920) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 399 | linux-libc-dev | [CVE-2023-52921](https://ubuntu.com/security/CVE-2023-52921) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 400 | linux-libc-dev | [CVE-2023-52926](https://ubuntu.com/security/CVE-2023-52926) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 401 | linux-libc-dev | [CVE-2023-52935](https://ubuntu.com/security/CVE-2023-52935) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 402 | linux-libc-dev | [CVE-2023-52939](https://ubuntu.com/security/CVE-2023-52939) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 403 | linux-libc-dev | [CVE-2023-52981](https://ubuntu.com/security/CVE-2023-52981) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 404 | linux-libc-dev | [CVE-2023-53002](https://ubuntu.com/security/CVE-2023-53002) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 405 | linux-libc-dev | [CVE-2023-53008](https://ubuntu.com/security/CVE-2023-53008) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 406 | linux-libc-dev | [CVE-2023-53009](https://ubuntu.com/security/CVE-2023-53009) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 407 | linux-libc-dev | [CVE-2023-53010](https://ubuntu.com/security/CVE-2023-53010) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 408 | linux-libc-dev | [CVE-2023-53034](https://ubuntu.com/security/CVE-2023-53034) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 409 | linux-libc-dev | [CVE-2023-53036](https://ubuntu.com/security/CVE-2023-53036) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 410 | linux-libc-dev | [CVE-2023-53037](https://ubuntu.com/security/CVE-2023-53037) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 411 | linux-libc-dev | [CVE-2023-53042](https://ubuntu.com/security/CVE-2023-53042) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 412 | linux-libc-dev | [CVE-2023-53067](https://ubuntu.com/security/CVE-2023-53067) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 413 | linux-libc-dev | [CVE-2023-53068](https://ubuntu.com/security/CVE-2023-53068) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 414 | linux-libc-dev | [CVE-2023-53072](https://ubuntu.com/security/CVE-2023-53072) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 415 | linux-libc-dev | [CVE-2023-53093](https://ubuntu.com/security/CVE-2023-53093) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 416 | linux-libc-dev | [CVE-2023-53105](https://ubuntu.com/security/CVE-2023-53105) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 417 | linux-libc-dev | [CVE-2023-53115](https://ubuntu.com/security/CVE-2023-53115) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 418 | linux-libc-dev | [CVE-2023-53149](https://ubuntu.com/security/CVE-2023-53149) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 419 | linux-libc-dev | [CVE-2023-53152](https://ubuntu.com/security/CVE-2023-53152) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 420 | linux-libc-dev | [CVE-2023-53168](https://ubuntu.com/security/CVE-2023-53168) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 421 | linux-libc-dev | [CVE-2023-53178](https://ubuntu.com/security/CVE-2023-53178) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 422 | linux-libc-dev | [CVE-2023-53180](https://ubuntu.com/security/CVE-2023-53180) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 423 | linux-libc-dev | [CVE-2023-53187](https://ubuntu.com/security/CVE-2023-53187) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 424 | linux-libc-dev | [CVE-2023-53188](https://ubuntu.com/security/CVE-2023-53188) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 425 | linux-libc-dev | [CVE-2023-53198](https://ubuntu.com/security/CVE-2023-53198) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 426 | linux-libc-dev | [CVE-2023-53209](https://ubuntu.com/security/CVE-2023-53209) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 427 | linux-libc-dev | [CVE-2023-53218](https://ubuntu.com/security/CVE-2023-53218) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 428 | linux-libc-dev | [CVE-2023-53221](https://ubuntu.com/security/CVE-2023-53221) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 429 | linux-libc-dev | [CVE-2023-53227](https://ubuntu.com/security/CVE-2023-53227) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 430 | linux-libc-dev | [CVE-2023-53231](https://ubuntu.com/security/CVE-2023-53231) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 431 | linux-libc-dev | [CVE-2023-53240](https://ubuntu.com/security/CVE-2023-53240) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 432 | linux-libc-dev | [CVE-2023-53247](https://ubuntu.com/security/CVE-2023-53247) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 433 | linux-libc-dev | [CVE-2023-53248](https://ubuntu.com/security/CVE-2023-53248) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 434 | linux-libc-dev | [CVE-2023-53254](https://ubuntu.com/security/CVE-2023-53254) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 435 | linux-libc-dev | [CVE-2023-53258](https://ubuntu.com/security/CVE-2023-53258) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 436 | linux-libc-dev | [CVE-2023-53261](https://ubuntu.com/security/CVE-2023-53261) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 437 | linux-libc-dev | [CVE-2023-53292](https://ubuntu.com/security/CVE-2023-53292) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 438 | linux-libc-dev | [CVE-2023-53293](https://ubuntu.com/security/CVE-2023-53293) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 439 | linux-libc-dev | [CVE-2023-53320](https://ubuntu.com/security/CVE-2023-53320) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 440 | linux-libc-dev | [CVE-2023-53323](https://ubuntu.com/security/CVE-2023-53323) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 441 | linux-libc-dev | [CVE-2023-53325](https://ubuntu.com/security/CVE-2023-53325) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 442 | linux-libc-dev | [CVE-2023-53332](https://ubuntu.com/security/CVE-2023-53332) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 443 | linux-libc-dev | [CVE-2023-6610](https://ubuntu.com/security/CVE-2023-6610) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 444 | linux-libc-dev | [CVE-2024-26595](https://ubuntu.com/security/CVE-2024-26595) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 445 | linux-libc-dev | [CVE-2024-26605](https://ubuntu.com/security/CVE-2024-26605) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 446 | linux-libc-dev | [CVE-2024-26647](https://ubuntu.com/security/CVE-2024-26647) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 447 | linux-libc-dev | [CVE-2024-26648](https://ubuntu.com/security/CVE-2024-26648) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 448 | linux-libc-dev | [CVE-2024-26656](https://ubuntu.com/security/CVE-2024-26656) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 449 | linux-libc-dev | [CVE-2024-26658](https://ubuntu.com/security/CVE-2024-26658) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 450 | linux-libc-dev | [CVE-2024-26662](https://ubuntu.com/security/CVE-2024-26662) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 451 | linux-libc-dev | [CVE-2024-26672](https://ubuntu.com/security/CVE-2024-26672) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 452 | linux-libc-dev | [CVE-2024-26686](https://ubuntu.com/security/CVE-2024-26686) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 453 | linux-libc-dev | [CVE-2024-26691](https://ubuntu.com/security/CVE-2024-26691) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 454 | linux-libc-dev | [CVE-2024-26699](https://ubuntu.com/security/CVE-2024-26699) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 455 | linux-libc-dev | [CVE-2024-26700](https://ubuntu.com/security/CVE-2024-26700) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 456 | linux-libc-dev | [CVE-2024-26714](https://ubuntu.com/security/CVE-2024-26714) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 457 | linux-libc-dev | [CVE-2024-26719](https://ubuntu.com/security/CVE-2024-26719) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 458 | linux-libc-dev | [CVE-2024-26739](https://ubuntu.com/security/CVE-2024-26739) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 459 | linux-libc-dev | [CVE-2024-26740](https://ubuntu.com/security/CVE-2024-26740) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 460 | linux-libc-dev | [CVE-2024-26742](https://ubuntu.com/security/CVE-2024-26742) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 461 | linux-libc-dev | [CVE-2024-26756](https://ubuntu.com/security/CVE-2024-26756) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 462 | linux-libc-dev | [CVE-2024-26757](https://ubuntu.com/security/CVE-2024-26757) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 463 | linux-libc-dev | [CVE-2024-26758](https://ubuntu.com/security/CVE-2024-26758) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 464 | linux-libc-dev | [CVE-2024-26759](https://ubuntu.com/security/CVE-2024-26759) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 465 | linux-libc-dev | [CVE-2024-26767](https://ubuntu.com/security/CVE-2024-26767) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 466 | linux-libc-dev | [CVE-2024-26770](https://ubuntu.com/security/CVE-2024-26770) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 467 | linux-libc-dev | [CVE-2024-26807](https://ubuntu.com/security/CVE-2024-26807) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 468 | linux-libc-dev | [CVE-2024-26842](https://ubuntu.com/security/CVE-2024-26842) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 469 | linux-libc-dev | [CVE-2024-26844](https://ubuntu.com/security/CVE-2024-26844) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 470 | linux-libc-dev | [CVE-2024-26853](https://ubuntu.com/security/CVE-2024-26853) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 471 | linux-libc-dev | [CVE-2024-26866](https://ubuntu.com/security/CVE-2024-26866) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 472 | linux-libc-dev | [CVE-2024-26869](https://ubuntu.com/security/CVE-2024-26869) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 473 | linux-libc-dev | [CVE-2024-26876](https://ubuntu.com/security/CVE-2024-26876) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 474 | linux-libc-dev | [CVE-2024-26938](https://ubuntu.com/security/CVE-2024-26938) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 475 | linux-libc-dev | [CVE-2024-26948](https://ubuntu.com/security/CVE-2024-26948) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 476 | linux-libc-dev | [CVE-2024-26953](https://ubuntu.com/security/CVE-2024-26953) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 477 | linux-libc-dev | [CVE-2024-26954](https://ubuntu.com/security/CVE-2024-26954) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 478 | linux-libc-dev | [CVE-2024-26982](https://ubuntu.com/security/CVE-2024-26982) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 479 | linux-libc-dev | [CVE-2024-27002](https://ubuntu.com/security/CVE-2024-27002) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 480 | linux-libc-dev | [CVE-2024-27005](https://ubuntu.com/security/CVE-2024-27005) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 481 | linux-libc-dev | [CVE-2024-27014](https://ubuntu.com/security/CVE-2024-27014) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 482 | linux-libc-dev | [CVE-2024-27025](https://ubuntu.com/security/CVE-2024-27025) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 483 | linux-libc-dev | [CVE-2024-27032](https://ubuntu.com/security/CVE-2024-27032) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 484 | linux-libc-dev | [CVE-2024-27035](https://ubuntu.com/security/CVE-2024-27035) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 485 | linux-libc-dev | [CVE-2024-27041](https://ubuntu.com/security/CVE-2024-27041) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 486 | linux-libc-dev | [CVE-2024-27056](https://ubuntu.com/security/CVE-2024-27056) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 487 | linux-libc-dev | [CVE-2024-27057](https://ubuntu.com/security/CVE-2024-27057) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 488 | linux-libc-dev | [CVE-2024-27062](https://ubuntu.com/security/CVE-2024-27062) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 489 | linux-libc-dev | [CVE-2024-27389](https://ubuntu.com/security/CVE-2024-27389) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 490 | linux-libc-dev | [CVE-2024-27400](https://ubuntu.com/security/CVE-2024-27400) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 491 | linux-libc-dev | [CVE-2024-27402](https://ubuntu.com/security/CVE-2024-27402) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 492 | linux-libc-dev | [CVE-2024-27408](https://ubuntu.com/security/CVE-2024-27408) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 493 | linux-libc-dev | [CVE-2024-27418](https://ubuntu.com/security/CVE-2024-27418) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 494 | linux-libc-dev | [CVE-2024-27435](https://ubuntu.com/security/CVE-2024-27435) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 495 | linux-libc-dev | [CVE-2024-35784](https://ubuntu.com/security/CVE-2024-35784) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 496 | linux-libc-dev | [CVE-2024-35790](https://ubuntu.com/security/CVE-2024-35790) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 497 | linux-libc-dev | [CVE-2024-35794](https://ubuntu.com/security/CVE-2024-35794) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 498 | linux-libc-dev | [CVE-2024-35799](https://ubuntu.com/security/CVE-2024-35799) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 499 | linux-libc-dev | [CVE-2024-35801](https://ubuntu.com/security/CVE-2024-35801) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 500 | linux-libc-dev | [CVE-2024-35803](https://ubuntu.com/security/CVE-2024-35803) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 501 | linux-libc-dev | [CVE-2024-35808](https://ubuntu.com/security/CVE-2024-35808) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 502 | linux-libc-dev | [CVE-2024-35826](https://ubuntu.com/security/CVE-2024-35826) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 503 | linux-libc-dev | [CVE-2024-35832](https://ubuntu.com/security/CVE-2024-35832) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 504 | linux-libc-dev | [CVE-2024-35839](https://ubuntu.com/security/CVE-2024-35839) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 505 | linux-libc-dev | [CVE-2024-35843](https://ubuntu.com/security/CVE-2024-35843) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 506 | linux-libc-dev | [CVE-2024-35861](https://ubuntu.com/security/CVE-2024-35861) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 507 | linux-libc-dev | [CVE-2024-35862](https://ubuntu.com/security/CVE-2024-35862) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 508 | linux-libc-dev | [CVE-2024-35863](https://ubuntu.com/security/CVE-2024-35863) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 509 | linux-libc-dev | [CVE-2024-35865](https://ubuntu.com/security/CVE-2024-35865) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 510 | linux-libc-dev | [CVE-2024-35866](https://ubuntu.com/security/CVE-2024-35866) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 511 | linux-libc-dev | [CVE-2024-35867](https://ubuntu.com/security/CVE-2024-35867) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 512 | linux-libc-dev | [CVE-2024-35868](https://ubuntu.com/security/CVE-2024-35868) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 513 | linux-libc-dev | [CVE-2024-35870](https://ubuntu.com/security/CVE-2024-35870) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 514 | linux-libc-dev | [CVE-2024-35875](https://ubuntu.com/security/CVE-2024-35875) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 515 | linux-libc-dev | [CVE-2024-35878](https://ubuntu.com/security/CVE-2024-35878) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 516 | linux-libc-dev | [CVE-2024-35908](https://ubuntu.com/security/CVE-2024-35908) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 517 | linux-libc-dev | [CVE-2024-35924](https://ubuntu.com/security/CVE-2024-35924) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 518 | linux-libc-dev | [CVE-2024-35926](https://ubuntu.com/security/CVE-2024-35926) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 519 | linux-libc-dev | [CVE-2024-35929](https://ubuntu.com/security/CVE-2024-35929) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 520 | linux-libc-dev | [CVE-2024-35931](https://ubuntu.com/security/CVE-2024-35931) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 521 | linux-libc-dev | [CVE-2024-35932](https://ubuntu.com/security/CVE-2024-35932) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 522 | linux-libc-dev | [CVE-2024-35937](https://ubuntu.com/security/CVE-2024-35937) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 523 | linux-libc-dev | [CVE-2024-35939](https://ubuntu.com/security/CVE-2024-35939) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 524 | linux-libc-dev | [CVE-2024-35942](https://ubuntu.com/security/CVE-2024-35942) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 525 | linux-libc-dev | [CVE-2024-35943](https://ubuntu.com/security/CVE-2024-35943) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 526 | linux-libc-dev | [CVE-2024-35945](https://ubuntu.com/security/CVE-2024-35945) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 527 | linux-libc-dev | [CVE-2024-35946](https://ubuntu.com/security/CVE-2024-35946) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 528 | linux-libc-dev | [CVE-2024-35949](https://ubuntu.com/security/CVE-2024-35949) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 529 | linux-libc-dev | [CVE-2024-35956](https://ubuntu.com/security/CVE-2024-35956) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 530 | linux-libc-dev | [CVE-2024-35959](https://ubuntu.com/security/CVE-2024-35959) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 531 | linux-libc-dev | [CVE-2024-35971](https://ubuntu.com/security/CVE-2024-35971) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 532 | linux-libc-dev | [CVE-2024-35995](https://ubuntu.com/security/CVE-2024-35995) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 533 | linux-libc-dev | [CVE-2024-35998](https://ubuntu.com/security/CVE-2024-35998) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 534 | linux-libc-dev | [CVE-2024-35999](https://ubuntu.com/security/CVE-2024-35999) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 535 | linux-libc-dev | [CVE-2024-36000](https://ubuntu.com/security/CVE-2024-36000) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 536 | linux-libc-dev | [CVE-2024-36003](https://ubuntu.com/security/CVE-2024-36003) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 537 | linux-libc-dev | [CVE-2024-36009](https://ubuntu.com/security/CVE-2024-36009) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 538 | linux-libc-dev | [CVE-2024-36012](https://ubuntu.com/security/CVE-2024-36012) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 539 | linux-libc-dev | [CVE-2024-36013](https://ubuntu.com/security/CVE-2024-36013) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 540 | linux-libc-dev | [CVE-2024-36021](https://ubuntu.com/security/CVE-2024-36021) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 541 | linux-libc-dev | [CVE-2024-36024](https://ubuntu.com/security/CVE-2024-36024) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 542 | linux-libc-dev | [CVE-2024-36026](https://ubuntu.com/security/CVE-2024-36026) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 543 | linux-libc-dev | [CVE-2024-36244](https://ubuntu.com/security/CVE-2024-36244) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 544 | linux-libc-dev | [CVE-2024-36331](https://ubuntu.com/security/CVE-2024-36331) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 545 | linux-libc-dev | [CVE-2024-36347](https://ubuntu.com/security/CVE-2024-36347) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 546 | linux-libc-dev | [CVE-2024-36350](https://ubuntu.com/security/CVE-2024-36350) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 547 | linux-libc-dev | [CVE-2024-36357](https://ubuntu.com/security/CVE-2024-36357) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 548 | linux-libc-dev | [CVE-2024-36478](https://ubuntu.com/security/CVE-2024-36478) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 549 | linux-libc-dev | [CVE-2024-36479](https://ubuntu.com/security/CVE-2024-36479) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 550 | linux-libc-dev | [CVE-2024-36898](https://ubuntu.com/security/CVE-2024-36898) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 551 | linux-libc-dev | [CVE-2024-36900](https://ubuntu.com/security/CVE-2024-36900) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 552 | linux-libc-dev | [CVE-2024-36903](https://ubuntu.com/security/CVE-2024-36903) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 553 | linux-libc-dev | [CVE-2024-36908](https://ubuntu.com/security/CVE-2024-36908) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 554 | linux-libc-dev | [CVE-2024-36909](https://ubuntu.com/security/CVE-2024-36909) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 555 | linux-libc-dev | [CVE-2024-36910](https://ubuntu.com/security/CVE-2024-36910) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 556 | linux-libc-dev | [CVE-2024-36911](https://ubuntu.com/security/CVE-2024-36911) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 557 | linux-libc-dev | [CVE-2024-36914](https://ubuntu.com/security/CVE-2024-36914) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 558 | linux-libc-dev | [CVE-2024-36915](https://ubuntu.com/security/CVE-2024-36915) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 559 | linux-libc-dev | [CVE-2024-36917](https://ubuntu.com/security/CVE-2024-36917) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 560 | linux-libc-dev | [CVE-2024-36918](https://ubuntu.com/security/CVE-2024-36918) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 561 | linux-libc-dev | [CVE-2024-36920](https://ubuntu.com/security/CVE-2024-36920) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 562 | linux-libc-dev | [CVE-2024-36921](https://ubuntu.com/security/CVE-2024-36921) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 563 | linux-libc-dev | [CVE-2024-36922](https://ubuntu.com/security/CVE-2024-36922) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 564 | linux-libc-dev | [CVE-2024-36923](https://ubuntu.com/security/CVE-2024-36923) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 565 | linux-libc-dev | [CVE-2024-36924](https://ubuntu.com/security/CVE-2024-36924) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 566 | linux-libc-dev | [CVE-2024-36927](https://ubuntu.com/security/CVE-2024-36927) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 567 | linux-libc-dev | [CVE-2024-36945](https://ubuntu.com/security/CVE-2024-36945) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 568 | linux-libc-dev | [CVE-2024-36948](https://ubuntu.com/security/CVE-2024-36948) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 569 | linux-libc-dev | [CVE-2024-36949](https://ubuntu.com/security/CVE-2024-36949) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 570 | linux-libc-dev | [CVE-2024-36951](https://ubuntu.com/security/CVE-2024-36951) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 571 | linux-libc-dev | [CVE-2024-36966](https://ubuntu.com/security/CVE-2024-36966) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 572 | linux-libc-dev | [CVE-2024-37021](https://ubuntu.com/security/CVE-2024-37021) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 573 | linux-libc-dev | [CVE-2024-37354](https://ubuntu.com/security/CVE-2024-37354) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 574 | linux-libc-dev | [CVE-2024-38306](https://ubuntu.com/security/CVE-2024-38306) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 575 | linux-libc-dev | [CVE-2024-38540](https://ubuntu.com/security/CVE-2024-38540) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 576 | linux-libc-dev | [CVE-2024-38541](https://ubuntu.com/security/CVE-2024-38541) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 577 | linux-libc-dev | [CVE-2024-38543](https://ubuntu.com/security/CVE-2024-38543) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 578 | linux-libc-dev | [CVE-2024-38554](https://ubuntu.com/security/CVE-2024-38554) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 579 | linux-libc-dev | [CVE-2024-38556](https://ubuntu.com/security/CVE-2024-38556) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 580 | linux-libc-dev | [CVE-2024-38557](https://ubuntu.com/security/CVE-2024-38557) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 581 | linux-libc-dev | [CVE-2024-38564](https://ubuntu.com/security/CVE-2024-38564) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 582 | linux-libc-dev | [CVE-2024-38594](https://ubuntu.com/security/CVE-2024-38594) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 583 | linux-libc-dev | [CVE-2024-38608](https://ubuntu.com/security/CVE-2024-38608) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 584 | linux-libc-dev | [CVE-2024-38625](https://ubuntu.com/security/CVE-2024-38625) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 585 | linux-libc-dev | [CVE-2024-38628](https://ubuntu.com/security/CVE-2024-38628) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 586 | linux-libc-dev | [CVE-2024-39282](https://ubuntu.com/security/CVE-2024-39282) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 587 | linux-libc-dev | [CVE-2024-39293](https://ubuntu.com/security/CVE-2024-39293) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 588 | linux-libc-dev | [CVE-2024-39298](https://ubuntu.com/security/CVE-2024-39298) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 589 | linux-libc-dev | [CVE-2024-39508](https://ubuntu.com/security/CVE-2024-39508) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 590 | linux-libc-dev | [CVE-2024-40900](https://ubuntu.com/security/CVE-2024-40900) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 591 | linux-libc-dev | [CVE-2024-40918](https://ubuntu.com/security/CVE-2024-40918) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 592 | linux-libc-dev | [CVE-2024-40954](https://ubuntu.com/security/CVE-2024-40954) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 593 | linux-libc-dev | [CVE-2024-40966](https://ubuntu.com/security/CVE-2024-40966) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 594 | linux-libc-dev | [CVE-2024-40972](https://ubuntu.com/security/CVE-2024-40972) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 595 | linux-libc-dev | [CVE-2024-40975](https://ubuntu.com/security/CVE-2024-40975) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 596 | linux-libc-dev | [CVE-2024-40977](https://ubuntu.com/security/CVE-2024-40977) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 597 | linux-libc-dev | [CVE-2024-40979](https://ubuntu.com/security/CVE-2024-40979) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 598 | linux-libc-dev | [CVE-2024-40989](https://ubuntu.com/security/CVE-2024-40989) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 599 | linux-libc-dev | [CVE-2024-40998](https://ubuntu.com/security/CVE-2024-40998) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 600 | linux-libc-dev | [CVE-2024-40999](https://ubuntu.com/security/CVE-2024-40999) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 601 | linux-libc-dev | [CVE-2024-41001](https://ubuntu.com/security/CVE-2024-41001) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 602 | linux-libc-dev | [CVE-2024-41008](https://ubuntu.com/security/CVE-2024-41008) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 603 | linux-libc-dev | [CVE-2024-41013](https://ubuntu.com/security/CVE-2024-41013) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 604 | linux-libc-dev | [CVE-2024-41014](https://ubuntu.com/security/CVE-2024-41014) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 605 | linux-libc-dev | [CVE-2024-41023](https://ubuntu.com/security/CVE-2024-41023) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 606 | linux-libc-dev | [CVE-2024-41030](https://ubuntu.com/security/CVE-2024-41030) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 607 | linux-libc-dev | [CVE-2024-41031](https://ubuntu.com/security/CVE-2024-41031) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 608 | linux-libc-dev | [CVE-2024-41036](https://ubuntu.com/security/CVE-2024-41036) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 609 | linux-libc-dev | [CVE-2024-41045](https://ubuntu.com/security/CVE-2024-41045) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 610 | linux-libc-dev | [CVE-2024-41050](https://ubuntu.com/security/CVE-2024-41050) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 611 | linux-libc-dev | [CVE-2024-41062](https://ubuntu.com/security/CVE-2024-41062) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 612 | linux-libc-dev | [CVE-2024-41067](https://ubuntu.com/security/CVE-2024-41067) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 613 | linux-libc-dev | [CVE-2024-41069](https://ubuntu.com/security/CVE-2024-41069) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 614 | linux-libc-dev | [CVE-2024-41074](https://ubuntu.com/security/CVE-2024-41074) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 615 | linux-libc-dev | [CVE-2024-41075](https://ubuntu.com/security/CVE-2024-41075) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 616 | linux-libc-dev | [CVE-2024-41079](https://ubuntu.com/security/CVE-2024-41079) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 617 | linux-libc-dev | [CVE-2024-41082](https://ubuntu.com/security/CVE-2024-41082) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 618 | linux-libc-dev | [CVE-2024-41088](https://ubuntu.com/security/CVE-2024-41088) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 619 | linux-libc-dev | [CVE-2024-41935](https://ubuntu.com/security/CVE-2024-41935) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 620 | linux-libc-dev | [CVE-2024-42067](https://ubuntu.com/security/CVE-2024-42067) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 621 | linux-libc-dev | [CVE-2024-42091](https://ubuntu.com/security/CVE-2024-42091) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 622 | linux-libc-dev | [CVE-2024-42107](https://ubuntu.com/security/CVE-2024-42107) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 623 | linux-libc-dev | [CVE-2024-42110](https://ubuntu.com/security/CVE-2024-42110) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 624 | linux-libc-dev | [CVE-2024-42117](https://ubuntu.com/security/CVE-2024-42117) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 625 | linux-libc-dev | [CVE-2024-42118](https://ubuntu.com/security/CVE-2024-42118) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 626 | linux-libc-dev | [CVE-2024-42122](https://ubuntu.com/security/CVE-2024-42122) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 627 | linux-libc-dev | [CVE-2024-42125](https://ubuntu.com/security/CVE-2024-42125) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 628 | linux-libc-dev | [CVE-2024-42128](https://ubuntu.com/security/CVE-2024-42128) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 629 | linux-libc-dev | [CVE-2024-42129](https://ubuntu.com/security/CVE-2024-42129) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 630 | linux-libc-dev | [CVE-2024-42134](https://ubuntu.com/security/CVE-2024-42134) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 631 | linux-libc-dev | [CVE-2024-42135](https://ubuntu.com/security/CVE-2024-42135) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 632 | linux-libc-dev | [CVE-2024-42139](https://ubuntu.com/security/CVE-2024-42139) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 633 | linux-libc-dev | [CVE-2024-42147](https://ubuntu.com/security/CVE-2024-42147) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 634 | linux-libc-dev | [CVE-2024-42151](https://ubuntu.com/security/CVE-2024-42151) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 635 | linux-libc-dev | [CVE-2024-42155](https://ubuntu.com/security/CVE-2024-42155) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 636 | linux-libc-dev | [CVE-2024-42230](https://ubuntu.com/security/CVE-2024-42230) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 637 | linux-libc-dev | [CVE-2024-42239](https://ubuntu.com/security/CVE-2024-42239) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 638 | linux-libc-dev | [CVE-2024-42253](https://ubuntu.com/security/CVE-2024-42253) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 639 | linux-libc-dev | [CVE-2024-42273](https://ubuntu.com/security/CVE-2024-42273) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 640 | linux-libc-dev | [CVE-2024-42319](https://ubuntu.com/security/CVE-2024-42319) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 641 | linux-libc-dev | [CVE-2024-42320](https://ubuntu.com/security/CVE-2024-42320) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 642 | linux-libc-dev | [CVE-2024-42321](https://ubuntu.com/security/CVE-2024-42321) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 643 | linux-libc-dev | [CVE-2024-42322](https://ubuntu.com/security/CVE-2024-42322) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 644 | linux-libc-dev | [CVE-2024-43823](https://ubuntu.com/security/CVE-2024-43823) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 645 | linux-libc-dev | [CVE-2024-43824](https://ubuntu.com/security/CVE-2024-43824) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 646 | linux-libc-dev | [CVE-2024-43831](https://ubuntu.com/security/CVE-2024-43831) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 647 | linux-libc-dev | [CVE-2024-43832](https://ubuntu.com/security/CVE-2024-43832) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 648 | linux-libc-dev | [CVE-2024-43842](https://ubuntu.com/security/CVE-2024-43842) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 649 | linux-libc-dev | [CVE-2024-43844](https://ubuntu.com/security/CVE-2024-43844) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 650 | linux-libc-dev | [CVE-2024-43866](https://ubuntu.com/security/CVE-2024-43866) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 651 | linux-libc-dev | [CVE-2024-43872](https://ubuntu.com/security/CVE-2024-43872) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 652 | linux-libc-dev | [CVE-2024-43899](https://ubuntu.com/security/CVE-2024-43899) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 653 | linux-libc-dev | [CVE-2024-43911](https://ubuntu.com/security/CVE-2024-43911) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 654 | linux-libc-dev | [CVE-2024-43912](https://ubuntu.com/security/CVE-2024-43912) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 655 | linux-libc-dev | [CVE-2024-44950](https://ubuntu.com/security/CVE-2024-44950) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 656 | linux-libc-dev | [CVE-2024-44961](https://ubuntu.com/security/CVE-2024-44961) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 657 | linux-libc-dev | [CVE-2024-44962](https://ubuntu.com/security/CVE-2024-44962) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 658 | linux-libc-dev | [CVE-2024-44963](https://ubuntu.com/security/CVE-2024-44963) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 659 | linux-libc-dev | [CVE-2024-44970](https://ubuntu.com/security/CVE-2024-44970) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 660 | linux-libc-dev | [CVE-2024-44972](https://ubuntu.com/security/CVE-2024-44972) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 661 | linux-libc-dev | [CVE-2024-45010](https://ubuntu.com/security/CVE-2024-45010) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 662 | linux-libc-dev | [CVE-2024-45015](https://ubuntu.com/security/CVE-2024-45015) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 663 | linux-libc-dev | [CVE-2024-46678](https://ubuntu.com/security/CVE-2024-46678) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 664 | linux-libc-dev | [CVE-2024-46681](https://ubuntu.com/security/CVE-2024-46681) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 665 | linux-libc-dev | [CVE-2024-46705](https://ubuntu.com/security/CVE-2024-46705) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 666 | linux-libc-dev | [CVE-2024-46715](https://ubuntu.com/security/CVE-2024-46715) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 667 | linux-libc-dev | [CVE-2024-46716](https://ubuntu.com/security/CVE-2024-46716) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 668 | linux-libc-dev | [CVE-2024-46717](https://ubuntu.com/security/CVE-2024-46717) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 669 | linux-libc-dev | [CVE-2024-46718](https://ubuntu.com/security/CVE-2024-46718) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 670 | linux-libc-dev | [CVE-2024-46720](https://ubuntu.com/security/CVE-2024-46720) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 671 | linux-libc-dev | [CVE-2024-46726](https://ubuntu.com/security/CVE-2024-46726) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 672 | linux-libc-dev | [CVE-2024-46727](https://ubuntu.com/security/CVE-2024-46727) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 673 | linux-libc-dev | [CVE-2024-46728](https://ubuntu.com/security/CVE-2024-46728) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 674 | linux-libc-dev | [CVE-2024-46729](https://ubuntu.com/security/CVE-2024-46729) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 675 | linux-libc-dev | [CVE-2024-46730](https://ubuntu.com/security/CVE-2024-46730) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 676 | linux-libc-dev | [CVE-2024-46733](https://ubuntu.com/security/CVE-2024-46733) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 677 | linux-libc-dev | [CVE-2024-46742](https://ubuntu.com/security/CVE-2024-46742) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 678 | linux-libc-dev | [CVE-2024-46748](https://ubuntu.com/security/CVE-2024-46748) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 679 | linux-libc-dev | [CVE-2024-46749](https://ubuntu.com/security/CVE-2024-46749) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 680 | linux-libc-dev | [CVE-2024-46751](https://ubuntu.com/security/CVE-2024-46751) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 681 | linux-libc-dev | [CVE-2024-46753](https://ubuntu.com/security/CVE-2024-46753) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 682 | linux-libc-dev | [CVE-2024-46754](https://ubuntu.com/security/CVE-2024-46754) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 683 | linux-libc-dev | [CVE-2024-46762](https://ubuntu.com/security/CVE-2024-46762) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 684 | linux-libc-dev | [CVE-2024-46765](https://ubuntu.com/security/CVE-2024-46765) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 685 | linux-libc-dev | [CVE-2024-46770](https://ubuntu.com/security/CVE-2024-46770) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 686 | linux-libc-dev | [CVE-2024-46774](https://ubuntu.com/security/CVE-2024-46774) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 687 | linux-libc-dev | [CVE-2024-46775](https://ubuntu.com/security/CVE-2024-46775) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 688 | linux-libc-dev | [CVE-2024-46778](https://ubuntu.com/security/CVE-2024-46778) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 689 | linux-libc-dev | [CVE-2024-46787](https://ubuntu.com/security/CVE-2024-46787) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
-| 690 | linux-libc-dev | [CVE-2024-46802](https://ubuntu.com/security/CVE-2024-46802) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 691 | linux-libc-dev | [CVE-2024-46803](https://ubuntu.com/security/CVE-2024-46803) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 692 | linux-libc-dev | [CVE-2024-46806](https://ubuntu.com/security/CVE-2024-46806) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 693 | linux-libc-dev | [CVE-2024-46808](https://ubuntu.com/security/CVE-2024-46808) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 694 | linux-libc-dev | [CVE-2024-46811](https://ubuntu.com/security/CVE-2024-46811) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 695 | linux-libc-dev | [CVE-2024-46812](https://ubuntu.com/security/CVE-2024-46812) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 696 | linux-libc-dev | [CVE-2024-46813](https://ubuntu.com/security/CVE-2024-46813) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 697 | linux-libc-dev | [CVE-2024-46816](https://ubuntu.com/security/CVE-2024-46816) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 698 | linux-libc-dev | [CVE-2024-46820](https://ubuntu.com/security/CVE-2024-46820) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 699 | linux-libc-dev | [CVE-2024-46821](https://ubuntu.com/security/CVE-2024-46821) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 700 | linux-libc-dev | [CVE-2024-46823](https://ubuntu.com/security/CVE-2024-46823) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 701 | linux-libc-dev | [CVE-2024-46827](https://ubuntu.com/security/CVE-2024-46827) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 702 | linux-libc-dev | [CVE-2024-46830](https://ubuntu.com/security/CVE-2024-46830) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 703 | linux-libc-dev | [CVE-2024-46833](https://ubuntu.com/security/CVE-2024-46833) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 704 | linux-libc-dev | [CVE-2024-46834](https://ubuntu.com/security/CVE-2024-46834) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 705 | linux-libc-dev | [CVE-2024-46835](https://ubuntu.com/security/CVE-2024-46835) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 706 | linux-libc-dev | [CVE-2024-46836](https://ubuntu.com/security/CVE-2024-46836) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 707 | linux-libc-dev | [CVE-2024-46842](https://ubuntu.com/security/CVE-2024-46842) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 708 | linux-libc-dev | [CVE-2024-46843](https://ubuntu.com/security/CVE-2024-46843) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 709 | linux-libc-dev | [CVE-2024-46848](https://ubuntu.com/security/CVE-2024-46848) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 710 | linux-libc-dev | [CVE-2024-46857](https://ubuntu.com/security/CVE-2024-46857) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 711 | linux-libc-dev | [CVE-2024-46860](https://ubuntu.com/security/CVE-2024-46860) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 712 | linux-libc-dev | [CVE-2024-46861](https://ubuntu.com/security/CVE-2024-46861) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 713 | linux-libc-dev | [CVE-2024-46870](https://ubuntu.com/security/CVE-2024-46870) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 714 | linux-libc-dev | [CVE-2024-47141](https://ubuntu.com/security/CVE-2024-47141) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 715 | linux-libc-dev | [CVE-2024-47658](https://ubuntu.com/security/CVE-2024-47658) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 716 | linux-libc-dev | [CVE-2024-47661](https://ubuntu.com/security/CVE-2024-47661) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 717 | linux-libc-dev | [CVE-2024-47662](https://ubuntu.com/security/CVE-2024-47662) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 718 | linux-libc-dev | [CVE-2024-47664](https://ubuntu.com/security/CVE-2024-47664) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 719 | linux-libc-dev | [CVE-2024-47666](https://ubuntu.com/security/CVE-2024-47666) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 720 | linux-libc-dev | [CVE-2024-47678](https://ubuntu.com/security/CVE-2024-47678) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 721 | linux-libc-dev | [CVE-2024-47683](https://ubuntu.com/security/CVE-2024-47683) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 722 | linux-libc-dev | [CVE-2024-47689](https://ubuntu.com/security/CVE-2024-47689) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 723 | linux-libc-dev | [CVE-2024-47691](https://ubuntu.com/security/CVE-2024-47691) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 724 | linux-libc-dev | [CVE-2024-47703](https://ubuntu.com/security/CVE-2024-47703) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 725 | linux-libc-dev | [CVE-2024-47704](https://ubuntu.com/security/CVE-2024-47704) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 726 | linux-libc-dev | [CVE-2024-47726](https://ubuntu.com/security/CVE-2024-47726) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 727 | linux-libc-dev | [CVE-2024-47728](https://ubuntu.com/security/CVE-2024-47728) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 728 | linux-libc-dev | [CVE-2024-47736](https://ubuntu.com/security/CVE-2024-47736) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 729 | linux-libc-dev | [CVE-2024-47738](https://ubuntu.com/security/CVE-2024-47738) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 730 | linux-libc-dev | [CVE-2024-47745](https://ubuntu.com/security/CVE-2024-47745) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 731 | linux-libc-dev | [CVE-2024-47794](https://ubuntu.com/security/CVE-2024-47794) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 732 | linux-libc-dev | [CVE-2024-47809](https://ubuntu.com/security/CVE-2024-47809) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 733 | linux-libc-dev | [CVE-2024-48873](https://ubuntu.com/security/CVE-2024-48873) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 734 | linux-libc-dev | [CVE-2024-48875](https://ubuntu.com/security/CVE-2024-48875) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 735 | linux-libc-dev | [CVE-2024-49568](https://ubuntu.com/security/CVE-2024-49568) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 736 | linux-libc-dev | [CVE-2024-49569](https://ubuntu.com/security/CVE-2024-49569) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 737 | linux-libc-dev | [CVE-2024-49855](https://ubuntu.com/security/CVE-2024-49855) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 738 | linux-libc-dev | [CVE-2024-49859](https://ubuntu.com/security/CVE-2024-49859) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 739 | linux-libc-dev | [CVE-2024-49861](https://ubuntu.com/security/CVE-2024-49861) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 740 | linux-libc-dev | [CVE-2024-49870](https://ubuntu.com/security/CVE-2024-49870) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 741 | linux-libc-dev | [CVE-2024-49880](https://ubuntu.com/security/CVE-2024-49880) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 742 | linux-libc-dev | [CVE-2024-49888](https://ubuntu.com/security/CVE-2024-49888) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 743 | linux-libc-dev | [CVE-2024-49891](https://ubuntu.com/security/CVE-2024-49891) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 744 | linux-libc-dev | [CVE-2024-49893](https://ubuntu.com/security/CVE-2024-49893) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 745 | linux-libc-dev | [CVE-2024-49898](https://ubuntu.com/security/CVE-2024-49898) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 746 | linux-libc-dev | [CVE-2024-49899](https://ubuntu.com/security/CVE-2024-49899) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 747 | linux-libc-dev | [CVE-2024-49901](https://ubuntu.com/security/CVE-2024-49901) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 748 | linux-libc-dev | [CVE-2024-49904](https://ubuntu.com/security/CVE-2024-49904) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 749 | linux-libc-dev | [CVE-2024-49905](https://ubuntu.com/security/CVE-2024-49905) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 750 | linux-libc-dev | [CVE-2024-49906](https://ubuntu.com/security/CVE-2024-49906) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 751 | linux-libc-dev | [CVE-2024-49908](https://ubuntu.com/security/CVE-2024-49908) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 752 | linux-libc-dev | [CVE-2024-49909](https://ubuntu.com/security/CVE-2024-49909) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 753 | linux-libc-dev | [CVE-2024-49910](https://ubuntu.com/security/CVE-2024-49910) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 754 | linux-libc-dev | [CVE-2024-49911](https://ubuntu.com/security/CVE-2024-49911) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 755 | linux-libc-dev | [CVE-2024-49912](https://ubuntu.com/security/CVE-2024-49912) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 756 | linux-libc-dev | [CVE-2024-49914](https://ubuntu.com/security/CVE-2024-49914) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 757 | linux-libc-dev | [CVE-2024-49915](https://ubuntu.com/security/CVE-2024-49915) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 758 | linux-libc-dev | [CVE-2024-49916](https://ubuntu.com/security/CVE-2024-49916) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 759 | linux-libc-dev | [CVE-2024-49917](https://ubuntu.com/security/CVE-2024-49917) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 760 | linux-libc-dev | [CVE-2024-49918](https://ubuntu.com/security/CVE-2024-49918) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 761 | linux-libc-dev | [CVE-2024-49919](https://ubuntu.com/security/CVE-2024-49919) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 762 | linux-libc-dev | [CVE-2024-49920](https://ubuntu.com/security/CVE-2024-49920) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 763 | linux-libc-dev | [CVE-2024-49921](https://ubuntu.com/security/CVE-2024-49921) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 764 | linux-libc-dev | [CVE-2024-49922](https://ubuntu.com/security/CVE-2024-49922) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 765 | linux-libc-dev | [CVE-2024-49923](https://ubuntu.com/security/CVE-2024-49923) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 766 | linux-libc-dev | [CVE-2024-49926](https://ubuntu.com/security/CVE-2024-49926) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 767 | linux-libc-dev | [CVE-2024-49928](https://ubuntu.com/security/CVE-2024-49928) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 768 | linux-libc-dev | [CVE-2024-49929](https://ubuntu.com/security/CVE-2024-49929) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 769 | linux-libc-dev | [CVE-2024-49931](https://ubuntu.com/security/CVE-2024-49931) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 770 | linux-libc-dev | [CVE-2024-49932](https://ubuntu.com/security/CVE-2024-49932) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 771 | linux-libc-dev | [CVE-2024-49934](https://ubuntu.com/security/CVE-2024-49934) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 772 | linux-libc-dev | [CVE-2024-49937](https://ubuntu.com/security/CVE-2024-49937) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 773 | linux-libc-dev | [CVE-2024-49939](https://ubuntu.com/security/CVE-2024-49939) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 774 | linux-libc-dev | [CVE-2024-49940](https://ubuntu.com/security/CVE-2024-49940) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 775 | linux-libc-dev | [CVE-2024-49945](https://ubuntu.com/security/CVE-2024-49945) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 776 | linux-libc-dev | [CVE-2024-49960](https://ubuntu.com/security/CVE-2024-49960) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 777 | linux-libc-dev | [CVE-2024-49961](https://ubuntu.com/security/CVE-2024-49961) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 778 | linux-libc-dev | [CVE-2024-49970](https://ubuntu.com/security/CVE-2024-49970) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 779 | linux-libc-dev | [CVE-2024-49971](https://ubuntu.com/security/CVE-2024-49971) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 780 | linux-libc-dev | [CVE-2024-49978](https://ubuntu.com/security/CVE-2024-49978) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 781 | linux-libc-dev | [CVE-2024-49987](https://ubuntu.com/security/CVE-2024-49987) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 782 | linux-libc-dev | [CVE-2024-49988](https://ubuntu.com/security/CVE-2024-49988) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 783 | linux-libc-dev | [CVE-2024-49989](https://ubuntu.com/security/CVE-2024-49989) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 784 | linux-libc-dev | [CVE-2024-49990](https://ubuntu.com/security/CVE-2024-49990) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 785 | linux-libc-dev | [CVE-2024-49991](https://ubuntu.com/security/CVE-2024-49991) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 786 | linux-libc-dev | [CVE-2024-49992](https://ubuntu.com/security/CVE-2024-49992) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 787 | linux-libc-dev | [CVE-2024-49994](https://ubuntu.com/security/CVE-2024-49994) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 788 | linux-libc-dev | [CVE-2024-50004](https://ubuntu.com/security/CVE-2024-50004) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 789 | linux-libc-dev | [CVE-2024-50009](https://ubuntu.com/security/CVE-2024-50009) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 790 | linux-libc-dev | [CVE-2024-50012](https://ubuntu.com/security/CVE-2024-50012) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 791 | linux-libc-dev | [CVE-2024-50014](https://ubuntu.com/security/CVE-2024-50014) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 792 | linux-libc-dev | [CVE-2024-50017](https://ubuntu.com/security/CVE-2024-50017) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 793 | linux-libc-dev | [CVE-2024-50028](https://ubuntu.com/security/CVE-2024-50028) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 794 | linux-libc-dev | [CVE-2024-50034](https://ubuntu.com/security/CVE-2024-50034) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 795 | linux-libc-dev | [CVE-2024-50048](https://ubuntu.com/security/CVE-2024-50048) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 796 | linux-libc-dev | [CVE-2024-50056](https://ubuntu.com/security/CVE-2024-50056) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 797 | linux-libc-dev | [CVE-2024-50057](https://ubuntu.com/security/CVE-2024-50057) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 798 | linux-libc-dev | [CVE-2024-50060](https://ubuntu.com/security/CVE-2024-50060) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 799 | linux-libc-dev | [CVE-2024-50061](https://ubuntu.com/security/CVE-2024-50061) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 800 | linux-libc-dev | [CVE-2024-50063](https://ubuntu.com/security/CVE-2024-50063) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 801 | linux-libc-dev | [CVE-2024-50067](https://ubuntu.com/security/CVE-2024-50067) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 802 | linux-libc-dev | [CVE-2024-50073](https://ubuntu.com/security/CVE-2024-50073) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-151.161 |
-| 803 | linux-libc-dev | [CVE-2024-50090](https://ubuntu.com/security/CVE-2024-50090) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 804 | linux-libc-dev | [CVE-2024-50091](https://ubuntu.com/security/CVE-2024-50091) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 805 | linux-libc-dev | [CVE-2024-50098](https://ubuntu.com/security/CVE-2024-50098) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 806 | linux-libc-dev | [CVE-2024-50106](https://ubuntu.com/security/CVE-2024-50106) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 807 | linux-libc-dev | [CVE-2024-50108](https://ubuntu.com/security/CVE-2024-50108) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 808 | linux-libc-dev | [CVE-2024-50111](https://ubuntu.com/security/CVE-2024-50111) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 809 | linux-libc-dev | [CVE-2024-50112](https://ubuntu.com/security/CVE-2024-50112) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 810 | linux-libc-dev | [CVE-2024-50125](https://ubuntu.com/security/CVE-2024-50125) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 811 | linux-libc-dev | [CVE-2024-50135](https://ubuntu.com/security/CVE-2024-50135) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 812 | linux-libc-dev | [CVE-2024-50138](https://ubuntu.com/security/CVE-2024-50138) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 813 | linux-libc-dev | [CVE-2024-50146](https://ubuntu.com/security/CVE-2024-50146) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 814 | linux-libc-dev | [CVE-2024-50164](https://ubuntu.com/security/CVE-2024-50164) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 815 | linux-libc-dev | [CVE-2024-50166](https://ubuntu.com/security/CVE-2024-50166) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 816 | linux-libc-dev | [CVE-2024-50183](https://ubuntu.com/security/CVE-2024-50183) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 817 | linux-libc-dev | [CVE-2024-50187](https://ubuntu.com/security/CVE-2024-50187) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 818 | linux-libc-dev | [CVE-2024-50211](https://ubuntu.com/security/CVE-2024-50211) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 819 | linux-libc-dev | [CVE-2024-50246](https://ubuntu.com/security/CVE-2024-50246) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 820 | linux-libc-dev | [CVE-2024-50258](https://ubuntu.com/security/CVE-2024-50258) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 821 | linux-libc-dev | [CVE-2024-50271](https://ubuntu.com/security/CVE-2024-50271) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 822 | linux-libc-dev | [CVE-2024-50272](https://ubuntu.com/security/CVE-2024-50272) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 823 | linux-libc-dev | [CVE-2024-50280](https://ubuntu.com/security/CVE-2024-50280) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 824 | linux-libc-dev | [CVE-2024-50284](https://ubuntu.com/security/CVE-2024-50284) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 825 | linux-libc-dev | [CVE-2024-50285](https://ubuntu.com/security/CVE-2024-50285) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 826 | linux-libc-dev | [CVE-2024-50286](https://ubuntu.com/security/CVE-2024-50286) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 827 | linux-libc-dev | [CVE-2024-50289](https://ubuntu.com/security/CVE-2024-50289) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 828 | linux-libc-dev | [CVE-2024-50298](https://ubuntu.com/security/CVE-2024-50298) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 829 | linux-libc-dev | [CVE-2024-52559](https://ubuntu.com/security/CVE-2024-52559) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 830 | linux-libc-dev | [CVE-2024-52560](https://ubuntu.com/security/CVE-2024-52560) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 831 | linux-libc-dev | [CVE-2024-53050](https://ubuntu.com/security/CVE-2024-53050) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 832 | linux-libc-dev | [CVE-2024-53051](https://ubuntu.com/security/CVE-2024-53051) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
-| 833 | linux-libc-dev | [CVE-2024-53056](https://ubuntu.com/security/CVE-2024-53056) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 834 | linux-libc-dev | [CVE-2024-53068](https://ubuntu.com/security/CVE-2024-53068) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 835 | linux-libc-dev | [CVE-2024-53079](https://ubuntu.com/security/CVE-2024-53079) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 836 | linux-libc-dev | [CVE-2024-53084](https://ubuntu.com/security/CVE-2024-53084) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 837 | linux-libc-dev | [CVE-2024-53090](https://ubuntu.com/security/CVE-2024-53090) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 838 | linux-libc-dev | [CVE-2024-53091](https://ubuntu.com/security/CVE-2024-53091) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 839 | linux-libc-dev | [CVE-2024-53095](https://ubuntu.com/security/CVE-2024-53095) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 840 | linux-libc-dev | [CVE-2024-53098](https://ubuntu.com/security/CVE-2024-53098) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 841 | linux-libc-dev | [CVE-2024-53100](https://ubuntu.com/security/CVE-2024-53100) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 842 | linux-libc-dev | [CVE-2024-53114](https://ubuntu.com/security/CVE-2024-53114) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 843 | linux-libc-dev | [CVE-2024-53133](https://ubuntu.com/security/CVE-2024-53133) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 844 | linux-libc-dev | [CVE-2024-53144](https://ubuntu.com/security/CVE-2024-53144) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 845 | linux-libc-dev | [CVE-2024-53147](https://ubuntu.com/security/CVE-2024-53147) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 846 | linux-libc-dev | [CVE-2024-53175](https://ubuntu.com/security/CVE-2024-53175) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 847 | linux-libc-dev | [CVE-2024-53176](https://ubuntu.com/security/CVE-2024-53176) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 848 | linux-libc-dev | [CVE-2024-53177](https://ubuntu.com/security/CVE-2024-53177) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 849 | linux-libc-dev | [CVE-2024-53178](https://ubuntu.com/security/CVE-2024-53178) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 850 | linux-libc-dev | [CVE-2024-53179](https://ubuntu.com/security/CVE-2024-53179) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 851 | linux-libc-dev | [CVE-2024-53187](https://ubuntu.com/security/CVE-2024-53187) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 852 | linux-libc-dev | [CVE-2024-53190](https://ubuntu.com/security/CVE-2024-53190) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 853 | linux-libc-dev | [CVE-2024-53195](https://ubuntu.com/security/CVE-2024-53195) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 854 | linux-libc-dev | [CVE-2024-53196](https://ubuntu.com/security/CVE-2024-53196) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 855 | linux-libc-dev | [CVE-2024-53203](https://ubuntu.com/security/CVE-2024-53203) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 856 | linux-libc-dev | [CVE-2024-53210](https://ubuntu.com/security/CVE-2024-53210) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 857 | linux-libc-dev | [CVE-2024-53216](https://ubuntu.com/security/CVE-2024-53216) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 858 | linux-libc-dev | [CVE-2024-53218](https://ubuntu.com/security/CVE-2024-53218) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 859 | linux-libc-dev | [CVE-2024-53219](https://ubuntu.com/security/CVE-2024-53219) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 860 | linux-libc-dev | [CVE-2024-53220](https://ubuntu.com/security/CVE-2024-53220) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 861 | linux-libc-dev | [CVE-2024-53221](https://ubuntu.com/security/CVE-2024-53221) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 862 | linux-libc-dev | [CVE-2024-53224](https://ubuntu.com/security/CVE-2024-53224) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 863 | linux-libc-dev | [CVE-2024-53234](https://ubuntu.com/security/CVE-2024-53234) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 864 | linux-libc-dev | [CVE-2024-53687](https://ubuntu.com/security/CVE-2024-53687) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 865 | linux-libc-dev | [CVE-2024-54456](https://ubuntu.com/security/CVE-2024-54456) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 866 | linux-libc-dev | [CVE-2024-54683](https://ubuntu.com/security/CVE-2024-54683) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 867 | linux-libc-dev | [CVE-2024-56368](https://ubuntu.com/security/CVE-2024-56368) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 868 | linux-libc-dev | [CVE-2024-56538](https://ubuntu.com/security/CVE-2024-56538) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 869 | linux-libc-dev | [CVE-2024-56544](https://ubuntu.com/security/CVE-2024-56544) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 870 | linux-libc-dev | [CVE-2024-56557](https://ubuntu.com/security/CVE-2024-56557) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 871 | linux-libc-dev | [CVE-2024-56565](https://ubuntu.com/security/CVE-2024-56565) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 872 | linux-libc-dev | [CVE-2024-56566](https://ubuntu.com/security/CVE-2024-56566) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 873 | linux-libc-dev | [CVE-2024-56583](https://ubuntu.com/security/CVE-2024-56583) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 874 | linux-libc-dev | [CVE-2024-56584](https://ubuntu.com/security/CVE-2024-56584) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 875 | linux-libc-dev | [CVE-2024-56588](https://ubuntu.com/security/CVE-2024-56588) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 876 | linux-libc-dev | [CVE-2024-56591](https://ubuntu.com/security/CVE-2024-56591) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 877 | linux-libc-dev | [CVE-2024-56592](https://ubuntu.com/security/CVE-2024-56592) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 878 | linux-libc-dev | [CVE-2024-56604](https://ubuntu.com/security/CVE-2024-56604) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 879 | linux-libc-dev | [CVE-2024-56607](https://ubuntu.com/security/CVE-2024-56607) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 880 | linux-libc-dev | [CVE-2024-56609](https://ubuntu.com/security/CVE-2024-56609) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 881 | linux-libc-dev | [CVE-2024-56611](https://ubuntu.com/security/CVE-2024-56611) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 882 | linux-libc-dev | [CVE-2024-56639](https://ubuntu.com/security/CVE-2024-56639) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 883 | linux-libc-dev | [CVE-2024-56641](https://ubuntu.com/security/CVE-2024-56641) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 884 | linux-libc-dev | [CVE-2024-56647](https://ubuntu.com/security/CVE-2024-56647) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 885 | linux-libc-dev | [CVE-2024-56657](https://ubuntu.com/security/CVE-2024-56657) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 886 | linux-libc-dev | [CVE-2024-56660](https://ubuntu.com/security/CVE-2024-56660) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 887 | linux-libc-dev | [CVE-2024-56664](https://ubuntu.com/security/CVE-2024-56664) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 888 | linux-libc-dev | [CVE-2024-56665](https://ubuntu.com/security/CVE-2024-56665) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 889 | linux-libc-dev | [CVE-2024-56671](https://ubuntu.com/security/CVE-2024-56671) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 890 | linux-libc-dev | [CVE-2024-56674](https://ubuntu.com/security/CVE-2024-56674) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 891 | linux-libc-dev | [CVE-2024-56677](https://ubuntu.com/security/CVE-2024-56677) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 892 | linux-libc-dev | [CVE-2024-56692](https://ubuntu.com/security/CVE-2024-56692) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 893 | linux-libc-dev | [CVE-2024-56703](https://ubuntu.com/security/CVE-2024-56703) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 894 | linux-libc-dev | [CVE-2024-56707](https://ubuntu.com/security/CVE-2024-56707) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 895 | linux-libc-dev | [CVE-2024-56709](https://ubuntu.com/security/CVE-2024-56709) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 896 | linux-libc-dev | [CVE-2024-56712](https://ubuntu.com/security/CVE-2024-56712) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 897 | linux-libc-dev | [CVE-2024-56717](https://ubuntu.com/security/CVE-2024-56717) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 898 | linux-libc-dev | [CVE-2024-56718](https://ubuntu.com/security/CVE-2024-56718) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 899 | linux-libc-dev | [CVE-2024-56719](https://ubuntu.com/security/CVE-2024-56719) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 900 | linux-libc-dev | [CVE-2024-56721](https://ubuntu.com/security/CVE-2024-56721) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 901 | linux-libc-dev | [CVE-2024-56722](https://ubuntu.com/security/CVE-2024-56722) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 902 | linux-libc-dev | [CVE-2024-56727](https://ubuntu.com/security/CVE-2024-56727) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 903 | linux-libc-dev | [CVE-2024-56744](https://ubuntu.com/security/CVE-2024-56744) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 904 | linux-libc-dev | [CVE-2024-56751](https://ubuntu.com/security/CVE-2024-56751) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 905 | linux-libc-dev | [CVE-2024-56757](https://ubuntu.com/security/CVE-2024-56757) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 906 | linux-libc-dev | [CVE-2024-56775](https://ubuntu.com/security/CVE-2024-56775) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 907 | linux-libc-dev | [CVE-2024-56782](https://ubuntu.com/security/CVE-2024-56782) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 908 | linux-libc-dev | [CVE-2024-56784](https://ubuntu.com/security/CVE-2024-56784) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 909 | linux-libc-dev | [CVE-2024-56788](https://ubuntu.com/security/CVE-2024-56788) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 910 | linux-libc-dev | [CVE-2024-57795](https://ubuntu.com/security/CVE-2024-57795) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 911 | linux-libc-dev | [CVE-2024-57804](https://ubuntu.com/security/CVE-2024-57804) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 912 | linux-libc-dev | [CVE-2024-57809](https://ubuntu.com/security/CVE-2024-57809) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 913 | linux-libc-dev | [CVE-2024-57834](https://ubuntu.com/security/CVE-2024-57834) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 914 | linux-libc-dev | [CVE-2024-57843](https://ubuntu.com/security/CVE-2024-57843) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 915 | linux-libc-dev | [CVE-2024-57852](https://ubuntu.com/security/CVE-2024-57852) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 916 | linux-libc-dev | [CVE-2024-57857](https://ubuntu.com/security/CVE-2024-57857) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 917 | linux-libc-dev | [CVE-2024-57872](https://ubuntu.com/security/CVE-2024-57872) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 918 | linux-libc-dev | [CVE-2024-57875](https://ubuntu.com/security/CVE-2024-57875) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 919 | linux-libc-dev | [CVE-2024-57876](https://ubuntu.com/security/CVE-2024-57876) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 920 | linux-libc-dev | [CVE-2024-57887](https://ubuntu.com/security/CVE-2024-57887) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 921 | linux-libc-dev | [CVE-2024-57888](https://ubuntu.com/security/CVE-2024-57888) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 922 | linux-libc-dev | [CVE-2024-57893](https://ubuntu.com/security/CVE-2024-57893) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 923 | linux-libc-dev | [CVE-2024-57895](https://ubuntu.com/security/CVE-2024-57895) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 924 | linux-libc-dev | [CVE-2024-57898](https://ubuntu.com/security/CVE-2024-57898) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 925 | linux-libc-dev | [CVE-2024-57899](https://ubuntu.com/security/CVE-2024-57899) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 926 | linux-libc-dev | [CVE-2024-57924](https://ubuntu.com/security/CVE-2024-57924) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 927 | linux-libc-dev | [CVE-2024-57945](https://ubuntu.com/security/CVE-2024-57945) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 928 | linux-libc-dev | [CVE-2024-57950](https://ubuntu.com/security/CVE-2024-57950) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 929 | linux-libc-dev | [CVE-2024-57952](https://ubuntu.com/security/CVE-2024-57952) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 930 | linux-libc-dev | [CVE-2024-57973](https://ubuntu.com/security/CVE-2024-57973) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 931 | linux-libc-dev | [CVE-2024-57974](https://ubuntu.com/security/CVE-2024-57974) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 932 | linux-libc-dev | [CVE-2024-57975](https://ubuntu.com/security/CVE-2024-57975) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 933 | linux-libc-dev | [CVE-2024-57976](https://ubuntu.com/security/CVE-2024-57976) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 934 | linux-libc-dev | [CVE-2024-57977](https://ubuntu.com/security/CVE-2024-57977) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 935 | linux-libc-dev | [CVE-2024-57978](https://ubuntu.com/security/CVE-2024-57978) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 936 | linux-libc-dev | [CVE-2024-57979](https://ubuntu.com/security/CVE-2024-57979) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 937 | linux-libc-dev | [CVE-2024-57980](https://ubuntu.com/security/CVE-2024-57980) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 938 | linux-libc-dev | [CVE-2024-57981](https://ubuntu.com/security/CVE-2024-57981) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 939 | linux-libc-dev | [CVE-2024-57982](https://ubuntu.com/security/CVE-2024-57982) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 940 | linux-libc-dev | [CVE-2024-57984](https://ubuntu.com/security/CVE-2024-57984) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 941 | linux-libc-dev | [CVE-2024-57986](https://ubuntu.com/security/CVE-2024-57986) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 942 | linux-libc-dev | [CVE-2024-57993](https://ubuntu.com/security/CVE-2024-57993) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 943 | linux-libc-dev | [CVE-2024-57996](https://ubuntu.com/security/CVE-2024-57996) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-153.163 |
-| 944 | linux-libc-dev | [CVE-2024-57999](https://ubuntu.com/security/CVE-2024-57999) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 945 | linux-libc-dev | [CVE-2024-58001](https://ubuntu.com/security/CVE-2024-58001) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 946 | linux-libc-dev | [CVE-2024-58002](https://ubuntu.com/security/CVE-2024-58002) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 947 | linux-libc-dev | [CVE-2024-58005](https://ubuntu.com/security/CVE-2024-58005) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 948 | linux-libc-dev | [CVE-2024-58007](https://ubuntu.com/security/CVE-2024-58007) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 949 | linux-libc-dev | [CVE-2024-58010](https://ubuntu.com/security/CVE-2024-58010) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 950 | linux-libc-dev | [CVE-2024-58011](https://ubuntu.com/security/CVE-2024-58011) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 951 | linux-libc-dev | [CVE-2024-58012](https://ubuntu.com/security/CVE-2024-58012) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 952 | linux-libc-dev | [CVE-2024-58013](https://ubuntu.com/security/CVE-2024-58013) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 953 | linux-libc-dev | [CVE-2024-58014](https://ubuntu.com/security/CVE-2024-58014) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 954 | linux-libc-dev | [CVE-2024-58015](https://ubuntu.com/security/CVE-2024-58015) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 955 | linux-libc-dev | [CVE-2024-58016](https://ubuntu.com/security/CVE-2024-58016) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 956 | linux-libc-dev | [CVE-2024-58017](https://ubuntu.com/security/CVE-2024-58017) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 957 | linux-libc-dev | [CVE-2024-58018](https://ubuntu.com/security/CVE-2024-58018) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 958 | linux-libc-dev | [CVE-2024-58019](https://ubuntu.com/security/CVE-2024-58019) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 959 | linux-libc-dev | [CVE-2024-58020](https://ubuntu.com/security/CVE-2024-58020) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 960 | linux-libc-dev | [CVE-2024-58034](https://ubuntu.com/security/CVE-2024-58034) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 961 | linux-libc-dev | [CVE-2024-58051](https://ubuntu.com/security/CVE-2024-58051) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 962 | linux-libc-dev | [CVE-2024-58052](https://ubuntu.com/security/CVE-2024-58052) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 963 | linux-libc-dev | [CVE-2024-58053](https://ubuntu.com/security/CVE-2024-58053) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 964 | linux-libc-dev | [CVE-2024-58054](https://ubuntu.com/security/CVE-2024-58054) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 965 | linux-libc-dev | [CVE-2024-58055](https://ubuntu.com/security/CVE-2024-58055) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 966 | linux-libc-dev | [CVE-2024-58058](https://ubuntu.com/security/CVE-2024-58058) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 967 | linux-libc-dev | [CVE-2024-58063](https://ubuntu.com/security/CVE-2024-58063) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 968 | linux-libc-dev | [CVE-2024-58069](https://ubuntu.com/security/CVE-2024-58069) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 969 | linux-libc-dev | [CVE-2024-58071](https://ubuntu.com/security/CVE-2024-58071) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 970 | linux-libc-dev | [CVE-2024-58072](https://ubuntu.com/security/CVE-2024-58072) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 971 | linux-libc-dev | [CVE-2024-58076](https://ubuntu.com/security/CVE-2024-58076) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 972 | linux-libc-dev | [CVE-2024-58077](https://ubuntu.com/security/CVE-2024-58077) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 973 | linux-libc-dev | [CVE-2024-58079](https://ubuntu.com/security/CVE-2024-58079) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 974 | linux-libc-dev | [CVE-2024-58083](https://ubuntu.com/security/CVE-2024-58083) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 975 | linux-libc-dev | [CVE-2024-58085](https://ubuntu.com/security/CVE-2024-58085) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 976 | linux-libc-dev | [CVE-2024-58086](https://ubuntu.com/security/CVE-2024-58086) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 977 | linux-libc-dev | [CVE-2024-58089](https://ubuntu.com/security/CVE-2024-58089) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 978 | linux-libc-dev | [CVE-2024-58090](https://ubuntu.com/security/CVE-2024-58090) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 979 | linux-libc-dev | [CVE-2024-58094](https://ubuntu.com/security/CVE-2024-58094) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 980 | linux-libc-dev | [CVE-2024-58095](https://ubuntu.com/security/CVE-2024-58095) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 981 | linux-libc-dev | [CVE-2024-58096](https://ubuntu.com/security/CVE-2024-58096) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 982 | linux-libc-dev | [CVE-2024-58097](https://ubuntu.com/security/CVE-2024-58097) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 983 | linux-libc-dev | [CVE-2024-58098](https://ubuntu.com/security/CVE-2024-58098) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 984 | linux-libc-dev | [CVE-2024-58100](https://ubuntu.com/security/CVE-2024-58100) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 985 | linux-libc-dev | [CVE-2024-58238](https://ubuntu.com/security/CVE-2024-58238) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 986 | linux-libc-dev | [CVE-2024-8805](https://ubuntu.com/security/CVE-2024-8805) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 987 | linux-libc-dev | [CVE-2025-21629](https://ubuntu.com/security/CVE-2025-21629) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 988 | linux-libc-dev | [CVE-2025-21634](https://ubuntu.com/security/CVE-2025-21634) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 989 | linux-libc-dev | [CVE-2025-21635](https://ubuntu.com/security/CVE-2025-21635) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 990 | linux-libc-dev | [CVE-2025-21647](https://ubuntu.com/security/CVE-2025-21647) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 991 | linux-libc-dev | [CVE-2025-21649](https://ubuntu.com/security/CVE-2025-21649) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 992 | linux-libc-dev | [CVE-2025-21651](https://ubuntu.com/security/CVE-2025-21651) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 993 | linux-libc-dev | [CVE-2025-21656](https://ubuntu.com/security/CVE-2025-21656) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 994 | linux-libc-dev | [CVE-2025-21658](https://ubuntu.com/security/CVE-2025-21658) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 995 | linux-libc-dev | [CVE-2025-21667](https://ubuntu.com/security/CVE-2025-21667) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 996 | linux-libc-dev | [CVE-2025-21672](https://ubuntu.com/security/CVE-2025-21672) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 997 | linux-libc-dev | [CVE-2025-21673](https://ubuntu.com/security/CVE-2025-21673) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 998 | linux-libc-dev | [CVE-2025-21682](https://ubuntu.com/security/CVE-2025-21682) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 999 | linux-libc-dev | [CVE-2025-21684](https://ubuntu.com/security/CVE-2025-21684) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1000 | linux-libc-dev | [CVE-2025-21693](https://ubuntu.com/security/CVE-2025-21693) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1001 | linux-libc-dev | [CVE-2025-21696](https://ubuntu.com/security/CVE-2025-21696) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1002 | linux-libc-dev | [CVE-2025-21704](https://ubuntu.com/security/CVE-2025-21704) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1003 | linux-libc-dev | [CVE-2025-21707](https://ubuntu.com/security/CVE-2025-21707) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1004 | linux-libc-dev | [CVE-2025-21708](https://ubuntu.com/security/CVE-2025-21708) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1005 | linux-libc-dev | [CVE-2025-21711](https://ubuntu.com/security/CVE-2025-21711) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1006 | linux-libc-dev | [CVE-2025-21712](https://ubuntu.com/security/CVE-2025-21712) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1007 | linux-libc-dev | [CVE-2025-21714](https://ubuntu.com/security/CVE-2025-21714) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1008 | linux-libc-dev | [CVE-2025-21715](https://ubuntu.com/security/CVE-2025-21715) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1009 | linux-libc-dev | [CVE-2025-21718](https://ubuntu.com/security/CVE-2025-21718) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1010 | linux-libc-dev | [CVE-2025-21719](https://ubuntu.com/security/CVE-2025-21719) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1011 | linux-libc-dev | [CVE-2025-21721](https://ubuntu.com/security/CVE-2025-21721) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1012 | linux-libc-dev | [CVE-2025-21722](https://ubuntu.com/security/CVE-2025-21722) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1013 | linux-libc-dev | [CVE-2025-21723](https://ubuntu.com/security/CVE-2025-21723) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1014 | linux-libc-dev | [CVE-2025-21726](https://ubuntu.com/security/CVE-2025-21726) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1015 | linux-libc-dev | [CVE-2025-21728](https://ubuntu.com/security/CVE-2025-21728) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1016 | linux-libc-dev | [CVE-2025-21730](https://ubuntu.com/security/CVE-2025-21730) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1017 | linux-libc-dev | [CVE-2025-21731](https://ubuntu.com/security/CVE-2025-21731) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1018 | linux-libc-dev | [CVE-2025-21732](https://ubuntu.com/security/CVE-2025-21732) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1019 | linux-libc-dev | [CVE-2025-21734](https://ubuntu.com/security/CVE-2025-21734) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1020 | linux-libc-dev | [CVE-2025-21735](https://ubuntu.com/security/CVE-2025-21735) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1021 | linux-libc-dev | [CVE-2025-21736](https://ubuntu.com/security/CVE-2025-21736) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1022 | linux-libc-dev | [CVE-2025-21738](https://ubuntu.com/security/CVE-2025-21738) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1023 | linux-libc-dev | [CVE-2025-21739](https://ubuntu.com/security/CVE-2025-21739) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1024 | linux-libc-dev | [CVE-2025-21744](https://ubuntu.com/security/CVE-2025-21744) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1025 | linux-libc-dev | [CVE-2025-21745](https://ubuntu.com/security/CVE-2025-21745) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1026 | linux-libc-dev | [CVE-2025-21748](https://ubuntu.com/security/CVE-2025-21748) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1027 | linux-libc-dev | [CVE-2025-21749](https://ubuntu.com/security/CVE-2025-21749) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1028 | linux-libc-dev | [CVE-2025-21750](https://ubuntu.com/security/CVE-2025-21750) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1029 | linux-libc-dev | [CVE-2025-21751](https://ubuntu.com/security/CVE-2025-21751) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1030 | linux-libc-dev | [CVE-2025-21752](https://ubuntu.com/security/CVE-2025-21752) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1031 | linux-libc-dev | [CVE-2025-21753](https://ubuntu.com/security/CVE-2025-21753) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1032 | linux-libc-dev | [CVE-2025-21758](https://ubuntu.com/security/CVE-2025-21758) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1033 | linux-libc-dev | [CVE-2025-21759](https://ubuntu.com/security/CVE-2025-21759) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1034 | linux-libc-dev | [CVE-2025-21760](https://ubuntu.com/security/CVE-2025-21760) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1035 | linux-libc-dev | [CVE-2025-21761](https://ubuntu.com/security/CVE-2025-21761) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1036 | linux-libc-dev | [CVE-2025-21762](https://ubuntu.com/security/CVE-2025-21762) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1037 | linux-libc-dev | [CVE-2025-21763](https://ubuntu.com/security/CVE-2025-21763) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1038 | linux-libc-dev | [CVE-2025-21764](https://ubuntu.com/security/CVE-2025-21764) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1039 | linux-libc-dev | [CVE-2025-21765](https://ubuntu.com/security/CVE-2025-21765) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1040 | linux-libc-dev | [CVE-2025-21766](https://ubuntu.com/security/CVE-2025-21766) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1041 | linux-libc-dev | [CVE-2025-21767](https://ubuntu.com/security/CVE-2025-21767) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1042 | linux-libc-dev | [CVE-2025-21768](https://ubuntu.com/security/CVE-2025-21768) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1043 | linux-libc-dev | [CVE-2025-21772](https://ubuntu.com/security/CVE-2025-21772) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1044 | linux-libc-dev | [CVE-2025-21776](https://ubuntu.com/security/CVE-2025-21776) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1045 | linux-libc-dev | [CVE-2025-21779](https://ubuntu.com/security/CVE-2025-21779) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1046 | linux-libc-dev | [CVE-2025-21780](https://ubuntu.com/security/CVE-2025-21780) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1047 | linux-libc-dev | [CVE-2025-21781](https://ubuntu.com/security/CVE-2025-21781) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1048 | linux-libc-dev | [CVE-2025-21782](https://ubuntu.com/security/CVE-2025-21782) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1049 | linux-libc-dev | [CVE-2025-21785](https://ubuntu.com/security/CVE-2025-21785) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1050 | linux-libc-dev | [CVE-2025-21786](https://ubuntu.com/security/CVE-2025-21786) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1051 | linux-libc-dev | [CVE-2025-21787](https://ubuntu.com/security/CVE-2025-21787) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1052 | linux-libc-dev | [CVE-2025-21791](https://ubuntu.com/security/CVE-2025-21791) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1053 | linux-libc-dev | [CVE-2025-21792](https://ubuntu.com/security/CVE-2025-21792) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1054 | linux-libc-dev | [CVE-2025-21795](https://ubuntu.com/security/CVE-2025-21795) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1055 | linux-libc-dev | [CVE-2025-21796](https://ubuntu.com/security/CVE-2025-21796) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1056 | linux-libc-dev | [CVE-2025-21799](https://ubuntu.com/security/CVE-2025-21799) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1057 | linux-libc-dev | [CVE-2025-21801](https://ubuntu.com/security/CVE-2025-21801) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1058 | linux-libc-dev | [CVE-2025-21802](https://ubuntu.com/security/CVE-2025-21802) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1059 | linux-libc-dev | [CVE-2025-21804](https://ubuntu.com/security/CVE-2025-21804) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1060 | linux-libc-dev | [CVE-2025-21806](https://ubuntu.com/security/CVE-2025-21806) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1061 | linux-libc-dev | [CVE-2025-21811](https://ubuntu.com/security/CVE-2025-21811) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1062 | linux-libc-dev | [CVE-2025-21812](https://ubuntu.com/security/CVE-2025-21812) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1063 | linux-libc-dev | [CVE-2025-21814](https://ubuntu.com/security/CVE-2025-21814) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1064 | linux-libc-dev | [CVE-2025-21816](https://ubuntu.com/security/CVE-2025-21816) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1065 | linux-libc-dev | [CVE-2025-21817](https://ubuntu.com/security/CVE-2025-21817) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1066 | linux-libc-dev | [CVE-2025-21819](https://ubuntu.com/security/CVE-2025-21819) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1067 | linux-libc-dev | [CVE-2025-21820](https://ubuntu.com/security/CVE-2025-21820) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1068 | linux-libc-dev | [CVE-2025-21821](https://ubuntu.com/security/CVE-2025-21821) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1069 | linux-libc-dev | [CVE-2025-21823](https://ubuntu.com/security/CVE-2025-21823) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1070 | linux-libc-dev | [CVE-2025-21825](https://ubuntu.com/security/CVE-2025-21825) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1071 | linux-libc-dev | [CVE-2025-21826](https://ubuntu.com/security/CVE-2025-21826) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1072 | linux-libc-dev | [CVE-2025-21830](https://ubuntu.com/security/CVE-2025-21830) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1073 | linux-libc-dev | [CVE-2025-21831](https://ubuntu.com/security/CVE-2025-21831) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1074 | linux-libc-dev | [CVE-2025-21832](https://ubuntu.com/security/CVE-2025-21832) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1075 | linux-libc-dev | [CVE-2025-21833](https://ubuntu.com/security/CVE-2025-21833) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1076 | linux-libc-dev | [CVE-2025-21835](https://ubuntu.com/security/CVE-2025-21835) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1077 | linux-libc-dev | [CVE-2025-21838](https://ubuntu.com/security/CVE-2025-21838) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1078 | linux-libc-dev | [CVE-2025-21839](https://ubuntu.com/security/CVE-2025-21839) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1079 | linux-libc-dev | [CVE-2025-21844](https://ubuntu.com/security/CVE-2025-21844) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1080 | linux-libc-dev | [CVE-2025-21846](https://ubuntu.com/security/CVE-2025-21846) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1081 | linux-libc-dev | [CVE-2025-21848](https://ubuntu.com/security/CVE-2025-21848) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1082 | linux-libc-dev | [CVE-2025-21853](https://ubuntu.com/security/CVE-2025-21853) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1083 | linux-libc-dev | [CVE-2025-21855](https://ubuntu.com/security/CVE-2025-21855) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1084 | linux-libc-dev | [CVE-2025-21858](https://ubuntu.com/security/CVE-2025-21858) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1085 | linux-libc-dev | [CVE-2025-21859](https://ubuntu.com/security/CVE-2025-21859) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1086 | linux-libc-dev | [CVE-2025-21861](https://ubuntu.com/security/CVE-2025-21861) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1087 | linux-libc-dev | [CVE-2025-21862](https://ubuntu.com/security/CVE-2025-21862) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1088 | linux-libc-dev | [CVE-2025-21863](https://ubuntu.com/security/CVE-2025-21863) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1089 | linux-libc-dev | [CVE-2025-21865](https://ubuntu.com/security/CVE-2025-21865) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1090 | linux-libc-dev | [CVE-2025-21866](https://ubuntu.com/security/CVE-2025-21866) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1091 | linux-libc-dev | [CVE-2025-21871](https://ubuntu.com/security/CVE-2025-21871) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1092 | linux-libc-dev | [CVE-2025-21872](https://ubuntu.com/security/CVE-2025-21872) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1093 | linux-libc-dev | [CVE-2025-21875](https://ubuntu.com/security/CVE-2025-21875) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1094 | linux-libc-dev | [CVE-2025-21877](https://ubuntu.com/security/CVE-2025-21877) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1095 | linux-libc-dev | [CVE-2025-21878](https://ubuntu.com/security/CVE-2025-21878) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1096 | linux-libc-dev | [CVE-2025-21881](https://ubuntu.com/security/CVE-2025-21881) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1097 | linux-libc-dev | [CVE-2025-21885](https://ubuntu.com/security/CVE-2025-21885) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1098 | linux-libc-dev | [CVE-2025-21891](https://ubuntu.com/security/CVE-2025-21891) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1099 | linux-libc-dev | [CVE-2025-21894](https://ubuntu.com/security/CVE-2025-21894) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1100 | linux-libc-dev | [CVE-2025-21898](https://ubuntu.com/security/CVE-2025-21898) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1101 | linux-libc-dev | [CVE-2025-21899](https://ubuntu.com/security/CVE-2025-21899) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1102 | linux-libc-dev | [CVE-2025-21904](https://ubuntu.com/security/CVE-2025-21904) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1103 | linux-libc-dev | [CVE-2025-21905](https://ubuntu.com/security/CVE-2025-21905) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1104 | linux-libc-dev | [CVE-2025-21908](https://ubuntu.com/security/CVE-2025-21908) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1105 | linux-libc-dev | [CVE-2025-21909](https://ubuntu.com/security/CVE-2025-21909) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1106 | linux-libc-dev | [CVE-2025-21910](https://ubuntu.com/security/CVE-2025-21910) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1107 | linux-libc-dev | [CVE-2025-21912](https://ubuntu.com/security/CVE-2025-21912) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1108 | linux-libc-dev | [CVE-2025-21914](https://ubuntu.com/security/CVE-2025-21914) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1109 | linux-libc-dev | [CVE-2025-21915](https://ubuntu.com/security/CVE-2025-21915) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1110 | linux-libc-dev | [CVE-2025-21916](https://ubuntu.com/security/CVE-2025-21916) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1111 | linux-libc-dev | [CVE-2025-21917](https://ubuntu.com/security/CVE-2025-21917) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1112 | linux-libc-dev | [CVE-2025-21918](https://ubuntu.com/security/CVE-2025-21918) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1113 | linux-libc-dev | [CVE-2025-21919](https://ubuntu.com/security/CVE-2025-21919) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1114 | linux-libc-dev | [CVE-2025-21920](https://ubuntu.com/security/CVE-2025-21920) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1115 | linux-libc-dev | [CVE-2025-21922](https://ubuntu.com/security/CVE-2025-21922) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1116 | linux-libc-dev | [CVE-2025-21924](https://ubuntu.com/security/CVE-2025-21924) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1117 | linux-libc-dev | [CVE-2025-21925](https://ubuntu.com/security/CVE-2025-21925) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1118 | linux-libc-dev | [CVE-2025-21926](https://ubuntu.com/security/CVE-2025-21926) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1119 | linux-libc-dev | [CVE-2025-21927](https://ubuntu.com/security/CVE-2025-21927) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1120 | linux-libc-dev | [CVE-2025-21928](https://ubuntu.com/security/CVE-2025-21928) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1121 | linux-libc-dev | [CVE-2025-21931](https://ubuntu.com/security/CVE-2025-21931) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1122 | linux-libc-dev | [CVE-2025-21934](https://ubuntu.com/security/CVE-2025-21934) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1123 | linux-libc-dev | [CVE-2025-21935](https://ubuntu.com/security/CVE-2025-21935) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1124 | linux-libc-dev | [CVE-2025-21941](https://ubuntu.com/security/CVE-2025-21941) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1125 | linux-libc-dev | [CVE-2025-21943](https://ubuntu.com/security/CVE-2025-21943) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1126 | linux-libc-dev | [CVE-2025-21944](https://ubuntu.com/security/CVE-2025-21944) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1127 | linux-libc-dev | [CVE-2025-21945](https://ubuntu.com/security/CVE-2025-21945) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1128 | linux-libc-dev | [CVE-2025-21946](https://ubuntu.com/security/CVE-2025-21946) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1129 | linux-libc-dev | [CVE-2025-21947](https://ubuntu.com/security/CVE-2025-21947) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1130 | linux-libc-dev | [CVE-2025-21948](https://ubuntu.com/security/CVE-2025-21948) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1131 | linux-libc-dev | [CVE-2025-21949](https://ubuntu.com/security/CVE-2025-21949) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1132 | linux-libc-dev | [CVE-2025-21950](https://ubuntu.com/security/CVE-2025-21950) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1133 | linux-libc-dev | [CVE-2025-21951](https://ubuntu.com/security/CVE-2025-21951) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1134 | linux-libc-dev | [CVE-2025-21955](https://ubuntu.com/security/CVE-2025-21955) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1135 | linux-libc-dev | [CVE-2025-21956](https://ubuntu.com/security/CVE-2025-21956) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1136 | linux-libc-dev | [CVE-2025-21957](https://ubuntu.com/security/CVE-2025-21957) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1137 | linux-libc-dev | [CVE-2025-21959](https://ubuntu.com/security/CVE-2025-21959) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1138 | linux-libc-dev | [CVE-2025-21962](https://ubuntu.com/security/CVE-2025-21962) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1139 | linux-libc-dev | [CVE-2025-21963](https://ubuntu.com/security/CVE-2025-21963) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1140 | linux-libc-dev | [CVE-2025-21964](https://ubuntu.com/security/CVE-2025-21964) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1141 | linux-libc-dev | [CVE-2025-21967](https://ubuntu.com/security/CVE-2025-21967) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1142 | linux-libc-dev | [CVE-2025-21968](https://ubuntu.com/security/CVE-2025-21968) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1143 | linux-libc-dev | [CVE-2025-21969](https://ubuntu.com/security/CVE-2025-21969) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1144 | linux-libc-dev | [CVE-2025-21970](https://ubuntu.com/security/CVE-2025-21970) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1145 | linux-libc-dev | [CVE-2025-21971](https://ubuntu.com/security/CVE-2025-21971) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1146 | linux-libc-dev | [CVE-2025-21972](https://ubuntu.com/security/CVE-2025-21972) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1147 | linux-libc-dev | [CVE-2025-21975](https://ubuntu.com/security/CVE-2025-21975) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1148 | linux-libc-dev | [CVE-2025-21976](https://ubuntu.com/security/CVE-2025-21976) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1149 | linux-libc-dev | [CVE-2025-21981](https://ubuntu.com/security/CVE-2025-21981) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1150 | linux-libc-dev | [CVE-2025-21985](https://ubuntu.com/security/CVE-2025-21985) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1151 | linux-libc-dev | [CVE-2025-21986](https://ubuntu.com/security/CVE-2025-21986) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1152 | linux-libc-dev | [CVE-2025-21991](https://ubuntu.com/security/CVE-2025-21991) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1153 | linux-libc-dev | [CVE-2025-21992](https://ubuntu.com/security/CVE-2025-21992) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1154 | linux-libc-dev | [CVE-2025-21994](https://ubuntu.com/security/CVE-2025-21994) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1155 | linux-libc-dev | [CVE-2025-21996](https://ubuntu.com/security/CVE-2025-21996) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1156 | linux-libc-dev | [CVE-2025-21999](https://ubuntu.com/security/CVE-2025-21999) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1157 | linux-libc-dev | [CVE-2025-22004](https://ubuntu.com/security/CVE-2025-22004) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1158 | linux-libc-dev | [CVE-2025-22005](https://ubuntu.com/security/CVE-2025-22005) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1159 | linux-libc-dev | [CVE-2025-22007](https://ubuntu.com/security/CVE-2025-22007) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1160 | linux-libc-dev | [CVE-2025-22008](https://ubuntu.com/security/CVE-2025-22008) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1161 | linux-libc-dev | [CVE-2025-22010](https://ubuntu.com/security/CVE-2025-22010) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1162 | linux-libc-dev | [CVE-2025-22014](https://ubuntu.com/security/CVE-2025-22014) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1163 | linux-libc-dev | [CVE-2025-22018](https://ubuntu.com/security/CVE-2025-22018) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1164 | linux-libc-dev | [CVE-2025-22019](https://ubuntu.com/security/CVE-2025-22019) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1165 | linux-libc-dev | [CVE-2025-22020](https://ubuntu.com/security/CVE-2025-22020) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1166 | linux-libc-dev | [CVE-2025-22021](https://ubuntu.com/security/CVE-2025-22021) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1167 | linux-libc-dev | [CVE-2025-22022](https://ubuntu.com/security/CVE-2025-22022) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1168 | linux-libc-dev | [CVE-2025-22025](https://ubuntu.com/security/CVE-2025-22025) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1169 | linux-libc-dev | [CVE-2025-22026](https://ubuntu.com/security/CVE-2025-22026) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1170 | linux-libc-dev | [CVE-2025-22027](https://ubuntu.com/security/CVE-2025-22027) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1171 | linux-libc-dev | [CVE-2025-22028](https://ubuntu.com/security/CVE-2025-22028) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1172 | linux-libc-dev | [CVE-2025-22035](https://ubuntu.com/security/CVE-2025-22035) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1173 | linux-libc-dev | [CVE-2025-22037](https://ubuntu.com/security/CVE-2025-22037) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1174 | linux-libc-dev | [CVE-2025-22038](https://ubuntu.com/security/CVE-2025-22038) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1175 | linux-libc-dev | [CVE-2025-22039](https://ubuntu.com/security/CVE-2025-22039) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1176 | linux-libc-dev | [CVE-2025-22040](https://ubuntu.com/security/CVE-2025-22040) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1177 | linux-libc-dev | [CVE-2025-22041](https://ubuntu.com/security/CVE-2025-22041) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1178 | linux-libc-dev | [CVE-2025-22042](https://ubuntu.com/security/CVE-2025-22042) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1179 | linux-libc-dev | [CVE-2025-22043](https://ubuntu.com/security/CVE-2025-22043) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1180 | linux-libc-dev | [CVE-2025-22044](https://ubuntu.com/security/CVE-2025-22044) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1181 | linux-libc-dev | [CVE-2025-22045](https://ubuntu.com/security/CVE-2025-22045) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1182 | linux-libc-dev | [CVE-2025-22050](https://ubuntu.com/security/CVE-2025-22050) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1183 | linux-libc-dev | [CVE-2025-22053](https://ubuntu.com/security/CVE-2025-22053) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1184 | linux-libc-dev | [CVE-2025-22054](https://ubuntu.com/security/CVE-2025-22054) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1185 | linux-libc-dev | [CVE-2025-22055](https://ubuntu.com/security/CVE-2025-22055) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1186 | linux-libc-dev | [CVE-2025-22056](https://ubuntu.com/security/CVE-2025-22056) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1187 | linux-libc-dev | [CVE-2025-22057](https://ubuntu.com/security/CVE-2025-22057) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1188 | linux-libc-dev | [CVE-2025-22058](https://ubuntu.com/security/CVE-2025-22058) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1189 | linux-libc-dev | [CVE-2025-22060](https://ubuntu.com/security/CVE-2025-22060) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1190 | linux-libc-dev | [CVE-2025-22062](https://ubuntu.com/security/CVE-2025-22062) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1191 | linux-libc-dev | [CVE-2025-22063](https://ubuntu.com/security/CVE-2025-22063) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1192 | linux-libc-dev | [CVE-2025-22066](https://ubuntu.com/security/CVE-2025-22066) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1193 | linux-libc-dev | [CVE-2025-22071](https://ubuntu.com/security/CVE-2025-22071) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1194 | linux-libc-dev | [CVE-2025-22072](https://ubuntu.com/security/CVE-2025-22072) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1195 | linux-libc-dev | [CVE-2025-22073](https://ubuntu.com/security/CVE-2025-22073) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1196 | linux-libc-dev | [CVE-2025-22075](https://ubuntu.com/security/CVE-2025-22075) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1197 | linux-libc-dev | [CVE-2025-22079](https://ubuntu.com/security/CVE-2025-22079) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1198 | linux-libc-dev | [CVE-2025-22081](https://ubuntu.com/security/CVE-2025-22081) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1199 | linux-libc-dev | [CVE-2025-22083](https://ubuntu.com/security/CVE-2025-22083) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1200 | linux-libc-dev | [CVE-2025-22086](https://ubuntu.com/security/CVE-2025-22086) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1201 | linux-libc-dev | [CVE-2025-22089](https://ubuntu.com/security/CVE-2025-22089) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1202 | linux-libc-dev | [CVE-2025-22090](https://ubuntu.com/security/CVE-2025-22090) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1203 | linux-libc-dev | [CVE-2025-22097](https://ubuntu.com/security/CVE-2025-22097) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1204 | linux-libc-dev | [CVE-2025-22103](https://ubuntu.com/security/CVE-2025-22103) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1205 | linux-libc-dev | [CVE-2025-22104](https://ubuntu.com/security/CVE-2025-22104) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1206 | linux-libc-dev | [CVE-2025-22105](https://ubuntu.com/security/CVE-2025-22105) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1207 | linux-libc-dev | [CVE-2025-22107](https://ubuntu.com/security/CVE-2025-22107) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1208 | linux-libc-dev | [CVE-2025-22109](https://ubuntu.com/security/CVE-2025-22109) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1209 | linux-libc-dev | [CVE-2025-22111](https://ubuntu.com/security/CVE-2025-22111) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1210 | linux-libc-dev | [CVE-2025-22113](https://ubuntu.com/security/CVE-2025-22113) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1211 | linux-libc-dev | [CVE-2025-22121](https://ubuntu.com/security/CVE-2025-22121) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1212 | linux-libc-dev | [CVE-2025-22124](https://ubuntu.com/security/CVE-2025-22124) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1213 | linux-libc-dev | [CVE-2025-22125](https://ubuntu.com/security/CVE-2025-22125) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1214 | linux-libc-dev | [CVE-2025-22127](https://ubuntu.com/security/CVE-2025-22127) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1215 | linux-libc-dev | [CVE-2025-2312](https://ubuntu.com/security/CVE-2025-2312) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1216 | linux-libc-dev | [CVE-2025-23130](https://ubuntu.com/security/CVE-2025-23130) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1217 | linux-libc-dev | [CVE-2025-23131](https://ubuntu.com/security/CVE-2025-23131) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1218 | linux-libc-dev | [CVE-2025-23132](https://ubuntu.com/security/CVE-2025-23132) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1219 | linux-libc-dev | [CVE-2025-23133](https://ubuntu.com/security/CVE-2025-23133) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1220 | linux-libc-dev | [CVE-2025-23136](https://ubuntu.com/security/CVE-2025-23136) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1221 | linux-libc-dev | [CVE-2025-23138](https://ubuntu.com/security/CVE-2025-23138) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1222 | linux-libc-dev | [CVE-2025-23140](https://ubuntu.com/security/CVE-2025-23140) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1223 | linux-libc-dev | [CVE-2025-23141](https://ubuntu.com/security/CVE-2025-23141) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1224 | linux-libc-dev | [CVE-2025-23142](https://ubuntu.com/security/CVE-2025-23142) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1225 | linux-libc-dev | [CVE-2025-23143](https://ubuntu.com/security/CVE-2025-23143) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1226 | linux-libc-dev | [CVE-2025-23144](https://ubuntu.com/security/CVE-2025-23144) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1227 | linux-libc-dev | [CVE-2025-23145](https://ubuntu.com/security/CVE-2025-23145) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1228 | linux-libc-dev | [CVE-2025-23146](https://ubuntu.com/security/CVE-2025-23146) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1229 | linux-libc-dev | [CVE-2025-23147](https://ubuntu.com/security/CVE-2025-23147) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1230 | linux-libc-dev | [CVE-2025-23148](https://ubuntu.com/security/CVE-2025-23148) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1231 | linux-libc-dev | [CVE-2025-23150](https://ubuntu.com/security/CVE-2025-23150) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1232 | linux-libc-dev | [CVE-2025-23151](https://ubuntu.com/security/CVE-2025-23151) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1233 | linux-libc-dev | [CVE-2025-23155](https://ubuntu.com/security/CVE-2025-23155) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1234 | linux-libc-dev | [CVE-2025-23156](https://ubuntu.com/security/CVE-2025-23156) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1235 | linux-libc-dev | [CVE-2025-23157](https://ubuntu.com/security/CVE-2025-23157) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1236 | linux-libc-dev | [CVE-2025-23158](https://ubuntu.com/security/CVE-2025-23158) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1237 | linux-libc-dev | [CVE-2025-23159](https://ubuntu.com/security/CVE-2025-23159) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1238 | linux-libc-dev | [CVE-2025-23160](https://ubuntu.com/security/CVE-2025-23160) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1239 | linux-libc-dev | [CVE-2025-23161](https://ubuntu.com/security/CVE-2025-23161) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1240 | linux-libc-dev | [CVE-2025-23162](https://ubuntu.com/security/CVE-2025-23162) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1241 | linux-libc-dev | [CVE-2025-23163](https://ubuntu.com/security/CVE-2025-23163) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1242 | linux-libc-dev | [CVE-2025-37738](https://ubuntu.com/security/CVE-2025-37738) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1243 | linux-libc-dev | [CVE-2025-37739](https://ubuntu.com/security/CVE-2025-37739) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1244 | linux-libc-dev | [CVE-2025-37740](https://ubuntu.com/security/CVE-2025-37740) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1245 | linux-libc-dev | [CVE-2025-37741](https://ubuntu.com/security/CVE-2025-37741) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1246 | linux-libc-dev | [CVE-2025-37742](https://ubuntu.com/security/CVE-2025-37742) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1247 | linux-libc-dev | [CVE-2025-37743](https://ubuntu.com/security/CVE-2025-37743) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1248 | linux-libc-dev | [CVE-2025-37744](https://ubuntu.com/security/CVE-2025-37744) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1249 | linux-libc-dev | [CVE-2025-37745](https://ubuntu.com/security/CVE-2025-37745) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1250 | linux-libc-dev | [CVE-2025-37746](https://ubuntu.com/security/CVE-2025-37746) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1251 | linux-libc-dev | [CVE-2025-37747](https://ubuntu.com/security/CVE-2025-37747) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1252 | linux-libc-dev | [CVE-2025-37749](https://ubuntu.com/security/CVE-2025-37749) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1253 | linux-libc-dev | [CVE-2025-37752](https://ubuntu.com/security/CVE-2025-37752) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-153.163 |
-| 1254 | linux-libc-dev | [CVE-2025-37756](https://ubuntu.com/security/CVE-2025-37756) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1255 | linux-libc-dev | [CVE-2025-37757](https://ubuntu.com/security/CVE-2025-37757) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1256 | linux-libc-dev | [CVE-2025-37758](https://ubuntu.com/security/CVE-2025-37758) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1257 | linux-libc-dev | [CVE-2025-37765](https://ubuntu.com/security/CVE-2025-37765) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1258 | linux-libc-dev | [CVE-2025-37766](https://ubuntu.com/security/CVE-2025-37766) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1259 | linux-libc-dev | [CVE-2025-37767](https://ubuntu.com/security/CVE-2025-37767) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1260 | linux-libc-dev | [CVE-2025-37768](https://ubuntu.com/security/CVE-2025-37768) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1261 | linux-libc-dev | [CVE-2025-37770](https://ubuntu.com/security/CVE-2025-37770) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1262 | linux-libc-dev | [CVE-2025-37771](https://ubuntu.com/security/CVE-2025-37771) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1263 | linux-libc-dev | [CVE-2025-37773](https://ubuntu.com/security/CVE-2025-37773) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1264 | linux-libc-dev | [CVE-2025-37775](https://ubuntu.com/security/CVE-2025-37775) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1265 | linux-libc-dev | [CVE-2025-37776](https://ubuntu.com/security/CVE-2025-37776) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1266 | linux-libc-dev | [CVE-2025-37777](https://ubuntu.com/security/CVE-2025-37777) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1267 | linux-libc-dev | [CVE-2025-37778](https://ubuntu.com/security/CVE-2025-37778) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1268 | linux-libc-dev | [CVE-2025-37780](https://ubuntu.com/security/CVE-2025-37780) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1269 | linux-libc-dev | [CVE-2025-37781](https://ubuntu.com/security/CVE-2025-37781) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1270 | linux-libc-dev | [CVE-2025-37785](https://ubuntu.com/security/CVE-2025-37785) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1271 | linux-libc-dev | [CVE-2025-37786](https://ubuntu.com/security/CVE-2025-37786) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1272 | linux-libc-dev | [CVE-2025-37787](https://ubuntu.com/security/CVE-2025-37787) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1273 | linux-libc-dev | [CVE-2025-37788](https://ubuntu.com/security/CVE-2025-37788) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1274 | linux-libc-dev | [CVE-2025-37789](https://ubuntu.com/security/CVE-2025-37789) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1275 | linux-libc-dev | [CVE-2025-37790](https://ubuntu.com/security/CVE-2025-37790) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1276 | linux-libc-dev | [CVE-2025-37792](https://ubuntu.com/security/CVE-2025-37792) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1277 | linux-libc-dev | [CVE-2025-37794](https://ubuntu.com/security/CVE-2025-37794) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1278 | linux-libc-dev | [CVE-2025-37796](https://ubuntu.com/security/CVE-2025-37796) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1279 | linux-libc-dev | [CVE-2025-37797](https://ubuntu.com/security/CVE-2025-37797) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1280 | linux-libc-dev | [CVE-2025-37798](https://ubuntu.com/security/CVE-2025-37798) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
-| 1281 | linux-libc-dev | [CVE-2025-37800](https://ubuntu.com/security/CVE-2025-37800) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1282 | linux-libc-dev | [CVE-2025-37801](https://ubuntu.com/security/CVE-2025-37801) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1283 | linux-libc-dev | [CVE-2025-37802](https://ubuntu.com/security/CVE-2025-37802) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1284 | linux-libc-dev | [CVE-2025-37803](https://ubuntu.com/security/CVE-2025-37803) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1285 | linux-libc-dev | [CVE-2025-37805](https://ubuntu.com/security/CVE-2025-37805) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1286 | linux-libc-dev | [CVE-2025-37806](https://ubuntu.com/security/CVE-2025-37806) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1287 | linux-libc-dev | [CVE-2025-37807](https://ubuntu.com/security/CVE-2025-37807) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1288 | linux-libc-dev | [CVE-2025-37808](https://ubuntu.com/security/CVE-2025-37808) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1289 | linux-libc-dev | [CVE-2025-37810](https://ubuntu.com/security/CVE-2025-37810) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1290 | linux-libc-dev | [CVE-2025-37811](https://ubuntu.com/security/CVE-2025-37811) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1291 | linux-libc-dev | [CVE-2025-37812](https://ubuntu.com/security/CVE-2025-37812) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1292 | linux-libc-dev | [CVE-2025-37817](https://ubuntu.com/security/CVE-2025-37817) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1293 | linux-libc-dev | [CVE-2025-37819](https://ubuntu.com/security/CVE-2025-37819) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1294 | linux-libc-dev | [CVE-2025-37820](https://ubuntu.com/security/CVE-2025-37820) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1295 | linux-libc-dev | [CVE-2025-37822](https://ubuntu.com/security/CVE-2025-37822) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1296 | linux-libc-dev | [CVE-2025-37823](https://ubuntu.com/security/CVE-2025-37823) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1297 | linux-libc-dev | [CVE-2025-37824](https://ubuntu.com/security/CVE-2025-37824) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1298 | linux-libc-dev | [CVE-2025-37829](https://ubuntu.com/security/CVE-2025-37829) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1299 | linux-libc-dev | [CVE-2025-37830](https://ubuntu.com/security/CVE-2025-37830) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1300 | linux-libc-dev | [CVE-2025-37833](https://ubuntu.com/security/CVE-2025-37833) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1301 | linux-libc-dev | [CVE-2025-37834](https://ubuntu.com/security/CVE-2025-37834) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1302 | linux-libc-dev | [CVE-2025-37836](https://ubuntu.com/security/CVE-2025-37836) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1303 | linux-libc-dev | [CVE-2025-37838](https://ubuntu.com/security/CVE-2025-37838) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1304 | linux-libc-dev | [CVE-2025-37839](https://ubuntu.com/security/CVE-2025-37839) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1305 | linux-libc-dev | [CVE-2025-37840](https://ubuntu.com/security/CVE-2025-37840) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1306 | linux-libc-dev | [CVE-2025-37841](https://ubuntu.com/security/CVE-2025-37841) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1307 | linux-libc-dev | [CVE-2025-37842](https://ubuntu.com/security/CVE-2025-37842) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1308 | linux-libc-dev | [CVE-2025-37844](https://ubuntu.com/security/CVE-2025-37844) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1309 | linux-libc-dev | [CVE-2025-37849](https://ubuntu.com/security/CVE-2025-37849) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1310 | linux-libc-dev | [CVE-2025-37850](https://ubuntu.com/security/CVE-2025-37850) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1311 | linux-libc-dev | [CVE-2025-37851](https://ubuntu.com/security/CVE-2025-37851) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1312 | linux-libc-dev | [CVE-2025-37852](https://ubuntu.com/security/CVE-2025-37852) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1313 | linux-libc-dev | [CVE-2025-37853](https://ubuntu.com/security/CVE-2025-37853) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1314 | linux-libc-dev | [CVE-2025-37854](https://ubuntu.com/security/CVE-2025-37854) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1315 | linux-libc-dev | [CVE-2025-37855](https://ubuntu.com/security/CVE-2025-37855) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1316 | linux-libc-dev | [CVE-2025-37856](https://ubuntu.com/security/CVE-2025-37856) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1317 | linux-libc-dev | [CVE-2025-37857](https://ubuntu.com/security/CVE-2025-37857) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1318 | linux-libc-dev | [CVE-2025-37858](https://ubuntu.com/security/CVE-2025-37858) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1319 | linux-libc-dev | [CVE-2025-37859](https://ubuntu.com/security/CVE-2025-37859) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1320 | linux-libc-dev | [CVE-2025-37861](https://ubuntu.com/security/CVE-2025-37861) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1321 | linux-libc-dev | [CVE-2025-37862](https://ubuntu.com/security/CVE-2025-37862) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1322 | linux-libc-dev | [CVE-2025-37867](https://ubuntu.com/security/CVE-2025-37867) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1323 | linux-libc-dev | [CVE-2025-37870](https://ubuntu.com/security/CVE-2025-37870) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1324 | linux-libc-dev | [CVE-2025-37871](https://ubuntu.com/security/CVE-2025-37871) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1325 | linux-libc-dev | [CVE-2025-37875](https://ubuntu.com/security/CVE-2025-37875) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1326 | linux-libc-dev | [CVE-2025-37876](https://ubuntu.com/security/CVE-2025-37876) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1327 | linux-libc-dev | [CVE-2025-37877](https://ubuntu.com/security/CVE-2025-37877) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1328 | linux-libc-dev | [CVE-2025-37878](https://ubuntu.com/security/CVE-2025-37878) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1329 | linux-libc-dev | [CVE-2025-37879](https://ubuntu.com/security/CVE-2025-37879) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1330 | linux-libc-dev | [CVE-2025-37880](https://ubuntu.com/security/CVE-2025-37880) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1331 | linux-libc-dev | [CVE-2025-37881](https://ubuntu.com/security/CVE-2025-37881) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1332 | linux-libc-dev | [CVE-2025-37882](https://ubuntu.com/security/CVE-2025-37882) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1333 | linux-libc-dev | [CVE-2025-37883](https://ubuntu.com/security/CVE-2025-37883) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1334 | linux-libc-dev | [CVE-2025-37884](https://ubuntu.com/security/CVE-2025-37884) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1335 | linux-libc-dev | [CVE-2025-37885](https://ubuntu.com/security/CVE-2025-37885) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1336 | linux-libc-dev | [CVE-2025-37889](https://ubuntu.com/security/CVE-2025-37889) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1337 | linux-libc-dev | [CVE-2025-37890](https://ubuntu.com/security/CVE-2025-37890) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
-| 1338 | linux-libc-dev | [CVE-2025-37899](https://ubuntu.com/security/CVE-2025-37899) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1339 | linux-libc-dev | [CVE-2025-37903](https://ubuntu.com/security/CVE-2025-37903) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1340 | linux-libc-dev | [CVE-2025-37905](https://ubuntu.com/security/CVE-2025-37905) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1341 | linux-libc-dev | [CVE-2025-37907](https://ubuntu.com/security/CVE-2025-37907) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1342 | linux-libc-dev | [CVE-2025-37909](https://ubuntu.com/security/CVE-2025-37909) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1343 | linux-libc-dev | [CVE-2025-37911](https://ubuntu.com/security/CVE-2025-37911) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1344 | linux-libc-dev | [CVE-2025-37912](https://ubuntu.com/security/CVE-2025-37912) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1345 | linux-libc-dev | [CVE-2025-37913](https://ubuntu.com/security/CVE-2025-37913) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1346 | linux-libc-dev | [CVE-2025-37914](https://ubuntu.com/security/CVE-2025-37914) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1347 | linux-libc-dev | [CVE-2025-37915](https://ubuntu.com/security/CVE-2025-37915) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1348 | linux-libc-dev | [CVE-2025-37920](https://ubuntu.com/security/CVE-2025-37920) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1349 | linux-libc-dev | [CVE-2025-37923](https://ubuntu.com/security/CVE-2025-37923) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1350 | linux-libc-dev | [CVE-2025-37924](https://ubuntu.com/security/CVE-2025-37924) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1351 | linux-libc-dev | [CVE-2025-37925](https://ubuntu.com/security/CVE-2025-37925) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1352 | linux-libc-dev | [CVE-2025-37926](https://ubuntu.com/security/CVE-2025-37926) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1353 | linux-libc-dev | [CVE-2025-37927](https://ubuntu.com/security/CVE-2025-37927) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1354 | linux-libc-dev | [CVE-2025-37928](https://ubuntu.com/security/CVE-2025-37928) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1355 | linux-libc-dev | [CVE-2025-37930](https://ubuntu.com/security/CVE-2025-37930) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1356 | linux-libc-dev | [CVE-2025-37931](https://ubuntu.com/security/CVE-2025-37931) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1357 | linux-libc-dev | [CVE-2025-37932](https://ubuntu.com/security/CVE-2025-37932) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
-| 1358 | linux-libc-dev | [CVE-2025-37937](https://ubuntu.com/security/CVE-2025-37937) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1359 | linux-libc-dev | [CVE-2025-37938](https://ubuntu.com/security/CVE-2025-37938) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1360 | linux-libc-dev | [CVE-2025-37940](https://ubuntu.com/security/CVE-2025-37940) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1361 | linux-libc-dev | [CVE-2025-37942](https://ubuntu.com/security/CVE-2025-37942) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1362 | linux-libc-dev | [CVE-2025-37943](https://ubuntu.com/security/CVE-2025-37943) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1363 | linux-libc-dev | [CVE-2025-37944](https://ubuntu.com/security/CVE-2025-37944) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1364 | linux-libc-dev | [CVE-2025-37945](https://ubuntu.com/security/CVE-2025-37945) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1365 | linux-libc-dev | [CVE-2025-37947](https://ubuntu.com/security/CVE-2025-37947) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1366 | linux-libc-dev | [CVE-2025-37949](https://ubuntu.com/security/CVE-2025-37949) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1367 | linux-libc-dev | [CVE-2025-37951](https://ubuntu.com/security/CVE-2025-37951) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1368 | linux-libc-dev | [CVE-2025-37952](https://ubuntu.com/security/CVE-2025-37952) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1369 | linux-libc-dev | [CVE-2025-37954](https://ubuntu.com/security/CVE-2025-37954) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1370 | linux-libc-dev | [CVE-2025-37956](https://ubuntu.com/security/CVE-2025-37956) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1371 | linux-libc-dev | [CVE-2025-37957](https://ubuntu.com/security/CVE-2025-37957) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1372 | linux-libc-dev | [CVE-2025-37959](https://ubuntu.com/security/CVE-2025-37959) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1373 | linux-libc-dev | [CVE-2025-37961](https://ubuntu.com/security/CVE-2025-37961) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1374 | linux-libc-dev | [CVE-2025-37964](https://ubuntu.com/security/CVE-2025-37964) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1375 | linux-libc-dev | [CVE-2025-37967](https://ubuntu.com/security/CVE-2025-37967) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1376 | linux-libc-dev | [CVE-2025-37968](https://ubuntu.com/security/CVE-2025-37968) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1377 | linux-libc-dev | [CVE-2025-37969](https://ubuntu.com/security/CVE-2025-37969) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1378 | linux-libc-dev | [CVE-2025-37970](https://ubuntu.com/security/CVE-2025-37970) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1379 | linux-libc-dev | [CVE-2025-37980](https://ubuntu.com/security/CVE-2025-37980) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1380 | linux-libc-dev | [CVE-2025-37982](https://ubuntu.com/security/CVE-2025-37982) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1381 | linux-libc-dev | [CVE-2025-37983](https://ubuntu.com/security/CVE-2025-37983) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1382 | linux-libc-dev | [CVE-2025-37984](https://ubuntu.com/security/CVE-2025-37984) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1383 | linux-libc-dev | [CVE-2025-37985](https://ubuntu.com/security/CVE-2025-37985) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1384 | linux-libc-dev | [CVE-2025-37989](https://ubuntu.com/security/CVE-2025-37989) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1385 | linux-libc-dev | [CVE-2025-37990](https://ubuntu.com/security/CVE-2025-37990) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1386 | linux-libc-dev | [CVE-2025-37991](https://ubuntu.com/security/CVE-2025-37991) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1387 | linux-libc-dev | [CVE-2025-37992](https://ubuntu.com/security/CVE-2025-37992) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1388 | linux-libc-dev | [CVE-2025-37994](https://ubuntu.com/security/CVE-2025-37994) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1389 | linux-libc-dev | [CVE-2025-37995](https://ubuntu.com/security/CVE-2025-37995) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1390 | linux-libc-dev | [CVE-2025-37997](https://ubuntu.com/security/CVE-2025-37997) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
-| 1391 | linux-libc-dev | [CVE-2025-37998](https://ubuntu.com/security/CVE-2025-37998) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1392 | linux-libc-dev | [CVE-2025-38000](https://ubuntu.com/security/CVE-2025-38000) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
-| 1393 | linux-libc-dev | [CVE-2025-38001](https://ubuntu.com/security/CVE-2025-38001) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
-| 1394 | linux-libc-dev | [CVE-2025-38003](https://ubuntu.com/security/CVE-2025-38003) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1395 | linux-libc-dev | [CVE-2025-38004](https://ubuntu.com/security/CVE-2025-38004) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1396 | linux-libc-dev | [CVE-2025-38005](https://ubuntu.com/security/CVE-2025-38005) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1397 | linux-libc-dev | [CVE-2025-38006](https://ubuntu.com/security/CVE-2025-38006) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1398 | linux-libc-dev | [CVE-2025-38009](https://ubuntu.com/security/CVE-2025-38009) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1399 | linux-libc-dev | [CVE-2025-38011](https://ubuntu.com/security/CVE-2025-38011) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1400 | linux-libc-dev | [CVE-2025-38014](https://ubuntu.com/security/CVE-2025-38014) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1401 | linux-libc-dev | [CVE-2025-38015](https://ubuntu.com/security/CVE-2025-38015) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1402 | linux-libc-dev | [CVE-2025-38020](https://ubuntu.com/security/CVE-2025-38020) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1403 | linux-libc-dev | [CVE-2025-38022](https://ubuntu.com/security/CVE-2025-38022) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1404 | linux-libc-dev | [CVE-2025-38023](https://ubuntu.com/security/CVE-2025-38023) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1405 | linux-libc-dev | [CVE-2025-38024](https://ubuntu.com/security/CVE-2025-38024) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1406 | linux-libc-dev | [CVE-2025-38029](https://ubuntu.com/security/CVE-2025-38029) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1407 | linux-libc-dev | [CVE-2025-38031](https://ubuntu.com/security/CVE-2025-38031) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1408 | linux-libc-dev | [CVE-2025-38033](https://ubuntu.com/security/CVE-2025-38033) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1409 | linux-libc-dev | [CVE-2025-38034](https://ubuntu.com/security/CVE-2025-38034) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1410 | linux-libc-dev | [CVE-2025-38035](https://ubuntu.com/security/CVE-2025-38035) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1411 | linux-libc-dev | [CVE-2025-38036](https://ubuntu.com/security/CVE-2025-38036) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1412 | linux-libc-dev | [CVE-2025-38037](https://ubuntu.com/security/CVE-2025-38037) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1413 | linux-libc-dev | [CVE-2025-38038](https://ubuntu.com/security/CVE-2025-38038) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1414 | linux-libc-dev | [CVE-2025-38039](https://ubuntu.com/security/CVE-2025-38039) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1415 | linux-libc-dev | [CVE-2025-38040](https://ubuntu.com/security/CVE-2025-38040) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1416 | linux-libc-dev | [CVE-2025-38041](https://ubuntu.com/security/CVE-2025-38041) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1417 | linux-libc-dev | [CVE-2025-38042](https://ubuntu.com/security/CVE-2025-38042) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1418 | linux-libc-dev | [CVE-2025-38043](https://ubuntu.com/security/CVE-2025-38043) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1419 | linux-libc-dev | [CVE-2025-38044](https://ubuntu.com/security/CVE-2025-38044) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1420 | linux-libc-dev | [CVE-2025-38045](https://ubuntu.com/security/CVE-2025-38045) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1421 | linux-libc-dev | [CVE-2025-38047](https://ubuntu.com/security/CVE-2025-38047) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1422 | linux-libc-dev | [CVE-2025-38048](https://ubuntu.com/security/CVE-2025-38048) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1423 | linux-libc-dev | [CVE-2025-38051](https://ubuntu.com/security/CVE-2025-38051) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1424 | linux-libc-dev | [CVE-2025-38052](https://ubuntu.com/security/CVE-2025-38052) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1425 | linux-libc-dev | [CVE-2025-38057](https://ubuntu.com/security/CVE-2025-38057) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1426 | linux-libc-dev | [CVE-2025-38058](https://ubuntu.com/security/CVE-2025-38058) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1427 | linux-libc-dev | [CVE-2025-38059](https://ubuntu.com/security/CVE-2025-38059) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1428 | linux-libc-dev | [CVE-2025-38060](https://ubuntu.com/security/CVE-2025-38060) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1429 | linux-libc-dev | [CVE-2025-38061](https://ubuntu.com/security/CVE-2025-38061) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1430 | linux-libc-dev | [CVE-2025-38062](https://ubuntu.com/security/CVE-2025-38062) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1431 | linux-libc-dev | [CVE-2025-38063](https://ubuntu.com/security/CVE-2025-38063) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1432 | linux-libc-dev | [CVE-2025-38064](https://ubuntu.com/security/CVE-2025-38064) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1433 | linux-libc-dev | [CVE-2025-38065](https://ubuntu.com/security/CVE-2025-38065) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1434 | linux-libc-dev | [CVE-2025-38066](https://ubuntu.com/security/CVE-2025-38066) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1435 | linux-libc-dev | [CVE-2025-38068](https://ubuntu.com/security/CVE-2025-38068) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1436 | linux-libc-dev | [CVE-2025-38069](https://ubuntu.com/security/CVE-2025-38069) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1437 | linux-libc-dev | [CVE-2025-38070](https://ubuntu.com/security/CVE-2025-38070) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1438 | linux-libc-dev | [CVE-2025-38071](https://ubuntu.com/security/CVE-2025-38071) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1439 | linux-libc-dev | [CVE-2025-38072](https://ubuntu.com/security/CVE-2025-38072) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1440 | linux-libc-dev | [CVE-2025-38073](https://ubuntu.com/security/CVE-2025-38073) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1441 | linux-libc-dev | [CVE-2025-38075](https://ubuntu.com/security/CVE-2025-38075) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1442 | linux-libc-dev | [CVE-2025-38077](https://ubuntu.com/security/CVE-2025-38077) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1443 | linux-libc-dev | [CVE-2025-38078](https://ubuntu.com/security/CVE-2025-38078) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1444 | linux-libc-dev | [CVE-2025-38079](https://ubuntu.com/security/CVE-2025-38079) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
-| 1445 | linux-libc-dev | [CVE-2025-38080](https://ubuntu.com/security/CVE-2025-38080) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1446 | linux-libc-dev | [CVE-2025-38081](https://ubuntu.com/security/CVE-2025-38081) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1447 | linux-libc-dev | [CVE-2025-38082](https://ubuntu.com/security/CVE-2025-38082) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1448 | linux-libc-dev | [CVE-2025-38083](https://ubuntu.com/security/CVE-2025-38083) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-151.161 |
-| 1449 | linux-libc-dev | [CVE-2025-38091](https://ubuntu.com/security/CVE-2025-38091) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1450 | linux-libc-dev | [CVE-2025-38092](https://ubuntu.com/security/CVE-2025-38092) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1451 | linux-libc-dev | [CVE-2025-38094](https://ubuntu.com/security/CVE-2025-38094) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1452 | linux-libc-dev | [CVE-2025-38095](https://ubuntu.com/security/CVE-2025-38095) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1453 | linux-libc-dev | [CVE-2025-38096](https://ubuntu.com/security/CVE-2025-38096) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1454 | linux-libc-dev | [CVE-2025-38097](https://ubuntu.com/security/CVE-2025-38097) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1455 | linux-libc-dev | [CVE-2025-38098](https://ubuntu.com/security/CVE-2025-38098) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1456 | linux-libc-dev | [CVE-2025-38099](https://ubuntu.com/security/CVE-2025-38099) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1457 | linux-libc-dev | [CVE-2025-38105](https://ubuntu.com/security/CVE-2025-38105) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1458 | linux-libc-dev | [CVE-2025-38109](https://ubuntu.com/security/CVE-2025-38109) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1459 | linux-libc-dev | [CVE-2025-38117](https://ubuntu.com/security/CVE-2025-38117) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1460 | linux-libc-dev | [CVE-2025-38118](https://ubuntu.com/security/CVE-2025-38118) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1461 | linux-libc-dev | [CVE-2025-38125](https://ubuntu.com/security/CVE-2025-38125) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1462 | linux-libc-dev | [CVE-2025-38126](https://ubuntu.com/security/CVE-2025-38126) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1463 | linux-libc-dev | [CVE-2025-38127](https://ubuntu.com/security/CVE-2025-38127) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1464 | linux-libc-dev | [CVE-2025-38129](https://ubuntu.com/security/CVE-2025-38129) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1465 | linux-libc-dev | [CVE-2025-38131](https://ubuntu.com/security/CVE-2025-38131) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1466 | linux-libc-dev | [CVE-2025-38140](https://ubuntu.com/security/CVE-2025-38140) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1467 | linux-libc-dev | [CVE-2025-38148](https://ubuntu.com/security/CVE-2025-38148) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1468 | linux-libc-dev | [CVE-2025-38152](https://ubuntu.com/security/CVE-2025-38152) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1469 | linux-libc-dev | [CVE-2025-38162](https://ubuntu.com/security/CVE-2025-38162) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1470 | linux-libc-dev | [CVE-2025-38165](https://ubuntu.com/security/CVE-2025-38165) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1471 | linux-libc-dev | [CVE-2025-38166](https://ubuntu.com/security/CVE-2025-38166) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1472 | linux-libc-dev | [CVE-2025-38168](https://ubuntu.com/security/CVE-2025-38168) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1473 | linux-libc-dev | [CVE-2025-38177](https://ubuntu.com/security/CVE-2025-38177) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
-| 1474 | linux-libc-dev | [CVE-2025-38180](https://ubuntu.com/security/CVE-2025-38180) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1475 | linux-libc-dev | [CVE-2025-38185](https://ubuntu.com/security/CVE-2025-38185) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1476 | linux-libc-dev | [CVE-2025-38189](https://ubuntu.com/security/CVE-2025-38189) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1477 | linux-libc-dev | [CVE-2025-38190](https://ubuntu.com/security/CVE-2025-38190) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1478 | linux-libc-dev | [CVE-2025-38191](https://ubuntu.com/security/CVE-2025-38191) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1479 | linux-libc-dev | [CVE-2025-38192](https://ubuntu.com/security/CVE-2025-38192) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1480 | linux-libc-dev | [CVE-2025-38193](https://ubuntu.com/security/CVE-2025-38193) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1481 | linux-libc-dev | [CVE-2025-38198](https://ubuntu.com/security/CVE-2025-38198) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1482 | linux-libc-dev | [CVE-2025-38199](https://ubuntu.com/security/CVE-2025-38199) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1483 | linux-libc-dev | [CVE-2025-38201](https://ubuntu.com/security/CVE-2025-38201) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1484 | linux-libc-dev | [CVE-2025-38202](https://ubuntu.com/security/CVE-2025-38202) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1485 | linux-libc-dev | [CVE-2025-38205](https://ubuntu.com/security/CVE-2025-38205) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1486 | linux-libc-dev | [CVE-2025-38207](https://ubuntu.com/security/CVE-2025-38207) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1487 | linux-libc-dev | [CVE-2025-38208](https://ubuntu.com/security/CVE-2025-38208) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1488 | linux-libc-dev | [CVE-2025-38214](https://ubuntu.com/security/CVE-2025-38214) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1489 | linux-libc-dev | [CVE-2025-38215](https://ubuntu.com/security/CVE-2025-38215) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1490 | linux-libc-dev | [CVE-2025-38225](https://ubuntu.com/security/CVE-2025-38225) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1491 | linux-libc-dev | [CVE-2025-38230](https://ubuntu.com/security/CVE-2025-38230) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1492 | linux-libc-dev | [CVE-2025-38232](https://ubuntu.com/security/CVE-2025-38232) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1493 | linux-libc-dev | [CVE-2025-38234](https://ubuntu.com/security/CVE-2025-38234) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1494 | linux-libc-dev | [CVE-2025-38236](https://ubuntu.com/security/CVE-2025-38236) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1495 | linux-libc-dev | [CVE-2025-38239](https://ubuntu.com/security/CVE-2025-38239) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1496 | linux-libc-dev | [CVE-2025-38244](https://ubuntu.com/security/CVE-2025-38244) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1497 | linux-libc-dev | [CVE-2025-38248](https://ubuntu.com/security/CVE-2025-38248) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1498 | linux-libc-dev | [CVE-2025-38250](https://ubuntu.com/security/CVE-2025-38250) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1499 | linux-libc-dev | [CVE-2025-38259](https://ubuntu.com/security/CVE-2025-38259) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1500 | linux-libc-dev | [CVE-2025-38261](https://ubuntu.com/security/CVE-2025-38261) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1501 | linux-libc-dev | [CVE-2025-38264](https://ubuntu.com/security/CVE-2025-38264) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1502 | linux-libc-dev | [CVE-2025-38269](https://ubuntu.com/security/CVE-2025-38269) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1503 | linux-libc-dev | [CVE-2025-38272](https://ubuntu.com/security/CVE-2025-38272) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1504 | linux-libc-dev | [CVE-2025-38275](https://ubuntu.com/security/CVE-2025-38275) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1505 | linux-libc-dev | [CVE-2025-38300](https://ubuntu.com/security/CVE-2025-38300) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1506 | linux-libc-dev | [CVE-2025-38321](https://ubuntu.com/security/CVE-2025-38321) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1507 | linux-libc-dev | [CVE-2025-38323](https://ubuntu.com/security/CVE-2025-38323) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1508 | linux-libc-dev | [CVE-2025-38329](https://ubuntu.com/security/CVE-2025-38329) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1509 | linux-libc-dev | [CVE-2025-38330](https://ubuntu.com/security/CVE-2025-38330) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1510 | linux-libc-dev | [CVE-2025-38331](https://ubuntu.com/security/CVE-2025-38331) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1511 | linux-libc-dev | [CVE-2025-38333](https://ubuntu.com/security/CVE-2025-38333) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1512 | linux-libc-dev | [CVE-2025-38334](https://ubuntu.com/security/CVE-2025-38334) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1513 | linux-libc-dev | [CVE-2025-38335](https://ubuntu.com/security/CVE-2025-38335) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1514 | linux-libc-dev | [CVE-2025-38340](https://ubuntu.com/security/CVE-2025-38340) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1515 | linux-libc-dev | [CVE-2025-38343](https://ubuntu.com/security/CVE-2025-38343) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1516 | linux-libc-dev | [CVE-2025-38347](https://ubuntu.com/security/CVE-2025-38347) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1517 | linux-libc-dev | [CVE-2025-38349](https://ubuntu.com/security/CVE-2025-38349) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1518 | linux-libc-dev | [CVE-2025-38350](https://ubuntu.com/security/CVE-2025-38350) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-153.163 |
-| 1519 | linux-libc-dev | [CVE-2025-38353](https://ubuntu.com/security/CVE-2025-38353) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1520 | linux-libc-dev | [CVE-2025-38359](https://ubuntu.com/security/CVE-2025-38359) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1521 | linux-libc-dev | [CVE-2025-38360](https://ubuntu.com/security/CVE-2025-38360) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1522 | linux-libc-dev | [CVE-2025-38361](https://ubuntu.com/security/CVE-2025-38361) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1523 | linux-libc-dev | [CVE-2025-38368](https://ubuntu.com/security/CVE-2025-38368) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1524 | linux-libc-dev | [CVE-2025-38369](https://ubuntu.com/security/CVE-2025-38369) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1525 | linux-libc-dev | [CVE-2025-38373](https://ubuntu.com/security/CVE-2025-38373) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1526 | linux-libc-dev | [CVE-2025-38408](https://ubuntu.com/security/CVE-2025-38408) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1527 | linux-libc-dev | [CVE-2025-38409](https://ubuntu.com/security/CVE-2025-38409) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1528 | linux-libc-dev | [CVE-2025-38422](https://ubuntu.com/security/CVE-2025-38422) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1529 | linux-libc-dev | [CVE-2025-38425](https://ubuntu.com/security/CVE-2025-38425) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1530 | linux-libc-dev | [CVE-2025-38426](https://ubuntu.com/security/CVE-2025-38426) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1531 | linux-libc-dev | [CVE-2025-38436](https://ubuntu.com/security/CVE-2025-38436) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1532 | linux-libc-dev | [CVE-2025-38437](https://ubuntu.com/security/CVE-2025-38437) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1533 | linux-libc-dev | [CVE-2025-38438](https://ubuntu.com/security/CVE-2025-38438) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1534 | linux-libc-dev | [CVE-2025-38440](https://ubuntu.com/security/CVE-2025-38440) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1535 | linux-libc-dev | [CVE-2025-38449](https://ubuntu.com/security/CVE-2025-38449) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1536 | linux-libc-dev | [CVE-2025-38468](https://ubuntu.com/security/CVE-2025-38468) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1537 | linux-libc-dev | [CVE-2025-38470](https://ubuntu.com/security/CVE-2025-38470) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1538 | linux-libc-dev | [CVE-2025-38473](https://ubuntu.com/security/CVE-2025-38473) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1539 | linux-libc-dev | [CVE-2025-38474](https://ubuntu.com/security/CVE-2025-38474) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1540 | linux-libc-dev | [CVE-2025-38476](https://ubuntu.com/security/CVE-2025-38476) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1541 | linux-libc-dev | [CVE-2025-38478](https://ubuntu.com/security/CVE-2025-38478) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1542 | linux-libc-dev | [CVE-2025-38480](https://ubuntu.com/security/CVE-2025-38480) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1543 | linux-libc-dev | [CVE-2025-38481](https://ubuntu.com/security/CVE-2025-38481) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1544 | linux-libc-dev | [CVE-2025-38482](https://ubuntu.com/security/CVE-2025-38482) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1545 | linux-libc-dev | [CVE-2025-38483](https://ubuntu.com/security/CVE-2025-38483) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1546 | linux-libc-dev | [CVE-2025-38485](https://ubuntu.com/security/CVE-2025-38485) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1547 | linux-libc-dev | [CVE-2025-38486](https://ubuntu.com/security/CVE-2025-38486) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1548 | linux-libc-dev | [CVE-2025-38487](https://ubuntu.com/security/CVE-2025-38487) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1549 | linux-libc-dev | [CVE-2025-38488](https://ubuntu.com/security/CVE-2025-38488) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1550 | linux-libc-dev | [CVE-2025-38491](https://ubuntu.com/security/CVE-2025-38491) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1551 | linux-libc-dev | [CVE-2025-38494](https://ubuntu.com/security/CVE-2025-38494) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1552 | linux-libc-dev | [CVE-2025-38495](https://ubuntu.com/security/CVE-2025-38495) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1553 | linux-libc-dev | [CVE-2025-38497](https://ubuntu.com/security/CVE-2025-38497) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1554 | linux-libc-dev | [CVE-2025-38499](https://ubuntu.com/security/CVE-2025-38499) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1555 | linux-libc-dev | [CVE-2025-38501](https://ubuntu.com/security/CVE-2025-38501) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1556 | linux-libc-dev | [CVE-2025-38502](https://ubuntu.com/security/CVE-2025-38502) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1557 | linux-libc-dev | [CVE-2025-38503](https://ubuntu.com/security/CVE-2025-38503) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1558 | linux-libc-dev | [CVE-2025-38507](https://ubuntu.com/security/CVE-2025-38507) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1559 | linux-libc-dev | [CVE-2025-38512](https://ubuntu.com/security/CVE-2025-38512) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1560 | linux-libc-dev | [CVE-2025-38520](https://ubuntu.com/security/CVE-2025-38520) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1561 | linux-libc-dev | [CVE-2025-38524](https://ubuntu.com/security/CVE-2025-38524) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1562 | linux-libc-dev | [CVE-2025-38527](https://ubuntu.com/security/CVE-2025-38527) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1563 | linux-libc-dev | [CVE-2025-38528](https://ubuntu.com/security/CVE-2025-38528) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1564 | linux-libc-dev | [CVE-2025-38529](https://ubuntu.com/security/CVE-2025-38529) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1565 | linux-libc-dev | [CVE-2025-38530](https://ubuntu.com/security/CVE-2025-38530) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1566 | linux-libc-dev | [CVE-2025-38531](https://ubuntu.com/security/CVE-2025-38531) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1567 | linux-libc-dev | [CVE-2025-38535](https://ubuntu.com/security/CVE-2025-38535) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1568 | linux-libc-dev | [CVE-2025-38538](https://ubuntu.com/security/CVE-2025-38538) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1569 | linux-libc-dev | [CVE-2025-38539](https://ubuntu.com/security/CVE-2025-38539) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1570 | linux-libc-dev | [CVE-2025-38544](https://ubuntu.com/security/CVE-2025-38544) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1571 | linux-libc-dev | [CVE-2025-38546](https://ubuntu.com/security/CVE-2025-38546) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1572 | linux-libc-dev | [CVE-2025-38548](https://ubuntu.com/security/CVE-2025-38548) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1573 | linux-libc-dev | [CVE-2025-38550](https://ubuntu.com/security/CVE-2025-38550) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1574 | linux-libc-dev | [CVE-2025-38552](https://ubuntu.com/security/CVE-2025-38552) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1575 | linux-libc-dev | [CVE-2025-38553](https://ubuntu.com/security/CVE-2025-38553) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1576 | linux-libc-dev | [CVE-2025-38555](https://ubuntu.com/security/CVE-2025-38555) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1577 | linux-libc-dev | [CVE-2025-38556](https://ubuntu.com/security/CVE-2025-38556) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1578 | linux-libc-dev | [CVE-2025-38560](https://ubuntu.com/security/CVE-2025-38560) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1579 | linux-libc-dev | [CVE-2025-38561](https://ubuntu.com/security/CVE-2025-38561) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1580 | linux-libc-dev | [CVE-2025-38562](https://ubuntu.com/security/CVE-2025-38562) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1581 | linux-libc-dev | [CVE-2025-38563](https://ubuntu.com/security/CVE-2025-38563) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1582 | linux-libc-dev | [CVE-2025-38565](https://ubuntu.com/security/CVE-2025-38565) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1583 | linux-libc-dev | [CVE-2025-38569](https://ubuntu.com/security/CVE-2025-38569) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1584 | linux-libc-dev | [CVE-2025-38572](https://ubuntu.com/security/CVE-2025-38572) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1585 | linux-libc-dev | [CVE-2025-38574](https://ubuntu.com/security/CVE-2025-38574) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1586 | linux-libc-dev | [CVE-2025-38575](https://ubuntu.com/security/CVE-2025-38575) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1587 | linux-libc-dev | [CVE-2025-38576](https://ubuntu.com/security/CVE-2025-38576) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1588 | linux-libc-dev | [CVE-2025-38577](https://ubuntu.com/security/CVE-2025-38577) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1589 | linux-libc-dev | [CVE-2025-38578](https://ubuntu.com/security/CVE-2025-38578) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1590 | linux-libc-dev | [CVE-2025-38579](https://ubuntu.com/security/CVE-2025-38579) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1591 | linux-libc-dev | [CVE-2025-38581](https://ubuntu.com/security/CVE-2025-38581) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1592 | linux-libc-dev | [CVE-2025-38583](https://ubuntu.com/security/CVE-2025-38583) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1593 | linux-libc-dev | [CVE-2025-38584](https://ubuntu.com/security/CVE-2025-38584) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1594 | linux-libc-dev | [CVE-2025-38590](https://ubuntu.com/security/CVE-2025-38590) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1595 | linux-libc-dev | [CVE-2025-38591](https://ubuntu.com/security/CVE-2025-38591) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1596 | linux-libc-dev | [CVE-2025-38595](https://ubuntu.com/security/CVE-2025-38595) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1597 | linux-libc-dev | [CVE-2025-38601](https://ubuntu.com/security/CVE-2025-38601) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1598 | linux-libc-dev | [CVE-2025-38602](https://ubuntu.com/security/CVE-2025-38602) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1599 | linux-libc-dev | [CVE-2025-38604](https://ubuntu.com/security/CVE-2025-38604) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1600 | linux-libc-dev | [CVE-2025-38608](https://ubuntu.com/security/CVE-2025-38608) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1601 | linux-libc-dev | [CVE-2025-38609](https://ubuntu.com/security/CVE-2025-38609) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1602 | linux-libc-dev | [CVE-2025-38612](https://ubuntu.com/security/CVE-2025-38612) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1603 | linux-libc-dev | [CVE-2025-38614](https://ubuntu.com/security/CVE-2025-38614) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1604 | linux-libc-dev | [CVE-2025-38615](https://ubuntu.com/security/CVE-2025-38615) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1605 | linux-libc-dev | [CVE-2025-38617](https://ubuntu.com/security/CVE-2025-38617) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1606 | linux-libc-dev | [CVE-2025-38618](https://ubuntu.com/security/CVE-2025-38618) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1607 | linux-libc-dev | [CVE-2025-38621](https://ubuntu.com/security/CVE-2025-38621) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1608 | linux-libc-dev | [CVE-2025-38622](https://ubuntu.com/security/CVE-2025-38622) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1609 | linux-libc-dev | [CVE-2025-38623](https://ubuntu.com/security/CVE-2025-38623) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1610 | linux-libc-dev | [CVE-2025-38624](https://ubuntu.com/security/CVE-2025-38624) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1611 | linux-libc-dev | [CVE-2025-38626](https://ubuntu.com/security/CVE-2025-38626) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1612 | linux-libc-dev | [CVE-2025-38630](https://ubuntu.com/security/CVE-2025-38630) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1613 | linux-libc-dev | [CVE-2025-38634](https://ubuntu.com/security/CVE-2025-38634) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1614 | linux-libc-dev | [CVE-2025-38635](https://ubuntu.com/security/CVE-2025-38635) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1615 | linux-libc-dev | [CVE-2025-38637](https://ubuntu.com/security/CVE-2025-38637) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1616 | linux-libc-dev | [CVE-2025-38639](https://ubuntu.com/security/CVE-2025-38639) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1617 | linux-libc-dev | [CVE-2025-38643](https://ubuntu.com/security/CVE-2025-38643) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1618 | linux-libc-dev | [CVE-2025-38644](https://ubuntu.com/security/CVE-2025-38644) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1619 | linux-libc-dev | [CVE-2025-38645](https://ubuntu.com/security/CVE-2025-38645) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1620 | linux-libc-dev | [CVE-2025-38650](https://ubuntu.com/security/CVE-2025-38650) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1621 | linux-libc-dev | [CVE-2025-38652](https://ubuntu.com/security/CVE-2025-38652) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1622 | linux-libc-dev | [CVE-2025-38659](https://ubuntu.com/security/CVE-2025-38659) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1623 | linux-libc-dev | [CVE-2025-38663](https://ubuntu.com/security/CVE-2025-38663) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1624 | linux-libc-dev | [CVE-2025-38664](https://ubuntu.com/security/CVE-2025-38664) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1625 | linux-libc-dev | [CVE-2025-38665](https://ubuntu.com/security/CVE-2025-38665) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1626 | linux-libc-dev | [CVE-2025-38666](https://ubuntu.com/security/CVE-2025-38666) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1627 | linux-libc-dev | [CVE-2025-38668](https://ubuntu.com/security/CVE-2025-38668) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1628 | linux-libc-dev | [CVE-2025-38669](https://ubuntu.com/security/CVE-2025-38669) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1629 | linux-libc-dev | [CVE-2025-38670](https://ubuntu.com/security/CVE-2025-38670) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1630 | linux-libc-dev | [CVE-2025-38671](https://ubuntu.com/security/CVE-2025-38671) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1631 | linux-libc-dev | [CVE-2025-38672](https://ubuntu.com/security/CVE-2025-38672) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1632 | linux-libc-dev | [CVE-2025-38673](https://ubuntu.com/security/CVE-2025-38673) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1633 | linux-libc-dev | [CVE-2025-38674](https://ubuntu.com/security/CVE-2025-38674) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1634 | linux-libc-dev | [CVE-2025-38676](https://ubuntu.com/security/CVE-2025-38676) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1635 | linux-libc-dev | [CVE-2025-38677](https://ubuntu.com/security/CVE-2025-38677) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1636 | linux-libc-dev | [CVE-2025-38678](https://ubuntu.com/security/CVE-2025-38678) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1637 | linux-libc-dev | [CVE-2025-38679](https://ubuntu.com/security/CVE-2025-38679) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1638 | linux-libc-dev | [CVE-2025-38680](https://ubuntu.com/security/CVE-2025-38680) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1639 | linux-libc-dev | [CVE-2025-38681](https://ubuntu.com/security/CVE-2025-38681) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1640 | linux-libc-dev | [CVE-2025-38683](https://ubuntu.com/security/CVE-2025-38683) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1641 | linux-libc-dev | [CVE-2025-38684](https://ubuntu.com/security/CVE-2025-38684) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1642 | linux-libc-dev | [CVE-2025-38685](https://ubuntu.com/security/CVE-2025-38685) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1643 | linux-libc-dev | [CVE-2025-38687](https://ubuntu.com/security/CVE-2025-38687) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1644 | linux-libc-dev | [CVE-2025-38689](https://ubuntu.com/security/CVE-2025-38689) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1645 | linux-libc-dev | [CVE-2025-38691](https://ubuntu.com/security/CVE-2025-38691) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1646 | linux-libc-dev | [CVE-2025-38692](https://ubuntu.com/security/CVE-2025-38692) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1647 | linux-libc-dev | [CVE-2025-38693](https://ubuntu.com/security/CVE-2025-38693) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1648 | linux-libc-dev | [CVE-2025-38694](https://ubuntu.com/security/CVE-2025-38694) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1649 | linux-libc-dev | [CVE-2025-38695](https://ubuntu.com/security/CVE-2025-38695) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1650 | linux-libc-dev | [CVE-2025-38696](https://ubuntu.com/security/CVE-2025-38696) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1651 | linux-libc-dev | [CVE-2025-38697](https://ubuntu.com/security/CVE-2025-38697) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1652 | linux-libc-dev | [CVE-2025-38698](https://ubuntu.com/security/CVE-2025-38698) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1653 | linux-libc-dev | [CVE-2025-38699](https://ubuntu.com/security/CVE-2025-38699) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1654 | linux-libc-dev | [CVE-2025-38700](https://ubuntu.com/security/CVE-2025-38700) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1655 | linux-libc-dev | [CVE-2025-38701](https://ubuntu.com/security/CVE-2025-38701) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1656 | linux-libc-dev | [CVE-2025-38702](https://ubuntu.com/security/CVE-2025-38702) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1657 | linux-libc-dev | [CVE-2025-38703](https://ubuntu.com/security/CVE-2025-38703) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1658 | linux-libc-dev | [CVE-2025-38704](https://ubuntu.com/security/CVE-2025-38704) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1659 | linux-libc-dev | [CVE-2025-38705](https://ubuntu.com/security/CVE-2025-38705) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1660 | linux-libc-dev | [CVE-2025-38706](https://ubuntu.com/security/CVE-2025-38706) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1661 | linux-libc-dev | [CVE-2025-38707](https://ubuntu.com/security/CVE-2025-38707) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1662 | linux-libc-dev | [CVE-2025-38708](https://ubuntu.com/security/CVE-2025-38708) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1663 | linux-libc-dev | [CVE-2025-38709](https://ubuntu.com/security/CVE-2025-38709) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1664 | linux-libc-dev | [CVE-2025-38710](https://ubuntu.com/security/CVE-2025-38710) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1665 | linux-libc-dev | [CVE-2025-38711](https://ubuntu.com/security/CVE-2025-38711) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1666 | linux-libc-dev | [CVE-2025-38712](https://ubuntu.com/security/CVE-2025-38712) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1667 | linux-libc-dev | [CVE-2025-38713](https://ubuntu.com/security/CVE-2025-38713) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1668 | linux-libc-dev | [CVE-2025-38714](https://ubuntu.com/security/CVE-2025-38714) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1669 | linux-libc-dev | [CVE-2025-38715](https://ubuntu.com/security/CVE-2025-38715) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1670 | linux-libc-dev | [CVE-2025-38716](https://ubuntu.com/security/CVE-2025-38716) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1671 | linux-libc-dev | [CVE-2025-38717](https://ubuntu.com/security/CVE-2025-38717) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1672 | linux-libc-dev | [CVE-2025-38718](https://ubuntu.com/security/CVE-2025-38718) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1673 | linux-libc-dev | [CVE-2025-38721](https://ubuntu.com/security/CVE-2025-38721) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1674 | linux-libc-dev | [CVE-2025-38724](https://ubuntu.com/security/CVE-2025-38724) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1675 | linux-libc-dev | [CVE-2025-38725](https://ubuntu.com/security/CVE-2025-38725) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1676 | linux-libc-dev | [CVE-2025-38727](https://ubuntu.com/security/CVE-2025-38727) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1677 | linux-libc-dev | [CVE-2025-38728](https://ubuntu.com/security/CVE-2025-38728) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1678 | linux-libc-dev | [CVE-2025-38729](https://ubuntu.com/security/CVE-2025-38729) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1679 | linux-libc-dev | [CVE-2025-38732](https://ubuntu.com/security/CVE-2025-38732) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1680 | linux-libc-dev | [CVE-2025-38734](https://ubuntu.com/security/CVE-2025-38734) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1681 | linux-libc-dev | [CVE-2025-39673](https://ubuntu.com/security/CVE-2025-39673) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1682 | linux-libc-dev | [CVE-2025-39675](https://ubuntu.com/security/CVE-2025-39675) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1683 | linux-libc-dev | [CVE-2025-39676](https://ubuntu.com/security/CVE-2025-39676) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1684 | linux-libc-dev | [CVE-2025-39677](https://ubuntu.com/security/CVE-2025-39677) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1685 | linux-libc-dev | [CVE-2025-39681](https://ubuntu.com/security/CVE-2025-39681) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1686 | linux-libc-dev | [CVE-2025-39683](https://ubuntu.com/security/CVE-2025-39683) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1687 | linux-libc-dev | [CVE-2025-39684](https://ubuntu.com/security/CVE-2025-39684) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1688 | linux-libc-dev | [CVE-2025-39685](https://ubuntu.com/security/CVE-2025-39685) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1689 | linux-libc-dev | [CVE-2025-39686](https://ubuntu.com/security/CVE-2025-39686) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1690 | linux-libc-dev | [CVE-2025-39687](https://ubuntu.com/security/CVE-2025-39687) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1691 | linux-libc-dev | [CVE-2025-39689](https://ubuntu.com/security/CVE-2025-39689) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1692 | linux-libc-dev | [CVE-2025-39691](https://ubuntu.com/security/CVE-2025-39691) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1693 | linux-libc-dev | [CVE-2025-39692](https://ubuntu.com/security/CVE-2025-39692) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1694 | linux-libc-dev | [CVE-2025-39693](https://ubuntu.com/security/CVE-2025-39693) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1695 | linux-libc-dev | [CVE-2025-39697](https://ubuntu.com/security/CVE-2025-39697) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1696 | linux-libc-dev | [CVE-2025-39702](https://ubuntu.com/security/CVE-2025-39702) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1697 | linux-libc-dev | [CVE-2025-39703](https://ubuntu.com/security/CVE-2025-39703) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1698 | linux-libc-dev | [CVE-2025-39705](https://ubuntu.com/security/CVE-2025-39705) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1699 | linux-libc-dev | [CVE-2025-39706](https://ubuntu.com/security/CVE-2025-39706) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1700 | linux-libc-dev | [CVE-2025-39707](https://ubuntu.com/security/CVE-2025-39707) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1701 | linux-libc-dev | [CVE-2025-39709](https://ubuntu.com/security/CVE-2025-39709) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1702 | linux-libc-dev | [CVE-2025-39710](https://ubuntu.com/security/CVE-2025-39710) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1703 | linux-libc-dev | [CVE-2025-39713](https://ubuntu.com/security/CVE-2025-39713) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1704 | linux-libc-dev | [CVE-2025-39714](https://ubuntu.com/security/CVE-2025-39714) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1705 | linux-libc-dev | [CVE-2025-39715](https://ubuntu.com/security/CVE-2025-39715) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1706 | linux-libc-dev | [CVE-2025-39716](https://ubuntu.com/security/CVE-2025-39716) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1707 | linux-libc-dev | [CVE-2025-39720](https://ubuntu.com/security/CVE-2025-39720) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1708 | linux-libc-dev | [CVE-2025-39724](https://ubuntu.com/security/CVE-2025-39724) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1709 | linux-libc-dev | [CVE-2025-39726](https://ubuntu.com/security/CVE-2025-39726) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1710 | linux-libc-dev | [CVE-2025-39728](https://ubuntu.com/security/CVE-2025-39728) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1711 | linux-libc-dev | [CVE-2025-39730](https://ubuntu.com/security/CVE-2025-39730) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1712 | linux-libc-dev | [CVE-2025-39732](https://ubuntu.com/security/CVE-2025-39732) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1713 | linux-libc-dev | [CVE-2025-39734](https://ubuntu.com/security/CVE-2025-39734) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1714 | linux-libc-dev | [CVE-2025-39735](https://ubuntu.com/security/CVE-2025-39735) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1715 | linux-libc-dev | [CVE-2025-39736](https://ubuntu.com/security/CVE-2025-39736) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1716 | linux-libc-dev | [CVE-2025-39737](https://ubuntu.com/security/CVE-2025-39737) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1717 | linux-libc-dev | [CVE-2025-39738](https://ubuntu.com/security/CVE-2025-39738) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1718 | linux-libc-dev | [CVE-2025-39742](https://ubuntu.com/security/CVE-2025-39742) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1719 | linux-libc-dev | [CVE-2025-39743](https://ubuntu.com/security/CVE-2025-39743) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1720 | linux-libc-dev | [CVE-2025-39744](https://ubuntu.com/security/CVE-2025-39744) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1721 | linux-libc-dev | [CVE-2025-39745](https://ubuntu.com/security/CVE-2025-39745) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1722 | linux-libc-dev | [CVE-2025-39746](https://ubuntu.com/security/CVE-2025-39746) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1723 | linux-libc-dev | [CVE-2025-39747](https://ubuntu.com/security/CVE-2025-39747) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1724 | linux-libc-dev | [CVE-2025-39748](https://ubuntu.com/security/CVE-2025-39748) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1725 | linux-libc-dev | [CVE-2025-39749](https://ubuntu.com/security/CVE-2025-39749) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1726 | linux-libc-dev | [CVE-2025-39750](https://ubuntu.com/security/CVE-2025-39750) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1727 | linux-libc-dev | [CVE-2025-39751](https://ubuntu.com/security/CVE-2025-39751) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1728 | linux-libc-dev | [CVE-2025-39752](https://ubuntu.com/security/CVE-2025-39752) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1729 | linux-libc-dev | [CVE-2025-39753](https://ubuntu.com/security/CVE-2025-39753) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1730 | linux-libc-dev | [CVE-2025-39754](https://ubuntu.com/security/CVE-2025-39754) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1731 | linux-libc-dev | [CVE-2025-39756](https://ubuntu.com/security/CVE-2025-39756) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1732 | linux-libc-dev | [CVE-2025-39757](https://ubuntu.com/security/CVE-2025-39757) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1733 | linux-libc-dev | [CVE-2025-39759](https://ubuntu.com/security/CVE-2025-39759) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1734 | linux-libc-dev | [CVE-2025-39760](https://ubuntu.com/security/CVE-2025-39760) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1735 | linux-libc-dev | [CVE-2025-39761](https://ubuntu.com/security/CVE-2025-39761) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1736 | linux-libc-dev | [CVE-2025-39762](https://ubuntu.com/security/CVE-2025-39762) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1737 | linux-libc-dev | [CVE-2025-39763](https://ubuntu.com/security/CVE-2025-39763) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1738 | linux-libc-dev | [CVE-2025-39764](https://ubuntu.com/security/CVE-2025-39764) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1739 | linux-libc-dev | [CVE-2025-39766](https://ubuntu.com/security/CVE-2025-39766) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1740 | linux-libc-dev | [CVE-2025-39770](https://ubuntu.com/security/CVE-2025-39770) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1741 | linux-libc-dev | [CVE-2025-39771](https://ubuntu.com/security/CVE-2025-39771) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1742 | linux-libc-dev | [CVE-2025-39772](https://ubuntu.com/security/CVE-2025-39772) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1743 | linux-libc-dev | [CVE-2025-39773](https://ubuntu.com/security/CVE-2025-39773) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1744 | linux-libc-dev | [CVE-2025-39776](https://ubuntu.com/security/CVE-2025-39776) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1745 | linux-libc-dev | [CVE-2025-39779](https://ubuntu.com/security/CVE-2025-39779) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1746 | linux-libc-dev | [CVE-2025-39781](https://ubuntu.com/security/CVE-2025-39781) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1747 | linux-libc-dev | [CVE-2025-39782](https://ubuntu.com/security/CVE-2025-39782) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1748 | linux-libc-dev | [CVE-2025-39783](https://ubuntu.com/security/CVE-2025-39783) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1749 | linux-libc-dev | [CVE-2025-39787](https://ubuntu.com/security/CVE-2025-39787) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1750 | linux-libc-dev | [CVE-2025-39788](https://ubuntu.com/security/CVE-2025-39788) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1751 | linux-libc-dev | [CVE-2025-39789](https://ubuntu.com/security/CVE-2025-39789) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1752 | linux-libc-dev | [CVE-2025-39790](https://ubuntu.com/security/CVE-2025-39790) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1753 | linux-libc-dev | [CVE-2025-39794](https://ubuntu.com/security/CVE-2025-39794) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1754 | linux-libc-dev | [CVE-2025-39795](https://ubuntu.com/security/CVE-2025-39795) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1755 | linux-libc-dev | [CVE-2025-39797](https://ubuntu.com/security/CVE-2025-39797) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1756 | linux-libc-dev | [CVE-2025-39798](https://ubuntu.com/security/CVE-2025-39798) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1757 | linux-libc-dev | [CVE-2025-39800](https://ubuntu.com/security/CVE-2025-39800) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1758 | linux-libc-dev | [CVE-2025-39801](https://ubuntu.com/security/CVE-2025-39801) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1759 | linux-libc-dev | [CVE-2025-39806](https://ubuntu.com/security/CVE-2025-39806) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1760 | linux-libc-dev | [CVE-2025-39808](https://ubuntu.com/security/CVE-2025-39808) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1761 | linux-libc-dev | [CVE-2025-39810](https://ubuntu.com/security/CVE-2025-39810) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1762 | linux-libc-dev | [CVE-2025-39812](https://ubuntu.com/security/CVE-2025-39812) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1763 | linux-libc-dev | [CVE-2025-39813](https://ubuntu.com/security/CVE-2025-39813) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1764 | linux-libc-dev | [CVE-2025-39817](https://ubuntu.com/security/CVE-2025-39817) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1765 | linux-libc-dev | [CVE-2025-39819](https://ubuntu.com/security/CVE-2025-39819) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1766 | linux-libc-dev | [CVE-2025-39823](https://ubuntu.com/security/CVE-2025-39823) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1767 | linux-libc-dev | [CVE-2025-39824](https://ubuntu.com/security/CVE-2025-39824) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1768 | linux-libc-dev | [CVE-2025-39825](https://ubuntu.com/security/CVE-2025-39825) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1769 | linux-libc-dev | [CVE-2025-39826](https://ubuntu.com/security/CVE-2025-39826) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1770 | linux-libc-dev | [CVE-2025-39827](https://ubuntu.com/security/CVE-2025-39827) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1771 | linux-libc-dev | [CVE-2025-39828](https://ubuntu.com/security/CVE-2025-39828) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1772 | linux-libc-dev | [CVE-2025-39829](https://ubuntu.com/security/CVE-2025-39829) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1773 | linux-libc-dev | [CVE-2025-39833](https://ubuntu.com/security/CVE-2025-39833) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1774 | linux-libc-dev | [CVE-2025-39835](https://ubuntu.com/security/CVE-2025-39835) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1775 | linux-libc-dev | [CVE-2025-39989](https://ubuntu.com/security/CVE-2025-39989) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1776 | linux-libc-dev | [CVE-2025-40325](https://ubuntu.com/security/CVE-2025-40325) | MEDIUM | affected | 5.15.0-138.148 |  |
-| 1777 | linux-libc-dev | [CVE-2017-0537](https://ubuntu.com/security/CVE-2017-0537) | LOW | affected | 5.15.0-138.148 |  |
-| 1778 | linux-libc-dev | [CVE-2017-13165](https://ubuntu.com/security/CVE-2017-13165) | LOW | affected | 5.15.0-138.148 |  |
-| 1779 | linux-libc-dev | [CVE-2017-13693](https://ubuntu.com/security/CVE-2017-13693) | LOW | affected | 5.15.0-138.148 |  |
-| 1780 | linux-libc-dev | [CVE-2018-1121](https://ubuntu.com/security/CVE-2018-1121) | LOW | affected | 5.15.0-138.148 |  |
-| 1781 | linux-libc-dev | [CVE-2018-12928](https://ubuntu.com/security/CVE-2018-12928) | LOW | affected | 5.15.0-138.148 |  |
-| 1782 | linux-libc-dev | [CVE-2018-12929](https://ubuntu.com/security/CVE-2018-12929) | LOW | affected | 5.15.0-138.148 |  |
-| 1783 | linux-libc-dev | [CVE-2018-12930](https://ubuntu.com/security/CVE-2018-12930) | LOW | affected | 5.15.0-138.148 |  |
-| 1784 | linux-libc-dev | [CVE-2018-12931](https://ubuntu.com/security/CVE-2018-12931) | LOW | affected | 5.15.0-138.148 |  |
-| 1785 | linux-libc-dev | [CVE-2019-14899](https://ubuntu.com/security/CVE-2019-14899) | LOW | affected | 5.15.0-138.148 |  |
-| 1786 | linux-libc-dev | [CVE-2019-15213](https://ubuntu.com/security/CVE-2019-15213) | LOW | affected | 5.15.0-138.148 |  |
-| 1787 | linux-libc-dev | [CVE-2019-19378](https://ubuntu.com/security/CVE-2019-19378) | LOW | affected | 5.15.0-138.148 |  |
-| 1788 | linux-libc-dev | [CVE-2019-19814](https://ubuntu.com/security/CVE-2019-19814) | LOW | affected | 5.15.0-138.148 |  |
-| 1789 | linux-libc-dev | [CVE-2019-20426](https://ubuntu.com/security/CVE-2019-20426) | LOW | affected | 5.15.0-138.148 |  |
-| 1790 | linux-libc-dev | [CVE-2020-14304](https://ubuntu.com/security/CVE-2020-14304) | LOW | affected | 5.15.0-138.148 |  |
-| 1791 | linux-libc-dev | [CVE-2020-35501](https://ubuntu.com/security/CVE-2020-35501) | LOW | affected | 5.15.0-138.148 |  |
-| 1792 | linux-libc-dev | [CVE-2021-26934](https://ubuntu.com/security/CVE-2021-26934) | LOW | affected | 5.15.0-138.148 |  |
-| 1793 | linux-libc-dev | [CVE-2022-3114](https://ubuntu.com/security/CVE-2022-3114) | LOW | affected | 5.15.0-138.148 |  |
-| 1794 | linux-libc-dev | [CVE-2022-41848](https://ubuntu.com/security/CVE-2022-41848) | LOW | affected | 5.15.0-138.148 |  |
-| 1795 | linux-libc-dev | [CVE-2022-44032](https://ubuntu.com/security/CVE-2022-44032) | LOW | affected | 5.15.0-138.148 |  |
-| 1796 | linux-libc-dev | [CVE-2022-44033](https://ubuntu.com/security/CVE-2022-44033) | LOW | affected | 5.15.0-138.148 |  |
-| 1797 | linux-libc-dev | [CVE-2022-44034](https://ubuntu.com/security/CVE-2022-44034) | LOW | affected | 5.15.0-138.148 |  |
-| 1798 | linux-libc-dev | [CVE-2022-45885](https://ubuntu.com/security/CVE-2022-45885) | LOW | affected | 5.15.0-138.148 |  |
-| 1799 | linux-libc-dev | [CVE-2022-45888](https://ubuntu.com/security/CVE-2022-45888) | LOW | affected | 5.15.0-138.148 |  |
-| 1800 | linux-libc-dev | [CVE-2023-33053](https://ubuntu.com/security/CVE-2023-33053) | LOW | affected | 5.15.0-138.148 |  |
-| 1801 | linux-libc-dev | [CVE-2023-4010](https://ubuntu.com/security/CVE-2023-4010) | LOW | affected | 5.15.0-138.148 |  |
-| 1802 | linux-libc-dev | [CVE-2023-4133](https://ubuntu.com/security/CVE-2023-4133) | LOW | affected | 5.15.0-138.148 |  |
-| 1803 | linux-libc-dev | [CVE-2023-52749](https://ubuntu.com/security/CVE-2023-52749) | LOW | affected | 5.15.0-138.148 |  |
-| 1804 | linux-libc-dev | [CVE-2023-53052](https://ubuntu.com/security/CVE-2023-53052) | LOW | affected | 5.15.0-138.148 |  |
-| 1805 | linux-libc-dev | [CVE-2023-53074](https://ubuntu.com/security/CVE-2023-53074) | LOW | affected | 5.15.0-138.148 |  |
-| 1806 | linux-libc-dev | [CVE-2024-0564](https://ubuntu.com/security/CVE-2024-0564) | LOW | affected | 5.15.0-138.148 |  |
-| 1807 | linux-libc-dev | [CVE-2024-26983](https://ubuntu.com/security/CVE-2024-26983) | LOW | affected | 5.15.0-138.148 |  |
-| 1808 | linux-libc-dev | [CVE-2024-27010](https://ubuntu.com/security/CVE-2024-27010) | LOW | affected | 5.15.0-138.148 |  |
-| 1809 | linux-libc-dev | [CVE-2024-27011](https://ubuntu.com/security/CVE-2024-27011) | LOW | affected | 5.15.0-138.148 |  |
-| 1810 | linux-libc-dev | [CVE-2024-49968](https://ubuntu.com/security/CVE-2024-49968) | LOW | affected | 5.15.0-138.148 |  |
-| 1811 | linux-libc-dev | [CVE-2024-50217](https://ubuntu.com/security/CVE-2024-50217) | LOW | affected | 5.15.0-138.148 |  |
-| 1812 | linux-libc-dev | [CVE-2024-53093](https://ubuntu.com/security/CVE-2024-53093) | LOW | affected | 5.15.0-138.148 |  |
-| 1813 | linux-libc-dev | [CVE-2024-53128](https://ubuntu.com/security/CVE-2024-53128) | LOW | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1814 | linux-libc-dev | [CVE-2024-54458](https://ubuntu.com/security/CVE-2024-54458) | LOW | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1815 | linux-libc-dev | [CVE-2024-56599](https://ubuntu.com/security/CVE-2024-56599) | LOW | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
-| 1816 | linux-libc-dev | [CVE-2024-58093](https://ubuntu.com/security/CVE-2024-58093) | LOW | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
-| 1817 | linux-libc-dev | [CVE-2024-58237](https://ubuntu.com/security/CVE-2024-58237) | LOW | affected | 5.15.0-138.148 |  |
-| 1818 | linux-libc-dev | [CVE-2025-21645](https://ubuntu.com/security/CVE-2025-21645) | LOW | affected | 5.15.0-138.148 |  |
-| 1819 | linux-libc-dev | [CVE-2025-37892](https://ubuntu.com/security/CVE-2025-37892) | LOW | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
-| 1820 | login | [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383) | LOW | affected | 1:4.8.1-2ubuntu2.2 |  |
-| 1821 | login | [CVE-2024-56433](https://ubuntu.com/security/CVE-2024-56433) | LOW | affected | 1:4.8.1-2ubuntu2.2 |  |
-| 1822 | ncurses-base | [CVE-2023-50495](https://ubuntu.com/security/CVE-2023-50495) | LOW | affected | 6.3-2ubuntu0.1 |  |
-| 1823 | ncurses-bin | [CVE-2023-50495](https://ubuntu.com/security/CVE-2023-50495) | LOW | affected | 6.3-2ubuntu0.1 |  |
-| 1824 | openssl | [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996) | LOW | affected | 3.0.2-0ubuntu1.19 |  |
-| 1825 | passwd | [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383) | LOW | affected | 1:4.8.1-2ubuntu2.2 |  |
-| 1826 | passwd | [CVE-2024-56433](https://ubuntu.com/security/CVE-2024-56433) | LOW | affected | 1:4.8.1-2ubuntu2.2 |  |
-| 1827 | perl-base | [CVE-2024-56406](https://ubuntu.com/security/CVE-2024-56406) | MEDIUM | fixed | 5.34.0-3ubuntu1.3 | 5.34.0-3ubuntu1.4 |
-| 1828 | perl-base | [CVE-2025-40909](https://ubuntu.com/security/CVE-2025-40909) | MEDIUM | fixed | 5.34.0-3ubuntu1.3 | 5.34.0-3ubuntu1.5 |
-| 1829 | tar | [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582) | MEDIUM | affected | 1.34+dfsg-1ubuntu0.1.22.04.2 |  |
+| 7 | binutils | [CVE-2025-8225](https://ubuntu.com/security/CVE-2025-8225) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 8 | binutils | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 9 | binutils | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 10 | binutils | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 11 | binutils | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 12 | binutils-aarch64-linux-gnu | [CVE-2025-1147](https://ubuntu.com/security/CVE-2025-1147) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 13 | binutils-aarch64-linux-gnu | [CVE-2025-1148](https://ubuntu.com/security/CVE-2025-1148) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 14 | binutils-aarch64-linux-gnu | [CVE-2025-3198](https://ubuntu.com/security/CVE-2025-3198) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 15 | binutils-aarch64-linux-gnu | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 16 | binutils-aarch64-linux-gnu | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 17 | binutils-aarch64-linux-gnu | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 18 | binutils-aarch64-linux-gnu | [CVE-2025-8225](https://ubuntu.com/security/CVE-2025-8225) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 19 | binutils-aarch64-linux-gnu | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 20 | binutils-aarch64-linux-gnu | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 21 | binutils-aarch64-linux-gnu | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 22 | binutils-aarch64-linux-gnu | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 23 | binutils-common | [CVE-2025-1147](https://ubuntu.com/security/CVE-2025-1147) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 24 | binutils-common | [CVE-2025-1148](https://ubuntu.com/security/CVE-2025-1148) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 25 | binutils-common | [CVE-2025-3198](https://ubuntu.com/security/CVE-2025-3198) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 26 | binutils-common | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 27 | binutils-common | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 28 | binutils-common | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 29 | binutils-common | [CVE-2025-8225](https://ubuntu.com/security/CVE-2025-8225) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 30 | binutils-common | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 31 | binutils-common | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 32 | binutils-common | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 33 | binutils-common | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 34 | coreutils | [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781) | LOW | affected | 8.32-4.1ubuntu1.2 |  |
+| 35 | cpp-11 | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 36 | cpp-11 | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 37 | cpp-11 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 38 | cpp-11 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
+| 39 | g++-11 | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 40 | g++-11 | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 41 | g++-11 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 42 | g++-11 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
+| 43 | gcc-11 | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 44 | gcc-11 | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 45 | gcc-11 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 46 | gcc-11 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
+| 47 | gcc-11-base | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 48 | gcc-11-base | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 49 | gcc-11-base | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 50 | gcc-11-base | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
+| 51 | gcc-12-base | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
+| 52 | gcc-12-base | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
+| 53 | gpgv | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219) | LOW | affected | 2.2.27-3ubuntu2.3 |  |
+| 54 | libarchive13 | [CVE-2025-5914](https://ubuntu.com/security/CVE-2025-5914) | MEDIUM | fixed | 3.6.0-1ubuntu1.4 | 3.6.0-1ubuntu1.5 |
+| 55 | libarchive13 | [CVE-2025-5915](https://ubuntu.com/security/CVE-2025-5915) | MEDIUM | fixed | 3.6.0-1ubuntu1.4 | 3.6.0-1ubuntu1.5 |
+| 56 | libarchive13 | [CVE-2025-5916](https://ubuntu.com/security/CVE-2025-5916) | MEDIUM | fixed | 3.6.0-1ubuntu1.4 | 3.6.0-1ubuntu1.5 |
+| 57 | libarchive13 | [CVE-2025-5917](https://ubuntu.com/security/CVE-2025-5917) | MEDIUM | fixed | 3.6.0-1ubuntu1.4 | 3.6.0-1ubuntu1.5 |
+| 58 | libasan6 | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 59 | libasan6 | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 60 | libasan6 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 61 | libasan6 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
+| 62 | libatomic1 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
+| 63 | libatomic1 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
+| 64 | libbinutils | [CVE-2025-1147](https://ubuntu.com/security/CVE-2025-1147) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 65 | libbinutils | [CVE-2025-1148](https://ubuntu.com/security/CVE-2025-1148) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 66 | libbinutils | [CVE-2025-3198](https://ubuntu.com/security/CVE-2025-3198) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 67 | libbinutils | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 68 | libbinutils | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 69 | libbinutils | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 70 | libbinutils | [CVE-2025-8225](https://ubuntu.com/security/CVE-2025-8225) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 71 | libbinutils | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 72 | libbinutils | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 73 | libbinutils | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 74 | libbinutils | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 75 | libc-bin | [CVE-2025-4802](https://ubuntu.com/security/CVE-2025-4802) | MEDIUM | fixed | 2.35-0ubuntu3.9 | 2.35-0ubuntu3.10 |
+| 76 | libc-bin | [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058) | MEDIUM | affected | 2.35-0ubuntu3.9 |  |
+| 77 | libc-dev-bin | [CVE-2025-4802](https://ubuntu.com/security/CVE-2025-4802) | MEDIUM | fixed | 2.35-0ubuntu3.9 | 2.35-0ubuntu3.10 |
+| 78 | libc-dev-bin | [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058) | MEDIUM | affected | 2.35-0ubuntu3.9 |  |
+| 79 | libc6 | [CVE-2025-4802](https://ubuntu.com/security/CVE-2025-4802) | MEDIUM | fixed | 2.35-0ubuntu3.9 | 2.35-0ubuntu3.10 |
+| 80 | libc6 | [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058) | MEDIUM | affected | 2.35-0ubuntu3.9 |  |
+| 81 | libc6-dev | [CVE-2025-4802](https://ubuntu.com/security/CVE-2025-4802) | MEDIUM | fixed | 2.35-0ubuntu3.9 | 2.35-0ubuntu3.10 |
+| 82 | libc6-dev | [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058) | MEDIUM | affected | 2.35-0ubuntu3.9 |  |
+| 83 | libcc1-0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
+| 84 | libcc1-0 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
+| 85 | libctf-nobfd0 | [CVE-2025-1147](https://ubuntu.com/security/CVE-2025-1147) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 86 | libctf-nobfd0 | [CVE-2025-1148](https://ubuntu.com/security/CVE-2025-1148) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 87 | libctf-nobfd0 | [CVE-2025-3198](https://ubuntu.com/security/CVE-2025-3198) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 88 | libctf-nobfd0 | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 89 | libctf-nobfd0 | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 90 | libctf-nobfd0 | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 91 | libctf-nobfd0 | [CVE-2025-8225](https://ubuntu.com/security/CVE-2025-8225) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 92 | libctf-nobfd0 | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 93 | libctf-nobfd0 | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 94 | libctf-nobfd0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 95 | libctf-nobfd0 | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 96 | libctf0 | [CVE-2025-1147](https://ubuntu.com/security/CVE-2025-1147) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 97 | libctf0 | [CVE-2025-1148](https://ubuntu.com/security/CVE-2025-1148) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 98 | libctf0 | [CVE-2025-3198](https://ubuntu.com/security/CVE-2025-3198) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 99 | libctf0 | [CVE-2025-5244](https://ubuntu.com/security/CVE-2025-5244) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 100 | libctf0 | [CVE-2025-5245](https://ubuntu.com/security/CVE-2025-5245) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 101 | libctf0 | [CVE-2025-7545](https://ubuntu.com/security/CVE-2025-7545) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 102 | libctf0 | [CVE-2025-8225](https://ubuntu.com/security/CVE-2025-8225) | MEDIUM | affected | 2.38-4ubuntu2.8 |  |
+| 103 | libctf0 | [CVE-2017-13716](https://ubuntu.com/security/CVE-2017-13716) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 104 | libctf0 | [CVE-2019-1010204](https://ubuntu.com/security/CVE-2019-1010204) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 105 | libctf0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 106 | libctf0 | [CVE-2022-48064](https://ubuntu.com/security/CVE-2022-48064) | LOW | affected | 2.38-4ubuntu2.8 |  |
+| 107 | libcurl4 | [CVE-2025-0167](https://ubuntu.com/security/CVE-2025-0167) | LOW | affected | 7.81.0-1ubuntu1.20 |  |
+| 108 | libcurl4 | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086) | LOW | affected | 7.81.0-1ubuntu1.20 |  |
+| 109 | libgcc-11-dev | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 110 | libgcc-11-dev | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 111 | libgcc-11-dev | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 112 | libgcc-11-dev | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
+| 113 | libgcc-s1 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
+| 114 | libgcc-s1 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
+| 115 | libgcrypt20 | [CVE-2024-2236](https://ubuntu.com/security/CVE-2024-2236) | LOW | affected | 1.9.4-3ubuntu3 |  |
+| 116 | libgnutls30 | [CVE-2025-32988](https://ubuntu.com/security/CVE-2025-32988) | MEDIUM | fixed | 3.7.3-4ubuntu1.6 | 3.7.3-4ubuntu1.7 |
+| 117 | libgnutls30 | [CVE-2025-32989](https://ubuntu.com/security/CVE-2025-32989) | MEDIUM | fixed | 3.7.3-4ubuntu1.6 | 3.7.3-4ubuntu1.7 |
+| 118 | libgnutls30 | [CVE-2025-32990](https://ubuntu.com/security/CVE-2025-32990) | MEDIUM | fixed | 3.7.3-4ubuntu1.6 | 3.7.3-4ubuntu1.7 |
+| 119 | libgnutls30 | [CVE-2025-6395](https://ubuntu.com/security/CVE-2025-6395) | MEDIUM | fixed | 3.7.3-4ubuntu1.6 | 3.7.3-4ubuntu1.7 |
+| 120 | libgomp1 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
+| 121 | libgomp1 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
+| 122 | libgssapi-krb5-2 | [CVE-2025-3576](https://ubuntu.com/security/CVE-2025-3576) | MEDIUM | fixed | 1.19.2-2ubuntu0.6 | 1.19.2-2ubuntu0.7 |
+| 123 | libhwasan0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
+| 124 | libhwasan0 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
+| 125 | libicu70 | [CVE-2025-5222](https://ubuntu.com/security/CVE-2025-5222) | LOW | affected | 70.1-2 |  |
+| 126 | libitm1 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
+| 127 | libitm1 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
+| 128 | libk5crypto3 | [CVE-2025-3576](https://ubuntu.com/security/CVE-2025-3576) | MEDIUM | fixed | 1.19.2-2ubuntu0.6 | 1.19.2-2ubuntu0.7 |
+| 129 | libkrb5-3 | [CVE-2025-3576](https://ubuntu.com/security/CVE-2025-3576) | MEDIUM | fixed | 1.19.2-2ubuntu0.6 | 1.19.2-2ubuntu0.7 |
+| 130 | libkrb5support0 | [CVE-2025-3576](https://ubuntu.com/security/CVE-2025-3576) | MEDIUM | fixed | 1.19.2-2ubuntu0.6 | 1.19.2-2ubuntu0.7 |
+| 131 | liblsan0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
+| 132 | liblsan0 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
+| 133 | libncurses6 | [CVE-2023-50495](https://ubuntu.com/security/CVE-2023-50495) | LOW | affected | 6.3-2ubuntu0.1 |  |
+| 134 | libncursesw6 | [CVE-2023-50495](https://ubuntu.com/security/CVE-2023-50495) | LOW | affected | 6.3-2ubuntu0.1 |  |
+| 135 | libpam-modules | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
+| 136 | libpam-modules | [CVE-2025-6020](https://ubuntu.com/security/CVE-2025-6020) | MEDIUM | fixed | 1.4.0-11ubuntu2.5 | 1.4.0-11ubuntu2.6 |
+| 137 | libpam-modules | [CVE-2025-8941](https://ubuntu.com/security/CVE-2025-8941) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
+| 138 | libpam-modules-bin | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
+| 139 | libpam-modules-bin | [CVE-2025-6020](https://ubuntu.com/security/CVE-2025-6020) | MEDIUM | fixed | 1.4.0-11ubuntu2.5 | 1.4.0-11ubuntu2.6 |
+| 140 | libpam-modules-bin | [CVE-2025-8941](https://ubuntu.com/security/CVE-2025-8941) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
+| 141 | libpam-runtime | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
+| 142 | libpam-runtime | [CVE-2025-6020](https://ubuntu.com/security/CVE-2025-6020) | MEDIUM | fixed | 1.4.0-11ubuntu2.5 | 1.4.0-11ubuntu2.6 |
+| 143 | libpam-runtime | [CVE-2025-8941](https://ubuntu.com/security/CVE-2025-8941) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
+| 144 | libpam0g | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
+| 145 | libpam0g | [CVE-2025-6020](https://ubuntu.com/security/CVE-2025-6020) | MEDIUM | fixed | 1.4.0-11ubuntu2.5 | 1.4.0-11ubuntu2.6 |
+| 146 | libpam0g | [CVE-2025-8941](https://ubuntu.com/security/CVE-2025-8941) | MEDIUM | affected | 1.4.0-11ubuntu2.5 |  |
+| 147 | libpcre2-8-0 | [CVE-2025-58050](https://ubuntu.com/security/CVE-2025-58050) | MEDIUM | affected | 10.39-3ubuntu0.1 |  |
+| 148 | libpcre2-8-0 | [CVE-2022-41409](https://ubuntu.com/security/CVE-2022-41409) | LOW | affected | 10.39-3ubuntu0.1 |  |
+| 149 | libpcre3 | [CVE-2017-11164](https://ubuntu.com/security/CVE-2017-11164) | LOW | affected | 2:8.39-13ubuntu0.22.04.1 |  |
+| 150 | libsqlite3-0 | [CVE-2025-29088](https://ubuntu.com/security/CVE-2025-29088) | MEDIUM | fixed | 3.37.2-2ubuntu0.3 | 3.37.2-2ubuntu0.4 |
+| 151 | libsqlite3-0 | [CVE-2025-6965](https://ubuntu.com/security/CVE-2025-6965) | MEDIUM | fixed | 3.37.2-2ubuntu0.3 | 3.37.2-2ubuntu0.5 |
+| 152 | libsqlite3-dev | [CVE-2025-29088](https://ubuntu.com/security/CVE-2025-29088) | MEDIUM | fixed | 3.37.2-2ubuntu0.3 | 3.37.2-2ubuntu0.4 |
+| 153 | libsqlite3-dev | [CVE-2025-6965](https://ubuntu.com/security/CVE-2025-6965) | MEDIUM | fixed | 3.37.2-2ubuntu0.3 | 3.37.2-2ubuntu0.5 |
+| 154 | libssh-4 | [CVE-2025-4877](https://ubuntu.com/security/CVE-2025-4877) | MEDIUM | fixed | 0.9.6-2ubuntu0.22.04.3 | 0.9.6-2ubuntu0.22.04.4 |
+| 155 | libssh-4 | [CVE-2025-4878](https://ubuntu.com/security/CVE-2025-4878) | MEDIUM | fixed | 0.9.6-2ubuntu0.22.04.3 | 0.9.6-2ubuntu0.22.04.4 |
+| 156 | libssh-4 | [CVE-2025-5318](https://ubuntu.com/security/CVE-2025-5318) | MEDIUM | fixed | 0.9.6-2ubuntu0.22.04.3 | 0.9.6-2ubuntu0.22.04.4 |
+| 157 | libssh-4 | [CVE-2025-5372](https://ubuntu.com/security/CVE-2025-5372) | MEDIUM | fixed | 0.9.6-2ubuntu0.22.04.3 | 0.9.6-2ubuntu0.22.04.4 |
+| 158 | libssl3 | [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996) | LOW | affected | 3.0.2-0ubuntu1.19 |  |
+| 159 | libstdc++-11-dev | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 160 | libstdc++-11-dev | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 161 | libstdc++-11-dev | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 162 | libstdc++-11-dev | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
+| 163 | libstdc++6 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
+| 164 | libstdc++6 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
+| 165 | libsystemd0 | [CVE-2025-4598](https://ubuntu.com/security/CVE-2025-4598) | MEDIUM | fixed | 249.11-0ubuntu3.15 | 249.11-0ubuntu3.16 |
+| 166 | libsystemd0 | [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008) | LOW | affected | 249.11-0ubuntu3.15 |  |
+| 167 | libtinfo6 | [CVE-2023-50495](https://ubuntu.com/security/CVE-2023-50495) | LOW | affected | 6.3-2ubuntu0.1 |  |
+| 168 | libtsan0 | [CVE-2021-3826](https://ubuntu.com/security/CVE-2021-3826) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 169 | libtsan0 | [CVE-2021-46195](https://ubuntu.com/security/CVE-2021-46195) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 170 | libtsan0 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 11.4.0-1ubuntu1~22.04 |  |
+| 171 | libtsan0 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 11.4.0-1ubuntu1~22.04 | 11.4.0-1ubuntu1~22.04.2 |
+| 172 | libubsan1 | [CVE-2022-27943](https://ubuntu.com/security/CVE-2022-27943) | LOW | affected | 12.3.0-1ubuntu1~22.04 |  |
+| 173 | libubsan1 | [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | LOW | fixed | 12.3.0-1ubuntu1~22.04 | 12.3.0-1ubuntu1~22.04.2 |
+| 174 | libudev1 | [CVE-2025-4598](https://ubuntu.com/security/CVE-2025-4598) | MEDIUM | fixed | 249.11-0ubuntu3.15 | 249.11-0ubuntu3.16 |
+| 175 | libudev1 | [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008) | LOW | affected | 249.11-0ubuntu3.15 |  |
+| 176 | libxml2 | [CVE-2025-49794](https://ubuntu.com/security/CVE-2025-49794) | MEDIUM | fixed | 2.9.13+dfsg-1ubuntu0.7 | 2.9.13+dfsg-1ubuntu0.8 |
+| 177 | libxml2 | [CVE-2025-49796](https://ubuntu.com/security/CVE-2025-49796) | MEDIUM | fixed | 2.9.13+dfsg-1ubuntu0.7 | 2.9.13+dfsg-1ubuntu0.8 |
+| 178 | libxml2 | [CVE-2025-6021](https://ubuntu.com/security/CVE-2025-6021) | MEDIUM | fixed | 2.9.13+dfsg-1ubuntu0.7 | 2.9.13+dfsg-1ubuntu0.8 |
+| 179 | libxml2 | [CVE-2025-6170](https://ubuntu.com/security/CVE-2025-6170) | MEDIUM | fixed | 2.9.13+dfsg-1ubuntu0.7 | 2.9.13+dfsg-1ubuntu0.8 |
+| 180 | libxml2 | [CVE-2025-9714](https://ubuntu.com/security/CVE-2025-9714) | MEDIUM | fixed | 2.9.13+dfsg-1ubuntu0.7 | 2.9.13+dfsg-1ubuntu0.9 |
+| 181 | libzstd1 | [CVE-2022-4899](https://ubuntu.com/security/CVE-2022-4899) | LOW | affected | 1.4.8+dfsg-3build1 |  |
+| 182 | linux-libc-dev | [CVE-2023-52664](https://ubuntu.com/security/CVE-2023-52664) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-139.149 |
+| 183 | linux-libc-dev | [CVE-2023-52927](https://ubuntu.com/security/CVE-2023-52927) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-139.149 |
+| 184 | linux-libc-dev | [CVE-2024-27407](https://ubuntu.com/security/CVE-2024-27407) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-153.163 |
+| 185 | linux-libc-dev | [CVE-2024-50047](https://ubuntu.com/security/CVE-2024-50047) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
+| 186 | linux-libc-dev | [CVE-2024-53168](https://ubuntu.com/security/CVE-2024-53168) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-141.151 |
+| 187 | linux-libc-dev | [CVE-2024-56551](https://ubuntu.com/security/CVE-2024-56551) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-141.151 |
+| 188 | linux-libc-dev | [CVE-2024-56608](https://ubuntu.com/security/CVE-2024-56608) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-141.151 |
+| 189 | linux-libc-dev | [CVE-2025-21727](https://ubuntu.com/security/CVE-2025-21727) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 190 | linux-libc-dev | [CVE-2025-21887](https://ubuntu.com/security/CVE-2025-21887) | HIGH | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 191 | linux-libc-dev | [CVE-2025-40300](https://ubuntu.com/security/CVE-2025-40300) | HIGH | affected | 5.15.0-138.148 |  |
+| 192 | linux-libc-dev | [CVE-2013-7445](https://ubuntu.com/security/CVE-2013-7445) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 193 | linux-libc-dev | [CVE-2015-7837](https://ubuntu.com/security/CVE-2015-7837) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 194 | linux-libc-dev | [CVE-2015-8553](https://ubuntu.com/security/CVE-2015-8553) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 195 | linux-libc-dev | [CVE-2016-8660](https://ubuntu.com/security/CVE-2016-8660) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 196 | linux-libc-dev | [CVE-2018-17977](https://ubuntu.com/security/CVE-2018-17977) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 197 | linux-libc-dev | [CVE-2019-15794](https://ubuntu.com/security/CVE-2019-15794) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 198 | linux-libc-dev | [CVE-2020-14356](https://ubuntu.com/security/CVE-2020-14356) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 199 | linux-libc-dev | [CVE-2021-3714](https://ubuntu.com/security/CVE-2021-3714) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 200 | linux-libc-dev | [CVE-2021-3864](https://ubuntu.com/security/CVE-2021-3864) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 201 | linux-libc-dev | [CVE-2021-4095](https://ubuntu.com/security/CVE-2021-4095) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 202 | linux-libc-dev | [CVE-2021-47432](https://ubuntu.com/security/CVE-2021-47432) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 203 | linux-libc-dev | [CVE-2021-47658](https://ubuntu.com/security/CVE-2021-47658) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 204 | linux-libc-dev | [CVE-2022-0400](https://ubuntu.com/security/CVE-2022-0400) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 205 | linux-libc-dev | [CVE-2022-0480](https://ubuntu.com/security/CVE-2022-0480) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 206 | linux-libc-dev | [CVE-2022-1205](https://ubuntu.com/security/CVE-2022-1205) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 207 | linux-libc-dev | [CVE-2022-1247](https://ubuntu.com/security/CVE-2022-1247) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 208 | linux-libc-dev | [CVE-2022-21546](https://ubuntu.com/security/CVE-2022-21546) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 209 | linux-libc-dev | [CVE-2022-25836](https://ubuntu.com/security/CVE-2022-25836) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 210 | linux-libc-dev | [CVE-2022-2961](https://ubuntu.com/security/CVE-2022-2961) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 211 | linux-libc-dev | [CVE-2022-3238](https://ubuntu.com/security/CVE-2022-3238) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 212 | linux-libc-dev | [CVE-2022-3523](https://ubuntu.com/security/CVE-2022-3523) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 213 | linux-libc-dev | [CVE-2022-38457](https://ubuntu.com/security/CVE-2022-38457) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 214 | linux-libc-dev | [CVE-2022-40133](https://ubuntu.com/security/CVE-2022-40133) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 215 | linux-libc-dev | [CVE-2022-4543](https://ubuntu.com/security/CVE-2022-4543) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 216 | linux-libc-dev | [CVE-2022-48628](https://ubuntu.com/security/CVE-2022-48628) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 217 | linux-libc-dev | [CVE-2022-48633](https://ubuntu.com/security/CVE-2022-48633) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 218 | linux-libc-dev | [CVE-2022-48646](https://ubuntu.com/security/CVE-2022-48646) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 219 | linux-libc-dev | [CVE-2022-48667](https://ubuntu.com/security/CVE-2022-48667) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 220 | linux-libc-dev | [CVE-2022-48668](https://ubuntu.com/security/CVE-2022-48668) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 221 | linux-libc-dev | [CVE-2022-48673](https://ubuntu.com/security/CVE-2022-48673) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 222 | linux-libc-dev | [CVE-2022-48706](https://ubuntu.com/security/CVE-2022-48706) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 223 | linux-libc-dev | [CVE-2022-48744](https://ubuntu.com/security/CVE-2022-48744) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 224 | linux-libc-dev | [CVE-2022-48766](https://ubuntu.com/security/CVE-2022-48766) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 225 | linux-libc-dev | [CVE-2022-48771](https://ubuntu.com/security/CVE-2022-48771) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 226 | linux-libc-dev | [CVE-2022-48816](https://ubuntu.com/security/CVE-2022-48816) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 227 | linux-libc-dev | [CVE-2022-48887](https://ubuntu.com/security/CVE-2022-48887) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 228 | linux-libc-dev | [CVE-2022-48893](https://ubuntu.com/security/CVE-2022-48893) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 229 | linux-libc-dev | [CVE-2022-48929](https://ubuntu.com/security/CVE-2022-48929) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 230 | linux-libc-dev | [CVE-2022-48976](https://ubuntu.com/security/CVE-2022-48976) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 231 | linux-libc-dev | [CVE-2022-48979](https://ubuntu.com/security/CVE-2022-48979) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 232 | linux-libc-dev | [CVE-2022-48990](https://ubuntu.com/security/CVE-2022-48990) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 233 | linux-libc-dev | [CVE-2022-48998](https://ubuntu.com/security/CVE-2022-48998) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 234 | linux-libc-dev | [CVE-2022-49063](https://ubuntu.com/security/CVE-2022-49063) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 235 | linux-libc-dev | [CVE-2022-49069](https://ubuntu.com/security/CVE-2022-49069) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 236 | linux-libc-dev | [CVE-2022-49108](https://ubuntu.com/security/CVE-2022-49108) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 237 | linux-libc-dev | [CVE-2022-49123](https://ubuntu.com/security/CVE-2022-49123) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 238 | linux-libc-dev | [CVE-2022-49124](https://ubuntu.com/security/CVE-2022-49124) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 239 | linux-libc-dev | [CVE-2022-49125](https://ubuntu.com/security/CVE-2022-49125) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 240 | linux-libc-dev | [CVE-2022-49127](https://ubuntu.com/security/CVE-2022-49127) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 241 | linux-libc-dev | [CVE-2022-49133](https://ubuntu.com/security/CVE-2022-49133) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 242 | linux-libc-dev | [CVE-2022-49134](https://ubuntu.com/security/CVE-2022-49134) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 243 | linux-libc-dev | [CVE-2022-49136](https://ubuntu.com/security/CVE-2022-49136) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 244 | linux-libc-dev | [CVE-2022-49138](https://ubuntu.com/security/CVE-2022-49138) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 245 | linux-libc-dev | [CVE-2022-49161](https://ubuntu.com/security/CVE-2022-49161) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 246 | linux-libc-dev | [CVE-2022-49167](https://ubuntu.com/security/CVE-2022-49167) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 247 | linux-libc-dev | [CVE-2022-49168](https://ubuntu.com/security/CVE-2022-49168) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 248 | linux-libc-dev | [CVE-2022-49172](https://ubuntu.com/security/CVE-2022-49172) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 249 | linux-libc-dev | [CVE-2022-49173](https://ubuntu.com/security/CVE-2022-49173) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 250 | linux-libc-dev | [CVE-2022-49177](https://ubuntu.com/security/CVE-2022-49177) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 251 | linux-libc-dev | [CVE-2022-49178](https://ubuntu.com/security/CVE-2022-49178) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 252 | linux-libc-dev | [CVE-2022-49203](https://ubuntu.com/security/CVE-2022-49203) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 253 | linux-libc-dev | [CVE-2022-49218](https://ubuntu.com/security/CVE-2022-49218) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 254 | linux-libc-dev | [CVE-2022-49234](https://ubuntu.com/security/CVE-2022-49234) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 255 | linux-libc-dev | [CVE-2022-49245](https://ubuntu.com/security/CVE-2022-49245) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 256 | linux-libc-dev | [CVE-2022-49267](https://ubuntu.com/security/CVE-2022-49267) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 257 | linux-libc-dev | [CVE-2022-49296](https://ubuntu.com/security/CVE-2022-49296) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 258 | linux-libc-dev | [CVE-2022-49303](https://ubuntu.com/security/CVE-2022-49303) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 259 | linux-libc-dev | [CVE-2022-49306](https://ubuntu.com/security/CVE-2022-49306) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 260 | linux-libc-dev | [CVE-2022-49317](https://ubuntu.com/security/CVE-2022-49317) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 261 | linux-libc-dev | [CVE-2022-49333](https://ubuntu.com/security/CVE-2022-49333) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 262 | linux-libc-dev | [CVE-2022-49342](https://ubuntu.com/security/CVE-2022-49342) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 263 | linux-libc-dev | [CVE-2022-49359](https://ubuntu.com/security/CVE-2022-49359) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 264 | linux-libc-dev | [CVE-2022-49390](https://ubuntu.com/security/CVE-2022-49390) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 265 | linux-libc-dev | [CVE-2022-49393](https://ubuntu.com/security/CVE-2022-49393) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 266 | linux-libc-dev | [CVE-2022-49401](https://ubuntu.com/security/CVE-2022-49401) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 267 | linux-libc-dev | [CVE-2022-49420](https://ubuntu.com/security/CVE-2022-49420) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 268 | linux-libc-dev | [CVE-2022-49465](https://ubuntu.com/security/CVE-2022-49465) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 269 | linux-libc-dev | [CVE-2022-49469](https://ubuntu.com/security/CVE-2022-49469) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 270 | linux-libc-dev | [CVE-2022-49471](https://ubuntu.com/security/CVE-2022-49471) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 271 | linux-libc-dev | [CVE-2022-49476](https://ubuntu.com/security/CVE-2022-49476) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 272 | linux-libc-dev | [CVE-2022-49484](https://ubuntu.com/security/CVE-2022-49484) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 273 | linux-libc-dev | [CVE-2022-49496](https://ubuntu.com/security/CVE-2022-49496) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 274 | linux-libc-dev | [CVE-2022-49504](https://ubuntu.com/security/CVE-2022-49504) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 275 | linux-libc-dev | [CVE-2022-49516](https://ubuntu.com/security/CVE-2022-49516) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 276 | linux-libc-dev | [CVE-2022-49518](https://ubuntu.com/security/CVE-2022-49518) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 277 | linux-libc-dev | [CVE-2022-49528](https://ubuntu.com/security/CVE-2022-49528) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 278 | linux-libc-dev | [CVE-2022-49529](https://ubuntu.com/security/CVE-2022-49529) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 279 | linux-libc-dev | [CVE-2022-49531](https://ubuntu.com/security/CVE-2022-49531) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 280 | linux-libc-dev | [CVE-2022-49533](https://ubuntu.com/security/CVE-2022-49533) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 281 | linux-libc-dev | [CVE-2022-49534](https://ubuntu.com/security/CVE-2022-49534) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 282 | linux-libc-dev | [CVE-2022-49535](https://ubuntu.com/security/CVE-2022-49535) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 283 | linux-libc-dev | [CVE-2022-49539](https://ubuntu.com/security/CVE-2022-49539) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 284 | linux-libc-dev | [CVE-2022-49543](https://ubuntu.com/security/CVE-2022-49543) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 285 | linux-libc-dev | [CVE-2022-49547](https://ubuntu.com/security/CVE-2022-49547) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 286 | linux-libc-dev | [CVE-2022-49552](https://ubuntu.com/security/CVE-2022-49552) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 287 | linux-libc-dev | [CVE-2022-49562](https://ubuntu.com/security/CVE-2022-49562) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 288 | linux-libc-dev | [CVE-2022-49622](https://ubuntu.com/security/CVE-2022-49622) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 289 | linux-libc-dev | [CVE-2022-49635](https://ubuntu.com/security/CVE-2022-49635) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 290 | linux-libc-dev | [CVE-2022-49636](https://ubuntu.com/security/CVE-2022-49636) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 291 | linux-libc-dev | [CVE-2022-49651](https://ubuntu.com/security/CVE-2022-49651) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 292 | linux-libc-dev | [CVE-2022-49699](https://ubuntu.com/security/CVE-2022-49699) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 293 | linux-libc-dev | [CVE-2022-49722](https://ubuntu.com/security/CVE-2022-49722) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 294 | linux-libc-dev | [CVE-2022-49728](https://ubuntu.com/security/CVE-2022-49728) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 295 | linux-libc-dev | [CVE-2022-49742](https://ubuntu.com/security/CVE-2022-49742) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 296 | linux-libc-dev | [CVE-2022-49750](https://ubuntu.com/security/CVE-2022-49750) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 297 | linux-libc-dev | [CVE-2022-49759](https://ubuntu.com/security/CVE-2022-49759) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 298 | linux-libc-dev | [CVE-2022-49764](https://ubuntu.com/security/CVE-2022-49764) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 299 | linux-libc-dev | [CVE-2022-49766](https://ubuntu.com/security/CVE-2022-49766) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 300 | linux-libc-dev | [CVE-2022-49773](https://ubuntu.com/security/CVE-2022-49773) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 301 | linux-libc-dev | [CVE-2022-49783](https://ubuntu.com/security/CVE-2022-49783) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 302 | linux-libc-dev | [CVE-2022-49803](https://ubuntu.com/security/CVE-2022-49803) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 303 | linux-libc-dev | [CVE-2022-49810](https://ubuntu.com/security/CVE-2022-49810) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 304 | linux-libc-dev | [CVE-2022-49829](https://ubuntu.com/security/CVE-2022-49829) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 305 | linux-libc-dev | [CVE-2022-49833](https://ubuntu.com/security/CVE-2022-49833) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 306 | linux-libc-dev | [CVE-2022-49858](https://ubuntu.com/security/CVE-2022-49858) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 307 | linux-libc-dev | [CVE-2022-49901](https://ubuntu.com/security/CVE-2022-49901) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 308 | linux-libc-dev | [CVE-2022-49910](https://ubuntu.com/security/CVE-2022-49910) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 309 | linux-libc-dev | [CVE-2022-49932](https://ubuntu.com/security/CVE-2022-49932) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 310 | linux-libc-dev | [CVE-2022-49935](https://ubuntu.com/security/CVE-2022-49935) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 311 | linux-libc-dev | [CVE-2022-49940](https://ubuntu.com/security/CVE-2022-49940) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 312 | linux-libc-dev | [CVE-2022-49943](https://ubuntu.com/security/CVE-2022-49943) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 313 | linux-libc-dev | [CVE-2022-49955](https://ubuntu.com/security/CVE-2022-49955) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 314 | linux-libc-dev | [CVE-2022-49961](https://ubuntu.com/security/CVE-2022-49961) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 315 | linux-libc-dev | [CVE-2022-49965](https://ubuntu.com/security/CVE-2022-49965) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 316 | linux-libc-dev | [CVE-2022-49967](https://ubuntu.com/security/CVE-2022-49967) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 317 | linux-libc-dev | [CVE-2022-49971](https://ubuntu.com/security/CVE-2022-49971) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 318 | linux-libc-dev | [CVE-2022-49974](https://ubuntu.com/security/CVE-2022-49974) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 319 | linux-libc-dev | [CVE-2022-49980](https://ubuntu.com/security/CVE-2022-49980) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 320 | linux-libc-dev | [CVE-2022-49997](https://ubuntu.com/security/CVE-2022-49997) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 321 | linux-libc-dev | [CVE-2022-50002](https://ubuntu.com/security/CVE-2022-50002) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 322 | linux-libc-dev | [CVE-2022-50009](https://ubuntu.com/security/CVE-2022-50009) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 323 | linux-libc-dev | [CVE-2022-50015](https://ubuntu.com/security/CVE-2022-50015) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 324 | linux-libc-dev | [CVE-2022-50016](https://ubuntu.com/security/CVE-2022-50016) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 325 | linux-libc-dev | [CVE-2022-50070](https://ubuntu.com/security/CVE-2022-50070) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 326 | linux-libc-dev | [CVE-2022-50071](https://ubuntu.com/security/CVE-2022-50071) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 327 | linux-libc-dev | [CVE-2022-50073](https://ubuntu.com/security/CVE-2022-50073) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 328 | linux-libc-dev | [CVE-2022-50090](https://ubuntu.com/security/CVE-2022-50090) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 329 | linux-libc-dev | [CVE-2022-50095](https://ubuntu.com/security/CVE-2022-50095) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 330 | linux-libc-dev | [CVE-2022-50116](https://ubuntu.com/security/CVE-2022-50116) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 331 | linux-libc-dev | [CVE-2022-50163](https://ubuntu.com/security/CVE-2022-50163) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 332 | linux-libc-dev | [CVE-2022-50166](https://ubuntu.com/security/CVE-2022-50166) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 333 | linux-libc-dev | [CVE-2022-50167](https://ubuntu.com/security/CVE-2022-50167) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 334 | linux-libc-dev | [CVE-2022-50178](https://ubuntu.com/security/CVE-2022-50178) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 335 | linux-libc-dev | [CVE-2022-50195](https://ubuntu.com/security/CVE-2022-50195) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 336 | linux-libc-dev | [CVE-2022-50212](https://ubuntu.com/security/CVE-2022-50212) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 337 | linux-libc-dev | [CVE-2022-50213](https://ubuntu.com/security/CVE-2022-50213) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 338 | linux-libc-dev | [CVE-2022-50224](https://ubuntu.com/security/CVE-2022-50224) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 339 | linux-libc-dev | [CVE-2022-50230](https://ubuntu.com/security/CVE-2022-50230) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 340 | linux-libc-dev | [CVE-2022-50232](https://ubuntu.com/security/CVE-2022-50232) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 341 | linux-libc-dev | [CVE-2022-50234](https://ubuntu.com/security/CVE-2022-50234) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 342 | linux-libc-dev | [CVE-2022-50236](https://ubuntu.com/security/CVE-2022-50236) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 343 | linux-libc-dev | [CVE-2022-50240](https://ubuntu.com/security/CVE-2022-50240) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 344 | linux-libc-dev | [CVE-2022-50256](https://ubuntu.com/security/CVE-2022-50256) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 345 | linux-libc-dev | [CVE-2022-50260](https://ubuntu.com/security/CVE-2022-50260) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 346 | linux-libc-dev | [CVE-2022-50266](https://ubuntu.com/security/CVE-2022-50266) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 347 | linux-libc-dev | [CVE-2022-50284](https://ubuntu.com/security/CVE-2022-50284) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 348 | linux-libc-dev | [CVE-2022-50290](https://ubuntu.com/security/CVE-2022-50290) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 349 | linux-libc-dev | [CVE-2022-50303](https://ubuntu.com/security/CVE-2022-50303) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 350 | linux-libc-dev | [CVE-2022-50304](https://ubuntu.com/security/CVE-2022-50304) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 351 | linux-libc-dev | [CVE-2022-50316](https://ubuntu.com/security/CVE-2022-50316) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 352 | linux-libc-dev | [CVE-2022-50322](https://ubuntu.com/security/CVE-2022-50322) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 353 | linux-libc-dev | [CVE-2022-50327](https://ubuntu.com/security/CVE-2022-50327) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 354 | linux-libc-dev | [CVE-2022-50332](https://ubuntu.com/security/CVE-2022-50332) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 355 | linux-libc-dev | [CVE-2022-50338](https://ubuntu.com/security/CVE-2022-50338) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 356 | linux-libc-dev | [CVE-2022-50350](https://ubuntu.com/security/CVE-2022-50350) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 357 | linux-libc-dev | [CVE-2023-0030](https://ubuntu.com/security/CVE-2023-0030) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 358 | linux-libc-dev | [CVE-2023-0160](https://ubuntu.com/security/CVE-2023-0160) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 359 | linux-libc-dev | [CVE-2023-1193](https://ubuntu.com/security/CVE-2023-1193) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 360 | linux-libc-dev | [CVE-2023-2007](https://ubuntu.com/security/CVE-2023-2007) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 361 | linux-libc-dev | [CVE-2023-26242](https://ubuntu.com/security/CVE-2023-26242) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 362 | linux-libc-dev | [CVE-2023-31082](https://ubuntu.com/security/CVE-2023-31082) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 363 | linux-libc-dev | [CVE-2023-45896](https://ubuntu.com/security/CVE-2023-45896) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 364 | linux-libc-dev | [CVE-2023-52452](https://ubuntu.com/security/CVE-2023-52452) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 365 | linux-libc-dev | [CVE-2023-52481](https://ubuntu.com/security/CVE-2023-52481) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 366 | linux-libc-dev | [CVE-2023-52485](https://ubuntu.com/security/CVE-2023-52485) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 367 | linux-libc-dev | [CVE-2023-52508](https://ubuntu.com/security/CVE-2023-52508) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 368 | linux-libc-dev | [CVE-2023-52561](https://ubuntu.com/security/CVE-2023-52561) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 369 | linux-libc-dev | [CVE-2023-52569](https://ubuntu.com/security/CVE-2023-52569) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 370 | linux-libc-dev | [CVE-2023-52572](https://ubuntu.com/security/CVE-2023-52572) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 371 | linux-libc-dev | [CVE-2023-52576](https://ubuntu.com/security/CVE-2023-52576) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 372 | linux-libc-dev | [CVE-2023-52582](https://ubuntu.com/security/CVE-2023-52582) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 373 | linux-libc-dev | [CVE-2023-52586](https://ubuntu.com/security/CVE-2023-52586) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 374 | linux-libc-dev | [CVE-2023-52589](https://ubuntu.com/security/CVE-2023-52589) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 375 | linux-libc-dev | [CVE-2023-52590](https://ubuntu.com/security/CVE-2023-52590) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 376 | linux-libc-dev | [CVE-2023-52591](https://ubuntu.com/security/CVE-2023-52591) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 377 | linux-libc-dev | [CVE-2023-52624](https://ubuntu.com/security/CVE-2023-52624) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 378 | linux-libc-dev | [CVE-2023-52625](https://ubuntu.com/security/CVE-2023-52625) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 379 | linux-libc-dev | [CVE-2023-52632](https://ubuntu.com/security/CVE-2023-52632) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 380 | linux-libc-dev | [CVE-2023-52634](https://ubuntu.com/security/CVE-2023-52634) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 381 | linux-libc-dev | [CVE-2023-52648](https://ubuntu.com/security/CVE-2023-52648) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 382 | linux-libc-dev | [CVE-2023-52653](https://ubuntu.com/security/CVE-2023-52653) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 383 | linux-libc-dev | [CVE-2023-52657](https://ubuntu.com/security/CVE-2023-52657) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 384 | linux-libc-dev | [CVE-2023-52660](https://ubuntu.com/security/CVE-2023-52660) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 385 | linux-libc-dev | [CVE-2023-52671](https://ubuntu.com/security/CVE-2023-52671) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 386 | linux-libc-dev | [CVE-2023-52673](https://ubuntu.com/security/CVE-2023-52673) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 387 | linux-libc-dev | [CVE-2023-52676](https://ubuntu.com/security/CVE-2023-52676) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 388 | linux-libc-dev | [CVE-2023-52682](https://ubuntu.com/security/CVE-2023-52682) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 389 | linux-libc-dev | [CVE-2023-52700](https://ubuntu.com/security/CVE-2023-52700) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 390 | linux-libc-dev | [CVE-2023-52701](https://ubuntu.com/security/CVE-2023-52701) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 391 | linux-libc-dev | [CVE-2023-52732](https://ubuntu.com/security/CVE-2023-52732) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 392 | linux-libc-dev | [CVE-2023-52737](https://ubuntu.com/security/CVE-2023-52737) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 393 | linux-libc-dev | [CVE-2023-52751](https://ubuntu.com/security/CVE-2023-52751) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 394 | linux-libc-dev | [CVE-2023-52757](https://ubuntu.com/security/CVE-2023-52757) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 395 | linux-libc-dev | [CVE-2023-52761](https://ubuntu.com/security/CVE-2023-52761) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 396 | linux-libc-dev | [CVE-2023-52829](https://ubuntu.com/security/CVE-2023-52829) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 397 | linux-libc-dev | [CVE-2023-52831](https://ubuntu.com/security/CVE-2023-52831) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 398 | linux-libc-dev | [CVE-2023-52837](https://ubuntu.com/security/CVE-2023-52837) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 399 | linux-libc-dev | [CVE-2023-52857](https://ubuntu.com/security/CVE-2023-52857) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 400 | linux-libc-dev | [CVE-2023-52879](https://ubuntu.com/security/CVE-2023-52879) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 401 | linux-libc-dev | [CVE-2023-52888](https://ubuntu.com/security/CVE-2023-52888) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 402 | linux-libc-dev | [CVE-2023-52905](https://ubuntu.com/security/CVE-2023-52905) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 403 | linux-libc-dev | [CVE-2023-52916](https://ubuntu.com/security/CVE-2023-52916) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 404 | linux-libc-dev | [CVE-2023-52920](https://ubuntu.com/security/CVE-2023-52920) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 405 | linux-libc-dev | [CVE-2023-52921](https://ubuntu.com/security/CVE-2023-52921) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 406 | linux-libc-dev | [CVE-2023-52926](https://ubuntu.com/security/CVE-2023-52926) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 407 | linux-libc-dev | [CVE-2023-52935](https://ubuntu.com/security/CVE-2023-52935) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 408 | linux-libc-dev | [CVE-2023-52939](https://ubuntu.com/security/CVE-2023-52939) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 409 | linux-libc-dev | [CVE-2023-52981](https://ubuntu.com/security/CVE-2023-52981) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 410 | linux-libc-dev | [CVE-2023-53002](https://ubuntu.com/security/CVE-2023-53002) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 411 | linux-libc-dev | [CVE-2023-53008](https://ubuntu.com/security/CVE-2023-53008) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 412 | linux-libc-dev | [CVE-2023-53009](https://ubuntu.com/security/CVE-2023-53009) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 413 | linux-libc-dev | [CVE-2023-53010](https://ubuntu.com/security/CVE-2023-53010) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 414 | linux-libc-dev | [CVE-2023-53034](https://ubuntu.com/security/CVE-2023-53034) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 415 | linux-libc-dev | [CVE-2023-53036](https://ubuntu.com/security/CVE-2023-53036) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 416 | linux-libc-dev | [CVE-2023-53037](https://ubuntu.com/security/CVE-2023-53037) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 417 | linux-libc-dev | [CVE-2023-53042](https://ubuntu.com/security/CVE-2023-53042) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 418 | linux-libc-dev | [CVE-2023-53067](https://ubuntu.com/security/CVE-2023-53067) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 419 | linux-libc-dev | [CVE-2023-53068](https://ubuntu.com/security/CVE-2023-53068) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 420 | linux-libc-dev | [CVE-2023-53072](https://ubuntu.com/security/CVE-2023-53072) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 421 | linux-libc-dev | [CVE-2023-53093](https://ubuntu.com/security/CVE-2023-53093) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 422 | linux-libc-dev | [CVE-2023-53105](https://ubuntu.com/security/CVE-2023-53105) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 423 | linux-libc-dev | [CVE-2023-53115](https://ubuntu.com/security/CVE-2023-53115) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 424 | linux-libc-dev | [CVE-2023-53149](https://ubuntu.com/security/CVE-2023-53149) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 425 | linux-libc-dev | [CVE-2023-53152](https://ubuntu.com/security/CVE-2023-53152) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 426 | linux-libc-dev | [CVE-2023-53168](https://ubuntu.com/security/CVE-2023-53168) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 427 | linux-libc-dev | [CVE-2023-53178](https://ubuntu.com/security/CVE-2023-53178) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 428 | linux-libc-dev | [CVE-2023-53180](https://ubuntu.com/security/CVE-2023-53180) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 429 | linux-libc-dev | [CVE-2023-53187](https://ubuntu.com/security/CVE-2023-53187) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 430 | linux-libc-dev | [CVE-2023-53188](https://ubuntu.com/security/CVE-2023-53188) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 431 | linux-libc-dev | [CVE-2023-53198](https://ubuntu.com/security/CVE-2023-53198) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 432 | linux-libc-dev | [CVE-2023-53209](https://ubuntu.com/security/CVE-2023-53209) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 433 | linux-libc-dev | [CVE-2023-53218](https://ubuntu.com/security/CVE-2023-53218) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 434 | linux-libc-dev | [CVE-2023-53221](https://ubuntu.com/security/CVE-2023-53221) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 435 | linux-libc-dev | [CVE-2023-53227](https://ubuntu.com/security/CVE-2023-53227) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 436 | linux-libc-dev | [CVE-2023-53231](https://ubuntu.com/security/CVE-2023-53231) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 437 | linux-libc-dev | [CVE-2023-53240](https://ubuntu.com/security/CVE-2023-53240) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 438 | linux-libc-dev | [CVE-2023-53247](https://ubuntu.com/security/CVE-2023-53247) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 439 | linux-libc-dev | [CVE-2023-53248](https://ubuntu.com/security/CVE-2023-53248) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 440 | linux-libc-dev | [CVE-2023-53254](https://ubuntu.com/security/CVE-2023-53254) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 441 | linux-libc-dev | [CVE-2023-53258](https://ubuntu.com/security/CVE-2023-53258) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 442 | linux-libc-dev | [CVE-2023-53261](https://ubuntu.com/security/CVE-2023-53261) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 443 | linux-libc-dev | [CVE-2023-53292](https://ubuntu.com/security/CVE-2023-53292) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 444 | linux-libc-dev | [CVE-2023-53293](https://ubuntu.com/security/CVE-2023-53293) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 445 | linux-libc-dev | [CVE-2023-53320](https://ubuntu.com/security/CVE-2023-53320) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 446 | linux-libc-dev | [CVE-2023-53323](https://ubuntu.com/security/CVE-2023-53323) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 447 | linux-libc-dev | [CVE-2023-53325](https://ubuntu.com/security/CVE-2023-53325) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 448 | linux-libc-dev | [CVE-2023-53332](https://ubuntu.com/security/CVE-2023-53332) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 449 | linux-libc-dev | [CVE-2023-6610](https://ubuntu.com/security/CVE-2023-6610) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 450 | linux-libc-dev | [CVE-2024-26595](https://ubuntu.com/security/CVE-2024-26595) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 451 | linux-libc-dev | [CVE-2024-26605](https://ubuntu.com/security/CVE-2024-26605) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 452 | linux-libc-dev | [CVE-2024-26647](https://ubuntu.com/security/CVE-2024-26647) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 453 | linux-libc-dev | [CVE-2024-26648](https://ubuntu.com/security/CVE-2024-26648) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 454 | linux-libc-dev | [CVE-2024-26656](https://ubuntu.com/security/CVE-2024-26656) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 455 | linux-libc-dev | [CVE-2024-26658](https://ubuntu.com/security/CVE-2024-26658) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 456 | linux-libc-dev | [CVE-2024-26662](https://ubuntu.com/security/CVE-2024-26662) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 457 | linux-libc-dev | [CVE-2024-26672](https://ubuntu.com/security/CVE-2024-26672) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 458 | linux-libc-dev | [CVE-2024-26686](https://ubuntu.com/security/CVE-2024-26686) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 459 | linux-libc-dev | [CVE-2024-26691](https://ubuntu.com/security/CVE-2024-26691) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 460 | linux-libc-dev | [CVE-2024-26699](https://ubuntu.com/security/CVE-2024-26699) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 461 | linux-libc-dev | [CVE-2024-26700](https://ubuntu.com/security/CVE-2024-26700) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 462 | linux-libc-dev | [CVE-2024-26714](https://ubuntu.com/security/CVE-2024-26714) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 463 | linux-libc-dev | [CVE-2024-26719](https://ubuntu.com/security/CVE-2024-26719) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 464 | linux-libc-dev | [CVE-2024-26739](https://ubuntu.com/security/CVE-2024-26739) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 465 | linux-libc-dev | [CVE-2024-26740](https://ubuntu.com/security/CVE-2024-26740) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 466 | linux-libc-dev | [CVE-2024-26742](https://ubuntu.com/security/CVE-2024-26742) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 467 | linux-libc-dev | [CVE-2024-26756](https://ubuntu.com/security/CVE-2024-26756) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 468 | linux-libc-dev | [CVE-2024-26757](https://ubuntu.com/security/CVE-2024-26757) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 469 | linux-libc-dev | [CVE-2024-26758](https://ubuntu.com/security/CVE-2024-26758) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 470 | linux-libc-dev | [CVE-2024-26759](https://ubuntu.com/security/CVE-2024-26759) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 471 | linux-libc-dev | [CVE-2024-26767](https://ubuntu.com/security/CVE-2024-26767) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 472 | linux-libc-dev | [CVE-2024-26770](https://ubuntu.com/security/CVE-2024-26770) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 473 | linux-libc-dev | [CVE-2024-26807](https://ubuntu.com/security/CVE-2024-26807) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 474 | linux-libc-dev | [CVE-2024-26842](https://ubuntu.com/security/CVE-2024-26842) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 475 | linux-libc-dev | [CVE-2024-26844](https://ubuntu.com/security/CVE-2024-26844) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 476 | linux-libc-dev | [CVE-2024-26853](https://ubuntu.com/security/CVE-2024-26853) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 477 | linux-libc-dev | [CVE-2024-26866](https://ubuntu.com/security/CVE-2024-26866) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 478 | linux-libc-dev | [CVE-2024-26869](https://ubuntu.com/security/CVE-2024-26869) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 479 | linux-libc-dev | [CVE-2024-26876](https://ubuntu.com/security/CVE-2024-26876) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 480 | linux-libc-dev | [CVE-2024-26938](https://ubuntu.com/security/CVE-2024-26938) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 481 | linux-libc-dev | [CVE-2024-26948](https://ubuntu.com/security/CVE-2024-26948) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 482 | linux-libc-dev | [CVE-2024-26953](https://ubuntu.com/security/CVE-2024-26953) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 483 | linux-libc-dev | [CVE-2024-26954](https://ubuntu.com/security/CVE-2024-26954) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 484 | linux-libc-dev | [CVE-2024-26982](https://ubuntu.com/security/CVE-2024-26982) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 485 | linux-libc-dev | [CVE-2024-27002](https://ubuntu.com/security/CVE-2024-27002) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 486 | linux-libc-dev | [CVE-2024-27005](https://ubuntu.com/security/CVE-2024-27005) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 487 | linux-libc-dev | [CVE-2024-27014](https://ubuntu.com/security/CVE-2024-27014) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 488 | linux-libc-dev | [CVE-2024-27025](https://ubuntu.com/security/CVE-2024-27025) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 489 | linux-libc-dev | [CVE-2024-27032](https://ubuntu.com/security/CVE-2024-27032) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 490 | linux-libc-dev | [CVE-2024-27035](https://ubuntu.com/security/CVE-2024-27035) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 491 | linux-libc-dev | [CVE-2024-27041](https://ubuntu.com/security/CVE-2024-27041) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 492 | linux-libc-dev | [CVE-2024-27056](https://ubuntu.com/security/CVE-2024-27056) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 493 | linux-libc-dev | [CVE-2024-27057](https://ubuntu.com/security/CVE-2024-27057) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 494 | linux-libc-dev | [CVE-2024-27062](https://ubuntu.com/security/CVE-2024-27062) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 495 | linux-libc-dev | [CVE-2024-27389](https://ubuntu.com/security/CVE-2024-27389) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 496 | linux-libc-dev | [CVE-2024-27400](https://ubuntu.com/security/CVE-2024-27400) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 497 | linux-libc-dev | [CVE-2024-27402](https://ubuntu.com/security/CVE-2024-27402) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 498 | linux-libc-dev | [CVE-2024-27408](https://ubuntu.com/security/CVE-2024-27408) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 499 | linux-libc-dev | [CVE-2024-27418](https://ubuntu.com/security/CVE-2024-27418) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 500 | linux-libc-dev | [CVE-2024-27435](https://ubuntu.com/security/CVE-2024-27435) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 501 | linux-libc-dev | [CVE-2024-35784](https://ubuntu.com/security/CVE-2024-35784) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 502 | linux-libc-dev | [CVE-2024-35790](https://ubuntu.com/security/CVE-2024-35790) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 503 | linux-libc-dev | [CVE-2024-35794](https://ubuntu.com/security/CVE-2024-35794) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 504 | linux-libc-dev | [CVE-2024-35799](https://ubuntu.com/security/CVE-2024-35799) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 505 | linux-libc-dev | [CVE-2024-35801](https://ubuntu.com/security/CVE-2024-35801) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 506 | linux-libc-dev | [CVE-2024-35803](https://ubuntu.com/security/CVE-2024-35803) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 507 | linux-libc-dev | [CVE-2024-35808](https://ubuntu.com/security/CVE-2024-35808) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 508 | linux-libc-dev | [CVE-2024-35826](https://ubuntu.com/security/CVE-2024-35826) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 509 | linux-libc-dev | [CVE-2024-35832](https://ubuntu.com/security/CVE-2024-35832) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 510 | linux-libc-dev | [CVE-2024-35839](https://ubuntu.com/security/CVE-2024-35839) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 511 | linux-libc-dev | [CVE-2024-35843](https://ubuntu.com/security/CVE-2024-35843) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 512 | linux-libc-dev | [CVE-2024-35861](https://ubuntu.com/security/CVE-2024-35861) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 513 | linux-libc-dev | [CVE-2024-35862](https://ubuntu.com/security/CVE-2024-35862) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 514 | linux-libc-dev | [CVE-2024-35863](https://ubuntu.com/security/CVE-2024-35863) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 515 | linux-libc-dev | [CVE-2024-35865](https://ubuntu.com/security/CVE-2024-35865) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 516 | linux-libc-dev | [CVE-2024-35866](https://ubuntu.com/security/CVE-2024-35866) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 517 | linux-libc-dev | [CVE-2024-35867](https://ubuntu.com/security/CVE-2024-35867) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 518 | linux-libc-dev | [CVE-2024-35868](https://ubuntu.com/security/CVE-2024-35868) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 519 | linux-libc-dev | [CVE-2024-35870](https://ubuntu.com/security/CVE-2024-35870) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 520 | linux-libc-dev | [CVE-2024-35875](https://ubuntu.com/security/CVE-2024-35875) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 521 | linux-libc-dev | [CVE-2024-35878](https://ubuntu.com/security/CVE-2024-35878) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 522 | linux-libc-dev | [CVE-2024-35908](https://ubuntu.com/security/CVE-2024-35908) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 523 | linux-libc-dev | [CVE-2024-35924](https://ubuntu.com/security/CVE-2024-35924) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 524 | linux-libc-dev | [CVE-2024-35926](https://ubuntu.com/security/CVE-2024-35926) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 525 | linux-libc-dev | [CVE-2024-35929](https://ubuntu.com/security/CVE-2024-35929) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 526 | linux-libc-dev | [CVE-2024-35931](https://ubuntu.com/security/CVE-2024-35931) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 527 | linux-libc-dev | [CVE-2024-35932](https://ubuntu.com/security/CVE-2024-35932) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 528 | linux-libc-dev | [CVE-2024-35937](https://ubuntu.com/security/CVE-2024-35937) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 529 | linux-libc-dev | [CVE-2024-35939](https://ubuntu.com/security/CVE-2024-35939) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 530 | linux-libc-dev | [CVE-2024-35942](https://ubuntu.com/security/CVE-2024-35942) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 531 | linux-libc-dev | [CVE-2024-35943](https://ubuntu.com/security/CVE-2024-35943) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 532 | linux-libc-dev | [CVE-2024-35945](https://ubuntu.com/security/CVE-2024-35945) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 533 | linux-libc-dev | [CVE-2024-35946](https://ubuntu.com/security/CVE-2024-35946) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 534 | linux-libc-dev | [CVE-2024-35949](https://ubuntu.com/security/CVE-2024-35949) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 535 | linux-libc-dev | [CVE-2024-35956](https://ubuntu.com/security/CVE-2024-35956) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 536 | linux-libc-dev | [CVE-2024-35959](https://ubuntu.com/security/CVE-2024-35959) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 537 | linux-libc-dev | [CVE-2024-35971](https://ubuntu.com/security/CVE-2024-35971) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 538 | linux-libc-dev | [CVE-2024-35995](https://ubuntu.com/security/CVE-2024-35995) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 539 | linux-libc-dev | [CVE-2024-35998](https://ubuntu.com/security/CVE-2024-35998) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 540 | linux-libc-dev | [CVE-2024-35999](https://ubuntu.com/security/CVE-2024-35999) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 541 | linux-libc-dev | [CVE-2024-36000](https://ubuntu.com/security/CVE-2024-36000) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 542 | linux-libc-dev | [CVE-2024-36003](https://ubuntu.com/security/CVE-2024-36003) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 543 | linux-libc-dev | [CVE-2024-36009](https://ubuntu.com/security/CVE-2024-36009) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 544 | linux-libc-dev | [CVE-2024-36012](https://ubuntu.com/security/CVE-2024-36012) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 545 | linux-libc-dev | [CVE-2024-36013](https://ubuntu.com/security/CVE-2024-36013) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 546 | linux-libc-dev | [CVE-2024-36021](https://ubuntu.com/security/CVE-2024-36021) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 547 | linux-libc-dev | [CVE-2024-36024](https://ubuntu.com/security/CVE-2024-36024) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 548 | linux-libc-dev | [CVE-2024-36026](https://ubuntu.com/security/CVE-2024-36026) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 549 | linux-libc-dev | [CVE-2024-36244](https://ubuntu.com/security/CVE-2024-36244) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 550 | linux-libc-dev | [CVE-2024-36331](https://ubuntu.com/security/CVE-2024-36331) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 551 | linux-libc-dev | [CVE-2024-36347](https://ubuntu.com/security/CVE-2024-36347) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 552 | linux-libc-dev | [CVE-2024-36350](https://ubuntu.com/security/CVE-2024-36350) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 553 | linux-libc-dev | [CVE-2024-36357](https://ubuntu.com/security/CVE-2024-36357) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 554 | linux-libc-dev | [CVE-2024-36478](https://ubuntu.com/security/CVE-2024-36478) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 555 | linux-libc-dev | [CVE-2024-36479](https://ubuntu.com/security/CVE-2024-36479) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 556 | linux-libc-dev | [CVE-2024-36898](https://ubuntu.com/security/CVE-2024-36898) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 557 | linux-libc-dev | [CVE-2024-36900](https://ubuntu.com/security/CVE-2024-36900) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 558 | linux-libc-dev | [CVE-2024-36903](https://ubuntu.com/security/CVE-2024-36903) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 559 | linux-libc-dev | [CVE-2024-36908](https://ubuntu.com/security/CVE-2024-36908) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 560 | linux-libc-dev | [CVE-2024-36909](https://ubuntu.com/security/CVE-2024-36909) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 561 | linux-libc-dev | [CVE-2024-36910](https://ubuntu.com/security/CVE-2024-36910) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 562 | linux-libc-dev | [CVE-2024-36911](https://ubuntu.com/security/CVE-2024-36911) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 563 | linux-libc-dev | [CVE-2024-36914](https://ubuntu.com/security/CVE-2024-36914) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 564 | linux-libc-dev | [CVE-2024-36915](https://ubuntu.com/security/CVE-2024-36915) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 565 | linux-libc-dev | [CVE-2024-36917](https://ubuntu.com/security/CVE-2024-36917) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 566 | linux-libc-dev | [CVE-2024-36918](https://ubuntu.com/security/CVE-2024-36918) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 567 | linux-libc-dev | [CVE-2024-36920](https://ubuntu.com/security/CVE-2024-36920) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 568 | linux-libc-dev | [CVE-2024-36921](https://ubuntu.com/security/CVE-2024-36921) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 569 | linux-libc-dev | [CVE-2024-36922](https://ubuntu.com/security/CVE-2024-36922) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 570 | linux-libc-dev | [CVE-2024-36923](https://ubuntu.com/security/CVE-2024-36923) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 571 | linux-libc-dev | [CVE-2024-36924](https://ubuntu.com/security/CVE-2024-36924) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 572 | linux-libc-dev | [CVE-2024-36927](https://ubuntu.com/security/CVE-2024-36927) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 573 | linux-libc-dev | [CVE-2024-36945](https://ubuntu.com/security/CVE-2024-36945) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 574 | linux-libc-dev | [CVE-2024-36948](https://ubuntu.com/security/CVE-2024-36948) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 575 | linux-libc-dev | [CVE-2024-36949](https://ubuntu.com/security/CVE-2024-36949) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 576 | linux-libc-dev | [CVE-2024-36951](https://ubuntu.com/security/CVE-2024-36951) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 577 | linux-libc-dev | [CVE-2024-36966](https://ubuntu.com/security/CVE-2024-36966) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 578 | linux-libc-dev | [CVE-2024-37021](https://ubuntu.com/security/CVE-2024-37021) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 579 | linux-libc-dev | [CVE-2024-37354](https://ubuntu.com/security/CVE-2024-37354) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 580 | linux-libc-dev | [CVE-2024-38306](https://ubuntu.com/security/CVE-2024-38306) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 581 | linux-libc-dev | [CVE-2024-38540](https://ubuntu.com/security/CVE-2024-38540) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 582 | linux-libc-dev | [CVE-2024-38541](https://ubuntu.com/security/CVE-2024-38541) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 583 | linux-libc-dev | [CVE-2024-38543](https://ubuntu.com/security/CVE-2024-38543) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 584 | linux-libc-dev | [CVE-2024-38554](https://ubuntu.com/security/CVE-2024-38554) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 585 | linux-libc-dev | [CVE-2024-38556](https://ubuntu.com/security/CVE-2024-38556) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 586 | linux-libc-dev | [CVE-2024-38557](https://ubuntu.com/security/CVE-2024-38557) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 587 | linux-libc-dev | [CVE-2024-38564](https://ubuntu.com/security/CVE-2024-38564) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 588 | linux-libc-dev | [CVE-2024-38594](https://ubuntu.com/security/CVE-2024-38594) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 589 | linux-libc-dev | [CVE-2024-38608](https://ubuntu.com/security/CVE-2024-38608) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 590 | linux-libc-dev | [CVE-2024-38625](https://ubuntu.com/security/CVE-2024-38625) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 591 | linux-libc-dev | [CVE-2024-38628](https://ubuntu.com/security/CVE-2024-38628) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 592 | linux-libc-dev | [CVE-2024-39282](https://ubuntu.com/security/CVE-2024-39282) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 593 | linux-libc-dev | [CVE-2024-39293](https://ubuntu.com/security/CVE-2024-39293) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 594 | linux-libc-dev | [CVE-2024-39298](https://ubuntu.com/security/CVE-2024-39298) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 595 | linux-libc-dev | [CVE-2024-39508](https://ubuntu.com/security/CVE-2024-39508) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 596 | linux-libc-dev | [CVE-2024-40900](https://ubuntu.com/security/CVE-2024-40900) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 597 | linux-libc-dev | [CVE-2024-40918](https://ubuntu.com/security/CVE-2024-40918) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 598 | linux-libc-dev | [CVE-2024-40954](https://ubuntu.com/security/CVE-2024-40954) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 599 | linux-libc-dev | [CVE-2024-40966](https://ubuntu.com/security/CVE-2024-40966) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 600 | linux-libc-dev | [CVE-2024-40972](https://ubuntu.com/security/CVE-2024-40972) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 601 | linux-libc-dev | [CVE-2024-40975](https://ubuntu.com/security/CVE-2024-40975) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 602 | linux-libc-dev | [CVE-2024-40977](https://ubuntu.com/security/CVE-2024-40977) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 603 | linux-libc-dev | [CVE-2024-40979](https://ubuntu.com/security/CVE-2024-40979) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 604 | linux-libc-dev | [CVE-2024-40989](https://ubuntu.com/security/CVE-2024-40989) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 605 | linux-libc-dev | [CVE-2024-40998](https://ubuntu.com/security/CVE-2024-40998) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 606 | linux-libc-dev | [CVE-2024-40999](https://ubuntu.com/security/CVE-2024-40999) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 607 | linux-libc-dev | [CVE-2024-41001](https://ubuntu.com/security/CVE-2024-41001) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 608 | linux-libc-dev | [CVE-2024-41008](https://ubuntu.com/security/CVE-2024-41008) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 609 | linux-libc-dev | [CVE-2024-41013](https://ubuntu.com/security/CVE-2024-41013) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 610 | linux-libc-dev | [CVE-2024-41014](https://ubuntu.com/security/CVE-2024-41014) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 611 | linux-libc-dev | [CVE-2024-41023](https://ubuntu.com/security/CVE-2024-41023) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 612 | linux-libc-dev | [CVE-2024-41030](https://ubuntu.com/security/CVE-2024-41030) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 613 | linux-libc-dev | [CVE-2024-41031](https://ubuntu.com/security/CVE-2024-41031) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 614 | linux-libc-dev | [CVE-2024-41036](https://ubuntu.com/security/CVE-2024-41036) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 615 | linux-libc-dev | [CVE-2024-41045](https://ubuntu.com/security/CVE-2024-41045) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 616 | linux-libc-dev | [CVE-2024-41050](https://ubuntu.com/security/CVE-2024-41050) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 617 | linux-libc-dev | [CVE-2024-41062](https://ubuntu.com/security/CVE-2024-41062) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 618 | linux-libc-dev | [CVE-2024-41067](https://ubuntu.com/security/CVE-2024-41067) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 619 | linux-libc-dev | [CVE-2024-41069](https://ubuntu.com/security/CVE-2024-41069) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 620 | linux-libc-dev | [CVE-2024-41074](https://ubuntu.com/security/CVE-2024-41074) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 621 | linux-libc-dev | [CVE-2024-41075](https://ubuntu.com/security/CVE-2024-41075) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 622 | linux-libc-dev | [CVE-2024-41079](https://ubuntu.com/security/CVE-2024-41079) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 623 | linux-libc-dev | [CVE-2024-41082](https://ubuntu.com/security/CVE-2024-41082) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 624 | linux-libc-dev | [CVE-2024-41088](https://ubuntu.com/security/CVE-2024-41088) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 625 | linux-libc-dev | [CVE-2024-41935](https://ubuntu.com/security/CVE-2024-41935) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 626 | linux-libc-dev | [CVE-2024-42067](https://ubuntu.com/security/CVE-2024-42067) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 627 | linux-libc-dev | [CVE-2024-42091](https://ubuntu.com/security/CVE-2024-42091) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 628 | linux-libc-dev | [CVE-2024-42107](https://ubuntu.com/security/CVE-2024-42107) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 629 | linux-libc-dev | [CVE-2024-42110](https://ubuntu.com/security/CVE-2024-42110) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 630 | linux-libc-dev | [CVE-2024-42117](https://ubuntu.com/security/CVE-2024-42117) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 631 | linux-libc-dev | [CVE-2024-42118](https://ubuntu.com/security/CVE-2024-42118) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 632 | linux-libc-dev | [CVE-2024-42122](https://ubuntu.com/security/CVE-2024-42122) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 633 | linux-libc-dev | [CVE-2024-42125](https://ubuntu.com/security/CVE-2024-42125) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 634 | linux-libc-dev | [CVE-2024-42128](https://ubuntu.com/security/CVE-2024-42128) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 635 | linux-libc-dev | [CVE-2024-42129](https://ubuntu.com/security/CVE-2024-42129) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 636 | linux-libc-dev | [CVE-2024-42134](https://ubuntu.com/security/CVE-2024-42134) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 637 | linux-libc-dev | [CVE-2024-42135](https://ubuntu.com/security/CVE-2024-42135) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 638 | linux-libc-dev | [CVE-2024-42139](https://ubuntu.com/security/CVE-2024-42139) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 639 | linux-libc-dev | [CVE-2024-42147](https://ubuntu.com/security/CVE-2024-42147) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 640 | linux-libc-dev | [CVE-2024-42151](https://ubuntu.com/security/CVE-2024-42151) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 641 | linux-libc-dev | [CVE-2024-42155](https://ubuntu.com/security/CVE-2024-42155) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 642 | linux-libc-dev | [CVE-2024-42230](https://ubuntu.com/security/CVE-2024-42230) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 643 | linux-libc-dev | [CVE-2024-42239](https://ubuntu.com/security/CVE-2024-42239) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 644 | linux-libc-dev | [CVE-2024-42253](https://ubuntu.com/security/CVE-2024-42253) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 645 | linux-libc-dev | [CVE-2024-42273](https://ubuntu.com/security/CVE-2024-42273) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 646 | linux-libc-dev | [CVE-2024-42319](https://ubuntu.com/security/CVE-2024-42319) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 647 | linux-libc-dev | [CVE-2024-42320](https://ubuntu.com/security/CVE-2024-42320) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 648 | linux-libc-dev | [CVE-2024-42321](https://ubuntu.com/security/CVE-2024-42321) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 649 | linux-libc-dev | [CVE-2024-42322](https://ubuntu.com/security/CVE-2024-42322) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 650 | linux-libc-dev | [CVE-2024-43823](https://ubuntu.com/security/CVE-2024-43823) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 651 | linux-libc-dev | [CVE-2024-43824](https://ubuntu.com/security/CVE-2024-43824) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 652 | linux-libc-dev | [CVE-2024-43831](https://ubuntu.com/security/CVE-2024-43831) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 653 | linux-libc-dev | [CVE-2024-43832](https://ubuntu.com/security/CVE-2024-43832) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 654 | linux-libc-dev | [CVE-2024-43842](https://ubuntu.com/security/CVE-2024-43842) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 655 | linux-libc-dev | [CVE-2024-43844](https://ubuntu.com/security/CVE-2024-43844) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 656 | linux-libc-dev | [CVE-2024-43866](https://ubuntu.com/security/CVE-2024-43866) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 657 | linux-libc-dev | [CVE-2024-43872](https://ubuntu.com/security/CVE-2024-43872) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 658 | linux-libc-dev | [CVE-2024-43899](https://ubuntu.com/security/CVE-2024-43899) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 659 | linux-libc-dev | [CVE-2024-43911](https://ubuntu.com/security/CVE-2024-43911) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 660 | linux-libc-dev | [CVE-2024-43912](https://ubuntu.com/security/CVE-2024-43912) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 661 | linux-libc-dev | [CVE-2024-44950](https://ubuntu.com/security/CVE-2024-44950) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 662 | linux-libc-dev | [CVE-2024-44961](https://ubuntu.com/security/CVE-2024-44961) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 663 | linux-libc-dev | [CVE-2024-44962](https://ubuntu.com/security/CVE-2024-44962) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 664 | linux-libc-dev | [CVE-2024-44963](https://ubuntu.com/security/CVE-2024-44963) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 665 | linux-libc-dev | [CVE-2024-44970](https://ubuntu.com/security/CVE-2024-44970) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 666 | linux-libc-dev | [CVE-2024-44972](https://ubuntu.com/security/CVE-2024-44972) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 667 | linux-libc-dev | [CVE-2024-45010](https://ubuntu.com/security/CVE-2024-45010) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 668 | linux-libc-dev | [CVE-2024-45015](https://ubuntu.com/security/CVE-2024-45015) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 669 | linux-libc-dev | [CVE-2024-46678](https://ubuntu.com/security/CVE-2024-46678) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 670 | linux-libc-dev | [CVE-2024-46681](https://ubuntu.com/security/CVE-2024-46681) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 671 | linux-libc-dev | [CVE-2024-46705](https://ubuntu.com/security/CVE-2024-46705) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 672 | linux-libc-dev | [CVE-2024-46715](https://ubuntu.com/security/CVE-2024-46715) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 673 | linux-libc-dev | [CVE-2024-46716](https://ubuntu.com/security/CVE-2024-46716) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 674 | linux-libc-dev | [CVE-2024-46717](https://ubuntu.com/security/CVE-2024-46717) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 675 | linux-libc-dev | [CVE-2024-46718](https://ubuntu.com/security/CVE-2024-46718) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 676 | linux-libc-dev | [CVE-2024-46720](https://ubuntu.com/security/CVE-2024-46720) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 677 | linux-libc-dev | [CVE-2024-46726](https://ubuntu.com/security/CVE-2024-46726) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 678 | linux-libc-dev | [CVE-2024-46727](https://ubuntu.com/security/CVE-2024-46727) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 679 | linux-libc-dev | [CVE-2024-46728](https://ubuntu.com/security/CVE-2024-46728) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 680 | linux-libc-dev | [CVE-2024-46729](https://ubuntu.com/security/CVE-2024-46729) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 681 | linux-libc-dev | [CVE-2024-46730](https://ubuntu.com/security/CVE-2024-46730) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 682 | linux-libc-dev | [CVE-2024-46733](https://ubuntu.com/security/CVE-2024-46733) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 683 | linux-libc-dev | [CVE-2024-46742](https://ubuntu.com/security/CVE-2024-46742) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 684 | linux-libc-dev | [CVE-2024-46748](https://ubuntu.com/security/CVE-2024-46748) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 685 | linux-libc-dev | [CVE-2024-46749](https://ubuntu.com/security/CVE-2024-46749) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 686 | linux-libc-dev | [CVE-2024-46751](https://ubuntu.com/security/CVE-2024-46751) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 687 | linux-libc-dev | [CVE-2024-46753](https://ubuntu.com/security/CVE-2024-46753) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 688 | linux-libc-dev | [CVE-2024-46754](https://ubuntu.com/security/CVE-2024-46754) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 689 | linux-libc-dev | [CVE-2024-46762](https://ubuntu.com/security/CVE-2024-46762) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 690 | linux-libc-dev | [CVE-2024-46765](https://ubuntu.com/security/CVE-2024-46765) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 691 | linux-libc-dev | [CVE-2024-46770](https://ubuntu.com/security/CVE-2024-46770) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 692 | linux-libc-dev | [CVE-2024-46774](https://ubuntu.com/security/CVE-2024-46774) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 693 | linux-libc-dev | [CVE-2024-46775](https://ubuntu.com/security/CVE-2024-46775) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 694 | linux-libc-dev | [CVE-2024-46778](https://ubuntu.com/security/CVE-2024-46778) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 695 | linux-libc-dev | [CVE-2024-46787](https://ubuntu.com/security/CVE-2024-46787) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
+| 696 | linux-libc-dev | [CVE-2024-46802](https://ubuntu.com/security/CVE-2024-46802) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 697 | linux-libc-dev | [CVE-2024-46803](https://ubuntu.com/security/CVE-2024-46803) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 698 | linux-libc-dev | [CVE-2024-46806](https://ubuntu.com/security/CVE-2024-46806) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 699 | linux-libc-dev | [CVE-2024-46808](https://ubuntu.com/security/CVE-2024-46808) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 700 | linux-libc-dev | [CVE-2024-46811](https://ubuntu.com/security/CVE-2024-46811) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 701 | linux-libc-dev | [CVE-2024-46812](https://ubuntu.com/security/CVE-2024-46812) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 702 | linux-libc-dev | [CVE-2024-46813](https://ubuntu.com/security/CVE-2024-46813) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 703 | linux-libc-dev | [CVE-2024-46816](https://ubuntu.com/security/CVE-2024-46816) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 704 | linux-libc-dev | [CVE-2024-46820](https://ubuntu.com/security/CVE-2024-46820) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 705 | linux-libc-dev | [CVE-2024-46821](https://ubuntu.com/security/CVE-2024-46821) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 706 | linux-libc-dev | [CVE-2024-46823](https://ubuntu.com/security/CVE-2024-46823) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 707 | linux-libc-dev | [CVE-2024-46827](https://ubuntu.com/security/CVE-2024-46827) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 708 | linux-libc-dev | [CVE-2024-46830](https://ubuntu.com/security/CVE-2024-46830) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 709 | linux-libc-dev | [CVE-2024-46833](https://ubuntu.com/security/CVE-2024-46833) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 710 | linux-libc-dev | [CVE-2024-46834](https://ubuntu.com/security/CVE-2024-46834) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 711 | linux-libc-dev | [CVE-2024-46835](https://ubuntu.com/security/CVE-2024-46835) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 712 | linux-libc-dev | [CVE-2024-46836](https://ubuntu.com/security/CVE-2024-46836) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 713 | linux-libc-dev | [CVE-2024-46842](https://ubuntu.com/security/CVE-2024-46842) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 714 | linux-libc-dev | [CVE-2024-46843](https://ubuntu.com/security/CVE-2024-46843) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 715 | linux-libc-dev | [CVE-2024-46848](https://ubuntu.com/security/CVE-2024-46848) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 716 | linux-libc-dev | [CVE-2024-46857](https://ubuntu.com/security/CVE-2024-46857) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 717 | linux-libc-dev | [CVE-2024-46860](https://ubuntu.com/security/CVE-2024-46860) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 718 | linux-libc-dev | [CVE-2024-46861](https://ubuntu.com/security/CVE-2024-46861) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 719 | linux-libc-dev | [CVE-2024-46870](https://ubuntu.com/security/CVE-2024-46870) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 720 | linux-libc-dev | [CVE-2024-47141](https://ubuntu.com/security/CVE-2024-47141) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 721 | linux-libc-dev | [CVE-2024-47658](https://ubuntu.com/security/CVE-2024-47658) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 722 | linux-libc-dev | [CVE-2024-47661](https://ubuntu.com/security/CVE-2024-47661) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 723 | linux-libc-dev | [CVE-2024-47662](https://ubuntu.com/security/CVE-2024-47662) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 724 | linux-libc-dev | [CVE-2024-47664](https://ubuntu.com/security/CVE-2024-47664) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 725 | linux-libc-dev | [CVE-2024-47666](https://ubuntu.com/security/CVE-2024-47666) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 726 | linux-libc-dev | [CVE-2024-47678](https://ubuntu.com/security/CVE-2024-47678) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 727 | linux-libc-dev | [CVE-2024-47683](https://ubuntu.com/security/CVE-2024-47683) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 728 | linux-libc-dev | [CVE-2024-47689](https://ubuntu.com/security/CVE-2024-47689) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 729 | linux-libc-dev | [CVE-2024-47691](https://ubuntu.com/security/CVE-2024-47691) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 730 | linux-libc-dev | [CVE-2024-47703](https://ubuntu.com/security/CVE-2024-47703) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 731 | linux-libc-dev | [CVE-2024-47704](https://ubuntu.com/security/CVE-2024-47704) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 732 | linux-libc-dev | [CVE-2024-47726](https://ubuntu.com/security/CVE-2024-47726) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 733 | linux-libc-dev | [CVE-2024-47728](https://ubuntu.com/security/CVE-2024-47728) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 734 | linux-libc-dev | [CVE-2024-47736](https://ubuntu.com/security/CVE-2024-47736) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 735 | linux-libc-dev | [CVE-2024-47738](https://ubuntu.com/security/CVE-2024-47738) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 736 | linux-libc-dev | [CVE-2024-47745](https://ubuntu.com/security/CVE-2024-47745) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 737 | linux-libc-dev | [CVE-2024-47794](https://ubuntu.com/security/CVE-2024-47794) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 738 | linux-libc-dev | [CVE-2024-47809](https://ubuntu.com/security/CVE-2024-47809) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 739 | linux-libc-dev | [CVE-2024-48873](https://ubuntu.com/security/CVE-2024-48873) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 740 | linux-libc-dev | [CVE-2024-48875](https://ubuntu.com/security/CVE-2024-48875) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 741 | linux-libc-dev | [CVE-2024-49568](https://ubuntu.com/security/CVE-2024-49568) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 742 | linux-libc-dev | [CVE-2024-49569](https://ubuntu.com/security/CVE-2024-49569) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 743 | linux-libc-dev | [CVE-2024-49855](https://ubuntu.com/security/CVE-2024-49855) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 744 | linux-libc-dev | [CVE-2024-49859](https://ubuntu.com/security/CVE-2024-49859) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 745 | linux-libc-dev | [CVE-2024-49861](https://ubuntu.com/security/CVE-2024-49861) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 746 | linux-libc-dev | [CVE-2024-49870](https://ubuntu.com/security/CVE-2024-49870) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 747 | linux-libc-dev | [CVE-2024-49880](https://ubuntu.com/security/CVE-2024-49880) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 748 | linux-libc-dev | [CVE-2024-49888](https://ubuntu.com/security/CVE-2024-49888) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 749 | linux-libc-dev | [CVE-2024-49891](https://ubuntu.com/security/CVE-2024-49891) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 750 | linux-libc-dev | [CVE-2024-49893](https://ubuntu.com/security/CVE-2024-49893) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 751 | linux-libc-dev | [CVE-2024-49898](https://ubuntu.com/security/CVE-2024-49898) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 752 | linux-libc-dev | [CVE-2024-49899](https://ubuntu.com/security/CVE-2024-49899) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 753 | linux-libc-dev | [CVE-2024-49901](https://ubuntu.com/security/CVE-2024-49901) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 754 | linux-libc-dev | [CVE-2024-49904](https://ubuntu.com/security/CVE-2024-49904) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 755 | linux-libc-dev | [CVE-2024-49905](https://ubuntu.com/security/CVE-2024-49905) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 756 | linux-libc-dev | [CVE-2024-49906](https://ubuntu.com/security/CVE-2024-49906) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 757 | linux-libc-dev | [CVE-2024-49908](https://ubuntu.com/security/CVE-2024-49908) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 758 | linux-libc-dev | [CVE-2024-49909](https://ubuntu.com/security/CVE-2024-49909) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 759 | linux-libc-dev | [CVE-2024-49910](https://ubuntu.com/security/CVE-2024-49910) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 760 | linux-libc-dev | [CVE-2024-49911](https://ubuntu.com/security/CVE-2024-49911) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 761 | linux-libc-dev | [CVE-2024-49912](https://ubuntu.com/security/CVE-2024-49912) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 762 | linux-libc-dev | [CVE-2024-49914](https://ubuntu.com/security/CVE-2024-49914) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 763 | linux-libc-dev | [CVE-2024-49915](https://ubuntu.com/security/CVE-2024-49915) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 764 | linux-libc-dev | [CVE-2024-49916](https://ubuntu.com/security/CVE-2024-49916) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 765 | linux-libc-dev | [CVE-2024-49917](https://ubuntu.com/security/CVE-2024-49917) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 766 | linux-libc-dev | [CVE-2024-49918](https://ubuntu.com/security/CVE-2024-49918) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 767 | linux-libc-dev | [CVE-2024-49919](https://ubuntu.com/security/CVE-2024-49919) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 768 | linux-libc-dev | [CVE-2024-49920](https://ubuntu.com/security/CVE-2024-49920) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 769 | linux-libc-dev | [CVE-2024-49921](https://ubuntu.com/security/CVE-2024-49921) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 770 | linux-libc-dev | [CVE-2024-49922](https://ubuntu.com/security/CVE-2024-49922) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 771 | linux-libc-dev | [CVE-2024-49923](https://ubuntu.com/security/CVE-2024-49923) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 772 | linux-libc-dev | [CVE-2024-49926](https://ubuntu.com/security/CVE-2024-49926) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 773 | linux-libc-dev | [CVE-2024-49928](https://ubuntu.com/security/CVE-2024-49928) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 774 | linux-libc-dev | [CVE-2024-49929](https://ubuntu.com/security/CVE-2024-49929) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 775 | linux-libc-dev | [CVE-2024-49931](https://ubuntu.com/security/CVE-2024-49931) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 776 | linux-libc-dev | [CVE-2024-49932](https://ubuntu.com/security/CVE-2024-49932) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 777 | linux-libc-dev | [CVE-2024-49934](https://ubuntu.com/security/CVE-2024-49934) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 778 | linux-libc-dev | [CVE-2024-49937](https://ubuntu.com/security/CVE-2024-49937) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 779 | linux-libc-dev | [CVE-2024-49939](https://ubuntu.com/security/CVE-2024-49939) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 780 | linux-libc-dev | [CVE-2024-49940](https://ubuntu.com/security/CVE-2024-49940) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 781 | linux-libc-dev | [CVE-2024-49945](https://ubuntu.com/security/CVE-2024-49945) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 782 | linux-libc-dev | [CVE-2024-49960](https://ubuntu.com/security/CVE-2024-49960) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 783 | linux-libc-dev | [CVE-2024-49961](https://ubuntu.com/security/CVE-2024-49961) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 784 | linux-libc-dev | [CVE-2024-49970](https://ubuntu.com/security/CVE-2024-49970) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 785 | linux-libc-dev | [CVE-2024-49971](https://ubuntu.com/security/CVE-2024-49971) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 786 | linux-libc-dev | [CVE-2024-49978](https://ubuntu.com/security/CVE-2024-49978) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 787 | linux-libc-dev | [CVE-2024-49987](https://ubuntu.com/security/CVE-2024-49987) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 788 | linux-libc-dev | [CVE-2024-49988](https://ubuntu.com/security/CVE-2024-49988) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 789 | linux-libc-dev | [CVE-2024-49989](https://ubuntu.com/security/CVE-2024-49989) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 790 | linux-libc-dev | [CVE-2024-49990](https://ubuntu.com/security/CVE-2024-49990) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 791 | linux-libc-dev | [CVE-2024-49991](https://ubuntu.com/security/CVE-2024-49991) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 792 | linux-libc-dev | [CVE-2024-49992](https://ubuntu.com/security/CVE-2024-49992) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 793 | linux-libc-dev | [CVE-2024-49994](https://ubuntu.com/security/CVE-2024-49994) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 794 | linux-libc-dev | [CVE-2024-50004](https://ubuntu.com/security/CVE-2024-50004) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 795 | linux-libc-dev | [CVE-2024-50009](https://ubuntu.com/security/CVE-2024-50009) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 796 | linux-libc-dev | [CVE-2024-50012](https://ubuntu.com/security/CVE-2024-50012) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 797 | linux-libc-dev | [CVE-2024-50014](https://ubuntu.com/security/CVE-2024-50014) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 798 | linux-libc-dev | [CVE-2024-50017](https://ubuntu.com/security/CVE-2024-50017) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 799 | linux-libc-dev | [CVE-2024-50028](https://ubuntu.com/security/CVE-2024-50028) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 800 | linux-libc-dev | [CVE-2024-50034](https://ubuntu.com/security/CVE-2024-50034) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 801 | linux-libc-dev | [CVE-2024-50048](https://ubuntu.com/security/CVE-2024-50048) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 802 | linux-libc-dev | [CVE-2024-50056](https://ubuntu.com/security/CVE-2024-50056) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 803 | linux-libc-dev | [CVE-2024-50057](https://ubuntu.com/security/CVE-2024-50057) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 804 | linux-libc-dev | [CVE-2024-50060](https://ubuntu.com/security/CVE-2024-50060) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 805 | linux-libc-dev | [CVE-2024-50061](https://ubuntu.com/security/CVE-2024-50061) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 806 | linux-libc-dev | [CVE-2024-50063](https://ubuntu.com/security/CVE-2024-50063) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 807 | linux-libc-dev | [CVE-2024-50067](https://ubuntu.com/security/CVE-2024-50067) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 808 | linux-libc-dev | [CVE-2024-50073](https://ubuntu.com/security/CVE-2024-50073) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-151.161 |
+| 809 | linux-libc-dev | [CVE-2024-50090](https://ubuntu.com/security/CVE-2024-50090) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 810 | linux-libc-dev | [CVE-2024-50091](https://ubuntu.com/security/CVE-2024-50091) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 811 | linux-libc-dev | [CVE-2024-50098](https://ubuntu.com/security/CVE-2024-50098) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 812 | linux-libc-dev | [CVE-2024-50106](https://ubuntu.com/security/CVE-2024-50106) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 813 | linux-libc-dev | [CVE-2024-50108](https://ubuntu.com/security/CVE-2024-50108) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 814 | linux-libc-dev | [CVE-2024-50111](https://ubuntu.com/security/CVE-2024-50111) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 815 | linux-libc-dev | [CVE-2024-50112](https://ubuntu.com/security/CVE-2024-50112) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 816 | linux-libc-dev | [CVE-2024-50125](https://ubuntu.com/security/CVE-2024-50125) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 817 | linux-libc-dev | [CVE-2024-50135](https://ubuntu.com/security/CVE-2024-50135) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 818 | linux-libc-dev | [CVE-2024-50138](https://ubuntu.com/security/CVE-2024-50138) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 819 | linux-libc-dev | [CVE-2024-50146](https://ubuntu.com/security/CVE-2024-50146) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 820 | linux-libc-dev | [CVE-2024-50164](https://ubuntu.com/security/CVE-2024-50164) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 821 | linux-libc-dev | [CVE-2024-50166](https://ubuntu.com/security/CVE-2024-50166) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 822 | linux-libc-dev | [CVE-2024-50183](https://ubuntu.com/security/CVE-2024-50183) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 823 | linux-libc-dev | [CVE-2024-50187](https://ubuntu.com/security/CVE-2024-50187) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 824 | linux-libc-dev | [CVE-2024-50211](https://ubuntu.com/security/CVE-2024-50211) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 825 | linux-libc-dev | [CVE-2024-50246](https://ubuntu.com/security/CVE-2024-50246) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 826 | linux-libc-dev | [CVE-2024-50258](https://ubuntu.com/security/CVE-2024-50258) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 827 | linux-libc-dev | [CVE-2024-50271](https://ubuntu.com/security/CVE-2024-50271) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 828 | linux-libc-dev | [CVE-2024-50272](https://ubuntu.com/security/CVE-2024-50272) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 829 | linux-libc-dev | [CVE-2024-50280](https://ubuntu.com/security/CVE-2024-50280) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 830 | linux-libc-dev | [CVE-2024-50284](https://ubuntu.com/security/CVE-2024-50284) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 831 | linux-libc-dev | [CVE-2024-50285](https://ubuntu.com/security/CVE-2024-50285) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 832 | linux-libc-dev | [CVE-2024-50286](https://ubuntu.com/security/CVE-2024-50286) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 833 | linux-libc-dev | [CVE-2024-50289](https://ubuntu.com/security/CVE-2024-50289) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 834 | linux-libc-dev | [CVE-2024-50298](https://ubuntu.com/security/CVE-2024-50298) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 835 | linux-libc-dev | [CVE-2024-52559](https://ubuntu.com/security/CVE-2024-52559) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 836 | linux-libc-dev | [CVE-2024-52560](https://ubuntu.com/security/CVE-2024-52560) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 837 | linux-libc-dev | [CVE-2024-53050](https://ubuntu.com/security/CVE-2024-53050) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 838 | linux-libc-dev | [CVE-2024-53051](https://ubuntu.com/security/CVE-2024-53051) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
+| 839 | linux-libc-dev | [CVE-2024-53056](https://ubuntu.com/security/CVE-2024-53056) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 840 | linux-libc-dev | [CVE-2024-53068](https://ubuntu.com/security/CVE-2024-53068) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 841 | linux-libc-dev | [CVE-2024-53079](https://ubuntu.com/security/CVE-2024-53079) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 842 | linux-libc-dev | [CVE-2024-53084](https://ubuntu.com/security/CVE-2024-53084) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 843 | linux-libc-dev | [CVE-2024-53090](https://ubuntu.com/security/CVE-2024-53090) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 844 | linux-libc-dev | [CVE-2024-53091](https://ubuntu.com/security/CVE-2024-53091) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 845 | linux-libc-dev | [CVE-2024-53095](https://ubuntu.com/security/CVE-2024-53095) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 846 | linux-libc-dev | [CVE-2024-53098](https://ubuntu.com/security/CVE-2024-53098) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 847 | linux-libc-dev | [CVE-2024-53100](https://ubuntu.com/security/CVE-2024-53100) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 848 | linux-libc-dev | [CVE-2024-53114](https://ubuntu.com/security/CVE-2024-53114) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 849 | linux-libc-dev | [CVE-2024-53133](https://ubuntu.com/security/CVE-2024-53133) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 850 | linux-libc-dev | [CVE-2024-53144](https://ubuntu.com/security/CVE-2024-53144) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 851 | linux-libc-dev | [CVE-2024-53147](https://ubuntu.com/security/CVE-2024-53147) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 852 | linux-libc-dev | [CVE-2024-53175](https://ubuntu.com/security/CVE-2024-53175) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 853 | linux-libc-dev | [CVE-2024-53176](https://ubuntu.com/security/CVE-2024-53176) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 854 | linux-libc-dev | [CVE-2024-53177](https://ubuntu.com/security/CVE-2024-53177) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 855 | linux-libc-dev | [CVE-2024-53178](https://ubuntu.com/security/CVE-2024-53178) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 856 | linux-libc-dev | [CVE-2024-53179](https://ubuntu.com/security/CVE-2024-53179) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 857 | linux-libc-dev | [CVE-2024-53187](https://ubuntu.com/security/CVE-2024-53187) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 858 | linux-libc-dev | [CVE-2024-53190](https://ubuntu.com/security/CVE-2024-53190) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 859 | linux-libc-dev | [CVE-2024-53195](https://ubuntu.com/security/CVE-2024-53195) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 860 | linux-libc-dev | [CVE-2024-53196](https://ubuntu.com/security/CVE-2024-53196) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 861 | linux-libc-dev | [CVE-2024-53203](https://ubuntu.com/security/CVE-2024-53203) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 862 | linux-libc-dev | [CVE-2024-53210](https://ubuntu.com/security/CVE-2024-53210) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 863 | linux-libc-dev | [CVE-2024-53216](https://ubuntu.com/security/CVE-2024-53216) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 864 | linux-libc-dev | [CVE-2024-53218](https://ubuntu.com/security/CVE-2024-53218) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 865 | linux-libc-dev | [CVE-2024-53219](https://ubuntu.com/security/CVE-2024-53219) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 866 | linux-libc-dev | [CVE-2024-53220](https://ubuntu.com/security/CVE-2024-53220) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 867 | linux-libc-dev | [CVE-2024-53221](https://ubuntu.com/security/CVE-2024-53221) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 868 | linux-libc-dev | [CVE-2024-53224](https://ubuntu.com/security/CVE-2024-53224) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 869 | linux-libc-dev | [CVE-2024-53234](https://ubuntu.com/security/CVE-2024-53234) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 870 | linux-libc-dev | [CVE-2024-53687](https://ubuntu.com/security/CVE-2024-53687) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 871 | linux-libc-dev | [CVE-2024-54456](https://ubuntu.com/security/CVE-2024-54456) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 872 | linux-libc-dev | [CVE-2024-54683](https://ubuntu.com/security/CVE-2024-54683) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 873 | linux-libc-dev | [CVE-2024-56368](https://ubuntu.com/security/CVE-2024-56368) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 874 | linux-libc-dev | [CVE-2024-56538](https://ubuntu.com/security/CVE-2024-56538) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 875 | linux-libc-dev | [CVE-2024-56544](https://ubuntu.com/security/CVE-2024-56544) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 876 | linux-libc-dev | [CVE-2024-56557](https://ubuntu.com/security/CVE-2024-56557) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 877 | linux-libc-dev | [CVE-2024-56565](https://ubuntu.com/security/CVE-2024-56565) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 878 | linux-libc-dev | [CVE-2024-56566](https://ubuntu.com/security/CVE-2024-56566) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 879 | linux-libc-dev | [CVE-2024-56583](https://ubuntu.com/security/CVE-2024-56583) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 880 | linux-libc-dev | [CVE-2024-56584](https://ubuntu.com/security/CVE-2024-56584) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 881 | linux-libc-dev | [CVE-2024-56588](https://ubuntu.com/security/CVE-2024-56588) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 882 | linux-libc-dev | [CVE-2024-56591](https://ubuntu.com/security/CVE-2024-56591) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 883 | linux-libc-dev | [CVE-2024-56592](https://ubuntu.com/security/CVE-2024-56592) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 884 | linux-libc-dev | [CVE-2024-56604](https://ubuntu.com/security/CVE-2024-56604) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 885 | linux-libc-dev | [CVE-2024-56607](https://ubuntu.com/security/CVE-2024-56607) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 886 | linux-libc-dev | [CVE-2024-56609](https://ubuntu.com/security/CVE-2024-56609) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 887 | linux-libc-dev | [CVE-2024-56611](https://ubuntu.com/security/CVE-2024-56611) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 888 | linux-libc-dev | [CVE-2024-56639](https://ubuntu.com/security/CVE-2024-56639) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 889 | linux-libc-dev | [CVE-2024-56641](https://ubuntu.com/security/CVE-2024-56641) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 890 | linux-libc-dev | [CVE-2024-56647](https://ubuntu.com/security/CVE-2024-56647) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 891 | linux-libc-dev | [CVE-2024-56657](https://ubuntu.com/security/CVE-2024-56657) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 892 | linux-libc-dev | [CVE-2024-56660](https://ubuntu.com/security/CVE-2024-56660) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 893 | linux-libc-dev | [CVE-2024-56664](https://ubuntu.com/security/CVE-2024-56664) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 894 | linux-libc-dev | [CVE-2024-56665](https://ubuntu.com/security/CVE-2024-56665) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 895 | linux-libc-dev | [CVE-2024-56671](https://ubuntu.com/security/CVE-2024-56671) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 896 | linux-libc-dev | [CVE-2024-56674](https://ubuntu.com/security/CVE-2024-56674) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 897 | linux-libc-dev | [CVE-2024-56677](https://ubuntu.com/security/CVE-2024-56677) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 898 | linux-libc-dev | [CVE-2024-56692](https://ubuntu.com/security/CVE-2024-56692) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 899 | linux-libc-dev | [CVE-2024-56703](https://ubuntu.com/security/CVE-2024-56703) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 900 | linux-libc-dev | [CVE-2024-56707](https://ubuntu.com/security/CVE-2024-56707) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 901 | linux-libc-dev | [CVE-2024-56709](https://ubuntu.com/security/CVE-2024-56709) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 902 | linux-libc-dev | [CVE-2024-56712](https://ubuntu.com/security/CVE-2024-56712) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 903 | linux-libc-dev | [CVE-2024-56717](https://ubuntu.com/security/CVE-2024-56717) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 904 | linux-libc-dev | [CVE-2024-56718](https://ubuntu.com/security/CVE-2024-56718) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 905 | linux-libc-dev | [CVE-2024-56719](https://ubuntu.com/security/CVE-2024-56719) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 906 | linux-libc-dev | [CVE-2024-56721](https://ubuntu.com/security/CVE-2024-56721) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 907 | linux-libc-dev | [CVE-2024-56722](https://ubuntu.com/security/CVE-2024-56722) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 908 | linux-libc-dev | [CVE-2024-56727](https://ubuntu.com/security/CVE-2024-56727) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 909 | linux-libc-dev | [CVE-2024-56744](https://ubuntu.com/security/CVE-2024-56744) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 910 | linux-libc-dev | [CVE-2024-56751](https://ubuntu.com/security/CVE-2024-56751) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 911 | linux-libc-dev | [CVE-2024-56757](https://ubuntu.com/security/CVE-2024-56757) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 912 | linux-libc-dev | [CVE-2024-56775](https://ubuntu.com/security/CVE-2024-56775) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 913 | linux-libc-dev | [CVE-2024-56782](https://ubuntu.com/security/CVE-2024-56782) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 914 | linux-libc-dev | [CVE-2024-56784](https://ubuntu.com/security/CVE-2024-56784) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 915 | linux-libc-dev | [CVE-2024-56788](https://ubuntu.com/security/CVE-2024-56788) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 916 | linux-libc-dev | [CVE-2024-57795](https://ubuntu.com/security/CVE-2024-57795) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 917 | linux-libc-dev | [CVE-2024-57804](https://ubuntu.com/security/CVE-2024-57804) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 918 | linux-libc-dev | [CVE-2024-57809](https://ubuntu.com/security/CVE-2024-57809) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 919 | linux-libc-dev | [CVE-2024-57834](https://ubuntu.com/security/CVE-2024-57834) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 920 | linux-libc-dev | [CVE-2024-57843](https://ubuntu.com/security/CVE-2024-57843) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 921 | linux-libc-dev | [CVE-2024-57852](https://ubuntu.com/security/CVE-2024-57852) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 922 | linux-libc-dev | [CVE-2024-57857](https://ubuntu.com/security/CVE-2024-57857) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 923 | linux-libc-dev | [CVE-2024-57872](https://ubuntu.com/security/CVE-2024-57872) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 924 | linux-libc-dev | [CVE-2024-57875](https://ubuntu.com/security/CVE-2024-57875) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 925 | linux-libc-dev | [CVE-2024-57876](https://ubuntu.com/security/CVE-2024-57876) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 926 | linux-libc-dev | [CVE-2024-57887](https://ubuntu.com/security/CVE-2024-57887) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 927 | linux-libc-dev | [CVE-2024-57888](https://ubuntu.com/security/CVE-2024-57888) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 928 | linux-libc-dev | [CVE-2024-57893](https://ubuntu.com/security/CVE-2024-57893) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 929 | linux-libc-dev | [CVE-2024-57895](https://ubuntu.com/security/CVE-2024-57895) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 930 | linux-libc-dev | [CVE-2024-57898](https://ubuntu.com/security/CVE-2024-57898) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 931 | linux-libc-dev | [CVE-2024-57899](https://ubuntu.com/security/CVE-2024-57899) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 932 | linux-libc-dev | [CVE-2024-57924](https://ubuntu.com/security/CVE-2024-57924) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 933 | linux-libc-dev | [CVE-2024-57945](https://ubuntu.com/security/CVE-2024-57945) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 934 | linux-libc-dev | [CVE-2024-57950](https://ubuntu.com/security/CVE-2024-57950) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 935 | linux-libc-dev | [CVE-2024-57952](https://ubuntu.com/security/CVE-2024-57952) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 936 | linux-libc-dev | [CVE-2024-57973](https://ubuntu.com/security/CVE-2024-57973) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 937 | linux-libc-dev | [CVE-2024-57974](https://ubuntu.com/security/CVE-2024-57974) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 938 | linux-libc-dev | [CVE-2024-57975](https://ubuntu.com/security/CVE-2024-57975) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 939 | linux-libc-dev | [CVE-2024-57976](https://ubuntu.com/security/CVE-2024-57976) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 940 | linux-libc-dev | [CVE-2024-57977](https://ubuntu.com/security/CVE-2024-57977) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 941 | linux-libc-dev | [CVE-2024-57978](https://ubuntu.com/security/CVE-2024-57978) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 942 | linux-libc-dev | [CVE-2024-57979](https://ubuntu.com/security/CVE-2024-57979) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 943 | linux-libc-dev | [CVE-2024-57980](https://ubuntu.com/security/CVE-2024-57980) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 944 | linux-libc-dev | [CVE-2024-57981](https://ubuntu.com/security/CVE-2024-57981) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 945 | linux-libc-dev | [CVE-2024-57982](https://ubuntu.com/security/CVE-2024-57982) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 946 | linux-libc-dev | [CVE-2024-57984](https://ubuntu.com/security/CVE-2024-57984) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 947 | linux-libc-dev | [CVE-2024-57986](https://ubuntu.com/security/CVE-2024-57986) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 948 | linux-libc-dev | [CVE-2024-57993](https://ubuntu.com/security/CVE-2024-57993) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 949 | linux-libc-dev | [CVE-2024-57996](https://ubuntu.com/security/CVE-2024-57996) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-153.163 |
+| 950 | linux-libc-dev | [CVE-2024-57999](https://ubuntu.com/security/CVE-2024-57999) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 951 | linux-libc-dev | [CVE-2024-58001](https://ubuntu.com/security/CVE-2024-58001) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 952 | linux-libc-dev | [CVE-2024-58002](https://ubuntu.com/security/CVE-2024-58002) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 953 | linux-libc-dev | [CVE-2024-58005](https://ubuntu.com/security/CVE-2024-58005) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 954 | linux-libc-dev | [CVE-2024-58007](https://ubuntu.com/security/CVE-2024-58007) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 955 | linux-libc-dev | [CVE-2024-58010](https://ubuntu.com/security/CVE-2024-58010) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 956 | linux-libc-dev | [CVE-2024-58011](https://ubuntu.com/security/CVE-2024-58011) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 957 | linux-libc-dev | [CVE-2024-58012](https://ubuntu.com/security/CVE-2024-58012) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 958 | linux-libc-dev | [CVE-2024-58013](https://ubuntu.com/security/CVE-2024-58013) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 959 | linux-libc-dev | [CVE-2024-58014](https://ubuntu.com/security/CVE-2024-58014) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 960 | linux-libc-dev | [CVE-2024-58015](https://ubuntu.com/security/CVE-2024-58015) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 961 | linux-libc-dev | [CVE-2024-58016](https://ubuntu.com/security/CVE-2024-58016) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 962 | linux-libc-dev | [CVE-2024-58017](https://ubuntu.com/security/CVE-2024-58017) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 963 | linux-libc-dev | [CVE-2024-58018](https://ubuntu.com/security/CVE-2024-58018) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 964 | linux-libc-dev | [CVE-2024-58019](https://ubuntu.com/security/CVE-2024-58019) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 965 | linux-libc-dev | [CVE-2024-58020](https://ubuntu.com/security/CVE-2024-58020) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 966 | linux-libc-dev | [CVE-2024-58034](https://ubuntu.com/security/CVE-2024-58034) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 967 | linux-libc-dev | [CVE-2024-58051](https://ubuntu.com/security/CVE-2024-58051) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 968 | linux-libc-dev | [CVE-2024-58052](https://ubuntu.com/security/CVE-2024-58052) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 969 | linux-libc-dev | [CVE-2024-58053](https://ubuntu.com/security/CVE-2024-58053) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 970 | linux-libc-dev | [CVE-2024-58054](https://ubuntu.com/security/CVE-2024-58054) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 971 | linux-libc-dev | [CVE-2024-58055](https://ubuntu.com/security/CVE-2024-58055) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 972 | linux-libc-dev | [CVE-2024-58058](https://ubuntu.com/security/CVE-2024-58058) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 973 | linux-libc-dev | [CVE-2024-58063](https://ubuntu.com/security/CVE-2024-58063) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 974 | linux-libc-dev | [CVE-2024-58069](https://ubuntu.com/security/CVE-2024-58069) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 975 | linux-libc-dev | [CVE-2024-58071](https://ubuntu.com/security/CVE-2024-58071) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 976 | linux-libc-dev | [CVE-2024-58072](https://ubuntu.com/security/CVE-2024-58072) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 977 | linux-libc-dev | [CVE-2024-58076](https://ubuntu.com/security/CVE-2024-58076) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 978 | linux-libc-dev | [CVE-2024-58077](https://ubuntu.com/security/CVE-2024-58077) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 979 | linux-libc-dev | [CVE-2024-58079](https://ubuntu.com/security/CVE-2024-58079) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 980 | linux-libc-dev | [CVE-2024-58083](https://ubuntu.com/security/CVE-2024-58083) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 981 | linux-libc-dev | [CVE-2024-58085](https://ubuntu.com/security/CVE-2024-58085) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 982 | linux-libc-dev | [CVE-2024-58086](https://ubuntu.com/security/CVE-2024-58086) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 983 | linux-libc-dev | [CVE-2024-58089](https://ubuntu.com/security/CVE-2024-58089) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 984 | linux-libc-dev | [CVE-2024-58090](https://ubuntu.com/security/CVE-2024-58090) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 985 | linux-libc-dev | [CVE-2024-58094](https://ubuntu.com/security/CVE-2024-58094) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 986 | linux-libc-dev | [CVE-2024-58095](https://ubuntu.com/security/CVE-2024-58095) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 987 | linux-libc-dev | [CVE-2024-58096](https://ubuntu.com/security/CVE-2024-58096) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 988 | linux-libc-dev | [CVE-2024-58097](https://ubuntu.com/security/CVE-2024-58097) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 989 | linux-libc-dev | [CVE-2024-58098](https://ubuntu.com/security/CVE-2024-58098) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 990 | linux-libc-dev | [CVE-2024-58100](https://ubuntu.com/security/CVE-2024-58100) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 991 | linux-libc-dev | [CVE-2024-58238](https://ubuntu.com/security/CVE-2024-58238) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 992 | linux-libc-dev | [CVE-2024-8805](https://ubuntu.com/security/CVE-2024-8805) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 993 | linux-libc-dev | [CVE-2025-21629](https://ubuntu.com/security/CVE-2025-21629) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 994 | linux-libc-dev | [CVE-2025-21634](https://ubuntu.com/security/CVE-2025-21634) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 995 | linux-libc-dev | [CVE-2025-21635](https://ubuntu.com/security/CVE-2025-21635) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 996 | linux-libc-dev | [CVE-2025-21647](https://ubuntu.com/security/CVE-2025-21647) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 997 | linux-libc-dev | [CVE-2025-21649](https://ubuntu.com/security/CVE-2025-21649) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 998 | linux-libc-dev | [CVE-2025-21651](https://ubuntu.com/security/CVE-2025-21651) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 999 | linux-libc-dev | [CVE-2025-21656](https://ubuntu.com/security/CVE-2025-21656) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1000 | linux-libc-dev | [CVE-2025-21658](https://ubuntu.com/security/CVE-2025-21658) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1001 | linux-libc-dev | [CVE-2025-21667](https://ubuntu.com/security/CVE-2025-21667) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1002 | linux-libc-dev | [CVE-2025-21672](https://ubuntu.com/security/CVE-2025-21672) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1003 | linux-libc-dev | [CVE-2025-21673](https://ubuntu.com/security/CVE-2025-21673) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1004 | linux-libc-dev | [CVE-2025-21682](https://ubuntu.com/security/CVE-2025-21682) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1005 | linux-libc-dev | [CVE-2025-21684](https://ubuntu.com/security/CVE-2025-21684) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1006 | linux-libc-dev | [CVE-2025-21693](https://ubuntu.com/security/CVE-2025-21693) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1007 | linux-libc-dev | [CVE-2025-21696](https://ubuntu.com/security/CVE-2025-21696) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1008 | linux-libc-dev | [CVE-2025-21704](https://ubuntu.com/security/CVE-2025-21704) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1009 | linux-libc-dev | [CVE-2025-21707](https://ubuntu.com/security/CVE-2025-21707) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1010 | linux-libc-dev | [CVE-2025-21708](https://ubuntu.com/security/CVE-2025-21708) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1011 | linux-libc-dev | [CVE-2025-21711](https://ubuntu.com/security/CVE-2025-21711) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1012 | linux-libc-dev | [CVE-2025-21712](https://ubuntu.com/security/CVE-2025-21712) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1013 | linux-libc-dev | [CVE-2025-21714](https://ubuntu.com/security/CVE-2025-21714) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1014 | linux-libc-dev | [CVE-2025-21715](https://ubuntu.com/security/CVE-2025-21715) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1015 | linux-libc-dev | [CVE-2025-21718](https://ubuntu.com/security/CVE-2025-21718) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1016 | linux-libc-dev | [CVE-2025-21719](https://ubuntu.com/security/CVE-2025-21719) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1017 | linux-libc-dev | [CVE-2025-21721](https://ubuntu.com/security/CVE-2025-21721) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1018 | linux-libc-dev | [CVE-2025-21722](https://ubuntu.com/security/CVE-2025-21722) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1019 | linux-libc-dev | [CVE-2025-21723](https://ubuntu.com/security/CVE-2025-21723) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1020 | linux-libc-dev | [CVE-2025-21726](https://ubuntu.com/security/CVE-2025-21726) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1021 | linux-libc-dev | [CVE-2025-21728](https://ubuntu.com/security/CVE-2025-21728) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1022 | linux-libc-dev | [CVE-2025-21730](https://ubuntu.com/security/CVE-2025-21730) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1023 | linux-libc-dev | [CVE-2025-21731](https://ubuntu.com/security/CVE-2025-21731) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1024 | linux-libc-dev | [CVE-2025-21732](https://ubuntu.com/security/CVE-2025-21732) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1025 | linux-libc-dev | [CVE-2025-21734](https://ubuntu.com/security/CVE-2025-21734) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1026 | linux-libc-dev | [CVE-2025-21735](https://ubuntu.com/security/CVE-2025-21735) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1027 | linux-libc-dev | [CVE-2025-21736](https://ubuntu.com/security/CVE-2025-21736) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1028 | linux-libc-dev | [CVE-2025-21738](https://ubuntu.com/security/CVE-2025-21738) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1029 | linux-libc-dev | [CVE-2025-21739](https://ubuntu.com/security/CVE-2025-21739) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1030 | linux-libc-dev | [CVE-2025-21744](https://ubuntu.com/security/CVE-2025-21744) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1031 | linux-libc-dev | [CVE-2025-21745](https://ubuntu.com/security/CVE-2025-21745) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1032 | linux-libc-dev | [CVE-2025-21748](https://ubuntu.com/security/CVE-2025-21748) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1033 | linux-libc-dev | [CVE-2025-21749](https://ubuntu.com/security/CVE-2025-21749) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1034 | linux-libc-dev | [CVE-2025-21750](https://ubuntu.com/security/CVE-2025-21750) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1035 | linux-libc-dev | [CVE-2025-21751](https://ubuntu.com/security/CVE-2025-21751) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1036 | linux-libc-dev | [CVE-2025-21752](https://ubuntu.com/security/CVE-2025-21752) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1037 | linux-libc-dev | [CVE-2025-21753](https://ubuntu.com/security/CVE-2025-21753) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1038 | linux-libc-dev | [CVE-2025-21758](https://ubuntu.com/security/CVE-2025-21758) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1039 | linux-libc-dev | [CVE-2025-21759](https://ubuntu.com/security/CVE-2025-21759) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1040 | linux-libc-dev | [CVE-2025-21760](https://ubuntu.com/security/CVE-2025-21760) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1041 | linux-libc-dev | [CVE-2025-21761](https://ubuntu.com/security/CVE-2025-21761) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1042 | linux-libc-dev | [CVE-2025-21762](https://ubuntu.com/security/CVE-2025-21762) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1043 | linux-libc-dev | [CVE-2025-21763](https://ubuntu.com/security/CVE-2025-21763) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1044 | linux-libc-dev | [CVE-2025-21764](https://ubuntu.com/security/CVE-2025-21764) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1045 | linux-libc-dev | [CVE-2025-21765](https://ubuntu.com/security/CVE-2025-21765) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1046 | linux-libc-dev | [CVE-2025-21766](https://ubuntu.com/security/CVE-2025-21766) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1047 | linux-libc-dev | [CVE-2025-21767](https://ubuntu.com/security/CVE-2025-21767) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1048 | linux-libc-dev | [CVE-2025-21768](https://ubuntu.com/security/CVE-2025-21768) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1049 | linux-libc-dev | [CVE-2025-21772](https://ubuntu.com/security/CVE-2025-21772) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1050 | linux-libc-dev | [CVE-2025-21776](https://ubuntu.com/security/CVE-2025-21776) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1051 | linux-libc-dev | [CVE-2025-21779](https://ubuntu.com/security/CVE-2025-21779) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1052 | linux-libc-dev | [CVE-2025-21780](https://ubuntu.com/security/CVE-2025-21780) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1053 | linux-libc-dev | [CVE-2025-21781](https://ubuntu.com/security/CVE-2025-21781) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1054 | linux-libc-dev | [CVE-2025-21782](https://ubuntu.com/security/CVE-2025-21782) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1055 | linux-libc-dev | [CVE-2025-21785](https://ubuntu.com/security/CVE-2025-21785) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1056 | linux-libc-dev | [CVE-2025-21786](https://ubuntu.com/security/CVE-2025-21786) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1057 | linux-libc-dev | [CVE-2025-21787](https://ubuntu.com/security/CVE-2025-21787) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1058 | linux-libc-dev | [CVE-2025-21791](https://ubuntu.com/security/CVE-2025-21791) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1059 | linux-libc-dev | [CVE-2025-21792](https://ubuntu.com/security/CVE-2025-21792) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1060 | linux-libc-dev | [CVE-2025-21795](https://ubuntu.com/security/CVE-2025-21795) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1061 | linux-libc-dev | [CVE-2025-21796](https://ubuntu.com/security/CVE-2025-21796) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1062 | linux-libc-dev | [CVE-2025-21799](https://ubuntu.com/security/CVE-2025-21799) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1063 | linux-libc-dev | [CVE-2025-21801](https://ubuntu.com/security/CVE-2025-21801) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1064 | linux-libc-dev | [CVE-2025-21802](https://ubuntu.com/security/CVE-2025-21802) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1065 | linux-libc-dev | [CVE-2025-21804](https://ubuntu.com/security/CVE-2025-21804) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1066 | linux-libc-dev | [CVE-2025-21806](https://ubuntu.com/security/CVE-2025-21806) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1067 | linux-libc-dev | [CVE-2025-21811](https://ubuntu.com/security/CVE-2025-21811) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1068 | linux-libc-dev | [CVE-2025-21812](https://ubuntu.com/security/CVE-2025-21812) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1069 | linux-libc-dev | [CVE-2025-21814](https://ubuntu.com/security/CVE-2025-21814) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1070 | linux-libc-dev | [CVE-2025-21816](https://ubuntu.com/security/CVE-2025-21816) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1071 | linux-libc-dev | [CVE-2025-21817](https://ubuntu.com/security/CVE-2025-21817) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1072 | linux-libc-dev | [CVE-2025-21819](https://ubuntu.com/security/CVE-2025-21819) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1073 | linux-libc-dev | [CVE-2025-21820](https://ubuntu.com/security/CVE-2025-21820) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1074 | linux-libc-dev | [CVE-2025-21821](https://ubuntu.com/security/CVE-2025-21821) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1075 | linux-libc-dev | [CVE-2025-21823](https://ubuntu.com/security/CVE-2025-21823) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1076 | linux-libc-dev | [CVE-2025-21825](https://ubuntu.com/security/CVE-2025-21825) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1077 | linux-libc-dev | [CVE-2025-21826](https://ubuntu.com/security/CVE-2025-21826) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1078 | linux-libc-dev | [CVE-2025-21830](https://ubuntu.com/security/CVE-2025-21830) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1079 | linux-libc-dev | [CVE-2025-21831](https://ubuntu.com/security/CVE-2025-21831) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1080 | linux-libc-dev | [CVE-2025-21832](https://ubuntu.com/security/CVE-2025-21832) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1081 | linux-libc-dev | [CVE-2025-21833](https://ubuntu.com/security/CVE-2025-21833) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1082 | linux-libc-dev | [CVE-2025-21835](https://ubuntu.com/security/CVE-2025-21835) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1083 | linux-libc-dev | [CVE-2025-21838](https://ubuntu.com/security/CVE-2025-21838) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1084 | linux-libc-dev | [CVE-2025-21839](https://ubuntu.com/security/CVE-2025-21839) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1085 | linux-libc-dev | [CVE-2025-21844](https://ubuntu.com/security/CVE-2025-21844) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1086 | linux-libc-dev | [CVE-2025-21846](https://ubuntu.com/security/CVE-2025-21846) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1087 | linux-libc-dev | [CVE-2025-21848](https://ubuntu.com/security/CVE-2025-21848) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1088 | linux-libc-dev | [CVE-2025-21853](https://ubuntu.com/security/CVE-2025-21853) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1089 | linux-libc-dev | [CVE-2025-21855](https://ubuntu.com/security/CVE-2025-21855) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1090 | linux-libc-dev | [CVE-2025-21858](https://ubuntu.com/security/CVE-2025-21858) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1091 | linux-libc-dev | [CVE-2025-21859](https://ubuntu.com/security/CVE-2025-21859) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1092 | linux-libc-dev | [CVE-2025-21861](https://ubuntu.com/security/CVE-2025-21861) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1093 | linux-libc-dev | [CVE-2025-21862](https://ubuntu.com/security/CVE-2025-21862) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1094 | linux-libc-dev | [CVE-2025-21863](https://ubuntu.com/security/CVE-2025-21863) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1095 | linux-libc-dev | [CVE-2025-21865](https://ubuntu.com/security/CVE-2025-21865) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1096 | linux-libc-dev | [CVE-2025-21866](https://ubuntu.com/security/CVE-2025-21866) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1097 | linux-libc-dev | [CVE-2025-21871](https://ubuntu.com/security/CVE-2025-21871) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1098 | linux-libc-dev | [CVE-2025-21872](https://ubuntu.com/security/CVE-2025-21872) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1099 | linux-libc-dev | [CVE-2025-21875](https://ubuntu.com/security/CVE-2025-21875) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1100 | linux-libc-dev | [CVE-2025-21877](https://ubuntu.com/security/CVE-2025-21877) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1101 | linux-libc-dev | [CVE-2025-21878](https://ubuntu.com/security/CVE-2025-21878) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1102 | linux-libc-dev | [CVE-2025-21881](https://ubuntu.com/security/CVE-2025-21881) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1103 | linux-libc-dev | [CVE-2025-21885](https://ubuntu.com/security/CVE-2025-21885) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1104 | linux-libc-dev | [CVE-2025-21891](https://ubuntu.com/security/CVE-2025-21891) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1105 | linux-libc-dev | [CVE-2025-21894](https://ubuntu.com/security/CVE-2025-21894) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1106 | linux-libc-dev | [CVE-2025-21898](https://ubuntu.com/security/CVE-2025-21898) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1107 | linux-libc-dev | [CVE-2025-21899](https://ubuntu.com/security/CVE-2025-21899) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1108 | linux-libc-dev | [CVE-2025-21904](https://ubuntu.com/security/CVE-2025-21904) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1109 | linux-libc-dev | [CVE-2025-21905](https://ubuntu.com/security/CVE-2025-21905) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1110 | linux-libc-dev | [CVE-2025-21908](https://ubuntu.com/security/CVE-2025-21908) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1111 | linux-libc-dev | [CVE-2025-21909](https://ubuntu.com/security/CVE-2025-21909) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1112 | linux-libc-dev | [CVE-2025-21910](https://ubuntu.com/security/CVE-2025-21910) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1113 | linux-libc-dev | [CVE-2025-21912](https://ubuntu.com/security/CVE-2025-21912) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1114 | linux-libc-dev | [CVE-2025-21914](https://ubuntu.com/security/CVE-2025-21914) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1115 | linux-libc-dev | [CVE-2025-21915](https://ubuntu.com/security/CVE-2025-21915) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1116 | linux-libc-dev | [CVE-2025-21916](https://ubuntu.com/security/CVE-2025-21916) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1117 | linux-libc-dev | [CVE-2025-21917](https://ubuntu.com/security/CVE-2025-21917) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1118 | linux-libc-dev | [CVE-2025-21918](https://ubuntu.com/security/CVE-2025-21918) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1119 | linux-libc-dev | [CVE-2025-21919](https://ubuntu.com/security/CVE-2025-21919) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1120 | linux-libc-dev | [CVE-2025-21920](https://ubuntu.com/security/CVE-2025-21920) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1121 | linux-libc-dev | [CVE-2025-21922](https://ubuntu.com/security/CVE-2025-21922) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1122 | linux-libc-dev | [CVE-2025-21924](https://ubuntu.com/security/CVE-2025-21924) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1123 | linux-libc-dev | [CVE-2025-21925](https://ubuntu.com/security/CVE-2025-21925) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1124 | linux-libc-dev | [CVE-2025-21926](https://ubuntu.com/security/CVE-2025-21926) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1125 | linux-libc-dev | [CVE-2025-21927](https://ubuntu.com/security/CVE-2025-21927) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1126 | linux-libc-dev | [CVE-2025-21928](https://ubuntu.com/security/CVE-2025-21928) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1127 | linux-libc-dev | [CVE-2025-21931](https://ubuntu.com/security/CVE-2025-21931) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1128 | linux-libc-dev | [CVE-2025-21934](https://ubuntu.com/security/CVE-2025-21934) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1129 | linux-libc-dev | [CVE-2025-21935](https://ubuntu.com/security/CVE-2025-21935) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1130 | linux-libc-dev | [CVE-2025-21941](https://ubuntu.com/security/CVE-2025-21941) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1131 | linux-libc-dev | [CVE-2025-21943](https://ubuntu.com/security/CVE-2025-21943) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1132 | linux-libc-dev | [CVE-2025-21944](https://ubuntu.com/security/CVE-2025-21944) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1133 | linux-libc-dev | [CVE-2025-21945](https://ubuntu.com/security/CVE-2025-21945) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1134 | linux-libc-dev | [CVE-2025-21946](https://ubuntu.com/security/CVE-2025-21946) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1135 | linux-libc-dev | [CVE-2025-21947](https://ubuntu.com/security/CVE-2025-21947) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1136 | linux-libc-dev | [CVE-2025-21948](https://ubuntu.com/security/CVE-2025-21948) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1137 | linux-libc-dev | [CVE-2025-21949](https://ubuntu.com/security/CVE-2025-21949) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1138 | linux-libc-dev | [CVE-2025-21950](https://ubuntu.com/security/CVE-2025-21950) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1139 | linux-libc-dev | [CVE-2025-21951](https://ubuntu.com/security/CVE-2025-21951) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1140 | linux-libc-dev | [CVE-2025-21955](https://ubuntu.com/security/CVE-2025-21955) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1141 | linux-libc-dev | [CVE-2025-21956](https://ubuntu.com/security/CVE-2025-21956) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1142 | linux-libc-dev | [CVE-2025-21957](https://ubuntu.com/security/CVE-2025-21957) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1143 | linux-libc-dev | [CVE-2025-21959](https://ubuntu.com/security/CVE-2025-21959) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1144 | linux-libc-dev | [CVE-2025-21962](https://ubuntu.com/security/CVE-2025-21962) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1145 | linux-libc-dev | [CVE-2025-21963](https://ubuntu.com/security/CVE-2025-21963) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1146 | linux-libc-dev | [CVE-2025-21964](https://ubuntu.com/security/CVE-2025-21964) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1147 | linux-libc-dev | [CVE-2025-21967](https://ubuntu.com/security/CVE-2025-21967) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1148 | linux-libc-dev | [CVE-2025-21968](https://ubuntu.com/security/CVE-2025-21968) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1149 | linux-libc-dev | [CVE-2025-21969](https://ubuntu.com/security/CVE-2025-21969) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1150 | linux-libc-dev | [CVE-2025-21970](https://ubuntu.com/security/CVE-2025-21970) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1151 | linux-libc-dev | [CVE-2025-21971](https://ubuntu.com/security/CVE-2025-21971) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1152 | linux-libc-dev | [CVE-2025-21972](https://ubuntu.com/security/CVE-2025-21972) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1153 | linux-libc-dev | [CVE-2025-21975](https://ubuntu.com/security/CVE-2025-21975) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1154 | linux-libc-dev | [CVE-2025-21976](https://ubuntu.com/security/CVE-2025-21976) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1155 | linux-libc-dev | [CVE-2025-21981](https://ubuntu.com/security/CVE-2025-21981) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1156 | linux-libc-dev | [CVE-2025-21985](https://ubuntu.com/security/CVE-2025-21985) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1157 | linux-libc-dev | [CVE-2025-21986](https://ubuntu.com/security/CVE-2025-21986) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1158 | linux-libc-dev | [CVE-2025-21991](https://ubuntu.com/security/CVE-2025-21991) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1159 | linux-libc-dev | [CVE-2025-21992](https://ubuntu.com/security/CVE-2025-21992) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1160 | linux-libc-dev | [CVE-2025-21994](https://ubuntu.com/security/CVE-2025-21994) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1161 | linux-libc-dev | [CVE-2025-21996](https://ubuntu.com/security/CVE-2025-21996) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1162 | linux-libc-dev | [CVE-2025-21999](https://ubuntu.com/security/CVE-2025-21999) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1163 | linux-libc-dev | [CVE-2025-22004](https://ubuntu.com/security/CVE-2025-22004) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1164 | linux-libc-dev | [CVE-2025-22005](https://ubuntu.com/security/CVE-2025-22005) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1165 | linux-libc-dev | [CVE-2025-22007](https://ubuntu.com/security/CVE-2025-22007) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1166 | linux-libc-dev | [CVE-2025-22008](https://ubuntu.com/security/CVE-2025-22008) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1167 | linux-libc-dev | [CVE-2025-22010](https://ubuntu.com/security/CVE-2025-22010) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1168 | linux-libc-dev | [CVE-2025-22014](https://ubuntu.com/security/CVE-2025-22014) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1169 | linux-libc-dev | [CVE-2025-22018](https://ubuntu.com/security/CVE-2025-22018) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1170 | linux-libc-dev | [CVE-2025-22019](https://ubuntu.com/security/CVE-2025-22019) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1171 | linux-libc-dev | [CVE-2025-22020](https://ubuntu.com/security/CVE-2025-22020) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1172 | linux-libc-dev | [CVE-2025-22021](https://ubuntu.com/security/CVE-2025-22021) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1173 | linux-libc-dev | [CVE-2025-22022](https://ubuntu.com/security/CVE-2025-22022) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1174 | linux-libc-dev | [CVE-2025-22025](https://ubuntu.com/security/CVE-2025-22025) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1175 | linux-libc-dev | [CVE-2025-22026](https://ubuntu.com/security/CVE-2025-22026) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1176 | linux-libc-dev | [CVE-2025-22027](https://ubuntu.com/security/CVE-2025-22027) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1177 | linux-libc-dev | [CVE-2025-22028](https://ubuntu.com/security/CVE-2025-22028) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1178 | linux-libc-dev | [CVE-2025-22035](https://ubuntu.com/security/CVE-2025-22035) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1179 | linux-libc-dev | [CVE-2025-22037](https://ubuntu.com/security/CVE-2025-22037) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1180 | linux-libc-dev | [CVE-2025-22038](https://ubuntu.com/security/CVE-2025-22038) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1181 | linux-libc-dev | [CVE-2025-22039](https://ubuntu.com/security/CVE-2025-22039) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1182 | linux-libc-dev | [CVE-2025-22040](https://ubuntu.com/security/CVE-2025-22040) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1183 | linux-libc-dev | [CVE-2025-22041](https://ubuntu.com/security/CVE-2025-22041) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1184 | linux-libc-dev | [CVE-2025-22042](https://ubuntu.com/security/CVE-2025-22042) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1185 | linux-libc-dev | [CVE-2025-22043](https://ubuntu.com/security/CVE-2025-22043) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1186 | linux-libc-dev | [CVE-2025-22044](https://ubuntu.com/security/CVE-2025-22044) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1187 | linux-libc-dev | [CVE-2025-22045](https://ubuntu.com/security/CVE-2025-22045) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1188 | linux-libc-dev | [CVE-2025-22050](https://ubuntu.com/security/CVE-2025-22050) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1189 | linux-libc-dev | [CVE-2025-22053](https://ubuntu.com/security/CVE-2025-22053) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1190 | linux-libc-dev | [CVE-2025-22054](https://ubuntu.com/security/CVE-2025-22054) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1191 | linux-libc-dev | [CVE-2025-22055](https://ubuntu.com/security/CVE-2025-22055) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1192 | linux-libc-dev | [CVE-2025-22056](https://ubuntu.com/security/CVE-2025-22056) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1193 | linux-libc-dev | [CVE-2025-22057](https://ubuntu.com/security/CVE-2025-22057) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1194 | linux-libc-dev | [CVE-2025-22058](https://ubuntu.com/security/CVE-2025-22058) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1195 | linux-libc-dev | [CVE-2025-22060](https://ubuntu.com/security/CVE-2025-22060) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1196 | linux-libc-dev | [CVE-2025-22062](https://ubuntu.com/security/CVE-2025-22062) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1197 | linux-libc-dev | [CVE-2025-22063](https://ubuntu.com/security/CVE-2025-22063) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1198 | linux-libc-dev | [CVE-2025-22066](https://ubuntu.com/security/CVE-2025-22066) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1199 | linux-libc-dev | [CVE-2025-22071](https://ubuntu.com/security/CVE-2025-22071) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1200 | linux-libc-dev | [CVE-2025-22072](https://ubuntu.com/security/CVE-2025-22072) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1201 | linux-libc-dev | [CVE-2025-22073](https://ubuntu.com/security/CVE-2025-22073) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1202 | linux-libc-dev | [CVE-2025-22075](https://ubuntu.com/security/CVE-2025-22075) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1203 | linux-libc-dev | [CVE-2025-22079](https://ubuntu.com/security/CVE-2025-22079) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1204 | linux-libc-dev | [CVE-2025-22081](https://ubuntu.com/security/CVE-2025-22081) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1205 | linux-libc-dev | [CVE-2025-22083](https://ubuntu.com/security/CVE-2025-22083) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1206 | linux-libc-dev | [CVE-2025-22086](https://ubuntu.com/security/CVE-2025-22086) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1207 | linux-libc-dev | [CVE-2025-22089](https://ubuntu.com/security/CVE-2025-22089) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1208 | linux-libc-dev | [CVE-2025-22090](https://ubuntu.com/security/CVE-2025-22090) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1209 | linux-libc-dev | [CVE-2025-22097](https://ubuntu.com/security/CVE-2025-22097) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1210 | linux-libc-dev | [CVE-2025-22103](https://ubuntu.com/security/CVE-2025-22103) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1211 | linux-libc-dev | [CVE-2025-22104](https://ubuntu.com/security/CVE-2025-22104) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1212 | linux-libc-dev | [CVE-2025-22105](https://ubuntu.com/security/CVE-2025-22105) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1213 | linux-libc-dev | [CVE-2025-22107](https://ubuntu.com/security/CVE-2025-22107) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1214 | linux-libc-dev | [CVE-2025-22109](https://ubuntu.com/security/CVE-2025-22109) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1215 | linux-libc-dev | [CVE-2025-22111](https://ubuntu.com/security/CVE-2025-22111) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1216 | linux-libc-dev | [CVE-2025-22113](https://ubuntu.com/security/CVE-2025-22113) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1217 | linux-libc-dev | [CVE-2025-22121](https://ubuntu.com/security/CVE-2025-22121) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1218 | linux-libc-dev | [CVE-2025-22124](https://ubuntu.com/security/CVE-2025-22124) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1219 | linux-libc-dev | [CVE-2025-22125](https://ubuntu.com/security/CVE-2025-22125) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1220 | linux-libc-dev | [CVE-2025-22127](https://ubuntu.com/security/CVE-2025-22127) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1221 | linux-libc-dev | [CVE-2025-2312](https://ubuntu.com/security/CVE-2025-2312) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1222 | linux-libc-dev | [CVE-2025-23130](https://ubuntu.com/security/CVE-2025-23130) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1223 | linux-libc-dev | [CVE-2025-23131](https://ubuntu.com/security/CVE-2025-23131) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1224 | linux-libc-dev | [CVE-2025-23132](https://ubuntu.com/security/CVE-2025-23132) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1225 | linux-libc-dev | [CVE-2025-23133](https://ubuntu.com/security/CVE-2025-23133) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1226 | linux-libc-dev | [CVE-2025-23136](https://ubuntu.com/security/CVE-2025-23136) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1227 | linux-libc-dev | [CVE-2025-23138](https://ubuntu.com/security/CVE-2025-23138) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1228 | linux-libc-dev | [CVE-2025-23140](https://ubuntu.com/security/CVE-2025-23140) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1229 | linux-libc-dev | [CVE-2025-23141](https://ubuntu.com/security/CVE-2025-23141) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1230 | linux-libc-dev | [CVE-2025-23142](https://ubuntu.com/security/CVE-2025-23142) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1231 | linux-libc-dev | [CVE-2025-23143](https://ubuntu.com/security/CVE-2025-23143) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1232 | linux-libc-dev | [CVE-2025-23144](https://ubuntu.com/security/CVE-2025-23144) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1233 | linux-libc-dev | [CVE-2025-23145](https://ubuntu.com/security/CVE-2025-23145) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1234 | linux-libc-dev | [CVE-2025-23146](https://ubuntu.com/security/CVE-2025-23146) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1235 | linux-libc-dev | [CVE-2025-23147](https://ubuntu.com/security/CVE-2025-23147) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1236 | linux-libc-dev | [CVE-2025-23148](https://ubuntu.com/security/CVE-2025-23148) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1237 | linux-libc-dev | [CVE-2025-23150](https://ubuntu.com/security/CVE-2025-23150) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1238 | linux-libc-dev | [CVE-2025-23151](https://ubuntu.com/security/CVE-2025-23151) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1239 | linux-libc-dev | [CVE-2025-23155](https://ubuntu.com/security/CVE-2025-23155) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1240 | linux-libc-dev | [CVE-2025-23156](https://ubuntu.com/security/CVE-2025-23156) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1241 | linux-libc-dev | [CVE-2025-23157](https://ubuntu.com/security/CVE-2025-23157) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1242 | linux-libc-dev | [CVE-2025-23158](https://ubuntu.com/security/CVE-2025-23158) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1243 | linux-libc-dev | [CVE-2025-23159](https://ubuntu.com/security/CVE-2025-23159) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1244 | linux-libc-dev | [CVE-2025-23160](https://ubuntu.com/security/CVE-2025-23160) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1245 | linux-libc-dev | [CVE-2025-23161](https://ubuntu.com/security/CVE-2025-23161) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1246 | linux-libc-dev | [CVE-2025-23162](https://ubuntu.com/security/CVE-2025-23162) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1247 | linux-libc-dev | [CVE-2025-23163](https://ubuntu.com/security/CVE-2025-23163) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1248 | linux-libc-dev | [CVE-2025-37738](https://ubuntu.com/security/CVE-2025-37738) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1249 | linux-libc-dev | [CVE-2025-37739](https://ubuntu.com/security/CVE-2025-37739) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1250 | linux-libc-dev | [CVE-2025-37740](https://ubuntu.com/security/CVE-2025-37740) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1251 | linux-libc-dev | [CVE-2025-37741](https://ubuntu.com/security/CVE-2025-37741) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1252 | linux-libc-dev | [CVE-2025-37742](https://ubuntu.com/security/CVE-2025-37742) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1253 | linux-libc-dev | [CVE-2025-37743](https://ubuntu.com/security/CVE-2025-37743) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1254 | linux-libc-dev | [CVE-2025-37744](https://ubuntu.com/security/CVE-2025-37744) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1255 | linux-libc-dev | [CVE-2025-37745](https://ubuntu.com/security/CVE-2025-37745) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1256 | linux-libc-dev | [CVE-2025-37746](https://ubuntu.com/security/CVE-2025-37746) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1257 | linux-libc-dev | [CVE-2025-37747](https://ubuntu.com/security/CVE-2025-37747) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1258 | linux-libc-dev | [CVE-2025-37749](https://ubuntu.com/security/CVE-2025-37749) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1259 | linux-libc-dev | [CVE-2025-37752](https://ubuntu.com/security/CVE-2025-37752) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-153.163 |
+| 1260 | linux-libc-dev | [CVE-2025-37756](https://ubuntu.com/security/CVE-2025-37756) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1261 | linux-libc-dev | [CVE-2025-37757](https://ubuntu.com/security/CVE-2025-37757) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1262 | linux-libc-dev | [CVE-2025-37758](https://ubuntu.com/security/CVE-2025-37758) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1263 | linux-libc-dev | [CVE-2025-37765](https://ubuntu.com/security/CVE-2025-37765) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1264 | linux-libc-dev | [CVE-2025-37766](https://ubuntu.com/security/CVE-2025-37766) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1265 | linux-libc-dev | [CVE-2025-37767](https://ubuntu.com/security/CVE-2025-37767) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1266 | linux-libc-dev | [CVE-2025-37768](https://ubuntu.com/security/CVE-2025-37768) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1267 | linux-libc-dev | [CVE-2025-37770](https://ubuntu.com/security/CVE-2025-37770) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1268 | linux-libc-dev | [CVE-2025-37771](https://ubuntu.com/security/CVE-2025-37771) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1269 | linux-libc-dev | [CVE-2025-37773](https://ubuntu.com/security/CVE-2025-37773) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1270 | linux-libc-dev | [CVE-2025-37775](https://ubuntu.com/security/CVE-2025-37775) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1271 | linux-libc-dev | [CVE-2025-37776](https://ubuntu.com/security/CVE-2025-37776) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1272 | linux-libc-dev | [CVE-2025-37777](https://ubuntu.com/security/CVE-2025-37777) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1273 | linux-libc-dev | [CVE-2025-37778](https://ubuntu.com/security/CVE-2025-37778) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1274 | linux-libc-dev | [CVE-2025-37780](https://ubuntu.com/security/CVE-2025-37780) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1275 | linux-libc-dev | [CVE-2025-37781](https://ubuntu.com/security/CVE-2025-37781) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1276 | linux-libc-dev | [CVE-2025-37785](https://ubuntu.com/security/CVE-2025-37785) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1277 | linux-libc-dev | [CVE-2025-37786](https://ubuntu.com/security/CVE-2025-37786) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1278 | linux-libc-dev | [CVE-2025-37787](https://ubuntu.com/security/CVE-2025-37787) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1279 | linux-libc-dev | [CVE-2025-37788](https://ubuntu.com/security/CVE-2025-37788) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1280 | linux-libc-dev | [CVE-2025-37789](https://ubuntu.com/security/CVE-2025-37789) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1281 | linux-libc-dev | [CVE-2025-37790](https://ubuntu.com/security/CVE-2025-37790) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1282 | linux-libc-dev | [CVE-2025-37792](https://ubuntu.com/security/CVE-2025-37792) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1283 | linux-libc-dev | [CVE-2025-37794](https://ubuntu.com/security/CVE-2025-37794) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1284 | linux-libc-dev | [CVE-2025-37796](https://ubuntu.com/security/CVE-2025-37796) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1285 | linux-libc-dev | [CVE-2025-37797](https://ubuntu.com/security/CVE-2025-37797) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1286 | linux-libc-dev | [CVE-2025-37798](https://ubuntu.com/security/CVE-2025-37798) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
+| 1287 | linux-libc-dev | [CVE-2025-37800](https://ubuntu.com/security/CVE-2025-37800) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1288 | linux-libc-dev | [CVE-2025-37801](https://ubuntu.com/security/CVE-2025-37801) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1289 | linux-libc-dev | [CVE-2025-37802](https://ubuntu.com/security/CVE-2025-37802) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1290 | linux-libc-dev | [CVE-2025-37803](https://ubuntu.com/security/CVE-2025-37803) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1291 | linux-libc-dev | [CVE-2025-37805](https://ubuntu.com/security/CVE-2025-37805) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1292 | linux-libc-dev | [CVE-2025-37806](https://ubuntu.com/security/CVE-2025-37806) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1293 | linux-libc-dev | [CVE-2025-37807](https://ubuntu.com/security/CVE-2025-37807) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1294 | linux-libc-dev | [CVE-2025-37808](https://ubuntu.com/security/CVE-2025-37808) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1295 | linux-libc-dev | [CVE-2025-37810](https://ubuntu.com/security/CVE-2025-37810) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1296 | linux-libc-dev | [CVE-2025-37811](https://ubuntu.com/security/CVE-2025-37811) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1297 | linux-libc-dev | [CVE-2025-37812](https://ubuntu.com/security/CVE-2025-37812) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1298 | linux-libc-dev | [CVE-2025-37817](https://ubuntu.com/security/CVE-2025-37817) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1299 | linux-libc-dev | [CVE-2025-37819](https://ubuntu.com/security/CVE-2025-37819) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1300 | linux-libc-dev | [CVE-2025-37820](https://ubuntu.com/security/CVE-2025-37820) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1301 | linux-libc-dev | [CVE-2025-37822](https://ubuntu.com/security/CVE-2025-37822) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1302 | linux-libc-dev | [CVE-2025-37823](https://ubuntu.com/security/CVE-2025-37823) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1303 | linux-libc-dev | [CVE-2025-37824](https://ubuntu.com/security/CVE-2025-37824) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1304 | linux-libc-dev | [CVE-2025-37829](https://ubuntu.com/security/CVE-2025-37829) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1305 | linux-libc-dev | [CVE-2025-37830](https://ubuntu.com/security/CVE-2025-37830) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1306 | linux-libc-dev | [CVE-2025-37833](https://ubuntu.com/security/CVE-2025-37833) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1307 | linux-libc-dev | [CVE-2025-37834](https://ubuntu.com/security/CVE-2025-37834) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1308 | linux-libc-dev | [CVE-2025-37836](https://ubuntu.com/security/CVE-2025-37836) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1309 | linux-libc-dev | [CVE-2025-37838](https://ubuntu.com/security/CVE-2025-37838) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1310 | linux-libc-dev | [CVE-2025-37839](https://ubuntu.com/security/CVE-2025-37839) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1311 | linux-libc-dev | [CVE-2025-37840](https://ubuntu.com/security/CVE-2025-37840) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1312 | linux-libc-dev | [CVE-2025-37841](https://ubuntu.com/security/CVE-2025-37841) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1313 | linux-libc-dev | [CVE-2025-37842](https://ubuntu.com/security/CVE-2025-37842) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1314 | linux-libc-dev | [CVE-2025-37844](https://ubuntu.com/security/CVE-2025-37844) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1315 | linux-libc-dev | [CVE-2025-37849](https://ubuntu.com/security/CVE-2025-37849) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1316 | linux-libc-dev | [CVE-2025-37850](https://ubuntu.com/security/CVE-2025-37850) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1317 | linux-libc-dev | [CVE-2025-37851](https://ubuntu.com/security/CVE-2025-37851) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1318 | linux-libc-dev | [CVE-2025-37852](https://ubuntu.com/security/CVE-2025-37852) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1319 | linux-libc-dev | [CVE-2025-37853](https://ubuntu.com/security/CVE-2025-37853) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1320 | linux-libc-dev | [CVE-2025-37854](https://ubuntu.com/security/CVE-2025-37854) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1321 | linux-libc-dev | [CVE-2025-37855](https://ubuntu.com/security/CVE-2025-37855) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1322 | linux-libc-dev | [CVE-2025-37856](https://ubuntu.com/security/CVE-2025-37856) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1323 | linux-libc-dev | [CVE-2025-37857](https://ubuntu.com/security/CVE-2025-37857) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1324 | linux-libc-dev | [CVE-2025-37858](https://ubuntu.com/security/CVE-2025-37858) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1325 | linux-libc-dev | [CVE-2025-37859](https://ubuntu.com/security/CVE-2025-37859) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1326 | linux-libc-dev | [CVE-2025-37861](https://ubuntu.com/security/CVE-2025-37861) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1327 | linux-libc-dev | [CVE-2025-37862](https://ubuntu.com/security/CVE-2025-37862) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1328 | linux-libc-dev | [CVE-2025-37867](https://ubuntu.com/security/CVE-2025-37867) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1329 | linux-libc-dev | [CVE-2025-37870](https://ubuntu.com/security/CVE-2025-37870) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1330 | linux-libc-dev | [CVE-2025-37871](https://ubuntu.com/security/CVE-2025-37871) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1331 | linux-libc-dev | [CVE-2025-37875](https://ubuntu.com/security/CVE-2025-37875) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1332 | linux-libc-dev | [CVE-2025-37876](https://ubuntu.com/security/CVE-2025-37876) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1333 | linux-libc-dev | [CVE-2025-37877](https://ubuntu.com/security/CVE-2025-37877) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1334 | linux-libc-dev | [CVE-2025-37878](https://ubuntu.com/security/CVE-2025-37878) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1335 | linux-libc-dev | [CVE-2025-37879](https://ubuntu.com/security/CVE-2025-37879) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1336 | linux-libc-dev | [CVE-2025-37880](https://ubuntu.com/security/CVE-2025-37880) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1337 | linux-libc-dev | [CVE-2025-37881](https://ubuntu.com/security/CVE-2025-37881) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1338 | linux-libc-dev | [CVE-2025-37882](https://ubuntu.com/security/CVE-2025-37882) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1339 | linux-libc-dev | [CVE-2025-37883](https://ubuntu.com/security/CVE-2025-37883) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1340 | linux-libc-dev | [CVE-2025-37884](https://ubuntu.com/security/CVE-2025-37884) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1341 | linux-libc-dev | [CVE-2025-37885](https://ubuntu.com/security/CVE-2025-37885) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1342 | linux-libc-dev | [CVE-2025-37889](https://ubuntu.com/security/CVE-2025-37889) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1343 | linux-libc-dev | [CVE-2025-37890](https://ubuntu.com/security/CVE-2025-37890) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
+| 1344 | linux-libc-dev | [CVE-2025-37899](https://ubuntu.com/security/CVE-2025-37899) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1345 | linux-libc-dev | [CVE-2025-37903](https://ubuntu.com/security/CVE-2025-37903) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1346 | linux-libc-dev | [CVE-2025-37905](https://ubuntu.com/security/CVE-2025-37905) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1347 | linux-libc-dev | [CVE-2025-37907](https://ubuntu.com/security/CVE-2025-37907) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1348 | linux-libc-dev | [CVE-2025-37909](https://ubuntu.com/security/CVE-2025-37909) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1349 | linux-libc-dev | [CVE-2025-37911](https://ubuntu.com/security/CVE-2025-37911) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1350 | linux-libc-dev | [CVE-2025-37912](https://ubuntu.com/security/CVE-2025-37912) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1351 | linux-libc-dev | [CVE-2025-37913](https://ubuntu.com/security/CVE-2025-37913) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1352 | linux-libc-dev | [CVE-2025-37914](https://ubuntu.com/security/CVE-2025-37914) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1353 | linux-libc-dev | [CVE-2025-37915](https://ubuntu.com/security/CVE-2025-37915) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1354 | linux-libc-dev | [CVE-2025-37920](https://ubuntu.com/security/CVE-2025-37920) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1355 | linux-libc-dev | [CVE-2025-37923](https://ubuntu.com/security/CVE-2025-37923) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1356 | linux-libc-dev | [CVE-2025-37924](https://ubuntu.com/security/CVE-2025-37924) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1357 | linux-libc-dev | [CVE-2025-37925](https://ubuntu.com/security/CVE-2025-37925) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1358 | linux-libc-dev | [CVE-2025-37926](https://ubuntu.com/security/CVE-2025-37926) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1359 | linux-libc-dev | [CVE-2025-37927](https://ubuntu.com/security/CVE-2025-37927) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1360 | linux-libc-dev | [CVE-2025-37928](https://ubuntu.com/security/CVE-2025-37928) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1361 | linux-libc-dev | [CVE-2025-37930](https://ubuntu.com/security/CVE-2025-37930) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1362 | linux-libc-dev | [CVE-2025-37931](https://ubuntu.com/security/CVE-2025-37931) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1363 | linux-libc-dev | [CVE-2025-37932](https://ubuntu.com/security/CVE-2025-37932) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
+| 1364 | linux-libc-dev | [CVE-2025-37937](https://ubuntu.com/security/CVE-2025-37937) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1365 | linux-libc-dev | [CVE-2025-37938](https://ubuntu.com/security/CVE-2025-37938) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1366 | linux-libc-dev | [CVE-2025-37940](https://ubuntu.com/security/CVE-2025-37940) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1367 | linux-libc-dev | [CVE-2025-37942](https://ubuntu.com/security/CVE-2025-37942) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1368 | linux-libc-dev | [CVE-2025-37943](https://ubuntu.com/security/CVE-2025-37943) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1369 | linux-libc-dev | [CVE-2025-37944](https://ubuntu.com/security/CVE-2025-37944) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1370 | linux-libc-dev | [CVE-2025-37945](https://ubuntu.com/security/CVE-2025-37945) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1371 | linux-libc-dev | [CVE-2025-37947](https://ubuntu.com/security/CVE-2025-37947) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1372 | linux-libc-dev | [CVE-2025-37949](https://ubuntu.com/security/CVE-2025-37949) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1373 | linux-libc-dev | [CVE-2025-37951](https://ubuntu.com/security/CVE-2025-37951) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1374 | linux-libc-dev | [CVE-2025-37952](https://ubuntu.com/security/CVE-2025-37952) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1375 | linux-libc-dev | [CVE-2025-37954](https://ubuntu.com/security/CVE-2025-37954) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1376 | linux-libc-dev | [CVE-2025-37956](https://ubuntu.com/security/CVE-2025-37956) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1377 | linux-libc-dev | [CVE-2025-37957](https://ubuntu.com/security/CVE-2025-37957) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1378 | linux-libc-dev | [CVE-2025-37959](https://ubuntu.com/security/CVE-2025-37959) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1379 | linux-libc-dev | [CVE-2025-37961](https://ubuntu.com/security/CVE-2025-37961) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1380 | linux-libc-dev | [CVE-2025-37964](https://ubuntu.com/security/CVE-2025-37964) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1381 | linux-libc-dev | [CVE-2025-37967](https://ubuntu.com/security/CVE-2025-37967) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1382 | linux-libc-dev | [CVE-2025-37968](https://ubuntu.com/security/CVE-2025-37968) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1383 | linux-libc-dev | [CVE-2025-37969](https://ubuntu.com/security/CVE-2025-37969) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1384 | linux-libc-dev | [CVE-2025-37970](https://ubuntu.com/security/CVE-2025-37970) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1385 | linux-libc-dev | [CVE-2025-37980](https://ubuntu.com/security/CVE-2025-37980) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1386 | linux-libc-dev | [CVE-2025-37982](https://ubuntu.com/security/CVE-2025-37982) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1387 | linux-libc-dev | [CVE-2025-37983](https://ubuntu.com/security/CVE-2025-37983) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1388 | linux-libc-dev | [CVE-2025-37984](https://ubuntu.com/security/CVE-2025-37984) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1389 | linux-libc-dev | [CVE-2025-37985](https://ubuntu.com/security/CVE-2025-37985) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1390 | linux-libc-dev | [CVE-2025-37989](https://ubuntu.com/security/CVE-2025-37989) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1391 | linux-libc-dev | [CVE-2025-37990](https://ubuntu.com/security/CVE-2025-37990) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1392 | linux-libc-dev | [CVE-2025-37991](https://ubuntu.com/security/CVE-2025-37991) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1393 | linux-libc-dev | [CVE-2025-37992](https://ubuntu.com/security/CVE-2025-37992) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1394 | linux-libc-dev | [CVE-2025-37994](https://ubuntu.com/security/CVE-2025-37994) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1395 | linux-libc-dev | [CVE-2025-37995](https://ubuntu.com/security/CVE-2025-37995) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1396 | linux-libc-dev | [CVE-2025-37997](https://ubuntu.com/security/CVE-2025-37997) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
+| 1397 | linux-libc-dev | [CVE-2025-37998](https://ubuntu.com/security/CVE-2025-37998) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1398 | linux-libc-dev | [CVE-2025-38000](https://ubuntu.com/security/CVE-2025-38000) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
+| 1399 | linux-libc-dev | [CVE-2025-38001](https://ubuntu.com/security/CVE-2025-38001) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
+| 1400 | linux-libc-dev | [CVE-2025-38003](https://ubuntu.com/security/CVE-2025-38003) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1401 | linux-libc-dev | [CVE-2025-38004](https://ubuntu.com/security/CVE-2025-38004) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1402 | linux-libc-dev | [CVE-2025-38005](https://ubuntu.com/security/CVE-2025-38005) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1403 | linux-libc-dev | [CVE-2025-38006](https://ubuntu.com/security/CVE-2025-38006) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1404 | linux-libc-dev | [CVE-2025-38009](https://ubuntu.com/security/CVE-2025-38009) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1405 | linux-libc-dev | [CVE-2025-38011](https://ubuntu.com/security/CVE-2025-38011) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1406 | linux-libc-dev | [CVE-2025-38014](https://ubuntu.com/security/CVE-2025-38014) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1407 | linux-libc-dev | [CVE-2025-38015](https://ubuntu.com/security/CVE-2025-38015) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1408 | linux-libc-dev | [CVE-2025-38020](https://ubuntu.com/security/CVE-2025-38020) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1409 | linux-libc-dev | [CVE-2025-38022](https://ubuntu.com/security/CVE-2025-38022) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1410 | linux-libc-dev | [CVE-2025-38023](https://ubuntu.com/security/CVE-2025-38023) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1411 | linux-libc-dev | [CVE-2025-38024](https://ubuntu.com/security/CVE-2025-38024) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1412 | linux-libc-dev | [CVE-2025-38029](https://ubuntu.com/security/CVE-2025-38029) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1413 | linux-libc-dev | [CVE-2025-38031](https://ubuntu.com/security/CVE-2025-38031) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1414 | linux-libc-dev | [CVE-2025-38033](https://ubuntu.com/security/CVE-2025-38033) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1415 | linux-libc-dev | [CVE-2025-38034](https://ubuntu.com/security/CVE-2025-38034) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1416 | linux-libc-dev | [CVE-2025-38035](https://ubuntu.com/security/CVE-2025-38035) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1417 | linux-libc-dev | [CVE-2025-38036](https://ubuntu.com/security/CVE-2025-38036) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1418 | linux-libc-dev | [CVE-2025-38037](https://ubuntu.com/security/CVE-2025-38037) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1419 | linux-libc-dev | [CVE-2025-38038](https://ubuntu.com/security/CVE-2025-38038) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1420 | linux-libc-dev | [CVE-2025-38039](https://ubuntu.com/security/CVE-2025-38039) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1421 | linux-libc-dev | [CVE-2025-38040](https://ubuntu.com/security/CVE-2025-38040) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1422 | linux-libc-dev | [CVE-2025-38041](https://ubuntu.com/security/CVE-2025-38041) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1423 | linux-libc-dev | [CVE-2025-38042](https://ubuntu.com/security/CVE-2025-38042) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1424 | linux-libc-dev | [CVE-2025-38043](https://ubuntu.com/security/CVE-2025-38043) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1425 | linux-libc-dev | [CVE-2025-38044](https://ubuntu.com/security/CVE-2025-38044) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1426 | linux-libc-dev | [CVE-2025-38045](https://ubuntu.com/security/CVE-2025-38045) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1427 | linux-libc-dev | [CVE-2025-38047](https://ubuntu.com/security/CVE-2025-38047) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1428 | linux-libc-dev | [CVE-2025-38048](https://ubuntu.com/security/CVE-2025-38048) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1429 | linux-libc-dev | [CVE-2025-38051](https://ubuntu.com/security/CVE-2025-38051) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1430 | linux-libc-dev | [CVE-2025-38052](https://ubuntu.com/security/CVE-2025-38052) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1431 | linux-libc-dev | [CVE-2025-38057](https://ubuntu.com/security/CVE-2025-38057) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1432 | linux-libc-dev | [CVE-2025-38058](https://ubuntu.com/security/CVE-2025-38058) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1433 | linux-libc-dev | [CVE-2025-38059](https://ubuntu.com/security/CVE-2025-38059) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1434 | linux-libc-dev | [CVE-2025-38060](https://ubuntu.com/security/CVE-2025-38060) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1435 | linux-libc-dev | [CVE-2025-38061](https://ubuntu.com/security/CVE-2025-38061) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1436 | linux-libc-dev | [CVE-2025-38062](https://ubuntu.com/security/CVE-2025-38062) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1437 | linux-libc-dev | [CVE-2025-38063](https://ubuntu.com/security/CVE-2025-38063) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1438 | linux-libc-dev | [CVE-2025-38064](https://ubuntu.com/security/CVE-2025-38064) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1439 | linux-libc-dev | [CVE-2025-38065](https://ubuntu.com/security/CVE-2025-38065) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1440 | linux-libc-dev | [CVE-2025-38066](https://ubuntu.com/security/CVE-2025-38066) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1441 | linux-libc-dev | [CVE-2025-38068](https://ubuntu.com/security/CVE-2025-38068) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1442 | linux-libc-dev | [CVE-2025-38069](https://ubuntu.com/security/CVE-2025-38069) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1443 | linux-libc-dev | [CVE-2025-38070](https://ubuntu.com/security/CVE-2025-38070) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1444 | linux-libc-dev | [CVE-2025-38071](https://ubuntu.com/security/CVE-2025-38071) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1445 | linux-libc-dev | [CVE-2025-38072](https://ubuntu.com/security/CVE-2025-38072) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1446 | linux-libc-dev | [CVE-2025-38073](https://ubuntu.com/security/CVE-2025-38073) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1447 | linux-libc-dev | [CVE-2025-38075](https://ubuntu.com/security/CVE-2025-38075) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1448 | linux-libc-dev | [CVE-2025-38077](https://ubuntu.com/security/CVE-2025-38077) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1449 | linux-libc-dev | [CVE-2025-38078](https://ubuntu.com/security/CVE-2025-38078) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1450 | linux-libc-dev | [CVE-2025-38079](https://ubuntu.com/security/CVE-2025-38079) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-152.162 |
+| 1451 | linux-libc-dev | [CVE-2025-38080](https://ubuntu.com/security/CVE-2025-38080) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1452 | linux-libc-dev | [CVE-2025-38081](https://ubuntu.com/security/CVE-2025-38081) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1453 | linux-libc-dev | [CVE-2025-38082](https://ubuntu.com/security/CVE-2025-38082) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1454 | linux-libc-dev | [CVE-2025-38083](https://ubuntu.com/security/CVE-2025-38083) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-151.161 |
+| 1455 | linux-libc-dev | [CVE-2025-38091](https://ubuntu.com/security/CVE-2025-38091) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1456 | linux-libc-dev | [CVE-2025-38092](https://ubuntu.com/security/CVE-2025-38092) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1457 | linux-libc-dev | [CVE-2025-38094](https://ubuntu.com/security/CVE-2025-38094) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1458 | linux-libc-dev | [CVE-2025-38095](https://ubuntu.com/security/CVE-2025-38095) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1459 | linux-libc-dev | [CVE-2025-38096](https://ubuntu.com/security/CVE-2025-38096) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1460 | linux-libc-dev | [CVE-2025-38097](https://ubuntu.com/security/CVE-2025-38097) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1461 | linux-libc-dev | [CVE-2025-38098](https://ubuntu.com/security/CVE-2025-38098) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1462 | linux-libc-dev | [CVE-2025-38099](https://ubuntu.com/security/CVE-2025-38099) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1463 | linux-libc-dev | [CVE-2025-38105](https://ubuntu.com/security/CVE-2025-38105) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1464 | linux-libc-dev | [CVE-2025-38109](https://ubuntu.com/security/CVE-2025-38109) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1465 | linux-libc-dev | [CVE-2025-38117](https://ubuntu.com/security/CVE-2025-38117) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1466 | linux-libc-dev | [CVE-2025-38118](https://ubuntu.com/security/CVE-2025-38118) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1467 | linux-libc-dev | [CVE-2025-38125](https://ubuntu.com/security/CVE-2025-38125) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1468 | linux-libc-dev | [CVE-2025-38126](https://ubuntu.com/security/CVE-2025-38126) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1469 | linux-libc-dev | [CVE-2025-38127](https://ubuntu.com/security/CVE-2025-38127) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1470 | linux-libc-dev | [CVE-2025-38129](https://ubuntu.com/security/CVE-2025-38129) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1471 | linux-libc-dev | [CVE-2025-38131](https://ubuntu.com/security/CVE-2025-38131) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1472 | linux-libc-dev | [CVE-2025-38140](https://ubuntu.com/security/CVE-2025-38140) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1473 | linux-libc-dev | [CVE-2025-38148](https://ubuntu.com/security/CVE-2025-38148) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1474 | linux-libc-dev | [CVE-2025-38152](https://ubuntu.com/security/CVE-2025-38152) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1475 | linux-libc-dev | [CVE-2025-38162](https://ubuntu.com/security/CVE-2025-38162) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1476 | linux-libc-dev | [CVE-2025-38165](https://ubuntu.com/security/CVE-2025-38165) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1477 | linux-libc-dev | [CVE-2025-38166](https://ubuntu.com/security/CVE-2025-38166) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1478 | linux-libc-dev | [CVE-2025-38168](https://ubuntu.com/security/CVE-2025-38168) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1479 | linux-libc-dev | [CVE-2025-38177](https://ubuntu.com/security/CVE-2025-38177) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-143.153 |
+| 1480 | linux-libc-dev | [CVE-2025-38180](https://ubuntu.com/security/CVE-2025-38180) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1481 | linux-libc-dev | [CVE-2025-38185](https://ubuntu.com/security/CVE-2025-38185) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1482 | linux-libc-dev | [CVE-2025-38189](https://ubuntu.com/security/CVE-2025-38189) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1483 | linux-libc-dev | [CVE-2025-38190](https://ubuntu.com/security/CVE-2025-38190) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1484 | linux-libc-dev | [CVE-2025-38191](https://ubuntu.com/security/CVE-2025-38191) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1485 | linux-libc-dev | [CVE-2025-38192](https://ubuntu.com/security/CVE-2025-38192) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1486 | linux-libc-dev | [CVE-2025-38193](https://ubuntu.com/security/CVE-2025-38193) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1487 | linux-libc-dev | [CVE-2025-38198](https://ubuntu.com/security/CVE-2025-38198) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1488 | linux-libc-dev | [CVE-2025-38199](https://ubuntu.com/security/CVE-2025-38199) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1489 | linux-libc-dev | [CVE-2025-38201](https://ubuntu.com/security/CVE-2025-38201) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1490 | linux-libc-dev | [CVE-2025-38202](https://ubuntu.com/security/CVE-2025-38202) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1491 | linux-libc-dev | [CVE-2025-38205](https://ubuntu.com/security/CVE-2025-38205) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1492 | linux-libc-dev | [CVE-2025-38207](https://ubuntu.com/security/CVE-2025-38207) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1493 | linux-libc-dev | [CVE-2025-38208](https://ubuntu.com/security/CVE-2025-38208) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1494 | linux-libc-dev | [CVE-2025-38214](https://ubuntu.com/security/CVE-2025-38214) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1495 | linux-libc-dev | [CVE-2025-38215](https://ubuntu.com/security/CVE-2025-38215) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1496 | linux-libc-dev | [CVE-2025-38225](https://ubuntu.com/security/CVE-2025-38225) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1497 | linux-libc-dev | [CVE-2025-38230](https://ubuntu.com/security/CVE-2025-38230) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1498 | linux-libc-dev | [CVE-2025-38232](https://ubuntu.com/security/CVE-2025-38232) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1499 | linux-libc-dev | [CVE-2025-38234](https://ubuntu.com/security/CVE-2025-38234) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1500 | linux-libc-dev | [CVE-2025-38236](https://ubuntu.com/security/CVE-2025-38236) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1501 | linux-libc-dev | [CVE-2025-38239](https://ubuntu.com/security/CVE-2025-38239) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1502 | linux-libc-dev | [CVE-2025-38244](https://ubuntu.com/security/CVE-2025-38244) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1503 | linux-libc-dev | [CVE-2025-38248](https://ubuntu.com/security/CVE-2025-38248) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1504 | linux-libc-dev | [CVE-2025-38250](https://ubuntu.com/security/CVE-2025-38250) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1505 | linux-libc-dev | [CVE-2025-38259](https://ubuntu.com/security/CVE-2025-38259) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1506 | linux-libc-dev | [CVE-2025-38261](https://ubuntu.com/security/CVE-2025-38261) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1507 | linux-libc-dev | [CVE-2025-38264](https://ubuntu.com/security/CVE-2025-38264) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1508 | linux-libc-dev | [CVE-2025-38269](https://ubuntu.com/security/CVE-2025-38269) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1509 | linux-libc-dev | [CVE-2025-38272](https://ubuntu.com/security/CVE-2025-38272) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1510 | linux-libc-dev | [CVE-2025-38275](https://ubuntu.com/security/CVE-2025-38275) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1511 | linux-libc-dev | [CVE-2025-38300](https://ubuntu.com/security/CVE-2025-38300) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1512 | linux-libc-dev | [CVE-2025-38321](https://ubuntu.com/security/CVE-2025-38321) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1513 | linux-libc-dev | [CVE-2025-38323](https://ubuntu.com/security/CVE-2025-38323) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1514 | linux-libc-dev | [CVE-2025-38329](https://ubuntu.com/security/CVE-2025-38329) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1515 | linux-libc-dev | [CVE-2025-38330](https://ubuntu.com/security/CVE-2025-38330) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1516 | linux-libc-dev | [CVE-2025-38331](https://ubuntu.com/security/CVE-2025-38331) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1517 | linux-libc-dev | [CVE-2025-38333](https://ubuntu.com/security/CVE-2025-38333) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1518 | linux-libc-dev | [CVE-2025-38334](https://ubuntu.com/security/CVE-2025-38334) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1519 | linux-libc-dev | [CVE-2025-38335](https://ubuntu.com/security/CVE-2025-38335) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1520 | linux-libc-dev | [CVE-2025-38340](https://ubuntu.com/security/CVE-2025-38340) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1521 | linux-libc-dev | [CVE-2025-38343](https://ubuntu.com/security/CVE-2025-38343) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1522 | linux-libc-dev | [CVE-2025-38347](https://ubuntu.com/security/CVE-2025-38347) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1523 | linux-libc-dev | [CVE-2025-38349](https://ubuntu.com/security/CVE-2025-38349) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1524 | linux-libc-dev | [CVE-2025-38350](https://ubuntu.com/security/CVE-2025-38350) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-153.163 |
+| 1525 | linux-libc-dev | [CVE-2025-38353](https://ubuntu.com/security/CVE-2025-38353) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1526 | linux-libc-dev | [CVE-2025-38359](https://ubuntu.com/security/CVE-2025-38359) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1527 | linux-libc-dev | [CVE-2025-38360](https://ubuntu.com/security/CVE-2025-38360) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1528 | linux-libc-dev | [CVE-2025-38361](https://ubuntu.com/security/CVE-2025-38361) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1529 | linux-libc-dev | [CVE-2025-38368](https://ubuntu.com/security/CVE-2025-38368) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1530 | linux-libc-dev | [CVE-2025-38369](https://ubuntu.com/security/CVE-2025-38369) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1531 | linux-libc-dev | [CVE-2025-38373](https://ubuntu.com/security/CVE-2025-38373) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1532 | linux-libc-dev | [CVE-2025-38408](https://ubuntu.com/security/CVE-2025-38408) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1533 | linux-libc-dev | [CVE-2025-38409](https://ubuntu.com/security/CVE-2025-38409) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1534 | linux-libc-dev | [CVE-2025-38422](https://ubuntu.com/security/CVE-2025-38422) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1535 | linux-libc-dev | [CVE-2025-38425](https://ubuntu.com/security/CVE-2025-38425) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1536 | linux-libc-dev | [CVE-2025-38426](https://ubuntu.com/security/CVE-2025-38426) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1537 | linux-libc-dev | [CVE-2025-38436](https://ubuntu.com/security/CVE-2025-38436) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1538 | linux-libc-dev | [CVE-2025-38437](https://ubuntu.com/security/CVE-2025-38437) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1539 | linux-libc-dev | [CVE-2025-38438](https://ubuntu.com/security/CVE-2025-38438) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1540 | linux-libc-dev | [CVE-2025-38440](https://ubuntu.com/security/CVE-2025-38440) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1541 | linux-libc-dev | [CVE-2025-38449](https://ubuntu.com/security/CVE-2025-38449) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1542 | linux-libc-dev | [CVE-2025-38468](https://ubuntu.com/security/CVE-2025-38468) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1543 | linux-libc-dev | [CVE-2025-38470](https://ubuntu.com/security/CVE-2025-38470) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1544 | linux-libc-dev | [CVE-2025-38473](https://ubuntu.com/security/CVE-2025-38473) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1545 | linux-libc-dev | [CVE-2025-38474](https://ubuntu.com/security/CVE-2025-38474) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1546 | linux-libc-dev | [CVE-2025-38476](https://ubuntu.com/security/CVE-2025-38476) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1547 | linux-libc-dev | [CVE-2025-38478](https://ubuntu.com/security/CVE-2025-38478) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1548 | linux-libc-dev | [CVE-2025-38480](https://ubuntu.com/security/CVE-2025-38480) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1549 | linux-libc-dev | [CVE-2025-38481](https://ubuntu.com/security/CVE-2025-38481) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1550 | linux-libc-dev | [CVE-2025-38482](https://ubuntu.com/security/CVE-2025-38482) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1551 | linux-libc-dev | [CVE-2025-38483](https://ubuntu.com/security/CVE-2025-38483) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1552 | linux-libc-dev | [CVE-2025-38485](https://ubuntu.com/security/CVE-2025-38485) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1553 | linux-libc-dev | [CVE-2025-38486](https://ubuntu.com/security/CVE-2025-38486) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1554 | linux-libc-dev | [CVE-2025-38487](https://ubuntu.com/security/CVE-2025-38487) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1555 | linux-libc-dev | [CVE-2025-38488](https://ubuntu.com/security/CVE-2025-38488) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1556 | linux-libc-dev | [CVE-2025-38491](https://ubuntu.com/security/CVE-2025-38491) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1557 | linux-libc-dev | [CVE-2025-38494](https://ubuntu.com/security/CVE-2025-38494) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1558 | linux-libc-dev | [CVE-2025-38495](https://ubuntu.com/security/CVE-2025-38495) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1559 | linux-libc-dev | [CVE-2025-38497](https://ubuntu.com/security/CVE-2025-38497) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1560 | linux-libc-dev | [CVE-2025-38499](https://ubuntu.com/security/CVE-2025-38499) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1561 | linux-libc-dev | [CVE-2025-38501](https://ubuntu.com/security/CVE-2025-38501) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1562 | linux-libc-dev | [CVE-2025-38502](https://ubuntu.com/security/CVE-2025-38502) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1563 | linux-libc-dev | [CVE-2025-38503](https://ubuntu.com/security/CVE-2025-38503) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1564 | linux-libc-dev | [CVE-2025-38507](https://ubuntu.com/security/CVE-2025-38507) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1565 | linux-libc-dev | [CVE-2025-38512](https://ubuntu.com/security/CVE-2025-38512) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1566 | linux-libc-dev | [CVE-2025-38520](https://ubuntu.com/security/CVE-2025-38520) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1567 | linux-libc-dev | [CVE-2025-38524](https://ubuntu.com/security/CVE-2025-38524) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1568 | linux-libc-dev | [CVE-2025-38527](https://ubuntu.com/security/CVE-2025-38527) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1569 | linux-libc-dev | [CVE-2025-38528](https://ubuntu.com/security/CVE-2025-38528) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1570 | linux-libc-dev | [CVE-2025-38529](https://ubuntu.com/security/CVE-2025-38529) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1571 | linux-libc-dev | [CVE-2025-38530](https://ubuntu.com/security/CVE-2025-38530) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1572 | linux-libc-dev | [CVE-2025-38531](https://ubuntu.com/security/CVE-2025-38531) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1573 | linux-libc-dev | [CVE-2025-38535](https://ubuntu.com/security/CVE-2025-38535) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1574 | linux-libc-dev | [CVE-2025-38538](https://ubuntu.com/security/CVE-2025-38538) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1575 | linux-libc-dev | [CVE-2025-38539](https://ubuntu.com/security/CVE-2025-38539) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1576 | linux-libc-dev | [CVE-2025-38544](https://ubuntu.com/security/CVE-2025-38544) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1577 | linux-libc-dev | [CVE-2025-38546](https://ubuntu.com/security/CVE-2025-38546) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1578 | linux-libc-dev | [CVE-2025-38548](https://ubuntu.com/security/CVE-2025-38548) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1579 | linux-libc-dev | [CVE-2025-38550](https://ubuntu.com/security/CVE-2025-38550) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1580 | linux-libc-dev | [CVE-2025-38552](https://ubuntu.com/security/CVE-2025-38552) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1581 | linux-libc-dev | [CVE-2025-38553](https://ubuntu.com/security/CVE-2025-38553) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1582 | linux-libc-dev | [CVE-2025-38555](https://ubuntu.com/security/CVE-2025-38555) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1583 | linux-libc-dev | [CVE-2025-38556](https://ubuntu.com/security/CVE-2025-38556) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1584 | linux-libc-dev | [CVE-2025-38560](https://ubuntu.com/security/CVE-2025-38560) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1585 | linux-libc-dev | [CVE-2025-38561](https://ubuntu.com/security/CVE-2025-38561) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1586 | linux-libc-dev | [CVE-2025-38562](https://ubuntu.com/security/CVE-2025-38562) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1587 | linux-libc-dev | [CVE-2025-38563](https://ubuntu.com/security/CVE-2025-38563) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1588 | linux-libc-dev | [CVE-2025-38565](https://ubuntu.com/security/CVE-2025-38565) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1589 | linux-libc-dev | [CVE-2025-38569](https://ubuntu.com/security/CVE-2025-38569) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1590 | linux-libc-dev | [CVE-2025-38572](https://ubuntu.com/security/CVE-2025-38572) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1591 | linux-libc-dev | [CVE-2025-38574](https://ubuntu.com/security/CVE-2025-38574) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1592 | linux-libc-dev | [CVE-2025-38575](https://ubuntu.com/security/CVE-2025-38575) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1593 | linux-libc-dev | [CVE-2025-38576](https://ubuntu.com/security/CVE-2025-38576) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1594 | linux-libc-dev | [CVE-2025-38577](https://ubuntu.com/security/CVE-2025-38577) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1595 | linux-libc-dev | [CVE-2025-38578](https://ubuntu.com/security/CVE-2025-38578) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1596 | linux-libc-dev | [CVE-2025-38579](https://ubuntu.com/security/CVE-2025-38579) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1597 | linux-libc-dev | [CVE-2025-38581](https://ubuntu.com/security/CVE-2025-38581) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1598 | linux-libc-dev | [CVE-2025-38583](https://ubuntu.com/security/CVE-2025-38583) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1599 | linux-libc-dev | [CVE-2025-38584](https://ubuntu.com/security/CVE-2025-38584) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1600 | linux-libc-dev | [CVE-2025-38590](https://ubuntu.com/security/CVE-2025-38590) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1601 | linux-libc-dev | [CVE-2025-38591](https://ubuntu.com/security/CVE-2025-38591) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1602 | linux-libc-dev | [CVE-2025-38595](https://ubuntu.com/security/CVE-2025-38595) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1603 | linux-libc-dev | [CVE-2025-38601](https://ubuntu.com/security/CVE-2025-38601) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1604 | linux-libc-dev | [CVE-2025-38602](https://ubuntu.com/security/CVE-2025-38602) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1605 | linux-libc-dev | [CVE-2025-38604](https://ubuntu.com/security/CVE-2025-38604) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1606 | linux-libc-dev | [CVE-2025-38608](https://ubuntu.com/security/CVE-2025-38608) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1607 | linux-libc-dev | [CVE-2025-38609](https://ubuntu.com/security/CVE-2025-38609) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1608 | linux-libc-dev | [CVE-2025-38612](https://ubuntu.com/security/CVE-2025-38612) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1609 | linux-libc-dev | [CVE-2025-38614](https://ubuntu.com/security/CVE-2025-38614) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1610 | linux-libc-dev | [CVE-2025-38615](https://ubuntu.com/security/CVE-2025-38615) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1611 | linux-libc-dev | [CVE-2025-38617](https://ubuntu.com/security/CVE-2025-38617) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1612 | linux-libc-dev | [CVE-2025-38618](https://ubuntu.com/security/CVE-2025-38618) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1613 | linux-libc-dev | [CVE-2025-38621](https://ubuntu.com/security/CVE-2025-38621) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1614 | linux-libc-dev | [CVE-2025-38622](https://ubuntu.com/security/CVE-2025-38622) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1615 | linux-libc-dev | [CVE-2025-38623](https://ubuntu.com/security/CVE-2025-38623) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1616 | linux-libc-dev | [CVE-2025-38624](https://ubuntu.com/security/CVE-2025-38624) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1617 | linux-libc-dev | [CVE-2025-38626](https://ubuntu.com/security/CVE-2025-38626) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1618 | linux-libc-dev | [CVE-2025-38630](https://ubuntu.com/security/CVE-2025-38630) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1619 | linux-libc-dev | [CVE-2025-38634](https://ubuntu.com/security/CVE-2025-38634) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1620 | linux-libc-dev | [CVE-2025-38635](https://ubuntu.com/security/CVE-2025-38635) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1621 | linux-libc-dev | [CVE-2025-38637](https://ubuntu.com/security/CVE-2025-38637) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1622 | linux-libc-dev | [CVE-2025-38639](https://ubuntu.com/security/CVE-2025-38639) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1623 | linux-libc-dev | [CVE-2025-38643](https://ubuntu.com/security/CVE-2025-38643) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1624 | linux-libc-dev | [CVE-2025-38644](https://ubuntu.com/security/CVE-2025-38644) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1625 | linux-libc-dev | [CVE-2025-38645](https://ubuntu.com/security/CVE-2025-38645) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1626 | linux-libc-dev | [CVE-2025-38650](https://ubuntu.com/security/CVE-2025-38650) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1627 | linux-libc-dev | [CVE-2025-38652](https://ubuntu.com/security/CVE-2025-38652) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1628 | linux-libc-dev | [CVE-2025-38659](https://ubuntu.com/security/CVE-2025-38659) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1629 | linux-libc-dev | [CVE-2025-38663](https://ubuntu.com/security/CVE-2025-38663) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1630 | linux-libc-dev | [CVE-2025-38664](https://ubuntu.com/security/CVE-2025-38664) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1631 | linux-libc-dev | [CVE-2025-38665](https://ubuntu.com/security/CVE-2025-38665) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1632 | linux-libc-dev | [CVE-2025-38666](https://ubuntu.com/security/CVE-2025-38666) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1633 | linux-libc-dev | [CVE-2025-38668](https://ubuntu.com/security/CVE-2025-38668) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1634 | linux-libc-dev | [CVE-2025-38669](https://ubuntu.com/security/CVE-2025-38669) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1635 | linux-libc-dev | [CVE-2025-38670](https://ubuntu.com/security/CVE-2025-38670) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1636 | linux-libc-dev | [CVE-2025-38671](https://ubuntu.com/security/CVE-2025-38671) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1637 | linux-libc-dev | [CVE-2025-38672](https://ubuntu.com/security/CVE-2025-38672) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1638 | linux-libc-dev | [CVE-2025-38673](https://ubuntu.com/security/CVE-2025-38673) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1639 | linux-libc-dev | [CVE-2025-38674](https://ubuntu.com/security/CVE-2025-38674) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1640 | linux-libc-dev | [CVE-2025-38676](https://ubuntu.com/security/CVE-2025-38676) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1641 | linux-libc-dev | [CVE-2025-38677](https://ubuntu.com/security/CVE-2025-38677) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1642 | linux-libc-dev | [CVE-2025-38678](https://ubuntu.com/security/CVE-2025-38678) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1643 | linux-libc-dev | [CVE-2025-38679](https://ubuntu.com/security/CVE-2025-38679) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1644 | linux-libc-dev | [CVE-2025-38680](https://ubuntu.com/security/CVE-2025-38680) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1645 | linux-libc-dev | [CVE-2025-38681](https://ubuntu.com/security/CVE-2025-38681) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1646 | linux-libc-dev | [CVE-2025-38683](https://ubuntu.com/security/CVE-2025-38683) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1647 | linux-libc-dev | [CVE-2025-38684](https://ubuntu.com/security/CVE-2025-38684) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1648 | linux-libc-dev | [CVE-2025-38685](https://ubuntu.com/security/CVE-2025-38685) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1649 | linux-libc-dev | [CVE-2025-38687](https://ubuntu.com/security/CVE-2025-38687) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1650 | linux-libc-dev | [CVE-2025-38689](https://ubuntu.com/security/CVE-2025-38689) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1651 | linux-libc-dev | [CVE-2025-38691](https://ubuntu.com/security/CVE-2025-38691) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1652 | linux-libc-dev | [CVE-2025-38692](https://ubuntu.com/security/CVE-2025-38692) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1653 | linux-libc-dev | [CVE-2025-38693](https://ubuntu.com/security/CVE-2025-38693) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1654 | linux-libc-dev | [CVE-2025-38694](https://ubuntu.com/security/CVE-2025-38694) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1655 | linux-libc-dev | [CVE-2025-38695](https://ubuntu.com/security/CVE-2025-38695) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1656 | linux-libc-dev | [CVE-2025-38696](https://ubuntu.com/security/CVE-2025-38696) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1657 | linux-libc-dev | [CVE-2025-38697](https://ubuntu.com/security/CVE-2025-38697) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1658 | linux-libc-dev | [CVE-2025-38698](https://ubuntu.com/security/CVE-2025-38698) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1659 | linux-libc-dev | [CVE-2025-38699](https://ubuntu.com/security/CVE-2025-38699) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1660 | linux-libc-dev | [CVE-2025-38700](https://ubuntu.com/security/CVE-2025-38700) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1661 | linux-libc-dev | [CVE-2025-38701](https://ubuntu.com/security/CVE-2025-38701) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1662 | linux-libc-dev | [CVE-2025-38702](https://ubuntu.com/security/CVE-2025-38702) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1663 | linux-libc-dev | [CVE-2025-38703](https://ubuntu.com/security/CVE-2025-38703) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1664 | linux-libc-dev | [CVE-2025-38704](https://ubuntu.com/security/CVE-2025-38704) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1665 | linux-libc-dev | [CVE-2025-38705](https://ubuntu.com/security/CVE-2025-38705) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1666 | linux-libc-dev | [CVE-2025-38706](https://ubuntu.com/security/CVE-2025-38706) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1667 | linux-libc-dev | [CVE-2025-38707](https://ubuntu.com/security/CVE-2025-38707) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1668 | linux-libc-dev | [CVE-2025-38708](https://ubuntu.com/security/CVE-2025-38708) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1669 | linux-libc-dev | [CVE-2025-38709](https://ubuntu.com/security/CVE-2025-38709) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1670 | linux-libc-dev | [CVE-2025-38710](https://ubuntu.com/security/CVE-2025-38710) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1671 | linux-libc-dev | [CVE-2025-38711](https://ubuntu.com/security/CVE-2025-38711) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1672 | linux-libc-dev | [CVE-2025-38712](https://ubuntu.com/security/CVE-2025-38712) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1673 | linux-libc-dev | [CVE-2025-38713](https://ubuntu.com/security/CVE-2025-38713) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1674 | linux-libc-dev | [CVE-2025-38714](https://ubuntu.com/security/CVE-2025-38714) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1675 | linux-libc-dev | [CVE-2025-38715](https://ubuntu.com/security/CVE-2025-38715) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1676 | linux-libc-dev | [CVE-2025-38716](https://ubuntu.com/security/CVE-2025-38716) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1677 | linux-libc-dev | [CVE-2025-38717](https://ubuntu.com/security/CVE-2025-38717) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1678 | linux-libc-dev | [CVE-2025-38718](https://ubuntu.com/security/CVE-2025-38718) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1679 | linux-libc-dev | [CVE-2025-38721](https://ubuntu.com/security/CVE-2025-38721) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1680 | linux-libc-dev | [CVE-2025-38724](https://ubuntu.com/security/CVE-2025-38724) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1681 | linux-libc-dev | [CVE-2025-38725](https://ubuntu.com/security/CVE-2025-38725) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1682 | linux-libc-dev | [CVE-2025-38727](https://ubuntu.com/security/CVE-2025-38727) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1683 | linux-libc-dev | [CVE-2025-38728](https://ubuntu.com/security/CVE-2025-38728) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1684 | linux-libc-dev | [CVE-2025-38729](https://ubuntu.com/security/CVE-2025-38729) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1685 | linux-libc-dev | [CVE-2025-38732](https://ubuntu.com/security/CVE-2025-38732) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1686 | linux-libc-dev | [CVE-2025-38734](https://ubuntu.com/security/CVE-2025-38734) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1687 | linux-libc-dev | [CVE-2025-39673](https://ubuntu.com/security/CVE-2025-39673) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1688 | linux-libc-dev | [CVE-2025-39675](https://ubuntu.com/security/CVE-2025-39675) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1689 | linux-libc-dev | [CVE-2025-39676](https://ubuntu.com/security/CVE-2025-39676) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1690 | linux-libc-dev | [CVE-2025-39677](https://ubuntu.com/security/CVE-2025-39677) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1691 | linux-libc-dev | [CVE-2025-39681](https://ubuntu.com/security/CVE-2025-39681) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1692 | linux-libc-dev | [CVE-2025-39683](https://ubuntu.com/security/CVE-2025-39683) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1693 | linux-libc-dev | [CVE-2025-39684](https://ubuntu.com/security/CVE-2025-39684) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1694 | linux-libc-dev | [CVE-2025-39685](https://ubuntu.com/security/CVE-2025-39685) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1695 | linux-libc-dev | [CVE-2025-39686](https://ubuntu.com/security/CVE-2025-39686) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1696 | linux-libc-dev | [CVE-2025-39687](https://ubuntu.com/security/CVE-2025-39687) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1697 | linux-libc-dev | [CVE-2025-39689](https://ubuntu.com/security/CVE-2025-39689) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1698 | linux-libc-dev | [CVE-2025-39691](https://ubuntu.com/security/CVE-2025-39691) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1699 | linux-libc-dev | [CVE-2025-39692](https://ubuntu.com/security/CVE-2025-39692) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1700 | linux-libc-dev | [CVE-2025-39693](https://ubuntu.com/security/CVE-2025-39693) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1701 | linux-libc-dev | [CVE-2025-39697](https://ubuntu.com/security/CVE-2025-39697) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1702 | linux-libc-dev | [CVE-2025-39702](https://ubuntu.com/security/CVE-2025-39702) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1703 | linux-libc-dev | [CVE-2025-39703](https://ubuntu.com/security/CVE-2025-39703) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1704 | linux-libc-dev | [CVE-2025-39705](https://ubuntu.com/security/CVE-2025-39705) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1705 | linux-libc-dev | [CVE-2025-39706](https://ubuntu.com/security/CVE-2025-39706) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1706 | linux-libc-dev | [CVE-2025-39707](https://ubuntu.com/security/CVE-2025-39707) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1707 | linux-libc-dev | [CVE-2025-39709](https://ubuntu.com/security/CVE-2025-39709) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1708 | linux-libc-dev | [CVE-2025-39710](https://ubuntu.com/security/CVE-2025-39710) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1709 | linux-libc-dev | [CVE-2025-39713](https://ubuntu.com/security/CVE-2025-39713) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1710 | linux-libc-dev | [CVE-2025-39714](https://ubuntu.com/security/CVE-2025-39714) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1711 | linux-libc-dev | [CVE-2025-39715](https://ubuntu.com/security/CVE-2025-39715) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1712 | linux-libc-dev | [CVE-2025-39716](https://ubuntu.com/security/CVE-2025-39716) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1713 | linux-libc-dev | [CVE-2025-39720](https://ubuntu.com/security/CVE-2025-39720) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1714 | linux-libc-dev | [CVE-2025-39724](https://ubuntu.com/security/CVE-2025-39724) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1715 | linux-libc-dev | [CVE-2025-39726](https://ubuntu.com/security/CVE-2025-39726) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1716 | linux-libc-dev | [CVE-2025-39728](https://ubuntu.com/security/CVE-2025-39728) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1717 | linux-libc-dev | [CVE-2025-39730](https://ubuntu.com/security/CVE-2025-39730) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1718 | linux-libc-dev | [CVE-2025-39732](https://ubuntu.com/security/CVE-2025-39732) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1719 | linux-libc-dev | [CVE-2025-39734](https://ubuntu.com/security/CVE-2025-39734) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1720 | linux-libc-dev | [CVE-2025-39735](https://ubuntu.com/security/CVE-2025-39735) | MEDIUM | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1721 | linux-libc-dev | [CVE-2025-39736](https://ubuntu.com/security/CVE-2025-39736) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1722 | linux-libc-dev | [CVE-2025-39737](https://ubuntu.com/security/CVE-2025-39737) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1723 | linux-libc-dev | [CVE-2025-39738](https://ubuntu.com/security/CVE-2025-39738) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1724 | linux-libc-dev | [CVE-2025-39742](https://ubuntu.com/security/CVE-2025-39742) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1725 | linux-libc-dev | [CVE-2025-39743](https://ubuntu.com/security/CVE-2025-39743) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1726 | linux-libc-dev | [CVE-2025-39744](https://ubuntu.com/security/CVE-2025-39744) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1727 | linux-libc-dev | [CVE-2025-39745](https://ubuntu.com/security/CVE-2025-39745) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1728 | linux-libc-dev | [CVE-2025-39746](https://ubuntu.com/security/CVE-2025-39746) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1729 | linux-libc-dev | [CVE-2025-39747](https://ubuntu.com/security/CVE-2025-39747) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1730 | linux-libc-dev | [CVE-2025-39748](https://ubuntu.com/security/CVE-2025-39748) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1731 | linux-libc-dev | [CVE-2025-39749](https://ubuntu.com/security/CVE-2025-39749) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1732 | linux-libc-dev | [CVE-2025-39750](https://ubuntu.com/security/CVE-2025-39750) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1733 | linux-libc-dev | [CVE-2025-39751](https://ubuntu.com/security/CVE-2025-39751) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1734 | linux-libc-dev | [CVE-2025-39752](https://ubuntu.com/security/CVE-2025-39752) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1735 | linux-libc-dev | [CVE-2025-39753](https://ubuntu.com/security/CVE-2025-39753) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1736 | linux-libc-dev | [CVE-2025-39754](https://ubuntu.com/security/CVE-2025-39754) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1737 | linux-libc-dev | [CVE-2025-39756](https://ubuntu.com/security/CVE-2025-39756) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1738 | linux-libc-dev | [CVE-2025-39757](https://ubuntu.com/security/CVE-2025-39757) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1739 | linux-libc-dev | [CVE-2025-39759](https://ubuntu.com/security/CVE-2025-39759) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1740 | linux-libc-dev | [CVE-2025-39760](https://ubuntu.com/security/CVE-2025-39760) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1741 | linux-libc-dev | [CVE-2025-39761](https://ubuntu.com/security/CVE-2025-39761) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1742 | linux-libc-dev | [CVE-2025-39762](https://ubuntu.com/security/CVE-2025-39762) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1743 | linux-libc-dev | [CVE-2025-39763](https://ubuntu.com/security/CVE-2025-39763) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1744 | linux-libc-dev | [CVE-2025-39764](https://ubuntu.com/security/CVE-2025-39764) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1745 | linux-libc-dev | [CVE-2025-39766](https://ubuntu.com/security/CVE-2025-39766) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1746 | linux-libc-dev | [CVE-2025-39770](https://ubuntu.com/security/CVE-2025-39770) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1747 | linux-libc-dev | [CVE-2025-39771](https://ubuntu.com/security/CVE-2025-39771) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1748 | linux-libc-dev | [CVE-2025-39772](https://ubuntu.com/security/CVE-2025-39772) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1749 | linux-libc-dev | [CVE-2025-39773](https://ubuntu.com/security/CVE-2025-39773) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1750 | linux-libc-dev | [CVE-2025-39776](https://ubuntu.com/security/CVE-2025-39776) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1751 | linux-libc-dev | [CVE-2025-39779](https://ubuntu.com/security/CVE-2025-39779) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1752 | linux-libc-dev | [CVE-2025-39781](https://ubuntu.com/security/CVE-2025-39781) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1753 | linux-libc-dev | [CVE-2025-39782](https://ubuntu.com/security/CVE-2025-39782) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1754 | linux-libc-dev | [CVE-2025-39783](https://ubuntu.com/security/CVE-2025-39783) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1755 | linux-libc-dev | [CVE-2025-39787](https://ubuntu.com/security/CVE-2025-39787) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1756 | linux-libc-dev | [CVE-2025-39788](https://ubuntu.com/security/CVE-2025-39788) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1757 | linux-libc-dev | [CVE-2025-39789](https://ubuntu.com/security/CVE-2025-39789) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1758 | linux-libc-dev | [CVE-2025-39790](https://ubuntu.com/security/CVE-2025-39790) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1759 | linux-libc-dev | [CVE-2025-39794](https://ubuntu.com/security/CVE-2025-39794) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1760 | linux-libc-dev | [CVE-2025-39795](https://ubuntu.com/security/CVE-2025-39795) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1761 | linux-libc-dev | [CVE-2025-39797](https://ubuntu.com/security/CVE-2025-39797) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1762 | linux-libc-dev | [CVE-2025-39798](https://ubuntu.com/security/CVE-2025-39798) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1763 | linux-libc-dev | [CVE-2025-39800](https://ubuntu.com/security/CVE-2025-39800) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1764 | linux-libc-dev | [CVE-2025-39801](https://ubuntu.com/security/CVE-2025-39801) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1765 | linux-libc-dev | [CVE-2025-39806](https://ubuntu.com/security/CVE-2025-39806) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1766 | linux-libc-dev | [CVE-2025-39808](https://ubuntu.com/security/CVE-2025-39808) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1767 | linux-libc-dev | [CVE-2025-39810](https://ubuntu.com/security/CVE-2025-39810) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1768 | linux-libc-dev | [CVE-2025-39812](https://ubuntu.com/security/CVE-2025-39812) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1769 | linux-libc-dev | [CVE-2025-39813](https://ubuntu.com/security/CVE-2025-39813) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1770 | linux-libc-dev | [CVE-2025-39817](https://ubuntu.com/security/CVE-2025-39817) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1771 | linux-libc-dev | [CVE-2025-39819](https://ubuntu.com/security/CVE-2025-39819) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1772 | linux-libc-dev | [CVE-2025-39823](https://ubuntu.com/security/CVE-2025-39823) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1773 | linux-libc-dev | [CVE-2025-39824](https://ubuntu.com/security/CVE-2025-39824) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1774 | linux-libc-dev | [CVE-2025-39825](https://ubuntu.com/security/CVE-2025-39825) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1775 | linux-libc-dev | [CVE-2025-39826](https://ubuntu.com/security/CVE-2025-39826) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1776 | linux-libc-dev | [CVE-2025-39827](https://ubuntu.com/security/CVE-2025-39827) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1777 | linux-libc-dev | [CVE-2025-39828](https://ubuntu.com/security/CVE-2025-39828) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1778 | linux-libc-dev | [CVE-2025-39829](https://ubuntu.com/security/CVE-2025-39829) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1779 | linux-libc-dev | [CVE-2025-39833](https://ubuntu.com/security/CVE-2025-39833) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1780 | linux-libc-dev | [CVE-2025-39835](https://ubuntu.com/security/CVE-2025-39835) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1781 | linux-libc-dev | [CVE-2025-39989](https://ubuntu.com/security/CVE-2025-39989) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1782 | linux-libc-dev | [CVE-2025-40325](https://ubuntu.com/security/CVE-2025-40325) | MEDIUM | affected | 5.15.0-138.148 |  |
+| 1783 | linux-libc-dev | [CVE-2017-0537](https://ubuntu.com/security/CVE-2017-0537) | LOW | affected | 5.15.0-138.148 |  |
+| 1784 | linux-libc-dev | [CVE-2017-13165](https://ubuntu.com/security/CVE-2017-13165) | LOW | affected | 5.15.0-138.148 |  |
+| 1785 | linux-libc-dev | [CVE-2017-13693](https://ubuntu.com/security/CVE-2017-13693) | LOW | affected | 5.15.0-138.148 |  |
+| 1786 | linux-libc-dev | [CVE-2018-1121](https://ubuntu.com/security/CVE-2018-1121) | LOW | affected | 5.15.0-138.148 |  |
+| 1787 | linux-libc-dev | [CVE-2018-12928](https://ubuntu.com/security/CVE-2018-12928) | LOW | affected | 5.15.0-138.148 |  |
+| 1788 | linux-libc-dev | [CVE-2018-12929](https://ubuntu.com/security/CVE-2018-12929) | LOW | affected | 5.15.0-138.148 |  |
+| 1789 | linux-libc-dev | [CVE-2018-12930](https://ubuntu.com/security/CVE-2018-12930) | LOW | affected | 5.15.0-138.148 |  |
+| 1790 | linux-libc-dev | [CVE-2018-12931](https://ubuntu.com/security/CVE-2018-12931) | LOW | affected | 5.15.0-138.148 |  |
+| 1791 | linux-libc-dev | [CVE-2019-14899](https://ubuntu.com/security/CVE-2019-14899) | LOW | affected | 5.15.0-138.148 |  |
+| 1792 | linux-libc-dev | [CVE-2019-15213](https://ubuntu.com/security/CVE-2019-15213) | LOW | affected | 5.15.0-138.148 |  |
+| 1793 | linux-libc-dev | [CVE-2019-19378](https://ubuntu.com/security/CVE-2019-19378) | LOW | affected | 5.15.0-138.148 |  |
+| 1794 | linux-libc-dev | [CVE-2019-19814](https://ubuntu.com/security/CVE-2019-19814) | LOW | affected | 5.15.0-138.148 |  |
+| 1795 | linux-libc-dev | [CVE-2019-20426](https://ubuntu.com/security/CVE-2019-20426) | LOW | affected | 5.15.0-138.148 |  |
+| 1796 | linux-libc-dev | [CVE-2020-14304](https://ubuntu.com/security/CVE-2020-14304) | LOW | affected | 5.15.0-138.148 |  |
+| 1797 | linux-libc-dev | [CVE-2020-35501](https://ubuntu.com/security/CVE-2020-35501) | LOW | affected | 5.15.0-138.148 |  |
+| 1798 | linux-libc-dev | [CVE-2021-26934](https://ubuntu.com/security/CVE-2021-26934) | LOW | affected | 5.15.0-138.148 |  |
+| 1799 | linux-libc-dev | [CVE-2022-3114](https://ubuntu.com/security/CVE-2022-3114) | LOW | affected | 5.15.0-138.148 |  |
+| 1800 | linux-libc-dev | [CVE-2022-41848](https://ubuntu.com/security/CVE-2022-41848) | LOW | affected | 5.15.0-138.148 |  |
+| 1801 | linux-libc-dev | [CVE-2022-44032](https://ubuntu.com/security/CVE-2022-44032) | LOW | affected | 5.15.0-138.148 |  |
+| 1802 | linux-libc-dev | [CVE-2022-44033](https://ubuntu.com/security/CVE-2022-44033) | LOW | affected | 5.15.0-138.148 |  |
+| 1803 | linux-libc-dev | [CVE-2022-44034](https://ubuntu.com/security/CVE-2022-44034) | LOW | affected | 5.15.0-138.148 |  |
+| 1804 | linux-libc-dev | [CVE-2022-45885](https://ubuntu.com/security/CVE-2022-45885) | LOW | affected | 5.15.0-138.148 |  |
+| 1805 | linux-libc-dev | [CVE-2022-45888](https://ubuntu.com/security/CVE-2022-45888) | LOW | affected | 5.15.0-138.148 |  |
+| 1806 | linux-libc-dev | [CVE-2023-33053](https://ubuntu.com/security/CVE-2023-33053) | LOW | affected | 5.15.0-138.148 |  |
+| 1807 | linux-libc-dev | [CVE-2023-4010](https://ubuntu.com/security/CVE-2023-4010) | LOW | affected | 5.15.0-138.148 |  |
+| 1808 | linux-libc-dev | [CVE-2023-4133](https://ubuntu.com/security/CVE-2023-4133) | LOW | affected | 5.15.0-138.148 |  |
+| 1809 | linux-libc-dev | [CVE-2023-52749](https://ubuntu.com/security/CVE-2023-52749) | LOW | affected | 5.15.0-138.148 |  |
+| 1810 | linux-libc-dev | [CVE-2023-53052](https://ubuntu.com/security/CVE-2023-53052) | LOW | affected | 5.15.0-138.148 |  |
+| 1811 | linux-libc-dev | [CVE-2023-53074](https://ubuntu.com/security/CVE-2023-53074) | LOW | affected | 5.15.0-138.148 |  |
+| 1812 | linux-libc-dev | [CVE-2024-0564](https://ubuntu.com/security/CVE-2024-0564) | LOW | affected | 5.15.0-138.148 |  |
+| 1813 | linux-libc-dev | [CVE-2024-26983](https://ubuntu.com/security/CVE-2024-26983) | LOW | affected | 5.15.0-138.148 |  |
+| 1814 | linux-libc-dev | [CVE-2024-27010](https://ubuntu.com/security/CVE-2024-27010) | LOW | affected | 5.15.0-138.148 |  |
+| 1815 | linux-libc-dev | [CVE-2024-27011](https://ubuntu.com/security/CVE-2024-27011) | LOW | affected | 5.15.0-138.148 |  |
+| 1816 | linux-libc-dev | [CVE-2024-49968](https://ubuntu.com/security/CVE-2024-49968) | LOW | affected | 5.15.0-138.148 |  |
+| 1817 | linux-libc-dev | [CVE-2024-50217](https://ubuntu.com/security/CVE-2024-50217) | LOW | affected | 5.15.0-138.148 |  |
+| 1818 | linux-libc-dev | [CVE-2024-53093](https://ubuntu.com/security/CVE-2024-53093) | LOW | affected | 5.15.0-138.148 |  |
+| 1819 | linux-libc-dev | [CVE-2024-53128](https://ubuntu.com/security/CVE-2024-53128) | LOW | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1820 | linux-libc-dev | [CVE-2024-54458](https://ubuntu.com/security/CVE-2024-54458) | LOW | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1821 | linux-libc-dev | [CVE-2024-56599](https://ubuntu.com/security/CVE-2024-56599) | LOW | fixed | 5.15.0-138.148 | 5.15.0-140.150 |
+| 1822 | linux-libc-dev | [CVE-2024-58093](https://ubuntu.com/security/CVE-2024-58093) | LOW | fixed | 5.15.0-138.148 | 5.15.0-142.152 |
+| 1823 | linux-libc-dev | [CVE-2024-58237](https://ubuntu.com/security/CVE-2024-58237) | LOW | affected | 5.15.0-138.148 |  |
+| 1824 | linux-libc-dev | [CVE-2025-21645](https://ubuntu.com/security/CVE-2025-21645) | LOW | affected | 5.15.0-138.148 |  |
+| 1825 | linux-libc-dev | [CVE-2025-37892](https://ubuntu.com/security/CVE-2025-37892) | LOW | fixed | 5.15.0-138.148 | 5.15.0-144.157 |
+| 1826 | login | [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383) | LOW | affected | 1:4.8.1-2ubuntu2.2 |  |
+| 1827 | login | [CVE-2024-56433](https://ubuntu.com/security/CVE-2024-56433) | LOW | affected | 1:4.8.1-2ubuntu2.2 |  |
+| 1828 | ncurses-base | [CVE-2023-50495](https://ubuntu.com/security/CVE-2023-50495) | LOW | affected | 6.3-2ubuntu0.1 |  |
+| 1829 | ncurses-bin | [CVE-2023-50495](https://ubuntu.com/security/CVE-2023-50495) | LOW | affected | 6.3-2ubuntu0.1 |  |
+| 1830 | openssl | [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996) | LOW | affected | 3.0.2-0ubuntu1.19 |  |
+| 1831 | passwd | [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383) | LOW | affected | 1:4.8.1-2ubuntu2.2 |  |
+| 1832 | passwd | [CVE-2024-56433](https://ubuntu.com/security/CVE-2024-56433) | LOW | affected | 1:4.8.1-2ubuntu2.2 |  |
+| 1833 | perl-base | [CVE-2024-56406](https://ubuntu.com/security/CVE-2024-56406) | MEDIUM | fixed | 5.34.0-3ubuntu1.3 | 5.34.0-3ubuntu1.4 |
+| 1834 | perl-base | [CVE-2025-40909](https://ubuntu.com/security/CVE-2025-40909) | MEDIUM | fixed | 5.34.0-3ubuntu1.3 | 5.34.0-3ubuntu1.5 |
+| 1835 | tar | [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582) | MEDIUM | affected | 1.34+dfsg-1ubuntu0.1.22.04.2 |  |
