@@ -1,63 +1,63 @@
 {
     "manylinux": [
         {
-            "cann_version": "8.3.RC1.alpha002",
+            "cann_version": "8.2.RC2",
             "cann_chip": "910b",
             "os_name": "manylinux",
             "os_version": "2_28",
             "py_version": "3.11",
             "tags": [
-                "8.3.rc1.alpha002-910b-manylinux_2_28-py3.11"
+                "8.2.rc2-910b-manylinux_2_28-py3.11"
             ]
         },
         {
-            "cann_version": "8.3.RC1.alpha002",
+            "cann_version": "8.2.RC2",
             "cann_chip": "910b",
             "os_name": "manylinux",
             "os_version": "2_28",
             "py_version": "3.10",
             "tags": [
-                "8.3.rc1.alpha002-910b-manylinux_2_28-py3.10"
+                "8.2.rc2-910b-manylinux_2_28-py3.10"
             ]
         },
         {
-            "cann_version": "8.3.RC1.alpha002",
+            "cann_version": "8.2.RC2",
             "cann_chip": "910b",
             "os_name": "manylinux",
             "os_version": "2_28",
             "py_version": "3.9",
             "tags": [
-                "8.3.rc1.alpha002-910b-manylinux_2_28-py3.9"
+                "8.2.rc2-910b-manylinux_2_28-py3.9"
             ]
         },
         {
-            "cann_version": "8.3.RC1.alpha002",
+            "cann_version": "8.2.RC2",
             "cann_chip": "310p",
             "os_name": "manylinux",
             "os_version": "2_28",
             "py_version": "3.11",
             "tags": [
-                "8.3.rc1.alpha002-310p-manylinux_2_28-py3.11"
+                "8.2.rc2-310p-manylinux_2_28-py3.11"
             ]
         },
         {
-            "cann_version": "8.3.RC1.alpha002",
+            "cann_version": "8.2.RC2",
             "cann_chip": "310p",
             "os_name": "manylinux",
             "os_version": "2_28",
             "py_version": "3.10",
             "tags": [
-                "8.3.rc1.alpha002-310p-manylinux_2_28-py3.10"
+                "8.2.rc2-310p-manylinux_2_28-py3.10"
             ]
         },
         {
-            "cann_version": "8.3.RC1.alpha002",
+            "cann_version": "8.2.RC2",
             "cann_chip": "310p",
             "os_name": "manylinux",
             "os_version": "2_28",
             "py_version": "3.9",
             "tags": [
-                "8.3.rc1.alpha002-310p-manylinux_2_28-py3.9"
+                "8.2.rc2-310p-manylinux_2_28-py3.9"
             ]
         }
     ]
