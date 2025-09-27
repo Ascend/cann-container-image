@@ -1,4 +1,4 @@
-# 扫描时间：2025-09-26 14:16:00
+# 扫描时间：2025-09-27 14:16:00
 
 --- 
  ### 扫描架构：arm64 
@@ -42,26 +42,29 @@
 | 36 | kernel-headers | [openEuler-SA-2025-2121](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2121) | HIGH | fixed | 6.6.0-85.0.0.90 | 6.6.0-108.0.0.111 |
 | 37 | kernel-headers | [openEuler-SA-2025-2269](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2269) | HIGH | fixed | 6.6.0-85.0.0.90 | 6.6.0-109.0.0.112 |
 | 38 | kernel-headers | [openEuler-SA-2025-2310](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2310) | HIGH | fixed | 6.6.0-85.0.0.90 | 6.6.0-110.0.0.113 |
-| 39 | kernel-headers | [openEuler-SA-2025-1512](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1512) | MEDIUM | fixed | 6.6.0-85.0.0.90 | 6.6.0-90.0.0.95 |
-| 40 | kernel-headers | [openEuler-SA-2025-2003](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2003) | MEDIUM | fixed | 6.6.0-85.0.0.90 | 6.6.0-105.0.0.108 |
-| 41 | libarchive | [openEuler-SA-2025-1623](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1623) | LOW | fixed | 3.7.1-6 | 3.7.1-7 |
-| 42 | libcurl | [openEuler-SA-2025-2319](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2319) | HIGH | fixed | 8.4.0-16 | 8.4.0-22 |
-| 43 | libssh | [openEuler-SA-2025-2132](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2132) | HIGH | fixed | 0.10.5-3 | 0.10.5-5 |
-| 44 | libssh | [openEuler-SA-2025-1804](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1804) | MEDIUM | fixed | 0.10.5-3 | 0.10.5-4 |
-| 45 | libssh | [openEuler-SA-2025-2301](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2301) | MEDIUM | fixed | 0.10.5-3 | 0.10.5-6 |
-| 46 | libxml2 | [openEuler-SA-2025-1769](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1769) | CRITICAL | fixed | 2.11.9-2 | 2.11.9-5 |
-| 47 | libxml2 | [openEuler-SA-2025-1701](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1701) | HIGH | fixed | 2.11.9-2 | 2.11.9-4 |
-| 48 | libxml2 | [openEuler-SA-2025-1459](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1459) | MEDIUM | fixed | 2.11.9-2 | 2.11.9-3 |
-| 49 | libxml2 | [openEuler-SA-2025-1868](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1868) | LOW | fixed | 2.11.9-2 | 2.11.9-6 |
-| 50 | ncurses | [openEuler-SA-2025-1851](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1851) | LOW | fixed | 6.4-8 | 6.4-10 |
-| 51 | ncurses-base | [openEuler-SA-2025-1851](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1851) | LOW | fixed | 6.4-8 | 6.4-10 |
-| 52 | ncurses-libs | [openEuler-SA-2025-1851](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1851) | LOW | fixed | 6.4-8 | 6.4-10 |
-| 53 | pam | [openEuler-SA-2025-1746](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1746) | HIGH | fixed | 1.5.3-8 | 1.5.3-9 |
-| 54 | python-pip-wheel | [openEuler-SA-2025-2174](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2174) | MEDIUM | fixed | 23.3.1-2 | 23.3.1-4 |
-| 55 | python-pip-wheel | [openEuler-SA-2025-2317](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2317) | MEDIUM | fixed | 23.3.1-2 | 23.3.1-5 |
-| 56 | python3 | [openEuler-SA-2025-1791](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1791) | CRITICAL | fixed | 3.11.6-11 | 3.11.6-13 |
-| 57 | python3 | [openEuler-SA-2025-2102](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2102) | HIGH | fixed | 3.11.6-11 | 3.11.6-14 |
-| 58 | python3 | [openEuler-SA-2025-2306](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2306) | MEDIUM | fixed | 3.11.6-11 | 3.11.6-16 |
-| 59 | sqlite | [openEuler-SA-2025-2160](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2160) | CRITICAL | fixed | 3.42.0-3 | 3.42.0-4 |
-| 60 | sqlite-devel | [openEuler-SA-2025-2160](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2160) | CRITICAL | fixed | 3.42.0-3 | 3.42.0-4 |
-| 61 | systemd-libs | [openEuler-SA-2025-1741](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1741) | MEDIUM | fixed | 255-34 | 255-44 |
+| 39 | kernel-headers | [openEuler-SA-2025-2352](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2352) | HIGH | fixed | 6.6.0-85.0.0.90 | 6.6.0-111.0.0.114 |
+| 40 | kernel-headers | [openEuler-SA-2025-1512](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1512) | MEDIUM | fixed | 6.6.0-85.0.0.90 | 6.6.0-90.0.0.95 |
+| 41 | kernel-headers | [openEuler-SA-2025-2003](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2003) | MEDIUM | fixed | 6.6.0-85.0.0.90 | 6.6.0-105.0.0.108 |
+| 42 | libarchive | [openEuler-SA-2025-1623](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1623) | LOW | fixed | 3.7.1-6 | 3.7.1-7 |
+| 43 | libcurl | [openEuler-SA-2025-2319](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2319) | HIGH | fixed | 8.4.0-16 | 8.4.0-22 |
+| 44 | libssh | [openEuler-SA-2025-2132](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2132) | HIGH | fixed | 0.10.5-3 | 0.10.5-5 |
+| 45 | libssh | [openEuler-SA-2025-1804](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1804) | MEDIUM | fixed | 0.10.5-3 | 0.10.5-4 |
+| 46 | libssh | [openEuler-SA-2025-2301](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2301) | MEDIUM | fixed | 0.10.5-3 | 0.10.5-6 |
+| 47 | libssh | [openEuler-SA-2025-2342](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2342) | LOW | fixed | 0.10.5-3 | 0.10.5-7 |
+| 48 | libxml2 | [openEuler-SA-2025-1769](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1769) | CRITICAL | fixed | 2.11.9-2 | 2.11.9-5 |
+| 49 | libxml2 | [openEuler-SA-2025-1701](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1701) | HIGH | fixed | 2.11.9-2 | 2.11.9-4 |
+| 50 | libxml2 | [openEuler-SA-2025-1459](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1459) | MEDIUM | fixed | 2.11.9-2 | 2.11.9-3 |
+| 51 | libxml2 | [openEuler-SA-2025-1868](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1868) | LOW | fixed | 2.11.9-2 | 2.11.9-6 |
+| 52 | ncurses | [openEuler-SA-2025-1851](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1851) | LOW | fixed | 6.4-8 | 6.4-10 |
+| 53 | ncurses-base | [openEuler-SA-2025-1851](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1851) | LOW | fixed | 6.4-8 | 6.4-10 |
+| 54 | ncurses-libs | [openEuler-SA-2025-1851](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1851) | LOW | fixed | 6.4-8 | 6.4-10 |
+| 55 | pam | [openEuler-SA-2025-1746](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1746) | HIGH | fixed | 1.5.3-8 | 1.5.3-9 |
+| 56 | python-pip-wheel | [openEuler-SA-2025-2174](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2174) | MEDIUM | fixed | 23.3.1-2 | 23.3.1-4 |
+| 57 | python-pip-wheel | [openEuler-SA-2025-2317](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2317) | MEDIUM | fixed | 23.3.1-2 | 23.3.1-5 |
+| 58 | python3 | [openEuler-SA-2025-1791](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1791) | CRITICAL | fixed | 3.11.6-11 | 3.11.6-13 |
+| 59 | python3 | [openEuler-SA-2025-2102](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2102) | HIGH | fixed | 3.11.6-11 | 3.11.6-14 |
+| 60 | python3 | [openEuler-SA-2025-2306](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2306) | MEDIUM | fixed | 3.11.6-11 | 3.11.6-16 |
+| 61 | python3 | [openEuler-SA-2025-2330](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2330) | MEDIUM | fixed | 3.11.6-11 | 3.11.6-17 |
+| 62 | sqlite | [openEuler-SA-2025-2160](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2160) | CRITICAL | fixed | 3.42.0-3 | 3.42.0-4 |
+| 63 | sqlite-devel | [openEuler-SA-2025-2160](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-2160) | CRITICAL | fixed | 3.42.0-3 | 3.42.0-4 |
+| 64 | systemd-libs | [openEuler-SA-2025-1741](https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2025-1741) | MEDIUM | fixed | 255-34 | 255-44 |
