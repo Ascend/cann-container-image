@@ -1,8 +1,8 @@
-# 扫描时间：2025-10-03 09:51:00
+# 扫描时间：2025-10-06 09:51:00
 
 --- 
  ### 扫描架构：arm64 
-2025-10-03T09:51:00+08:00	FATAL	Fatal error	run error: image scan error: scan error: unable to initialize a scan service: unable to initialize the archive scan service: 2 errors occurred:
+2025-10-06T09:51:00+08:00	FATAL	Fatal error	run error: image scan error: scan error: unable to initialize a scan service: unable to initialize the archive scan service: 2 errors occurred:
 	* unable to open persistent/images/quay.io_ascend_cann_ubuntu-python3.8-cann8.0.rc2_arm64 as a Docker image: read persistent/images/quay.io_ascend_cann_ubuntu-python3.8-cann8.0.rc2_arm64: is a directory
 	* unable to open persistent/images/quay.io_ascend_cann_ubuntu-python3.8-cann8.0.rc2_arm64 as an OCI Image: stat persistent/images/quay.io_ascend_cann_ubuntu-python3.8-cann8.0.rc2_arm64/index.json: no such file or directory
 
