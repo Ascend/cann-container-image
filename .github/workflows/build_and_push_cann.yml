@@ -10,6 +10,9 @@ env:
   ACR_REPOSITORY: cann_resoprrity 
   # 您的 ACR 注册表地址： crp-xxx.aliyuncs.com
   ACR_REGISTRY: crpi-uuv8j6u482hmnbw8.cn-hangzhou.personal.cr.aliyuncs.com
+secrets:
+  ACR_USERNAME: aliyun6828750393
+  ACR_PASSWORD: 1625505596aly
 
 on:
   workflow_dispatch:
