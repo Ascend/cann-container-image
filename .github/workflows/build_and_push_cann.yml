@@ -1,14 +1,26 @@
-name: Build and Publish CANN Image
+name: Build and Publish CANN Image to Aliyun ACR
+
+# ----------------------------------------------------
+# 1. 定义阿里云 ACR 环境变量 (根据您提供的地址替换)
+# ----------------------------------------------------
+env:
+  # 您的阿里云完整命名空间： crp-xxx.aliyuncs.com/xlrr
+  ACR_NAMESPACE: crpi-uuv8j6u482hmnbw8.cn-hangzhou.personal.cr.aliyuncs.com/xinr
+  # 您的 ACR 仓库名称： cann_resoprrity
+  ACR_REPOSITORY: cann_resoprrity 
+  # 您的 ACR 注册表地址： crp-xxx.aliyuncs.com
+  ACR_REGISTRY: crpi-uuv8j6u482hmnbw8.cn-hangzhou.personal.cr.aliyuncs.com
 
 on:
   workflow_dispatch:
     inputs:
       cann_tag:
-        description: 'CANN unique tag'
+        description: 'CANN unique tag (Determines Dockerfile path: cann/${cann_tag}/Dockerfile)'
         required: true
         default: '8.2.rc2-910b-ubuntu22.04-py3.11'
         type: choice
         options:
+          # 保持原有的选项列表不变
           - 8.2.rc2-910b-ubuntu22.04-py3.11
           - 8.2.rc2-910b-openeuler24.03-py3.11
           - 8.2.rc2-910-ubuntu22.04-py3.11
@@ -72,38 +84,12 @@ on:
           - 8.1.rc1-910b-openeuler24.03-py3.10
       publish:
         description: 'Publish the image'
-        default: false
+        default: true # 默认设置为 true，以便自动推送
         type: boolean
         required: true
 
 jobs:
-  only-build:
-    name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
-    if: ${{ !inputs.publish }} 
-    runs-on: ${{ matrix.runner }}
-    strategy:
-      matrix:
-        include:
-          - arch: x86_64
-            runner: linux-x86_64
-          - arch: aarch64
-            runner: ubuntu-22.04-arm
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Build image
-        uses: docker/build-push-action@v6
-        id: build
-        with: 
-          platforms: ${{ matrix.arch }}
-          file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}/Dockerfile
-          context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}
-          outputs: type=image
-          provenance: false
+  # only-build 任务已移除，目标是直接推送
 
   build-push-digest:
     name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
@@ -123,32 +109,26 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Login to Quay
+      # 2. 替换为登录阿里云 ACR
+      - name: Login to Aliyun ACR
         uses: docker/login-action@v3
         with:
-          registry: quay.io
-          username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_TOKEN }}
-          ecr: false
-          logout: false
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+          registry: ${{ env.ACR_REGISTRY }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+          # 移除 Quay 和 DockerHub 的登录
 
       - name: Build and push by digest
         uses: docker/build-push-action@v6
         id: build
-        with: 
+        with:
           platforms: ${{ matrix.arch }}
-          tags: |
-            docker.io/ascendai/cann
-            quay.io/ascend/cann
+          # 3. tags 替换为 ACR 地址，不带标签 (推送到 ACR 的 digest 引用)
+          tags: ${{ env.ACR_NAMESPACE }}/${{ env.ACR_REPOSITORY }} 
+          
           file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}/Dockerfile
           context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}
+          
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
           provenance: false
 
@@ -165,7 +145,7 @@ jobs:
           path: ${{ runner.temp }}/digests/*
           if-no-files-found: error
           retention-days: 1
-  
+          
   push-image:
     runs-on: ubuntu-latest
     needs: build-push-digest
@@ -180,19 +160,13 @@ jobs:
           pattern: digests-${{ inputs.cann_tag }}-*
           merge-multiple: true
 
-      - name: Login to Quay
+      # 4. 替换为登录阿里云 ACR
+      - name: Login to Aliyun ACR
         uses: docker/login-action@v3
         with:
-          registry: quay.io
-          username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_TOKEN }}
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+          registry: ${{ env.ACR_REGISTRY }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -200,13 +174,16 @@ jobs:
       - name: Prepare tags
         id: prepare-tags
         run: |
+          # 保持原有的 jq 逻辑不变，前提是 cann_publish_version.json 存在
           BASE_TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
             '.versions[] | select(.path == "cann/" + $cann_tag) | .tags[]' \
             cann_publish_version.json)
+            
+          # 5. registries 列表只保留您的 ACR 命名空间/仓库
           registries=(
-            "docker.io/ascendai/cann"
-            "quay.io/ascend/cann"
+            "${{ env.ACR_NAMESPACE }}/${{ env.ACR_REPOSITORY }}"
           )
+          
           first=true
           TAGS_JSON="["
           for registry in "${registries[@]}"; do
@@ -229,51 +206,15 @@ jobs:
           readarray -t TAGS_ARRAY <<< "$(echo "$TAGS" | jq -r '.[]')"
 
           for TAG in "${TAGS_ARRAY[@]}"; do
-            if [[ "$TAG" == *"quay.io/ascend/cann"* ]]; then
+            # 6. 修改逻辑，仅检查 ACR 地址，并创建 Manifest List
+            if [[ "$TAG" == *"${{ env.ACR_NAMESPACE }}/${{ env.ACR_REPOSITORY }}"* ]]; then
+              # 使用 ACR digest 引用来创建 Manifest List
               docker buildx imagetools create -t "$TAG" \
-                $(printf 'quay.io/ascend/cann@sha256:%s ' *)
-            elif [[ "$TAG" == *"docker.io/ascendai/cann"* ]]; then
-              docker buildx imagetools create -t "$TAG" \
-                $(printf 'docker.io/ascendai/cann@sha256:%s ' *)
+                $(printf '${{ env.ACR_NAMESPACE }}/${{ env.ACR_REPOSITORY }}@sha256:%s ' *)
             else
               echo "Error: Unknown registry in TAG: $TAG"
               exit 1
             fi
           done
 
-  sync-image:
-    runs-on: ubuntu-latest
-    needs: push-image
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install skopeo
-        run: |
-          sudo apt update
-          sudo apt install -y skopeo
-
-      - name: Login to Huawei Cloud SWR
-        run: |
-          echo "${{ secrets.HW_TOKEN }}" | skopeo login \
-            --username "${{ secrets.HW_USERNAME }}" \
-            --password-stdin \
-            swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci
-
-      - name: Login to AscendHub
-        run: |
-          echo "${{ secrets.ASCENDHUB_TOKEN }}" | skopeo login \
-            --username "${{ secrets.ASCENDHUB_USERNAME }}" \
-            --password-stdin \
-            swr.cn-east-3.myhuaweicloud.com/ascendhub-test
-
-      - name: Sync image
-        run: |
-          skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
-          docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}
-
-          skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
-          docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}
-
+  # 7. sync-image 任务已移除，目标是直接推送到 ACR
