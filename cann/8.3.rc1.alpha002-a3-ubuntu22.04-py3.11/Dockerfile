@@ -99,7 +99,34 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     chmod +x ~/Ascend-cann-nnal.run && \
     ~/Ascend-cann-nnal.run --quiet --install --install-for-all && \
     rm -f ~/Ascend-cann-nnal.run
-    
+
+# Stage 2: Install CANN
+FROM python-installer AS cann-installer
+
+# 安装 OpenSSH, Git 和 Vim
+RUN apt-get update && apt-get install --no-install-recommends -y \
+        git \
+        vim \
+        openssh-server \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# 配置 OpenSSH
+RUN mkdir -p /var/run/sshd && \
+    echo 'root:Docker!' | chpasswd && \
+    sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && \
+    echo "PermitEmptyPasswords no" >> /etc/ssh/sshd_config && \
+    echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+
+# 设置 SSH 授权密钥目录
+RUN mkdir -p /root/.ssh && \
+    chmod 700 /root/.ssh && \
+    touch /root/.ssh/authorized_keys && \
+    chmod 600 /root/.ssh/authorized_keys
+
+# 暴露 SSH 端口
+EXPOSE 22
+
 # Stage 3: Copy results from previous stages
 FROM ubuntu:22.04 AS official-ubuntu
 
