@@ -6,43 +6,22 @@ scanner:
       - linux/amd64
       - linux/arm64
     # support format: 24h, 1d, 1w, 30m
-    default_interval: "24h"
+    default_interval: "1d"
     output:
       repo: https://github.com/Ascend/cann-container-image
       path: security/reports
 
-# period scan repo setting
-repos:
-  - namespace: "ascend"
-    registry: "quay.io"
-    images:  
-      - cann
-    arches:
-      - linux/arm64
-
 # specific image scan
 images:
-  - image: "cann"
-    tags:
-      - tag: "docker.io/ascendai/cann:latest"
-        # override global scan cycle
-        interval: "2h"
-        arches:
-          - linux/arm64
-
-      - tag: "quay.io/ascend/cann:8.2.rc1-910-openeuler22.03-py3.11"
-        interval: "2d"
-
-  - image: "cann"
-    tags:
-      - tag: "docker.io/ascendai/cann:8.2.rc1-910b-ubuntu22.04-py3.11"
-        # disable this tag scan
-        disable: true                   
-
   # use global scan cycle
   - image: "cann"
     tags:
-      - tag: "docker.io/ascendai/cann:8.1.rc1-910b-ubuntu22.04-py3.11"
+      - tag: "quay.io/ascend/cann:8.3.rc1.alpha003-910b-ubuntu22.04-py3.11"
+      - tag: "quay.io/ascend/cann:8.3.rc1.alpha003-910b-openeuler24.03-py3.11"
+      - tag: "quay.io/ascend/cann:8.2.rc2-910b-ubuntu22.04-py3.11"
+      - tag: "quay.io/ascend/cann:8.2.rc2-910b-openeuler24.03-py3.11"
+      - tag: "quay.io/ascend/cann:8.2.rc1-910b-ubuntu22.04-py3.11"
+      - tag: "quay.io/ascend/cann:8.2.rc1-910b-openeuler24.03-py3.11"
 
 # notice setting (option)
 notifications:

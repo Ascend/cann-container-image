@@ -19,13 +19,14 @@ ALPHA_DICT = {
     "8.2.RC1.alpha003": "V100R001C22B800TP052",
     "8.3.RC1.alpha001": "V100R001C22B800TP072",
     "8.3.RC1.alpha002": "V100R001C23B800TP004",
+    "8.3.RC1.alpha003": "V100R001C23B800TP024",
 }
 
 env = Environment(loader=FileSystemLoader('tools/template'))
 
 def get_python_download_url(version): 
     try:
-        response = requests.get("https://www.python.org/ftp/python/")
+        response = requests.get("https://repo.huaweicloud.com/python/")
         response.raise_for_status()
         versions = re.findall(rf"{version}\.[0-9]+", response.text)
         if not versions:
