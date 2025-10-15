@@ -151,8 +151,6 @@ RUN yum update -y && \
         wget \
         jq \
         curl \
-        build-essential \
-        numactl-devel \
     && yum clean all \
     && rm -rf /var/cache/yum \
     && rm -rf /tmp/*
