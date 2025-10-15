@@ -156,6 +156,8 @@ RUN apt-get update \
         wget \
         jq \
         curl \
+        build-essential \
+        libnuma-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/tmp/* \
