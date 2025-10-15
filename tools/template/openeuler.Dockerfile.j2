@@ -153,6 +153,8 @@ RUN yum update -y && \
         wget \
         jq \
         curl \
+        build-essential \
+        numactl-devel \
     && yum clean all \
     && rm -rf /var/cache/yum \
     && rm -rf /tmp/*
@@ -168,8 +170,7 @@ RUN \
         "linux/arm64") echo "aarch64" ;; \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
-    echo CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/include/c++/12:/usr/include/c++/12/${ARCH}-openEuler-linux" >> /etc/profile && \
-    echo CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/include/c++/12:/usr/include/c++/12/${ARCH}-openEuler-linux" >> ~/.bashrc && \
+    ln -sf /usr/include/c++/12/${ARCH}-openEuler-linux /usr/include/c++/12/${ARCH}-linux-gnu && \
     CANN_TOOLKIT_ENV_FILE="/usr/local/Ascend/ascend-toolkit/set_env.sh" && \
     CANN_NNAL_ENV_FILE="/usr/local/Ascend/nnal/atb/set_env.sh" && \
     echo "source ${CANN_TOOLKIT_ENV_FILE}" >> /etc/profile && \
@@ -178,7 +179,6 @@ RUN \
     echo "source ${CANN_NNAL_ENV_FILE}" >> ~/.bashrc
 
 ENTRYPOINT ["/bin/bash", "-c", "\
-    export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/include/c++/12:/usr/include/c++/12/`uname -i`-openEuler-linux && \
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     source /usr/local/Ascend/nnal/atb/set_env.sh && \
     exec \"$@\"", "--"]
