@@ -9,12 +9,12 @@ To enhance user experience, this project aims to build container images based on
 - **As a CANN user**: Want to experience and quickly deploy new CANN versions immediately after release;
 - **As an Ascend Community supporter**: Want to build new application container images based on CANN images for developers to quickly validate functionality.
 
-## Image Details
+## 1. CANN Base Container Images
 ### Tag Rules
 All CANN container image tags follow a unified format:  
 `<cann-version>-<chip>-<os><os-version>-<py-version>` 
  
-![image1](./images/image1.png)
+<img src="images/base.png" alt="app image" width="180">
 
 **Version Naming Examples**:
 - CANN alpha version: `8.1.rc1.alpha001`
@@ -58,3 +58,22 @@ CANN container images are released to the following repositories:
    - **Dual Guarantee Mechanism**:
      - `ENTRYPOINT` ensures environment variables take effect when starting via `docker run image bash`
      - `bashrc` ensures environment variables take effect during interactive sessions via  `docker run -d` `docker exec -it container bash`
+
+## 2. CANN Application Container Images
+Any image built on top of the CANN base container image that includes software (or a collection of software) relying on CANN to implement specific functions is considered a CANN application container image.
+
+This repository does not provide or publish any CANN application container images. The content of this section is only intended as a reference for application image publication.
+
+### Tag Rules
+It is recommended to follow the format below for CANN application container image tags:  
+```
+<app-version>-<chip>-<os><os-version>
+```  
+Taking the [vLLM-Ascend](https://github.com/vllm-project/vllm-ascend) application image tag as an example:
+
+<img src="images/app.png" alt="app image" width="350">
+
+`v0.11.0rc1-a3-openeuler` indicates an application image based on the CANN base image, containing vllm-ascend version `v0.11.0rc1`, suitable for running on Ascend A3 series platforms.
+
+### Application Image Distribution Hub
+Developers are welcome to synchronize CANN application container images to the [quay.io/ascend/{app-name}](https://quay.io/repository/ascend/) repository. If you have such a requirement, please submit an Issue in this repository to apply.
