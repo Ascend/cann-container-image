@@ -67,7 +67,7 @@ CANN 基础容器镜像已发布至以下仓库：
 ### 标签命名规则
 CANN 应用容器镜像标签建议参考以下格式：  
 ```
-<app-version>-<chip>-<os><os-version>
+<app-version>-<chip>-<os>
 ```  
 以 [vLLM-Ascend](https://github.com/vllm-project/vllm-ascend) 应用镜像标签为例：
 
