@@ -173,6 +173,6 @@ RUN \
 
 ENTRYPOINT ["/bin/bash", "-c", "\
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
-    source /usr/local/Ascend/ascend-toolkit/8.5.0.alpha002/set_env.sh && \
+    source /usr/local/Ascend/ascend-toolkit/8.5.0.alpha002/bisheng_toolkit/set_env.sh && \
     source /usr/local/Ascend/nnal/atb/set_env.sh && \
     exec \"$@\"", "--"]
