@@ -164,6 +164,12 @@ COPY --from=cann-installer /etc/Ascend /etc/Ascend
 
 # Note: Set environment variables
 RUN \
+    ARCH=$(case "${TARGETPLATFORM}" in \
+        "linux/amd64") echo "x86_64" ;; \
+        "linux/arm64") echo "aarch64" ;; \
+        *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
+    esac) && \
+    ln -sf /usr/include/c++/12/${ARCH}-openEuler-linux /usr/include/c++/12/${ARCH}-linux-gnu && \
     CANN_TOOLKIT_ENV_FILE="/usr/local/Ascend/ascend-toolkit/set_env.sh" && \
     CANN_BISHENG_ENV_FILE="/usr/local/Ascend/ascend-toolkit/8.5.0.alpha002/bisheng_toolkit/set_env.sh" && \
     CANN_NNAL_ENV_FILE="/usr/local/Ascend/nnal/atb/set_env.sh" && \
@@ -173,7 +179,7 @@ RUN \
     echo "source ${CANN_BISHENG_ENV_FILE}" >> ~/.bashrc && \
     echo "source ${CANN_NNAL_ENV_FILE}" >> /etc/profile && \
     echo "source ${CANN_NNAL_ENV_FILE}" >> ~/.bashrc
-    
+
 ENTRYPOINT ["/bin/bash", "-c", "\
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     source /usr/local/Ascend/ascend-toolkit/8.5.0.alpha002/set_env.sh && \
