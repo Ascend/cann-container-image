@@ -162,13 +162,17 @@ COPY --from=cann-installer /etc/Ascend /etc/Ascend
 # Note: Set environment variables
 RUN \
     CANN_TOOLKIT_ENV_FILE="/usr/local/Ascend/ascend-toolkit/set_env.sh" && \
+    CANN_BISHENG_ENV_FILE="/usr/local/Ascend/ascend-toolkit/8.5.0.alpha002/bisheng_toolkit/set_env.sh" && \
     CANN_NNAL_ENV_FILE="/usr/local/Ascend/nnal/atb/set_env.sh" && \
     echo "source ${CANN_TOOLKIT_ENV_FILE}" >> /etc/profile && \
     echo "source ${CANN_TOOLKIT_ENV_FILE}" >> ~/.bashrc && \
+    echo "source ${CANN_BISHENG_ENV_FILE}" >> /etc/profile && \
+    echo "source ${CANN_BISHENG_ENV_FILE}" >> ~/.bashrc && \
     echo "source ${CANN_NNAL_ENV_FILE}" >> /etc/profile && \
     echo "source ${CANN_NNAL_ENV_FILE}" >> ~/.bashrc
 
 ENTRYPOINT ["/bin/bash", "-c", "\
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
+    source /usr/local/Ascend/ascend-toolkit/8.5.0.alpha002/set_env.sh && \
     source /usr/local/Ascend/nnal/atb/set_env.sh && \
     exec \"$@\"", "--"]
