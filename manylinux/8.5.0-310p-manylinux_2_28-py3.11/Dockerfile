@@ -1,8 +1,8 @@
 # Stage 1: Install Python
-FROM openeuler/openeuler:{{ item.os_version }} AS python-installer
+FROM quay.io/pypa/manylinux_2_28:latest AS python-installer
 
 # Python Environment variables
-ENV PATH=/usr/local/python{{ item.py_latest_version }}/bin:${PATH}
+ENV PATH=/usr/local/python3.11.14/bin:${PATH}
 
 RUN yum update -y && \
     yum install -y \
@@ -30,17 +30,17 @@ RUN yum update -y && \
     && rm -rf /tmp/*
 
 # Install Python
-RUN curl -fsSL {{ item.py_installer_url }} -o /tmp/{{ item.py_installer_package }}.tgz && \
-    tar -xf /tmp/{{ item.py_installer_package }}.tgz -C /tmp && \
-    cd /tmp/{{ item.py_installer_package }} && \
-    mkdir -p /usr/local/python{{ item.py_latest_version }}/lib && \
-    ./configure --enable-shared --enable-shared LDFLAGS="-Wl,-rpath /usr/local/python{{ item.py_latest_version }}/lib" --prefix=/usr/local/python{{ item.py_latest_version }} && \
+RUN curl -fsSL https://repo.huaweicloud.com/python/3.11.14/Python-3.11.14.tgz -o /tmp/Python-3.11.14.tgz && \
+    tar -xf /tmp/Python-3.11.14.tgz -C /tmp && \
+    cd /tmp/Python-3.11.14 && \
+    mkdir -p /usr/local/python3.11.14/lib && \
+    ./configure --enable-shared --enable-shared LDFLAGS="-Wl,-rpath /usr/local/python3.11.14/lib" --prefix=/usr/local/python3.11.14 && \
     make -j $(nproc) && \
     make altinstall && \
-    ln -sf /usr/local/python{{ item.py_latest_version }}/bin/python{{ item.py_version }} /usr/local/python{{ item.py_latest_version }}/bin/python3 && \
-    ln -sf /usr/local/python{{ item.py_latest_version }}/bin/pip{{ item.py_version }} /usr/local/python{{ item.py_latest_version }}/bin/pip3 && \
-    ln -sf /usr/local/python{{ item.py_latest_version }}/bin/python3 /usr/local/python{{ item.py_latest_version }}/bin/python && \
-    ln -sf /usr/local/python{{ item.py_latest_version }}/bin/pip3 /usr/local/python{{ item.py_latest_version }}/bin/pip && \
+    ln -sf /usr/local/python3.11.14/bin/python3.11 /usr/local/python3.11.14/bin/python3 && \
+    ln -sf /usr/local/python3.11.14/bin/pip3.11 /usr/local/python3.11.14/bin/pip3 && \
+    ln -sf /usr/local/python3.11.14/bin/python3 /usr/local/python3.11.14/bin/python && \
+    ln -sf /usr/local/python3.11.14/bin/pip3 /usr/local/python3.11.14/bin/pip && \
     rm -rf /tmp/*
 
 # Stage 2: Install CANN
@@ -73,9 +73,9 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
         "linux/arm64") echo "aarch64" ;; \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
-    CANN_TOOLKIT_URL={{ item.cann_toolkit_url_prefix }}-${ARCH}.run && \
-    CANN_OPS_URL={{ item.cann_ops_url_prefix }}-${ARCH}.run && \
-    CANN_NNAL_URL={{ item.cann_nnal_url_prefix }}-${ARCH}.run && \
+    CANN_TOOLKIT_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.5.0/Ascend-cann-toolkit_8.5.0_linux-${ARCH}.run && \
+    CANN_OPS_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.5.0/Ascend-cann-310p-ops_8.5.0_linux-${ARCH}.run && \
+    CANN_NNAL_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.5.0/Ascend-cann-nnal_8.5.0_linux-${ARCH}.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_OPS_URL} -O ~/Ascend-cann-ops.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_NNAL_URL} -O ~/Ascend-cann-nnal.run
@@ -97,12 +97,10 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     rm -f ~/Ascend-cann-nnal.run
     
 # Stage 3: Copy results from previous stages
-FROM openeuler/openeuler:{{ item.os_version }} AS official-openeuler
-
-ARG TARGETPLATFORM
+FROM quay.io/pypa/manylinux_2_28:latest AS official-manylinux
 
 # Python Environment variables
-ENV PATH=/usr/local/python{{ item.py_latest_version }}/bin:${PATH}
+ENV PATH=/usr/local/python3.11.14/bin:${PATH}
 
 # Note: Toolkit Environment variables, obtained from /usr/local/Ascend/ascend-toolkit/set_env.sh
 ENV ASCEND_TOOLKIT_HOME=/usr/local/Ascend/ascend-toolkit/latest
@@ -153,25 +151,18 @@ RUN yum update -y && \
         wget \
         jq \
         curl \
-        numactl-devel \
     && yum clean all \
     && rm -rf /var/cache/yum \
     && rm -rf /tmp/*
 
-COPY --from=cann-installer /usr/local/python{{ item.py_latest_version }} /usr/local/python{{ item.py_latest_version }}
+COPY --from=cann-installer /usr/local/python3.11.14 /usr/local/python3.11.14
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
 COPY --from=cann-installer /etc/Ascend /etc/Ascend
 
 # Note: Set environment variables
 RUN \
-    ARCH=$(case "${TARGETPLATFORM}" in \
-        "linux/amd64") echo "x86_64" ;; \
-        "linux/arm64") echo "aarch64" ;; \
-        *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
-    esac) && \
-    ln -sf /usr/include/c++/12/${ARCH}-openEuler-linux /usr/include/c++/12/${ARCH}-linux-gnu && \
     CANN_TOOLKIT_ENV_FILE="/usr/local/Ascend/ascend-toolkit/set_env.sh" && \
-    CANN_BISHENG_ENV_FILE="/usr/local/Ascend/ascend-toolkit/{{ item.cann_version }}/bisheng_toolkit/set_env.sh" && \
+    CANN_BISHENG_ENV_FILE="/usr/local/Ascend/ascend-toolkit/8.5.0/bisheng_toolkit/set_env.sh" && \
     CANN_NNAL_ENV_FILE="/usr/local/Ascend/nnal/atb/set_env.sh" && \
     echo "source ${CANN_TOOLKIT_ENV_FILE}" >> /etc/profile && \
     echo "source ${CANN_TOOLKIT_ENV_FILE}" >> ~/.bashrc && \
@@ -182,8 +173,6 @@ RUN \
 
 ENTRYPOINT ["/bin/bash", "-c", "\
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
-    source /usr/local/Ascend/ascend-toolkit/{{ item.cann_version }}/bisheng_toolkit/set_env.sh && \
+    source /usr/local/Ascend/ascend-toolkit/8.5.0/bisheng_toolkit/set_env.sh && \
     source /usr/local/Ascend/nnal/atb/set_env.sh && \
     exec \"$@\"", "--"]
-
-

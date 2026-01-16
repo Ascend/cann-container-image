@@ -78,10 +78,10 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
     CANN_TOOLKIT_URL={{ item.cann_toolkit_url_prefix }}-${ARCH}.run && \
-    CANN_KERNELS_URL={{ item.cann_kernels_url_prefix }}-${ARCH}.run && \
+    CANN_OPS_URL={{ item.cann_ops_url_prefix }}-${ARCH}.run && \
     CANN_NNAL_URL={{ item.cann_nnal_url_prefix }}-${ARCH}.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
-    wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_KERNELS_URL} -O ~/Ascend-cann-kernels.run && \
+    wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_OPS_URL} -O ~/Ascend-cann-ops.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_NNAL_URL} -O ~/Ascend-cann-nnal.run
 
 # Note: Install CANN Toolkit Development Kit Package
@@ -89,10 +89,10 @@ RUN chmod +x ~/Ascend-cann-toolkit.run && \
     ~/Ascend-cann-toolkit.run --quiet --install --install-for-all && \
     rm -f ~/Ascend-cann-toolkit.run
 
-# Note: Install CANN Kernels Operator Package
-RUN chmod +x ~/Ascend-cann-kernels.run && \
-    ~/Ascend-cann-kernels.run --quiet --install --install-for-all && \
-    rm -f ~/Ascend-cann-kernels.run
+# Note: Install CANN Ops Operator Package
+RUN chmod +x ~/Ascend-cann-ops.run && \
+    ~/Ascend-cann-ops.run --quiet --install --install-for-all && \
+    rm -f ~/Ascend-cann-ops.run
 
 # Note: Install CANN NNAL Neural Network Acceleration Library
 RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \

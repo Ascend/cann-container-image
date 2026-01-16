@@ -56,16 +56,13 @@ def get_cann_download_url(cann_chip, version):
     toolkit_file_prefix = "Ascend-cann-toolkit_" + version + "_linux"
     nnal_file_prefix = "Ascend-cann-nnal_" + version + "_linux"
     
-    if cann_chip == "Atlas-A3":
-        kernels_file_prefix = cann_chip + "-cann-kernels" + "_" + version + "_linux"
-    else:
-        kernels_file_prefix = "Ascend-cann-kernels-" + cann_chip + "_" + version + "_linux"
+    ops_file_prefix = "Ascend-cann-" + cann_chip + "-ops_" + version + "_linux"
     
     cann_toolkit_url_prefix = f"{url_prefix}/{toolkit_file_prefix}"
-    cann_kernels_url_prefix = f"{url_prefix}/{kernels_file_prefix}"   
+    cann_ops_url_prefix = f"{url_prefix}/{ops_file_prefix}"   
     cann_nnal_url_prefix = f"{url_prefix}/{nnal_file_prefix}"
     
-    return cann_toolkit_url_prefix, cann_kernels_url_prefix, cann_nnal_url_prefix
+    return cann_toolkit_url_prefix, cann_ops_url_prefix, cann_nnal_url_prefix
 
 def prepare_common_item_data(item, template):
     py_installer_package, py_installer_url, py_latest_version = get_python_download_url(item["py_version"])
@@ -73,17 +70,17 @@ def prepare_common_item_data(item, template):
     item["py_installer_url"] = py_installer_url
     item["py_latest_version"] = py_latest_version
     
-    cann_toolkit_url_prefix, cann_kernels_url_prefix, cann_nnal_url_prefix = get_cann_download_url(
+    cann_toolkit_url_prefix, cann_ops_url_prefix, cann_nnal_url_prefix = get_cann_download_url(
         item["cann_chip"], 
         item["cann_version"],
     )
     item["cann_toolkit_url_prefix"] = cann_toolkit_url_prefix
-    item["cann_kernels_url_prefix"] = cann_kernels_url_prefix
+    item["cann_ops_url_prefix"] = cann_ops_url_prefix
     item["cann_nnal_url_prefix"] = cann_nnal_url_prefix
     
     rendered_content = template.render(item=item)
     
-    if item["cann_chip"] == "Atlas-A3":
+    if item["cann_chip"] == "A3":
         cann_chip_type = "a3"
     else:
         cann_chip_type = item["cann_chip"]
