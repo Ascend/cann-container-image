@@ -6,9 +6,17 @@ on:
       cann_tag:
         description: 'CANN unique tag'
         required: true
-        default: '8.5.0.alpha001-910b-ubuntu22.04-py3.11'
+        default: '8.5.0-a3-ubuntu22.04-py3.11'
         type: choice
         options:
+          - 8.5.0-910b-ubuntu22.04-py3.11
+          - 8.5.0-910b-openeuler24.03-py3.11
+          - 8.5.0-910-ubuntu22.04-py3.11
+          - 8.5.0-910-openeuler24.03-py3.11
+          - 8.5.0-310p-ubuntu22.04-py3.11
+          - 8.5.0-310p-openeuler24.03-py3.11
+          - 8.5.0-a3-ubuntu22.04-py3.11
+          - 8.5.0-a3-openeuler24.03-py3.11
           - 8.5.0.alpha002-910b-ubuntu22.04-py3.11
           - 8.5.0.alpha002-910b-openeuler24.03-py3.11
           - 8.5.0.alpha002-910-ubuntu22.04-py3.11

@@ -6,9 +6,15 @@ on:
       cann_tag:
         description: 'CANN unique tag'
         required: true
-        default: '8.5.0.alpha001-910b-manylinux_2_28-py3.11'
+        default: '8.5.0-910b-manylinux_2_28-py3.11'
         type: choice
         options:
+          - 8.5.0-910b-manylinux_2_28-py3.11
+          - 8.5.0-910b-manylinux_2_28-py3.10
+          - 8.5.0-910b-manylinux_2_28-py3.9
+          - 8.5.0-310p-manylinux_2_28-py3.11
+          - 8.5.0-310p-manylinux_2_28-py3.10
+          - 8.5.0-310p-manylinux_2_28-py3.9
           - 8.5.0.alpha002-910b-manylinux_2_28-py3.11
           - 8.5.0.alpha002-910b-manylinux_2_28-py3.10
           - 8.5.0.alpha002-910b-manylinux_2_28-py3.9
