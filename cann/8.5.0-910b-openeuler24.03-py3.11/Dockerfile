@@ -63,9 +63,6 @@ RUN yum update -y && \
 
 # Note: Install CANN runtime dependencies
 RUN pip install --no-cache-dir --upgrade pip
-RUN pip install --no-cache-dir \
-        attrs cython numpy==1.24.0 decorator sympy cffi pyyaml pathlib2 \
-        psutil protobuf==3.20 scipy requests absl-py
 
 # Note: Get the download link according to ARCH and download the installation package
 RUN ARCH=$(case "${TARGETPLATFORM}" in \
@@ -103,34 +100,36 @@ ARG TARGETPLATFORM
 
 # Python Environment variables
 ENV PATH=/usr/local/python3.11.14/bin:${PATH}
+ENV LD_LIBRARY_PATH=/usr/local/python3.11.14/lib:${LD_LIBRARY_PATH}
 
 # Note: Toolkit Environment variables, obtained from /usr/local/Ascend/ascend-toolkit/set_env.sh
-ENV ASCEND_TOOLKIT_HOME=/usr/local/Ascend/ascend-toolkit/latest
-ENV LD_LIBRARY_PATH=/usr/local/Ascend/driver/lib64/common/:/usr/local/Ascend/driver/lib64/driver/:$LD_LIBRARY_PATH
+ENV ASCEND_TOOLKIT_HOME=/usr/local/Ascend/8.5.0
+ENV LD_LIBRARY_PATH=/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common/:/usr/local/Ascend/driver/lib64/driver/:$LD_LIBRARY_PATH
 ENV LD_LIBRARY_PATH=${ASCEND_TOOLKIT_HOME}/lib64:${ASCEND_TOOLKIT_HOME}/lib64/plugin/opskernel:${ASCEND_TOOLKIT_HOME}/lib64/plugin/nnengine:${ASCEND_TOOLKIT_HOME}/opp/built-in/op_impl/ai_core/tbe/op_tiling:$LD_LIBRARY_PATH
 ENV LD_LIBRARY_PATH=${ASCEND_TOOLKIT_HOME}/tools/aml/lib64:${ASCEND_TOOLKIT_HOME}/tools/aml/lib64/plugin:$LD_LIBRARY_PATH
+ENV LD_LIBRARY_PATH=/usr/local/Ascend/ascend-toolkit/latest/lib64:/usr/local/Ascend/ascend-toolkit/latest/lib64/plugin/opskernel:/usr/local/Ascend/ascend-toolkit/latest/lib64/plugin/nnengine:/usr/local/Ascend/ascend-toolkit/latest/opp/built-in/op_impl/ai_core/tbe/op_tiling:$LD_LIBRARY_PATH
+ENV LD_LIBRARY_PATH=/usr/local/Ascend/ascend-toolkit/latest/tools/aml/lib64:/usr/local/Ascend/ascend-toolkit/latest/tools/aml/lib64/plugin:$LD_LIBRARY_PATH
 ENV PYTHONPATH=${ASCEND_TOOLKIT_HOME}/python/site-packages:${ASCEND_TOOLKIT_HOME}/opp/built-in/op_impl/ai_core/tbe:$PYTHONPATH
-ENV PATH=${ASCEND_TOOLKIT_HOME}/bin:${ASCEND_TOOLKIT_HOME}/compiler/ccec_compiler/bin:${ASCEND_TOOLKIT_HOME}/tools/ccec_compiler/bin:$PATH
+ENV PYTHONPATH=/usr/local/Ascend/ascend-toolkit/latest/python/site-packages:/usr/local/Ascend/ascend-toolkit/latest/opp/built-in/op_impl/ai_core/tbe:$PYTHONPATH
+ENV PATH=${ASCEND_TOOLKIT_HOME}/bin:${ASCEND_TOOLKIT_HOME}/tools/ccec_compiler/bin:${ASCEND_TOOLKIT_HOME}/tools/profiler/bin:${ASCEND_TOOLKIT_HOME}//tools/ascend_system_advisor/asys:$PATH
+ENV PATH=${ASCEND_TOOLKIT_HOME}/tools/show_kernel_debug_data:${ASCEND_TOOLKIT_HOME}/tools/msobjdump:$PATH
+ENV PATH=/usr/local/Ascend/ascend-toolkit/latest/bin:/usr/local/Ascend/ascend-toolkit/latest/compiler/ccec_compiler/bin:/usr/local/Ascend/ascend-toolkit/latest/tools/ccec_compiler/bin:$PATH
 ENV ASCEND_AICPU_PATH=${ASCEND_TOOLKIT_HOME}
 ENV ASCEND_OPP_PATH=${ASCEND_TOOLKIT_HOME}/opp
 ENV TOOLCHAIN_HOME=${ASCEND_TOOLKIT_HOME}/toolkit
 ENV ASCEND_HOME_PATH=${ASCEND_TOOLKIT_HOME}
 
 # Note: NNAL Environment variables, obtained from /usr/local/Ascend/nnal/set_env.sh
-ENV ATB_HOME_PATH=/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_0
+ENV ATB_HOME_PATH=/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1
 ENV LD_LIBRARY_PATH=${ATB_HOME_PATH}/lib:${ATB_HOME_PATH}/examples:${ATB_HOME_PATH}/tests/atbopstest:${LD_LIBRARY_PATH}
 ENV PATH=${ATB_HOME_PATH}/bin:$PATH
 ENV ATB_STREAM_SYNC_EVERY_KERNEL_ENABLE=0
 ENV ATB_STREAM_SYNC_EVERY_RUNNER_ENABLE=0
 ENV ATB_STREAM_SYNC_EVERY_OPERATION_ENABLE=0
-ENV ATB_OPSRUNNER_SETUP_CACHE_ENABLE=1
 ENV ATB_OPSRUNNER_KERNEL_CACHE_LOCAL_COUNT=1
 ENV ATB_OPSRUNNER_KERNEL_CACHE_GLOABL_COUNT=5
 ENV ATB_WORKSPACE_MEM_ALLOC_ALG_TYPE=1
-ENV ATB_WORKSPACE_MEM_ALLOC_GLOBAL=1
 ENV ATB_COMPARE_TILING_EVERY_KERNEL=0
-ENV ATB_HOST_TILING_BUFFER_BLOCK_NUM=128
-ENV ATB_DEVICE_TILING_BUFFER_BLOCK_NUM=32
 ENV ATB_SHARE_MEMORY_NAME_SUFFIX=""
 ENV ATB_MATMUL_SHUFFLE_K_ENABLE=1
 ENV LCCL_DETERMINISTIC=0
@@ -171,7 +170,7 @@ RUN \
     esac) && \
     ln -sf /usr/include/c++/12/${ARCH}-openEuler-linux /usr/include/c++/12/${ARCH}-linux-gnu && \
     CANN_TOOLKIT_ENV_FILE="/usr/local/Ascend/ascend-toolkit/set_env.sh" && \
-    CANN_BISHENG_ENV_FILE="/usr/local/Ascend/ascend-toolkit/8.5.0/bisheng_toolkit/set_env.sh" && \
+    CANN_BISHENG_ENV_FILE="/usr/local/Ascend/cann-8.5.0/share/info/ascendnpu-ir/bin/set_env.sh" && \
     CANN_NNAL_ENV_FILE="/usr/local/Ascend/nnal/atb/set_env.sh" && \
     echo "source ${CANN_TOOLKIT_ENV_FILE}" >> /etc/profile && \
     echo "source ${CANN_TOOLKIT_ENV_FILE}" >> ~/.bashrc && \
@@ -182,7 +181,7 @@ RUN \
 
 ENTRYPOINT ["/bin/bash", "-c", "\
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
-    source /usr/local/Ascend/ascend-toolkit/8.5.0/bisheng_toolkit/set_env.sh && \
+    source /usr/local/Ascend/cann-8.5.0/share/info/ascendnpu-ir/bin/set_env.sh && \
     source /usr/local/Ascend/nnal/atb/set_env.sh && \
     exec \"$@\"", "--"]
 
