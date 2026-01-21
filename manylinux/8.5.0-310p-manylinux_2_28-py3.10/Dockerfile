@@ -98,7 +98,6 @@ FROM quay.io/pypa/manylinux_2_28:latest AS official-manylinux
 
 # Python Environment variables
 ENV PATH=/usr/local/python3.10.19/bin:${PATH}
-ENV LD_LIBRARY_PATH=/usr/local/python3.10.19/lib:${LD_LIBRARY_PATH}
 
 # Note: Toolkit Environment variables, obtained from /usr/local/Ascend/ascend-toolkit/set_env.sh
 ENV ASCEND_TOOLKIT_HOME=/usr/local/Ascend/cann-8.5.0
