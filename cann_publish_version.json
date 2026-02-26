@@ -1,11 +1,60 @@
 {
   "versions": [
     {
+      "path": "cann/8.5.1-910b-ubuntu22.04-py3.11",
+      "tags": [
+          "8.5.1-910b-ubuntu22.04-py3.11",
+          "8.5.1",
+          "latest"
+      ]
+    },
+    {
+      "path": "cann/8.5.1-910b-openeuler24.03-py3.11",
+      "tags": [
+          "8.5.1-910b-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/8.5.1-910-ubuntu22.04-py3.11",
+      "tags": [
+          "8.5.1-910-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/8.5.1-910-openeuler24.03-py3.11",
+      "tags": [
+          "8.5.1-910-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/8.5.1-310p-ubuntu22.04-py3.11",
+      "tags": [
+          "8.5.1-310p-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/8.5.1-310p-openeuler24.03-py3.11",
+      "tags": [
+          "8.5.1-310p-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/8.5.1-a3-ubuntu22.04-py3.11",
+      "tags": [
+          "8.5.1-a3-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/8.5.1-a3-openeuler24.03-py3.11",
+      "tags": [
+          "8.5.1-a3-openeuler24.03-py3.11"
+      ]
+    },
+    {
       "path": "cann/8.5.0-910b-ubuntu22.04-py3.11",
       "tags": [
           "8.5.0-910b-ubuntu22.04-py3.11",
-          "8.5.0",
-          "latest"
+          "8.5.0"
       ]
     },
     {
