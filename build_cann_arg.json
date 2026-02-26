@@ -1,43 +1,83 @@
 {
     "cann": [
         {
-            "cann_version": "8.5.0",
+            "cann_version": "8.5.1",
+            "cann_chip": "910b",
+            "os_name": "ubuntu",
+            "os_version": "22.04",
+            "py_version": "3.11",
+            "tags": [
+                "8.5.1-910b-ubuntu22.04-py3.11"
+            ]
+        },
+        {
+            "cann_version": "8.5.1",
             "cann_chip": "910b",
             "os_name": "openeuler",
             "os_version": "24.03",
             "py_version": "3.11",
             "tags": [
-                "8.5.0-910b-openeuler24.03-py3.11"
+                "8.5.1-910b-openeuler24.03-py3.11"
             ]
         },
         {
-            "cann_version": "8.5.0",
+            "cann_version": "8.5.1",
+            "cann_chip": "310p",
+            "os_name": "ubuntu",
+            "os_version": "22.04",
+            "py_version": "3.11",
+            "tags": [
+                "8.5.1-310p-ubuntu22.04-py3.11"
+            ]
+        },
+        {
+            "cann_version": "8.5.1",
             "cann_chip": "310p",
             "os_name": "openeuler",
             "os_version": "24.03",
             "py_version": "3.11",
             "tags": [
-                "8.5.0-310p-openeuler24.03-py3.11"
+                "8.5.1-310p-openeuler24.03-py3.11"
             ]
         },
         {
-            "cann_version": "8.5.0",
+            "cann_version": "8.5.1",
+            "cann_chip": "A3",
+            "os_name": "ubuntu",
+            "os_version": "22.04",
+            "py_version": "3.11",
+            "tags": [
+                "8.5.1-a3-ubuntu22.04-py3.11"
+            ]
+        },
+        {
+            "cann_version": "8.5.1",
             "cann_chip": "A3",
             "os_name": "openeuler",
             "os_version": "24.03",
             "py_version": "3.11",
             "tags": [
-                "8.5.0-a3-openeuler24.03-py3.11"
+                "8.5.1-a3-openeuler24.03-py3.11"
             ]
         },
         {
-            "cann_version": "8.5.0",
+            "cann_version": "8.5.1",
+            "cann_chip": "910",
+            "os_name": "ubuntu",
+            "os_version": "22.04",
+            "py_version": "3.11",
+            "tags": [
+                "8.5.1-910-ubuntu22.04-py3.11"
+            ]
+        },
+        {
+            "cann_version": "8.5.1",
             "cann_chip": "910",
             "os_name": "openeuler",
             "os_version": "24.03",
             "py_version": "3.11",
             "tags": [
-                "8.5.0-910-openeuler24.03-py3.11"
+                "8.5.1-910-openeuler24.03-py3.11"
             ]
         }
     ]
