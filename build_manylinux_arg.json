@@ -2,22 +2,22 @@
     "manylinux": [
         {
             "cann_version": "8.5.1",
-            "cann_chip": "910b",
+            "cann_chip": "A3",
             "os_name": "manylinux",
             "os_version": "2_28",
-            "py_version": "3.12",
+            "py_version": "3.11",
             "tags": [
-                "8.5.1-910b-manylinux_2_28-py3.12"
+                "8.5.1-a3-manylinux_2_28-py3.11"
             ]
         },
         {
             "cann_version": "8.5.1",
-            "cann_chip": "310p",
+            "cann_chip": "A3",
             "os_name": "manylinux",
             "os_version": "2_28",
-            "py_version": "3.12",
+            "py_version": "3.11",
             "tags": [
-                "8.5.1-310p-manylinux_2_28-py3.12"
+                "8.5.1-a3-manylinux_2_28-py3.11"
             ]
         }
     ]
