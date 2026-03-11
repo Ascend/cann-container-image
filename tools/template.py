@@ -22,6 +22,7 @@ ALPHA_DICT = {
     "8.3.RC1.alpha003": "V100R001C23B800TP024",
     "8.5.0.alpha001": "V100R001C23B800TP059",
     "8.5.0.alpha002": "V100R001C25B800TP028",
+    "9.0.0-beta.1": "9.0.T2",
 }
 
 env = Environment(loader=FileSystemLoader('tools/template'))
@@ -50,6 +51,8 @@ def get_cann_download_url(cann_chip, version):
         if version not in ALPHA_DICT:
             raise ValueError(f"Unsupported version: {version}. Supported versions are: {list(ALPHA_DICT.keys())}")
         url_prefix = f"{BASE_URL}/Milan-ASL/Milan-ASL%20{ALPHA_DICT[version]}"
+    elif "beta" in version:
+        url_prefix = f"{BASE_URL}/CANN/CANN%20{ALPHA_DICT[version]}"
     else:
         url_prefix = f"{BASE_URL}/CANN/CANN%20{version}"
     

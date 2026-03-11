@@ -10,8 +10,8 @@ Use this skill when a new CANN software version is released to generate all nece
 
 ## Release Workflow
 
-### Step 1: Update Alpha Version Template (Conditional)
-Action: Check if the specified CANN version string contains "alpha".
+### Step 1: Update Alpha/Beta Version Template (Conditional)
+Action: Check if the specified CANN version string contains "alpha" or "beta".
 
 If YES: Update the ALPHA_DICT mapping within `/tools/template.py`. Add a new entry using the CANN version as the key and its corresponding download link identifier as the value.
 
@@ -40,7 +40,7 @@ Configuration Basis:
 
 CANN Version: The newly specified version.
 
-Target Chips (cann_chip): 910b, 310p
+Target Chips (cann_chip): 910b, 310p, A3
 
 Operating System (os): manylinux (2_28)
 
