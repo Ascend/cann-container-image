@@ -1,5 +1,5 @@
 # Stage 1: Install Python
-FROM openeuler/openeuler:24.03 AS python-installer
+FROM quay.io/openeuler/openeuler:24.03 AS python-installer
 
 # Python Environment variables
 ENV PATH=/usr/local/python3.11.15/bin:${PATH}
@@ -94,7 +94,7 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     rm -f ~/Ascend-cann-nnal.run
     
 # Stage 3: Copy results from previous stages
-FROM openeuler/openeuler:24.03 AS official-openeuler
+FROM quay.io/openeuler/openeuler:24.03 AS official-openeuler
 
 ARG TARGETPLATFORM
 

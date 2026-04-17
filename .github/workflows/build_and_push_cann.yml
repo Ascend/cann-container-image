@@ -239,21 +239,12 @@ jobs:
           ecr: false
           logout: false
 
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
       - name: Build and push by digest
         uses: docker/build-push-action@v6
         id: build
-        with: 
+        with:
           platforms: ${{ matrix.arch }}
-          tags: |
-            docker.io/ascendai/cann
-            quay.io/ascend/cann
+          tags: quay.io/ascend/cann
           file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}/Dockerfile
           context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
@@ -297,33 +288,20 @@ jobs:
           username: ${{ secrets.QUAY_USERNAME }}
           password: ${{ secrets.QUAY_TOKEN }}
 
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
       - name: Prepare tags
         id: prepare-tags
         run: |
           BASE_TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
             '.versions[] | select(.path == "cann/" + $cann_tag) | .tags[]' \
             cann_publish_version.json)
-          registries=(
-            "docker.io/ascendai/cann"
-            "quay.io/ascend/cann"
-          )
           first=true
           TAGS_JSON="["
-          for registry in "${registries[@]}"; do
-            for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
-              if [ "$first" != true ]; then
-                TAGS_JSON+=","
-              fi
-              TAGS_JSON+="\"${registry}:${tag}\""
-              first=false
-            done
+          for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
+            if [ "$first" != true ]; then
+              TAGS_JSON+=","
+            fi
+            TAGS_JSON+="\"quay.io/ascend/cann:${tag}\""
+            first=false
           done
           TAGS_JSON+="]"
           echo "tags=${TAGS_JSON}" >> $GITHUB_OUTPUT
@@ -334,18 +312,9 @@ jobs:
           TAGS: ${{ steps.prepare-tags.outputs.tags }}
         run: |
           readarray -t TAGS_ARRAY <<< "$(echo "$TAGS" | jq -r '.[]')"
-
           for TAG in "${TAGS_ARRAY[@]}"; do
-            if [[ "$TAG" == *"quay.io/ascend/cann"* ]]; then
-              docker buildx imagetools create -t "$TAG" \
-                $(printf 'quay.io/ascend/cann@sha256:%s ' *)
-            elif [[ "$TAG" == *"docker.io/ascendai/cann"* ]]; then
-              docker buildx imagetools create -t "$TAG" \
-                $(printf 'docker.io/ascendai/cann@sha256:%s ' *)
-            else
-              echo "Error: Unknown registry in TAG: $TAG"
-              exit 1
-            fi
+            docker buildx imagetools create -t "$TAG" \
+              $(printf 'quay.io/ascend/cann@sha256:%s ' *)
           done
 
   sync-image:
@@ -374,12 +343,29 @@ jobs:
             --password-stdin \
             swr.cn-east-3.myhuaweicloud.com/ascendhub-test
 
+      - name: Login to DockerHub
+        run: |
+          echo "${{ secrets.DOCKER_TOKEN }}" | skopeo login \
+            --username "${{ secrets.DOCKER_USERNAME }}" \
+            --password-stdin \
+            registry-1.docker.io
+
       - name: Sync image
         run: |
-          skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
-          docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}
+          BASE_TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
+            '.versions[] | select(.path == "cann/" + $cann_tag) | .tags[]' \
+            cann_publish_version.json)
 
-          skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
-          docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}
+          for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
+            skopeo copy --all \
+              docker://quay.io/ascend/cann:${tag} \
+              docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${tag}
+
+            skopeo copy --all \
+              docker://quay.io/ascend/cann:${tag} \
+              docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${tag}
+
+            skopeo copy --all \
+              docker://quay.io/ascend/cann:${tag} \
+              docker://registry-1.docker.io/ascendai/cann:${tag}
+          done
