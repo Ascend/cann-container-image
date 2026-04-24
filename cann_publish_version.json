@@ -1,6 +1,54 @@
 {
   "versions": [
     {
+      "path": "cann/9.0.0-beta.2-910b-ubuntu22.04-py3.10",
+      "tags": [
+          "9.0.0-beta.2-910b-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-beta.2-a3-ubuntu22.04-py3.10",
+      "tags": [
+          "9.0.0-beta.2-a3-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/8.5.2-910b-ubuntu22.04-py3.10",
+      "tags": [
+          "8.5.2-910b-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/8.5.2-a3-ubuntu22.04-py3.10",
+      "tags": [
+          "8.5.2-a3-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/8.5.1-910b-ubuntu22.04-py3.10",
+      "tags": [
+          "8.5.1-910b-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/8.5.1-a3-ubuntu22.04-py3.10",
+      "tags": [
+          "8.5.1-a3-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/8.5.0-910b-ubuntu22.04-py3.10",
+      "tags": [
+          "8.5.0-910b-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/8.5.0-a3-ubuntu22.04-py3.10",
+      "tags": [
+          "8.5.0-a3-ubuntu22.04-py3.10"
+      ]
+    },
+    {
       "path": "cann/8.5.2-910b-ubuntu22.04-py3.11",
       "tags": [
           "8.5.2-910b-ubuntu22.04-py3.11",

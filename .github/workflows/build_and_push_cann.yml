@@ -10,20 +10,24 @@ on:
         type: choice
         options:
           - 8.5.2-910b-ubuntu22.04-py3.11
+          - 8.5.2-910b-ubuntu22.04-py3.10
           - 8.5.2-910b-openeuler24.03-py3.11
           - 8.5.2-910-ubuntu22.04-py3.11
           - 8.5.2-910-openeuler24.03-py3.11
           - 8.5.2-310p-ubuntu22.04-py3.11
           - 8.5.2-310p-openeuler24.03-py3.11
           - 8.5.2-a3-ubuntu22.04-py3.11
+          - 8.5.2-a3-ubuntu22.04-py3.10
           - 8.5.2-a3-openeuler24.03-py3.11
           - 9.0.0-beta.2-910b-ubuntu22.04-py3.11
+          - 9.0.0-beta.2-910b-ubuntu22.04-py3.10
           - 9.0.0-beta.2-910b-openeuler24.03-py3.11
           - 9.0.0-beta.2-910-ubuntu22.04-py3.11
           - 9.0.0-beta.2-910-openeuler24.03-py3.11
           - 9.0.0-beta.2-310p-ubuntu22.04-py3.11
           - 9.0.0-beta.2-310p-openeuler24.03-py3.11
           - 9.0.0-beta.2-a3-ubuntu22.04-py3.11
+          - 9.0.0-beta.2-a3-ubuntu22.04-py3.10
           - 9.0.0-beta.2-a3-openeuler24.03-py3.11
           - 9.0.0-beta.1-910b-ubuntu22.04-py3.11
           - 9.0.0-beta.1-910b-openeuler24.03-py3.11
@@ -34,12 +38,14 @@ on:
           - 9.0.0-beta.1-a3-ubuntu22.04-py3.11
           - 9.0.0-beta.1-a3-openeuler24.03-py3.11
           - 8.5.1-910b-ubuntu22.04-py3.12
+          - 8.5.1-910b-ubuntu22.04-py3.10
           - 8.5.1-910b-openeuler24.03-py3.12
           - 8.5.1-910-ubuntu22.04-py3.12
           - 8.5.1-910-openeuler24.03-py3.12
           - 8.5.1-310p-ubuntu22.04-py3.12
           - 8.5.1-310p-openeuler24.03-py3.12
           - 8.5.1-a3-ubuntu22.04-py3.12
+          - 8.5.1-a3-ubuntu22.04-py3.10
           - 8.5.1-a3-openeuler24.03-py3.12
           - 8.5.1-910b-ubuntu22.04-py3.11
           - 8.5.1-910b-openeuler24.03-py3.11
@@ -50,12 +56,14 @@ on:
           - 8.5.1-a3-ubuntu22.04-py3.11
           - 8.5.1-a3-openeuler24.03-py3.11
           - 8.5.0-910b-ubuntu22.04-py3.11
+          - 8.5.0-910b-ubuntu22.04-py3.10
           - 8.5.0-910b-openeuler24.03-py3.11
           - 8.5.0-910-ubuntu22.04-py3.11
           - 8.5.0-910-openeuler24.03-py3.11
           - 8.5.0-310p-ubuntu22.04-py3.11
           - 8.5.0-310p-openeuler24.03-py3.11
           - 8.5.0-a3-ubuntu22.04-py3.11
+          - 8.5.0-a3-ubuntu22.04-py3.10
           - 8.5.0-a3-openeuler24.03-py3.11
           - 8.5.0.alpha002-910b-ubuntu22.04-py3.11
           - 8.5.0.alpha002-910b-openeuler24.03-py3.11
