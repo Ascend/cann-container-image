@@ -103,7 +103,7 @@ RUN apt update -y && \
 
 | Chip Series | Product Examples | Architecture |
 |---|---|---|
-| Ascend 910A | Atlas 800T, Atlas 900 PoD | ARM64 / x86_64 |
+| Ascend 910 | Atlas 800 | ARM64 / x86_64 |
 | Ascend 910B | Atlas 800T A2, Atlas 900 A2 PoD | ARM64 / x86_64 |
 | Ascend A3 | Atlas 800T A3 | ARM64 / x86_64 |
 | Ascend 310P | Atlas 300I Pro, Atlas 300V Pro | ARM64 / x86_64 |
@@ -112,6 +112,6 @@ RUN apt update -y && \
 
 ## License
 
-View the [license information](https://www.hiascend.com/software/cann/community) for CANN and Mind series software included in these images.
+View the [license information](https://www.hiascend.com/cann) for CANN and Mind series software included in these images.
 
 As with all container images, pre-installed packages (Python, system libraries, etc.) may be subject to their own licenses.

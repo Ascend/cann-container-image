@@ -103,7 +103,7 @@ RUN apt update -y && \
 
 | 芯片系列 | 产品示例 | 架构 |
 |---|---|---|
-| 昇腾 910A | Atlas 800T、Atlas 900 PoD | ARM64 / x86_64 |
+| 昇腾 910 | Atlas 800 | ARM64 / x86_64 |
 | 昇腾 910B | Atlas 800T A2、Atlas 900 A2 PoD | ARM64 / x86_64 |
 | 昇腾 A3 | Atlas 800T A3 | ARM64 / x86_64 |
 | 昇腾 310P | Atlas 300I Pro、Atlas 300V Pro | ARM64 / x86_64 |
@@ -112,6 +112,6 @@ RUN apt update -y && \
 
 ## 许可证
 
-查看这些镜像中包含的 CANN 和 Mind 系列软件的[许可证信息](https://www.hiascend.com/software/cann/community)。
+查看这些镜像中包含的 CANN 和 Mind 系列软件的[许可证信息](https://www.hiascend.com/cann)。
 
 与所有容器镜像一样，预装软件包（Python、系统库等）可能受其自身许可证约束。
