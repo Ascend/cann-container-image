@@ -1,6 +1,104 @@
 {
   "versions": [
     {
+      "path": "cann/9.0.0-910b-ubuntu22.04-py3.11",
+      "tags": [
+          "9.0.0-910b-ubuntu22.04-py3.11",
+          "9.0.0",
+          "latest"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-910b-ubuntu22.04-py3.10",
+      "tags": [
+          "9.0.0-910b-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-910b-openeuler24.03-py3.11",
+      "tags": [
+          "9.0.0-910b-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-910b-openeuler24.03-py3.10",
+      "tags": [
+          "9.0.0-910b-openeuler24.03-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-910-ubuntu22.04-py3.11",
+      "tags": [
+          "9.0.0-910-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-910-ubuntu22.04-py3.10",
+      "tags": [
+          "9.0.0-910-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-910-openeuler24.03-py3.11",
+      "tags": [
+          "9.0.0-910-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-910-openeuler24.03-py3.10",
+      "tags": [
+          "9.0.0-910-openeuler24.03-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-310p-ubuntu22.04-py3.11",
+      "tags": [
+          "9.0.0-310p-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-310p-ubuntu22.04-py3.10",
+      "tags": [
+          "9.0.0-310p-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-310p-openeuler24.03-py3.11",
+      "tags": [
+          "9.0.0-310p-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-310p-openeuler24.03-py3.10",
+      "tags": [
+          "9.0.0-310p-openeuler24.03-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-a3-ubuntu22.04-py3.11",
+      "tags": [
+          "9.0.0-a3-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-a3-ubuntu22.04-py3.10",
+      "tags": [
+          "9.0.0-a3-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-a3-openeuler24.03-py3.11",
+      "tags": [
+          "9.0.0-a3-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.0.0-a3-openeuler24.03-py3.10",
+      "tags": [
+          "9.0.0-a3-openeuler24.03-py3.10"
+      ]
+    },
+    {
       "path": "cann/9.0.0-beta.2-910b-ubuntu22.04-py3.10",
       "tags": [
           "9.0.0-beta.2-910b-ubuntu22.04-py3.10"
@@ -101,8 +199,7 @@
       "path": "cann/9.0.0-beta.2-910b-ubuntu22.04-py3.11",
       "tags": [
           "9.0.0-beta.2-910b-ubuntu22.04-py3.11",
-          "9.0.0-beta.2",
-          "latest"
+          "9.0.0-beta.2"
       ]
     },
     {

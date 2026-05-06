@@ -28,7 +28,7 @@ Target Chips (cann_chip): 910b, 310p, A3, 910
 
 Operating Systems (os): openeuler (24.03), ubuntu (22.03)
 
-Python Version (py-version): 3.11
+Python Version (py-version): 3.11, 3.10
 
 Tag Naming Convention: <cann-version>-<chip>-<os><os-version>-<py-version>
 
