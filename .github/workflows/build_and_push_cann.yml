@@ -9,6 +9,10 @@ on:
         default: '9.0.0-910b-ubuntu22.04-py3.11'
         type: choice
         options:
+          - 9.0.0-950-ubuntu22.04-py3.11
+          - 9.0.0-950-ubuntu22.04-py3.10
+          - 9.0.0-950-openeuler24.03-py3.11
+          - 9.0.0-950-openeuler24.03-py3.10
           - 9.0.0-910b-ubuntu22.04-py3.11
           - 9.0.0-910b-ubuntu22.04-py3.10
           - 9.0.0-910b-openeuler24.03-py3.11
