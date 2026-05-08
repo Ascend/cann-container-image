@@ -102,11 +102,12 @@ FROM ubuntu:22.04 AS official-ubuntu
 
 # Python Environment variables
 ENV PATH=/usr/local/python3.10.20/bin:${PATH}
-ENV LD_LIBRARY_PATH=/usr/local/python3.10.20/lib
+ENV LD_LIBRARY_PATH=/usr/local/python3.10.20/lib:${LD_LIBRARY_PATH}
 
 # Note: Toolkit Environment variables, obtained from /usr/local/Ascend/ascend-toolkit/set_env.sh
 ENV ASCEND_TOOLKIT_HOME=/usr/local/Ascend/cann-9.0.0
 ENV ASCEND_TOOLKIT_LATEST_HOME=/usr/local/Ascend/ascend-toolkit/latest
+ENV LD_LIBRARY_PATH=/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common/:/usr/local/Ascend/driver/lib64/driver/:$LD_LIBRARY_PATH
 ENV LD_LIBRARY_PATH=${ASCEND_TOOLKIT_HOME}/lib64:${ASCEND_TOOLKIT_HOME}/lib64/plugin/opskernel:${ASCEND_TOOLKIT_HOME}/lib64/plugin/nnengine:${ASCEND_TOOLKIT_HOME}/opp/built-in/op_impl/ai_core/tbe/op_tiling:$LD_LIBRARY_PATH
 ENV LD_LIBRARY_PATH=${ASCEND_TOOLKIT_HOME}/tools/aml/lib64:${ASCEND_TOOLKIT_HOME}/tools/aml/lib64/plugin:$LD_LIBRARY_PATH
 ENV LD_LIBRARY_PATH=${ASCEND_TOOLKIT_LATEST_HOME}/lib64:${ASCEND_TOOLKIT_LATEST_HOME}/lib64/plugin/opskernel:${ASCEND_TOOLKIT_LATEST_HOME}/lib64/plugin/nnengine:${ASCEND_TOOLKIT_LATEST_HOME}/opp/built-in/op_impl/ai_core/tbe/op_tiling:$LD_LIBRARY_PATH
@@ -138,9 +139,6 @@ ENV ATB_SHARE_MEMORY_NAME_SUFFIX=""
 ENV ATB_MATMUL_SHUFFLE_K_ENABLE=1
 ENV LCCL_DETERMINISTIC=0
 ENV LCCL_PARALLEL=0
-
-# Note: This environment variable must be placed at the beginning.
-ENV LD_LIBRARY_PATH=/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common/:/usr/local/Ascend/driver/lib64/driver/:$LD_LIBRARY_PATH
 
 SHELL [ "/bin/bash", "-c" ]
 
