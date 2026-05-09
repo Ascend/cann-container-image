@@ -382,7 +382,7 @@ jobs:
       matrix:
         include:
           - arch: x86_64
-            runner: ubuntu-latest
+            runner: linux-x86_64
           - arch: aarch64
             runner: ubuntu-22.04-arm
     steps:
@@ -423,7 +423,7 @@ jobs:
       matrix:
         include:
           - arch: x86_64
-            runner: ubuntu-latest
+            runner: linux-x86_64
           - arch: aarch64
             runner: ubuntu-22.04-arm
     steps:
@@ -454,17 +454,6 @@ jobs:
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
-
-      - name: Set image repository
-        id: set-repo
-        run: |
-          if [[ "${{ inputs.cann_tag }}" == *"-devel" ]]; then
-            echo "docker_repo=docker.io/ascendai/cann-devel" >> $GITHUB_OUTPUT
-            echo "quay_repo=quay.io/ascend/cann-devel" >> $GITHUB_OUTPUT
-          else
-            echo "docker_repo=docker.io/ascendai/cann" >> $GITHUB_OUTPUT
-            echo "quay_repo=quay.io/ascend/cann" >> $GITHUB_OUTPUT
-          fi
 
       - name: Build and push by digest
         uses: docker/build-push-action@v6
@@ -499,17 +488,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set image repository
-        id: set-repo
-        run: |
-          if [[ "${{ inputs.cann_tag }}" == *"-devel" ]]; then
-            echo "docker_repo=docker.io/ascendai/cann-devel" >> $GITHUB_OUTPUT
-            echo "quay_repo=quay.io/ascend/cann-devel" >> $GITHUB_OUTPUT
-          else
-            echo "docker_repo=docker.io/ascendai/cann" >> $GITHUB_OUTPUT
-            echo "quay_repo=quay.io/ascend/cann" >> $GITHUB_OUTPUT
-          fi
 
       - name: Download digests
         uses: actions/download-artifact@v4
@@ -587,17 +565,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set image repository
-        id: set-repo
-        run: |
-          if [[ "${{ inputs.cann_tag }}" == *"-devel" ]]; then
-            echo "source_repo=quay.io/ascend/cann-devel" >> $GITHUB_OUTPUT
-            echo "dest_name=cann-devel" >> $GITHUB_OUTPUT
-          else
-            echo "source_repo=quay.io/ascend/cann" >> $GITHUB_OUTPUT
-            echo "dest_name=cann" >> $GITHUB_OUTPUT
-          fi
 
       - name: Install skopeo
         run: |
