@@ -281,7 +281,7 @@ jobs:
           platforms: ${{ matrix.arch }}
           tags: |
             docker.io/ascendai/cann:${{ inputs.cann_tag }}
-            quay.io/ascend/cann:${{ inputs.cann_tag }}
+            quay.io/ascend/cann
           file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}/Dockerfile
           context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
@@ -294,7 +294,7 @@ jobs:
           platforms: ${{ matrix.arch }}
           tags: |
             docker.io/ascendai/cann:${{ inputs.cann_tag }}-devel
-            quay.io/ascend/cann:${{ inputs.cann_tag }}-devel
+            quay.io/ascend/cann
           file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}-devel/Dockerfile
           context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}-devel
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
@@ -384,19 +384,13 @@ jobs:
           
           for TAG in "${TAGS_ARRAY[@]}"; do
             if [[ "$TAG" == *"quay.io/ascend/cann"* ]]; then
-              if [[ "$TAG" == *"-devel" ]]; then
-                docker buildx imagetools create -t "$TAG" \
-                  $(printf 'quay.io/ascend/cann@sha256:%s ' devel/*)
-              else
-                docker buildx imagetools create -t "$TAG" \
-                  $(printf 'quay.io/ascend/cann@sha256:%s ' base/*)
+              docker buildx imagetools create -t "$TAG" \
+                $(cd devel && printf 'quay.io/ascend/cann@sha256:%s ' *) \
+                $(cd base  && printf 'quay.io/ascend/cann@sha256:%s ' *)
             elif [[ "$TAG" == *"docker.io/ascendai/cann"* ]]; then
-              if [[ "$TAG" == *"-devel" ]]; then
-                docker buildx imagetools create -t "$TAG" \
-                  $(printf 'docker.io/ascendai/cann@sha256:%s ' devel/*)
-              else
-                docker buildx imagetools create -t "$TAG" \
-                  $(printf 'docker.io/ascendai/cann@sha256:%s ' base/*)
+              docker buildx imagetools create -t "$TAG" \
+                $(cd devel && printf 'docker.io/ascendai/cann@sha256:%s ' *) \
+                $(cd base  && printf 'docker.io/ascendai/cann@sha256:%s ' *)
             else
               echo "Error: Unknown registry in TAG: $TAG"
               exit 1
