@@ -186,187 +186,6 @@ on:
           - 8.1.rc1-910b-openeuler22.03-py3.10
           - 8.1.rc1-910b-openeuler22.03-py3.11
           - 8.1.rc1-910b-openeuler24.03-py3.10
-          - 9.0.0-950-ubuntu22.04-py3.11-devel
-          - 9.0.0-950-ubuntu22.04-py3.10-devel
-          - 9.0.0-950-openeuler24.03-py3.11-devel
-          - 9.0.0-950-openeuler24.03-py3.10-devel
-          - 9.0.0-910b-ubuntu22.04-py3.11-devel
-          - 9.0.0-910b-ubuntu22.04-py3.10-devel
-          - 9.0.0-910b-openeuler24.03-py3.11-devel
-          - 9.0.0-910b-openeuler24.03-py3.10-devel
-          - 9.0.0-910-ubuntu22.04-py3.11-devel
-          - 9.0.0-910-ubuntu22.04-py3.10-devel
-          - 9.0.0-910-openeuler24.03-py3.11-devel
-          - 9.0.0-910-openeuler24.03-py3.10-devel
-          - 9.0.0-310p-ubuntu22.04-py3.11-devel
-          - 9.0.0-310p-ubuntu22.04-py3.10-devel
-          - 9.0.0-310p-openeuler24.03-py3.11-devel
-          - 9.0.0-310p-openeuler24.03-py3.10-devel
-          - 9.0.0-a3-ubuntu22.04-py3.11-devel
-          - 9.0.0-a3-ubuntu22.04-py3.10-devel
-          - 9.0.0-a3-openeuler24.03-py3.11-devel
-          - 9.0.0-a3-openeuler24.03-py3.10-devel
-          - 9.0.0-beta.2-910b-ubuntu22.04-py3.11-devel
-          - 9.0.0-beta.2-910b-ubuntu22.04-py3.10-devel
-          - 9.0.0-beta.2-910b-openeuler24.03-py3.11-devel
-          - 9.0.0-beta.2-910-ubuntu22.04-py3.11-devel
-          - 9.0.0-beta.2-910-openeuler24.03-py3.11-devel
-          - 9.0.0-beta.2-310p-ubuntu22.04-py3.11-devel
-          - 9.0.0-beta.2-310p-openeuler24.03-py3.11-devel
-          - 9.0.0-beta.2-a3-ubuntu22.04-py3.11-devel
-          - 9.0.0-beta.2-a3-ubuntu22.04-py3.10-devel
-          - 9.0.0-beta.2-a3-openeuler24.03-py3.11-devel
-          - 9.0.0-beta.1-910b-ubuntu22.04-py3.11-devel
-          - 9.0.0-beta.1-910b-openeuler24.03-py3.11-devel
-          - 9.0.0-beta.1-910-ubuntu22.04-py3.11-devel
-          - 9.0.0-beta.1-910-openeuler24.03-py3.11-devel
-          - 9.0.0-beta.1-310p-ubuntu22.04-py3.11-devel
-          - 9.0.0-beta.1-310p-openeuler24.03-py3.11-devel
-          - 9.0.0-beta.1-a3-ubuntu22.04-py3.11-devel
-          - 9.0.0-beta.1-a3-openeuler24.03-py3.11-devel
-          - 8.5.2-910b-ubuntu22.04-py3.11-devel
-          - 8.5.2-910b-ubuntu22.04-py3.10-devel
-          - 8.5.2-910b-openeuler24.03-py3.11-devel
-          - 8.5.2-910-ubuntu22.04-py3.11-devel
-          - 8.5.2-910-openeuler24.03-py3.11-devel
-          - 8.5.2-310p-ubuntu22.04-py3.11-devel
-          - 8.5.2-310p-openeuler24.03-py3.11-devel
-          - 8.5.2-a3-ubuntu22.04-py3.11-devel
-          - 8.5.2-a3-ubuntu22.04-py3.10-devel
-          - 8.5.2-a3-openeuler24.03-py3.11-devel
-          - 8.5.1-910b-ubuntu22.04-py3.11-devel
-          - 8.5.1-910b-ubuntu22.04-py3.10-devel
-          - 8.5.1-910b-ubuntu22.04-py3.12-devel
-          - 8.5.1-910b-openeuler24.03-py3.11-devel
-          - 8.5.1-910b-openeuler24.03-py3.12-devel
-          - 8.5.1-910-ubuntu22.04-py3.11-devel
-          - 8.5.1-910-ubuntu22.04-py3.12-devel
-          - 8.5.1-910-openeuler24.03-py3.11-devel
-          - 8.5.1-910-openeuler24.03-py3.12-devel
-          - 8.5.1-310p-ubuntu22.04-py3.11-devel
-          - 8.5.1-310p-ubuntu22.04-py3.12-devel
-          - 8.5.1-310p-openeuler24.03-py3.11-devel
-          - 8.5.1-310p-openeuler24.03-py3.12-devel
-          - 8.5.1-a3-ubuntu22.04-py3.11-devel
-          - 8.5.1-a3-ubuntu22.04-py3.10-devel
-          - 8.5.1-a3-ubuntu22.04-py3.12-devel
-          - 8.5.1-a3-openeuler24.03-py3.11-devel
-          - 8.5.1-a3-openeuler24.03-py3.12-devel
-          - 8.5.0-910b-ubuntu22.04-py3.11-devel
-          - 8.5.0-910b-ubuntu22.04-py3.10-devel
-          - 8.5.0-910b-openeuler24.03-py3.11-devel
-          - 8.5.0-910-ubuntu22.04-py3.11-devel
-          - 8.5.0-910-openeuler24.03-py3.11-devel
-          - 8.5.0-310p-ubuntu22.04-py3.11-devel
-          - 8.5.0-310p-openeuler24.03-py3.11-devel
-          - 8.5.0-a3-ubuntu22.04-py3.11-devel
-          - 8.5.0-a3-ubuntu22.04-py3.10-devel
-          - 8.5.0-a3-openeuler24.03-py3.11-devel
-          - 8.5.0.alpha002-910b-ubuntu22.04-py3.11-devel
-          - 8.5.0.alpha002-910b-openeuler24.03-py3.11-devel
-          - 8.5.0.alpha002-910-ubuntu22.04-py3.11-devel
-          - 8.5.0.alpha002-910-openeuler24.03-py3.11-devel
-          - 8.5.0.alpha002-310p-ubuntu22.04-py3.11-devel
-          - 8.5.0.alpha002-310p-openeuler24.03-py3.11-devel
-          - 8.5.0.alpha002-a3-ubuntu22.04-py3.11-devel
-          - 8.5.0.alpha002-a3-openeuler24.03-py3.11-devel
-          - 8.5.0.alpha001-910b-ubuntu22.04-py3.11-devel
-          - 8.5.0.alpha001-910b-openeuler24.03-py3.11-devel
-          - 8.5.0.alpha001-910-ubuntu22.04-py3.11-devel
-          - 8.5.0.alpha001-910-openeuler24.03-py3.11-devel
-          - 8.5.0.alpha001-310p-ubuntu22.04-py3.11-devel
-          - 8.5.0.alpha001-310p-openeuler24.03-py3.11-devel
-          - 8.5.0.alpha001-a3-ubuntu22.04-py3.11-devel
-          - 8.5.0.alpha001-a3-openeuler24.03-py3.11-devel
-          - 8.3.rc2-910b-ubuntu22.04-py3.11-devel
-          - 8.3.rc2-910b-openeuler24.03-py3.11-devel
-          - 8.3.rc2-910-ubuntu22.04-py3.11-devel
-          - 8.3.rc2-910-openeuler24.03-py3.11-devel
-          - 8.3.rc2-310p-ubuntu22.04-py3.11-devel
-          - 8.3.rc2-310p-openeuler24.03-py3.11-devel
-          - 8.3.rc2-a3-ubuntu22.04-py3.11-devel
-          - 8.3.rc2-a3-openeuler24.03-py3.11-devel
-          - 8.3.rc1-910b-ubuntu22.04-py3.11-devel
-          - 8.3.rc1-910b-openeuler24.03-py3.11-devel
-          - 8.3.rc1-910-ubuntu22.04-py3.11-devel
-          - 8.3.rc1-910-openeuler24.03-py3.11-devel
-          - 8.3.rc1-310p-ubuntu22.04-py3.11-devel
-          - 8.3.rc1-310p-openeuler24.03-py3.11-devel
-          - 8.3.rc1-a3-ubuntu22.04-py3.11-devel
-          - 8.3.rc1-a3-openeuler24.03-py3.11-devel
-          - 8.3.rc1.alpha003-910b-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha003-910b-openeuler24.03-py3.11-devel
-          - 8.3.rc1.alpha003-910-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha003-910-openeuler24.03-py3.11-devel
-          - 8.3.rc1.alpha003-310p-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha003-310p-openeuler24.03-py3.11-devel
-          - 8.3.rc1.alpha003-a3-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha003-a3-openeuler24.03-py3.11-devel
-          - 8.3.rc1.alpha002-910b-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha002-910b-openeuler24.03-py3.11-devel
-          - 8.3.rc1.alpha002-910-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha002-910-openeuler24.03-py3.11-devel
-          - 8.3.rc1.alpha002-310p-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha002-310p-openeuler24.03-py3.11-devel
-          - 8.3.rc1.alpha002-a3-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha002-a3-openeuler24.03-py3.11-devel
-          - 8.3.rc1.alpha001-910b-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha001-910b-openeuler22.03-py3.11-devel
-          - 8.3.rc1.alpha001-910-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha001-910-openeuler22.03-py3.11-devel
-          - 8.3.rc1.alpha001-310p-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha001-310p-openeuler22.03-py3.11-devel
-          - 8.3.rc1.alpha001-a3-ubuntu22.04-py3.11-devel
-          - 8.3.rc1.alpha001-a3-openeuler22.03-py3.11-devel
-          - 8.2.rc2-910b-ubuntu22.04-py3.11-devel
-          - 8.2.rc2-910b-openeuler24.03-py3.11-devel
-          - 8.2.rc2-910-ubuntu22.04-py3.11-devel
-          - 8.2.rc2-910-openeuler24.03-py3.11-devel
-          - 8.2.rc2-310p-ubuntu22.04-py3.11-devel
-          - 8.2.rc2-310p-openeuler24.03-py3.11-devel
-          - 8.2.rc2-a3-ubuntu22.04-py3.11-devel
-          - 8.2.rc2-a3-openeuler24.03-py3.11-devel
-          - 8.2.rc1-910b-ubuntu22.04-py3.11-devel
-          - 8.2.rc1-910b-openeuler22.03-py3.11-devel
-          - 8.2.rc1-910b-openeuler24.03-py3.11-devel
-          - 8.2.rc1-910-ubuntu22.04-py3.11-devel
-          - 8.2.rc1-910-openeuler22.03-py3.11-devel
-          - 8.2.rc1-910-openeuler24.03-py3.11-devel
-          - 8.2.rc1-310p-ubuntu22.04-py3.11-devel
-          - 8.2.rc1-310p-openeuler22.03-py3.11-devel
-          - 8.2.rc1-310p-openeuler24.03-py3.11-devel
-          - 8.2.rc1-a3-ubuntu22.04-py3.11-devel
-          - 8.2.rc1-a3-openeuler22.03-py3.11-devel
-          - 8.2.rc1-a3-openeuler24.03-py3.11-devel
-          - 8.2.rc1.alpha003-910b-ubuntu22.04-py3.11-devel
-          - 8.2.rc1.alpha003-910b-openeuler22.03-py3.11-devel
-          - 8.2.rc1.alpha003-910-ubuntu22.04-py3.11-devel
-          - 8.2.rc1.alpha003-910-openeuler22.03-py3.11-devel
-          - 8.2.rc1.alpha003-310p-ubuntu22.04-py3.11-devel
-          - 8.2.rc1.alpha003-310p-openeuler22.03-py3.11-devel
-          - 8.2.rc1.alpha003-a3-ubuntu22.04-py3.11-devel
-          - 8.2.rc1.alpha003-a3-openeuler22.03-py3.11-devel
-          - 8.2.rc1.alpha002-910b-ubuntu22.04-py3.10-devel
-          - 8.2.rc1.alpha002-910b-openeuler22.03-py3.10-devel
-          - 8.2.rc1.alpha001-910b-ubuntu22.04-py3.10-devel
-          - 8.2.rc1.alpha001-910b-openeuler22.03-py3.10-devel
-          - 8.1.rc1-910b-ubuntu22.04-py3.11-devel
-          - 8.1.rc1-910b-ubuntu22.04-py3.10-devel
-          - 8.1.rc1-910b-openeuler22.03-py3.11-devel
-          - 8.1.rc1-910b-openeuler22.03-py3.10-devel
-          - 8.1.rc1-910b-openeuler24.03-py3.10-devel
-          - 8.1.rc1-310p-ubuntu22.04-py3.11-devel
-          - 8.1.rc1-310p-ubuntu22.04-py3.10-devel
-          - 8.1.rc1-310p-openeuler22.03-py3.11-devel
-          - 8.1.rc1-310p-openeuler22.03-py3.10-devel
-          - 8.1.rc1-a3-ubuntu22.04-py3.11-devel
-          - 8.1.rc1-a3-ubuntu22.04-py3.10-devel
-          - 8.1.rc1-a3-openeuler22.03-py3.11-devel
-          - 8.1.rc1-a3-openeuler22.03-py3.10-devel
-          - 8.1.RC1.alpha002-910b-ubuntu24.04-py3.10-devel
-          - 8.1.RC1.alpha002-910b-openeuler24.03-py3.10-devel
-          - 8.1.RC1.alpha001-910b-ubuntu22.04-py3.10-devel
-          - 8.1.RC1.alpha001-910b-openeuler22.03-py3.10-devel
       publish:
         description: 'Publish the image'
         default: false
@@ -457,30 +276,48 @@ jobs:
 
       - name: Build and push by digest
         uses: docker/build-push-action@v6
-        id: build
+        id: build-base
         with: 
           platforms: ${{ matrix.arch }}
           tags: |
-            ${{ steps.set-repo.outputs.docker_repo }}
-            ${{ steps.set-repo.outputs.quay_repo }}
+            docker.io/ascendai/cann:${{ inputs.cann_tag }}
+            quay.io/ascend/cann:${{ inputs.cann_tag }}
           file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}/Dockerfile
           context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
           provenance: false
 
-      - name: Export digest
-        run: |
-          mkdir -p ${{ runner.temp }}/digests
-          digest="${{ steps.build.outputs.digest }}"
-          touch "${{ runner.temp }}/digests/${digest#sha256:}"
+      - name: Build and push devel by digest
+        uses: docker/build-push-action@v6
+        id: build-devel
+        with: 
+          platforms: ${{ matrix.arch }}
+          tags: |
+            docker.io/ascendai/cann:${{ inputs.cann_tag }}-devel
+            quay.io/ascend/cann:${{ inputs.cann_tag }}-devel
+          file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}-devel/Dockerfile
+          context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}-devel
+          outputs: type=image,push-by-digest=true,name-canonical=true,push=true
+          provenance: false
 
-      - name: Upload digest
+      - name: Export devel digest
+        run: |
+          mkdir -p ${{ runner.temp }}/digests/base
+          digest_base="${{ steps.build-base.outputs.digest }}"
+          touch "${{ runner.temp }}/digests/base/${digest_base#sha256:}"
+          mkdir -p ${{ runner.temp }}/digests/devel
+          digest_devel="${{ steps.build-devel.outputs.digest }}"
+          touch "${{ runner.temp }}/digests/devel/${digest_devel#sha256:}"
+
+      - name: Upload devel digest
         uses: actions/upload-artifact@v4
         with:
-          name: digests-${{ inputs.cann_tag }}-${{ matrix.arch }}
+          name: digests-${{ inputs.cann_tag }}-devel-${{ matrix.arch }}
           path: ${{ runner.temp }}/digests/*
           if-no-files-found: error
           retention-days: 1
+      
+
   
   push-image:
     runs-on: ubuntu-latest
@@ -520,8 +357,8 @@ jobs:
             '.versions[] | select(.path == "cann/" + $cann_tag) | .tags[]' \
             cann_publish_version.json)
           registries=(
-            "${{ steps.set-repo.outputs.docker_repo }}"
-            "${{ steps.set-repo.outputs.quay_repo }}"
+            "docker.io/ascendai/cann"
+            "quay.io/ascend/cann"
           )
           first=true
           TAGS_JSON="["
@@ -532,6 +369,7 @@ jobs:
               fi
               TAGS_JSON+="\"${registry}:${tag}\""
               first=false
+              TAGS_JSON+=",\"${registry}:${tag}-devel\""
             done
           done
           TAGS_JSON+="]"
@@ -541,18 +379,24 @@ jobs:
         working-directory: ${{ runner.temp }}/digests
         env:
           TAGS: ${{ steps.prepare-tags.outputs.tags }}
-          DOCKER_REPO: ${{ steps.set-repo.outputs.docker_repo }}
-          QUAY_REPO: ${{ steps.set-repo.outputs.quay_repo }}
         run: |
           readarray -t TAGS_ARRAY <<< "$(echo "$TAGS" | jq -r '.[]')"
-
+          
           for TAG in "${TAGS_ARRAY[@]}"; do
-            if [[ "$TAG" == *"${QUAY_REPO}"* ]]; then
-              docker buildx imagetools create -t "$TAG" \
-                $(printf "${QUAY_REPO}@sha256:%s " *)
-            elif [[ "$TAG" == *"${DOCKER_REPO}"* ]]; then
-              docker buildx imagetools create -t "$TAG" \
-                $(printf "${DOCKER_REPO}@sha256:%s " *)
+            if [[ "$TAG" == *"quay.io/ascend/cann"* ]]; then
+              if [[ "$TAG" == *"-devel" ]]; then
+                docker buildx imagetools create -t "$TAG" \
+                  $(printf 'quay.io/ascend/cann@sha256:%s ' devel/*)
+              else
+                docker buildx imagetools create -t "$TAG" \
+                  $(printf 'quay.io/ascend/cann@sha256:%s ' base/*)
+            elif [[ "$TAG" == *"docker.io/ascendai/cann"* ]]; then
+              if [[ "$TAG" == *"-devel" ]]; then
+                docker buildx imagetools create -t "$TAG" \
+                  $(printf 'docker.io/ascendai/cann@sha256:%s ' devel/*)
+              else
+                docker buildx imagetools create -t "$TAG" \
+                  $(printf 'docker.io/ascendai/cann@sha256:%s ' base/*)
             else
               echo "Error: Unknown registry in TAG: $TAG"
               exit 1
@@ -588,9 +432,9 @@ jobs:
       - name: Sync image
         run: |
           skopeo copy --all \
-          docker://${{ steps.set-repo.outputs.source_repo }}:${{ inputs.cann_tag }} \
-          docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/${{ steps.set-repo.outputs.dest_name }}:${{ inputs.cann_tag }}
+          docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
+          docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}
 
           skopeo copy --all \
-          docker://${{ steps.set-repo.outputs.source_repo }}:${{ inputs.cann_tag }} \
-          docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/${{ steps.set-repo.outputs.dest_name }}:${{ inputs.cann_tag }}
+          docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
+          docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}
