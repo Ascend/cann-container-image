@@ -280,7 +280,7 @@ jobs:
         with: 
           platforms: ${{ matrix.arch }}
           tags: |
-            docker.io/ascendai/cann:${{ inputs.cann_tag }}
+            docker.io/ascendai/cann
             quay.io/ascend/cann
           file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}/Dockerfile
           context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}
@@ -293,7 +293,7 @@ jobs:
         with: 
           platforms: ${{ matrix.arch }}
           tags: |
-            docker.io/ascendai/cann:${{ inputs.cann_tag }}-devel
+            docker.io/ascendai/cann
             quay.io/ascend/cann
           file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}-devel/Dockerfile
           context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}-devel
