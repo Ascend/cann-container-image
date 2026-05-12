@@ -376,7 +376,8 @@ jobs:
             fi
           done
 
- build-push-devel-digest:
+  build-push-devel-digest:
+    needs: push-image
     name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
     if: ${{ inputs.publish }}
     runs-on: ${{ matrix.runner }}
@@ -445,7 +446,7 @@ jobs:
   
   push-devel-image:
     runs-on: ubuntu-latest
-    needs: build-push-digest
+    needs: build-push-devel-digest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
