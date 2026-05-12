@@ -1,4 +1,4 @@
-FROM quay.io/ascend/cann:{{ item.cann_version }}-{{ item.cann_chip }}-{{ item.os_name }}{{ item.os_version }}-py{{ item.py_version }}
+FROM quay.io/ascend/cann:9.0.0-a3-ubuntu22.04-py3.11
 
 ##############
 # User: root #

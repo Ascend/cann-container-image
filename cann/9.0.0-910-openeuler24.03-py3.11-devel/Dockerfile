@@ -1,4 +1,4 @@
-FROM quay.io/ascend/cann:{{ item.cann_version }}-{{ item.cann_chip }}-{{ item.os_name }}{{ item.os_version }}-py{{ item.py_version }}
+FROM quay.io/ascend/cann:9.0.0-910-openeuler24.03-py3.11
 
 ##############
 # User: root #
@@ -8,26 +8,23 @@ USER root
 ENV USER root
 
 # Set bash
-RUN echo "dash dash/sh boolean false" | debconf-set-selections
-RUN DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash
+RUN ln -sf bash /bin/sh
 
 # Install base tools
-RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt install -y vim \
+RUN yum update -y && \
+    yum install -y vim \
     zip \
     tree \
     dos2unix \
     sudo \
     bzip2 \
     pigz \
-    locales \
-    libgtest-dev \
-    pkg-config \
-    systemctl \
+    gtest gtest-devel \
+    gtest-devel \
     gawk \
-    nlohmann-json3-dev \
+    nlohmann-json-devel \
     patch \
-    && apt-get clean all
+    && yum clean all
     
 # Install googletest
 RUN git clone --depth 1 -b release-1.11.0 https://github.com/google/googletest.git /tmp/googletest && \

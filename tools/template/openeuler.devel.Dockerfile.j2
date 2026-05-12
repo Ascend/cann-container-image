@@ -1,5 +1,4 @@
-FROM swr.cn-south-1.myhuaweicloud.com/ascendhub/{{ item.tag }}
-MAINTAINER tommylike <tommylikehu@gmail.com>
+FROM quay.io/ascend/cann:{{ item.cann_version }}-{{ item.cann_chip }}-{{ item.os_name }}{{ item.os_version }}-py{{ item.py_version }}
 
 ##############
 # User: root #
@@ -28,7 +27,7 @@ RUN yum update -y && \
     && yum clean all
     
 # Install googletest
-RUN git clone --depth 1 -b {{ item.google_version }} https://github.com/google/googletest.git /tmp/googletest && \
+RUN git clone --depth 1 -b release-1.11.0 https://github.com/google/googletest.git /tmp/googletest && \
     cd /tmp/googletest && \
     mkdir build && \
     cd build && \
@@ -40,14 +39,14 @@ RUN git clone --depth 1 -b {{ item.google_version }} https://github.com/google/g
 # Install python plugin 
 RUN mkdir /root/.pip \
     && echo "[global]" > /root/.pip/pip.conf \
-    && echo "index-url={{ item.pip_index_url }}" >> /root/.pip/pip.conf \
-    && echo "trusted-host={{ item.pip_trusted_host }} " >> /root/.pip/pip.conf \
+    && echo "index-url=https://repo.huaweicloud.com/repository/pypi/simple" >> /root/.pip/pip.conf \
+    && echo "trusted-host=repo.huaweicloud.com" >> /root/.pip/pip.conf \
     && echo "timeout=120" >> /root/.pip/pip.conf \
     && pip3 install --upgrade pip && cd /tmp \
-    && pip3 install wheel=={{ item.wheel_version }} \
-    && pip3 install pyyaml=={{ item.pyyaml_version }} \
-    && pip3 install setuptools=={{ item.setuptools_version }}  \
-    && pip3 install numpy=={{ item.numpy_version }}  \
+    && pip3 install wheel==0.38.4 \
+    && pip3 install pyyaml==6.0.1  \
+    && pip3 install setuptools==67.4.0  \
+    && pip3 install numpy==1.26.4  \
     && pip3 install attrs \
     && pip3 install decorator \
     && pip3 install sympy \
