@@ -378,7 +378,7 @@ jobs:
 
   build-push-devel-digest:
     needs: push-image
-    name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
+    name: build ${{ inputs.cann_tag }}-devel (${{ matrix.arch }})
     if: ${{ inputs.publish }}
     runs-on: ${{ matrix.runner }}
     strategy:
