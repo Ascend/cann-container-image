@@ -33,24 +33,39 @@ Tags follow this format:
 
 | Field | Example Values | Description |
 |---|---|---|
-| `cann-version` | `8.5.1`, `8.3.RC2` | CANN version number |
+| `cann-version` | `9.0.0`, `8.5.1`, `8.3.RC2` | CANN version number |
 | `chip-series` | `910`, `910b`, `a3`, `310p` | Target Ascend chip series |
 | `os` | `ubuntu22.04`, `openeuler24.03` | Base operating system |
 | `python-version` | `py3.11` | Python version |
 
 
-### CANN 8.5.1
-
+### CANN 9.0.0
 | Tag | Dockerfile | Image Contents |
-|---|---|----|
-| `8.5.2-a3-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/8.5.2-a3-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `8.5.2-a3-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/8.5.2-a3-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `8.5.2-910b-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/8.5.2-910b-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `8.5.2-910b-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/8.5.2-910b-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `8.5.2-910-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/8.5.2-910-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `8.5.2-910-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/8.5.2-910-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `8.5.2-a3-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/8.5.2-a3-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `8.5.2-a3-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/8.5.2-a3-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
+|-----|------------|----------|
+| `9.0.0-310p-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-310p-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-910-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-910-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-910b-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-910b-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-950-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-950-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-a3-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-a3-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
+
+### CANN-devel 9.0.0
+| Tag | Dockerfile | Image Contents |
+|-----|------------|----------|
+| `9.0.0-310p-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-310p-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-910-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-910-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-910b-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-910b-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-950-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-950-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-a3-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-a3-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
 
 ---
 
@@ -89,7 +104,7 @@ docker buildx build -t {cann_tag} -f {your_repo}/cann/{cann_tag}/Dockerfile .
 ### How to Extend the Image
 ```bash
 # Use the CANN image as the base image and add your own software on top
-FROM quay.io/ascend/cann:8.5.2-a3-ubuntu22.04-py3.11
+FROM quay.io/ascend/cann:9.0.0-a3-ubuntu22.04-py3.11
 
 RUN apt update -y && \
     apt install gcc ...
