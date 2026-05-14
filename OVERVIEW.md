@@ -36,56 +36,36 @@ Tags follow this format:
 | `cann-version` | `9.0.0`, `8.5.1`, `8.3.RC2` | CANN version number |
 | `chip-series` | `910`, `910b`, `a3`, `310p` | Target Ascend chip series |
 | `os` | `ubuntu22.04`, `openeuler24.03` | Base operating system |
-| `python-version` | `py3.11`, `py.3.10`  | Python version |
+| `python-version` | `py3.11` | Python version |
 
 
 ### CANN 9.0.0
 | Tag | Dockerfile | Image Contents |
 |-----|------------|----------|
 | `9.0.0-310p-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-310p-ubuntu22.04-py3.10` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-ubuntu22.04-py3.10/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-310p-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-310p-openeuler24.03-py3.10` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-openeuler24.03-py3.10/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-910-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910-ubuntu22.04-py3.10` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-ubuntu22.04-py3.10/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-910-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910-openeuler24.03-py3.10` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-openeuler24.03-py3.10/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-910b-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910b-ubuntu22.04-py3.10` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-ubuntu22.04-py3.10/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-910b-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910b-openeuler24.03-py3.10` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-openeuler24.03-py3.10/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-950-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-950-ubuntu22.04-py3.10` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-ubuntu22.04-py3.10/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-950-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-950-openeuler24.03-py3.10` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-openeuler24.03-py3.10/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-a3-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-a3-ubuntu22.04-py3.10` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-ubuntu22.04-py3.10/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-a3-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-a3-openeuler24.03-py3.10` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.10/Dockerfile) | toolkit/ops/nnal |
 
 ### CANN-devel 9.0.0
 | Tag | Dockerfile | Image Contents |
 |-----|------------|----------|
 | `9.0.0-310p-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-310p-ubuntu22.04-py3.10-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-ubuntu22.04-py3.10-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-310p-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-310p-openeuler24.03-py3.10-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-openeuler24.03-py3.10-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-910-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910-ubuntu22.04-py3.10-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-ubuntu22.04-py3.10-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-910-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910-openeuler24.03-py3.10-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-openeuler24.03-py3.10-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-910b-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910b-ubuntu22.04-py3.10-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-ubuntu22.04-py3.10-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-910b-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910b-openeuler24.03-py3.10-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-openeuler24.03-py3.10-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-950-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-950-ubuntu22.04-py3.10-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-ubuntu22.04-py3.10-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-950-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-950-openeuler24.03-py3.10-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-openeuler24.03-py3.10-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-a3-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-a3-ubuntu22.04-py3.10-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-ubuntu22.04-py3.10-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-a3-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-a3-openeuler24.03-py3.10-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.10-devel/Dockerfile) | toolkit/ops/nnal |
 
 ---
 
@@ -105,7 +85,7 @@ An Ascend NPU driver compatible with the CANN version inside the container must 
 docker run \
     --name cann_container \
     --device /dev/davinci1 \
-    --device /dev/davinci_manager \
+    --device /dev/davinci_manager \qgit 
     --device /dev/devmm_svm \
     --device /dev/hisi_hdc \
     -v /usr/local/dcmi:/usr/local/dcmi \
