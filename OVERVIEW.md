@@ -85,7 +85,7 @@ An Ascend NPU driver compatible with the CANN version inside the container must 
 docker run \
     --name cann_container \
     --device /dev/davinci1 \
-    --device /dev/davinci_manager \qgit 
+    --device /dev/davinci_manager \
     --device /dev/devmm_svm \
     --device /dev/hisi_hdc \
     -v /usr/local/dcmi:/usr/local/dcmi \
