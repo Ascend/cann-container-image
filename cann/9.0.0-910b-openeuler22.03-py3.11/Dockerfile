@@ -30,7 +30,7 @@ RUN yum update -y && \
     && rm -rf /tmp/*
 
 # Install Python
-RUN curl -fsSL https://repo.huaweicloud.com/python/3.11.15\Python-3.11.15.tgz -o /tmp/Python-3.11.15.tgz && \
+RUN curl -fsSL https://repo.huaweicloud.com/python/3.11.15/Python-3.11.15.tgz -o /tmp/Python-3.11.15.tgz && \
     tar -xf /tmp/Python-3.11.15.tgz -C /tmp && \
     cd /tmp/Python-3.11.15 && \
     mkdir -p /usr/local/python3.11.15/lib && \
