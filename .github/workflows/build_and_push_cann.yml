@@ -9,6 +9,21 @@ on:
         default: '9.0.0-910b-ubuntu22.04-py3.12'
         type: choice
         options:
+          - 9.0.0-310p-openeuler22.03-py3.10
+          - 9.0.0-310p-openeuler22.03-py3.11
+          - 9.0.0-310p-openeuler22.03-py3.12
+          - 9.0.0-910-openeuler22.03-py3.10
+          - 9.0.0-910-openeuler22.03-py3.11
+          - 9.0.0-910-openeuler22.03-py3.12
+          - 9.0.0-910b-openeuler22.03-py3.10
+          - 9.0.0-910b-openeuler22.03-py3.11
+          - 9.0.0-910b-openeuler22.03-py3.12
+          - 9.0.0-950-openeuler22.03-py3.10
+          - 9.0.0-950-openeuler22.03-py3.11
+          - 9.0.0-950-openeuler22.03-py3.12
+          - 9.0.0-a3-openeuler22.03-py3.10
+          - 9.0.0-a3-openeuler22.03-py3.11
+          - 9.0.0-a3-openeuler22.03-py3.12
           - 9.0.0-950-ubuntu22.04-py3.12
           - 9.0.0-950-openeuler24.03-py3.12
           - 9.0.0-910b-ubuntu22.04-py3.12

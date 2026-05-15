@@ -30,7 +30,7 @@ RUN yum update -y && \
     && rm -rf /tmp/*
 
 # Install Python
-RUN curl -fsSL https://repo.huaweicloud.com/python/3.12.13/Python-3.12.13.tgz -o /tmp/Python-3.12.13.tgz && \
+RUN curl -fsSL https://repo.huaweicloud.com/python/3.12.13\Python-3.12.13.tgz -o /tmp/Python-3.12.13.tgz && \
     tar -xf /tmp/Python-3.12.13.tgz -C /tmp && \
     cd /tmp/Python-3.12.13 && \
     mkdir -p /usr/local/python3.12.13/lib && \
@@ -172,7 +172,8 @@ RUN \
         "linux/arm64") echo "aarch64" ;; \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
-    ln -sf /usr/include/c++/12/${ARCH}-openEuler-linux /usr/include/c++/12/${ARCH}-linux-gnu && \
+    GCC_VERSION=$(gcc -dumpversion) && \
+    ln -sf /usr/include/c++/${GCC_VERSION}/${ARCH}-openEuler-linux /usr/include/c++/${GCC_VERSION}/${ARCH}-linux-gnu && \
     CANN_TOOLKIT_ENV_FILE="/usr/local/Ascend/ascend-toolkit/set_env.sh" && \
     CANN_BISHENG_ENV_FILE="/usr/local/Ascend/cann-9.0.0/share/info/ascendnpu-ir/bin/set_env.sh" && \
     CANN_NNAL_ENV_FILE="/usr/local/Ascend/nnal/atb/set_env.sh" && \
