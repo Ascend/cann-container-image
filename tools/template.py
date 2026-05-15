@@ -130,13 +130,39 @@ def render_and_save_manylinux_dockerfile(args, manylinux_template):
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, "w") as f:
             f.write(rendered_content)
-        print(f"Generated: {output_path}")       
+        print(f"Generated: {output_path}")
+
+def render_and_save_cann_devel_dockerfile(args, ubuntu_template, openeuler_template):
+    if "cann" not in args or not args["cann"]:
+        return
+
+    for item in args["cann"]:
+        if item["os_name"] == "ubuntu":
+            template_name = ubuntu_template
+        else:
+            template_name = openeuler_template
+
+        template = env.get_template(template_name)
+
+        rendered_content = template.render(item=item)
+
+        output_path = os.path.join(
+            "cann",
+            f"{item['cann_version'].lower()}-{item['cann_chip']}-{item['os_name']}{item['os_version']}-py{item['py_version']}-devel",
+            "Dockerfile"
+        )
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, "w") as f:
+            f.write(rendered_content)
+        print(f"Generated: {output_path}")
         
 def main():  
     with open('build_cann_arg.json', 'r') as f:
         args = json.load(f)
     render_and_save_cann_dockerfile(args, "ubuntu.Dockerfile.j2", "openeuler.Dockerfile.j2")
-    
+
+    render_and_save_cann_devel_dockerfile(args, "ubuntu.devel.Dockerfile.j2", "openeuler.devel.Dockerfile.j2")
+
     with open('build_manylinux_arg.json', 'r') as fm:
         args = json.load(fm)
     render_and_save_manylinux_dockerfile(args, "manylinux.Dockerfile.j2")
