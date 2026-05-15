@@ -1,0 +1,59 @@
+name: Batch Trigger CANN Build And Publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish_base:
+        description: 'Publish base image'
+        default: false
+        type: boolean
+        required: true
+      publish_devel:
+        description: 'Publish devel image'
+        default: false
+        type: boolean
+        required: true
+
+concurrency:
+  group: cann-batch-build
+  cancel-in-progress: false
+
+jobs:
+  trigger-workflow:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 2
+      matrix:
+        cann_tag:
+          - 9.0.0-310p-openeuler22.03-py3.10
+          - 9.0.0-310p-openeuler22.03-py3.11
+          - 9.0.0-310p-openeuler22.03-py3.12
+          - 9.0.0-910-openeuler22.03-py3.10
+          - 9.0.0-910-openeuler22.03-py3.11
+          - 9.0.0-910-openeuler22.03-py3.12
+          - 9.0.0-910b-openeuler22.03-py3.10
+          - 9.0.0-910b-openeuler22.03-py3.11
+          - 9.0.0-910b-openeuler22.03-py3.12
+          - 9.0.0-950-openeuler22.03-py3.10
+          - 9.0.0-950-openeuler22.03-py3.11
+          - 9.0.0-950-openeuler22.03-py3.12
+          - 9.0.0-a3-openeuler22.03-py3.10
+          - 9.0.0-a3-openeuler22.03-py3.11
+          - 9.0.0-a3-openeuler22.03-py3.12
+    steps:
+      - name: Trigger single CANN build
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: "Build and Publish CANN Image",
+              ref: context.ref,
+              inputs: {
+                cann_tag: "${{ matrix.cann_tag }}",
+                publish_base: ${{ inputs.publish_base }},
+                publish_devel: ${{ inputs.publish_devel }}
+              }
+            });
