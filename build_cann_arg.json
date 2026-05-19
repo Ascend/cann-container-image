@@ -82,7 +82,7 @@
         },
         {
             "cann_version": "9.0.0",
-            "cann_chip": "a3",
+            "cann_chip": "A3",
             "os_name": "ubuntu",
             "os_version": "22.04",
             "py_version": "3.12",
@@ -92,7 +92,7 @@
         },
         {
             "cann_version": "9.0.0",
-            "cann_chip": "a3",
+            "cann_chip": "A3",
             "os_name": "openeuler",
             "os_version": "24.03",
             "py_version": "3.12",
