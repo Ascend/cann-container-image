@@ -247,7 +247,7 @@ jobs:
       matrix:
         include:
           - arch: x86_64
-            runner: ubuntu-latest
+            runner: linux-x86_64
           - arch: aarch64
             runner: ubuntu-22.04-arm
     steps:
