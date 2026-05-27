@@ -27,12 +27,12 @@ on:
           - 9.1.0-beta.1-910b-openeuler24.03-py3.10
           - 9.1.0-beta.1-910b-openeuler24.03-py3.11
           - 9.1.0-beta.1-910b-openeuler24.03-py3.12
-          - 9.1.0-beta.1-A3-ubuntu22.04-py3.10
-          - 9.1.0-beta.1-A3-ubuntu22.04-py3.11
-          - 9.1.0-beta.1-A3-ubuntu22.04-py3.12
-          - 9.1.0-beta.1-A3-openeuler24.03-py3.10
-          - 9.1.0-beta.1-A3-openeuler24.03-py3.11
-          - 9.1.0-beta.1-A3-openeuler24.03-py3.12
+          - 9.1.0-beta.1-a3-ubuntu22.04-py3.10
+          - 9.1.0-beta.1-a3-ubuntu22.04-py3.11
+          - 9.1.0-beta.1-a3-ubuntu22.04-py3.12
+          - 9.1.0-beta.1-a3-openeuler24.03-py3.10
+          - 9.1.0-beta.1-a3-openeuler24.03-py3.11
+          - 9.1.0-beta.1-a3-openeuler24.03-py3.12
           - 9.1.0-beta.1-950-ubuntu22.04-py3.10
           - 9.1.0-beta.1-950-ubuntu22.04-py3.11
           - 9.1.0-beta.1-950-ubuntu22.04-py3.12
