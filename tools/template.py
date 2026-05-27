@@ -24,6 +24,7 @@ ALPHA_DICT = {
     "8.5.0.alpha002": "V100R001C25B800TP028",
     "9.0.0-beta.1": "9.0.T2",
     "9.0.0-beta.2": "9.0.T511",
+    "9.1.0-beta.1": "9.1.T1"
 }
 
 env = Environment(loader=FileSystemLoader('tools/template'))
@@ -148,7 +149,7 @@ def render_and_save_cann_devel_dockerfile(args, ubuntu_template, openeuler_templ
 
         output_path = os.path.join(
             "cann",
-            f"{item['cann_version'].lower()}-{item['cann_chip']}-{item['os_name']}{item['os_version']}-py{item['py_version']}-devel",
+            f"{item['cann_version'].lower()}-{item['cann_chip'].lower()}-{item['os_name']}{item['os_version']}-py{item['py_version']}-devel",
             "Dockerfile"
         )
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
