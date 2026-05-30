@@ -1,6 +1,22 @@
 name: Build and Publish CANN Image
 
 on:
+  workflow_call:
+    inputs:
+      cann_tag:
+        description: 'CANN unique tag'
+        required: true
+        type: string
+      publish_base:
+        description: 'Publish base image'
+        default: false
+        type: boolean
+        required: true
+      publish_devel:
+        description: 'Publish devel image'
+        default: false
+        type: boolean
+        required: true
   workflow_dispatch:
     inputs:
       cann_tag:

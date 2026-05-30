@@ -1,7 +1,7 @@
-name: Test Target Workflow
+name: Test Target
 
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       cann_tag:
         description: 'CANN unique tag'

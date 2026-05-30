@@ -1,4 +1,5 @@
 name: Batch Build and Publish CANN Image
+
 on:
   workflow_dispatch:
     inputs:
@@ -17,58 +18,48 @@ on:
         type: boolean
         required: true
       max_parallel:
-        description: 'Max parallel workflow runs'
+        description: 'Max parallel builds'
         default: 2
         type: number
         required: true
+
 concurrency:
-  group: batch-cann-dispatch
+  group: batch-cann
   cancel-in-progress: false
+
 jobs:
-  batch-dispatch:
+  prepare:
     runs-on: ubuntu-latest
-    timeout-minutes: 1440
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Prepare tag list
-        id: prepare-tags
+
+      - name: Generate matrix
+        id: set-matrix
         run: |
           if [ -n "${{ inputs.tags }}" ]; then
             TAGS="${{ inputs.tags }}"
           else
-            TAGS=$(jq -r '.cann[].tags[]' build_cann_arg.json | tr '\n' ',')
+            TAGS=$(jq -r '.cann[].tags[]' build_cann_arg.json | paste -sd ',' -)
           fi
-          echo "tags=$TAGS" >> $GITHUB_OUTPUT
-          TOTAL=$(echo "$TAGS" | tr ',' '\n' | grep -c .)
-          echo "total=$TOTAL" >> $GITHUB_OUTPUT
-      - name: Dispatch workflows with concurrency control
-        env:
-          GH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
-        run: |
-          MAX_PARALLEL=${{ inputs.max_parallel }}
-          IFS=',' read -ra TAG_ARRAY <<< "${{ steps.prepare-tags.outputs.tags }}"
-          TOTAL=${#TAG_ARRAY[@]}
-          COUNT=0
-          for TAG in "${TAG_ARRAY[@]}"; do
-            COUNT=$((COUNT + 1))
-            while true; do
-              RUNNING=$(gh run list \
-                --workflow=build_and_push_cann.yml \
-                --json status \
-                --jq 'map(select(.status=="in_progress" or .status=="queued")) | length' 2>/dev/null || echo 0)
-              if [ "$RUNNING" -lt "$MAX_PARALLEL" ]; then
-                break
-              fi
-              echo "[$COUNT/$TOTAL] Waiting for slot... $RUNNING runs in progress (max $MAX_PARALLEL)"
-              sleep 600
-            done
-            echo "[$COUNT/$TOTAL] Dispatching: $TAG"
-            gh workflow run build_and_push_cann.yml \
-              --ref main \
-              --field cann_tag="$TAG" \
-              --field publish_base="${{ inputs.publish_base }}" \
-              --field publish_devel="${{ inputs.publish_devel }}"
-            sleep 10
-          done
-          echo "All tags dispatched. Check build_and_push_cann workflow runs for results."
+          MATRIX=$(echo "$TAGS" | tr ',' '\n' | sed '/^$/d' | jq -R . | jq -s .)
+          {
+            echo "matrix<<EOF"
+            echo "{\"cann_tag\":$MATRIX}"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: prepare
+    strategy:
+      max-parallel: ${{ inputs.max_parallel }}
+      fail-fast: false
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+    uses: ./.github/workflows/build_and_push_cann.yml
+    with:
+      cann_tag: ${{ matrix.cann_tag }}
+      publish_base: ${{ inputs.publish_base }}
+      publish_devel: ${{ inputs.publish_devel }}
+    secrets: inherit
