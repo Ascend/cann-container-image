@@ -1,0 +1,27 @@
+name: Test Target Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      cann_tag:
+        description: 'CANN unique tag'
+        required: true
+        type: string
+      publish_base:
+        description: 'Publish base image'
+        default: false
+        type: boolean
+      publish_devel:
+        description: 'Publish devel image'
+        default: false
+        type: boolean
+
+jobs:
+  echo-inputs:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "cann_tag=${{ inputs.cann_tag }}"
+          echo "publish_base=${{ inputs.publish_base }}"
+          echo "publish_devel=${{ inputs.publish_devel }}"
+      - run: sleep 30

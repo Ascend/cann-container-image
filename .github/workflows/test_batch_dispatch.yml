@@ -1,0 +1,67 @@
+name: Test Batch Dispatch
+
+on:
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'Comma-separated tags for testing'
+        required: false
+        type: string
+      max_parallel:
+        description: 'Max parallel workflow runs'
+        default: 2
+        type: number
+        required: true
+
+concurrency:
+  group: test-batch-dispatch
+  cancel-in-progress: false
+
+jobs:
+  batch-dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Prepare tag list
+        id: prepare-tags
+        run: |
+          if [ -n "${{ inputs.tags }}" ]; then
+            TAGS="${{ inputs.tags }}"
+          else
+            TAGS=$(jq -r '.cann[].tags[]' build_cann_arg.json | tr '\n' ',')
+          fi
+          echo "tags=$TAGS" >> $GITHUB_OUTPUT
+          TOTAL=$(echo "$TAGS" | tr ',' '\n' | grep -c .)
+          echo "total=$TOTAL" >> $GITHUB_OUTPUT
+      - name: Dispatch workflows with concurrency control
+        env:
+          GH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+        run: |
+          MAX_PARALLEL=${{ inputs.max_parallel }}
+          IFS=',' read -ra TAG_ARRAY <<< "${{ steps.prepare-tags.outputs.tags }}"
+          TOTAL=${#TAG_ARRAY[@]}
+          COUNT=0
+          for TAG in "${TAG_ARRAY[@]}"; do
+            COUNT=$((COUNT + 1))
+            while true; do
+              RUNNING=$(gh run list \
+                --workflow=test_target.yml \
+                --json status \
+                --jq 'map(select(.status=="in_progress" or .status=="queued")) | length' 2>/dev/null || echo 0)
+              if [ "$RUNNING" -lt "$MAX_PARALLEL" ]; then
+                break
+              fi
+              echo "[$COUNT/$TOTAL] Waiting for slot... $RUNNING runs in progress (max $MAX_PARALLEL)"
+              sleep 60
+            done
+            echo "[$COUNT/$TOTAL] Dispatching: $TAG"
+            gh workflow run test_target.yml \
+              --ref main \
+              --field cann_tag="$TAG" \
+              --field publish_base=false \
+              --field publish_devel=false
+            sleep 10
+          done
+          echo "All tags dispatched."
