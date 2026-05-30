@@ -17,7 +17,8 @@ on:
         default: false
         type: boolean
         required: true
-      concurrency:
+
+concurrency:
   group: batch-cann
   cancel-in-progress: false
 

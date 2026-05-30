@@ -12,7 +12,8 @@ on:
         default: false
         type: boolean
         required: true
-      concurrency:
+
+concurrency:
   group: batch-manylinux
   cancel-in-progress: false
 
