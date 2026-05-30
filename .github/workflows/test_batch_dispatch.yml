@@ -7,13 +7,7 @@ on:
         description: 'Comma-separated tags for testing'
         required: false
         type: string
-      max_parallel:
-        description: 'Max parallel builds'
-        default: 2
-        type: number
-        required: true
-
-jobs:
+      jobs:
   prepare:
     runs-on: ubuntu-latest
     outputs:
@@ -40,7 +34,7 @@ jobs:
   build:
     needs: prepare
     strategy:
-      max-parallel: ${{ inputs.max_parallel }}
+      max-parallel: 2
       fail-fast: false
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
     uses: ./.github/workflows/test_target.yml

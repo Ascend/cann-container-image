@@ -12,13 +12,7 @@ on:
         default: false
         type: boolean
         required: true
-      max_parallel:
-        description: 'Max parallel builds'
-        default: 2
-        type: number
-        required: true
-
-concurrency:
+      concurrency:
   group: batch-manylinux
   cancel-in-progress: false
 
@@ -49,7 +43,7 @@ jobs:
   build:
     needs: prepare
     strategy:
-      max-parallel: ${{ inputs.max_parallel }}
+      max-parallel: 2
       fail-fast: false
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
     uses: ./.github/workflows/build_and_push_manylinux.yml
