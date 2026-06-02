@@ -3,10 +3,72 @@ name: Batch Build and Publish Manylinux CANN Image
 on:
   workflow_dispatch:
     inputs:
-      tags:
-        description: 'Comma-separated manylinux tags (leave empty to use all from build_manylinux_arg.json)'
-        required: false
-        type: string
+      cann_version:
+        description: 'CANN Version'
+        type: choice
+        required: true
+        options:
+          - 9.1.0-beta.1
+          - 9.0.0
+          - 9.0.0-beta.2
+          - 9.0.0-beta.1
+          - 8.5.2
+          - 8.5.1
+          - 8.5.0
+          - 8.5.0.alpha002
+          - 8.5.0.alpha001
+          - 8.3.rc2
+          - 8.3.rc1
+          - 8.3.rc1.alpha003
+          - 8.3.rc1.alpha002
+          - 8.3.rc1.alpha001
+          - 8.2.rc2
+          - 8.2.rc1
+          - 8.2.rc1.alpha003
+          - 8.2.rc1.alpha002
+          - 8.2.rc1.alpha001
+          - 8.1.rc1
+          - 8.0.0
+
+      chip_310p:
+        description: 'Ascend 310P'
+        type: boolean
+        default: false
+      chip_910b:
+        description: 'Ascend 910B'
+        type: boolean
+        default: false
+      chip_A3:
+        description: 'Ascend A3'
+        type: boolean
+        default: false
+      chip_950:
+        description: 'Ascend 950'
+        type: boolean
+        default: false
+
+      os_manylinux_2_28:
+        description: 'manylinux_2_28'
+        type: boolean
+        default: false
+
+      py_3_9:
+        description: 'Python 3.9'
+        type: boolean
+        default: false
+      py_3_10:
+        description: 'Python 3.10'
+        type: boolean
+        default: false
+      py_3_11:
+        description: 'Python 3.11'
+        type: boolean
+        default: false
+      py_3_12:
+        description: 'Python 3.12'
+        type: boolean
+        default: false
+
       publish:
         description: 'Publish the image'
         default: false
@@ -23,21 +85,49 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
       - name: Generate matrix
         id: set-matrix
         run: |
-          if [ -n "${{ inputs.tags }}" ]; then
-            TAGS="${{ inputs.tags }}"
-          else
-            TAGS=$(jq -r '.manylinux[].tags[]' build_manylinux_arg.json | paste -sd ',' -)
+          CANN_VERSION="${{ inputs.cann_version }}"
+
+          CHIPS=""
+          if [ "${{ inputs.chip_310p }}" = "true" ]; then CHIPS="$CHIPS 310p"; fi
+          if [ "${{ inputs.chip_910b }}" = "true" ]; then CHIPS="$CHIPS 910b"; fi
+          if [ "${{ inputs.chip_A3 }}" = "true" ]; then CHIPS="$CHIPS A3"; fi
+          if [ "${{ inputs.chip_950 }}" = "true" ]; then CHIPS="$CHIPS 950"; fi
+
+          OSES=""
+          if [ "${{ inputs.os_manylinux_2_28 }}" = "true" ]; then OSES="$OSES manylinux_2_28"; fi
+
+          PYS=""
+          if [ "${{ inputs.py_3_9 }}" = "true" ]; then PYS="$PYS 3.9"; fi
+          if [ "${{ inputs.py_3_10 }}" = "true" ]; then PYS="$PYS 3.10"; fi
+          if [ "${{ inputs.py_3_11 }}" = "true" ]; then PYS="$PYS 3.11"; fi
+          if [ "${{ inputs.py_3_12 }}" = "true" ]; then PYS="$PYS 3.12"; fi
+
+          if [ -z "$CHIPS" ] || [ -z "$OSES" ] || [ -z "$PYS" ]; then
+            echo "Error: Must select at least one chip, one OS, and one Python version"
+            exit 1
           fi
-          MATRIX=$(echo "$TAGS" | tr ',' '\n' | sed '/^$/d' | jq -R . | jq -s .)
+
+          TAGS=""
+          for chip in $CHIPS; do
+            chip_tag="$chip"
+            if [ "$chip" = "A3" ]; then chip_tag="a3"; fi
+            for os in $OSES; do
+              for py in $PYS; do
+                tag="${CANN_VERSION}-${chip_tag}-${os}-py${py}"
+                TAGS="$TAGS\"$tag\","
+              done
+            done
+          done
+
+          TAGS="${TAGS%,}"
+          MATRIX_JSON="[$TAGS]"
+
           {
             echo "matrix<<EOF"
-            echo "{\"cann_tag\":$MATRIX}"
+            echo "{\"cann_tag\":$MATRIX_JSON}"
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
