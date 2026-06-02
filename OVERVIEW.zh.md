@@ -8,7 +8,7 @@
 
 - 从哪里获取帮助
 
-    - [AscendHub 镜像仓库](https://ascendhub.huawei.com)
+    - [AscendHub 镜像仓库](https://www.hiascend.com/developer/ascendhub)
     - [CANN 文档](https://www.hiascend.com/document/detail/zh/CANNCommunityEdition)
     - [昇腾开发者社区](https://www.hiascend.com/developer)
     - [问题反馈](https://github.com/Ascend/cann-container-image/issues)
