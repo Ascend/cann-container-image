@@ -1,0 +1,69 @@
+name: Batch Build and Publish Manylinux CANN Image
+
+on:
+  workflow_dispatch:
+    inputs:
+      cann_version:
+        description: 'CANN Version'
+        type: choice
+        required: true
+        options:
+          - 9.1.0-beta.1
+          - 9.0.0
+          - 8.5.2
+          - 8.5.1
+          - 8.5.0
+          - 8.3.rc2
+          - 8.3.rc1
+          - 8.2.rc2
+          - 8.2.rc1
+          - 8.1.rc1
+          - 8.0.0
+
+      publish:
+        description: 'Publish the image'
+        default: false
+        type: boolean
+        required: true
+
+concurrency:
+  group: batch-manylinux
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate matrix
+        id: set-matrix
+        run: |
+          CANN_VERSION="${{ inputs.cann_version }}"
+          MATRIX_JSON=$(jq --arg ver "$CANN_VERSION" \
+            '[.versions[] | .path | ltrimstr("manylinux/") | select(startswith($ver + "-310p-") or startswith($ver + "-910b-") or startswith($ver + "-a3-") or startswith($ver + "-950-"))]' \
+            manylinux_publish_version.json)
+          if [ "$MATRIX_JSON" = "[]" ]; then
+            echo "Error: No matching tags found for CANN version '$CANN_VERSION'"
+            exit 1
+          fi
+          {
+            echo "matrix<<EOF"
+            echo "{\"cann_tag\":$MATRIX_JSON}"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: prepare
+    strategy:
+      max-parallel: 2
+      fail-fast: false
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+    uses: ./.github/workflows/build_and_push_manylinux.yml
+    with:
+      cann_tag: ${{ matrix.cann_tag }}
+      publish: ${{ inputs.publish }}
+    secrets: inherit

@@ -1,6 +1,17 @@
 name: Build and Publish Manylinux_based CANN Image
 
 on:
+  workflow_call:
+    inputs:
+      cann_tag:
+        description: 'CANN unique tag'
+        required: true
+        type: string
+      publish:
+        description: 'Publish the image'
+        default: false
+        type: boolean
+        required: true
   workflow_dispatch:
     inputs:
       cann_tag:
@@ -9,21 +20,8 @@ on:
         default: '9.0.0-910b-manylinux_2_28-py3.11'
         type: choice
         options:
-          - 9.1.0-beta.1-310p-manylinux_2_28-py3.10
           - 9.1.0-beta.1-310p-manylinux_2_28-py3.11
           - 9.1.0-beta.1-310p-manylinux_2_28-py3.12
-          - 9.1.0-beta.1-910-manylinux_2_28-py3.10
-          - 9.1.0-beta.1-910-manylinux_2_28-py3.11
-          - 9.1.0-beta.1-910-manylinux_2_28-py3.12
-          - 9.1.0-beta.1-910b-manylinux_2_28-py3.10
-          - 9.1.0-beta.1-910b-manylinux_2_28-py3.11
-          - 9.1.0-beta.1-910b-manylinux_2_28-py3.12
-          - 9.1.0-beta.1-a3-manylinux_2_28-py3.11
-          - 9.1.0-beta.1-a3-manylinux_2_28-py3.10
-          - 9.1.0-beta.1-a3-manylinux_2_28-py3.12
-          - 9.1.0-beta.1-950-manylinux_2_28-py3.10
-          - 9.1.0-beta.1-950-manylinux_2_28-py3.11
-          - 9.1.0-beta.1-950-manylinux_2_28-py3.12
           - 9.0.0-950-manylinux_2_28-py3.12
           - 9.0.0-910b-manylinux_2_28-py3.12
           - 9.0.0-310p-manylinux_2_28-py3.12
