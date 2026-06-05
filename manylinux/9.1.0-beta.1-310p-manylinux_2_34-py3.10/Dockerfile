@@ -1,8 +1,8 @@
 # Stage 1: Install Python
-FROM quay.io/pypa/manylinux_2_28:latest AS python-installer
+FROM quay.io/pypa/manylinux_2_34:latest AS python-installer
 
 # Python Environment variables
-ENV PATH=/usr/local/python3.11.15/bin:${PATH}
+ENV PATH=/usr/local/python3.10.20/bin:${PATH}
 
 RUN yum update -y && \
     yum install -y \
@@ -30,17 +30,17 @@ RUN yum update -y && \
     && rm -rf /tmp/*
 
 # Install Python
-RUN curl -fsSL https://repo.huaweicloud.com/python/3.11.15/Python-3.11.15.tgz -o /tmp/Python-3.11.15.tgz && \
-    tar -xf /tmp/Python-3.11.15.tgz -C /tmp && \
-    cd /tmp/Python-3.11.15 && \
-    mkdir -p /usr/local/python3.11.15/lib && \
-    ./configure --enable-shared --enable-shared LDFLAGS="-Wl,-rpath /usr/local/python3.11.15/lib" --prefix=/usr/local/python3.11.15 && \
+RUN curl -fsSL https://repo.huaweicloud.com/python/3.10.20/Python-3.10.20.tgz -o /tmp/Python-3.10.20.tgz && \
+    tar -xf /tmp/Python-3.10.20.tgz -C /tmp && \
+    cd /tmp/Python-3.10.20 && \
+    mkdir -p /usr/local/python3.10.20/lib && \
+    ./configure --enable-shared --enable-shared LDFLAGS="-Wl,-rpath /usr/local/python3.10.20/lib" --prefix=/usr/local/python3.10.20 && \
     make -j $(nproc) && \
     make altinstall && \
-    ln -sf /usr/local/python3.11.15/bin/python3.11 /usr/local/python3.11.15/bin/python3 && \
-    ln -sf /usr/local/python3.11.15/bin/pip3.11 /usr/local/python3.11.15/bin/pip3 && \
-    ln -sf /usr/local/python3.11.15/bin/python3 /usr/local/python3.11.15/bin/python && \
-    ln -sf /usr/local/python3.11.15/bin/pip3 /usr/local/python3.11.15/bin/pip && \
+    ln -sf /usr/local/python3.10.20/bin/python3.10 /usr/local/python3.10.20/bin/python3 && \
+    ln -sf /usr/local/python3.10.20/bin/pip3.10 /usr/local/python3.10.20/bin/pip3 && \
+    ln -sf /usr/local/python3.10.20/bin/python3 /usr/local/python3.10.20/bin/python && \
+    ln -sf /usr/local/python3.10.20/bin/pip3 /usr/local/python3.10.20/bin/pip && \
     rm -rf /tmp/*
 
 # Stage 2: Install CANN
@@ -74,7 +74,7 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
     CANN_TOOLKIT_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%209.1.T1/Ascend-cann-toolkit_9.1.0-beta.1_linux-${ARCH}.run && \
-    CANN_OPS_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%209.1.T1/Ascend-cann-A3-ops_9.1.0-beta.1_linux-${ARCH}.run && \
+    CANN_OPS_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%209.1.T1/Ascend-cann-310p-ops_9.1.0-beta.1_linux-${ARCH}.run && \
     CANN_NNAL_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%209.1.T1/Ascend-cann-nnal_9.1.0-beta.1_linux-${ARCH}.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_OPS_URL} -O ~/Ascend-cann-ops.run && \
@@ -97,10 +97,10 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     rm -f ~/Ascend-cann-nnal.run
     
 # Stage 3: Copy results from previous stages
-FROM quay.io/pypa/manylinux_2_28:latest AS official-manylinux
+FROM quay.io/pypa/manylinux_2_34:latest AS official-manylinux
 
 # Python Environment variables
-ENV PATH=/usr/local/python3.11.15/bin:${PATH}
+ENV PATH=/usr/local/python3.10.20/bin:${PATH}
 
 # Note: Toolkit Environment variables, obtained from /usr/local/Ascend/ascend-toolkit/set_env.sh
 ENV ASCEND_TOOLKIT_HOME=/usr/local/Ascend/cann-9.1.0-beta.1
@@ -158,7 +158,7 @@ RUN yum update -y && \
     && rm -rf /var/cache/yum \
     && rm -rf /tmp/*
 
-COPY --from=cann-installer /usr/local/python3.11.15 /usr/local/python3.11.15
+COPY --from=cann-installer /usr/local/python3.10.20 /usr/local/python3.10.20
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
 COPY --from=cann-installer /etc/Ascend /etc/Ascend
 

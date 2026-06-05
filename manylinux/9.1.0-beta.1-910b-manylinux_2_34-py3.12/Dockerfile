@@ -1,5 +1,5 @@
 # Stage 1: Install Python
-FROM quay.io/pypa/manylinux_2_28:latest AS python-installer
+FROM quay.io/pypa/manylinux_2_34:latest AS python-installer
 
 # Python Environment variables
 ENV PATH=/usr/local/python3.12.13/bin:${PATH}
@@ -97,7 +97,7 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     rm -f ~/Ascend-cann-nnal.run
     
 # Stage 3: Copy results from previous stages
-FROM quay.io/pypa/manylinux_2_28:latest AS official-manylinux
+FROM quay.io/pypa/manylinux_2_34:latest AS official-manylinux
 
 # Python Environment variables
 ENV PATH=/usr/local/python3.12.13/bin:${PATH}

@@ -1,5 +1,5 @@
 # Stage 1: Install Python
-FROM quay.io/pypa/manylinux_2_28:latest AS python-installer
+FROM quay.io/pypa/manylinux_2_34:latest AS python-installer
 
 # Python Environment variables
 ENV PATH=/usr/local/python3.10.20/bin:${PATH}
@@ -74,7 +74,7 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
     CANN_TOOLKIT_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%209.1.T1/Ascend-cann-toolkit_9.1.0-beta.1_linux-${ARCH}.run && \
-    CANN_OPS_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%209.1.T1/Ascend-cann-310p-ops_9.1.0-beta.1_linux-${ARCH}.run && \
+    CANN_OPS_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%209.1.T1/Ascend-cann-950-ops_9.1.0-beta.1_linux-${ARCH}.run && \
     CANN_NNAL_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%209.1.T1/Ascend-cann-nnal_9.1.0-beta.1_linux-${ARCH}.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
     wget --quiet --header="Referer: https://www.hiascend.com/" ${CANN_OPS_URL} -O ~/Ascend-cann-ops.run && \
@@ -97,7 +97,7 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     rm -f ~/Ascend-cann-nnal.run
     
 # Stage 3: Copy results from previous stages
-FROM quay.io/pypa/manylinux_2_28:latest AS official-manylinux
+FROM quay.io/pypa/manylinux_2_34:latest AS official-manylinux
 
 # Python Environment variables
 ENV PATH=/usr/local/python3.10.20/bin:${PATH}
