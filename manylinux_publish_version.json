@@ -1,21 +1,21 @@
 {
     "versions": [
         {
-            "path": "manylinux/9.1.0-beta.1-310p-manylinux_2_28-py3.10",
+            "path": "manylinux/9.1.0-beta.1-310p-manylinux_2_34-py3.10",
             "tags": [
-                "9.1.0-beta.1-310p-manylinux_2_28-py3.10"
+                "9.1.0-beta.1-310p-manylinux_2_34-py3.10"
             ]
         },
         {
-            "path": "manylinux/9.1.0-beta.1-310p-manylinux_2_28-py3.12",
+            "path": "manylinux/9.1.0-beta.1-310p-manylinux_2_34-py3.12",
             "tags": [
-                "9.1.0-beta.1-310p-manylinux_2_28-py3.12"
+                "9.1.0-beta.1-310p-manylinux_2_34-py3.12"
             ]
         },
         {
-            "path": "manylinux/9.1.0-beta.1-310p-manylinux_2_28-py3.11",
+            "path": "manylinux/9.1.0-beta.1-310p-manylinux_2_34-py3.11",
             "tags": [
-                "9.1.0-beta.1-310p-manylinux_2_28-py3.11"
+                "9.1.0-beta.1-310p-manylinux_2_34-py3.11"
             ]
         },
         {
