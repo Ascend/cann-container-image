@@ -138,6 +138,7 @@ ENV ATB_SHARE_MEMORY_NAME_SUFFIX=""
 ENV ATB_MATMUL_SHUFFLE_K_ENABLE=1
 ENV LCCL_DETERMINISTIC=0
 ENV LCCL_PARALLEL=0
+ENV ATB_CXX_ABI=1
 
 SHELL [ "/bin/bash", "-c" ]
 
@@ -175,7 +176,7 @@ RUN \
     ln -sf /usr/include/c++/12/${ARCH}-openEuler-linux /usr/include/c++/12/${ARCH}-linux-gnu && \
     CANN_TOOLKIT_ENV_FILE="/usr/local/Ascend/ascend-toolkit/set_env.sh" && \
     CANN_BISHENG_ENV_FILE="/usr/local/Ascend/cann-{{ item.cann_version }}/share/info/ascendnpu-ir/bin/set_env.sh" && \
-    CANN_NNAL_ENV_FILE="/usr/local/Ascend/nnal/atb/set_env.sh" && \
+    CANN_NNAL_ENV_FILE="/usr/local/Ascend/nnal/atb/set_env.sh --cxx_abi=${ATB_CXX_ABI:-1}" && \
     echo "source ${CANN_TOOLKIT_ENV_FILE}" >> /etc/profile && \
     echo "source ${CANN_TOOLKIT_ENV_FILE}" >> ~/.bashrc && \
     echo "source ${CANN_BISHENG_ENV_FILE}" >> /etc/profile && \
@@ -186,6 +187,6 @@ RUN \
 ENTRYPOINT ["/bin/bash", "-c", "\
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     source /usr/local/Ascend/cann-{{ item.cann_version }}/share/info/ascendnpu-ir/bin/set_env.sh && \
-    source /usr/local/Ascend/nnal/atb/set_env.sh && \
+    source /usr/local/Ascend/nnal/atb/set_env.sh --cxx_abi=${ATB_CXX_ABI:-1} && \
     exec \"$@\"", "--"]
 
