@@ -1,123 +1,123 @@
 {
     "manylinux": [
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "950",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.10",
             "tags": [
-                "9.1.0-beta.3-950-manylinux_2_34-py3.10"
+                "9.0.1-950-manylinux_2_34-py3.10"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "950",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.11",
             "tags": [
-                "9.1.0-beta.3-950-manylinux_2_34-py3.11"
+                "9.0.1-950-manylinux_2_34-py3.11"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "950",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.12",
             "tags": [
-                "9.1.0-beta.3-950-manylinux_2_34-py3.12"
+                "9.0.1-950-manylinux_2_34-py3.12"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "910b",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.10",
             "tags": [
-                "9.1.0-beta.3-910b-manylinux_2_34-py3.10"
+                "9.0.1-910b-manylinux_2_34-py3.10"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "910b",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.11",
             "tags": [
-                "9.1.0-beta.3-910b-manylinux_2_34-py3.11"
+                "9.0.1-910b-manylinux_2_34-py3.11"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "910b",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.12",
             "tags": [
-                "9.1.0-beta.3-910b-manylinux_2_34-py3.12"
+                "9.0.1-910b-manylinux_2_34-py3.12"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "310p",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.10",
             "tags": [
-                "9.1.0-beta.3-310p-manylinux_2_34-py3.10"
+                "9.0.1-310p-manylinux_2_34-py3.10"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "310p",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.11",
             "tags": [
-                "9.1.0-beta.3-310p-manylinux_2_34-py3.11"
+                "9.0.1-310p-manylinux_2_34-py3.11"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "310p",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.12",
             "tags": [
-                "9.1.0-beta.3-310p-manylinux_2_34-py3.12"
+                "9.0.1-310p-manylinux_2_34-py3.12"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "A3",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.10",
             "tags": [
-                "9.1.0-beta.3-a3-manylinux_2_34-py3.10"
+                "9.0.1-a3-manylinux_2_34-py3.10"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "A3",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.11",
             "tags": [
-                "9.1.0-beta.3-a3-manylinux_2_34-py3.11"
+                "9.0.1-a3-manylinux_2_34-py3.11"
             ]
         },
         {
-            "cann_version": "9.1.0-beta.3",
+            "cann_version": "9.0.1",
             "cann_chip": "A3",
             "os_name": "manylinux",
             "os_version": "2_34",
             "py_version": "3.12",
             "tags": [
-                "9.1.0-beta.3-a3-manylinux_2_34-py3.12"
+                "9.0.1-a3-manylinux_2_34-py3.12"
             ]
         }
     ]
