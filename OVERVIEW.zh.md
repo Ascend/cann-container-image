@@ -39,7 +39,7 @@ Tag遵循以下格式：
 | `操作系统` | `ubuntu22.04`、`openeuler24.03` | 基础操作系统 |
 | `python版本` | `py3.10`、`py3.11`、`py3.12` | Python 版本 |
 
-tag中包含`-devel`后缀表示开发版CANN镜像，开发版镜像在CANN镜像的基础上安装了部分操作系统工具、Python插件和googletest。
+Tag中包含`-devel`后缀表示开发版CANN镜像，开发版镜像额外安装了部分操作系统工具、Python插件和googletest。
 
 ### CANN 9.0.0
 #### 以Python3.11为例
@@ -129,6 +129,6 @@ RUN apt update -y && \
 
 ## 许可证
 
-查看这些镜像中包含的 CANN 和 Mind 系列软件的[许可证信息](https://www.hiascend.com/cann)。
+查看这些镜像中包含的 CANN 系列软件的[许可证信息](https://www.hiascend.com/legal/cannua-download?isNewCon=true)。
 
 与所有容器镜像一样，预装软件包（Python、系统库等）可能受其自身许可证约束。
