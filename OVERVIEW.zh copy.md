@@ -106,6 +106,9 @@ Tag遵循以下格式：
 ### 运行 CANN 容器
 
 ```bash
+CANN_REPO="swr.cn-south-1.myhuaweicloud.com/ascendhub/cann"
+CANN_TAG="9.0.1-a3-ubuntu22.04-py3.12"
+
 docker run \
     --name cann_container \
     --device /dev/davinci1 \
@@ -117,18 +120,27 @@ docker run \
     -v /usr/local/Ascend/driver/lib64/:/usr/local/Ascend/driver/lib64/ \
     -v /usr/local/Ascend/driver/version.info:/usr/local/Ascend/driver/version.info \
     -v /etc/ascend_install.info:/etc/ascend_install.info \
-    -it {cann_tag} bash
+    -it ${CANN_REPO}:${CANN_TAG} bash
 ```
 
 ### 如何本地构建
 ```bash
-docker buildx build -t {cann_tag} -f {your_repo}/cann/{cann_tag}/Dockerfile .
+git clone https://github.com/Ascend/cann-container-image.git
+cd cann-container-image
+
+CANN_REPO="my-cann"
+CANN_TAG="9.0.1-a3-ubuntu22.04-py3.12"
+
+docker buildx build \
+  -t ${CANN_REPO}:${CANN_TAG} \
+  -f cann/${CANN_TAG}/Dockerfile \
+  .
 ```
 
 ### 如何二次开发
 ```bash
 # 以 CANN 镜像为基础镜像，叠加用户软件
-FROM quay.io/ascend/cann:9.0.1-a3-ubuntu22.04-py3.12
+FROM swr.cn-south-1.myhuaweicloud.com/ascendhub/cann:9.0.1-a3-ubuntu22.04-py3.12
 
 RUN apt update -y && \
     apt install gcc ...
