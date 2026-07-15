@@ -28,7 +28,7 @@ CANN (Compute Architecture for Neural Networks) is a heterogeneous computing arc
 Tags follow this format:
 
 ```
-<cann-version>-<chip-series>-<os>-<python-version>
+<cann-version>-<chip-series>-<os>-<python-version>(-<devel>)
 ```
 
 | Field | Example Values | Description |
@@ -36,7 +36,8 @@ Tags follow this format:
 | `cann-version` | `9.0.0`, `8.5.1`, `8.3.RC2` | CANN version number |
 | `chip-series` | `910`, `a3`, `310p` | Target Atlas chip series |
 | `os` | `ubuntu22.04`, `openeuler24.03` | Base operating system |
-| `python-version` | `py3.11` | Python version |
+| `python-version` | `py3.11`, `py3.12`  | Python version |
+|`devel`|`devel`| Is developer version |
 
 
 ### CANN 9.0.0
@@ -62,6 +63,11 @@ Tags follow this format:
 | `9.0.0-950-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-a3-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-a3-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+
+---
+## New additions in devel image
+
+The devel image is a developer-oriented image. Based on the base image, it adds some basic operating system tools, Python plugins, and googletest.
 
 ---
 

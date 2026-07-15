@@ -69,6 +69,11 @@ Tag 遵循以下格式：
 | `9.0.0-a3-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
 
 ---
+## devel镜像新增内容
+
+devel版镜像是针对开发者的镜像，在base镜像的基础上，新增了一些操作系统基础工具，Python插件和googletest。
+
+---
 
 ## 快速开始
 
