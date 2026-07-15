@@ -2,6 +2,8 @@
 
 > [English](./OVERVIEW.md) | 中文
 
+CANN（Compute Architecture for Neural Networks，神经网络计算架构）是华为面向 AI 场景推出的异构计算架构。它为昇腾 AI 处理器提供全面的软件栈支持，涵盖算子库、图引擎、运行时库和编译工具链。
+
 ## 快速参考
 
 - CANN 由 [CANN community](https://www.hiascend.com/cann) 维护
@@ -15,16 +17,9 @@
 
 ---
 
-## CANN
-
-CANN（Compute Architecture for Neural Networks，神经网络计算架构）是华为面向 AI 场景推出的异构计算架构。它为昇腾 AI 处理器提供全面的软件栈支持，涵盖算子库、图引擎、运行时库和编译工具链。
-
-
----
-
 ## CANN基础镜像
 
-CANN基础镜像基于ubuntu和openeuler操作系统构建，包含CANN工具包和Python环境。
+CANN基础镜像基于ubuntu和openeuler操作系统构建，包含CANN工具套件toolkit包、ops算子包、nnal通信包和Python环境。
 
 ### Tag 规范
 
