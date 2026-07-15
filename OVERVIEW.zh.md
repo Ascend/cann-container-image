@@ -26,22 +26,23 @@ CANN（Compute Architecture for Neural Networks，神经网络计算架构）是
 
 ### Tag 规范
 
-Tag 遵循以下格式：
+Tag遵循以下格式：
 
 ```
-<cann版本>-<芯片系列>-<操作系统>-<python版本>
+<cann版本>-<芯片系列>-<操作系统>-<python版本>[-devel]
 ```
 
 | 字段 | 示例值 | 说明 |
 |---|---|---|
-| `cann版本` | `9.0.0`、`8.5.1`、`8.3.RC2` | CANN 版本号 |
-| `芯片系列` | `910`、`910b`、`a3`、`310p` | 目标昇腾芯片系列 |
+| `cann版本` | `9.1.0-beta.3`、`9.0.1`、`9.0.0`、`8.5.2` 等 | CANN 版本号 |
+| `芯片系列` | `950`、`910`、`910b`、`a3`、`310p` | 目标昇腾芯片系列 |
 | `操作系统` | `ubuntu22.04`、`openeuler24.03` | 基础操作系统 |
-| `python版本` | `py3.11`、`py3.12` | Python 版本 |
-|`开发者版本`|`devel`| 是否开发者版本 |
+| `python版本` | `py3.10`、`py3.11`、`py3.12` | Python 版本 |
 
+tag中包含`-devel`后缀表示开发版CANN镜像，开发版镜像在CANN镜像的基础上安装了部分操作系统工具、Python插件和googletest。
 
 ### CANN 9.0.0
+#### 以Python3.11为例
 | Tag | Dockerfile | 镜像内容 |
 |-----|------------|----------|
 | `9.0.0-310p-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
@@ -54,25 +55,19 @@ Tag 遵循以下格式：
 | `9.0.0-950-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-a3-ubuntu22.04-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-ubuntu22.04-py3.11/Dockerfile) | toolkit/ops/nnal |
 | `9.0.0-a3-openeuler24.03-py3.11` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.11/Dockerfile) | toolkit/ops/nnal |
-
-### CANN-devel 9.0.0
-| Tag | Dockerfile | 镜像内容 |
-|-----|------------|----------|
-| `9.0.0-310p-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-310p-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910b-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-910b-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-950-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-950-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-a3-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
-| `9.0.0-a3-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal |
+| `9.0.0-310p-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
+| `9.0.0-310p-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-310p-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
+| `9.0.0-910-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
+| `9.0.0-910-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
+| `9.0.0-910b-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
+| `9.0.0-910b-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-910b-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
+| `9.0.0-950-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
+| `9.0.0-950-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-950-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
+| `9.0.0-a3-ubuntu22.04-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-ubuntu22.04-py3.11-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
+| `9.0.0-a3-openeuler24.03-py3.11-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.0-a3-openeuler24.03-py3.11-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
 
 ---
-## devel镜像新增内容
 
-devel版镜像是针对开发者的镜像，在base镜像的基础上，新增了一些操作系统基础工具，Python插件和googletest。
 
 ---
 
