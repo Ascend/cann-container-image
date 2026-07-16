@@ -10,9 +10,7 @@ CANN (Compute Architecture for Neural Networks) is a heterogeneous computing arc
 
 - Where to get help
 
-    - [AtlasHub Image Repository](https://www.hiascend.com/developer/ascendhub)
     - [CANN Documentation](https://www.hiascend.com/document/detail/zh/CANNCommunityEdition)
-    - [Atlas Developer Community](https://www.hiascend.com/developer)
     - [Issue Tracker](https://github.com/Ascend/cann-container-image/issues)
 
 ---
