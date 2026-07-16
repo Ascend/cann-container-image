@@ -52,7 +52,7 @@ Tags follow this format:
 ---
 ## CANN Development Container Images
 
-CANN Development Container Images are built on CANN Base Container Images. In addition to the CANN toolkit suite and Python runtime environment, they come with extra OS utilities, selected Python plugins, and GoogleTest pre-installed.
+CANN Development Container Images are built on CANN Base Container Images. In addition to the CANN toolkit suite and Python runtime environment, they come with extra OS utilities(such as zip, vim, tree, etc.), selected Python plugins(such as wheel, pyyaml, setuptools, etc.), and GoogleTest pre-installed.
 
 ### CANN 9.0.1 Development Container Images: Tags & Dockerfile Links
 | Tag | Dockerfile | Image Contents |
