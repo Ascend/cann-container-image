@@ -57,14 +57,14 @@ CANN Development Container Images are built on CANN Base Container Images. In ad
 ### CANN 9.0.1 Development Container Images: Tags & Dockerfile Links
 | Tag | Dockerfile | Image Contents |
 |-----|------------|----------|
-| `9.0.1-310p-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
-| `9.0.1-310p-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
-| `9.0.1-910-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
-| `9.0.1-910-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
-| `9.0.1-950-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-950-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
-| `9.0.1-950-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-950-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
-| `9.0.1-a3-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-a3-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
-| `9.0.1-a3-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-a3-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plug/googletest |
+| `9.0.1-310p-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
+| `9.0.1-310p-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
+| `9.0.1-910-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
+| `9.0.1-910-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
+| `9.0.1-950-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-950-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
+| `9.0.1-950-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-950-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
+| `9.0.1-a3-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-a3-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
+| `9.0.1-a3-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-a3-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 
 ---
 
@@ -110,17 +110,6 @@ docker buildx build \
   -t ${CANN_REPO}:${CANN_TAG} \
   -f cann/${CANN_TAG}/Dockerfile \
   .
-```
-
-### How to Extend the Image
-```bash
-# Use the CANN image as the base image and add your own software on top
-FROM quay.io/ascend/cann:9.0.1-a3-ubuntu22.04-py3.12
-
-RUN apt update -y && \
-    apt install gcc ...
-
-...
 ```
 
 ---
