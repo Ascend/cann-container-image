@@ -55,11 +55,11 @@ Tag遵循以下格式：
 
 ## CANN开发版镜像
 
-CANN开发版镜像基于CANN基础镜像构建，除CANN工具包和Python环境外，额外安装了部分操作系统工具（如zip、vim、tree等）、部分Python插件（如wheel、pyyaml、setuptools等）和googletest。
+CANN 开发版镜像基于 CANN 基础镜像构建，除 CANN 工具包和 Python 环境外，额外安装了部分操作系统工具（如 zip、vim、tree 等）、部分 Python 插件（如 wheel、pyyaml、setuptools 等）和 googletest。
 
 ### Tag 规范
 
-Tag遵循以下格式：
+Tag 遵循以下格式：
 
 ```
 <cann_base_tag>-devel
@@ -76,7 +76,7 @@ Tag遵循以下格式：
 | `9.0.1-310p-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | `9.0.1-310p-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | `9.0.1-910-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
-| `9.0.1-910-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugingoogletest |
+| `9.0.1-910-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | `9.0.1-910b-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910b-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | `9.0.1-910b-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910b-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | `9.0.1-950-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-950-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
@@ -88,7 +88,7 @@ Tag遵循以下格式：
 
 ## 快速开始
 
-### 前置要求（可选）
+### 前置要求
 
 #### 安装驱动
 
@@ -99,12 +99,12 @@ Tag遵循以下格式：
 ### 运行 CANN 容器
 
 ```bash
-CANN_REPO="swr.cn-south-1.myhuaweicloud.com/ascendhub/cann"
-CANN_TAG="9.0.1-a3-ubuntu22.04-py3.12"
+export CANN_REPO=swr.cn-south-1.myhuaweicloud.com/ascendhub/cann
+export CANN_TAG=9.0.1-a3-ubuntu22.04-py3.12
 
 docker run \
     --name cann_container \
-    --device /dev/davinci1 \
+    --device /dev/davinci0 \
     --device /dev/davinci_manager \
     --device /dev/devmm_svm \
     --device /dev/hisi_hdc \
@@ -113,21 +113,17 @@ docker run \
     -v /usr/local/Ascend/driver/lib64/:/usr/local/Ascend/driver/lib64/ \
     -v /usr/local/Ascend/driver/version.info:/usr/local/Ascend/driver/version.info \
     -v /etc/ascend_install.info:/etc/ascend_install.info \
-    -it ${CANN_REPO}:${CANN_TAG} bash
+    -it $CANN_REPO:$CANN_TAG bash
 ```
 
 ### 如何本地构建
 ```bash
 git clone https://github.com/Ascend/cann-container-image.git
 cd cann-container-image
-
-CANN_REPO="my-cann"
-CANN_TAG="9.0.1-a3-ubuntu22.04-py3.12"
-
-docker buildx build \
-  -t ${CANN_REPO}:${CANN_TAG} \
-  -f cann/${CANN_TAG}/Dockerfile \
-  .
+export CANN_REPO=my-cann
+export CANN_TAG=9.0.1-a3-ubuntu22.04-py3.12
+#需安装buildx
+docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 ```
 
 ---

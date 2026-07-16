@@ -70,7 +70,7 @@ CANN Development Container Images are built on CANN Base Container Images. In ad
 
 ## Quick Start
 
-### Prerequisites (Optional)
+### Prerequisites
 
 #### Install Driver
 
@@ -81,12 +81,12 @@ An Atlas NPU driver compatible with the CANN version inside the container must b
 ### Run a CANN Container
 
 ```bash
-CANN_REPO="quay.io/ascend/cann"
-CANN_TAG="9.0.1-a3-ubuntu22.04-py3.12"
+export CANN_REPO=quay.io/ascend/cann
+export CANN_TAG=9.0.1-a3-ubuntu22.04-py3.12
 
 docker run \
     --name cann_container \
-    --device /dev/davinci1 \
+    --device /dev/davinci0 \
     --device /dev/davinci_manager \
     --device /dev/devmm_svm \
     --device /dev/hisi_hdc \
@@ -95,21 +95,17 @@ docker run \
     -v /usr/local/Ascend/driver/lib64/:/usr/local/Ascend/driver/lib64/ \
     -v /usr/local/Ascend/driver/version.info:/usr/local/Ascend/driver/version.info \
     -v /etc/ascend_install.info:/etc/ascend_install.info \
-    -it ${CANN_REPO}:${CANN_TAG} bash
+    -it $CANN_REPO:$CANN_TAG bash
 ```
 
 ### How to Build Locally
 ```bash
 git clone https://github.com/Ascend/cann-container-image.git
 cd cann-container-image
-
-CANN_REPO="my-cann"
-CANN_TAG="9.0.1-a3-ubuntu22.04-py3.12"
-
-docker buildx build \
-  -t ${CANN_REPO}:${CANN_TAG} \
-  -f cann/${CANN_TAG}/Dockerfile \
-  .
+export CANN_REPO=my-cann
+export CANN_TAG=9.0.1-a3-ubuntu22.04-py3.12
+#need install buildx
+docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 ```
 
 ---
