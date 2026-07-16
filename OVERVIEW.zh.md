@@ -17,9 +17,9 @@ CANN（Compute Architecture for Neural Networks，神经网络计算架构）是
 
 ---
 
-## CANN基础镜像
+## CANN 基础镜像
 
-CANN基础镜像基于Ubuntu和openEuler操作系统构建，包含CANN工具套件toolkit包、ops算子包、nnal通信包和Python环境。
+CANN 基础镜像基于 Ubuntu 和 openEuler 操作系统构建，包含 CANN（Toolkit 开发套件、Kernels 算子包、NNAL 加速库）和 Python 环境。
 
 ### Tag 规范
 
@@ -37,7 +37,7 @@ Tag遵循以下格式：
 | `python版本` | `py3.10`、`py3.11`、`py3.12` | Python 版本 |
 
 
-### CANN 9.0.1 基础镜像tag及Dockerfile链接
+### CANN 9.0.1 基础镜像 tag 及 Dockerfile 链接
 | Tag | Dockerfile | 镜像内容 |
 |-----|------------|----------|
 | `9.0.1-310p-ubuntu22.04-py3.12` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-ubuntu22.04-py3.12/Dockerfile) | toolkit/ops/nnal |
@@ -53,7 +53,7 @@ Tag遵循以下格式：
 
 ---
 
-## CANN开发版镜像
+## CANN 开发版镜像
 
 CANN 开发版镜像基于 CANN 基础镜像构建，除 CANN 工具包和 Python 环境外，额外安装了部分操作系统工具（如 zip、vim、tree 等）、部分 Python 插件（如 wheel、pyyaml、setuptools 等）和 googletest。
 

@@ -19,7 +19,7 @@ CANN (Compute Architecture for Neural Networks) is a heterogeneous computing arc
 
 ## CANN Base Container Images
 
-CANN Base Container Images are built on Ubuntu and openEuler operating systems, pre-installed with the CANN toolkit suite, operator (ops) packages, NNAL communication packages, and a Python runtime environment.
+The CANN base images are built on Ubuntu and openEuler, and include CANN (Toolkit development kit, Kernels operator package, and NNAL acceleration library) along with a Python environment.
 
 ### Tag Format
 
