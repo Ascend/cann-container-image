@@ -122,6 +122,6 @@ docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 
 ## License
 
-View the [license information](https://www.hiascend.com/legal/cannua-download?isNewCon=true) for CANN software included in these images.
+View the [license information](https://www.hiascend.com/en/legal/cannua-download?isNewCon=true) for CANN software included in these images.
 
 As with all container images, pre-installed packages (Python, system libraries, etc.) may be subject to their own licenses.
