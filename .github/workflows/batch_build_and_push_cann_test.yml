@@ -1,0 +1,89 @@
+name: Batch Build and Publish CANN Test Image
+
+on:
+  workflow_dispatch:
+    inputs:
+      cann_version:
+        description: 'CANN Version (e.g. 9.1.0.B090)'
+        required: true
+        type: string
+        default: '9.1.0.B090'
+      py_version:
+        description: 'Python Version (e.g. 3.12.13)'
+        required: true
+        type: string
+        default: '3.11.10'
+      os_version_ubuntu:
+        description: 'Ubuntu OS Version (e.g. 22.04)'
+        required: true
+        type: string
+        default: '24.04'
+      os_version_openeuler:
+        description: 'openEuler OS Version (e.g. 24.03)'
+        required: true
+        type: string
+        default: '24.03sp4'
+
+concurrency:
+  group: batch-cann-test
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate matrix
+        id: set-matrix
+        run: |
+          CANN_VERSION="${{ inputs.cann_version }}"
+          PY_VERSION="${{ inputs.py_version }}"
+          PY_SHORT="${PY_VERSION%.*}"
+          UBUNTU_OS_VERSION="${{ inputs.os_version_ubuntu }}"
+          OPENEULER_OS_VERSION="${{ inputs.os_version_openeuler }}"
+
+          MATRIX_JSON=$(jq -n -c \
+            --arg cann_version "$CANN_VERSION" \
+            --arg py_short "$PY_SHORT" \
+            --arg ubuntu_os "$UBUNTU_OS_VERSION" \
+            --arg openeuler_os "$OPENEULER_OS_VERSION" \
+            '{
+              include: [
+                {chip:"a3",   soc:"A3",   os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},
+                {chip:"a3",   soc:"A3",   os:"openeuler", dockerfile:"Dockerfile.openeuler.cann.test", os_version:$openeuler_os},
+                {chip:"910",  soc:"910",  os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},
+                {chip:"910",  soc:"910",  os:"openeuler", dockerfile:"Dockerfile.openeuler.cann.test", os_version:$openeuler_os},
+                {chip:"910b", soc:"910b", os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},
+                {chip:"910b", soc:"910b", os:"openeuler", dockerfile:"Dockerfile.openeuler.cann.test", os_version:$openeuler_os},
+                {chip:"950",  soc:"950",  os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},
+                {chip:"950",  soc:"950",  os:"openeuler", dockerfile:"Dockerfile.openeuler.cann.test", os_version:$openeuler_os},
+                {chip:"310p", soc:"310p", os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},
+                {chip:"310p", soc:"310p", os:"openeuler", dockerfile:"Dockerfile.openeuler.cann.test", os_version:$openeuler_os}
+              ] | map(. + {tag: ($cann_version + "-" + .chip + "-" + .os + .os_version + "-py" + $py_short)})
+            }')
+
+          {
+            echo "matrix<<EOF"
+            echo "$MATRIX_JSON"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: prepare
+    strategy:
+      max-parallel: 2
+      fail-fast: false
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+    uses: ./.github/workflows/build_and_push_cann_test.yml
+    with:
+      cann_tag: ${{ matrix.tag }}
+      cann_version: ${{ inputs.cann_version }}
+      py_version: ${{ inputs.py_version }}
+      os_version: ${{ matrix.os_version }}
+      soc: ${{ matrix.soc }}
+      dockerfile: ${{ matrix.dockerfile }}
+    secrets: inherit
