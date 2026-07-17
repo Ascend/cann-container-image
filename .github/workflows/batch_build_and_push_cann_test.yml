@@ -12,17 +12,17 @@ on:
         description: 'Python Version (e.g. 3.12.13)'
         required: true
         type: string
-        default: '3.11.10'
+        default: '3.12.13'
       os_version_ubuntu:
-        description: 'Ubuntu OS Version (e.g. 22.04)'
+        description: 'Ubuntu OS Version (e.g. 24.04)'
         required: true
         type: string
         default: '24.04'
       os_version_openeuler:
-        description: 'openEuler OS Version (e.g. 24.03)'
+        description: 'openEuler OS Version (e.g. 24.03-lts-sp4)'
         required: true
         type: string
-        default: '24.03sp4'
+        default: '24.03-lts-sp4'
 
 concurrency:
   group: batch-cann-test
@@ -55,8 +55,6 @@ jobs:
               include: [
                 {chip:"a3",   soc:"A3",   os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},
                 {chip:"a3",   soc:"A3",   os:"openeuler", dockerfile:"Dockerfile.openeuler.cann.test", os_version:$openeuler_os},
-                {chip:"910",  soc:"910",  os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},
-                {chip:"910",  soc:"910",  os:"openeuler", dockerfile:"Dockerfile.openeuler.cann.test", os_version:$openeuler_os},
                 {chip:"910b", soc:"910b", os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},
                 {chip:"910b", soc:"910b", os:"openeuler", dockerfile:"Dockerfile.openeuler.cann.test", os_version:$openeuler_os},
                 {chip:"950",  soc:"950",  os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},

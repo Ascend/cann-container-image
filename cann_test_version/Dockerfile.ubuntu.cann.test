@@ -1,5 +1,5 @@
 # Stage 1: Install Python
-ARG OS_VERSION=22.04
+ARG OS_VERSION=24.04
 FROM ubuntu:${OS_VERSION} AS python-installer
 
 # Python Environment variables

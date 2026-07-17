@@ -48,7 +48,7 @@ on:
         description: 'OS version'
         required: true
         type: string
-        default: '22.04'
+        default: '24.04'
       soc:
         description: 'SOC version (CANN package naming)'
         required: true
