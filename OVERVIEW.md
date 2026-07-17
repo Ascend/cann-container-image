@@ -30,7 +30,7 @@ Tags follow this format:
 | Field | Example Values | Description |
 |---|---|---|
 | `cann-version` | `9.0.1`、`9.1.0-beta.3`、`9.0.0`、`8.5.2` | CANN version number |
-| `chip-series` | `910`, `a3`, `310p` | Target Atlas chip series |
+| `chip-series` | `910`, `a3`| Target Atlas chip series |
 | `os` | `ubuntu22.04`, `openeuler24.03` | Base operating system |
 | `python-version` | `py3.10`, `py3.11`, `py3.12`  | Python version |
 
@@ -38,8 +38,7 @@ Tags follow this format:
 ### CANN 9.0.1 Base Container Images: Tags & Dockerfile Links
 | Tag | Dockerfile | Image Contents |
 |-----|------------|----------|
-| `9.0.1-310p-ubuntu22.04-py3.12` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-ubuntu22.04-py3.12/Dockerfile) | toolkit/ops/nnal |
-| `9.0.1-310p-openeuler24.03-py3.12` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-openeuler24.03-py3.12/Dockerfile) | toolkit/ops/nnal |
+
 | `9.0.1-910-ubuntu22.04-py3.12` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-ubuntu22.04-py3.12/Dockerfile) | toolkit/ops/nnal |
 | `9.0.1-910-openeuler24.03-py3.12` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-openeuler24.03-py3.12/Dockerfile) | toolkit/ops/nnal |
 | `9.0.1-950-ubuntu22.04-py3.12` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-950-ubuntu22.04-py3.12/Dockerfile) | toolkit/ops/nnal |
@@ -55,8 +54,6 @@ CANN Development Container Images are built on CANN Base Container Images. In ad
 ### CANN 9.0.1 Development Container Images: Tags & Dockerfile Links
 | Tag | Dockerfile | Image Contents |
 |-----|------------|----------|
-| `9.0.1-310p-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
-| `9.0.1-310p-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-310p-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | `9.0.1-910-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | `9.0.1-910-openeuler24.03-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-910-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | `9.0.1-950-ubuntu22.04-py3.12-devel` | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.0.1-950-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
@@ -114,7 +111,7 @@ docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 |---|---|---|
 | Atlas 910 | Atlas 800T A2, Atlas 900 A2 PoD | ARM64 / x86_64 |
 | Atlas A3 | Atlas 800T A3 | ARM64 / x86_64 |
-| Atlas 310P | Atlas 300I Pro, Atlas 300V Pro | ARM64 / x86_64 |
+| Atlas 310 | Atlas 300I Pro, Atlas 300V Pro | ARM64 / x86_64 |
 
 ---
 
