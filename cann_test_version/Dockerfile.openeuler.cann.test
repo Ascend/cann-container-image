@@ -107,8 +107,7 @@ ARG OS_VERSION
 FROM openeuler/openeuler:${OS_VERSION} AS official-openeuler
 
 ARG TARGETPLATFORM
-ARG CANN_VERSION
-ENV CANN_VERSION=${CANN_VERSION}
+ENV CANN_VERSION=9.1.0
 ARG PY_VERSION
 # Python Environment variables
 ENV PATH=/usr/local/python${PY_VERSION}/bin:${PATH}

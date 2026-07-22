@@ -110,8 +110,8 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
 ARG OS_VERSION
 FROM ubuntu:${OS_VERSION} AS official-ubuntu
 
-ARG CANN_VERSION
-ENV CANN_VERSION=${CANN_VERSION}
+
+ENV CANN_VERSION=9.1.0
 ARG PY_VERSION
 # Python Environment variables
 ENV PATH=/usr/local/python${PY_VERSION}/bin:${PATH}
