@@ -1,1 +1,4 @@
 name: Batch Build and Publish CANN Test Image
+
+on:
+  workflow_dispatch:
