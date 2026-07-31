@@ -169,12 +169,36 @@ jobs:
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
           provenance: false
 
+      - name: Install skopeo
+        if: ${{ inputs.push }}
+        run: |
+          sudo apt update
+          sudo apt install -y skopeo
+
+      - name: Login to Huawei Cloud SWR (skopeo)
+        if: ${{ inputs.push }}
+        env:
+          HW_USERNAME_DAILY: ${{ secrets.HW_USERNAME_DAILY }}
+          HW_TOKEN_DAILY: ${{ secrets.HW_TOKEN_DAILY }}
+        run: |
+          echo "$HW_TOKEN_DAILY" | skopeo login \
+            --username "cn-north-4@$HW_USERNAME_DAILY" \
+            --password-stdin \
+            swr.cn-north-4.myhuaweicloud.com
+
       - name: Copy to SWR temp
         if: ${{ inputs.push }}
         run: |
-          docker pull quay.io/atlas_inference/cann@${{ steps.build.outputs.digest }}
-          docker tag quay.io/atlas_inference/cann@${{ steps.build.outputs.digest }} swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-${{ matrix.arch }}
-          docker push swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-${{ matrix.arch }}
+          for i in 1 2 3; do
+            echo "=== Attempt $i/3 ==="
+            skopeo copy --format v2s2 \
+              docker://quay.io/atlas_inference/cann@${{ steps.build.outputs.digest }} \
+              docker://swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-${{ matrix.arch }} && exit 0
+            echo "Attempt $i failed, retrying in $((i*30))s..."
+            sleep $((i*30))
+          done
+          echo "All 3 attempts failed"
+          exit 1
 
       - name: Export digest
         if: ${{ inputs.push }}
@@ -233,8 +257,6 @@ jobs:
 
       - name: Create SWR manifest list and push
         run: |
-          docker manifest create \
-            swr.cn-north-4.myhuaweicloud.com/inference/cann:${{ inputs.cann_tag }} \
+          docker buildx imagetools create -t swr.cn-north-4.myhuaweicloud.com/inference/cann:${{ inputs.cann_tag }} \
             swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-amd64 \
             swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-arm64
-          docker manifest push swr.cn-north-4.myhuaweicloud.com/inference/cann:${{ inputs.cann_tag }}
