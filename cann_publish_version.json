@@ -1,6 +1,186 @@
 {
   "versions": [
     {
+      "path": "cann/9.1.0-310p-ubuntu22.04-py3.10",
+      "tags": [
+        "9.1.0-310p-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-310p-ubuntu22.04-py3.11",
+      "tags": [
+        "9.1.0-310p-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-310p-ubuntu22.04-py3.12",
+      "tags": [
+        "9.1.0-310p-ubuntu22.04-py3.12"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-310p-openeuler24.03-py3.10",
+      "tags": [
+        "9.1.0-310p-openeuler24.03-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-310p-openeuler24.03-py3.11",
+      "tags": [
+        "9.1.0-310p-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-310p-openeuler24.03-py3.12",
+      "tags": [
+        "9.1.0-310p-openeuler24.03-py3.12"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910-ubuntu22.04-py3.10",
+      "tags": [
+        "9.1.0-910-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910-ubuntu22.04-py3.11",
+      "tags": [
+        "9.1.0-910-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910-ubuntu22.04-py3.12",
+      "tags": [
+        "9.1.0-910-ubuntu22.04-py3.12"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910-openeuler24.03-py3.10",
+      "tags": [
+        "9.1.0-910-openeuler24.03-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910-openeuler24.03-py3.11",
+      "tags": [
+        "9.1.0-910-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910-openeuler24.03-py3.12",
+      "tags": [
+        "9.1.0-910-openeuler24.03-py3.12"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910b-ubuntu22.04-py3.10",
+      "tags": [
+        "9.1.0-910b-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910b-ubuntu22.04-py3.11",
+      "tags": [
+        "9.1.0-910b-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910b-ubuntu22.04-py3.12",
+      "tags": [
+        "9.1.0-910b-ubuntu22.04-py3.12"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910b-openeuler24.03-py3.10",
+      "tags": [
+        "9.1.0-910b-openeuler24.03-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910b-openeuler24.03-py3.11",
+      "tags": [
+        "9.1.0-910b-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-910b-openeuler24.03-py3.12",
+      "tags": [
+        "9.1.0-910b-openeuler24.03-py3.12"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-a3-ubuntu22.04-py3.10",
+      "tags": [
+        "9.1.0-a3-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-a3-ubuntu22.04-py3.11",
+      "tags": [
+        "9.1.0-a3-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-a3-ubuntu22.04-py3.12",
+      "tags": [
+        "9.1.0-a3-ubuntu22.04-py3.12"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-a3-openeuler24.03-py3.10",
+      "tags": [
+        "9.1.0-a3-openeuler24.03-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-a3-openeuler24.03-py3.11",
+      "tags": [
+        "9.1.0-a3-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-a3-openeuler24.03-py3.12",
+      "tags": [
+        "9.1.0-a3-openeuler24.03-py3.12"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-950-ubuntu22.04-py3.10",
+      "tags": [
+        "9.1.0-950-ubuntu22.04-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-950-ubuntu22.04-py3.11",
+      "tags": [
+        "9.1.0-950-ubuntu22.04-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-950-ubuntu22.04-py3.12",
+      "tags": [
+        "9.1.0-950-ubuntu22.04-py3.12"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-950-openeuler24.03-py3.10",
+      "tags": [
+        "9.1.0-950-openeuler24.03-py3.10"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-950-openeuler24.03-py3.11",
+      "tags": [
+        "9.1.0-950-openeuler24.03-py3.11"
+      ]
+    },
+    {
+      "path": "cann/9.1.0-950-openeuler24.03-py3.12",
+      "tags": [
+        "9.1.0-950-openeuler24.03-py3.12"
+      ]
+    },
+    {
       "path": "cann/9.0.1-310p-ubuntu22.04-py3.10",
       "tags": [
         "9.0.1-310p-ubuntu22.04-py3.10"
@@ -543,1145 +723,1145 @@
     {
       "path": "cann/9.0.0-950-ubuntu22.04-py3.12",
       "tags": [
-          "9.0.0-950-ubuntu22.04-py3.12"
+        "9.0.0-950-ubuntu22.04-py3.12"
       ]
     },
     {
       "path": "cann/9.0.0-950-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-950-ubuntu22.04-py3.11"
+        "9.0.0-950-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-950-ubuntu22.04-py3.10",
       "tags": [
-          "9.0.0-950-ubuntu22.04-py3.10"
+        "9.0.0-950-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-950-openeuler24.03-py3.12",
       "tags": [
-          "9.0.0-950-openeuler24.03-py3.12"
+        "9.0.0-950-openeuler24.03-py3.12"
       ]
     },
     {
       "path": "cann/9.0.0-950-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-950-openeuler24.03-py3.11"
+        "9.0.0-950-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-950-openeuler24.03-py3.10",
       "tags": [
-          "9.0.0-950-openeuler24.03-py3.10"
+        "9.0.0-950-openeuler24.03-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-910b-ubuntu22.04-py3.12",
       "tags": [
-          "9.0.0-910b-ubuntu22.04-py3.12"
+        "9.0.0-910b-ubuntu22.04-py3.12"
       ]
     },
     {
       "path": "cann/9.0.0-910b-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-910b-ubuntu22.04-py3.11",
-          "9.0.0",
-          "latest"
+        "9.0.0-910b-ubuntu22.04-py3.11",
+        "9.0.0",
+        "latest"
       ]
     },
     {
       "path": "cann/9.0.0-910b-ubuntu22.04-py3.10",
       "tags": [
-          "9.0.0-910b-ubuntu22.04-py3.10"
+        "9.0.0-910b-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-910b-openeuler24.03-py3.12",
       "tags": [
-          "9.0.0-910b-openeuler24.03-py3.12"
+        "9.0.0-910b-openeuler24.03-py3.12"
       ]
     },
     {
       "path": "cann/9.0.0-910b-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-910b-openeuler24.03-py3.11"
+        "9.0.0-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-910b-openeuler24.03-py3.10",
       "tags": [
-          "9.0.0-910b-openeuler24.03-py3.10"
+        "9.0.0-910b-openeuler24.03-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-910-ubuntu22.04-py3.12",
       "tags": [
-          "9.0.0-910-ubuntu22.04-py3.12"
+        "9.0.0-910-ubuntu22.04-py3.12"
       ]
     },
     {
       "path": "cann/9.0.0-910-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-910-ubuntu22.04-py3.11"
+        "9.0.0-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-910-ubuntu22.04-py3.10",
       "tags": [
-          "9.0.0-910-ubuntu22.04-py3.10"
+        "9.0.0-910-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-910-openeuler24.03-py3.12",
       "tags": [
-          "9.0.0-910-openeuler24.03-py3.12"
+        "9.0.0-910-openeuler24.03-py3.12"
       ]
     },
     {
       "path": "cann/9.0.0-910-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-910-openeuler24.03-py3.11"
+        "9.0.0-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-910-openeuler24.03-py3.10",
       "tags": [
-          "9.0.0-910-openeuler24.03-py3.10"
+        "9.0.0-910-openeuler24.03-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-310p-ubuntu22.04-py3.12",
       "tags": [
-          "9.0.0-310p-ubuntu22.04-py3.12"
+        "9.0.0-310p-ubuntu22.04-py3.12"
       ]
     },
     {
       "path": "cann/9.0.0-310p-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-310p-ubuntu22.04-py3.11"
+        "9.0.0-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-310p-ubuntu22.04-py3.10",
       "tags": [
-          "9.0.0-310p-ubuntu22.04-py3.10"
+        "9.0.0-310p-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-310p-openeuler24.03-py3.12",
       "tags": [
-          "9.0.0-310p-openeuler24.03-py3.12"
+        "9.0.0-310p-openeuler24.03-py3.12"
       ]
     },
     {
       "path": "cann/9.0.0-310p-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-310p-openeuler24.03-py3.11"
+        "9.0.0-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-310p-openeuler24.03-py3.10",
       "tags": [
-          "9.0.0-310p-openeuler24.03-py3.10"
+        "9.0.0-310p-openeuler24.03-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-a3-ubuntu22.04-py3.12",
       "tags": [
-          "9.0.0-a3-ubuntu22.04-py3.12"
+        "9.0.0-a3-ubuntu22.04-py3.12"
       ]
     },
     {
       "path": "cann/9.0.0-a3-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-a3-ubuntu22.04-py3.11"
+        "9.0.0-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-a3-ubuntu22.04-py3.10",
       "tags": [
-          "9.0.0-a3-ubuntu22.04-py3.10"
+        "9.0.0-a3-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-a3-openeuler24.03-py3.12",
       "tags": [
-          "9.0.0-a3-openeuler24.03-py3.12"
+        "9.0.0-a3-openeuler24.03-py3.12"
       ]
     },
     {
       "path": "cann/9.0.0-a3-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-a3-openeuler24.03-py3.11"
+        "9.0.0-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-a3-openeuler24.03-py3.10",
       "tags": [
-          "9.0.0-a3-openeuler24.03-py3.10"
+        "9.0.0-a3-openeuler24.03-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-beta.2-910b-ubuntu22.04-py3.10",
       "tags": [
-          "9.0.0-beta.2-910b-ubuntu22.04-py3.10"
+        "9.0.0-beta.2-910b-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/9.0.0-beta.2-a3-ubuntu22.04-py3.10",
       "tags": [
-          "9.0.0-beta.2-a3-ubuntu22.04-py3.10"
+        "9.0.0-beta.2-a3-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/8.5.2-910b-ubuntu22.04-py3.10",
       "tags": [
-          "8.5.2-910b-ubuntu22.04-py3.10"
+        "8.5.2-910b-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/8.5.2-a3-ubuntu22.04-py3.10",
       "tags": [
-          "8.5.2-a3-ubuntu22.04-py3.10"
+        "8.5.2-a3-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/8.5.1-910b-ubuntu22.04-py3.10",
       "tags": [
-          "8.5.1-910b-ubuntu22.04-py3.10"
+        "8.5.1-910b-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/8.5.1-a3-ubuntu22.04-py3.10",
       "tags": [
-          "8.5.1-a3-ubuntu22.04-py3.10"
+        "8.5.1-a3-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/8.5.0-910b-ubuntu22.04-py3.10",
       "tags": [
-          "8.5.0-910b-ubuntu22.04-py3.10"
+        "8.5.0-910b-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/8.5.0-a3-ubuntu22.04-py3.10",
       "tags": [
-          "8.5.0-a3-ubuntu22.04-py3.10"
+        "8.5.0-a3-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/8.5.2-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.2-910b-ubuntu22.04-py3.11",
-          "8.5.2"
+        "8.5.2-910b-ubuntu22.04-py3.11",
+        "8.5.2"
       ]
     },
     {
       "path": "cann/8.5.2-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.5.2-910b-openeuler24.03-py3.11"
+        "8.5.2-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.2-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.2-910-ubuntu22.04-py3.11"
+        "8.5.2-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.2-910-openeuler24.03-py3.11",
       "tags": [
-          "8.5.2-910-openeuler24.03-py3.11"
+        "8.5.2-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.2-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.2-310p-ubuntu22.04-py3.11"
+        "8.5.2-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.2-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.5.2-310p-openeuler24.03-py3.11"
+        "8.5.2-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.2-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.2-a3-ubuntu22.04-py3.11"
+        "8.5.2-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.2-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.5.2-a3-openeuler24.03-py3.11"
+        "8.5.2-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.2-910b-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-beta.2-910b-ubuntu22.04-py3.11",
-          "9.0.0-beta.2"
+        "9.0.0-beta.2-910b-ubuntu22.04-py3.11",
+        "9.0.0-beta.2"
       ]
     },
     {
       "path": "cann/9.0.0-beta.2-910b-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-beta.2-910b-openeuler24.03-py3.11"
+        "9.0.0-beta.2-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.2-910-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-beta.2-910-ubuntu22.04-py3.11"
+        "9.0.0-beta.2-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.2-910-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-beta.2-910-openeuler24.03-py3.11"
+        "9.0.0-beta.2-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.2-310p-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-beta.2-310p-ubuntu22.04-py3.11"
+        "9.0.0-beta.2-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.2-310p-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-beta.2-310p-openeuler24.03-py3.11"
+        "9.0.0-beta.2-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.2-a3-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-beta.2-a3-ubuntu22.04-py3.11"
+        "9.0.0-beta.2-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.2-a3-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-beta.2-a3-openeuler24.03-py3.11"
+        "9.0.0-beta.2-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.1-910b-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-beta.1-910b-ubuntu22.04-py3.11",
-          "9.0.0-beta.1"
+        "9.0.0-beta.1-910b-ubuntu22.04-py3.11",
+        "9.0.0-beta.1"
       ]
     },
     {
       "path": "cann/9.0.0-beta.1-910b-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-beta.1-910b-openeuler24.03-py3.11"
+        "9.0.0-beta.1-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.1-910-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-beta.1-910-ubuntu22.04-py3.11"
+        "9.0.0-beta.1-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.1-910-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-beta.1-910-openeuler24.03-py3.11"
+        "9.0.0-beta.1-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.1-310p-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-beta.1-310p-ubuntu22.04-py3.11"
+        "9.0.0-beta.1-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.1-310p-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-beta.1-310p-openeuler24.03-py3.11"
+        "9.0.0-beta.1-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.1-a3-ubuntu22.04-py3.11",
       "tags": [
-          "9.0.0-beta.1-a3-ubuntu22.04-py3.11"
+        "9.0.0-beta.1-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/9.0.0-beta.1-a3-openeuler24.03-py3.11",
       "tags": [
-          "9.0.0-beta.1-a3-openeuler24.03-py3.11"
+        "9.0.0-beta.1-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.1-910b-ubuntu22.04-py3.12",
       "tags": [
-          "8.5.1-910b-ubuntu22.04-py3.12"
+        "8.5.1-910b-ubuntu22.04-py3.12"
       ]
     },
     {
       "path": "cann/8.5.1-910b-openeuler24.03-py3.12",
       "tags": [
-          "8.5.1-910b-openeuler24.03-py3.12"
+        "8.5.1-910b-openeuler24.03-py3.12"
       ]
     },
     {
       "path": "cann/8.5.1-910-ubuntu22.04-py3.12",
       "tags": [
-          "8.5.1-910-ubuntu22.04-py3.12"
+        "8.5.1-910-ubuntu22.04-py3.12"
       ]
     },
     {
       "path": "cann/8.5.1-910-openeuler24.03-py3.12",
       "tags": [
-          "8.5.1-910-openeuler24.03-py3.12"
+        "8.5.1-910-openeuler24.03-py3.12"
       ]
     },
     {
       "path": "cann/8.5.1-310p-ubuntu22.04-py3.12",
       "tags": [
-          "8.5.1-310p-ubuntu22.04-py3.12"
+        "8.5.1-310p-ubuntu22.04-py3.12"
       ]
     },
     {
       "path": "cann/8.5.1-310p-openeuler24.03-py3.12",
       "tags": [
-          "8.5.1-310p-openeuler24.03-py3.12"
+        "8.5.1-310p-openeuler24.03-py3.12"
       ]
     },
     {
       "path": "cann/8.5.1-a3-ubuntu22.04-py3.12",
       "tags": [
-          "8.5.1-a3-ubuntu22.04-py3.12"
+        "8.5.1-a3-ubuntu22.04-py3.12"
       ]
     },
     {
       "path": "cann/8.5.1-a3-openeuler24.03-py3.12",
       "tags": [
-          "8.5.1-a3-openeuler24.03-py3.12"
+        "8.5.1-a3-openeuler24.03-py3.12"
       ]
     },
     {
       "path": "cann/8.5.1-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.1-910b-ubuntu22.04-py3.11",
-          "8.5.1",
-          "latest"
+        "8.5.1-910b-ubuntu22.04-py3.11",
+        "8.5.1",
+        "latest"
       ]
     },
     {
       "path": "cann/8.5.1-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.5.1-910b-openeuler24.03-py3.11"
+        "8.5.1-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.1-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.1-910-ubuntu22.04-py3.11"
+        "8.5.1-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.1-910-openeuler24.03-py3.11",
       "tags": [
-          "8.5.1-910-openeuler24.03-py3.11"
+        "8.5.1-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.1-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.1-310p-ubuntu22.04-py3.11"
+        "8.5.1-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.1-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.5.1-310p-openeuler24.03-py3.11"
+        "8.5.1-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.1-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.1-a3-ubuntu22.04-py3.11"
+        "8.5.1-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.1-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.5.1-a3-openeuler24.03-py3.11"
+        "8.5.1-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0-910b-ubuntu22.04-py3.11",
-          "8.5.0"
+        "8.5.0-910b-ubuntu22.04-py3.11",
+        "8.5.0"
       ]
     },
     {
       "path": "cann/8.5.0-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0-910b-openeuler24.03-py3.11"
+        "8.5.0-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0-910-ubuntu22.04-py3.11"
+        "8.5.0-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0-910-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0-910-openeuler24.03-py3.11"
+        "8.5.0-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0-310p-ubuntu22.04-py3.11"
+        "8.5.0-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0-310p-openeuler24.03-py3.11"
+        "8.5.0-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0-a3-ubuntu22.04-py3.11"
+        "8.5.0-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0-a3-openeuler24.03-py3.11"
+        "8.5.0-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha002-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0.alpha002-910b-ubuntu22.04-py3.11",
-          "8.5.0.alpha002"
+        "8.5.0.alpha002-910b-ubuntu22.04-py3.11",
+        "8.5.0.alpha002"
       ]
     },
     {
       "path": "cann/8.5.0.alpha002-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0.alpha002-910b-openeuler24.03-py3.11"
+        "8.5.0.alpha002-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha002-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0.alpha002-910-ubuntu22.04-py3.11"
+        "8.5.0.alpha002-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha002-910-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0.alpha002-910-openeuler24.03-py3.11"
+        "8.5.0.alpha002-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha002-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0.alpha002-310p-ubuntu22.04-py3.11"
+        "8.5.0.alpha002-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha002-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0.alpha002-310p-openeuler24.03-py3.11"
+        "8.5.0.alpha002-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha002-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0.alpha002-a3-ubuntu22.04-py3.11"
+        "8.5.0.alpha002-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha002-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0.alpha002-a3-openeuler24.03-py3.11"
+        "8.5.0.alpha002-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha001-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0.alpha001-910b-ubuntu22.04-py3.11",
-          "8.5.0.alpha001"
+        "8.5.0.alpha001-910b-ubuntu22.04-py3.11",
+        "8.5.0.alpha001"
       ]
     },
     {
       "path": "cann/8.5.0.alpha001-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0.alpha001-910b-openeuler24.03-py3.11"
+        "8.5.0.alpha001-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha001-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0.alpha001-910-ubuntu22.04-py3.11"
+        "8.5.0.alpha001-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha001-910-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0.alpha001-910-openeuler24.03-py3.11"
+        "8.5.0.alpha001-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha001-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0.alpha001-310p-ubuntu22.04-py3.11"
+        "8.5.0.alpha001-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha001-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0.alpha001-310p-openeuler24.03-py3.11"
+        "8.5.0.alpha001-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha001-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.5.0.alpha001-a3-ubuntu22.04-py3.11"
+        "8.5.0.alpha001-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.5.0.alpha001-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.5.0.alpha001-a3-openeuler24.03-py3.11"
+        "8.5.0.alpha001-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc2-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc2-910b-ubuntu22.04-py3.11",
-          "8.3.rc2",
-          "latest"
+        "8.3.rc2-910b-ubuntu22.04-py3.11",
+        "8.3.rc2",
+        "latest"
       ]
     },
     {
       "path": "cann/8.3.rc2-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc2-910b-openeuler24.03-py3.11"
+        "8.3.rc2-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc2-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc2-910-ubuntu22.04-py3.11"
+        "8.3.rc2-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc2-910-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc2-910-openeuler24.03-py3.11"
+        "8.3.rc2-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc2-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc2-310p-ubuntu22.04-py3.11"
+        "8.3.rc2-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc2-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc2-310p-openeuler24.03-py3.11"
+        "8.3.rc2-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc2-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc2-a3-ubuntu22.04-py3.11"
+        "8.3.rc2-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc2-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc2-a3-openeuler24.03-py3.11"
+        "8.3.rc2-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1-910b-ubuntu22.04-py3.11",
-          "8.3.rc1"
+        "8.3.rc1-910b-ubuntu22.04-py3.11",
+        "8.3.rc1"
       ]
     },
     {
       "path": "cann/8.3.rc1-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1-910b-openeuler24.03-py3.11"
+        "8.3.rc1-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1-910-ubuntu22.04-py3.11"
+        "8.3.rc1-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1-910-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1-910-openeuler24.03-py3.11"
+        "8.3.rc1-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1-310p-ubuntu22.04-py3.11"
+        "8.3.rc1-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1-310p-openeuler24.03-py3.11"
+        "8.3.rc1-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1-a3-ubuntu22.04-py3.11"
+        "8.3.rc1-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1-a3-openeuler24.03-py3.11"
+        "8.3.rc1-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha003-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha003-910b-ubuntu22.04-py3.11",
-          "8.3.rc1.alpha003"
+        "8.3.rc1.alpha003-910b-ubuntu22.04-py3.11",
+        "8.3.rc1.alpha003"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha003-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha003-910b-openeuler24.03-py3.11"
+        "8.3.rc1.alpha003-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha003-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha003-910-ubuntu22.04-py3.11"
+        "8.3.rc1.alpha003-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha003-910-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha003-910-openeuler24.03-py3.11"
+        "8.3.rc1.alpha003-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha003-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha003-310p-ubuntu22.04-py3.11"
+        "8.3.rc1.alpha003-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha003-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha003-310p-openeuler24.03-py3.11"
+        "8.3.rc1.alpha003-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha003-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha003-a3-ubuntu22.04-py3.11"
+        "8.3.rc1.alpha003-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha003-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha003-a3-openeuler24.03-py3.11"
+        "8.3.rc1.alpha003-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc2-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc2-910b-ubuntu22.04-py3.11",
-          "8.2.rc2"
+        "8.2.rc2-910b-ubuntu22.04-py3.11",
+        "8.2.rc2"
       ]
     },
     {
       "path": "cann/8.2.rc2-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.2.rc2-910b-openeuler24.03-py3.11"
+        "8.2.rc2-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc2-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc2-910-ubuntu22.04-py3.11"
+        "8.2.rc2-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc2-910-openeuler24.03-py3.11",
       "tags": [
-          "8.2.rc2-910-openeuler24.03-py3.11"
+        "8.2.rc2-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc2-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc2-310p-ubuntu22.04-py3.11"
+        "8.2.rc2-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc2-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.2.rc2-310p-openeuler24.03-py3.11"
+        "8.2.rc2-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc2-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc2-a3-ubuntu22.04-py3.11"
+        "8.2.rc2-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc2-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.2.rc2-a3-openeuler24.03-py3.11"
+        "8.2.rc2-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha002-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha002-910b-ubuntu22.04-py3.11",
-          "8.3.rc1.alpha002"
+        "8.3.rc1.alpha002-910b-ubuntu22.04-py3.11",
+        "8.3.rc1.alpha002"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha002-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha002-910b-openeuler24.03-py3.11"
+        "8.3.rc1.alpha002-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha002-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha002-910-ubuntu22.04-py3.11"
+        "8.3.rc1.alpha002-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha002-910-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha002-910-openeuler24.03-py3.11"
+        "8.3.rc1.alpha002-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha002-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha002-310p-ubuntu22.04-py3.11"
+        "8.3.rc1.alpha002-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha002-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha002-310p-openeuler24.03-py3.11"
+        "8.3.rc1.alpha002-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha002-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha002-a3-ubuntu22.04-py3.11"
+        "8.3.rc1.alpha002-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha002-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha002-a3-openeuler24.03-py3.11"
+        "8.3.rc1.alpha002-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-910b-openeuler24.03-py3.11",
       "tags": [
-          "8.2.rc1-910b-openeuler24.03-py3.11"
+        "8.2.rc1-910b-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-910-openeuler24.03-py3.11",
       "tags": [
-          "8.2.rc1-910-openeuler24.03-py3.11"
+        "8.2.rc1-910-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-a3-openeuler24.03-py3.11",
       "tags": [
-          "8.2.rc1-a3-openeuler24.03-py3.11"
+        "8.2.rc1-a3-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-310p-openeuler24.03-py3.11",
       "tags": [
-          "8.2.rc1-310p-openeuler24.03-py3.11"
+        "8.2.rc1-310p-openeuler24.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha001-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha001-910b-ubuntu22.04-py3.11",
-          "8.3.rc1.alpha001"
+        "8.3.rc1.alpha001-910b-ubuntu22.04-py3.11",
+        "8.3.rc1.alpha001"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha001-910b-openeuler22.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha001-910b-openeuler22.03-py3.11"
+        "8.3.rc1.alpha001-910b-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha001-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha001-910-ubuntu22.04-py3.11"
+        "8.3.rc1.alpha001-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha001-910-openeuler22.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha001-910-openeuler22.03-py3.11"
+        "8.3.rc1.alpha001-910-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha001-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha001-310p-ubuntu22.04-py3.11"
+        "8.3.rc1.alpha001-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha001-310p-openeuler22.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha001-310p-openeuler22.03-py3.11"
+        "8.3.rc1.alpha001-310p-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha001-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.3.rc1.alpha001-a3-ubuntu22.04-py3.11"
+        "8.3.rc1.alpha001-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.3.rc1.alpha001-a3-openeuler22.03-py3.11",
       "tags": [
-          "8.3.rc1.alpha001-a3-openeuler22.03-py3.11"
+        "8.3.rc1.alpha001-a3-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc1-910b-ubuntu22.04-py3.11",
-          "8.2.rc1"
+        "8.2.rc1-910b-ubuntu22.04-py3.11",
+        "8.2.rc1"
       ]
     },
     {
       "path": "cann/8.2.rc1-910b-openeuler22.03-py3.11",
       "tags": [
-          "8.2.rc1-910b-openeuler22.03-py3.11"
+        "8.2.rc1-910b-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc1-910-ubuntu22.04-py3.11"
+        "8.2.rc1-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-910-openeuler22.03-py3.11",
       "tags": [
-          "8.2.rc1-910-openeuler22.03-py3.11"
+        "8.2.rc1-910-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc1-310p-ubuntu22.04-py3.11"
+        "8.2.rc1-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-310p-openeuler22.03-py3.11",
       "tags": [
-          "8.2.rc1-310p-openeuler22.03-py3.11"
+        "8.2.rc1-310p-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc1-a3-ubuntu22.04-py3.11"
+        "8.2.rc1-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1-a3-openeuler22.03-py3.11",
       "tags": [
-          "8.2.rc1-a3-openeuler22.03-py3.11"
+        "8.2.rc1-a3-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha003-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc1.alpha003-910b-ubuntu22.04-py3.11",
-          "8.2.rc1.alpha003"
+        "8.2.rc1.alpha003-910b-ubuntu22.04-py3.11",
+        "8.2.rc1.alpha003"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha003-910b-openeuler22.03-py3.11",
       "tags": [
-          "8.2.rc1.alpha003-910b-openeuler22.03-py3.11"
+        "8.2.rc1.alpha003-910b-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha003-910-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc1.alpha003-910-ubuntu22.04-py3.11"
+        "8.2.rc1.alpha003-910-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha003-910-openeuler22.03-py3.11",
       "tags": [
-          "8.2.rc1.alpha003-910-openeuler22.03-py3.11"
+        "8.2.rc1.alpha003-910-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha003-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc1.alpha003-310p-ubuntu22.04-py3.11"
+        "8.2.rc1.alpha003-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha003-310p-openeuler22.03-py3.11",
       "tags": [
-          "8.2.rc1.alpha003-310p-openeuler22.03-py3.11"
+        "8.2.rc1.alpha003-310p-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha003-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.2.rc1.alpha003-a3-ubuntu22.04-py3.11"
+        "8.2.rc1.alpha003-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha003-a3-openeuler22.03-py3.11",
       "tags": [
-          "8.2.rc1.alpha003-a3-openeuler22.03-py3.11"
+        "8.2.rc1.alpha003-a3-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha002-910b-ubuntu22.04-py3.10",
       "tags": [
-          "8.2.rc1.alpha002-910b-ubuntu22.04-py3.10",
-          "8.2.rc1.alpha002"
+        "8.2.rc1.alpha002-910b-ubuntu22.04-py3.10",
+        "8.2.rc1.alpha002"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha002-910b-openeuler22.03-py3.10",
       "tags": [
-          "8.2.rc1.alpha002-910b-openeuler22.03-py3.10"
+        "8.2.rc1.alpha002-910b-openeuler22.03-py3.10"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha001-910b-ubuntu22.04-py3.10",
       "tags": [
-          "8.2.rc1.alpha001-910b-ubuntu22.04-py3.10",
-          "8.2.rc1.alpha001"
+        "8.2.rc1.alpha001-910b-ubuntu22.04-py3.10",
+        "8.2.rc1.alpha001"
       ]
     },
     {
       "path": "cann/8.2.rc1.alpha001-910b-openeuler22.03-py3.10",
       "tags": [
-          "8.2.rc1.alpha001-910b-openeuler22.03-py3.10"
+        "8.2.rc1.alpha001-910b-openeuler22.03-py3.10"
       ]
     },
     {
       "path": "cann/8.1.rc1-a3-ubuntu22.04-py3.10",
       "tags": [
-          "8.1.rc1-a3-ubuntu22.04-py3.10"
+        "8.1.rc1-a3-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/8.1.rc1-a3-ubuntu22.04-py3.11",
       "tags": [
-          "8.1.rc1-a3-ubuntu22.04-py3.11"
+        "8.1.rc1-a3-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.1.rc1-a3-openeuler22.03-py3.10",
       "tags": [
-          "8.1.rc1-a3-openeuler22.03-py3.10"
+        "8.1.rc1-a3-openeuler22.03-py3.10"
       ]
     },
     {
       "path": "cann/8.1.rc1-a3-openeuler22.03-py3.11",
       "tags": [
-          "8.1.rc1-a3-openeuler22.03-py3.11"
+        "8.1.rc1-a3-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.1.rc1-310p-ubuntu22.04-py3.10",
       "tags": [
-          "8.1.rc1-310p-ubuntu22.04-py3.10"
+        "8.1.rc1-310p-ubuntu22.04-py3.10"
       ]
     },
     {
       "path": "cann/8.1.rc1-310p-ubuntu22.04-py3.11",
       "tags": [
-          "8.1.rc1-310p-ubuntu22.04-py3.11"
+        "8.1.rc1-310p-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.1.rc1-310p-openeuler22.03-py3.10",
       "tags": [
-          "8.1.rc1-310p-openeuler22.03-py3.10"
+        "8.1.rc1-310p-openeuler22.03-py3.10"
       ]
     },
     {
       "path": "cann/8.1.rc1-310p-openeuler22.03-py3.11",
       "tags": [
-          "8.1.rc1-310p-openeuler22.03-py3.11"
+        "8.1.rc1-310p-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.1.rc1-910b-ubuntu22.04-py3.10",
       "tags": [
-          "8.1.rc1-910b-ubuntu22.04-py3.10",
-          "8.1.rc1"
+        "8.1.rc1-910b-ubuntu22.04-py3.10",
+        "8.1.rc1"
       ]
     },
     {
       "path": "cann/8.1.rc1-910b-ubuntu22.04-py3.11",
       "tags": [
-          "8.1.rc1-910b-ubuntu22.04-py3.11"
+        "8.1.rc1-910b-ubuntu22.04-py3.11"
       ]
     },
     {
       "path": "cann/8.1.rc1-910b-openeuler22.03-py3.10",
       "tags": [
-          "8.1.rc1-910b-openeuler22.03-py3.10"
+        "8.1.rc1-910b-openeuler22.03-py3.10"
       ]
     },
     {
       "path": "cann/8.1.rc1-910b-openeuler22.03-py3.11",
       "tags": [
-          "8.1.rc1-910b-openeuler22.03-py3.11"
+        "8.1.rc1-910b-openeuler22.03-py3.11"
       ]
     },
     {
       "path": "cann/8.1.rc1-910b-openeuler24.03-py3.10",
       "tags": [
-          "8.1.rc1-910b-openeuler24.03-py3.10"
+        "8.1.rc1-910b-openeuler24.03-py3.10"
       ]
     }
   ]
