@@ -162,6 +162,20 @@ RUN yum update -y && \
     && rm -rf /var/cache/yum \
     && rm -rf /tmp/*
 
+# Note: Install URMA (Unified RoCE Message Access) for distributed communication (aarch64 only)
+RUN if [ "${TARGETPLATFORM}" = "linux/arm64" ]; then \
+        yum install -y \
+            umdk-urma-lib \
+            umdk-urma-tools \
+            umdk-urma-bin \
+            ub-pkg-urma \
+            umdk-urma-devel \
+        && yum clean all \
+        && rm -rf /var/cache/yum; \
+    else \
+        echo "Non-arm64 platform, skipping URMA installation"; \
+    fi
+
 COPY --from=cann-installer /usr/local/python3.10.20 /usr/local/python3.10.20
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
 COPY --from=cann-installer /etc/Ascend /etc/Ascend

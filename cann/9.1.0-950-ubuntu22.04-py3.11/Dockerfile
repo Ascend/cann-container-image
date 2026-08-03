@@ -103,6 +103,8 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
 # Stage 3: Copy results from previous stages
 FROM ubuntu:22.04 AS official-ubuntu
 
+ARG TARGETPLATFORM
+
 # Python Environment variables
 ENV PATH=/usr/local/python3.11.15/bin:${PATH}
 ENV LD_LIBRARY_PATH=/usr/local/python3.11.15/lib:${LD_LIBRARY_PATH}
@@ -167,6 +169,22 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/tmp/* \
     && rm -rf /tmp/*
+
+# Note: Install URMA (Unified RoCE Message Access) for distributed communication (aarch64 only)
+RUN if [ "${TARGETPLATFORM}" = "linux/arm64" ]; then \
+        apt-get update && \
+        apt-get install -y --no-install-recommends libnl-3-dev libnl-genl-3-dev && \
+        wget --quiet https://mirrors.huaweicloud.com/ascend/archive/deb/unifiedbus/common/umdk-urma-26.06.0-B016.glibc217.aarch64.deb.tar.gz -O /tmp/umdk-urma.tar.gz && \
+        mkdir /tmp/umdk_pkgs && \
+        tar -mzxf /tmp/umdk-urma.tar.gz -C /tmp/umdk_pkgs && \
+        dpkg -i /tmp/umdk_pkgs/*.deb && \
+        ldconfig && \
+        apt-get clean && \
+        rm -rf /var/lib/apt/lists/* && \
+        rm -rf /tmp/*; \
+    else \
+        echo "Non-arm64 platform, skipping URMA installation"; \
+    fi
 
 COPY --from=cann-installer /usr/local/python3.11.15 /usr/local/python3.11.15
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
