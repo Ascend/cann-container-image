@@ -82,7 +82,7 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
         "linux/arm64") echo "aarch64" ;; \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
-    CANN_SHORT="${CANN_VERSION%.*}" && echo $CANN_SHORT && \
+    CANN_SHORT=$(echo "${CANN_VERSION}" | grep -oE '[0-9]+(\.[0-9]+)+' | head -1 | cut -d'.' -f1-3) && echo $CANN_SHORT && \
     CANN_TOOLKIT_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux/Ascend-cann-toolkit_${CANN_SHORT}_linux-${ARCH}.run && \
     CANN_OPS_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux/Ascend-cann-${SOC_VERSION}-ops_${CANN_SHORT}_linux-${ARCH}.run && \
     CANN_NNAL_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux/Ascend-cann-nnal_${CANN_SHORT}_linux-${ARCH}.run && \
