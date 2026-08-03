@@ -133,7 +133,8 @@ jobs:
         env:
           CANN_VERSION: ${{ inputs.cann_version }}
         run: |
-          echo "short_version=${CANN_VERSION%.*}" >> $GITHUB_OUTPUT
+          SHORT_VERSION=$(echo "${CANN_VERSION}" | grep -oE '[0-9]+(\.[0-9]+)+' | head -1 | cut -d'.' -f1-3)
+          echo "short_version=${SHORT_VERSION}" >> $GITHUB_OUTPUT
 
       - name: Build (PR check, no push)
         if: ${{ !inputs.push }}

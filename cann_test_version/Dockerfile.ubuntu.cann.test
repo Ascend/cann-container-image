@@ -82,7 +82,7 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
         "linux/arm64") echo "aarch64" ;; \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
-    CANN_SHORT="${CANN_VERSION%.*}" && echo $CANN_SHORT && \
+    CANN_SHORT=$(echo "${CANN_VERSION}" | grep -oE '[0-9]+(\.[0-9]+)+' | head -1 | cut -d'.' -f1-3) && echo $CANN_SHORT && \
     CANN_TOOLKIT_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux/Ascend-cann-toolkit_${CANN_SHORT}_linux-${ARCH}.run && \
     CANN_OPS_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux/Ascend-cann-${SOC_VERSION}-ops_${CANN_SHORT}_linux-${ARCH}.run && \
     CANN_NNAL_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux/Ascend-cann-nnal_${CANN_SHORT}_linux-${ARCH}.run && \
@@ -110,6 +110,8 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
 ARG OS_VERSION
 FROM ubuntu:${OS_VERSION} AS official-ubuntu
 
+ARG TARGETPLATFORM
+ARG SOC_VERSION
 
 ARG CANN_SHORT_VERSION=9.1.0
 ENV CANN_VERSION=${CANN_SHORT_VERSION}
@@ -179,6 +181,22 @@ RUN apt-get update \
     && rm -rf /var/tmp/* \
     && rm -rf /tmp/*
 
+
+# Note: Install URMA (unified bus) dependency packages for 950 chip on arm64, since 950 NPU requires URMA driver support
+RUN if [ "${TARGETPLATFORM}" = "linux/arm64" ] && [ "${SOC_VERSION}" = "950" ]; then \
+        apt-get update && \
+        apt-get install -y --no-install-recommends libnl-3-dev libnl-genl-3-dev && \
+        wget --quiet https://mirrors.huaweicloud.com/ascend/archive/deb/unifiedbus/common/umdk-urma-26.06.0-B016.glibc217.aarch64.deb.tar.gz -O /tmp/umdk-urma.tar.gz && \
+        mkdir /tmp/umdk_pkgs && \
+        tar -mzxf /tmp/umdk-urma.tar.gz -C /tmp/umdk_pkgs && \
+        dpkg -i /tmp/umdk_pkgs/*.deb && \
+        ldconfig && \
+        apt-get clean && \
+        rm -rf /var/lib/apt/lists/* && \
+        rm -rf /tmp/*; \
+    else \
+        echo "Non-950-arm64 platform, skipping URMA installation"; \
+    fi
 
 COPY --from=cann-installer /usr/local/python${PY_VERSION} /usr/local/python${PY_VERSION}
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
