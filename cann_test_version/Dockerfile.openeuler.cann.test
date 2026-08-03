@@ -107,6 +107,7 @@ ARG OS_VERSION
 FROM openeuler/openeuler:${OS_VERSION} AS official-openeuler
 
 ARG TARGETPLATFORM
+ARG SOC_VERSION
 ARG CANN_SHORT_VERSION=9.1.0
 ENV CANN_VERSION=${CANN_SHORT_VERSION}
 ARG PY_VERSION
@@ -170,6 +171,20 @@ RUN yum update -y && \
     && yum clean all \
     && rm -rf /var/cache/yum \
     && rm -rf /tmp/*
+
+# Note: Install URMA (unified bus) dependency packages for 950 chip on arm64, since 950 NPU requires URMA driver support
+RUN if [ "${TARGETPLATFORM}" = "linux/arm64" ] && [ "${SOC_VERSION}" = "950" ]; then \
+        yum install -y \
+            umdk-urma-lib \
+            umdk-urma-tools \
+            umdk-urma-bin \
+            ub-pkg-urma \
+            umdk-urma-devel \
+        && yum clean all \
+        && rm -rf /var/cache/yum; \
+    else \
+        echo "Non-950-arm64 platform, skipping URMA installation"; \
+    fi
 
 COPY --from=cann-installer /usr/local/python${PY_VERSION} /usr/local/python${PY_VERSION}
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
