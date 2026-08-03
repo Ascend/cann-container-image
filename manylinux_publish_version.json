@@ -1,6 +1,78 @@
 {
     "versions": [
         {
+            "path": "manylinux/9.1.0-a3-manylinux_2_34-py3.10",
+            "tags": [
+                "9.1.0-a3-manylinux_2_34-py3.10"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-a3-manylinux_2_34-py3.12",
+            "tags": [
+                "9.1.0-a3-manylinux_2_34-py3.12"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-a3-manylinux_2_34-py3.11",
+            "tags": [
+                "9.1.0-a3-manylinux_2_34-py3.11"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-950-manylinux_2_34-py3.10",
+            "tags": [
+                "9.1.0-950-manylinux_2_34-py3.10"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-950-manylinux_2_34-py3.12",
+            "tags": [
+                "9.1.0-950-manylinux_2_34-py3.12"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-950-manylinux_2_34-py3.11",
+            "tags": [
+                "9.1.0-950-manylinux_2_34-py3.11"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-910b-manylinux_2_34-py3.10",
+            "tags": [
+                "9.1.0-910b-manylinux_2_34-py3.10"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-910b-manylinux_2_34-py3.12",
+            "tags": [
+                "9.1.0-910b-manylinux_2_34-py3.12"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-910b-manylinux_2_34-py3.11",
+            "tags": [
+                "9.1.0-910b-manylinux_2_34-py3.11"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-310p-manylinux_2_34-py3.10",
+            "tags": [
+                "9.1.0-310p-manylinux_2_34-py3.10"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-310p-manylinux_2_34-py3.12",
+            "tags": [
+                "9.1.0-310p-manylinux_2_34-py3.12"
+            ]
+        },
+        {
+            "path": "manylinux/9.1.0-310p-manylinux_2_34-py3.11",
+            "tags": [
+                "9.1.0-310p-manylinux_2_34-py3.11"
+            ]
+        },
+        {
             "path": "manylinux/9.0.1-a3-manylinux_2_34-py3.10",
             "tags": [
                 "9.0.1-a3-manylinux_2_34-py3.10"
