@@ -29,7 +29,7 @@ Tags follow this format:
 | Field | Example Values | Description |
 |---|---|---|
 | `cann-version` | `9.1.0`, `9.0.1`, `9.1.0-beta.3`, `9.0.0`, `8.5.2`, etc. | CANN version number |
-| `chip-series` | `950`, `910`, `a3`, `310p` | Target Atlas chip series |
+| `chip-series` | `950`, `910`, `a3` | Target Atlas chip series |
 | `os` | `ubuntu22.04`, `openeuler24.03` | Base operating system |
 | `python-version` | `py3.10`, `py3.11`, `py3.12` | Python version |
 
