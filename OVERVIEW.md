@@ -151,8 +151,7 @@ docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 | Chip Series | Product Examples | Architecture |
 |---|---|---|
 | Atlas 950 | Atlas 950PR, Atlas 950DT | ARM64 / x86_64 |
-| Atlas 910 | Atlas 800 | ARM64 / x86_64 |
-| Atlas 910B | Atlas 800T A2, Atlas 900 A2 PoD | ARM64 / x86_64 |
+| Atlas 910 | Atlas 800T A2, Atlas 900 A2 PoD，Atlas 800 | ARM64 / x86_64 |
 | Atlas A3 | Atlas 800T A3 | ARM64 / x86_64 |
 | Atlas 310P | Atlas 300I Pro, Atlas 300V Pro | ARM64 / x86_64 |
 
