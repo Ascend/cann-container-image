@@ -30,7 +30,7 @@ CANN 镜像的所有 Tag 遵循以下格式：
 
 ### 最新版本 CANN 9.1.0
 
-如下所示是CANN最新发布的 9.1.0 版本的所有镜像，历史版本所有的 Tag 请参考 [Supported Tags](https://github.com/Ascend/cann-container-image/tree/main/cann)
+如下所示是CANN最新发布的 9.1.0 版本的所有镜像，历史版本所有的 Tag 请参考 [Supported Tags](https://github.com/Ascend/cann-container-image/tree/main/supported_tags.md)
 
 | Tag | Dockerfile | 镜像内容 |
 |---|---|----|

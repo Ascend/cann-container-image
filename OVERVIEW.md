@@ -12,31 +12,32 @@ For the latest CANN images, please go to the [Image Download](https://www.hiasce
 
 ---
 
-## Image Categories
+## Supported Tags and Dockerfile Links
 
-### CANN Base Container Images
+### Tag Naming Rules
 
-CANN base images are built on the Ubuntu and openEuler operating systems and include CANN (Toolkit development kit, Ops operator package, and NNAL acceleration library) along with a Python environment.
-
-#### Tag Format
-
-Tags follow this format:
+CANN Tags follow this pattern:
 
 ```
-<cann-version>-<chip-series>-<os>-<python-version>
+<cann_version>-<chip_series>-<os>-<python_version>
 ```
 
 | Field | Example Values | Description |
 |---|---|---|
 | `cann-version` | `9.1.0`, `9.0.1`, `9.1.0-beta.3`, `9.0.0`, `8.5.2`, etc. | CANN version number |
-| `chip-series` | `950`, `910`, `a3` | Target Atlas chip series |
+| `chip-series` | `950`, `a3`, `910b`, `910`, `310p` | Target Atlas chip series |
 | `os` | `ubuntu22.04`, `openeuler24.03` | Base operating system |
 | `python-version` | `py3.10`, `py3.11`, `py3.12` | Python version |
+| `-devel` | `-devel` | Optional suffix, representing a development image |
 
 
-#### CANN 9.1.0 Base Container Images: Tags & Dockerfile Links
-| Tag | Dockerfile | Image Contents |
-|-----|------------|----------|
+
+### LATEST CANN 9.1.0
+
+For tags associated with historical versions, please refer to [Supported Tags](https://github.com/Ascend/cann-container-image/tree/main/supported_tags.md).
+
+| Tag | Dockerfile | content |
+|---|---|---|
 | [`9.1.0-310p-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-ubuntu22.04-py3.12/Dockerfile) | toolkit/ops/nnal |
 | [`9.1.0-310p-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-openeuler24.03-py3.12/Dockerfile) | toolkit/ops/nnal |
 | [`9.1.0-910-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910-ubuntu22.04-py3.12/Dockerfile) | toolkit/ops/nnal |
@@ -47,30 +48,6 @@ Tags follow this format:
 | [`9.1.0-950-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-950-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-950-openeuler24.03-py3.12/Dockerfile) | toolkit/ops/nnal |
 | [`9.1.0-a3-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-a3-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-a3-ubuntu22.04-py3.12/Dockerfile) | toolkit/ops/nnal |
 | [`9.1.0-a3-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-a3-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-a3-openeuler24.03-py3.12/Dockerfile) | toolkit/ops/nnal |
-
-> Note: On aarch64, the `9.1.0-950-*` images additionally include URMA (Unified RoCE Message Access) for RoCE-based distributed communication; x86_64 images do not include it.
-
-
-### CANN Development Container Images
-
-CANN Development Container Images are built on top of the base images. In addition to the CANN toolkit suite and Python runtime environment, they come with extra OS utilities (such as zip, vim, tree, etc.), selected Python plugins (such as wheel, pyyaml, setuptools, etc.), and GoogleTest pre-installed, enabling you to quickly perform operator development on top of these images.
-
-#### Tag Format
-
-Tags follow this format:
-
-```
-<cann_base_tag>-devel
-```
-
-| Field | Example Values | Description |
-|---|---|---|
-| `cann_base_tag` | `9.1.0-310p-ubuntu22.04-py3.12` | CANN base image tag |
-
-
-#### CANN 9.1.0 Development Container Images: Tags & Dockerfile Links
-| Tag | Dockerfile | Image Contents |
-|-----|------------|----------|
 | [`9.1.0-310p-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | [`9.1.0-310p-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | [`9.1.0-910-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
