@@ -9,9 +9,17 @@ CANN（Compute Architecture for Neural Networks）是华为针对 AI 场景推�
 ## 镜像下载
 
 CANN 最新版本 9.1.0 已经发布，请前往 [镜像下载](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0) 获取。
-CANN 基础镜像基于 Ubuntu 和 openEuler 操作系统构建，包含 CANN（Toolkit 开发套件、ops 算子包、NNAL 加速库）和 Python 环境。
 
 ---
+
+## CANN 基础镜像 与 CANN 开发版镜像
+
+CANN 基础镜像基于 Ubuntu 和 openEuler 操作系统构建，包含 CANN（Toolkit 开发套件、ops 算子包、NNAL 加速库）和 Python 环境。
+
+CANN 开发版镜像基于 CANN 基础镜像构建，除 CANN 工具包和 Python 环境外，额外安装了部分操作系统工具（如 zip、vim、tree 等）、部分 Python 插件（如 wheel、pyyaml、setuptools 等）和 googletest。
+
+---
+
 ## 支持的 Tags 及 Dockerfile 链接
 
 ### Tag 规范

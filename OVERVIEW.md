@@ -10,7 +10,13 @@ CANN (Compute Architecture for Neural Networks) is a heterogeneous computing arc
 
 CANN 9.1.0 has been released. Please visit the [Mirror Download](https://quay.io/repository/ascend/cann?tab=tags) page to obtain it.
 
+---
+
+## CANN Base Container Images && CANN Development Container Images
+
 The CANN base images are built on Ubuntu and openEuler operating systems. They include the CANN toolkit (Toolkit development suite, ops operator package, NNAL acceleration library) and the Python environment.
+
+CANN Development Container Images are built on CANN Base Container Images. In addition to the CANN toolkit suite and Python runtime environment, they come with extra OS utilities(such as zip, vim, tree, etc.), selected Python plugins(such as wheel, pyyaml, setuptools, etc.), and GoogleTest pre-installed.
 
 ---
 
