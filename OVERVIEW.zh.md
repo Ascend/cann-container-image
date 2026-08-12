@@ -10,15 +10,11 @@ CANN（Compute Architecture for Neural Networks）是华为针对 AI 场景推�
 最新 CANN 镜像请前往 [镜像下载](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884) 页面下载。目前最新版本为 9.1.0 。
 
 ---
+## 支持的 Tags 及 Dockerfile 链接
 
-## 镜像分类
+### Tag 规范
 
-### CANN 基础镜像
-CANN 基础镜像基于 Ubuntu 和 openEuler 操作系统构建，包含 CANN（Toolkit 开发套件、Ops 算子包、NNAL 加速库）和 Python 环境。
-
-#### Tag 规范
-
-Tag遵循以下格式：
+CANN 镜像的所有 Tag 遵循以下格式：
 
 ```
 <cann版本>-<芯片系列>-<操作系统>-<python版本>
@@ -26,15 +22,18 @@ Tag遵循以下格式：
 
 | 字段 | 示例值 | 说明 |
 |---|---|---|
-| `cann版本` | `9.1.0`、`9.0.1`、`9.1.0-beta.3`、`9.0.0`、`8.5.2` 等 | CANN 版本号 |
-| `芯片系列` | `950`、`910`、`910b`、`a3`、`310p` | 目标昇腾芯片系列 |
+| `cann版本` | `9.1.0`, `9.0.1`, `9.1.0-beta.3`, `9.0.0`, `8.5.2`, etc. | CANN 版本号 |
+| `芯片系列` | `950`, `a3`, `910b`, `910`, `310p` | 目标昇腾芯片系列 |
 | `操作系统` | `ubuntu22.04`、`openeuler24.03` | 基础操作系统 |
 | `python版本` | `py3.10`、`py3.11`、`py3.12` | Python 版本 |
+| `-devel` | `-devel` | 开发态镜像所具有的特殊标记后缀 |
 
+### 最新版本 CANN 9.1.0
 
-#### CANN 9.1.0 基础镜像 tag 及 Dockerfile 链接
+如下所示是CANN最新发布的 9.1.0 版本的所有镜像，历史版本所有的 Tag 请参考 [Supported Tags](https://github.com/Ascend/cann-container-image/tree/main/cann)
+
 | Tag | Dockerfile | 镜像内容 |
-|-----|------------|----------|
+|---|---|----|
 | [`9.1.0-310p-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-ubuntu22.04-py3.12/Dockerfile) | toolkit/ops/nnal |
 | [`9.1.0-310p-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-openeuler24.03-py3.12/Dockerfile) | toolkit/ops/nnal |
 | [`9.1.0-910-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910-ubuntu22.04-py3.12/Dockerfile) | toolkit/ops/nnal |
@@ -45,30 +44,6 @@ Tag遵循以下格式：
 | [`9.1.0-950-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-950-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-950-openeuler24.03-py3.12/Dockerfile) | toolkit/ops/nnal |
 | [`9.1.0-a3-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-a3-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-a3-ubuntu22.04-py3.12/Dockerfile) | toolkit/ops/nnal |
 | [`9.1.0-a3-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-a3-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-a3-openeuler24.03-py3.12/Dockerfile) | toolkit/ops/nnal |
-
-> 注：在 aarch64 架构下，`9.1.0-950-*` 镜像额外包含 URMA（Unified RoCE Message Access，统一 RoCE 消息访问）用于 RoCE 分布式通信；x86_64 镜像不包含。
-
-
-### CANN 开发版镜像
-
-CANN 开发版镜像在基础镜像之上，额外安装了操作系统工具（如 zip、vim、tree 等）、部分 Python 插件（如 wheel、pyyaml、setuptools 等）和 googletest，可基于此镜像快速进行算子开发。
-
-#### Tag 规范
-
-Tag 遵循以下格式：
-
-```
-<cann_base_tag>-devel
-```
-
-| 字段 | 示例值 | 说明 |
-|---|---|---|
-| `cann_base_tag` | `9.1.0-310p-ubuntu22.04-py3.12` | CANN基础镜像tag |
-
-
-#### CANN 9.1.0 开发版镜像tag及Dockerfile链接
-| Tag | Dockerfile | 镜像内容 |
-|-----|------------|----------|
 | [`9.1.0-310p-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | [`9.1.0-310p-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-openeuler24.03-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
 | [`9.1.0-910-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit/ops/nnal/os-tool/Python-plugin/googletest |
