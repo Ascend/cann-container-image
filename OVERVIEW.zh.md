@@ -7,7 +7,9 @@ CANN（Compute Architecture for Neural Networks）是华为针对 AI 场景推�
 ---
 
 ## 镜像下载
-最新 CANN 镜像请前往 [镜像下载](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884) 页面下载。目前最新版本为 9.1.0 。
+
+CANN 最新版本 9.1.0 已经发布，请前往 [镜像下载] 获取。
+CANN 基础镜像基于 Ubuntu 和 openEuler 操作系统构建，包含 CANN（Toolkit 开发套件、ops 算子包、NNAL 加速库）和 Python 环境。
 
 ---
 ## 支持的 Tags 及 Dockerfile 链接
@@ -116,20 +118,6 @@ export CANN_TAG=9.1.0-a3-ubuntu22.04-py3.12
 #需安装buildx
 docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 ```
-
----
-
-## 支持的硬件
-
-| 芯片系列 | 产品示例 | 架构 |
-|---|---|---|
-| 昇腾 950 | Ascend 950PR、Ascend 950DT |  ARM64 / x86_64  |
-| 昇腾 910 | Atlas 800 | ARM64 / x86_64 |
-| 昇腾 910B | Atlas 800T A2、Atlas 900 A2 PoD | ARM64 / x86_64 |
-| 昇腾 A3 | Atlas 800T A3 | ARM64 / x86_64 |
-| 昇腾 310P | Atlas 300I Pro、Atlas 300V Pro | ARM64 / x86_64 |
-
-更多硬件支持请访问[昇腾产品形态说明](https://www.hiascend.com/document/detail/zh/AscendFAQ/ProduTech/productform/hardwaredesc_0001.html)
 
 ---
 

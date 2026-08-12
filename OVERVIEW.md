@@ -8,7 +8,9 @@ CANN (Compute Architecture for Neural Networks) is a heterogeneous computing arc
 
 ## Image Download
 
-For the latest CANN images, please go to the [Image Download](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884) page to download them. The latest version is 9.1.0.
+CANN 9.1.0 has been released. Please visit the [Mirror Download](https://quay.io/repository/ascend/cann?tab=tags) page to obtain it.
+
+The CANN base images are built on Ubuntu and openEuler operating systems. They include the CANN toolkit (Toolkit development suite, ops operator package, NNAL acceleration library) and the Python environment.
 
 ---
 
@@ -74,7 +76,7 @@ An Atlas NPU driver compatible with the CANN version inside the container must b
 ### Run a CANN Container
 
 ```bash
-export CANN_REPO=swr.cn-south-1.myhuaweicloud.com/ascendhub/cann
+export CANN_REPO=quay.io/ascend/cann
 export CANN_TAG=9.1.0-a3-ubuntu22.04-py3.12
 
 docker run \
@@ -93,7 +95,7 @@ docker run \
 ### Run a CANN Container on 950 Series aarch64 Products
 
 ```bash
-export CANN_REPO=swr.cn-south-1.myhuaweicloud.com/ascendhub/cann
+export CANN_REPO=quay.io/ascend/cann
 export CANN_TAG=9.1.0-950-openeuler24.03-py3.12
 
 docker run \
@@ -120,18 +122,6 @@ export CANN_TAG=9.1.0-a3-ubuntu22.04-py3.12
 # need to install buildx
 docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 ```
-
----
-
-## Supported Hardware
-
-| Chip Series | Product Examples | Architecture |
-|---|---|---|
-| Atlas 950 | Atlas 950PR, Atlas 950DT | ARM64 / x86_64 |
-| Atlas 910 | Atlas 800T A2, Atlas 900 A2 PoD，Atlas 800 | ARM64 / x86_64 |
-| Atlas A3 | Atlas 800T A3 | ARM64 / x86_64 |
-
-For more hardware support, please visit [Atlas Product Form Descriptions](https://www.hiascend.com/document/detail/zh/AscendFAQ/ProduTech/productform/hardwaredesc_0001.html)
 
 ---
 
