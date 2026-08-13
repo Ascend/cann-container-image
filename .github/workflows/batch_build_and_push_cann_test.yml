@@ -8,10 +8,10 @@ on:
   workflow_dispatch:
     inputs:
       cann_version:
-        description: 'CANN Version (e.g. 9.1.0.B120)'
+        description: 'CANN Version (e.g. 9.1.0-20260731131545)'
         required: true
         type: string
-        default: '9.1.0.B120'
+        default: '9.1.0-20260731131545'
       py_version:
         description: 'Python Version (e.g. 3.12.13)'
         required: true
@@ -27,6 +27,16 @@ on:
         required: true
         type: string
         default: '24.03-lts-sp4'
+      chips:
+        description: 'Chips to build, comma separated. Default all. Options: a3,910b,950,310p'
+        required: false
+        type: string
+        default: 'all'
+      build_os:
+        description: 'OS to build, comma separated. Default all. Options: ubuntu,openeuler'
+        required: false
+        type: string
+        default: 'all'
 
 concurrency:
   group: batch-cann-test
@@ -51,21 +61,32 @@ jobs:
           PY_VERSION: ${{ inputs.py_version }}
           UBUNTU_OS_VERSION: ${{ inputs.os_version_ubuntu }}
           OPENEULER_OS_VERSION: ${{ inputs.os_version_openeuler }}
+          CHIPS: ${{ inputs.chips }}
+          BUILD_OS: ${{ inputs.build_os }}
         run: |
-          CANN_VERSION="${CANN_VERSION:-9.1.0.B120}"
+          CANN_VERSION="${CANN_VERSION:-9.1.0-20260731131545}"
           PY_VERSION="${PY_VERSION:-3.12.13}"
           PY_SHORT="${PY_VERSION%.*}"
           UBUNTU_OS_VERSION="${UBUNTU_OS_VERSION:-24.04}"
           OPENEULER_OS_VERSION="${OPENEULER_OS_VERSION:-24.03-lts-sp4}"
-          TAG_DATE=$(date +%Y.%m.%d)
+
+          # B version (e.g. a version ending in .B<digits>) uses today's date as the tag prefix; otherwise use the CANN version (dash -> underscore)
+          if echo "${CANN_VERSION}" | grep -qE '\.B[0-9]+$'; then
+            VERSION_MARKER=$(date +%Y.%m.%d)
+          else
+            VERSION_MARKER="${CANN_VERSION//-/_}"
+          fi
 
           MATRIX_JSON=$(jq -n -c \
-            --arg cann_version "$CANN_VERSION" \
+            --arg version_marker "$VERSION_MARKER" \
             --arg py_short "$PY_SHORT" \
             --arg ubuntu_os "$UBUNTU_OS_VERSION" \
             --arg openeuler_os "$OPENEULER_OS_VERSION" \
-            --arg tag_date "$TAG_DATE" \
+            --arg chips "${CHIPS}" \
+            --arg build_os "${BUILD_OS}" \
             -f /dev/stdin <<'JQ'
+            def selected($sel): ($sel | split(",") | map(gsub("^[[:space:]]+|[[:space:]]+$";"") | select(. != "")));
+            def all_selected($sel): (($sel | length) == 0) or (($sel | ascii_downcase) == "all");
             {
               include: [
                 {chip:"a3",   soc:"A3",   os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},
@@ -76,7 +97,10 @@ jobs:
                 {chip:"950",  soc:"950",  os:"openeuler", dockerfile:"Dockerfile.openeuler.cann.test", os_version:$openeuler_os},
                 {chip:"310p", soc:"310p", os:"ubuntu",    dockerfile:"Dockerfile.ubuntu.cann.test",   os_version:$ubuntu_os},
                 {chip:"310p", soc:"310p", os:"openeuler", dockerfile:"Dockerfile.openeuler.cann.test", os_version:$openeuler_os}
-              ] | map(. + {tag: ($tag_date + "-" + .chip + "-" + .os + .os_version + "-py" + $py_short)})
+              ]
+              | map(. as $item | select(all_selected($chips) or (selected($chips) | index($item.chip) != null)))
+              | map(. as $item | select(all_selected($build_os) or (selected($build_os) | index($item.os) != null)))
+              | map(. + {tag: ($version_marker + "-" + .chip + "-" + .os + .os_version + "-py" + $py_short)})
             }
           JQ
           )

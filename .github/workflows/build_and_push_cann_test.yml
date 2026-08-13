@@ -56,7 +56,7 @@ on:
         description: 'CANN version'
         required: true
         type: string
-        default: '9.1.0.B120'
+        default: '9.1.0-20260731131545'
       py_version:
         description: 'Python version'
         required: true
