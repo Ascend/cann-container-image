@@ -74,7 +74,7 @@ RUN pip install --no-cache-dir \
         attrs cython numpy decorator sympy cffi pyyaml pathlib2 \
         psutil protobuf==3.20 scipy requests absl-py
 
-ARG CANN_VERSION=9.1.0.B120
+ARG CANN_VERSION=9.1.0-20260731131545
 ARG SOC_VERSION=A3
 # Note: Get the download link according to ARCH and download the installation package
 RUN ARCH=$(case "${TARGETPLATFORM}" in \
