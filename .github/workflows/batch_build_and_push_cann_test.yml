@@ -18,15 +18,15 @@ on:
         type: string
         default: '3.12.13'
       os_version_ubuntu:
-        description: 'Ubuntu OS Version (e.g. 24.04)'
+        description: 'Ubuntu OS Version (e.g. 22.04)'
         required: true
         type: string
-        default: '24.04'
+        default: '22.04'
       os_version_openeuler:
-        description: 'openEuler OS Version (e.g. 24.03-lts-sp4)'
+        description: 'openEuler OS Version (e.g. 24.03)'
         required: true
         type: string
-        default: '24.03-lts-sp4'
+        default: '24.03'
       chips:
         description: 'Chips to build, comma separated. Default all. Options: a3,910b,950,310p'
         required: false
@@ -67,8 +67,8 @@ jobs:
           CANN_VERSION="${CANN_VERSION:-9.1.0-20260731131545}"
           PY_VERSION="${PY_VERSION:-3.12.13}"
           PY_SHORT="${PY_VERSION%.*}"
-          UBUNTU_OS_VERSION="${UBUNTU_OS_VERSION:-24.04}"
-          OPENEULER_OS_VERSION="${OPENEULER_OS_VERSION:-24.03-lts-sp4}"
+          UBUNTU_OS_VERSION="${UBUNTU_OS_VERSION:-22.04}"
+          OPENEULER_OS_VERSION="${OPENEULER_OS_VERSION:-24.03}"
 
           # B version (e.g. a version ending in .B<digits>) uses today's date as the tag prefix; otherwise use the CANN version (dash -> underscore)
           if echo "${CANN_VERSION}" | grep -qE '\.B[0-9]+$'; then

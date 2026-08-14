@@ -51,7 +51,7 @@ on:
         description: 'CANN unique tag'
         required: true
         type: string
-        default: '2026.07.29-a3-ubuntu24.04-py3.12'
+        default: '2026.07.29-a3-ubuntu22.04-py3.12'
       cann_version:
         description: 'CANN version'
         required: true
@@ -66,7 +66,7 @@ on:
         description: 'OS version'
         required: true
         type: string
-        default: '24.04'
+        default: '22.04'
       soc:
         description: 'SOC version (CANN package naming)'
         required: true
