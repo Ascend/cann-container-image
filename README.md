@@ -4,5 +4,5 @@ This branch is used for building CANN Daily images for CICD integration testing 
 
 ## Supported Operating Systems
 
-- Ubuntu 24.04
-- openEuler 24.03-lts-sp4
+- Ubuntu 22.04
+- openEuler 24.03
