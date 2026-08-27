@@ -1,41 +1,17 @@
 {
   "versions": [
-    // {
-    //   "path": "cann/9.1.0-310p-ubuntu22.04-py3.10",
-    //   "tags": [
-    //     "9.1.0-310p-ubuntu22.04-py3.10"
-    //   ]
-    // },
     {
       "path": "cann/9.1.0-310p-ubuntu22.04-py3.11",
       "tags": [
         "9.1.0-310p-ubuntu22.04-py3.11"
       ]
     },
-    // {
-    //   "path": "cann/9.1.0-310p-ubuntu22.04-py3.12",
-    //   "tags": [
-    //     "9.1.0-310p-ubuntu22.04-py3.12"
-    //   ]
-    // },
-    // {
-    //   "path": "cann/9.1.0-310p-openeuler24.03-py3.10",
-    //   "tags": [
-    //     "9.1.0-310p-openeuler24.03-py3.10"
-    //   ]
-    // },
     {
       "path": "cann/9.1.0-310p-openeuler24.03-py3.11",
       "tags": [
         "9.1.0-310p-openeuler24.03-py3.11"
       ]
     },
-    // {
-    //   "path": "cann/9.1.0-310p-openeuler24.03-py3.12",
-    //   "tags": [
-    //     "9.1.0-310p-openeuler24.03-py3.12"
-    //   ]
-    // },
     {
       "path": "cann/9.1.0-910-ubuntu22.04-py3.10",
       "tags": [
@@ -48,12 +24,6 @@
         "9.1.0-910-ubuntu22.04-py3.11"
       ]
     },
-    // {
-    //   "path": "cann/9.1.0-910-ubuntu22.04-py3.12",
-    //   "tags": [
-    //     "9.1.0-910-ubuntu22.04-py3.12"
-    //   ]
-    // },
     {
       "path": "cann/9.1.0-910-openeuler24.03-py3.10",
       "tags": [
@@ -66,12 +36,6 @@
         "9.1.0-910-openeuler24.03-py3.11"
       ]
     },
-    // {
-    //   "path": "cann/9.1.0-910-openeuler24.03-py3.12",
-    //   "tags": [
-    //     "9.1.0-910-openeuler24.03-py3.12"
-    //   ]
-    // },
     {
       "path": "cann/9.1.0-910b-ubuntu22.04-py3.10",
       "tags": [
@@ -84,12 +48,6 @@
         "9.1.0-910b-ubuntu22.04-py3.11"
       ]
     },
-    // {
-    //   "path": "cann/9.1.0-910b-ubuntu22.04-py3.12",
-    //   "tags": [
-    //     "9.1.0-910b-ubuntu22.04-py3.12"
-    //   ]
-    // },
     {
       "path": "cann/9.1.0-910b-openeuler24.03-py3.10",
       "tags": [
@@ -102,12 +60,6 @@
         "9.1.0-910b-openeuler24.03-py3.11"
       ]
     },
-    // {
-    //   "path": "cann/9.1.0-910b-openeuler24.03-py3.12",
-    //   "tags": [
-    //     "9.1.0-910b-openeuler24.03-py3.12"
-    //   ]
-    // },
     {
       "path": "cann/9.1.0-a3-ubuntu22.04-py3.10",
       "tags": [
@@ -120,12 +72,6 @@
         "9.1.0-a3-ubuntu22.04-py3.11"
       ]
     },
-    // {
-    //   "path": "cann/9.1.0-a3-ubuntu22.04-py3.12",
-    //   "tags": [
-    //     "9.1.0-a3-ubuntu22.04-py3.12"
-    //   ]
-    // },
     {
       "path": "cann/9.1.0-a3-openeuler24.03-py3.10",
       "tags": [
@@ -138,12 +84,6 @@
         "9.1.0-a3-openeuler24.03-py3.11"
       ]
     },
-    // {
-    //   "path": "cann/9.1.0-a3-openeuler24.03-py3.12",
-    //   "tags": [
-    //     "9.1.0-a3-openeuler24.03-py3.12"
-    //   ]
-    // },
     {
       "path": "cann/9.1.0-950-ubuntu22.04-py3.10",
       "tags": [
@@ -156,12 +96,6 @@
         "9.1.0-950-ubuntu22.04-py3.11"
       ]
     },
-    // {
-    //   "path": "cann/9.1.0-950-ubuntu22.04-py3.12",
-    //   "tags": [
-    //     "9.1.0-950-ubuntu22.04-py3.12"
-    //   ]
-    // },
     {
       "path": "cann/9.1.0-950-openeuler24.03-py3.10",
       "tags": [
@@ -174,12 +108,6 @@
         "9.1.0-950-openeuler24.03-py3.11"
       ]
     },
-    // {
-    //   "path": "cann/9.1.0-950-openeuler24.03-py3.12",
-    //   "tags": [
-    //     "9.1.0-950-openeuler24.03-py3.12"
-    //   ]
-    // },
     {
       "path": "cann/9.0.1-310p-ubuntu22.04-py3.10",
       "tags": [
