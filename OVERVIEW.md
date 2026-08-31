@@ -111,6 +111,7 @@ docker run \
     --device /dev/hisi_hdc \
     --device /dev/ummu \
     --device /dev/uburma \
+    -v /dev/log:/dev/log \
     -v /usr/local/dcmi:/usr/local/dcmi \
     -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi \
     -v /usr/local/Ascend/driver/lib64/:/usr/local/Ascend/driver/lib64/ \
