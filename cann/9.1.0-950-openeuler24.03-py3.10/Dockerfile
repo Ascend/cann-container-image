@@ -165,6 +165,7 @@ RUN yum update -y && \
 # Note: Install URMA (Unified RoCE Message Access) for distributed communication (aarch64 only)
 RUN if [ "${TARGETPLATFORM}" = "linux/arm64" ]; then \
         yum install -y \
+            rsyslog \
             umdk-urma-lib \
             umdk-urma-tools \
             umdk-urma-bin \
@@ -174,6 +175,24 @@ RUN if [ "${TARGETPLATFORM}" = "linux/arm64" ]; then \
         && rm -rf /var/cache/yum; \
     else \
         echo "Non-arm64 platform, skipping URMA installation"; \
+    fi
+
+RUN if [ "${TARGETPLATFORM}" = "linux/arm64" ]; then \
+        mkdir -p /var/log/umdk && \
+        printf '%s\n' \
+            'module(load="imuxsock" SysSock.Name="/dev/log")' \
+            '$FileCreateMode 0644' \
+            '$DirCreateMode 0755' \
+            ':msg, contains, "[liburma]"  -/var/log/umdk/urma.log' \
+            '& stop' \
+            ':msg, contains, "[libuvs]"   -/var/log/umdk/uvs.log' \
+            '& stop' \
+            ':msg, contains, "[URPC_LOG"  -/var/log/umdk/urpc.log' \
+            '& stop' \
+            ':msg, contains, "[UMQ"       -/var/log/umdk/umq.log' \
+            '& stop' \
+            '*.*                          -/var/log/umdk/umdk.log' \
+            '' > /etc/rsyslog.conf; \
     fi
 
 COPY --from=cann-installer /usr/local/python3.10.20 /usr/local/python3.10.20
@@ -202,4 +221,5 @@ ENTRYPOINT ["/bin/bash", "-c", "\
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     source /usr/local/Ascend/cann-9.1.0/share/info/ascendnpu-ir/bin/set_env.sh && \
     source /usr/local/Ascend/nnal/atb/set_env.sh --cxx_abi=${ATB_CXX_ABI:-1} && \
+    if [ -x /usr/sbin/rsyslogd ]; then nohup /usr/sbin/rsyslogd >/dev/null 2>&1 & for i in $(seq 1 50); do [ -S /dev/log ] && break; sleep 0.1; done; fi; \
     exec \"$@\"", "--"]
