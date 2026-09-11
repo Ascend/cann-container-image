@@ -162,6 +162,24 @@ RUN yum update -y && \
     && rm -rf /var/cache/yum \
     && rm -rf /tmp/*
 
+{% if item.cann_chip == "950" %}
+# Note: Install URMA (Unified RoCE Message Access) for distributed communication (aarch64 only)
+RUN if [ "${TARGETPLATFORM}" = "linux/arm64" ]; then \
+        yum install -y \
+            rsyslog \
+            umdk-urma-lib \
+            umdk-urma-tools \
+            umdk-urma-bin \
+            ub-pkg-urma \
+            umdk-urma-devel \
+        && yum clean all \
+        && rm -rf /var/cache/yum \
+        && sed -i 's|SysSock.Use="off"|SysSock.Name="/dev/log"|' /etc/rsyslog.conf; \
+    else \
+        echo "Non-arm64 platform, skipping URMA installation"; \
+    fi
+
+{% endif %}
 COPY --from=cann-installer /usr/local/python{{ item.py_latest_version }} /usr/local/python{{ item.py_latest_version }}
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
 COPY --from=cann-installer /etc/Ascend /etc/Ascend
@@ -188,5 +206,6 @@ ENTRYPOINT ["/bin/bash", "-c", "\
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     source /usr/local/Ascend/cann-{{ item.cann_version }}/share/info/ascendnpu-ir/bin/set_env.sh && \
     source /usr/local/Ascend/nnal/atb/set_env.sh --cxx_abi=${ATB_CXX_ABI:-1} && \
-    exec \"$@\"", "--"]
+{% if item.cann_chip == "950" %}    if [ -x /usr/sbin/rsyslogd ]; then nohup /usr/sbin/rsyslogd >/dev/null 2>&1 & for i in $(seq 1 50); do [ -S /dev/log ] && break; sleep 0.1; done; fi; \
+{% endif %}    exec \"$@\"", "--"]
 

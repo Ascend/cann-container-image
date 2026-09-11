@@ -25,10 +25,11 @@ ALPHA_DICT = {
     "9.0.0-beta.1": "9.0.T2",
     "9.0.0-beta.2": "9.0.T511",
     "9.1.0-beta.1": "9.1.T1",
-    "9.1.0-beta.3": "9.1.T6"
+    "9.1.0-beta.3": "9.1.T6",
+    "9.2.0-beta.1": "9.2.T1"
 }
 
-env = Environment(loader=FileSystemLoader('tools/template'))
+env = Environment(loader=FileSystemLoader('tools/template'), trim_blocks=True, lstrip_blocks=True)
 
 def get_python_download_url(version): 
     try:
@@ -46,7 +47,8 @@ def get_python_download_url(version):
         exit(1)
         
     py_installer_package = "Python-" + py_latest_version
-    py_installer_url = os.path.join("https://repo.huaweicloud.com/python/", py_latest_version, py_installer_package + ".tgz")
+    #py_installer_url = os.path.join("https://repo.huaweicloud.com/python/", py_latest_version, py_installer_package + ".tgz")
+    py_installer_url = f"https://repo.huaweicloud.com/python/{py_latest_version}/{py_installer_package}.tgz"
     return py_installer_package, py_installer_url, py_latest_version
 
 def get_cann_download_url(cann_chip, version):

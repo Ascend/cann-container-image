@@ -168,6 +168,24 @@ RUN apt-get update \
     && rm -rf /var/tmp/* \
     && rm -rf /tmp/*
 
+{% if item.cann_chip == "950" %}
+# Note: Install URMA (Unified RoCE Message Access) for distributed communication (aarch64 only)
+RUN if [ "${TARGETPLATFORM}" = "linux/arm64" ]; then \
+        apt-get update && \
+        apt-get install -y --no-install-recommends libnl-3-dev libnl-genl-3-dev rsyslog && \
+        wget --quiet https://mirrors.huaweicloud.com/ascend/archive/deb/unifiedbus/common/umdk-urma-26.06.0-B016.glibc217.aarch64.deb.tar.gz -O /tmp/umdk-urma.tar.gz && \
+        mkdir /tmp/umdk_pkgs && \
+        tar -mzxf /tmp/umdk-urma.tar.gz -C /tmp/umdk_pkgs && \
+        dpkg -i /tmp/umdk_pkgs/*.deb && \
+        ldconfig && \
+        apt-get clean && \
+        rm -rf /var/lib/apt/lists/* && \
+        rm -rf /tmp/*; \
+    else \
+        echo "Non-arm64 platform, skipping URMA installation"; \
+    fi
+
+{% endif %}
 COPY --from=cann-installer /usr/local/python{{ item.py_latest_version }} /usr/local/python{{ item.py_latest_version }}
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
 COPY --from=cann-installer /etc/Ascend /etc/Ascend
@@ -188,5 +206,6 @@ ENTRYPOINT ["/bin/bash", "-c", "\
     source /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     source /usr/local/Ascend/cann-{{ item.cann_version }}/share/info/ascendnpu-ir/bin/set_env.sh && \
     source /usr/local/Ascend/nnal/atb/set_env.sh --cxx_abi=${ATB_CXX_ABI:-1}&& \
-    exec \"$@\"", "--"]
+{% if item.cann_chip == "950" %}    if [ -x /usr/sbin/rsyslogd ]; then nohup /usr/sbin/rsyslogd >/dev/null 2>&1 & for i in $(seq 1 50); do [ -S /dev/log ] && break; sleep 0.1; done; fi; \
+{% endif %}    exec \"$@\"", "--"]
 

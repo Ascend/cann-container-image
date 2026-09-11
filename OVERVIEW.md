@@ -8,7 +8,7 @@ CANN (Compute Architecture for Neural Networks) is a heterogeneous computing arc
 
 ## Image Download
 
-CANN 9.1.0 has been released. Please visit the [Mirror Download](https://quay.io/repository/ascend/cann?tab=tags) page to obtain it.
+CANN 9.1.1 has been released. Please visit the [Mirror Download](https://quay.io/repository/ascend/cann?tab=tags) page to obtain it.
 
 ---
 
@@ -32,7 +32,7 @@ CANN Tags follow this pattern:
 
 | Field | Example Values | Description |
 |---|---|---|
-| `cann-version` | `9.1.0`, `9.0.1`, `9.1.0-beta.3`, `9.0.0`, `8.5.2`, etc. | CANN version number |
+| `cann-version` | `9.1.1`,`9.1.0`, `9.0.1`, `9.1.0-beta.3`, `9.0.0`, etc. | CANN version number |
 | `chip-series` | `950`, `a3`, `910b`, `910`, `310p` | Target Atlas chip series |
 | `os` | `ubuntu22.04`, `openeuler24.03` | Base operating system |
 | `python-version` | `py3.10`, `py3.11`, `py3.12` | Python version |
@@ -40,34 +40,34 @@ CANN Tags follow this pattern:
 
 
 
-### LATEST CANN 9.1.0
+### LATEST CANN 9.1.1
 
 For tags associated with historical versions, please refer to [Supported Tags](https://github.com/Ascend/cann-container-image/tree/main/supported_tags.md).
 
 | Tag | Dockerfile | content |
 |---|---|---|
-| [`9.1.0-310p-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-ubuntu22.04-py3.12/Dockerfile) | toolkit, ops, nnal |
-| [`9.1.0-310p-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-openeuler24.03-py3.12/Dockerfile) | toolkit, ops, nnal |
-| [`9.1.0-910-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910-ubuntu22.04-py3.12/Dockerfile) | toolkit, ops, nnal |
-| [`9.1.0-910-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910-openeuler24.03-py3.12/Dockerfile) | toolkit, ops, nnal |
-| [`9.1.0-910b-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910b-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910b-ubuntu22.04-py3.12/Dockerfile) | toolkit, ops, nnal |
-| [`9.1.0-910b-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910b-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910b-openeuler24.03-py3.12/Dockerfile) | toolkit, ops, nnal |
-| [`9.1.0-950-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-950-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-950-ubuntu22.04-py3.12/Dockerfile) | toolkit, ops, nnal |
-| [`9.1.0-950-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-950-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-950-openeuler24.03-py3.12/Dockerfile) | toolkit, ops, nnal |
-| [`9.1.0-a3-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-a3-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-a3-ubuntu22.04-py3.12/Dockerfile) | toolkit, ops, nnal |
-| [`9.1.0-a3-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-a3-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-a3-openeuler24.03-py3.12/Dockerfile) | toolkit, ops, nnal |
-| [`9.1.0-310p-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
-| [`9.1.0-310p-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-310p-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-310p-openeuler24.03-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
-| [`9.1.0-910-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
-| [`9.1.0-910-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910-openeuler24.03-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
-| [`9.1.0-910b-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910b-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910b-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
-| [`9.1.0-910b-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-910b-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-910b-openeuler24.03-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
-| [`9.1.0-950-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-950-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-950-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
-| [`9.1.0-950-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-950-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-950-openeuler24.03-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
-| [`9.1.0-a3-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-a3-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-a3-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
-| [`9.1.0-a3-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.0-a3-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.0-a3-openeuler24.03-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
+| [`9.1.1-310p-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-310p-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-310p-ubuntu22.04-py3.12/Dockerfile) | toolkit, ops, nnal |
+| [`9.1.1-310p-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-310p-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-310p-openeuler24.03-py3.12/Dockerfile) | toolkit, ops, nnal |
+| [`9.1.1-910-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-910-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-910-ubuntu22.04-py3.12/Dockerfile) | toolkit, ops, nnal |
+| [`9.1.1-910-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-910-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-910-openeuler24.03-py3.12/Dockerfile) | toolkit, ops, nnal |
+| [`9.1.1-910b-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-910b-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-910b-ubuntu22.04-py3.12/Dockerfile) | toolkit, ops, nnal |
+| [`9.1.1-910b-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-910b-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-910b-openeuler24.03-py3.12/Dockerfile) | toolkit, ops, nnal |
+| [`9.1.1-950-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-950-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-950-ubuntu22.04-py3.12/Dockerfile) | toolkit, ops, nnal |
+| [`9.1.1-950-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-950-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-950-openeuler24.03-py3.12/Dockerfile) | toolkit, ops, nnal |
+| [`9.1.1-a3-ubuntu22.04-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-a3-ubuntu22.04-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-a3-ubuntu22.04-py3.12/Dockerfile) | toolkit, ops, nnal |
+| [`9.1.1-a3-openeuler24.03-py3.12`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-a3-openeuler24.03-py3.12) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-a3-openeuler24.03-py3.12/Dockerfile) | toolkit, ops, nnal |
+| [`9.1.1-310p-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-310p-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-310p-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
+| [`9.1.1-310p-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-310p-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-310p-openeuler24.03-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
+| [`9.1.1-910-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-910-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-910-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
+| [`9.1.1-910-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-910-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-910-openeuler24.03-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
+| [`9.1.1-910b-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-910b-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-910b-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
+| [`9.1.1-910b-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-910b-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-910b-openeuler24.03-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
+| [`9.1.1-950-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-950-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-950-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
+| [`9.1.1-950-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-950-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-950-openeuler24.03-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
+| [`9.1.1-a3-ubuntu22.04-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-a3-ubuntu22.04-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-a3-ubuntu22.04-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
+| [`9.1.1-a3-openeuler24.03-py3.12-devel`](https://www.hiascend.com/developer/ascendhub/detail/17da20d1c2b6493cb38765adeba85884?version=9.1.1-a3-openeuler24.03-py3.12-devel) | [Dockerfile](https://github.com/Ascend/cann-container-image/blob/main/cann/9.1.1-a3-openeuler24.03-py3.12-devel/Dockerfile) | toolkit, ops, nnal, os-tool, Python-plugin, googletest |
 
-> Note: On aarch64, the `9.1.0-950-*` images additionally include URMA (Unified RoCE Message Access) for RoCE-based distributed communication; x86_64 images do not include it.
+> Note: On aarch64, the `9.1.1-950-*` images additionally include URMA (Unified RoCE Message Access) for RoCE-based distributed communication; x86_64 images do not include it.
 
 ---
 
@@ -83,7 +83,7 @@ An Atlas NPU driver compatible with the CANN version inside the container must b
 
 ```bash
 export CANN_REPO=quay.io/ascend/cann
-export CANN_TAG=9.1.0-a3-ubuntu22.04-py3.12
+export CANN_TAG=9.1.1-a3-ubuntu22.04-py3.12
 
 docker run \
     --name cann_container \
@@ -102,7 +102,7 @@ docker run \
 
 ```bash
 export CANN_REPO=quay.io/ascend/cann
-export CANN_TAG=9.1.0-950-openeuler24.03-py3.12
+export CANN_TAG=9.1.1-950-openeuler24.03-py3.12
 
 docker run \
     --name cann_container \
@@ -124,7 +124,7 @@ docker run \
 git clone https://github.com/Ascend/cann-container-image.git
 cd cann-container-image
 export CANN_REPO=my-cann
-export CANN_TAG=9.1.0-a3-ubuntu22.04-py3.12
+export CANN_TAG=9.1.1-a3-ubuntu22.04-py3.12
 # need to install buildx
 docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 ```
