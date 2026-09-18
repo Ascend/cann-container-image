@@ -70,7 +70,7 @@ RUN pip install --no-cache-dir \
         attrs cython numpy decorator sympy cffi pyyaml pathlib2 \
         psutil protobuf==3.20 scipy requests absl-py
 
-ARG CANN_VERSION=9.1.0-20260731131545
+ARG CANN_VERSION=9.2.0-20260918144839
 ARG SOC_VERSION=A3
 # Note: Get the download link according to ARCH and download the installation package
 RUN ARCH=$(case "${TARGETPLATFORM}" in \
@@ -108,7 +108,7 @@ FROM openeuler/openeuler:${OS_VERSION} AS official-openeuler
 
 ARG TARGETPLATFORM
 ARG SOC_VERSION
-ARG CANN_SHORT_VERSION=9.1.0
+ARG CANN_SHORT_VERSION=9.2.0
 ENV CANN_VERSION=${CANN_SHORT_VERSION}
 ARG PY_VERSION
 # Python Environment variables

@@ -8,10 +8,10 @@ on:
   workflow_dispatch:
     inputs:
       cann_version:
-        description: 'CANN Version (e.g. 9.1.0-20260731131545)'
+        description: 'CANN Version (e.g. 9.2.0-20260918144839)'
         required: true
         type: string
-        default: '9.1.0-20260731131545'
+        default: '9.2.0-20260918144839'
       py_version:
         description: 'Python Version (e.g. 3.12.13)'
         required: true
@@ -64,7 +64,7 @@ jobs:
           CHIPS: ${{ inputs.chips }}
           BUILD_OS: ${{ inputs.build_os }}
         run: |
-          CANN_VERSION="${CANN_VERSION:-9.1.0-20260731131545}"
+          CANN_VERSION="${CANN_VERSION:-9.2.0-20260918144839}"
           PY_VERSION="${PY_VERSION:-3.12.13}"
           PY_SHORT="${PY_VERSION%.*}"
           UBUNTU_OS_VERSION="${UBUNTU_OS_VERSION:-22.04}"
