@@ -129,3 +129,21 @@ jobs:
       dockerfile: ${{ matrix.dockerfile }}
       push: ${{ github.event_name != 'pull_request' }}
     secrets: inherit
+
+  trigger-image-sync:
+    name: Trigger image sync
+    needs: build
+    if: ${{ !cancelled() && github.event_name != 'pull_request' && needs.build.result == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch sync-tools sync-images
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.SYNC_TOOLS_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'ascend-gha-runners',
+              repo: 'sync-tools',
+              workflow_id: 'sync-images.yml',
+              ref: 'main',
+            });
