@@ -126,7 +126,7 @@ jobs:
           HW_USERNAME_DAILY: ${{ secrets.HW_USERNAME_DAILY }}
           HW_TOKEN_DAILY: ${{ secrets.HW_TOKEN_DAILY }}
         run: |
-          docker login -u cn-north-4@"$HW_USERNAME_DAILY" -p "$HW_TOKEN_DAILY" swr.cn-north-4.myhuaweicloud.com
+          docker login -u cn-north-12@"$HW_USERNAME_DAILY" -p "$HW_TOKEN_DAILY" swr.cn-north-12.myhuaweicloud.com
 
       - name: Compute CANN short version
         id: cann
@@ -183,9 +183,9 @@ jobs:
           HW_TOKEN_DAILY: ${{ secrets.HW_TOKEN_DAILY }}
         run: |
           echo "$HW_TOKEN_DAILY" | skopeo login \
-            --username "cn-north-4@$HW_USERNAME_DAILY" \
+            --username "cn-north-12@$HW_USERNAME_DAILY" \
             --password-stdin \
-            swr.cn-north-4.myhuaweicloud.com
+            swr.cn-north-12.myhuaweicloud.com
 
       - name: Copy to SWR temp
         if: ${{ inputs.push }}
@@ -194,7 +194,7 @@ jobs:
             echo "=== Attempt $i/3 ==="
             skopeo copy --format v2s2 \
               docker://quay.io/atlas_inference/cann@${{ steps.build.outputs.digest }} \
-              docker://swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-${{ matrix.arch }} && exit 0
+              docker://swr.cn-north-12.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-${{ matrix.arch }} && exit 0
             echo "Attempt $i failed, retrying in $((i*30))s..."
             sleep $((i*30))
           done
@@ -254,10 +254,10 @@ jobs:
           HW_USERNAME_DAILY: ${{ secrets.HW_USERNAME_DAILY }}
           HW_TOKEN_DAILY: ${{ secrets.HW_TOKEN_DAILY }}
         run: |
-          docker login -u cn-north-4@"$HW_USERNAME_DAILY" -p "$HW_TOKEN_DAILY" swr.cn-north-4.myhuaweicloud.com
+          docker login -u cn-north-12@"$HW_USERNAME_DAILY" -p "$HW_TOKEN_DAILY" swr.cn-north-12.myhuaweicloud.com
 
       - name: Create SWR manifest list and push
         run: |
-          docker buildx imagetools create -t swr.cn-north-4.myhuaweicloud.com/inference/cann:${{ inputs.cann_tag }} \
-            swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-amd64 \
-            swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-arm64
+          docker buildx imagetools create -t swr.cn-north-12.myhuaweicloud.com/inference/cann:${{ inputs.cann_tag }} \
+            swr.cn-north-12.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-amd64 \
+            swr.cn-north-12.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-arm64
