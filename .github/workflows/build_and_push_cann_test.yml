@@ -23,6 +23,11 @@ on:
         description: 'SOC version (CANN package naming)'
         required: true
         type: string
+      soc_lower:
+        description: 'SOC version (lowercase) used for buildkitd worker pinning'
+        required: false
+        type: string
+        default: 'a3'
       dockerfile:
         description: 'Test Dockerfile filename'
         required: true
@@ -72,6 +77,11 @@ on:
         required: true
         type: string
         default: 'A3'
+      soc_lower:
+        description: 'SOC version (lowercase) used for buildkitd worker pinning'
+        required: false
+        type: string
+        default: 'a3'
       dockerfile:
         description: 'Test Dockerfile filename'
         required: true
@@ -87,28 +97,23 @@ jobs:
   build-push-digest:
     name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
     runs-on: ${{ matrix.runner }}
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:9.0.0-310p-ubuntu22.04-py3.12
+      env:
+        SOC: ${{ inputs.soc_lower }}
     strategy:
       fail-fast: false
       matrix:
         include:
           - arch: amd64
             platform: linux/amd64
-            runner: ubuntu-latest
+            runner: linux-amd64-cpu-4
           - arch: arm64
             platform: linux/arm64
-            runner: ubuntu-22.04-arm
+            runner: linux-aarch64-cpu-4
     steps:
       - name: Checkout
         uses: actions/checkout@v7
-
-      - name: Free up disk space
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
-        with:
-          tool-cache: true
-          docker-images: false
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v4
 
       - name: Login to Quay
         if: ${{ inputs.push }}
@@ -138,43 +143,46 @@ jobs:
 
       - name: Build (PR check, no push)
         if: ${{ !inputs.push }}
-        uses: docker/build-push-action@v7
-        with:
-          platforms: ${{ matrix.platform }}
-          file: ${{ github.workspace }}/cann_test_version/${{ inputs.dockerfile }}
-          context: ${{ github.workspace }}
-          build-args: |
-            OS_VERSION=${{ inputs.os_version }}
-            PY_VERSION=${{ inputs.py_version }}
-            CANN_VERSION=${{ inputs.cann_version }}
-            SOC_VERSION=${{ inputs.soc }}
-            CANN_SHORT_VERSION=${{ steps.cann.outputs.short_version }}
-          push: false
-          provenance: false
+        run: |
+          docker buildx build \
+            --platform ${{ matrix.platform }} \
+            -f ${{ github.workspace }}/cann_test_version/${{ inputs.dockerfile }} \
+            --build-arg OS_VERSION=${{ inputs.os_version }} \
+            --build-arg PY_VERSION=${{ inputs.py_version }} \
+            --build-arg CANN_VERSION=${{ inputs.cann_version }} \
+            --build-arg SOC_VERSION=${{ inputs.soc }} \
+            --build-arg CANN_SHORT_VERSION=${{ steps.cann.outputs.short_version }} \
+            --provenance=false \
+            ${{ github.workspace }}
 
       - name: Build and push by digest
         if: ${{ inputs.push }}
-        uses: docker/build-push-action@v7
         id: build
-        with:
-          platforms: ${{ matrix.platform }}
-          tags: quay.io/atlas_inference/cann
-          file: ${{ github.workspace }}/cann_test_version/${{ inputs.dockerfile }}
-          context: ${{ github.workspace }}
-          build-args: |
-            OS_VERSION=${{ inputs.os_version }}
-            PY_VERSION=${{ inputs.py_version }}
-            CANN_VERSION=${{ inputs.cann_version }}
-            SOC_VERSION=${{ inputs.soc }}
-            CANN_SHORT_VERSION=${{ steps.cann.outputs.short_version }}
-          outputs: type=image,push-by-digest=true,name-canonical=true,push=true
-          provenance: false
+        run: |
+          docker buildx build \
+            --platform ${{ matrix.platform }} \
+            -f ${{ github.workspace }}/cann_test_version/${{ inputs.dockerfile }} \
+            --build-arg OS_VERSION=${{ inputs.os_version }} \
+            --build-arg PY_VERSION=${{ inputs.py_version }} \
+            --build-arg CANN_VERSION=${{ inputs.cann_version }} \
+            --build-arg SOC_VERSION=${{ inputs.soc }} \
+            --build-arg CANN_SHORT_VERSION=${{ steps.cann.outputs.short_version }} \
+            --provenance=false \
+            --metadata-file /tmp/build-metadata.json \
+            --output "type=image,name=quay.io/atlas_inference/cann,push-by-digest=true,name-canonical=true,push=true" \
+            ${{ github.workspace }}
+          digest=$(jq -r '.["containerimage.digest"] // empty' /tmp/build-metadata.json)
+          if [ -z "$digest" ]; then
+            digest=$(jq -r '.["containerimage.name"] // empty' /tmp/build-metadata.json)
+            digest="${digest#*@}"
+          fi
+          echo "digest=${digest}" >> "$GITHUB_OUTPUT"
 
       - name: Install skopeo
         if: ${{ inputs.push }}
         run: |
-          sudo apt update
-          sudo apt install -y skopeo
+          apt-get update
+          apt-get install -y skopeo
 
       - name: Login to Huawei Cloud SWR (skopeo)
         if: ${{ inputs.push }}
@@ -219,7 +227,9 @@ jobs:
 
   push-image:
     name: manifest ${{ inputs.cann_tag }}
-    runs-on: ubuntu-latest
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:9.0.0-310p-ubuntu22.04-py3.12
     needs: build-push-digest
     if: ${{ inputs.push }}
     steps:
@@ -232,9 +242,6 @@ jobs:
           path: ${{ runner.temp }}/digests
           pattern: digests-${{ inputs.cann_tag }}-*
           merge-multiple: true
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v4
 
       - name: Login to Quay
         uses: docker/login-action@v4

@@ -116,7 +116,7 @@ jobs:
   build:
     needs: prepare
     strategy:
-      max-parallel: 2
+      max-parallel: 8
       fail-fast: false
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
     uses: ./.github/workflows/build_and_push_cann_test.yml
@@ -126,6 +126,7 @@ jobs:
       py_version: ${{ needs.prepare.outputs.py_version }}
       os_version: ${{ matrix.os_version }}
       soc: ${{ matrix.soc }}
+      soc_lower: ${{ matrix.chip }}
       dockerfile: ${{ matrix.dockerfile }}
       push: ${{ github.event_name != 'pull_request' }}
     secrets: inherit
