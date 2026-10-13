@@ -136,14 +136,14 @@ jobs:
         run: |
           docker buildx build \
             --platform ${{ matrix.platform }} \
-            -f ${{ github.workspace }}/cann_test_version/${{ inputs.dockerfile }} \
+            -f cann_test_version/${{ inputs.dockerfile }} \
             --build-arg OS_VERSION=${{ inputs.os_version }} \
             --build-arg PY_VERSION=${{ inputs.py_version }} \
             --build-arg CANN_VERSION=${{ inputs.cann_version }} \
             --build-arg SOC_VERSION=${{ inputs.soc }} \
             --build-arg CANN_SHORT_VERSION=${{ steps.cann.outputs.short_version }} \
             --provenance=false \
-            ${{ github.workspace }}
+            .
 
       - name: Build and push by digest
         if: ${{ inputs.push }}
@@ -151,7 +151,7 @@ jobs:
         run: |
           docker buildx build \
             --platform ${{ matrix.platform }} \
-            -f ${{ github.workspace }}/cann_test_version/${{ inputs.dockerfile }} \
+            -f cann_test_version/${{ inputs.dockerfile }} \
             --build-arg OS_VERSION=${{ inputs.os_version }} \
             --build-arg PY_VERSION=${{ inputs.py_version }} \
             --build-arg CANN_VERSION=${{ inputs.cann_version }} \
@@ -160,7 +160,7 @@ jobs:
             --provenance=false \
             --metadata-file /tmp/build-metadata.json \
             --output "type=image,name=swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann,push-by-digest=true,name-canonical=true,push=true" \
-            ${{ github.workspace }}
+            .
           digest=$(jq -r '.["containerimage.digest"] // empty' /tmp/build-metadata.json)
           if [ -z "$digest" ]; then
             digest=$(jq -r '.["containerimage.name"] // empty' /tmp/build-metadata.json)
