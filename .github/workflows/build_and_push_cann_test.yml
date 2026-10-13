@@ -40,10 +40,10 @@ on:
     secrets:
       HW_USERNAME_DAILY:
         description: 'Huawei Cloud SWR username for daily'
-        required: true
+        required: false
       HW_TOKEN_DAILY:
         description: 'Huawei Cloud SWR token for daily'
-        required: true
+        required: false
   workflow_dispatch:
     inputs:
       cann_tag:
