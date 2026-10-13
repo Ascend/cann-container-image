@@ -77,7 +77,7 @@ For tags associated with historical versions, please refer to [Supported Tags](h
 
 #### Install Driver
 
-An Atlas NPU driver compatible with the CANN version inside the container must be installed on the host. Please visit the [CANN compatibility site](https://www.hiascend.com/developer/download/compatibility) for the correspondence between driver and CANN versions.
+An Atlas NPU driver compatible with the CANN version inside the container must be installed on the host. Please visit the [CANN compatibility site](https://www.hiascend.com/en/developer/download/compatibility) for the correspondence between driver and CANN versions.
 
 ### Run a CANN Container
 
@@ -133,8 +133,8 @@ docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 
 ## References
 
-If you want to learn how to download CANN software packages, please visit the [CANN download site](https://www.hiascend.com/cann/download?versionId=769&ids=d806%2Ch0501%2Ch0601%2Ch0702).
-If you want to learn more about CANN, including release notes, programming guides, APIs, and development tools, please visit the [CANN documentation site](https://www.hiascend.com/cann/document).
+If you want to learn how to download CANN software packages, please visit the [CANN download site](https://www.hiascend.com/en/cann/download?versionId=769&ids=d806%2Ch0501%2Ch0601%2Ch0702).
+If you want to learn more about CANN, including release notes, programming guides, APIs, and development tools, please visit the [CANN documentation site](https://www.hiascend.com/en/cann/document).
 
 ---
 
