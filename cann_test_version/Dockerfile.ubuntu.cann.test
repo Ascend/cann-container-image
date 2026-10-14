@@ -1,6 +1,6 @@
 # Stage 1: Install Python
 ARG OS_VERSION=22.04
-FROM ubuntu:${OS_VERSION} AS python-installer
+FROM swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:${OS_VERSION} AS python-installer
 
 # Python Environment variables
 ARG PY_VERSION=3.12.13
@@ -108,7 +108,7 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     
 # Stage 3: Copy results from previous stages
 ARG OS_VERSION
-FROM ubuntu:${OS_VERSION} AS official-ubuntu
+FROM swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:${OS_VERSION} AS official-ubuntu
 
 ARG TARGETPLATFORM
 ARG SOC_VERSION

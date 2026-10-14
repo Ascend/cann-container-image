@@ -23,6 +23,11 @@ on:
         description: 'SOC version (CANN package naming)'
         required: true
         type: string
+      soc_lower:
+        description: 'SOC version (lowercase) used for buildkitd worker pinning'
+        required: false
+        type: string
+        default: 'a3'
       dockerfile:
         description: 'Test Dockerfile filename'
         required: true
@@ -35,16 +40,10 @@ on:
     secrets:
       HW_USERNAME_DAILY:
         description: 'Huawei Cloud SWR username for daily'
-        required: true
+        required: false
       HW_TOKEN_DAILY:
         description: 'Huawei Cloud SWR token for daily'
-        required: true
-      QUAY_DAILY_USERNAME:
-        description: 'Quay username for daily'
-        required: true
-      QUAY_DAILY_TOKEN:
-        description: 'Quay token for daily'
-        required: true
+        required: false
   workflow_dispatch:
     inputs:
       cann_tag:
@@ -72,6 +71,11 @@ on:
         required: true
         type: string
         default: 'A3'
+      soc_lower:
+        description: 'SOC version (lowercase) used for buildkitd worker pinning'
+        required: false
+        type: string
+        default: 'a3'
       dockerfile:
         description: 'Test Dockerfile filename'
         required: true
@@ -87,46 +91,37 @@ jobs:
   build-push-digest:
     name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
     runs-on: ${{ matrix.runner }}
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+      env:
+        SOC: ${{ inputs.soc_lower }}
     strategy:
       fail-fast: false
       matrix:
         include:
           - arch: amd64
             platform: linux/amd64
-            runner: ubuntu-latest
+            runner: linux-amd64-cpu-4
           - arch: arm64
             platform: linux/arm64
-            runner: ubuntu-22.04-arm
+            runner: linux-aarch64-cpu-4
     steps:
       - name: Checkout
         uses: actions/checkout@v7
 
-      - name: Free up disk space
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
-        with:
-          tool-cache: true
-          docker-images: false
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v4
-
-      - name: Login to Quay
+      - name: Install jq
         if: ${{ inputs.push }}
-        uses: docker/login-action@v4
-        with:
-          registry: quay.io
-          username: ${{ secrets.QUAY_DAILY_USERNAME }}
-          password: ${{ secrets.QUAY_DAILY_TOKEN }}
-          ecr: false
-          logout: false
+        run: |
+          apt-get update
+          apt-get install -y jq
 
-      - name: Login to Huawei Cloud SWR
+      - name: Login to Huawei Cloud SWR (cn-north-12)
         if: ${{ inputs.push }}
         env:
           HW_USERNAME_DAILY: ${{ secrets.HW_USERNAME_DAILY }}
           HW_TOKEN_DAILY: ${{ secrets.HW_TOKEN_DAILY }}
         run: |
-          docker login -u cn-north-4@"$HW_USERNAME_DAILY" -p "$HW_TOKEN_DAILY" swr.cn-north-4.myhuaweicloud.com
+          docker login -u cn-north-12@"$HW_USERNAME_DAILY" -p "$HW_TOKEN_DAILY" swr.cn-north-12.myhuaweicloud.com
 
       - name: Compute CANN short version
         id: cann
@@ -138,68 +133,40 @@ jobs:
 
       - name: Build (PR check, no push)
         if: ${{ !inputs.push }}
-        uses: docker/build-push-action@v7
-        with:
-          platforms: ${{ matrix.platform }}
-          file: ${{ github.workspace }}/cann_test_version/${{ inputs.dockerfile }}
-          context: ${{ github.workspace }}
-          build-args: |
-            OS_VERSION=${{ inputs.os_version }}
-            PY_VERSION=${{ inputs.py_version }}
-            CANN_VERSION=${{ inputs.cann_version }}
-            SOC_VERSION=${{ inputs.soc }}
-            CANN_SHORT_VERSION=${{ steps.cann.outputs.short_version }}
-          push: false
-          provenance: false
+        run: |
+          docker buildx build \
+            --platform ${{ matrix.platform }} \
+            -f cann_test_version/${{ inputs.dockerfile }} \
+            --build-arg OS_VERSION=${{ inputs.os_version }} \
+            --build-arg PY_VERSION=${{ inputs.py_version }} \
+            --build-arg CANN_VERSION=${{ inputs.cann_version }} \
+            --build-arg SOC_VERSION=${{ inputs.soc }} \
+            --build-arg CANN_SHORT_VERSION=${{ steps.cann.outputs.short_version }} \
+            --provenance=false \
+            .
 
       - name: Build and push by digest
         if: ${{ inputs.push }}
-        uses: docker/build-push-action@v7
         id: build
-        with:
-          platforms: ${{ matrix.platform }}
-          tags: quay.io/atlas_inference/cann
-          file: ${{ github.workspace }}/cann_test_version/${{ inputs.dockerfile }}
-          context: ${{ github.workspace }}
-          build-args: |
-            OS_VERSION=${{ inputs.os_version }}
-            PY_VERSION=${{ inputs.py_version }}
-            CANN_VERSION=${{ inputs.cann_version }}
-            SOC_VERSION=${{ inputs.soc }}
-            CANN_SHORT_VERSION=${{ steps.cann.outputs.short_version }}
-          outputs: type=image,push-by-digest=true,name-canonical=true,push=true
-          provenance: false
-
-      - name: Install skopeo
-        if: ${{ inputs.push }}
         run: |
-          sudo apt update
-          sudo apt install -y skopeo
-
-      - name: Login to Huawei Cloud SWR (skopeo)
-        if: ${{ inputs.push }}
-        env:
-          HW_USERNAME_DAILY: ${{ secrets.HW_USERNAME_DAILY }}
-          HW_TOKEN_DAILY: ${{ secrets.HW_TOKEN_DAILY }}
-        run: |
-          echo "$HW_TOKEN_DAILY" | skopeo login \
-            --username "cn-north-4@$HW_USERNAME_DAILY" \
-            --password-stdin \
-            swr.cn-north-4.myhuaweicloud.com
-
-      - name: Copy to SWR temp
-        if: ${{ inputs.push }}
-        run: |
-          for i in 1 2 3; do
-            echo "=== Attempt $i/3 ==="
-            skopeo copy --format v2s2 \
-              docker://quay.io/atlas_inference/cann@${{ steps.build.outputs.digest }} \
-              docker://swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-${{ matrix.arch }} && exit 0
-            echo "Attempt $i failed, retrying in $((i*30))s..."
-            sleep $((i*30))
-          done
-          echo "All 3 attempts failed"
-          exit 1
+          docker buildx build \
+            --platform ${{ matrix.platform }} \
+            -f cann_test_version/${{ inputs.dockerfile }} \
+            --build-arg OS_VERSION=${{ inputs.os_version }} \
+            --build-arg PY_VERSION=${{ inputs.py_version }} \
+            --build-arg CANN_VERSION=${{ inputs.cann_version }} \
+            --build-arg SOC_VERSION=${{ inputs.soc }} \
+            --build-arg CANN_SHORT_VERSION=${{ steps.cann.outputs.short_version }} \
+            --provenance=false \
+            --metadata-file /tmp/build-metadata.json \
+            --output "type=image,name=swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann,push-by-digest=true,name-canonical=true,push=true" \
+            .
+          digest=$(jq -r '.["containerimage.digest"] // empty' /tmp/build-metadata.json)
+          if [ -z "$digest" ]; then
+            digest=$(jq -r '.["containerimage.name"] // empty' /tmp/build-metadata.json)
+            digest="${digest#*@}"
+          fi
+          echo "digest=${digest}" >> "$GITHUB_OUTPUT"
 
       - name: Export digest
         if: ${{ inputs.push }}
@@ -219,7 +186,9 @@ jobs:
 
   push-image:
     name: manifest ${{ inputs.cann_tag }}
-    runs-on: ubuntu-latest
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
     needs: build-push-digest
     if: ${{ inputs.push }}
     steps:
@@ -233,31 +202,15 @@ jobs:
           pattern: digests-${{ inputs.cann_tag }}-*
           merge-multiple: true
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v4
-
-      - name: Login to Quay
-        uses: docker/login-action@v4
-        with:
-          registry: quay.io
-          username: ${{ secrets.QUAY_DAILY_USERNAME }}
-          password: ${{ secrets.QUAY_DAILY_TOKEN }}
-
-      - name: Create manifest list and push
-        working-directory: ${{ runner.temp }}/digests
-        run: |
-          docker buildx imagetools create -t quay.io/atlas_inference/cann:${{ inputs.cann_tag }} \
-            $(printf 'quay.io/atlas_inference/cann@sha256:%s ' *)
-
-      - name: Login to Huawei Cloud SWR
+      - name: Login to Huawei Cloud SWR (cn-north-12)
         env:
           HW_USERNAME_DAILY: ${{ secrets.HW_USERNAME_DAILY }}
           HW_TOKEN_DAILY: ${{ secrets.HW_TOKEN_DAILY }}
         run: |
-          docker login -u cn-north-4@"$HW_USERNAME_DAILY" -p "$HW_TOKEN_DAILY" swr.cn-north-4.myhuaweicloud.com
+          docker login -u cn-north-12@"$HW_USERNAME_DAILY" -p "$HW_TOKEN_DAILY" swr.cn-north-12.myhuaweicloud.com
 
-      - name: Create SWR manifest list and push
+      - name: Create manifest list and push
+        working-directory: ${{ runner.temp }}/digests
         run: |
-          docker buildx imagetools create -t swr.cn-north-4.myhuaweicloud.com/inference/cann:${{ inputs.cann_tag }} \
-            swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-amd64 \
-            swr.cn-north-4.myhuaweicloud.com/inference/cann_temp:${{ inputs.cann_tag }}-arm64
+          docker buildx imagetools create -t swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann:${{ inputs.cann_tag }} \
+            $(printf 'swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann@sha256:%s ' *)
