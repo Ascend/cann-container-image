@@ -171,9 +171,9 @@ jobs:
       - name: Export digest
         if: ${{ inputs.push }}
         run: |
-          mkdir -p ${{ runner.temp }}/digests
+          mkdir -p "$RUNNER_TEMP/digests"
           digest="${{ steps.build.outputs.digest }}"
-          touch "${{ runner.temp }}/digests/${digest#sha256:}"
+          touch "$RUNNER_TEMP/digests/${digest#sha256:}"
 
       - name: Upload digest
         if: ${{ inputs.push }}
@@ -210,7 +210,7 @@ jobs:
           docker login -u cn-north-12@"$HW_USERNAME_DAILY" -p "$HW_TOKEN_DAILY" swr.cn-north-12.myhuaweicloud.com
 
       - name: Create manifest list and push
-        working-directory: ${{ runner.temp }}/digests
         run: |
+          cd "$RUNNER_TEMP/digests"
           docker buildx imagetools create -t swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann:${{ inputs.cann_tag }} \
             $(printf 'swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann@sha256:%s ' *)
