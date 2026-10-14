@@ -159,7 +159,7 @@ jobs:
             --build-arg CANN_SHORT_VERSION=${{ steps.cann.outputs.short_version }} \
             --provenance=false \
             --metadata-file /tmp/build-metadata.json \
-            --output "type=image,name=swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann,push-by-digest=true,name-canonical=true,push=true" \
+            --output "type=image,name=swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann,push-by-digest=true,name-canonical=true,push=true,oci-mediatypes=false" \
             .
           digest=$(jq -r '.["containerimage.digest"] // empty' /tmp/build-metadata.json)
           if [ -z "$digest" ]; then
