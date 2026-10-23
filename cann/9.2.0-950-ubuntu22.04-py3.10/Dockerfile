@@ -103,6 +103,8 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
 # Stage 3: Copy results from previous stages
 FROM ubuntu:22.04 AS official-ubuntu
 
+ARG TARGETPLATFORM
+
 # Python Environment variables
 ENV PATH=/usr/local/python3.10.22/bin:${PATH}
 ENV LD_LIBRARY_PATH=/usr/local/python3.10.22/lib:${LD_LIBRARY_PATH}
