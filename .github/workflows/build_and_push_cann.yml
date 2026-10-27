@@ -494,10 +494,20 @@ jobs:
 
       - name: Build image
         run: |
+          case "${{ inputs.cann_tag }}" in
+            *ubuntu24.04*)    BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:24.04" ;;
+            *ubuntu22.04*)    BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:22.04" ;;
+            *openeuler24.03*) BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/openeuler:24.03" ;;
+            *openeuler22.03*) BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/openeuler:22.03" ;;
+            *)                BASE_IMAGE="" ;;
+          esac
+          BUILD_ARGS=""
+          if [ -n "$BASE_IMAGE" ]; then BUILD_ARGS="--build-arg BASE_IMAGE=${BASE_IMAGE}"; fi
           docker buildx build \
             --platform ${{ matrix.platform }} \
             -f cann/${{ inputs.cann_tag }}/Dockerfile \
             --provenance=false \
+            ${BUILD_ARGS} \
             cann/${{ inputs.cann_tag }}
 
   build-push-digest:
@@ -538,12 +548,22 @@ jobs:
       - name: Build and push by digest
         id: build
         run: |
+          case "${{ inputs.cann_tag }}" in
+            *ubuntu24.04*)    BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:24.04" ;;
+            *ubuntu22.04*)    BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:22.04" ;;
+            *openeuler24.03*) BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/openeuler:24.03" ;;
+            *openeuler22.03*) BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/openeuler:22.03" ;;
+            *)                BASE_IMAGE="" ;;
+          esac
+          BUILD_ARGS=""
+          if [ -n "$BASE_IMAGE" ]; then BUILD_ARGS="--build-arg BASE_IMAGE=${BASE_IMAGE}"; fi
           docker buildx build \
             --platform ${{ matrix.platform }} \
             -f cann/${{ inputs.cann_tag }}/Dockerfile \
             --provenance=false \
             --metadata-file /tmp/build-metadata.json \
             --output "type=image,name=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann,push-by-digest=true,name-canonical=true,push=true,oci-mediatypes=false" \
+            ${BUILD_ARGS} \
             cann/${{ inputs.cann_tag }}
           digest=$(jq -r '.["containerimage.digest"] // empty' /tmp/build-metadata.json)
           if [ -z "$digest" ]; then
@@ -771,6 +791,7 @@ jobs:
           docker buildx build \
             --platform ${{ matrix.platform }} \
             -f cann/${{ inputs.cann_tag }}-devel/Dockerfile \
+            --build-arg CANN_BASE_IMAGE=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
             --provenance=false \
             --metadata-file /tmp/build-metadata.json \
             --output "type=image,name=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann,push-by-digest=true,name-canonical=true,push=true,oci-mediatypes=false" \
@@ -995,6 +1016,7 @@ jobs:
           docker buildx build \
             --platform ${{ matrix.platform }} \
             -f cann/${{ inputs.cann_tag }}-devel/Dockerfile \
+            --build-arg CANN_BASE_IMAGE=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
             --provenance=false \
             --metadata-file /tmp/build-metadata.json \
             --output "type=image,name=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann,push-by-digest=true,name-canonical=true,push=true,oci-mediatypes=false" \
