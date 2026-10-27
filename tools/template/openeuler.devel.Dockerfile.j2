@@ -1,4 +1,7 @@
-FROM quay.io/ascend/cann:{{ item.cann_version }}-{{ item.cann_chip | lower }}-{{ item.os_name }}{{ item.os_version }}-py{{ item.py_version }}
+# CANN_BASE_IMAGE can be overridden at build time, e.g.
+#   --build-arg CANN_BASE_IMAGE=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:{{ item.cann_version }}-{{ item.cann_chip | lower }}-{{ item.os_name }}{{ item.os_version }}-py{{ item.py_version }}
+ARG CANN_BASE_IMAGE=quay.io/ascend/cann:{{ item.cann_version }}-{{ item.cann_chip | lower }}-{{ item.os_name }}{{ item.os_version }}-py{{ item.py_version }}
+FROM ${CANN_BASE_IMAGE}
 
 ##############
 # User: root #

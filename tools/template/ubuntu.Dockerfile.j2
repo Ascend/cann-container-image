@@ -1,5 +1,8 @@
 # Stage 1: Install Python
-FROM ubuntu:{{ item.os_version }} AS python-installer
+# BASE_IMAGE can be overridden at build time, e.g.
+#   --build-arg BASE_IMAGE=swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:{{ item.os_version }}
+ARG BASE_IMAGE=ubuntu:{{ item.os_version }}
+FROM ${BASE_IMAGE} AS python-installer
 
 # Python Environment variables
 ENV PATH=/usr/local/python{{ item.py_latest_version }}/bin:${PATH}
@@ -101,7 +104,8 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     rm -f ~/Ascend-cann-nnal.run
     
 # Stage 3: Copy results from previous stages
-FROM ubuntu:{{ item.os_version }} AS official-ubuntu
+ARG BASE_IMAGE=ubuntu:{{ item.os_version }}
+FROM ${BASE_IMAGE} AS official-ubuntu
 
 ARG TARGETPLATFORM
 
