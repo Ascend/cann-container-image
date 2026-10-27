@@ -51,6 +51,12 @@ concurrency:
   group: batch-cann
   cancel-in-progress: false
 
+# The self-hosted runner defaults to `sh`; restore the GitHub-hosted
+# default (`bash -e`) that these scripts were written and tested against.
+defaults:
+  run:
+    shell: bash -e {0}
+
 jobs:
   prepare:
     runs-on: ubuntu-latest

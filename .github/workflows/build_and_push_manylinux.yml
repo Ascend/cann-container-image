@@ -245,6 +245,12 @@ on:
         type: boolean
         required: true
 
+# The self-hosted runner defaults to `sh`; restore the GitHub-hosted
+# default (`bash -e`) that these scripts were written and tested against.
+defaults:
+  run:
+    shell: bash -e {0}
+
 jobs:
   only-build:
     name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
