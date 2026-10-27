@@ -252,6 +252,8 @@ jobs:
     runs-on: ${{ matrix.runner }}
     container:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+      env:
+        SOC: ${{ contains(inputs.cann_tag, '910b') && '910b' || contains(inputs.cann_tag, '310p') && '310p' || contains(inputs.cann_tag, '950') && '950' || contains(inputs.cann_tag, 'a3') && 'a3' || '' }}
     strategy:
       matrix:
         include:
@@ -279,6 +281,8 @@ jobs:
     runs-on: ${{ matrix.runner }}
     container:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+      env:
+        SOC: ${{ contains(inputs.cann_tag, '910b') && '910b' || contains(inputs.cann_tag, '310p') && '310p' || contains(inputs.cann_tag, '950') && '950' || contains(inputs.cann_tag, 'a3') && 'a3' || '' }}
     strategy:
       matrix:
         include:
