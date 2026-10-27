@@ -689,6 +689,12 @@ jobs:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
     needs: push-image
     steps:
+      - name: Debug docker config permissions
+        run: |
+          id
+          ls -ln /home/user/.docker/ 2>&1 || true
+          mount | grep -E 'home|docker' || true
+
       - name: Install skopeo
         run: |
           apt-get update
@@ -700,6 +706,7 @@ jobs:
           HW_TOKEN: ${{ secrets.HW_TOKEN }}
         run: |
           echo "${HW_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
             --username "${HW_USERNAME}" \
             --password-stdin \
             swr.cn-southwest-2.myhuaweicloud.com
@@ -710,6 +717,7 @@ jobs:
           ASCENDHUB_TOKEN: ${{ secrets.ASCENDHUB_TOKEN }}
         run: |
           echo "${ASCENDHUB_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
             --username "${ASCENDHUB_USERNAME}" \
             --password-stdin \
             swr.cn-east-3.myhuaweicloud.com
@@ -717,6 +725,7 @@ jobs:
       - name: Sync image to AscendHub
         run: |
           skopeo copy --all \
+            --authfile "$RUNNER_TEMP/auth.json" \
             docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
             docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}
 
@@ -922,6 +931,7 @@ jobs:
           HW_TOKEN: ${{ secrets.HW_TOKEN }}
         run: |
           echo "${HW_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
             --username "${HW_USERNAME}" \
             --password-stdin \
             swr.cn-southwest-2.myhuaweicloud.com
@@ -932,6 +942,7 @@ jobs:
           ASCENDHUB_TOKEN: ${{ secrets.ASCENDHUB_TOKEN }}
         run: |
           echo "${ASCENDHUB_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
             --username "${ASCENDHUB_USERNAME}" \
             --password-stdin \
             swr.cn-east-3.myhuaweicloud.com/ascendhub-test
@@ -939,6 +950,7 @@ jobs:
       - name: Sync image to AscendHub
         run: |
           skopeo copy --all \
+            --authfile "$RUNNER_TEMP/auth.json" \
             docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}-devel \
             docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}-devel
 
@@ -1142,6 +1154,7 @@ jobs:
           HW_TOKEN: ${{ secrets.HW_TOKEN }}
         run: |
           echo "${HW_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
             --username "${HW_USERNAME}" \
             --password-stdin \
             swr.cn-southwest-2.myhuaweicloud.com
@@ -1152,6 +1165,7 @@ jobs:
           ASCENDHUB_TOKEN: ${{ secrets.ASCENDHUB_TOKEN }}
         run: |
           echo "${ASCENDHUB_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
             --username "${ASCENDHUB_USERNAME}" \
             --password-stdin \
             swr.cn-east-3.myhuaweicloud.com/ascendhub-test
@@ -1159,5 +1173,6 @@ jobs:
       - name: Sync image to AscendHub
         run: |
           skopeo copy --all \
+            --authfile "$RUNNER_TEMP/auth.json" \
             docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}-devel \
             docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}-devel
