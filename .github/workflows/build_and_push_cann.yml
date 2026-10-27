@@ -464,106 +464,119 @@ on:
         type: boolean
         required: true
 
+# The self-hosted runner defaults to `sh`; restore the GitHub-hosted
+# default (`bash -e`) that these scripts were written and tested against.
+defaults:
+  run:
+    shell: bash -e {0}
+
 jobs:
   only-build:
     name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
     if: ${{ !inputs.publish_base && !inputs.publish_devel}} 
     runs-on: ${{ matrix.runner }}
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+      env:
+        SOC: ${{ contains(inputs.cann_tag, '910b') && '910b' || contains(inputs.cann_tag, '910') && '910' || contains(inputs.cann_tag, '310p') && '310p' || contains(inputs.cann_tag, '950') && '950' || contains(inputs.cann_tag, 'a3') && 'a3' || '' }}
     strategy:
       matrix:
         include:
-          - arch: x86_64
-            runner: linux-x86_64
-          - arch: aarch64
-            runner: ubuntu-22.04-arm
+          - arch: amd64
+            platform: linux/amd64
+            runner: linux-amd64-cpu-4
+          - arch: arm64
+            platform: linux/arm64
+            runner: linux-aarch64-cpu-4
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Free up disk space
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
-        with:
-          tool-cache: true
-          docker-images: false
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
       - name: Build image
-        uses: docker/build-push-action@v6
-        id: build
-        with: 
-          platforms: ${{ matrix.arch }}
-          file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}/Dockerfile
-          context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}
-          outputs: type=image
-          provenance: false
+        run: |
+          case "${{ inputs.cann_tag }}" in
+            *ubuntu24.04*)    BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:24.04" ;;
+            *ubuntu22.04*)    BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:22.04" ;;
+            *openeuler24.03*) BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/openeuler:24.03" ;;
+            *openeuler22.03*) BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/openeuler:22.03" ;;
+            *)                BASE_IMAGE="" ;;
+          esac
+          BUILD_ARGS=""
+          if [ -n "$BASE_IMAGE" ]; then BUILD_ARGS="--build-arg BASE_IMAGE=${BASE_IMAGE}"; fi
+          docker buildx build \
+            --platform ${{ matrix.platform }} \
+            -f cann/${{ inputs.cann_tag }}/Dockerfile \
+            --provenance=false \
+            ${BUILD_ARGS} \
+            cann/${{ inputs.cann_tag }}
 
   build-push-digest:
     name: build ${{ inputs.cann_tag }} (${{ matrix.arch }})
     if: ${{ inputs.publish_base }}
     runs-on: ${{ matrix.runner }}
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+      env:
+        SOC: ${{ contains(inputs.cann_tag, '910b') && '910b' || contains(inputs.cann_tag, '910') && '910' || contains(inputs.cann_tag, '310p') && '310p' || contains(inputs.cann_tag, '950') && '950' || contains(inputs.cann_tag, 'a3') && 'a3' || '' }}
     strategy:
       matrix:
         include:
-          - arch: x86_64
-            runner: linux-x86_64
-          - arch: aarch64
-            runner: ubuntu-22.04-arm
+          - arch: amd64
+            platform: linux/amd64
+            runner: linux-amd64-cpu-4
+          - arch: arm64
+            platform: linux/arm64
+            runner: linux-aarch64-cpu-4
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Free up disk space
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
-        with:
-          tool-cache: true
-          docker-images: false
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Install jq
+        run: |
+          apt-get update
+          apt-get install -y jq
 
-      - name: Login to Quay
-        uses: docker/login-action@v3
-        with:
-          registry: quay.io
-          username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_TOKEN }}
-          ecr: false
-          logout: false
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+        run: |
+          echo "$HW_TOKEN" | docker login \
+            -u "$HW_USERNAME" --password-stdin \
+            swr.cn-southwest-2.myhuaweicloud.com
 
       - name: Build and push by digest
-        uses: docker/build-push-action@v6
         id: build
-        with: 
-          platforms: ${{ matrix.arch }}
-          tags: |
-            docker.io/ascendai/cann
-            quay.io/ascend/cann
-          file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}/Dockerfile
-          context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}
-          outputs: type=image,push-by-digest=true,name-canonical=true,push=true
-          provenance: false
+        run: |
+          case "${{ inputs.cann_tag }}" in
+            *ubuntu24.04*)    BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:24.04" ;;
+            *ubuntu22.04*)    BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/ubuntu:22.04" ;;
+            *openeuler24.03*) BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/openeuler:24.03" ;;
+            *openeuler22.03*) BASE_IMAGE="swr.cn-southwest-2.myhuaweicloud.com/base_image/os/openeuler:22.03" ;;
+            *)                BASE_IMAGE="" ;;
+          esac
+          BUILD_ARGS=""
+          if [ -n "$BASE_IMAGE" ]; then BUILD_ARGS="--build-arg BASE_IMAGE=${BASE_IMAGE}"; fi
+          docker buildx build \
+            --platform ${{ matrix.platform }} \
+            -f cann/${{ inputs.cann_tag }}/Dockerfile \
+            --provenance=false \
+            --metadata-file /tmp/build-metadata.json \
+            --output "type=image,name=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann,push-by-digest=true,name-canonical=true,push=true,oci-mediatypes=false" \
+            ${BUILD_ARGS} \
+            cann/${{ inputs.cann_tag }}
+          digest=$(jq -r '.["containerimage.digest"] // empty' /tmp/build-metadata.json)
+          if [ -z "$digest" ]; then
+            digest=$(jq -r '.["containerimage.name"] // empty' /tmp/build-metadata.json)
+            digest="${digest#*@}"
+          fi
+          echo "digest=${digest}" >> "$GITHUB_OUTPUT"
 
       - name: Export digest
         run: |
-          mkdir -p ${{ runner.temp }}/digests
+          mkdir -p "$RUNNER_TEMP/digests"
           digest="${{ steps.build.outputs.digest }}"
-          touch "${{ runner.temp }}/digests/${digest#sha256:}"
+          touch "$RUNNER_TEMP/digests/${digest#sha256:}"
 
       - name: Upload digest
         uses: actions/upload-artifact@v4
@@ -574,11 +587,18 @@ jobs:
           retention-days: 1
   
   push-image:
-    runs-on: ubuntu-latest
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
     needs: build-push-digest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Install jq
+        run: |
+          apt-get update
+          apt-get install -y jq
 
       - name: Download digests
         uses: actions/download-artifact@v4
@@ -587,22 +607,14 @@ jobs:
           pattern: digests-${{ inputs.cann_tag }}-*
           merge-multiple: true
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Login to Quay
-        uses: docker/login-action@v3
-        with:
-          registry: quay.io
-          username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_TOKEN }}
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+        run: |
+          echo "$HW_TOKEN" | docker login \
+            -u "$HW_USERNAME" --password-stdin \
+            swr.cn-southwest-2.myhuaweicloud.com
 
       - name: Prepare tags
         id: prepare-tags
@@ -610,140 +622,192 @@ jobs:
           BASE_TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
             '.versions[] | select(.path == "cann/" + $cann_tag) | .tags[]' \
             cann_publish_version.json)
-          registries=(
-            "docker.io/ascendai/cann"
-            "quay.io/ascend/cann"
-          )
+          registry="swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann"
           first=true
           TAGS_JSON="["
-          for registry in "${registries[@]}"; do
-            for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
-              if [ "$first" != true ]; then
-                TAGS_JSON+=","
-              fi
-              TAGS_JSON+="\"${registry}:${tag}\""
-              first=false
-            done
+          for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
+            if [ "$first" != true ]; then
+              TAGS_JSON+=","
+            fi
+            TAGS_JSON+="\"${registry}:${tag}\""
+            first=false
           done
           TAGS_JSON+="]"
           echo "tags=${TAGS_JSON}" >> $GITHUB_OUTPUT
 
       - name: Create manifest list and push
-        working-directory: ${{ runner.temp }}/digests
         env:
           TAGS: ${{ steps.prepare-tags.outputs.tags }}
         run: |
+          cd "$RUNNER_TEMP/digests" || exit 1
           readarray -t TAGS_ARRAY <<< "$(echo "$TAGS" | jq -r '.[]')"
 
           for TAG in "${TAGS_ARRAY[@]}"; do
-            if [[ "$TAG" == *"quay.io/ascend/cann"* ]]; then
+            if [[ "$TAG" == swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann* ]]; then
               docker buildx imagetools create -t "$TAG" \
-                $(printf 'quay.io/ascend/cann@sha256:%s ' *)
-            elif [[ "$TAG" == *"docker.io/ascendai/cann"* ]]; then
-              docker buildx imagetools create -t "$TAG" \
-                $(printf 'docker.io/ascendai/cann@sha256:%s ' *)
+                $(printf 'swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann@sha256:%s ' *)
             else
               echo "Error: Unknown registry in TAG: $TAG"
               exit 1
             fi
           done
 
-  sync-base-image:
+  sync-public-image:
+    name: sync public image ${{ inputs.cann_tag }}
     runs-on: ubuntu-latest
     needs: push-image
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Install skopeo
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y skopeo
+
+      - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+        run: |
+          echo "${HW_TOKEN}" | skopeo login \
+            --username "${HW_USERNAME}" \
+            --password-stdin \
+            swr.cn-southwest-2.myhuaweicloud.com
+
+      - name: Login to Quay
+        env:
+          QUAY_USERNAME: ${{ secrets.QUAY_USERNAME }}
+          QUAY_TOKEN: ${{ secrets.QUAY_TOKEN }}
+        run: |
+          echo "${QUAY_TOKEN}" | skopeo login \
+            --username "${QUAY_USERNAME}" \
+            --password-stdin \
+            quay.io
+
+      - name: Login to DockerHub
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+        run: |
+          echo "${DOCKER_TOKEN}" | skopeo login \
+            --username "${DOCKER_USERNAME}" \
+            --password-stdin \
+            docker.io
+
+      - name: Sync image to Quay and DockerHub
+        run: |
+          skopeo copy --all \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
+            docker://quay.io/ascend/cann:${{ inputs.cann_tag }}
+
+          skopeo copy --all \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
+            docker://docker.io/ascendai/cann:${{ inputs.cann_tag }}
+
+  sync-ascendhub-image:
+    name: sync image to AscendHub ${{ inputs.cann_tag }}
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+    needs: push-image
+    steps:
+      - name: Debug docker config permissions
+        run: |
+          id
+          ls -ln /home/user/.docker/ 2>&1 || true
+          mount | grep -E 'home|docker' || true
 
       - name: Install skopeo
         run: |
-          sudo apt update
-          sudo apt install -y skopeo
+          apt-get update
+          apt-get install -y skopeo
 
       - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
         run: |
-          echo "${{ secrets.HW_TOKEN }}" | skopeo login \
-            --username "${{ secrets.HW_USERNAME }}" \
+          echo "${HW_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            --username "${HW_USERNAME}" \
             --password-stdin \
-            swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci
+            swr.cn-southwest-2.myhuaweicloud.com
 
       - name: Login to AscendHub
+        env:
+          ASCENDHUB_USERNAME: ${{ secrets.ASCENDHUB_USERNAME }}
+          ASCENDHUB_TOKEN: ${{ secrets.ASCENDHUB_TOKEN }}
         run: |
-          echo "${{ secrets.ASCENDHUB_TOKEN }}" | skopeo login \
-            --username "${{ secrets.ASCENDHUB_USERNAME }}" \
+          echo "${ASCENDHUB_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            --username "${ASCENDHUB_USERNAME}" \
             --password-stdin \
-            swr.cn-east-3.myhuaweicloud.com/ascendhub-test
+            swr.cn-east-3.myhuaweicloud.com
 
-      - name: Sync image
+      - name: Sync image to AscendHub
         run: |
           skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
-          docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}
-
-          skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }} \
-          docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}
-
+            --authfile "$RUNNER_TEMP/auth.json" \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
+            docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}
 
   build-push-devel-digest:
     needs: push-image
     name: build ${{ inputs.cann_tag }}-devel (${{ matrix.arch }})
     if: ${{ inputs.publish_devel }}
     runs-on: ${{ matrix.runner }}
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+      env:
+        SOC: ${{ contains(inputs.cann_tag, '910b') && '910b' || contains(inputs.cann_tag, '910') && '910' || contains(inputs.cann_tag, '310p') && '310p' || contains(inputs.cann_tag, '950') && '950' || contains(inputs.cann_tag, 'a3') && 'a3' || '' }}
     strategy:
       matrix:
         include:
-          - arch: x86_64
-            runner: linux-x86_64
-          - arch: aarch64
-            runner: ubuntu-22.04-arm
+          - arch: amd64
+            platform: linux/amd64
+            runner: linux-amd64-cpu-4
+          - arch: arm64
+            platform: linux/arm64
+            runner: linux-aarch64-cpu-4
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Free up disk space
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
-        with:
-          tool-cache: true
-          docker-images: false
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Install jq
+        run: |
+          apt-get update
+          apt-get install -y jq
 
-      - name: Login to Quay
-        uses: docker/login-action@v3
-        with:
-          registry: quay.io
-          username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_TOKEN }}
-          ecr: false
-          logout: false
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+        run: |
+          echo "$HW_TOKEN" | docker login \
+            -u "$HW_USERNAME" --password-stdin \
+            swr.cn-southwest-2.myhuaweicloud.com
 
       - name: Build and push by digest
-        uses: docker/build-push-action@v6
         id: build-devel
-        with: 
-          platforms: ${{ matrix.arch }}
-          tags: |
-            docker.io/ascendai/cann
-            quay.io/ascend/cann
-          file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}-devel/Dockerfile
-          context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}-devel
-          outputs: type=image,push-by-digest=true,name-canonical=true,push=true
-          provenance: false
+        run: |
+          docker buildx build \
+            --platform ${{ matrix.platform }} \
+            -f cann/${{ inputs.cann_tag }}-devel/Dockerfile \
+            --build-arg CANN_BASE_IMAGE=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
+            --provenance=false \
+            --metadata-file /tmp/build-metadata.json \
+            --output "type=image,name=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann,push-by-digest=true,name-canonical=true,push=true,oci-mediatypes=false" \
+            cann/${{ inputs.cann_tag }}-devel
+          digest=$(jq -r '.["containerimage.digest"] // empty' /tmp/build-metadata.json)
+          if [ -z "$digest" ]; then
+            digest=$(jq -r '.["containerimage.name"] // empty' /tmp/build-metadata.json)
+            digest="${digest#*@}"
+          fi
+          echo "digest=${digest}" >> "$GITHUB_OUTPUT"
 
       - name: Export digest
         run: |
-          mkdir -p ${{ runner.temp }}/devel-digests
+          mkdir -p "$RUNNER_TEMP/devel-digests"
           digest="${{ steps.build-devel.outputs.digest }}"
-          touch "${{ runner.temp }}/devel-digests/${digest#sha256:}"
+          touch "$RUNNER_TEMP/devel-digests/${digest#sha256:}"
 
       - name: Upload digest
         uses: actions/upload-artifact@v4
@@ -755,11 +819,18 @@ jobs:
 
   
   push-devel-image:
-    runs-on: ubuntu-latest
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
     needs: build-push-devel-digest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Install jq
+        run: |
+          apt-get update
+          apt-get install -y jq
 
       - name: Download digests
         uses: actions/download-artifact@v4
@@ -768,22 +839,14 @@ jobs:
           pattern: digests-${{ inputs.cann_tag }}-devel-*
           merge-multiple: true
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Login to Quay
-        uses: docker/login-action@v3
-        with:
-          registry: quay.io
-          username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_TOKEN }}
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+        run: |
+          echo "$HW_TOKEN" | docker login \
+            -u "$HW_USERNAME" --password-stdin \
+            swr.cn-southwest-2.myhuaweicloud.com
 
       - name: Prepare tags
         id: prepare-tags
@@ -791,139 +854,185 @@ jobs:
           BASE_TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
             '.versions[] | select(.path == "cann/" + $cann_tag) | .tags[]' \
             cann_publish_version.json)
-          registries=(
-            "docker.io/ascendai/cann"
-            "quay.io/ascend/cann"
-          )
+          registry="swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann"
           first=true
           TAGS_JSON="["
-          for registry in "${registries[@]}"; do
-            for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
-              if [ "$first" != true ]; then
-                TAGS_JSON+=","
-              fi
-              TAGS_JSON+="\"${registry}:${tag}\""
-              first=false
-            done
+          for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
+            if [ "$first" != true ]; then
+              TAGS_JSON+=","
+            fi
+            TAGS_JSON+="\"${registry}:${tag}\""
+            first=false
           done
           TAGS_JSON+="]"
           echo "tags=${TAGS_JSON}" >> $GITHUB_OUTPUT
 
       - name: Create manifest list and push
-        working-directory: ${{ runner.temp }}/digests
         env:
           TAGS: ${{ steps.prepare-tags.outputs.tags }}
         run: |
+          cd "$RUNNER_TEMP/digests" || exit 1
           readarray -t TAGS_ARRAY <<< "$(echo "$TAGS" | jq -r '.[]')"
 
           for TAG in "${TAGS_ARRAY[@]}"; do
-            if [[ "$TAG" == *"quay.io/ascend/cann"* ]]; then
+            if [[ "$TAG" == swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann* ]]; then
               docker buildx imagetools create -t "$TAG"-devel \
-                $(printf 'quay.io/ascend/cann@sha256:%s ' *)
-            elif [[ "$TAG" == *"docker.io/ascendai/cann"* ]]; then
-              docker buildx imagetools create -t "$TAG"-devel \
-                $(printf 'docker.io/ascendai/cann@sha256:%s ' *)
+                $(printf 'swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann@sha256:%s ' *)
             else
               echo "Error: Unknown registry in TAG: $TAG"
               exit 1
             fi
           done
 
-  sync-devel-image:
+  sync-devel-public-image:
+    name: sync public image ${{ inputs.cann_tag }}-devel
     runs-on: ubuntu-latest
     needs: push-devel-image
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
       - name: Install skopeo
         run: |
-          sudo apt update
-          sudo apt install -y skopeo
+          sudo apt-get update
+          sudo apt-get install -y skopeo
 
       - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
         run: |
-          echo "${{ secrets.HW_TOKEN }}" | skopeo login \
-            --username "${{ secrets.HW_USERNAME }}" \
+          echo "${HW_TOKEN}" | skopeo login \
+            --username "${HW_USERNAME}" \
             --password-stdin \
-            swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci
+            swr.cn-southwest-2.myhuaweicloud.com
+
+      - name: Login to Quay
+        env:
+          QUAY_USERNAME: ${{ secrets.QUAY_USERNAME }}
+          QUAY_TOKEN: ${{ secrets.QUAY_TOKEN }}
+        run: |
+          echo "${QUAY_TOKEN}" | skopeo login \
+            --username "${QUAY_USERNAME}" \
+            --password-stdin \
+            quay.io
+
+      - name: Login to DockerHub
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+        run: |
+          echo "${DOCKER_TOKEN}" | skopeo login \
+            --username "${DOCKER_USERNAME}" \
+            --password-stdin \
+            docker.io
+
+      - name: Sync image to Quay and DockerHub
+        run: |
+          skopeo copy --all \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}-devel \
+            docker://quay.io/ascend/cann:${{ inputs.cann_tag }}-devel
+
+          skopeo copy --all \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}-devel \
+            docker://docker.io/ascendai/cann:${{ inputs.cann_tag }}-devel
+
+  sync-devel-ascendhub-image:
+    name: sync image to AscendHub ${{ inputs.cann_tag }}-devel
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+    needs: push-devel-image
+    steps:
+      - name: Install skopeo
+        run: |
+          apt-get update
+          apt-get install -y skopeo
+
+      - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+        run: |
+          echo "${HW_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            --username "${HW_USERNAME}" \
+            --password-stdin \
+            swr.cn-southwest-2.myhuaweicloud.com
 
       - name: Login to AscendHub
+        env:
+          ASCENDHUB_USERNAME: ${{ secrets.ASCENDHUB_USERNAME }}
+          ASCENDHUB_TOKEN: ${{ secrets.ASCENDHUB_TOKEN }}
         run: |
-          echo "${{ secrets.ASCENDHUB_TOKEN }}" | skopeo login \
-            --username "${{ secrets.ASCENDHUB_USERNAME }}" \
+          echo "${ASCENDHUB_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            --username "${ASCENDHUB_USERNAME}" \
             --password-stdin \
             swr.cn-east-3.myhuaweicloud.com/ascendhub-test
 
-      - name: Sync image
+      - name: Sync image to AscendHub
         run: |
           skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }}-devel \
-          docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}-devel
-
-          skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }}-devel \
-          docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}-devel
-
+            --authfile "$RUNNER_TEMP/auth.json" \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}-devel \
+            docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}-devel
 
   only-build-push-devel-digest:
     name: build ${{ inputs.cann_tag }}-devel (${{ matrix.arch }})
     if: ${{ !inputs.publish_base && inputs.publish_devel }}
     runs-on: ${{ matrix.runner }}
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+      env:
+        SOC: ${{ contains(inputs.cann_tag, '910b') && '910b' || contains(inputs.cann_tag, '910') && '910' || contains(inputs.cann_tag, '310p') && '310p' || contains(inputs.cann_tag, '950') && '950' || contains(inputs.cann_tag, 'a3') && 'a3' || '' }}
     strategy:
       matrix:
         include:
-          - arch: x86_64
-            runner: linux-x86_64
-          - arch: aarch64
-            runner: ubuntu-22.04-arm
+          - arch: amd64
+            platform: linux/amd64
+            runner: linux-amd64-cpu-4
+          - arch: arm64
+            platform: linux/arm64
+            runner: linux-aarch64-cpu-4
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Free up disk space
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
-        with:
-          tool-cache: true
-          docker-images: false
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Install jq
+        run: |
+          apt-get update
+          apt-get install -y jq
 
-      - name: Login to Quay
-        uses: docker/login-action@v3
-        with:
-          registry: quay.io
-          username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_TOKEN }}
-          ecr: false
-          logout: false
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+        run: |
+          echo "$HW_TOKEN" | docker login \
+            -u "$HW_USERNAME" --password-stdin \
+            swr.cn-southwest-2.myhuaweicloud.com
 
       - name: Build and push by digest
-        uses: docker/build-push-action@v6
         id: build-devel
-        with: 
-          platforms: ${{ matrix.arch }}
-          tags: |
-            docker.io/ascendai/cann
-            quay.io/ascend/cann
-          file: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}-devel/Dockerfile
-          context: ${{ github.workspace }}/cann/${{ inputs.cann_tag }}-devel
-          outputs: type=image,push-by-digest=true,name-canonical=true,push=true
-          provenance: false
+        run: |
+          docker buildx build \
+            --platform ${{ matrix.platform }} \
+            -f cann/${{ inputs.cann_tag }}-devel/Dockerfile \
+            --build-arg CANN_BASE_IMAGE=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
+            --provenance=false \
+            --metadata-file /tmp/build-metadata.json \
+            --output "type=image,name=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann,push-by-digest=true,name-canonical=true,push=true,oci-mediatypes=false" \
+            cann/${{ inputs.cann_tag }}-devel
+          digest=$(jq -r '.["containerimage.digest"] // empty' /tmp/build-metadata.json)
+          if [ -z "$digest" ]; then
+            digest=$(jq -r '.["containerimage.name"] // empty' /tmp/build-metadata.json)
+            digest="${digest#*@}"
+          fi
+          echo "digest=${digest}" >> "$GITHUB_OUTPUT"
 
       - name: Export digest
         run: |
-          mkdir -p ${{ runner.temp }}/devel-digests
+          mkdir -p "$RUNNER_TEMP/devel-digests"
           digest="${{ steps.build-devel.outputs.digest }}"
-          touch "${{ runner.temp }}/devel-digests/${digest#sha256:}"
+          touch "$RUNNER_TEMP/devel-digests/${digest#sha256:}"
 
       - name: Upload digest
         uses: actions/upload-artifact@v4
@@ -934,11 +1043,18 @@ jobs:
           retention-days: 1
   
   only-push-devel-image:
-    runs-on: ubuntu-latest
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
     needs: only-build-push-devel-digest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Install jq
+        run: |
+          apt-get update
+          apt-get install -y jq
 
       - name: Download digests
         uses: actions/download-artifact@v4
@@ -947,22 +1063,14 @@ jobs:
           pattern: digests-${{ inputs.cann_tag }}-devel-*
           merge-multiple: true
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Login to Quay
-        uses: docker/login-action@v3
-        with:
-          registry: quay.io
-          username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_TOKEN }}
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+        run: |
+          echo "$HW_TOKEN" | docker login \
+            -u "$HW_USERNAME" --password-stdin \
+            swr.cn-southwest-2.myhuaweicloud.com
 
       - name: Prepare tags
         id: prepare-tags
@@ -970,76 +1078,123 @@ jobs:
           BASE_TAGS=$(jq -r --arg cann_tag "${{ inputs.cann_tag }}" \
             '.versions[] | select(.path == "cann/" + $cann_tag) | .tags[]' \
             cann_publish_version.json)
-          registries=(
-            "docker.io/ascendai/cann"
-            "quay.io/ascend/cann"
-          )
+          registry="swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann"
           first=true
           TAGS_JSON="["
-          for registry in "${registries[@]}"; do
-            for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
-              if [ "$first" != true ]; then
-                TAGS_JSON+=","
-              fi
-              TAGS_JSON+="\"${registry}:${tag}\""
-              first=false
-            done
+          for tag in $(echo "$BASE_TAGS" | tr ',' ' '); do
+            if [ "$first" != true ]; then
+              TAGS_JSON+=","
+            fi
+            TAGS_JSON+="\"${registry}:${tag}\""
+            first=false
           done
           TAGS_JSON+="]"
           echo "tags=${TAGS_JSON}" >> $GITHUB_OUTPUT
 
       - name: Create manifest list and push
-        working-directory: ${{ runner.temp }}/digests
         env:
           TAGS: ${{ steps.prepare-tags.outputs.tags }}
         run: |
+          cd "$RUNNER_TEMP/digests" || exit 1
           readarray -t TAGS_ARRAY <<< "$(echo "$TAGS" | jq -r '.[]')"
 
           for TAG in "${TAGS_ARRAY[@]}"; do
-            if [[ "$TAG" == *"quay.io/ascend/cann"* ]]; then
+            if [[ "$TAG" == swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann* ]]; then
               docker buildx imagetools create -t "$TAG"-devel \
-                $(printf 'quay.io/ascend/cann@sha256:%s ' *)
-            elif [[ "$TAG" == *"docker.io/ascendai/cann"* ]]; then
-              docker buildx imagetools create -t "$TAG"-devel \
-                $(printf 'docker.io/ascendai/cann@sha256:%s ' *)
+                $(printf 'swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann@sha256:%s ' *)
             else
               echo "Error: Unknown registry in TAG: $TAG"
               exit 1
             fi
           done
 
-  only-sync-image:
+  only-sync-public-image:
+    name: sync public image ${{ inputs.cann_tag }}-devel
     runs-on: ubuntu-latest
     needs: only-push-devel-image
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
       - name: Install skopeo
         run: |
-          sudo apt update
-          sudo apt install -y skopeo
+          sudo apt-get update
+          sudo apt-get install -y skopeo
 
       - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
         run: |
-          echo "${{ secrets.HW_TOKEN }}" | skopeo login \
-            --username "${{ secrets.HW_USERNAME }}" \
+          echo "${HW_TOKEN}" | skopeo login \
+            --username "${HW_USERNAME}" \
             --password-stdin \
-            swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci
+            swr.cn-southwest-2.myhuaweicloud.com
+
+      - name: Login to Quay
+        env:
+          QUAY_USERNAME: ${{ secrets.QUAY_USERNAME }}
+          QUAY_TOKEN: ${{ secrets.QUAY_TOKEN }}
+        run: |
+          echo "${QUAY_TOKEN}" | skopeo login \
+            --username "${QUAY_USERNAME}" \
+            --password-stdin \
+            quay.io
+
+      - name: Login to DockerHub
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+        run: |
+          echo "${DOCKER_TOKEN}" | skopeo login \
+            --username "${DOCKER_USERNAME}" \
+            --password-stdin \
+            docker.io
+
+      - name: Sync image to Quay and DockerHub
+        run: |
+          skopeo copy --all \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}-devel \
+            docker://quay.io/ascend/cann:${{ inputs.cann_tag }}-devel
+
+          skopeo copy --all \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}-devel \
+            docker://docker.io/ascendai/cann:${{ inputs.cann_tag }}-devel
+
+  only-sync-ascendhub-image:
+    name: sync image to AscendHub ${{ inputs.cann_tag }}-devel
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+    needs: only-push-devel-image
+    steps:
+      - name: Install skopeo
+        run: |
+          apt-get update
+          apt-get install -y skopeo
+
+      - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+        run: |
+          echo "${HW_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            --username "${HW_USERNAME}" \
+            --password-stdin \
+            swr.cn-southwest-2.myhuaweicloud.com
 
       - name: Login to AscendHub
+        env:
+          ASCENDHUB_USERNAME: ${{ secrets.ASCENDHUB_USERNAME }}
+          ASCENDHUB_TOKEN: ${{ secrets.ASCENDHUB_TOKEN }}
         run: |
-          echo "${{ secrets.ASCENDHUB_TOKEN }}" | skopeo login \
-            --username "${{ secrets.ASCENDHUB_USERNAME }}" \
+          echo "${ASCENDHUB_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            --username "${ASCENDHUB_USERNAME}" \
             --password-stdin \
             swr.cn-east-3.myhuaweicloud.com/ascendhub-test
 
-      - name: Sync image
+      - name: Sync image to AscendHub
         run: |
           skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }}-devel \
-          docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}-devel
-
-          skopeo copy --all \
-          docker://quay.io/ascend/cann:${{ inputs.cann_tag }}-devel \
-          docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}-devel
+            --authfile "$RUNNER_TEMP/auth.json" \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }}-devel \
+            docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ inputs.cann_tag }}-devel

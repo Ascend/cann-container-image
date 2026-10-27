@@ -51,6 +51,12 @@ concurrency:
   group: batch-cann
   cancel-in-progress: false
 
+# The self-hosted runner defaults to `sh`; restore the GitHub-hosted
+# default (`bash -e`) that these scripts were written and tested against.
+defaults:
+  run:
+    shell: bash -e {0}
+
 jobs:
   prepare:
     runs-on: ubuntu-latest
@@ -65,7 +71,16 @@ jobs:
         run: |
           CANN_VERSION="${{ inputs.cann_version }}"
           MATRIX_JSON=$(jq --arg ver "$CANN_VERSION" \
-            '[.versions[] | .path | ltrimstr("cann/") | select(startswith($ver + "-310p-") or startswith($ver + "-910-") or startswith($ver + "-910b-") or startswith($ver + "-a3-") or startswith($ver + "-950-"))]' \
+            '[.versions[] | .path | ltrimstr("cann/") | select(startswith($ver + "-310p-") or startswith($ver + "-910-") or startswith($ver + "-910b-") or startswith($ver + "-a3-") or startswith($ver + "-950-"))]
+             | to_entries
+             | sort_by(
+                 (if .value | test("-py3\\.12$") then 0
+                  elif .value | test("-py3\\.11$") then 1
+                  elif .value | test("-py3\\.10$") then 2
+                  else 3 end),
+                 (if .value | test("-910-") then 1 else 0 end),
+                 .key)
+             | map(.value)' \
             cann_publish_version.json)
           if [ "$MATRIX_JSON" = "[]" ]; then
             echo "Error: No matching tags found for CANN version '$CANN_VERSION'"
@@ -80,7 +95,7 @@ jobs:
   build:
     needs: prepare
     strategy:
-      max-parallel: 2
+      max-parallel: 8
       fail-fast: false
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
     uses: ./.github/workflows/build_and_push_cann.yml
