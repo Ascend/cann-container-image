@@ -1,75 +1,75 @@
 {
     "versions": [
         {
-            "path": "manylinux/9.2.1-950-manylinux_2_34-py3.10",
+            "path": "manylinux/9.2.1-950-manylinux_2_35-py3.10",
             "tags": [
-                "9.2.1-950-manylinux_2_34-py3.10"
+                "9.2.1-950-manylinux_2_35-py3.10"
             ]
         },
         {
-            "path": "manylinux/9.2.1-950-manylinux_2_34-py3.11",
+            "path": "manylinux/9.2.1-950-manylinux_2_35-py3.11",
             "tags": [
-                "9.2.1-950-manylinux_2_34-py3.11"
+                "9.2.1-950-manylinux_2_35-py3.11"
             ]
         },
         {
-            "path": "manylinux/9.2.1-950-manylinux_2_34-py3.12",
+            "path": "manylinux/9.2.1-950-manylinux_2_35-py3.12",
             "tags": [
-                "9.2.1-950-manylinux_2_34-py3.12"
+                "9.2.1-950-manylinux_2_35-py3.12"
             ]
         },
         {
-            "path": "manylinux/9.2.1-910b-manylinux_2_34-py3.10",
+            "path": "manylinux/9.2.1-910b-manylinux_2_35-py3.10",
             "tags": [
-                "9.2.1-910b-manylinux_2_34-py3.10"
+                "9.2.1-910b-manylinux_2_35-py3.10"
             ]
         },
         {
-            "path": "manylinux/9.2.1-910b-manylinux_2_34-py3.11",
+            "path": "manylinux/9.2.1-910b-manylinux_2_35-py3.11",
             "tags": [
-                "9.2.1-910b-manylinux_2_34-py3.11"
+                "9.2.1-910b-manylinux_2_35-py3.11"
             ]
         },
         {
-            "path": "manylinux/9.2.1-910b-manylinux_2_34-py3.12",
+            "path": "manylinux/9.2.1-910b-manylinux_2_35-py3.12",
             "tags": [
-                "9.2.1-910b-manylinux_2_34-py3.12"
+                "9.2.1-910b-manylinux_2_35-py3.12"
             ]
         },
         {
-            "path": "manylinux/9.2.1-310p-manylinux_2_34-py3.10",
+            "path": "manylinux/9.2.1-310p-manylinux_2_35-py3.10",
             "tags": [
-                "9.2.1-310p-manylinux_2_34-py3.10"
+                "9.2.1-310p-manylinux_2_35-py3.10"
             ]
         },
         {
-            "path": "manylinux/9.2.1-310p-manylinux_2_34-py3.11",
+            "path": "manylinux/9.2.1-310p-manylinux_2_35-py3.11",
             "tags": [
-                "9.2.1-310p-manylinux_2_34-py3.11"
+                "9.2.1-310p-manylinux_2_35-py3.11"
             ]
         },
         {
-            "path": "manylinux/9.2.1-310p-manylinux_2_34-py3.12",
+            "path": "manylinux/9.2.1-310p-manylinux_2_35-py3.12",
             "tags": [
-                "9.2.1-310p-manylinux_2_34-py3.12"
+                "9.2.1-310p-manylinux_2_35-py3.12"
             ]
         },
         {
-            "path": "manylinux/9.2.1-a3-manylinux_2_34-py3.10",
+            "path": "manylinux/9.2.1-a3-manylinux_2_35-py3.10",
             "tags": [
-                "9.2.1-a3-manylinux_2_34-py3.10"
+                "9.2.1-a3-manylinux_2_35-py3.10"
             ]
         },
         {
-            "path": "manylinux/9.2.1-a3-manylinux_2_34-py3.11",
+            "path": "manylinux/9.2.1-a3-manylinux_2_35-py3.11",
             "tags": [
-                "9.2.1-a3-manylinux_2_34-py3.11"
+                "9.2.1-a3-manylinux_2_35-py3.11"
             ]
         },
         {
-            "path": "manylinux/9.2.1-a3-manylinux_2_34-py3.12",
+            "path": "manylinux/9.2.1-a3-manylinux_2_35-py3.12",
             "tags": [
-                "9.2.1-a3-manylinux_2_34-py3.12"
+                "9.2.1-a3-manylinux_2_35-py3.12"
             ]
         },
         {
