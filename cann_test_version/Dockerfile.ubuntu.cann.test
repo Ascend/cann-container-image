@@ -77,18 +77,30 @@ RUN pip install --no-cache-dir \
 ARG CANN_VERSION=9.1.0-20260731131545
 ARG SOC_VERSION=A3
 # Note: Get the download link according to ARCH and download the installation package
+# Note: The package version may be the base version (e.g. 9.2.0) or a patch version (e.g. 9.2.0.P006), try both
 RUN ARCH=$(case "${TARGETPLATFORM}" in \
         "linux/amd64") echo "x86_64" ;; \
         "linux/arm64") echo "aarch64" ;; \
         *) echo "Unsupported TARGETPLATFORM: ${TARGETPLATFORM}" && exit 1 ;; \
     esac) && \
     CANN_SHORT=$(echo "${CANN_VERSION}" | grep -oE '[0-9]+(\.[0-9]+)+' | head -1 | cut -d'.' -f1-3) && echo $CANN_SHORT && \
-    CANN_TOOLKIT_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux/Ascend-cann-toolkit_${CANN_SHORT}_linux-${ARCH}.run && \
-    CANN_OPS_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux/Ascend-cann-${SOC_VERSION}-ops_${CANN_SHORT}_linux-${ARCH}.run && \
-    CANN_NNAL_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux/Ascend-cann-nnal_${CANN_SHORT}_linux-${ARCH}.run && \
-    wget --quiet ${CANN_TOOLKIT_URL} -O ~/Ascend-cann-toolkit.run && \
-    wget --quiet ${CANN_OPS_URL} -O ~/Ascend-cann-ops.run && \
-    wget --quiet ${CANN_NNAL_URL} -O ~/Ascend-cann-nnal.run
+    CANN_FULL="${CANN_VERSION%%-*}" && echo $CANN_FULL && \
+    CANN_BASE_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux && \
+    fetch_pkg() { \
+        url="${CANN_BASE_URL}/Ascend-cann-$1_${CANN_FULL}_linux-${ARCH}.run"; \
+        if wget --quiet "${url}" -O "$2"; then echo "downloaded ${url}"; return 0; fi; \
+        rm -f "$2"; \
+        if [ "${CANN_FULL}" != "${CANN_SHORT}" ]; then \
+            url="${CANN_BASE_URL}/Ascend-cann-$1_${CANN_SHORT}_linux-${ARCH}.run"; \
+            if wget --quiet "${url}" -O "$2"; then echo "downloaded ${url}"; return 0; fi; \
+            rm -f "$2"; \
+        fi; \
+        echo "failed to download package: $1"; \
+        return 1; \
+    } && \
+    fetch_pkg toolkit ~/Ascend-cann-toolkit.run && \
+    fetch_pkg "${SOC_VERSION}-ops" ~/Ascend-cann-ops.run && \
+    fetch_pkg nnal ~/Ascend-cann-nnal.run
 
 # Note: Install CANN Toolkit Development Kit Package
 RUN chmod +x ~/Ascend-cann-toolkit.run && \
@@ -201,6 +213,16 @@ RUN if [ "${TARGETPLATFORM}" = "linux/arm64" ] && [ "${SOC_VERSION}" = "950" ]; 
 COPY --from=cann-installer /usr/local/python${PY_VERSION} /usr/local/python${PY_VERSION}
 COPY --from=cann-installer /usr/local/Ascend /usr/local/Ascend
 COPY --from=cann-installer /etc/Ascend /etc/Ascend
+
+# Note: The toolkit installs to a directory named by the package version, which may be the base
+# version (e.g. cann-9.2.0) or a patch version (e.g. cann-9.2.0.P006); keep the path used by the
+# environment variables stable
+RUN set -e; \
+    CANN_INSTALLED=$(ls -d /usr/local/Ascend/cann-[0-9]* 2>/dev/null | head -1); \
+    if [ -z "${CANN_INSTALLED}" ]; then echo "CANN installation directory not found"; exit 1; fi; \
+    if [ ! -e "/usr/local/Ascend/cann-${CANN_VERSION}" ]; then \
+        ln -s "${CANN_INSTALLED}" "/usr/local/Ascend/cann-${CANN_VERSION}"; \
+    fi
 
 # Note: Set environment variables
 RUN \
