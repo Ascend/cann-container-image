@@ -386,7 +386,7 @@ jobs:
           apt-get install -y jq
 
       - name: Download digests
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           path: ${{ runner.temp }}/digests
           pattern: digests-${{ inputs.cann_tag }}-*
