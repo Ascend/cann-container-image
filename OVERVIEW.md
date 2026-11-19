@@ -85,7 +85,17 @@ An Atlas NPU driver compatible with the CANN version inside the container must b
 
 ### Run a CANN Container
 
+Click to expand the run command for your product model and host architecture:
+
+<details open>
+<summary><b>A3, 910b, 910 and 310p</b></summary>
+
 ```bash
+# A3, 910b, 910 and 310P use different image tags. Change CANN_TAG according to your chip series:
+#   A3:   9.2.1-a3-ubuntu22.04-py3.12
+#   910b: 9.2.1-910b-ubuntu22.04-py3.12
+#   910:  9.2.1-910-ubuntu22.04-py3.12
+#   310P: 9.2.1-310p-ubuntu22.04-py3.12
 export CANN_REPO=quay.io/ascend/cann
 export CANN_TAG=9.2.1-a3-ubuntu22.04-py3.12
 
@@ -102,7 +112,11 @@ docker run \
     -v /etc/ascend_install.info:/etc/ascend_install.info \
     -it $CANN_REPO:$CANN_TAG bash
 ```
-### Run a CANN Container on 950 Series aarch64 Products
+
+</details>
+
+<details>
+<summary><b>950 Series (aarch64)</b></summary>
 
 ```bash
 export CANN_REPO=quay.io/ascend/cann
@@ -122,6 +136,30 @@ docker run \
     -v /etc/ascend_install.info:/etc/ascend_install.info \
     -it $CANN_REPO:$CANN_TAG bash
 ```
+
+</details>
+
+<details>
+<summary><b>950 Series (x86_64)</b></summary>
+
+```bash
+export CANN_REPO=quay.io/ascend/cann
+export CANN_TAG=9.2.1-950-ubuntu22.04-py3.12
+
+docker run \
+    --name cann_container \
+    --device /dev/davinci0 \
+    --device /dev/davinci_manager \
+    --device /dev/hisi_hdc \
+    -v /usr/local/dcmi:/usr/local/dcmi \
+    -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi \
+    -v /usr/local/Ascend/driver/lib64/:/usr/local/Ascend/driver/lib64/ \
+    -v /usr/local/Ascend/driver/version.info:/usr/local/Ascend/driver/version.info \
+    -v /etc/ascend_install.info:/etc/ascend_install.info \
+    -it $CANN_REPO:$CANN_TAG bash
+```
+
+</details>
 
 ### How to Build Locally
 ```bash
