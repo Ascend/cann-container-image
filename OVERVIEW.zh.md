@@ -83,7 +83,17 @@ CANN 镜像的所有 Tag 遵循以下格式：
 
 ### 运行 CANN 容器
 
+请根据您的产品型号与主机架构，点击展开对应的运行命令：
+
+<details open>
+<summary><b>A3，910b，910 和 310p</b></summary>
+
 ```bash
+# A3、910b、910、310P 使用不同的镜像 Tag，请根据实际芯片系列修改 CANN_TAG：
+#   A3:   9.2.1-a3-ubuntu22.04-py3.12
+#   910b: 9.2.1-910b-ubuntu22.04-py3.12
+#   910:  9.2.1-910-ubuntu22.04-py3.12
+#   310P: 9.2.1-310p-ubuntu22.04-py3.12
 export CANN_REPO=swr.cn-south-1.myhuaweicloud.com/ascendhub/cann
 export CANN_TAG=9.2.1-a3-ubuntu22.04-py3.12
 
@@ -100,7 +110,11 @@ docker run \
     -v /etc/ascend_install.info:/etc/ascend_install.info \
     -it $CANN_REPO:$CANN_TAG bash
 ```
-### 在 950 系列 aarch64 架构产品上运行 CANN 容器
+
+</details>
+
+<details>
+<summary><b>950 系列（aarch64 架构）</b></summary>
 
 ```bash
 export CANN_REPO=swr.cn-south-1.myhuaweicloud.com/ascendhub/cann
@@ -120,6 +134,30 @@ docker run \
     -v /etc/ascend_install.info:/etc/ascend_install.info \
     -it $CANN_REPO:$CANN_TAG bash
 ```
+
+</details>
+
+<details>
+<summary><b>950 系列（x86_64 架构）</b></summary>
+
+```bash
+export CANN_REPO=swr.cn-south-1.myhuaweicloud.com/ascendhub/cann
+export CANN_TAG=9.2.1-950-ubuntu22.04-py3.12
+
+docker run \
+    --name cann_container \
+    --device /dev/davinci0 \
+    --device /dev/davinci_manager \
+    --device /dev/hisi_hdc \
+    -v /usr/local/dcmi:/usr/local/dcmi \
+    -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi \
+    -v /usr/local/Ascend/driver/lib64/:/usr/local/Ascend/driver/lib64/ \
+    -v /usr/local/Ascend/driver/version.info:/usr/local/Ascend/driver/version.info \
+    -v /etc/ascend_install.info:/etc/ascend_install.info \
+    -it $CANN_REPO:$CANN_TAG bash
+```
+
+</details>
 
 ### 如何本地构建
 ```bash
