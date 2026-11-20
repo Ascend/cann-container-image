@@ -73,7 +73,8 @@ RUN pip install --no-cache-dir \
 ARG CANN_VERSION=9.1.0-20260731131545
 ARG SOC_VERSION=A3
 # Note: Get the download link according to ARCH and download the installation package
-# Note: The package version may be the base version (e.g. 9.2.0) or a patch version (e.g. 9.2.0.P006), try both
+# Note: The package version in the file name may differ from the version directory name
+# (e.g. directory 9.3.0-xxx but packages 9.3.0.P009), so resolve it by probing and OBS listing
 RUN ARCH=$(case "${TARGETPLATFORM}" in \
         "linux/amd64") echo "x86_64" ;; \
         "linux/arm64") echo "aarch64" ;; \
@@ -82,15 +83,22 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
     CANN_SHORT=$(echo "${CANN_VERSION}" | grep -oE '[0-9]+(\.[0-9]+)+' | head -1 | cut -d'.' -f1-3) && echo $CANN_SHORT && \
     CANN_FULL="${CANN_VERSION%%-*}" && echo $CANN_FULL && \
     CANN_BASE_URL=https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux && \
+    CANN_PKG_VERSION="" && \
+    for ver in "${CANN_FULL}" "${CANN_SHORT}"; do \
+        if wget --quiet --spider "${CANN_BASE_URL}/Ascend-cann-toolkit_${ver}_linux-${ARCH}.run"; then \
+            CANN_PKG_VERSION="${ver}"; break; \
+        fi; \
+    done && \
+    if [ -z "${CANN_PKG_VERSION}" ]; then \
+        CANN_LISTING=$(wget --quiet -O - "https://ascend-cann-open.obs.cn-north-4.myhuaweicloud.com/?prefix=CANN_BVERSION/CANN%20${CANN_VERSION}/run/${ARCH}-linux/Ascend-cann-toolkit_&max-keys=1000"); \
+        CANN_PKG_VERSION=$(echo "${CANN_LISTING}" | grep -oE "Ascend-cann-toolkit_[^<\"]+_linux-${ARCH}\.run" | head -1 | sed -E "s/^Ascend-cann-toolkit_(.*)_linux-${ARCH}\.run$/\1/"); \
+    fi && \
+    if [ -z "${CANN_PKG_VERSION}" ]; then echo "failed to resolve CANN package version"; exit 1; fi && \
+    echo "package version: ${CANN_PKG_VERSION}" && \
     fetch_pkg() { \
-        url="${CANN_BASE_URL}/Ascend-cann-$1_${CANN_FULL}_linux-${ARCH}.run"; \
+        url="${CANN_BASE_URL}/Ascend-cann-$1_${CANN_PKG_VERSION}_linux-${ARCH}.run"; \
         if wget --quiet "${url}" -O "$2"; then echo "downloaded ${url}"; return 0; fi; \
         rm -f "$2"; \
-        if [ "${CANN_FULL}" != "${CANN_SHORT}" ]; then \
-            url="${CANN_BASE_URL}/Ascend-cann-$1_${CANN_SHORT}_linux-${ARCH}.run"; \
-            if wget --quiet "${url}" -O "$2"; then echo "downloaded ${url}"; return 0; fi; \
-            rm -f "$2"; \
-        fi; \
         echo "failed to download package: $1"; \
         return 1; \
     } && \
