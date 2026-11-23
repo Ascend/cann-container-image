@@ -447,16 +447,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y skopeo
 
-      - name: Login to Huawei Cloud SWR
-        env:
-          HW_USERNAME: ${{ secrets.HW_USERNAME }}
-          HW_TOKEN: ${{ secrets.HW_TOKEN }}
-        run: |
-          echo "${HW_TOKEN}" | skopeo login \
-            --username "${HW_USERNAME}" \
-            --password-stdin \
-            swr.cn-southwest-2.myhuaweicloud.com
-
       - name: Login to Quay
         env:
           QUAY_USERNAME: ${{ secrets.QUAY_USERNAME }}
