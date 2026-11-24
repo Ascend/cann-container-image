@@ -4,6 +4,17 @@
 
 CANN（Compute Architecture for Neural Networks）是华为针对 AI 场景推出的异构计算架构，对上支持多种AI框架，对下服务AI处理器与编程，发挥承上启下的关键作用，是提升昇腾 AI 处理器计算效率的关键平台。
 
+## 快速参考
+
+- CANN 由 [CANN community](https://www.hiascend.com/cann) 维护
+
+- 从哪里获取帮助
+
+    - [AscendHub 镜像仓库](https://www.hiascend.com/developer/ascendhub)
+    - [CANN 文档](https://www.hiascend.com/document/detail/zh/CANNCommunityEdition)
+    - [昇腾开发者社区](https://www.hiascend.com/developer)
+    - [问题反馈](https://github.com/Ascend/cann-container-image/issues)
+
 ---
 
 ## 镜像下载
@@ -169,14 +180,16 @@ export CANN_TAG=9.2.1-a3-ubuntu22.04-py3.12
 docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 ```
 
----
+## 安全风险
 
-## 参考
+在运行容器时，需要注意以下安全风险：
 
-若您想了解 CANN 软件包下载方式，请访问 [CANN 下载网站](https://www.hiascend.com/cann/download?versionId=769&ids=d806%2Ch0501%2Ch0601%2Ch0702)。
-若您想了解更多关于 CANN 的信息，包括发布说明、编程指南、API 和开发工具，请访问 [CANN 资料网站](https://www.hiascend.com/cann/document)。
+- 使用 `root` 用户运行：容器默认以 `root` 用户身份运行，可能带来安全隐患。建议在生产环境中创建非特权用户来运行应用程序。
 
----
+- 缺少 CPU 和内存资源限制：未设置资源限制可能导致容器消耗过多系统资源，影响宿主机性能。建议使用 `--cpus` 和 `--memory` 参数限制资源使用。
+
+- 设备使用 `rwm` 权限：为 NPU 设备分配了读写和 `mknod` 权限，虽然功能运行需要，但在安全敏感环境中应谨慎评估权限范围。
+
 
 ## 许可证
 
