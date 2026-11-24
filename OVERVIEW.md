@@ -4,6 +4,19 @@
 
 CANN (Compute Architecture for Neural Networks) is a heterogeneous computing architecture launched by Huawei for AI scenarios. It supports multiple AI frameworks on the upper layer and serves AI processors and programming on the lower layer, acting as a key bridge and a key platform for improving the computing efficiency of Atlas AI processors.
 
+## Quick Reference
+
+- CANN is maintained by 
+    
+    [CANN community](https://www.hiascend.com/eng/cann)
+
+- Where to get help
+    
+    - [AscendHub Image Registry](https://www.hiascend.com/en-sg/developer/ascendhub)
+    - [CANN Documentation](https://www.hiascend.com/document/detail/en/CANNCommunityEdition)
+    - [Ascend Community](https://www.hiascend.com/en-sg/)
+    - [Issue Tracker](https://github.com/Ascend/cann-container-image/issues)
+
 ---
 
 ## Image Download
@@ -171,14 +184,14 @@ export CANN_TAG=9.2.1-a3-ubuntu22.04-py3.12
 docker buildx build -t $CANN_REPO:$CANN_TAG -f cann/$CANN_TAG/Dockerfile .
 ```
 
----
+## Security Risks
+When running containers with these images, be aware of the following security risks:
 
-## References
+- Running as the `root` user: Containers run as the `root` user by default, which can introduce security risks. In production environments, it is recommended to create a non-privileged user to run the application.
 
-If you want to learn how to download CANN software packages, please visit the [CANN download site](https://www.hiascend.com/en/cann/download?versionId=769&ids=d806%2Ch0501%2Ch0601%2Ch0702).
-If you want to learn more about CANN, including release notes, programming guides, APIs, and development tools, please visit the [CANN documentation site](https://www.hiascend.com/en/cann/document).
+- Lack of CPU and memory resource limits: Not setting resource limits may cause a container to consume excessive system resources and affect host performance. It is recommended to use the `--cpus` and `--memory` parameters to limit resource usage.
 
----
+- Device use with `rwm` permissions: The NPU device is assigned read, write, and `mknod` permissions. Although these are required for functionality, the scope of permissions should be carefully evaluated in security-sensitive environments.
 
 ## License
 
