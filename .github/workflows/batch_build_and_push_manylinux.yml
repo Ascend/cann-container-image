@@ -8,6 +8,7 @@ on:
         type: choice
         required: true
         options:
+          - 9.2.2
           - 9.2.0
           - 9.2.0-beta.2
           - 9.2.0-beta.1
@@ -29,6 +30,11 @@ on:
 
       publish:
         description: 'Publish the image'
+        default: false
+        type: boolean
+        required: true
+      sync_only:
+        description: 'Only sync existing images to cn-north-12 (skip build/push)'
         default: false
         type: boolean
         required: true
@@ -71,6 +77,7 @@ jobs:
 
   build:
     needs: prepare
+    if: ${{ !inputs.sync_only }}
     strategy:
       max-parallel: 8
       fail-fast: false
@@ -80,3 +87,49 @@ jobs:
       cann_tag: ${{ matrix.cann_tag }}
       publish: ${{ inputs.publish }}
     secrets: inherit
+
+  sync:
+    name: sync ${{ matrix.cann_tag }} to cn-north-12
+    needs: prepare
+    if: ${{ inputs.sync_only }}
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+    strategy:
+      max-parallel: 8
+      fail-fast: false
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+    steps:
+      - name: Install skopeo
+        run: |
+          apt-get update
+          apt-get install -y skopeo
+
+      - name: Login to Huawei Cloud SWR
+        env:
+          HW_USERNAME: ${{ secrets.HW_USERNAME }}
+          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+        run: |
+          printf '%s' "${HW_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            --username "${HW_USERNAME}" \
+            --password-stdin \
+            swr.cn-southwest-2.myhuaweicloud.com
+
+      - name: Login to Huawei Cloud SWR cn-north-12
+        env:
+          HW_USERNAME_DAILY: ${{ secrets.HW_USERNAME_DAILY }}
+          HW_TOKEN_DAILY: ${{ secrets.HW_TOKEN_DAILY }}
+        run: |
+          printf '%s' "${HW_TOKEN_DAILY}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            --username "cn-north-12@${HW_USERNAME_DAILY}" \
+            --password-stdin \
+            swr.cn-north-12.myhuaweicloud.com
+
+      - name: Sync image to cn-north-12
+        run: |
+          skopeo copy --all \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/manylinux:${{ matrix.cann_tag }} \
+            docker://swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann:${{ matrix.cann_tag }}

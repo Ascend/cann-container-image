@@ -702,34 +702,28 @@ jobs:
             docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
             docker://docker.io/ascendai/cann:${{ inputs.cann_tag }}
 
-  sync-ascendhub-image:
-    name: sync image to AscendHub ${{ inputs.cann_tag }}
+  sync-north12-ascendhub-image:
+    name: sync image to cn-north-12 and AscendHub ${{ inputs.cann_tag }}
     runs-on: linux-amd64-cpu-4
     container:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
     needs: push-image
     steps:
-      - name: Debug docker config permissions
-        run: |
-          id
-          ls -ln /home/user/.docker/ 2>&1 || true
-          mount | grep -E 'home|docker' || true
-
       - name: Install skopeo
         run: |
           apt-get update
           apt-get install -y skopeo
 
-      - name: Login to Huawei Cloud SWR
+      - name: Login to Huawei Cloud SWR cn-north-12
         env:
-          HW_USERNAME: ${{ secrets.HW_USERNAME }}
-          HW_TOKEN: ${{ secrets.HW_TOKEN }}
+          HW_USERNAME_DAILY: ${{ secrets.HW_USERNAME_DAILY }}
+          HW_TOKEN_DAILY: ${{ secrets.HW_TOKEN_DAILY }}
         run: |
-          echo "${HW_TOKEN}" | skopeo login \
+          printf '%s' "${HW_TOKEN_DAILY}" | skopeo login \
             --authfile "$RUNNER_TEMP/auth.json" \
-            --username "${HW_USERNAME}" \
+            --username "cn-north-12@${HW_USERNAME_DAILY}" \
             --password-stdin \
-            swr.cn-southwest-2.myhuaweicloud.com
+            swr.cn-north-12.myhuaweicloud.com
 
       - name: Login to AscendHub
         env:
@@ -742,8 +736,13 @@ jobs:
             --password-stdin \
             swr.cn-east-3.myhuaweicloud.com
 
-      - name: Sync image to AscendHub
+      - name: sync-north12-ascendhub-image
         run: |
+          skopeo copy --all \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
+            docker://swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann:${{ inputs.cann_tag }}
+
           skopeo copy --all \
             --authfile "$RUNNER_TEMP/auth.json" \
             docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
