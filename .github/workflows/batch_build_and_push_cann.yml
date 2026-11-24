@@ -146,3 +146,38 @@ jobs:
             --authfile "$RUNNER_TEMP/auth.json" \
             docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ matrix.cann_tag }} \
             docker://swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann:${{ matrix.cann_tag }}
+
+  sync-ascendhub:
+    name: sync ${{ matrix.cann_tag }} to AscendHub
+    needs: prepare
+    if: ${{ inputs.sync_only }}
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+    strategy:
+      max-parallel: 8
+      fail-fast: false
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+    steps:
+      - name: Install skopeo
+        run: |
+          apt-get update
+          apt-get install -y skopeo
+
+      - name: Login to AscendHub
+        env:
+          ASCENDHUB_USERNAME: ${{ secrets.ASCENDHUB_USERNAME }}
+          ASCENDHUB_TOKEN: ${{ secrets.ASCENDHUB_TOKEN }}
+        run: |
+          echo "${ASCENDHUB_TOKEN}" | skopeo login \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            --username "${ASCENDHUB_USERNAME}" \
+            --password-stdin \
+            swr.cn-east-3.myhuaweicloud.com
+
+      - name: Sync image to AscendHub
+        run: |
+          skopeo copy --all \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ matrix.cann_tag }} \
+            docker://swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:${{ matrix.cann_tag }}

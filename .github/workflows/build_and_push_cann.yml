@@ -702,8 +702,8 @@ jobs:
             docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
             docker://docker.io/ascendai/cann:${{ inputs.cann_tag }}
 
-  sync-north12-ascendhub-image:
-    name: sync image to cn-north-12 and AscendHub ${{ inputs.cann_tag }}
+  sync-north12-image:
+    name: sync image to cn-north-12 ${{ inputs.cann_tag }}
     runs-on: linux-amd64-cpu-4
     container:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
@@ -725,6 +725,25 @@ jobs:
             --password-stdin \
             swr.cn-north-12.myhuaweicloud.com
 
+      - name: Sync image to cn-north-12
+        run: |
+          skopeo copy --all \
+            --authfile "$RUNNER_TEMP/auth.json" \
+            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
+            docker://swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann:${{ inputs.cann_tag }}
+
+  sync-ascendhub-image:
+    name: sync image to AscendHub ${{ inputs.cann_tag }}
+    runs-on: linux-amd64-cpu-4
+    container:
+      image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
+    needs: push-image
+    steps:
+      - name: Install skopeo
+        run: |
+          apt-get update
+          apt-get install -y skopeo
+
       - name: Login to AscendHub
         env:
           ASCENDHUB_USERNAME: ${{ secrets.ASCENDHUB_USERNAME }}
@@ -736,13 +755,8 @@ jobs:
             --password-stdin \
             swr.cn-east-3.myhuaweicloud.com
 
-      - name: sync-north12-ascendhub-image
+      - name: Sync image to AscendHub
         run: |
-          skopeo copy --all \
-            --authfile "$RUNNER_TEMP/auth.json" \
-            docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
-            docker://swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann:${{ inputs.cann_tag }}
-
           skopeo copy --all \
             --authfile "$RUNNER_TEMP/auth.json" \
             docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:${{ inputs.cann_tag }} \
