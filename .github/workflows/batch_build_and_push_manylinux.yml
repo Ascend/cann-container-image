@@ -34,7 +34,7 @@ on:
         type: boolean
         required: true
       sync_only:
-        description: 'Only sync existing images to cn-north-12 (skip build/push)'
+        description: 'Only sync existing images to Quay (skip build/push)'
         default: false
         type: boolean
         required: true
@@ -89,7 +89,7 @@ jobs:
     secrets: inherit
 
   sync:
-    name: sync ${{ matrix.cann_tag }} to cn-north-12
+    name: sync ${{ matrix.cann_tag }} to Quay
     needs: prepare
     if: ${{ inputs.sync_only }}
     runs-on: linux-amd64-cpu-4
@@ -116,20 +116,20 @@ jobs:
             --password-stdin \
             swr.cn-southwest-2.myhuaweicloud.com
 
-      - name: Login to Huawei Cloud SWR cn-north-12
+      - name: Login to Quay
         env:
-          HW_USERNAME_DAILY: ${{ secrets.HW_USERNAME_DAILY }}
-          HW_TOKEN_DAILY: ${{ secrets.HW_TOKEN_DAILY }}
+          QUAY_USERNAME: ${{ secrets.QUAY_USERNAME }}
+          QUAY_TOKEN: ${{ secrets.QUAY_TOKEN }}
         run: |
-          printf '%s' "${HW_TOKEN_DAILY}" | skopeo login \
+          printf '%s' "${QUAY_TOKEN}" | skopeo login \
             --authfile "$RUNNER_TEMP/auth.json" \
-            --username "cn-north-12@${HW_USERNAME_DAILY}" \
+            --username "${QUAY_USERNAME}" \
             --password-stdin \
-            swr.cn-north-12.myhuaweicloud.com
+            quay.io
 
-      - name: Sync image to cn-north-12
+      - name: Sync image to Quay
         run: |
           skopeo copy --all \
             --authfile "$RUNNER_TEMP/auth.json" \
             docker://swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/manylinux:${{ matrix.cann_tag }} \
-            docker://swr.cn-north-12.myhuaweicloud.com/atlas_inference/cann:${{ matrix.cann_tag }}
+            docker://quay.io/ascend/manylinux:${{ matrix.cann_tag }}
