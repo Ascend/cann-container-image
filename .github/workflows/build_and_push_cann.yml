@@ -734,7 +734,7 @@ jobs:
 
   sync-ascendhub-image:
     name: sync image to AscendHub ${{ inputs.cann_tag }}
-    runs-on: linux-amd64-cpu-4
+    runs-on: linux-aarch64-cpu-4
     container:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/vllm-ascend/act-environments-ubuntu:act-22.04
     needs: push-image
