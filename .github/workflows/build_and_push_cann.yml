@@ -25,6 +25,9 @@ on:
         default: '9.1.0-beta.1-310p-ubuntu22.04-py3.11'
         type: choice
         options:
+          - 9.2.2-910b-ubuntu22.04-py3.12
+          - 9.2.2-910b-ubuntu22.04-py3.11
+          - 9.2.2-910b-ubuntu22.04-py3.10
           - 9.2.0-310p-ubuntu22.04-py3.10
           - 9.2.0-310p-ubuntu22.04-py3.11
           - 9.2.0-310p-ubuntu22.04-py3.12
