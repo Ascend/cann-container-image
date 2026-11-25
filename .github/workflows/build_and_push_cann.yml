@@ -801,7 +801,7 @@ jobs:
         run: |
           echo "${HW_TOKEN_DAILY}" | skopeo login \
             --authfile "$RUNNER_TEMP/auth.json" \
-            --username "${HW_USERNAME_DAILY}" \
+            --username "cn-north-12@${HW_USERNAME_DAILY}" \
             --password-stdin \
             swr.cn-north-12.myhuaweicloud.com
 
